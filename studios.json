@@ -5,9 +5,9 @@
     "name": "Beyond Capture",
     "city": "Vancouver",
     "country": "Canada",
-    "lat": 49.2831,
-    "lng": -123.1074,
-    "address": "151 West Cordova Street, Vancouver, BC",
+    "lat": 49.2827,
+    "lng": -123.1207,
+    "address": "Approximate city location — street address not verified",
     "website": "https://www.beyond-capture.com/",
     "email": "vancouver@beyond-capture.com",
     "phone": "+1 778 736 1234",
@@ -19,13 +19,50 @@
       "Body Capture",
       "Facial Capture",
       "Finger Capture",
-      "Performance Capture"
+      "Performance Capture",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.beyond-capture.com/studios",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "city",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06",
+      "lat": 49.2831,
+      "lng": -123.1074,
+      "address": "151 West Cordova Street, Vancouver, BC",
+      "coordinate_precision": "unverified"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "beyond-montreal",
@@ -33,9 +70,9 @@
     "name": "Beyond Capture",
     "city": "Montréal",
     "country": "Canada",
-    "lat": 45.4834,
-    "lng": -73.5657,
-    "address": "1600 Rue St-Patrick, Montréal, QC",
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "address": "Approximate city location — street address not verified",
     "website": "https://www.beyond-capture.com/",
     "email": "montreal@beyond-capture.com",
     "phone": "+1 778 736 1234",
@@ -47,13 +84,50 @@
       "Body Capture",
       "Facial Capture",
       "Finger Capture",
-      "Performance Capture"
+      "Performance Capture",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.beyond-capture.com/studios",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "city",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06",
+      "lat": 45.4834,
+      "lng": -73.5657,
+      "address": "1600 Rue St-Patrick, Montréal, QC",
+      "coordinate_precision": "unverified"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "animatrik-burnaby",
@@ -61,9 +135,9 @@
     "name": "Animatrik Film Design",
     "city": "Burnaby",
     "country": "Canada",
-    "lat": 49.2701,
-    "lng": -123.0152,
-    "address": "4088 1st Ave, Burnaby, BC",
+    "lat": 49.2488,
+    "lng": -122.9805,
+    "address": "Approximate city location — street address not verified",
     "website": "https://www.animatrik.com/",
     "email": "",
     "phone": "+1 604 291 2200",
@@ -76,13 +150,50 @@
       "Body Capture",
       "Facial Capture",
       "Virtual Camera",
-      "Performance Capture"
+      "Performance Capture",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.animatrik.com/about",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "city",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06",
+      "lat": 49.2701,
+      "lng": -123.0152,
+      "address": "4088 1st Ave, Burnaby, BC",
+      "coordinate_precision": "unverified"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": ""
+      },
+      "Virtual Camera": {
+        "state": "unknown",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": ""
+      },
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "centroid-uxbridge",
@@ -90,9 +201,9 @@
     "name": "Centroid",
     "city": "Uxbridge",
     "country": "United Kingdom",
-    "lat": 51.5485,
+    "lat": 51.5462,
     "lng": -0.4796,
-    "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+    "address": "Approximate city location — street address not verified",
     "website": "https://www.centroid3d.com/",
     "email": "",
     "phone": "+44 20 3329 0251",
@@ -106,13 +217,55 @@
       "Facial Capture",
       "Retargeting",
       "Motion Editing",
-      "Performance Capture"
+      "Performance Capture",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.centroid3d.com/services",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "city",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06",
+      "lat": 51.5485,
+      "lng": -0.4796,
+      "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+      "coordinate_precision": "unverified"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      },
+      "Retargeting": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      },
+      "Motion Editing": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      },
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "centroid-london",
@@ -120,9 +273,9 @@
     "name": "Centroid at Molinare",
     "city": "London",
     "country": "United Kingdom",
-    "lat": 51.5133,
-    "lng": -0.1366,
-    "address": "34 Foubert's Place, London W1F 7PX",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "address": "Approximate city location — street address not verified",
     "website": "https://www.centroid3d.com/",
     "email": "",
     "phone": "+44 20 3329 0251",
@@ -132,13 +285,40 @@
     ],
     "capabilities": [
       "Performance Capture",
-      "Virtual Camera"
+      "Virtual Camera",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.centroid3d.com/",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "city",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06",
+      "lat": 51.5133,
+      "lng": -0.1366,
+      "address": "34 Foubert's Place, London W1F 7PX",
+      "coordinate_precision": "unverified"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/",
+        "verified_on": ""
+      },
+      "Virtual Camera": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.centroid3d.com/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "hom-hollywood",
@@ -160,13 +340,41 @@
     "capabilities": [
       "Performance Capture",
       "Motion Editing",
-      "Game Cinematics"
+      "Game Cinematics",
+      "Motion Capture"
     ],
-    "status": "Website verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.moves.com/capture-services/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "approximate",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Website verified",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.moves.com/capture-services/",
+        "verified_on": ""
+      },
+      "Motion Editing": {
+        "state": "unknown",
+        "evidence": "https://www.moves.com/capture-services/",
+        "verified_on": ""
+      },
+      "Game Cinematics": {
+        "state": "unknown",
+        "evidence": "https://www.moves.com/capture-services/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.moves.com/capture-services/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "aut-auckland",
@@ -187,13 +395,41 @@
     "capabilities": [
       "Body Capture",
       "Facial Capture",
-      "Hand Capture"
+      "Hand Capture",
+      "Motion Capture"
     ],
-    "status": "Public infrastructure listing verified",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
     "verified_on": "2026-11-06",
     "coordinate_precision": "approximate",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Public infrastructure listing verified",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Hand Capture": {
+        "state": "unknown",
+        "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "motion-arcade",
@@ -211,13 +447,31 @@
       "Motion Capture"
     ],
     "capabilities": [
-      "Body Capture"
+      "Body Capture",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://themotionarcade.com/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://themotionarcade.com/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://themotionarcade.com/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "ubisoft-toronto",
@@ -237,13 +491,36 @@
     ],
     "capabilities": [
       "Performance Capture",
-      "Facial Capture"
+      "Facial Capture",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://toronto.ubisoft.com/performance-capture-studio/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://toronto.ubisoft.com/performance-capture-studio/",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://toronto.ubisoft.com/performance-capture-studio/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://toronto.ubisoft.com/performance-capture-studio/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "aura-osaka",
@@ -264,13 +541,41 @@
     "capabilities": [
       "Body Capture",
       "Finger Capture",
-      "Previsualization"
+      "Previsualization",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://aurainc.jp/en/studio.html",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://aurainc.jp/en/studio.html",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://aurainc.jp/en/studio.html",
+        "verified_on": ""
+      },
+      "Previsualization": {
+        "state": "unknown",
+        "evidence": "https://aurainc.jp/en/studio.html",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://aurainc.jp/en/studio.html",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "studio-anima",
@@ -280,7 +585,7 @@
     "country": "Japan",
     "lat": 35.6762,
     "lng": 139.6503,
-    "address": "City/region approximate — street address not verified",
+    "address": "Approximate regional reference only — city and street address not verified",
     "website": "https://www.studioanima.co.jp/en/motion-capture/",
     "email": "",
     "phone": "",
@@ -292,13 +597,46 @@
       "Body Capture",
       "Facial Capture",
       "Finger Capture",
-      "Virtual Camera"
+      "Virtual Camera",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "unverified",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+        "verified_on": ""
+      },
+      "Virtual Camera": {
+        "state": "unknown",
+        "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "metropolia",
@@ -320,13 +658,46 @@
       "Body Capture",
       "Finger Capture",
       "Facial Capture",
-      "Virtual Camera"
+      "Virtual Camera",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Virtual Camera": {
+        "state": "unknown",
+        "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "koawa",
@@ -348,11 +719,28 @@
       "Motion Capture",
       "Virtual Production"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://koawa.co.nz/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://koawa.co.nz/",
+        "verified_on": ""
+      },
+      "Virtual Production": {
+        "state": "unknown",
+        "evidence": "https://koawa.co.nz/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "audiomotion",
@@ -362,7 +750,7 @@
     "country": "United Kingdom",
     "lat": 51.752,
     "lng": -1.2577,
-    "address": "City/region approximate — street address not verified",
+    "address": "Approximate regional reference only — city and street address not verified",
     "website": "https://www.audiomotion.com/",
     "email": "",
     "phone": "",
@@ -370,13 +758,31 @@
       "Motion Capture"
     ],
     "capabilities": [
-      "Performance Capture"
+      "Performance Capture",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.audiomotion.com/",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "unverified",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://www.audiomotion.com/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.audiomotion.com/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "versatile",
@@ -398,13 +804,41 @@
     "capabilities": [
       "Performance Capture",
       "Facial Capture",
-      "Previsualization"
+      "Previsualization",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://en.versatile.media/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://en.versatile.media/",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://en.versatile.media/",
+        "verified_on": ""
+      },
+      "Previsualization": {
+        "state": "unknown",
+        "evidence": "https://en.versatile.media/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://en.versatile.media/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "lategra",
@@ -414,7 +848,7 @@
     "country": "Japan",
     "lat": 35.6762,
     "lng": 139.6503,
-    "address": "City/region approximate — street address not verified",
+    "address": "Approximate regional reference only — city and street address not verified",
     "website": "https://lategra.co.jp/en/service_en/studio/",
     "email": "",
     "phone": "",
@@ -426,11 +860,28 @@
       "Motion Capture",
       "Realtime Production"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://lategra.co.jp/en/service_en/studio/",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "coordinate_precision": "unverified",
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://lategra.co.jp/en/service_en/studio/",
+        "verified_on": ""
+      },
+      "Realtime Production": {
+        "state": "unknown",
+        "evidence": "https://lategra.co.jp/en/service_en/studio/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "mocaplab",
@@ -451,13 +902,46 @@
       "Body Capture",
       "Facial Capture",
       "Eye Capture",
-      "Finger Capture"
+      "Finger Capture",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://www.mocaplab.com/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Body Capture": {
+        "state": "unknown",
+        "evidence": "https://www.mocaplab.com/",
+        "verified_on": ""
+      },
+      "Facial Capture": {
+        "state": "unknown",
+        "evidence": "https://www.mocaplab.com/",
+        "verified_on": ""
+      },
+      "Eye Capture": {
+        "state": "unknown",
+        "evidence": "https://www.mocaplab.com/",
+        "verified_on": ""
+      },
+      "Finger Capture": {
+        "state": "unknown",
+        "evidence": "https://www.mocaplab.com/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://www.mocaplab.com/",
+        "verified_on": ""
+      }
+    }
   },
   {
     "id": "rouge",
@@ -479,12 +963,40 @@
     "capabilities": [
       "Performance Capture",
       "Previsualization",
-      "Motion Editing"
+      "Motion Editing",
+      "Motion Capture"
     ],
-    "status": "Official service page reviewed; registration not checked",
+    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
     "evidence": "https://rougestudios.com/",
     "verified_on": "2026-11-06",
     "coordinate_precision": "city",
-    "evidence_state": "confirmed"
+    "evidence_state": "unknown",
+    "legacy_research": {
+      "evidence_state": "confirmed",
+      "status": "Official service page reviewed; registration not checked",
+      "verified_on": "2026-11-06"
+    },
+    "capability_evidence": {
+      "Performance Capture": {
+        "state": "unknown",
+        "evidence": "https://rougestudios.com/",
+        "verified_on": ""
+      },
+      "Previsualization": {
+        "state": "unknown",
+        "evidence": "https://rougestudios.com/",
+        "verified_on": ""
+      },
+      "Motion Editing": {
+        "state": "unknown",
+        "evidence": "https://rougestudios.com/",
+        "verified_on": ""
+      },
+      "Motion Capture": {
+        "state": "unknown",
+        "evidence": "https://rougestudios.com/",
+        "verified_on": ""
+      }
+    }
   }
 ]

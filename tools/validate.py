@@ -1,63 +1,239 @@
 #!/usr/bin/env python3
-"""MotionX Studio Atlas offline research batch validator. Standard library only."""
-import argparse,csv,json,re,sys,urllib.parse
-from collections import defaultdict
-from datetime import date, timedelta
+"""Validate MotionX public location records. Python standard library only."""
+import argparse
+import csv
+import json
+import math
+import re
+import sys
+import unicodedata
+from datetime import date
 from pathlib import Path
-REQUIRED=('id','company_id','name','city','country','lat','lng','website','evidence','evidence_state','coordinate_precision')
-STATES={'confirmed','likely','unknown'}
-PRECISIONS={'exact','approximate','city','region','unverified'}
+from urllib.parse import urlsplit
+
+REQUIRED = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng',
+            'website', 'evidence_state', 'coordinate_precision', 'categories',
+            'capabilities', 'capability_evidence')
+STATES = {'confirmed', 'likely', 'unknown'}
+PRECISIONS = {'exact', 'approximate', 'city', 'region', 'unverified'}
+CSV_FIELDS = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng', 'address',
+              'website', 'email', 'phone', 'categories', 'capabilities', 'capability_evidence',
+              'evidence_state', 'evidence', 'verified_on', 'coordinate_precision', 'status')
+ID = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+
+
+def url_valid(value):
+    try:
+        u = urlsplit(value)
+        return (u.scheme == 'https' and bool(u.hostname) and not u.username
+                and not u.password and not any(c.isspace() for c in value)
+                and u.port != 0)
+    except (ValueError, TypeError, AttributeError):
+        return False
+
+
+def normalized(value):
+    return ''.join(c for c in unicodedata.normalize('NFKD', value).casefold()
+                   if c.isalnum())
+
+
 def host(url):
-    try:return urllib.parse.urlsplit(url).hostname or ''
-    except ValueError:return ''
+    if not isinstance(url, str):
+        return ''
+    try:
+        return (urlsplit(url).hostname or '').removeprefix('www.').casefold()
+    except (ValueError, TypeError):
+        return ''
+
+
+class DuplicateIndex:
+    """Index company/name/website within a city; matches are review candidates."""
+    def __init__(self, rows=()):
+        self.index = {}
+        for row in rows:
+            self.add(row)
+
+    @staticmethod
+    def keys(row):
+        if not isinstance(row, dict):
+            return []
+        place = (normalized(str(row.get('city', ''))), normalized(str(row.get('country', ''))))
+        values = [('company/city', str(row.get('company_id', ''))),
+                  ('name/city', normalized(str(row.get('name', '')))),
+                  ('website/city', host(row.get('website')))]
+        return [(kind, *place, value) for kind, value in values if value]
+
+    def matches(self, row):
+        found = {}
+        for key in self.keys(row):
+            for other in self.index.get(key, []):
+                token = id(other)
+                pair = found.setdefault(token, {'ids': [other.get('id'), row.get('id')], 'reasons': []})
+                pair['reasons'].append(key[0])
+        return list(found.values())
+
+    def add(self, row):
+        for key in self.keys(row):
+            self.index.setdefault(key, []).append(row)
+
+
+def possible_duplicates(rows):
+    index, pairs = DuplicateIndex(), []
+    for row in rows:
+        pairs.extend(index.matches(row))
+        index.add(row)
+    return pairs
+
+
 def validate(rows):
-    errors=[]; warnings=[]; seen={}; names=defaultdict(list)
-    for i,r in enumerate(rows,1):
-        ref=r.get('id') or f'row-{i}'
+    errors, warnings, seen = [], [], set()
+    if not isinstance(rows, list):
+        return ['database must be a JSON array'], []
+    for i, r in enumerate(rows, 1):
+        if not isinstance(r, dict):
+            errors.append(f'row-{i}: record must be an object')
+            continue
+        ref = r.get('id') or f'row-{i}'
+        def error(message):
+            errors.append(f'{ref}: {message}')
         for k in REQUIRED:
-            if r.get(k) in (None,''): errors.append(f'{ref}: missing {k}')
-        if ref in seen: errors.append(f'{ref}: duplicate id (first row {seen[ref]})')
-        seen[ref]=i
-        try:
-            lat=float(r['lat']);lon=float(r['lng'])
-            if not (-90<=lat<=90 and -180<=lon<=180):errors.append(f'{ref}: coordinates outside bounds')
-        except (KeyError,ValueError,TypeError):errors.append(f'{ref}: invalid coordinates')
-        if r.get('evidence_state') not in STATES:errors.append(f'{ref}: evidence_state must be confirmed/likely/unknown')
-        if r.get('coordinate_precision') not in PRECISIONS:errors.append(f'{ref}: invalid coordinate_precision')
-        for field in ('website','evidence'):
-            url=r.get(field,'')
-            if url and (not url.startswith('https://') or not host(url)):errors.append(f'{ref}: {field} must be a valid https URL')
-        if r.get('evidence_state')=='confirmed' and not r.get('evidence'):errors.append(f'{ref}: confirmed requires evidence URL')
-        if r.get('verified_on'):
+            if k not in r or r[k] is None or r[k] == '':
+                error(f'missing {k}')
+        for k in ('id', 'company_id'):
+            if not isinstance(r.get(k), str) or not ID.fullmatch(r[k]):
+                error(f'{k} must be a lowercase hyphenated identifier')
+        if isinstance(ref, str):
+            if ref in seen:
+                error('duplicate id')
+            seen.add(ref)
+        for k in ('name', 'city', 'country', 'coordinate_precision', 'evidence_state'):
+            if not isinstance(r.get(k), str) or not r[k].strip():
+                error(f'{k} must be a nonempty string')
+        for k in ('address', 'status', 'email', 'phone', 'evidence', 'verified_on'):
+            if k in r and not isinstance(r[k], str):
+                error(f'{k} must be a string')
+        for k, limit in (('lat', 90), ('lng', 180)):
+            value = r.get(k)
+            if (isinstance(value, bool) or not isinstance(value, (int, float))
+                    or not -limit <= value <= limit or not math.isfinite(value)):
+                error(f'invalid {k}: expected finite number within +/-{limit}')
+        if r.get('evidence_state') not in tuple(STATES):
+            error('evidence_state must be confirmed/likely/unknown')
+        if r.get('coordinate_precision') not in tuple(PRECISIONS):
+            error('invalid coordinate_precision')
+        for k in ('categories', 'capabilities'):
+            values = r.get(k)
+            if (not isinstance(values, list) or any(not isinstance(v, str) or not v.strip() for v in values)):
+                error(f'{k} must be an array of nonempty strings')
+            elif len(values) != len(set(values)):
+                error(f'{k} contains duplicates')
+        if isinstance(r.get('categories'), list) and not r['categories']:
+            error('categories must contain at least one sector')
+        for k in ('website', 'evidence'):
+            if (k == 'website' or r.get(k)) and not url_valid(r.get(k)):
+                error(f'{k} must be a valid https URL without credentials')
+        if r.get('evidence_state') in ('confirmed', 'likely') and not r.get('evidence'):
+            error('confirmed/likely evidence requires a source URL')
+        def check_date(value, label):
+            if not value:
+                return
             try:
-                d=date.fromisoformat(r['verified_on'])
-                if d>date.today()+timedelta(days=1):warnings.append(f'{ref}: verification date is in future')
-            except ValueError:errors.append(f'{ref}: invalid verified_on date')
-        if r.get('coordinate_precision') in ('city','region','unverified') and r.get('address') and 'approximate' not in r['address'].lower() and 'unverified' not in r['address'].lower():warnings.append(f'{ref}: address is more precise than coordinate precision; review')
-        if r.get('evidence_state')=='confirmed' and not r.get('verified_on'):warnings.append(f'{ref}: no verification date')
-        names[(r.get('name','').casefold(),r.get('city','').casefold())].append(ref)
-    for key,ids in names.items():
-        if len(ids)>1:warnings.append(f'possible duplicate same name/city: {", ".join(ids)}')
-    return errors,warnings
+                if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                    raise ValueError()
+                parsed = date.fromisoformat(value)
+                if parsed > date.today():
+                    warnings.append(f'{ref}: {label} is in the future; review')
+            except (ValueError, TypeError):
+                error(f'invalid {label}; use YYYY-MM-DD')
+        check_date(r.get('verified_on'), 'verified_on')
+        if r.get('evidence_state') in ('confirmed', 'likely') and not r.get('verified_on'):
+            error('confirmed/likely evidence requires verified_on')
+        evidence = r.get('capability_evidence')
+        caps = r.get('capabilities', [])
+        if not isinstance(evidence, dict):
+            error('capability_evidence must be an object keyed by capability')
+        elif isinstance(caps, list) and all(isinstance(c, str) for c in caps):
+            if set(evidence) != set(caps):
+                error('capability_evidence keys must match capabilities')
+            for cap, item in evidence.items():
+                if not isinstance(item, dict):
+                    error(f'{cap}: capability evidence must be an object')
+                    continue
+                for field in ('evidence', 'verified_on'):
+                    if field in item and not isinstance(item[field], str):
+                        error(f'{cap}: {field} must be a string')
+                if item.get('state') not in tuple(STATES):
+                    error(f'{cap}: invalid capability evidence state')
+                if item.get('evidence') and not url_valid(item['evidence']):
+                    error(f'{cap}: invalid evidence URL')
+                check_date(item.get('verified_on'), f'{cap}.verified_on')
+                if item.get('state') in ('confirmed', 'likely') and (not item.get('evidence') or not item.get('verified_on')):
+                    error(f'{cap}: confirmed/likely requires evidence and verified_on')
+        if r.get('coordinate_precision') != 'exact':
+            warnings.append(f'{ref}: approximate coordinates ({r.get("coordinate_precision")}); not a verified street address')
+        elif not r.get('address') or not r.get('evidence') or not r.get('verified_on'):
+            error('exact coordinates require address, evidence and verified_on')
+        if r.get('evidence_state') == 'unknown':
+            warnings.append(f'{ref}: legacy/unreviewed evidence; source presence is not independent verification')
+    for pair in possible_duplicates(rows):
+        warnings.append(f'possible duplicate: {pair["ids"]} ({", ".join(pair["reasons"])})')
+    return errors, warnings
+
+
+def read_records(path):
+    path = Path(path)
+    if path.suffix.lower() != '.csv':
+        return json.loads(path.read_text(encoding='utf-8'))
+    with path.open(encoding='utf-8-sig', newline='') as stream:
+        reader = csv.DictReader(stream)
+        if not reader.fieldnames or len(reader.fieldnames) != len(set(reader.fieldnames)):
+            raise ValueError('CSV requires unique column headings')
+        if set(reader.fieldnames) - set(CSV_FIELDS):
+            raise ValueError('CSV contains unsupported columns; use the public research template')
+        if set(REQUIRED) - set(reader.fieldnames):
+            raise ValueError('CSV is missing required columns; use the public research template')
+        rows = list(reader)
+    for row in rows:
+        if None in row or any(v is None for v in row.values()):
+            raise ValueError('CSV row has incorrect number of columns')
+        for key in ('lat', 'lng'):
+            try:
+                row[key] = float(row.get(key, ''))
+            except ValueError:
+                pass
+        for key in ('categories', 'capabilities'):
+            row[key] = [v.strip() for v in row.get(key, '').split('|') if v.strip()]
+        try:
+            row['capability_evidence'] = json.loads(row.get('capability_evidence') or '{}')
+        except json.JSONDecodeError:
+            row['capability_evidence'] = None  # Per-record validation rejection.
+    return rows
+
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('input',help='JSON array or CSV file');p.add_argument('--output',help='write validated JSON array');p.add_argument('--report',help='write JSON report');a=p.parse_args()
-    src=Path(a.input)
-    if src.suffix.lower()=='.csv':
-        with src.open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
-        for r in rows:
-            for k in ('lat','lng'):
-                if r.get(k):
-                    try:r[k]=float(r[k])
-                    except ValueError:pass
-            for k in ('categories','capabilities'):
-                r[k]=[x.strip() for x in r.get(k,'').split('|') if x.strip()]
-    else:rows=json.loads(src.read_text(encoding='utf-8'))
-    if not isinstance(rows,list):p.error('input must be an array')
-    errors,warnings=validate(rows)
-    report={'records':len(rows),'companies':len({r.get('company_id') for r in rows}),'errors':errors,'warnings':warnings,'accepted':not errors}
-    print(json.dumps(report,indent=2,ensure_ascii=False))
-    if a.report:Path(a.report).write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    if a.output and not errors:Path(a.output).write_text(json.dumps(rows,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('input', help='JSON array or research CSV')
+    p.add_argument('--output', help='write validated JSON array')
+    p.add_argument('--report', help='write JSON report')
+    a = p.parse_args()
+    if a.report and Path(a.report).resolve() in {Path(a.input).resolve(), Path(a.output).resolve() if a.output else Path(a.input).resolve()}:
+        p.error('report must be different from input and output')
+    try:
+        rows = read_records(a.input)
+        errors, warnings = validate(rows)
+    except (OSError, ValueError) as exc:
+        rows, errors, warnings = [], [str(exc)], []
+    report = {'records': len(rows) if isinstance(rows, list) else 0,
+              'companies': len({r.get('company_id') for r in rows if isinstance(r, dict) and isinstance(r.get('company_id'), str)}) if isinstance(rows, list) else 0,
+              'errors': errors, 'warnings': warnings, 'accepted': not errors}
+    output = json.dumps(report, indent=2, ensure_ascii=False) + '\n'
+    print(output, end='')
+    if a.report:
+        Path(a.report).write_text(output, encoding='utf-8')
+    if a.output and not errors:
+        Path(a.output).write_text(json.dumps(rows, indent=2, ensure_ascii=False, allow_nan=False) + '\n', encoding='utf-8')
     return 1 if errors else 0
-if __name__=='__main__':sys.exit(main())
+
+
+if __name__ == '__main__':
+    sys.exit(main())
