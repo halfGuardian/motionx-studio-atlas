@@ -120,7 +120,7 @@ $('exportCsv').onclick = () => {
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.6.csv';
+  a.download = 'motionx_studios_filtered_v0.7.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };

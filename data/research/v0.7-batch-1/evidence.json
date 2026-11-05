@@ -1,0 +1,475 @@
+{
+  "batch": "v0.7-global-research-batch-1",
+  "verified_on": "2026-11-06",
+  "verification_timezone": "Pacific/Auckland",
+  "baseline_commit": "4d29470",
+  "baseline_locations": 18,
+  "baseline_organisations": 16,
+  "method": "Each requested city listing reviewed separately on official company pages. Claims are source-supported, not independently audited. Exact office geocodes were not substantiated; GeoNames city references used.",
+  "coordinate_attribution": {
+    "creator": "GeoNames",
+    "source": "https://www.geonames.org/",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "No coordinate transformation; used as approximate city reference pins, not studio coordinates."
+  },
+  "deferred_capabilities": [
+    "Motion Capture",
+    "Performance Capture",
+    "Virtual Production",
+    "Game Development"
+  ],
+  "deferred_capabilities_reason": "No batch assertion without evidence tying that service to the specific studio location. This is not evidence of absence. General service pages, employee roles, game-engine usage and company-wide branding do not establish an on-site capture stage or local games-development team.",
+  "records": [
+    {
+      "id": "weta-fx-wellington",
+      "company_id": "weta-fx",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.wetafx.co.nz/about",
+        "https://www.wetafx.co.nz/"
+      ],
+      "location_finding": "About page identifies Wellington as headquarters, lists its Miramar physical contact address, and describes VFX and animation work.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.wetafx.co.nz/about",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.wetafx.co.nz/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/2179537/wellington.html",
+        "geonames_id": 2179537,
+        "lat": -41.28664,
+        "lng": 174.77557,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "ilm-san-francisco",
+      "company_id": "ilm",
+      "city": "San Francisco",
+      "country": "United States",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.ilm.com/locations/",
+        "https://www.ilm.com/locations/san-francisco/"
+      ],
+      "location_finding": "Locations page identifies the San Francisco effects facility; the city archive is linked from that listing.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/5391959/san-francisco.html",
+        "geonames_id": 5391959,
+        "lat": 37.77493,
+        "lng": -122.41942,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "ilm-vancouver",
+      "company_id": "ilm",
+      "city": "Vancouver",
+      "country": "Canada",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.ilm.com/locations/",
+        "https://www.ilm.com/locations/vancouver/"
+      ],
+      "location_finding": "Locations page describes the Vancouver VFX team and its move to The Stack in 2025; no old street address reused.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/6173331/vancouver.html",
+        "geonames_id": 6173331,
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "ilm-london",
+      "company_id": "ilm",
+      "city": "London",
+      "country": "United Kingdom",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.ilm.com/locations/",
+        "https://www.ilm.com/locations/london/"
+      ],
+      "location_finding": "Locations page describes the London studio and its film/TV work; city archive corroborates the listed studio.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/2643743/london.html",
+        "geonames_id": 2643743,
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "ilm-sydney",
+      "company_id": "ilm",
+      "city": "Sydney",
+      "country": "Australia",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.ilm.com/locations/",
+        "https://www.ilm.com/locations/sydney/"
+      ],
+      "location_finding": "Locations page explicitly describes a Sydney studio with VFX services.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/2147714/sydney.html",
+        "geonames_id": 2147714,
+        "lat": -33.86785,
+        "lng": 151.20732,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "ilm-mumbai",
+      "company_id": "ilm",
+      "city": "Mumbai",
+      "country": "India",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.ilm.com/locations/",
+        "https://www.ilm.com/locations/mumbai/"
+      ],
+      "location_finding": "Locations page explicitly identifies the Mumbai studio and its VFX and animation pipeline.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.ilm.com/locations/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/1275339/mumbai.html",
+        "geonames_id": 1275339,
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-london",
+      "company_id": "framestore",
+      "city": "London",
+      "country": "United Kingdom",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate London studio entry; Our Studios describes that location. Loki Season 2 identifies London VFX teams; Foundation Season 2 explicitly locates its pre-production crew in London.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/work/loki-season-2",
+          "verified_on": "2026-11-06"
+        },
+        "Previsualization": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/work/foundation-season-2",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/2643743/london.html",
+        "geonames_id": 2643743,
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-montreal",
+      "company_id": "framestore",
+      "city": "Montréal",
+      "country": "Canada",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate Montréal studio entry; Our Studios describes that location. Foundation Season 2 explicitly attributes VFX work to Montréal.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/work/foundation-season-2",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/6077243/montreal.html",
+        "geonames_id": 6077243,
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-chicago",
+      "company_id": "framestore",
+      "city": "Chicago",
+      "country": "United States",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate Chicago studio entry; Our Studios describes that location. Advertising Services explicitly names this city among the four advertising-team bases and describes their VFX pipeline; no specialist services inferred from navigation alone.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/advertising/services",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/4887398/chicago.html",
+        "geonames_id": 4887398,
+        "lat": 41.85003,
+        "lng": -87.65005,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-los-angeles",
+      "company_id": "framestore",
+      "city": "Los Angeles",
+      "country": "United States",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate Los Angeles studio entry; Our Studios describes that location. Advertising Services explicitly names this city among the four advertising-team bases and describes their VFX pipeline; no specialist services inferred from navigation alone.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/advertising/services",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/5368361/los-angeles.html",
+        "geonames_id": 5368361,
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": [
+        "Official studio label is Los Angeles; Our Studios describes a Santa Monica team. The map uses a Los Angeles city/market reference, not a claim about facility municipality or street position."
+      ]
+    },
+    {
+      "id": "framestore-new-york",
+      "company_id": "framestore",
+      "city": "New York",
+      "country": "United States",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate New York studio entry; Our Studios describes that location. Advertising Services explicitly names this city among the four advertising-team bases and describes their VFX pipeline; no specialist services inferred from navigation alone.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/advertising/services",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/5128581/new-york-city.html",
+        "geonames_id": 5128581,
+        "lat": 40.71427,
+        "lng": -74.00597,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-mumbai",
+      "company_id": "framestore",
+      "city": "Mumbai",
+      "country": "India",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate Mumbai studio entry; Our Studios describes that location. Foundation Season 2 identifies Mumbai VFX work; Our Studios explicitly lists animation among the Mumbai disciplines.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/work/foundation-season-2",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/our-studios",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/1275339/mumbai.html",
+        "geonames_id": 1275339,
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    },
+    {
+      "id": "framestore-melbourne",
+      "company_id": "framestore",
+      "city": "Melbourne",
+      "country": "Australia",
+      "decision": "import",
+      "existing_id_match": false,
+      "existing_company_id_match": false,
+      "duplicate_candidates_against_baseline": [],
+      "location_sources": [
+        "https://www.framestore.com/contact",
+        "https://www.framestore.com/our-studios"
+      ],
+      "location_finding": "Contact page has a separate Melbourne studio entry; Our Studios describes that location. Furiosa explicitly identifies the Melbourne VFX team/pipeline; the Method integration is historical provenance, not a separate new company.",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.framestore.com/work/furiosa",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "source": "https://www.geonames.org/2158177/melbourne.html",
+        "geonames_id": 2158177,
+        "lat": -37.814,
+        "lng": 144.96332,
+        "precision": "city",
+        "datum": "WGS84",
+        "checked_on": "2026-11-06",
+        "note": "Gazetteer city reference, not facility geocoding; values copied without rounding."
+      },
+      "uncertainties": []
+    }
+  ]
+}
