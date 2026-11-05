@@ -1,0 +1,2 @@
+id,company_id,name,city,country,lat,lng,address,website,email,phone,categories,capabilities,evidence_state,evidence,verified_on,coordinate_precision,status
+example-studio-london,example-studio,Example Studio,London,United Kingdom,51.5072,-0.1276,City/region approximate — street address not verified,https://example.com,,,Motion Capture|Animation,Body Capture|Retargeting,unknown,https://example.com,,city,Research candidate only
