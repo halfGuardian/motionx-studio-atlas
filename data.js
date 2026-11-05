@@ -73,7 +73,16 @@
       (!country || row.country === country) && (!q ||
         [row.name, row.city, row.country, ...row.categories, ...row.capabilities].join(' ').toLocaleLowerCase().includes(q)));
   }
-  const api = {validateDatabase, loadDatabase, filterRecords, sectors};
+  function coordinateGroups(rows) {
+    const groups = new Map();
+    for (const row of rows) {
+      const key = JSON.stringify([row.lat, row.lng]);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(row);
+    }
+    return [...groups.values()];
+  }
+  const api = {validateDatabase, loadDatabase, filterRecords, coordinateGroups, sectors};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.MotionXData = api;
 })(globalThis);

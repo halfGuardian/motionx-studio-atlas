@@ -77,3 +77,12 @@ test('batch 1 does not infer mocap from VFX', () => {
   assert.equal(filterRecords(added, '', 'Motion Capture').length, 0);
   assert.ok(added.every(r => r.evidence_state === 'confirmed' && r.coordinate_precision === 'city'));
 });
+
+test('coincident coordinates group every studio without mutating records', () => {
+  const {coordinateGroups} = require('../data.js');
+  const fixtures = [{id:'a',lat:1,lng:2},{id:'b',lat:1,lng:2},{id:'c',lat:1,lng:3}];
+  const before = JSON.stringify(fixtures);
+  assert.deepEqual(coordinateGroups(fixtures).map(g => g.map(r => r.id)), [['a','b'],['c']]);
+  assert.equal(JSON.stringify(fixtures), before);
+  assert.equal(coordinateGroups(fixtures.slice(1))[0][0].id, 'b');
+});

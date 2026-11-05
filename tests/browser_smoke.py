@@ -59,8 +59,20 @@ def main():
             expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap contributors')
             page.wait_for_function('document.querySelector(".leaflet-tile-loaded") !== null', timeout=20000)
             assert 200 in tile_responses
-            assert page.evaluate('layer.getLayers().length') == total_locations
+            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database})
             passed('real Leaflet map, live OpenStreetMap tiles and attribution')
+            page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+            buttons = page.locator('.leaflet-popup-content button')
+            labels = buttons.all_text_contents()
+            assert len(labels) >= 2
+            for label in labels:
+                page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+                button = page.locator('.leaflet-popup-content button').filter(has_text=label)
+                button.focus()
+                button.press('Enter')
+                expect(page.locator('#detailContent h2')).to_have_text(label.split(' — ')[0])
+                page.locator('#close').click()
+            passed('coincident marker popup lists all studios and keyboard selection opens each profile')
             page.locator('#search').fill('beyond')
             expect(page.locator('#count')).to_have_text('2 locations')
             expect(page.locator('#companies')).to_contain_text('1 organization')
@@ -82,7 +94,7 @@ def main():
             page.locator('#category').select_option('Performance Capture')
             expect(page.locator('#count')).to_have_text('5 locations')
             page.locator('#fitResults').click()
-            assert page.evaluate('layer.getLayers().length') == 5
+            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database if r['country'] == 'Canada' and 'Performance Capture' in r['capabilities']})
             page.locator('#country').select_option('')
             page.locator('#category').select_option('')
             expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
