@@ -1,0 +1,490 @@
+[
+  {
+    "id": "beyond-vancouver",
+    "company_id": "beyond",
+    "name": "Beyond Capture",
+    "city": "Vancouver",
+    "country": "Canada",
+    "lat": 49.2831,
+    "lng": -123.1074,
+    "address": "151 West Cordova Street, Vancouver, BC",
+    "website": "https://www.beyond-capture.com/",
+    "email": "vancouver@beyond-capture.com",
+    "phone": "+1 778 736 1234",
+    "categories": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Finger Capture",
+      "Performance Capture"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.beyond-capture.com/studios",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "unverified",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "beyond-montreal",
+    "company_id": "beyond",
+    "name": "Beyond Capture",
+    "city": "Montréal",
+    "country": "Canada",
+    "lat": 45.4834,
+    "lng": -73.5657,
+    "address": "1600 Rue St-Patrick, Montréal, QC",
+    "website": "https://www.beyond-capture.com/",
+    "email": "montreal@beyond-capture.com",
+    "phone": "+1 778 736 1234",
+    "categories": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Finger Capture",
+      "Performance Capture"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.beyond-capture.com/studios",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "unverified",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "animatrik-burnaby",
+    "company_id": "animatrik",
+    "name": "Animatrik Film Design",
+    "city": "Burnaby",
+    "country": "Canada",
+    "lat": 49.2701,
+    "lng": -123.0152,
+    "address": "4088 1st Ave, Burnaby, BC",
+    "website": "https://www.animatrik.com/",
+    "email": "",
+    "phone": "+1 604 291 2200",
+    "categories": [
+      "Motion Capture",
+      "Previsualization",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Virtual Camera",
+      "Performance Capture"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.animatrik.com/about",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "unverified",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "centroid-uxbridge",
+    "company_id": "centroid",
+    "name": "Centroid",
+    "city": "Uxbridge",
+    "country": "United Kingdom",
+    "lat": 51.5485,
+    "lng": -0.4796,
+    "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+    "website": "https://www.centroid3d.com/",
+    "email": "",
+    "phone": "+44 20 3329 0251",
+    "categories": [
+      "Motion Capture",
+      "Previsualization",
+      "Animation"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Retargeting",
+      "Motion Editing",
+      "Performance Capture"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.centroid3d.com/services",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "unverified",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "centroid-london",
+    "company_id": "centroid",
+    "name": "Centroid at Molinare",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5133,
+    "lng": -0.1366,
+    "address": "34 Foubert's Place, London W1F 7PX",
+    "website": "https://www.centroid3d.com/",
+    "email": "",
+    "phone": "+44 20 3329 0251",
+    "categories": [
+      "Motion Capture",
+      "Previsualization"
+    ],
+    "capabilities": [
+      "Performance Capture",
+      "Virtual Camera"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.centroid3d.com/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "unverified",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "hom-hollywood",
+    "company_id": "hom",
+    "name": "House of Moves",
+    "city": "Hollywood",
+    "country": "United States",
+    "lat": 34.0983,
+    "lng": -118.3267,
+    "address": "Hollywood, Los Angeles, CA (approximate city pin)",
+    "website": "https://www.moves.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Animation",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Performance Capture",
+      "Motion Editing",
+      "Game Cinematics"
+    ],
+    "status": "Website verified",
+    "evidence": "https://www.moves.com/capture-services/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "approximate",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "aut-auckland",
+    "company_id": "aut",
+    "name": "AUT Motion Capture Studio",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "lat": -36.8532,
+    "lng": 174.7668,
+    "address": "AUT City Campus, Auckland (approximate campus pin)",
+    "website": "https://www.mocap.aut.ac.nz",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Research"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Hand Capture"
+    ],
+    "status": "Public infrastructure listing verified",
+    "evidence": "https://www.kitmap.govt.nz/infrastructure/motion-capture-studio",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "approximate",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "motion-arcade",
+    "company_id": "motion-arcade",
+    "name": "Motion Arcade",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "lat": -41.2865,
+    "lng": 174.7762,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://themotionarcade.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture"
+    ],
+    "capabilities": [
+      "Body Capture"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://themotionarcade.com/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "ubisoft-toronto",
+    "company_id": "ubisoft-toronto",
+    "name": "Ubisoft Toronto Performance Capture Studio",
+    "city": "Toronto",
+    "country": "Canada",
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://toronto.ubisoft.com/performance-capture-studio/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Game Development"
+    ],
+    "capabilities": [
+      "Performance Capture",
+      "Facial Capture"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://toronto.ubisoft.com/performance-capture-studio/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "aura-osaka",
+    "company_id": "aura-osaka",
+    "name": "aura, Inc. Motion Capture Studio",
+    "city": "Osaka",
+    "country": "Japan",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://aurainc.jp/en/studio.html",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Finger Capture",
+      "Previsualization"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://aurainc.jp/en/studio.html",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "studio-anima",
+    "company_id": "studio-anima",
+    "name": "Studio Anima Motion Capture",
+    "city": "Japan (city unverified)",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://www.studioanima.co.jp/en/motion-capture/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Animation"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Finger Capture",
+      "Virtual Camera"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://www.studioanima.co.jp/en/motion-capture/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "metropolia",
+    "company_id": "metropolia",
+    "name": "Metropolia Motion Capture Studio",
+    "city": "Helsinki",
+    "country": "Finland",
+    "lat": 60.2055,
+    "lng": 24.976,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Research"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Finger Capture",
+      "Facial Capture",
+      "Virtual Camera"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://www.metropolia.fi/en/asiakastyot-ja-palvelut/motion-capture-studio",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "koawa",
+    "company_id": "koawa",
+    "name": "Kōawa Studios",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "lat": -43.5235,
+    "lng": 172.5839,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://koawa.co.nz/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://koawa.co.nz/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "audiomotion",
+    "company_id": "audiomotion",
+    "name": "Audiomotion Studios",
+    "city": "United Kingdom (city unverified)",
+    "country": "United Kingdom",
+    "lat": 51.752,
+    "lng": -1.2577,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://www.audiomotion.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture"
+    ],
+    "capabilities": [
+      "Performance Capture"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://www.audiomotion.com/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "versatile",
+    "company_id": "versatile",
+    "name": "Versatile Media",
+    "city": "Vancouver",
+    "country": "Canada",
+    "lat": 49.2827,
+    "lng": -123.1207,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://en.versatile.media/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Previsualization",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Performance Capture",
+      "Facial Capture",
+      "Previsualization"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://en.versatile.media/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "lategra",
+    "company_id": "lategra",
+    "name": "LATEGRA XR Studio",
+    "city": "Japan (city unverified)",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://lategra.co.jp/en/service_en/studio/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Motion Capture",
+      "Realtime Production"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://lategra.co.jp/en/service_en/studio/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "mocaplab",
+    "company_id": "mocaplab",
+    "name": "Mocaplab",
+    "city": "Paris",
+    "country": "France",
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://www.mocaplab.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture"
+    ],
+    "capabilities": [
+      "Body Capture",
+      "Facial Capture",
+      "Eye Capture",
+      "Finger Capture"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://www.mocaplab.com/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  },
+  {
+    "id": "rouge",
+    "company_id": "rouge",
+    "name": "Rouge Studios",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "address": "City/region approximate — street address not verified",
+    "website": "https://rougestudios.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Previsualization",
+      "Animation"
+    ],
+    "capabilities": [
+      "Performance Capture",
+      "Previsualization",
+      "Motion Editing"
+    ],
+    "status": "Official service page reviewed; registration not checked",
+    "evidence": "https://rougestudios.com/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed"
+  }
+]

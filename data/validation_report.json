@@ -1,0 +1,13 @@
+{
+  "records": 18,
+  "companies": 16,
+  "errors": [],
+  "warnings": [
+    "beyond-vancouver: address is more precise than coordinate precision; review",
+    "beyond-montreal: address is more precise than coordinate precision; review",
+    "animatrik-burnaby: address is more precise than coordinate precision; review",
+    "centroid-uxbridge: address is more precise than coordinate precision; review",
+    "centroid-london: address is more precise than coordinate precision; review"
+  ],
+  "accepted": true
+}
