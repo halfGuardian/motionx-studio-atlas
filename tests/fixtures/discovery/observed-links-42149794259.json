@@ -1,0 +1,560 @@
+{
+  "description": "Projection of 92 observed link IDs, URLs and labels from the read-only GitHub triage job log. Not an original queue.json snapshot.",
+  "discovery_run": 42149794259,
+  "inspection_run": 42150708573,
+  "inspection_job": 127673004776,
+  "observations": [
+    {
+      "id": "discovery-024424104c94657271985adb",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/goa",
+      "label": "Goa"
+    },
+    {
+      "id": "discovery-038185e8df03a0db4c1537cc",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/pune",
+      "label": "Pune"
+    },
+    {
+      "id": "discovery-04045c0181bb21006a934289",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/dusseldorf",
+      "label": "Dusseldorf"
+    },
+    {
+      "id": "discovery-052b946290bfcd2b2be6479d",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/cinesite-radiocanada/",
+      "label": "Quebec Expertise at the Heart of Michael: Cinesite Montréal Featured in Radio-Canada Interview"
+    },
+    {
+      "id": "discovery-081546d7ed9077211e47886f",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/hyderabad",
+      "label": "Hyderabad"
+    },
+    {
+      "id": "discovery-0e06a74c5b757e499826f413",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/cary",
+      "label": "Cary"
+    },
+    {
+      "id": "discovery-0fedde919fb6f3216e8c83b3",
+      "source_id": "cinesite-group",
+      "url": "https://www.madassemblage.com/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-1c4ae35f417bbce4d24e1b8d",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/los-angeles",
+      "label": "Los Angeles"
+    },
+    {
+      "id": "discovery-1fa55beb2c6536233061a4b5",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sydney",
+      "label": "Sydney"
+    },
+    {
+      "id": "discovery-20189719b164d0048cf458e6",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/helsinki",
+      "label": "Helsinki"
+    },
+    {
+      "id": "discovery-20f187f9bc4f063548b66907",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/about-us/",
+      "label": "About"
+    },
+    {
+      "id": "discovery-2309fb75c2461e8b2c7c603d",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/kolkata",
+      "label": "Kolkata"
+    },
+    {
+      "id": "discovery-2417b87a2dc1667fbbff501b",
+      "source_id": "metricminds-services",
+      "url": "https://metricminds.com/animation/",
+      "label": "Keyframe Animation"
+    },
+    {
+      "id": "discovery-2bfc72bbd5ff4636639874cb",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/budapest",
+      "label": "Budapest"
+    },
+    {
+      "id": "discovery-36aa50b52ae47c509014ced6",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+      "label": "Atlanta"
+    },
+    {
+      "id": "discovery-3c345791eea7a820b27e0684",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/subject-access-requests/",
+      "label": "SAR Policy"
+    },
+    {
+      "id": "discovery-3c5bb6812046a223a34f466c",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/odesa",
+      "label": "Odesa"
+    },
+    {
+      "id": "discovery-441843d75c95576a897d8ad0",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/vancouver",
+      "label": "Vancouver"
+    },
+    {
+      "id": "discovery-463cac4544d3184a870d566c",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/bucharest",
+      "label": "Bucharest"
+    },
+    {
+      "id": "discovery-4b53ef2a55ef7ea5b5ed4268",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/tokyo",
+      "label": "Tokyo"
+    },
+    {
+      "id": "discovery-4ced562e8aadac1094b1e0a4",
+      "source_id": "ea-studios",
+      "url": "https://www.ea.com/careers/locations",
+      "label": "Locations"
+    },
+    {
+      "id": "discovery-4d19e429c8421d07a5beba75",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/chennai",
+      "label": "Chennai"
+    },
+    {
+      "id": "discovery-4ea4cd1c41614ae4c7e05ec7",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/our-team/",
+      "label": "Our Team"
+    },
+    {
+      "id": "discovery-53d8c24a1cbf4bae16066526",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/careers/",
+      "label": "Careers"
+    },
+    {
+      "id": "discovery-5536ebdb96e777101e491deb",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/toronto",
+      "label": "Toronto"
+    },
+    {
+      "id": "discovery-55742dcf45b5dd18a985ab6d",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+      "label": "Taguig"
+    },
+    {
+      "id": "discovery-6457023d7d9f5ecf9c416442",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/guildford",
+      "label": "Guildford"
+    },
+    {
+      "id": "discovery-64e6de8e593cd23561537e43",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/bengaluru",
+      "label": "Bengaluru"
+    },
+    {
+      "id": "discovery-662dac233f565012af893d52",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/los-angeles",
+      "label": "Los Angeles"
+    },
+    {
+      "id": "discovery-6de8dcefdb9c2c754ff9e907",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/patna",
+      "label": "Patna"
+    },
+    {
+      "id": "discovery-6e05af13b4dfedd079202bb1",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/montreal",
+      "label": "Montreal"
+    },
+    {
+      "id": "discovery-6ee3b64c23e9d55f4566b75b",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/visual-effects-2/",
+      "label": "VFX"
+    },
+    {
+      "id": "discovery-72d3fc5bb14cf238b1189855",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/mainz",
+      "label": "Mainz"
+    },
+    {
+      "id": "discovery-73880340aa6ea919469858d2",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/showreels/",
+      "label": "Showreels"
+    },
+    {
+      "id": "discovery-75fe422212bb31f5ab6c60d3",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/london",
+      "label": "Explore"
+    },
+    {
+      "id": "discovery-7844bca282b7456f72781928",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/toronto",
+      "label": "Toronto"
+    },
+    {
+      "id": "discovery-8411b43ed5b2c67ab33cf34c",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/cookies-and-privacy/",
+      "label": "Cookies & Privacy"
+    },
+    {
+      "id": "discovery-8431a40c74ee7274ad8aacb1",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona",
+      "label": "Barcelona"
+    },
+    {
+      "id": "discovery-857a0c231c4d061f3beff558",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sao-paulo",
+      "label": "Sao Paulo"
+    },
+    {
+      "id": "discovery-86615b57126b6e0077cffaab",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/case-studies/",
+      "label": "Case Studies"
+    },
+    {
+      "id": "discovery-87a29ba457d3fa9fb14393e9",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/san-francisco",
+      "label": "San Francisco"
+    },
+    {
+      "id": "discovery-8d97bc2ba47218a1ce64aec1",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/techx/",
+      "label": "Cinesite launches TechX - a Gen AI Technology Exploration Unit"
+    },
+    {
+      "id": "discovery-8ebfb3a955b3369aad222895",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/paris-area",
+      "label": "Paris area"
+    },
+    {
+      "id": "discovery-8ee6aaff4d3f87216611b06f",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/mumbai",
+      "label": "Mumbai"
+    },
+    {
+      "id": "discovery-9570a793082b407a6b55e7ae",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/technology/",
+      "label": "Technology"
+    },
+    {
+      "id": "discovery-994f41b26bed41f6536a2f42",
+      "source_id": "cinesite-group",
+      "url": "https://image-engine.com/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-9ac013bd8d7508600e2f9ea5",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/berlin",
+      "label": "Berlin"
+    },
+    {
+      "id": "discovery-9daa14f63465bc7877aed80b",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sofia",
+      "label": "Sofia"
+    },
+    {
+      "id": "discovery-9fe7704207c410b6a96c9e05",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/veronique-joins-bctq-board/",
+      "label": "Véronique Tassart Joins BCTQ Board to Advocate for Quebec Animation"
+    },
+    {
+      "id": "discovery-a1ea586175d7c6ba5309c469",
+      "source_id": "metricminds-services",
+      "url": "https://metricminds.com/cinematics/",
+      "label": "Realtime Cinematics"
+    },
+    {
+      "id": "discovery-a33ac2caae749b9ac50f55ea",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/chicoutimi",
+      "label": "Chicoutimi"
+    },
+    {
+      "id": "discovery-a5c24f14368bf71d5080931b",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/paris-area/ubisoft-mobile-hq",
+      "label": "Go to location"
+    },
+    {
+      "id": "discovery-a75be2177684114b3537ae37",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/bordeaux",
+      "label": "Bordeaux"
+    },
+    {
+      "id": "discovery-ac30af85234610e83f72069a",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/abu-dhabi",
+      "label": "Abu Dhabi"
+    },
+    {
+      "id": "discovery-ad81d344b9a7445f267f238a",
+      "source_id": "cinesite-group",
+      "url": "https://fx3x.com/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-af819babeb0fc7c422ebd804",
+      "source_id": "cinesite-group",
+      "url": "https://www.trixter.de/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-af87181d59f1412b95a0055d",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/contacts-2/",
+      "label": "Contact Us"
+    },
+    {
+      "id": "discovery-b326ae8cda740a332ff8f4d8",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/da-nang",
+      "label": "Da Nang"
+    },
+    {
+      "id": "discovery-b535bf8400ef5031ebb0f49f",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+      "label": "Lyon"
+    },
+    {
+      "id": "discovery-b5a2de8c5f72e211ca39ccf4",
+      "source_id": "imaginarium-sites",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "label": "Skip to Content"
+    },
+    {
+      "id": "discovery-b69ec7ada60ff433a4f0b74e",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+      "label": "Pune"
+    },
+    {
+      "id": "discovery-b71fa0db11b9f70f4dd1f1b7",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/paris-area/ubisoft-worldwide-hq",
+      "label": "Go to location"
+    },
+    {
+      "id": "discovery-b8ec3f73df4058517f4f31f2",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/sydney",
+      "label": "Sydney"
+    },
+    {
+      "id": "discovery-ba54bf88db873902ad4459fb",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/our-studios/",
+      "label": "Our Work"
+    },
+    {
+      "id": "discovery-bb0c597a038dc26691c8e5fc",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/news/",
+      "label": "News"
+    },
+    {
+      "id": "discovery-bc49bc7dd2ad472093bcc123",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/chengdu",
+      "label": "Chengdu"
+    },
+    {
+      "id": "discovery-be030993cbf89ebb052b7e4b",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/immersive/",
+      "label": "Immersive"
+    },
+    {
+      "id": "discovery-c1a620da681b74c87540e59e",
+      "source_id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "label": "Skip to main content"
+    },
+    {
+      "id": "discovery-c4359ca7f37b51073cd68fc3",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/animation/",
+      "label": "Animation"
+    },
+    {
+      "id": "discovery-c60010362ab699c51274679e",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/terms-of-use/",
+      "label": "Terms of Use"
+    },
+    {
+      "id": "discovery-c670d7a31276d34320ec7f6f",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/filmography/",
+      "label": "Filmography"
+    },
+    {
+      "id": "discovery-c86b0ca34866d28e883c9af9",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/malmö",
+      "label": "Malmö"
+    },
+    {
+      "id": "discovery-ca504efb492a8cba67ab987b",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/stockholm",
+      "label": "Stockholm"
+    },
+    {
+      "id": "discovery-cb444521a1443347650719ac",
+      "source_id": "cinesite-group",
+      "url": "https://www.imaginariumstudios.co.uk/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-cc0d91db011d1c69c01915a7",
+      "source_id": "cinesite-group",
+      "url": "https://www.squeezestudio.com/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-d124dbeef4bf0abc46627323",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/montreal",
+      "label": "Montreal"
+    },
+    {
+      "id": "discovery-d4043ead61849d5786390511",
+      "source_id": "cinesite-group",
+      "url": "https://cinesite.com/data-protection/",
+      "label": "Data Protection Complaints Handling Process"
+    },
+    {
+      "id": "discovery-d9d65010b05772f42c02a1c2",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+      "label": "Montpellier"
+    },
+    {
+      "id": "discovery-dd592799f45b4634e2b0076e",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/quebec-city",
+      "label": "Quebec City"
+    },
+    {
+      "id": "discovery-de6aaf2dc94f5b56e2b507cb",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/sofia",
+      "label": "Sofia"
+    },
+    {
+      "id": "discovery-dfddb9b55f3152c7038500ae",
+      "source_id": "cinesite-group",
+      "url": "https://latelieranimation.com/",
+      "label": "FIND OUT MORE"
+    },
+    {
+      "id": "discovery-e30e5d0324a287ad057275a1",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sherbrooke",
+      "label": "Sherbrooke"
+    },
+    {
+      "id": "discovery-e566ffb8315a476205d46c89",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/mohali",
+      "label": "Mohali"
+    },
+    {
+      "id": "discovery-e8e5facb906f4960072374f9",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/shanghai",
+      "label": "Shanghai"
+    },
+    {
+      "id": "discovery-e970631261b3e858714310ee",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/taiwan",
+      "label": "Taiwan (a branch of Ubisoft Hongkong)"
+    },
+    {
+      "id": "discovery-ebc0ef340e4a513b19a83ab5",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/kyiv",
+      "label": "Kyiv"
+    },
+    {
+      "id": "discovery-f00bf25370760830ae8f259b",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+      "label": "Annecy"
+    },
+    {
+      "id": "discovery-f0656ced15cbb34accee48dd",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/craiova",
+      "label": "Craiova"
+    },
+    {
+      "id": "discovery-f5e5700931ef3070d01e7d72",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/singapore",
+      "label": "Singapore"
+    },
+    {
+      "id": "discovery-f6c2680619db7b4e9c6d4dc6",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/barcelona",
+      "label": "Barcelona"
+    },
+    {
+      "id": "discovery-f8e1fa4b2606cb70dfe70fb8",
+      "source_id": "dneg-studios",
+      "url": "https://www.dneg.com/location/trivandrum",
+      "label": "Trivandrum"
+    },
+    {
+      "id": "discovery-fbce1f44f76015621fadfc5b",
+      "source_id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+      "label": "Milan"
+    }
+  ]
+}

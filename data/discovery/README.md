@@ -2,6 +2,10 @@
 
 Discovery gathers **unverified research candidates**, not trusted public studio records. No new studio is published by this release: the canonical database remains **129 locations / 66 operating organisations / 28 countries**, with all v0.8 records and coordinates unchanged.
 
+## v0.9.1 follow-up
+
+The [v0.9.1 triage report](triage-v0.9.1/README.md) records the successful live Actions run and its actual classifications, replacing the earlier local-only coverage uncertainty. It documents read-only triage artifacts, preserved queue/report history and EA's automation restriction. The original v0.9 QA results below remain historical release snapshots.
+
 ## Pipeline and approval boundary
 
 ```text
@@ -24,7 +28,7 @@ Recorded approval is a maintainer trust boundary, not cryptographic proof of a p
 
 ## Source registry and collection
 
-[`sources.json`](sources.json) contains six explicitly enabled official sources already used in the v0.8 research: Ubisoft, EA, Cinesite group, DNEG, Imaginarium and metricminds. These prioritise existing game-studio gaps, independent animation operators and specialist capture facilities. `company_id` here is a **hint** for duplicate review, never a new public identity or an inherited capability.
+[`sources.json`](sources.json) contains six registered official sources (five enabled; EA disabled after its v0.9.1 access review) already used in the v0.8 research: Ubisoft, EA, Cinesite group, DNEG, Imaginarium and metricminds. These prioritise existing game-studio gaps, independent animation operators and specialist capture facilities. `company_id` here is a **hint** for duplicate review, never a new public identity or an inherited capability.
 
 No third-party industry directory has been approved for automated collection yet. Before enabling one, review its terms/reuse rights, confirm public directory content, choose narrow link rules and document that decision in `reuse_note` in a reviewed registry PR. [`sources.example.json`](sources.example.json) contains **disabled fictitious-host examples**, not working sources or evidence. The `directory` kind is supported but always yields unknown-confidence candidates.
 
@@ -52,10 +56,10 @@ A successful workflow means the collection job ran, **not that every source succ
 
 ```sh
 python tools/discovery.py scan --output /tmp/motionx-discovery-run-1
-python tools/discovery.py scan --state /tmp/motionx-discovery-run-1/queue.json --output /tmp/motionx-discovery-run-2
+python tools/discovery.py scan --state /tmp/motionx-discovery-run-1/queue.json --previous-run /tmp/motionx-discovery-run-1 --output /tmp/motionx-discovery-run-2
 ```
 
-[`initial-run-report.json`](initial-run-report.json) is the actual local attempt on 6 November 2026: **six DNS/access failures, 41 retained pending candidates, zero published records**. This managed environment does not provide access to these company domains. No successful live-source extraction is claimed here. Deterministic fixtures test all adapters and approval paths; the Actions workflow needs its first live source/robots/adapter review after merge. There is no synthetic studio disguised as a real discovery result.
+[`initial-run-report.json`](initial-run-report.json) is the actual local attempt on 6 November 2026: **six DNS/access failures, 41 retained pending candidates, zero published records**. This managed environment does not provide access to these company domains. No successful live-source extraction is claimed here. Deterministic fixtures test all adapters and approval paths; the first live Actions source/adapter review is now recorded in the v0.9.1 report linked above. There is no synthetic studio disguised as a real discovery result.
 
 ## Research, review and preparation
 

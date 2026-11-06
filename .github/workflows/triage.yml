@@ -1,0 +1,66 @@
+name: Triage discovery observations
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/discovery.py'
+      - 'tools/triage.py'
+      - 'tests/test_triage.py'
+      - 'data/discovery/**'
+      - '.github/workflows/triage.yml'
+  workflow_dispatch:
+    inputs:
+      discovery_run:
+        description: 'Completed main-branch discovery run ID'
+        type: string
+        default: '42149794259'
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve discovery run
+        id: resolve
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_RUN: ${{ inputs.discovery_run || 'latest' }}
+        run: |
+          run_id="$REQUESTED_RUN"
+          if [ "$run_id" = latest ]; then
+            run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          fi
+          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then
+            echo 'A successful discovery run ID is required.' >&2
+            exit 1
+          fi
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "Processing discovery run $run_id" >> "$GITHUB_STEP_SUMMARY"
+      - name: Download original discovery queue inside GitHub
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          repository: halfGuardian/motionx-studio-atlas
+          run-id: ${{ steps.resolve.outputs.run_id }}
+          name: studio-discovery
+          path: discovery-input
+      - name: Classify without approving or publishing
+        env:
+          DISCOVERY_RUN: ${{ steps.resolve.outputs.run_id }}
+        run: |
+          python tools/triage.py --queue discovery-input/queue.json --report discovery-input/report.json --discovery-run "$DISCOVERY_RUN" --output triage-output --inventory
+          cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
+          if [ -d discovery-input/history ]; then
+            cp -R discovery-input/history triage-output/history
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: studio-discovery-triage
+          path: triage-output/
+          retention-days: 90

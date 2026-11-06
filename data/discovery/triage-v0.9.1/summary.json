@@ -1,0 +1,134 @@
+{
+  "release": "v0.9.1",
+  "reviewed_on": "2026-11-06",
+  "timezone": "Pacific/Auckland",
+  "discovery_run": 42149794259,
+  "artifact_id": 13472231299,
+  "artifact_digest": "sha256:c3f498744edc26da7d0e627e2b1da1e87ac41b28c8b304e49d0c2ace2b66ecc3",
+  "triage_run": 42151392352,
+  "triage_job": 127675215700,
+  "triage_artifact": 13471249912,
+  "counts": {
+    "already_represented": 46,
+    "irrelevant": 24,
+    "potentially_new": 14,
+    "requires_research": 49
+  },
+  "source_coverage": [
+    {
+      "candidate_types": {
+        "navigation_or_service": 20,
+        "organisation_link": 7
+      },
+      "counts": {
+        "already_represented": 7,
+        "irrelevant": 20
+      },
+      "enabled": true,
+      "last_run_observations": 27,
+      "last_run_status": "ok",
+      "retained_candidates": 27,
+      "source_id": "cinesite-group"
+    },
+    {
+      "candidate_types": {
+        "branch_link": 19
+      },
+      "counts": {
+        "already_represented": 19
+      },
+      "enabled": true,
+      "last_run_observations": 19,
+      "last_run_status": "ok",
+      "retained_candidates": 19,
+      "source_id": "dneg-studios"
+    },
+    {
+      "candidate_types": {
+        "navigation_or_service": 1
+      },
+      "counts": {
+        "irrelevant": 1
+      },
+      "enabled": false,
+      "last_run_observations": 1,
+      "last_run_status": "ok",
+      "retained_candidates": 1,
+      "source_id": "ea-studios"
+    },
+    {
+      "candidate_types": {
+        "facility_index": 1
+      },
+      "counts": {
+        "requires_research": 1
+      },
+      "enabled": true,
+      "last_run_observations": 1,
+      "last_run_status": "ok",
+      "retained_candidates": 1,
+      "source_id": "imaginarium-sites"
+    },
+    {
+      "candidate_types": {
+        "navigation_or_service": 3
+      },
+      "counts": {
+        "irrelevant": 3
+      },
+      "enabled": true,
+      "last_run_observations": 3,
+      "last_run_status": "ok",
+      "retained_candidates": 3,
+      "source_id": "metricminds-services"
+    },
+    {
+      "candidate_types": {
+        "branch_link": 37,
+        "market_or_corporate_index": 4
+      },
+      "counts": {
+        "already_represented": 20,
+        "potentially_new": 14,
+        "requires_research": 7
+      },
+      "enabled": true,
+      "last_run_observations": 41,
+      "last_run_status": "ok",
+      "retained_candidates": 41,
+      "source_id": "ubisoft-studios"
+    },
+    {
+      "candidate_types": {
+        "backlog": 41
+      },
+      "counts": {
+        "requires_research": 41
+      },
+      "enabled": false,
+      "last_run_observations": 0,
+      "last_run_status": "backlog_or_not_attempted",
+      "retained_candidates": 41,
+      "source_id": "v08-review-backlog"
+    }
+  ],
+  "scope_counts": {
+    "location_matching": 38,
+    "organisation_only_matching": 8
+  },
+  "retained_backlog": 41,
+  "total_candidates": 133,
+  "new_observations": 92,
+  "published_records": 0,
+  "approved_claims": 0,
+  "artifact_access": "ZIP bytes unavailable in workspace; original queue/report downloaded and classified inside read-only GitHub Actions job; counts inspected through GitHub connector job logs.",
+  "tests": {
+    "python": 78,
+    "javascript": 20,
+    "http_browser": 15
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 147
+  }
+}
