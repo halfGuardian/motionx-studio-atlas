@@ -9,17 +9,25 @@
       "url": "https://www.ubisoft.com/en-us/company/careers/locations",
       "link_pattern": "^https://www\\.ubisoft\\.com/en-us/company/careers/locations/.+",
       "company_id": "ubisoft",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links"
     },
     {
       "id": "ea-studios",
-      "enabled": true,
+      "enabled": false,
       "kind": "official",
       "adapter": "links",
       "url": "https://www.ea.com/careers/teams/ea-studios",
       "link_pattern": "^https://www\\.ea\\.com/(ea-studios/|careers/locations)",
       "company_id": "electronic-arts",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "navigation_index",
+      "disabled_reason": "EA robots.txt reserves rights and explicitly prohibits web scraping/text-data mining without written authorisation. Manual evidence research only; no adapter expansion enabled.",
+      "access_review": {
+        "reviewed_on": "2026-11-06",
+        "url": "https://www.ea.com/robots.txt",
+        "decision": "automated_collection_disabled"
+      }
     },
     {
       "id": "cinesite-group",
@@ -29,7 +37,8 @@
       "url": "https://cinesite.com/our-studios/",
       "link_pattern": "^https://(?:www\\.)?(?:cinesite\\.com|latelieranimation\\.com|madassemblage\\.com|fx3x\\.com|image-engine\\.com|squeezestudio\\.com|trixter\\.de|imaginariumstudios\\.co\\.uk)(?:/|$)",
       "company_id": "cinesite-group",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "organisation_roster"
     },
     {
       "id": "dneg-studios",
@@ -39,7 +48,8 @@
       "url": "https://www.dneg.com/contact",
       "link_pattern": "^https://www\\.dneg\\.com/location/.+",
       "company_id": "dneg",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links"
     },
     {
       "id": "imaginarium-sites",
@@ -49,7 +59,8 @@
       "url": "https://www.imaginariumstudios.co.uk/locations",
       "link_pattern": "^https://www\\.imaginariumstudios\\.co\\.uk/(locations|services)(?:/|$)",
       "company_id": "imaginarium",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "facility_index"
     },
     {
       "id": "metricminds-services",
@@ -59,7 +70,8 @@
       "url": "https://metricminds.com/performance-capture/",
       "link_pattern": "^https://metricminds\\.com/(performance-capture|contact|animation|cinematics)(?:/|$)",
       "company_id": "metricminds",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "service_index"
     }
   ]
 }
