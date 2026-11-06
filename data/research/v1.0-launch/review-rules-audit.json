@@ -1,0 +1,18 @@
+{
+  "repository": "halfGuardian/motionx-studio-atlas",
+  "branch": "main",
+  "read_only": true,
+  "enforcement_claim": "Not asserted: inspect required reviews, enforcement state and bypass actors before publication.",
+  "endpoints": {
+    "classic_protection": {
+      "status": "unavailable",
+      "note": "API did not expose rules (for example permission, plan or no configured protection); human review enforcement is unconfirmed."
+    },
+    "effective_rules": {
+      "status": "read",
+      "rules": []
+    }
+  },
+  "audited_on": "2026-11-06",
+  "actions_run": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42276804227"
+}

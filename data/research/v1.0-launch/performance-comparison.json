@@ -1,0 +1,39 @@
+{
+  "synthetic_locations": 50000,
+  "same_fixture_bytes": 50516860,
+  "method": "Same 50,000-record JSON served by a local HTTP handler; real Leaflet and OSM; one cold page per version. Only data.js timing instrumentation is intercepted. Local headless Chromium, not a device/network lab. DOM/filter timings include rendering and input debounce.",
+  "versions": {
+    "v0.9.3": {
+      "initial_http_ready_seconds": 1.666,
+      "data_timings": {
+        "data_start": 382.70000000018626,
+        "validate_ms": 545.5,
+        "load_validate_ms": 981.1999999999534
+      },
+      "directory_dom_entries": 50,
+      "initial_markers": 50000,
+      "pan_ms": 257.4,
+      "search_ui_ms": 407.3,
+      "profile_ui_ms": 107.94,
+      "mobile_no_horizontal_overflow": true,
+      "multi_capability_filter": "not supported in baseline",
+      "status": "completed"
+    },
+    "v1.0": {
+      "initial_http_ready_seconds": 1.779,
+      "data_timings": {
+        "data_start": 311.0999999998603,
+        "validate_ms": 566.5999999998603,
+        "load_validate_ms": 1029
+      },
+      "directory_dom_entries": 50,
+      "initial_markers": 168,
+      "pan_ms": 80.1,
+      "search_ui_ms": 230.92,
+      "profile_ui_ms": 98.57,
+      "mobile_no_horizontal_overflow": true,
+      "multi_capability_filter": "supported; measured separately in release browser smoke",
+      "status": "completed"
+    }
+  }
+}

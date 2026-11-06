@@ -106,3 +106,16 @@ class LaunchTests(unittest.TestCase):
         for url in ['https://user:pass@example.org/','https://localhost/','https://127.0.0.1/','https://10.0.0.1/','https://service.internal/','https://example.org/?token=secret','https://example.org/\x00']:
             self.assertFalse(url_valid(url),url)
         self.assertTrue(url_valid('https://example.org/public-source'))
+    def test_cli_accepts_multiple_checkpoints_and_archives_each_exact_input(self):
+        q,_=observed();second=copy.deepcopy(q);c=copy.deepcopy(next(iter(second['candidates'].values())));c.update(id='additional-checkpoint-id',url='https://example.org/another');second['candidates'][c['id']]=c
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            for filename,value in [('config.json',{'version':1,'sources':[]}),('state.json',{'version':1,'sources':{},'candidates':{}}),('first.json',q),('second.json',second),('database.json',[])]:
+                (root/filename).write_text(json.dumps(value))
+            result=subprocess.run([sys.executable,str(ROOT/'tools/discovery.py'),'scan','--config',str(root/'config.json'),'--state',str(root/'state.json'),'--database',str(root/'database.json'),'--checkpoint',str(root/'first.json'),'--checkpoint',str(root/'second.json'),'--output',str(root/'output')],capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+            actual=read(root/'output/queue.json');self.assertEqual(actual['candidates'],second['candidates'])
+            self.assertEqual(len(list((root/'output/history').glob('*.json'))),2)
+    def test_malformed_company_id_is_a_validation_error_not_a_crash(self):
+        r=copy.deepcopy(read(P/'records.json')[0]);r['company_id']=[]
+        errors,_=validate([r]);self.assertTrue(errors)

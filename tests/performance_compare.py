@@ -10,6 +10,11 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
 class Quiet(SimpleHTTPRequestHandler):
+    fixture=b''
+    def do_GET(self):
+        if self.path.split('?')[0]=='/studios.json':
+            self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(self.fixture)));self.end_headers();self.wfile.write(self.fixture)
+        else:super().do_GET()
     def log_message(self,*_):pass
 
 def main():
@@ -19,13 +24,12 @@ def main():
         'categories':['VFX','Animation'] if i%2==0 else ['VFX'],'capabilities':['VFX','Animation'] if i%2==0 else ['VFX'],
         'capability_evidence':{cap:{'state':'confirmed','evidence':'https://example.test/fixture','verified_on':'2026-11-06'} for cap in (['VFX','Animation'] if i%2==0 else ['VFX'])},
         'location_type':'production_studio' if i%2==0 else 'capture_facility','lat':i%250*.64-80,'lng':i//250*1.75-175} for i in range(50000)]
-    body=json.dumps(rows);result={'synthetic_locations':50000,'same_fixture_bytes':len(body.encode()),'method':'Same 50,000-record response intercepted over local HTTP; real Leaflet and OSM; one cold page per version. Local headless Chromium, not a device/network lab. DOM/filter timings include rendering; route fulfillment overhead included in initial load.','versions':{}}
+    body=json.dumps(rows);Quiet.fixture=body.encode();result={'synthetic_locations':50000,'same_fixture_bytes':len(body.encode()),'method':'Same 50,000-record JSON served by a local HTTP handler; real Leaflet and OSM; one cold page per version. Only data.js timing instrumentation is intercepted. Local headless Chromium, not a device/network lab. DOM/filter timings include rendering and input debounce.','versions':{}}
     with sync_playwright() as p:
         browser=p.chromium.launch(executable_path=os.environ.get('CHROMIUM') or shutil.which('chromium'),headless=True,args=['--no-sandbox'])
         for version,directory in [('v0.9.3',args.baseline),('v1.0',ROOT)]:
             server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(directory)));threading.Thread(target=server.serve_forever,daemon=True).start()
             page=browser.new_page(viewport={'width':1440,'height':950});page.set_default_timeout(60000)
-            page.route('**/studios.json',lambda route:route.fulfill(content_type='application/json',body=body))
             measurements={};errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
             # Instrument the same loader path only with timers; source behavior remains unchanged.
             source=(directory/'data.js').read_text().replace('const controller = new AbortController();', 'globalThis.MotionXCompare={data_start:performance.now()};const controller = new AbortController();').replace('return validateDatabase(await response.json());','const parsed=await response.json();const t=performance.now();const result=validateDatabase(parsed);globalThis.MotionXCompare.validate_ms=performance.now()-t;globalThis.MotionXCompare.load_validate_ms=performance.now()-globalThis.MotionXCompare.data_start;return result;')

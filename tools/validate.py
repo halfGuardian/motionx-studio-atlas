@@ -110,8 +110,8 @@ def validate(rows):
             value = r['company_name']
             company = r.get('company_id')
             if not isinstance(value,str) or not value.strip():errors.append(f'{ref}: invalid company_name')
-            elif company_names.get(company,value)!=value:errors.append(f'{ref}: conflicting operating organisation name')
-            else:company_names[company]=value
+            elif isinstance(company,str) and company_names.get(company,value)!=value:errors.append(f'{ref}: conflicting operating organisation name')
+            elif isinstance(company,str):company_names[company]=value
         def error(message):
             errors.append(f'{ref}: {message}')
         for k in REQUIRED:
