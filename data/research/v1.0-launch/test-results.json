@@ -1,0 +1,52 @@
+{
+  "reviewed_on": "2026-11-06",
+  "python": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py' -q",
+    "passed": 131,
+    "failed": 0
+  },
+  "javascript": {
+    "command": "node tests/data.test.js",
+    "passed": 32,
+    "failed": 0
+  },
+  "browser": {
+    "command": "python tests/browser_smoke.py",
+    "passed": 19,
+    "failed": 0,
+    "http_subdirectory": true,
+    "live_leaflet_and_osm": true,
+    "synthetic_locations": 50000,
+    "mobile_width": 390,
+    "coincident_page_fixture": 65
+  },
+  "canonical_validation": {
+    "command": "python tools/validate.py studios.json",
+    "errors": 0,
+    "warnings": 265
+  },
+  "performance_comparison": {
+    "command": "python tests/performance_compare.py --baseline /tmp/motionx-v093 --output /tmp/comparison.json",
+    "both_versions_completed": true,
+    "synthetic_locations": 50000,
+    "fixture_bytes": 50516860,
+    "report": "performance-comparison.json"
+  },
+  "imports": {
+    "new_locations": 61,
+    "updated_locations": 3,
+    "repeat_added": 0,
+    "repeat_unchanged": 61,
+    "all_proposals_repeat_unchanged": 64,
+    "public_ids_preserved": 182
+  },
+  "implementation_actions": {
+    "commit": "82c8b334ecfa67b25887c51035cc01ffb4a79e94",
+    "validation_and_browser": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42276804240",
+    "research": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42276804227",
+    "triage": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42276804238",
+    "status": "all_success",
+    "note": "Implementation CI had 129 Python tests; final local totals include two additional regression tests. Final head CI is linked in the PR checks."
+  },
+  "approval": "pending human review of exact PR and manual merge; no merge or deployment performed"
+}

@@ -1,0 +1,3865 @@
+{
+  "publication_mode": "github_PR_human_review",
+  "baseline_hash": "f6e6a1d6388d5e06385f2e23f186e097d34f9e68ce962d5a851ab9cd246c1fc3",
+  "proposed_hash": "0c4cd40128a42adfccc8b3cae2bb3f5a73c151003902ec44d608c5632be7aaa6",
+  "additions": [
+    "virtuos-kuala-lumpur",
+    "virtuos-xian",
+    "virtuos-chengdu",
+    "virtuos-shanghai",
+    "virtuos-paris",
+    "virtuos-lyon",
+    "virtuos-montpellier",
+    "virtuos-prague",
+    "virtuos-warsaw",
+    "virtuos-montreal",
+    "glass-egg-dalat",
+    "glass-egg-ho-chi-minh-city",
+    "sparx-ho-chi-minh-city",
+    "beyond-fx-los-angeles",
+    "counterpunch-los-angeles",
+    "black-shamrock-dublin",
+    "third-kind-games-leamington",
+    "abstraction-valkenswaard",
+    "pipeworks-eugene",
+    "sumo-sheffield",
+    "sumo-nottingham",
+    "sumo-leamington",
+    "sumo-prague",
+    "sumo-pune",
+    "sumo-bengaluru",
+    "atomhawk-gateshead",
+    "atomhawk-leamington-spa",
+    "red-kite-games-leeds",
+    "lab42-leamington-spa",
+    "sperasoft-krakow",
+    "sperasoft-warsaw",
+    "sperasoft-abu-dhabi",
+    "sperasoft-belgrade",
+    "sperasoft-yerevan",
+    "gameloft-barcelona",
+    "gameloft-brisbane",
+    "gameloft-bucharest",
+    "gameloft-hanoi",
+    "gameloft-montreal",
+    "gameloft-paris",
+    "gameloft-saigon",
+    "gameloft-sofia",
+    "gameloft-yogyakarta",
+    "platige-warsaw-production",
+    "platige-warsaw-mocap",
+    "plastic-wax-rhodes",
+    "passion-republic-petaling-jaya",
+    "trident-los-angeles",
+    "studio-du-chateau-montreal",
+    "the-monk-bangkok",
+    "lemon-sky-shah-alam",
+    "hype-porto-alegre",
+    "lightfarm-rio",
+    "barajoun-dubai",
+    "luma-melbourne",
+    "luma-vancouver",
+    "resin-adelaide",
+    "sea-monster-cape-town",
+    "demente-guadalajara",
+    "portsmouth-eldon-mocap",
+    "uca-farnham-mocap"
+  ],
+  "updates": [
+    "beyond-vancouver",
+    "beyond-montreal",
+    "animatrik-burnaby"
+  ],
+  "preview": {
+    "new_records": [
+      "virtuos-kuala-lumpur",
+      "virtuos-xian",
+      "virtuos-chengdu",
+      "virtuos-shanghai",
+      "virtuos-paris",
+      "virtuos-lyon",
+      "virtuos-montpellier",
+      "virtuos-prague",
+      "virtuos-warsaw",
+      "virtuos-montreal",
+      "glass-egg-dalat",
+      "glass-egg-ho-chi-minh-city",
+      "sparx-ho-chi-minh-city",
+      "beyond-fx-los-angeles",
+      "counterpunch-los-angeles",
+      "black-shamrock-dublin",
+      "third-kind-games-leamington",
+      "abstraction-valkenswaard",
+      "pipeworks-eugene",
+      "sumo-sheffield",
+      "sumo-nottingham",
+      "sumo-leamington",
+      "sumo-prague",
+      "sumo-pune",
+      "sumo-bengaluru",
+      "atomhawk-gateshead",
+      "atomhawk-leamington-spa",
+      "red-kite-games-leeds",
+      "lab42-leamington-spa",
+      "sperasoft-krakow",
+      "sperasoft-warsaw",
+      "sperasoft-abu-dhabi",
+      "sperasoft-belgrade",
+      "sperasoft-yerevan",
+      "gameloft-barcelona",
+      "gameloft-brisbane",
+      "gameloft-bucharest",
+      "gameloft-hanoi",
+      "gameloft-montreal",
+      "gameloft-paris",
+      "gameloft-saigon",
+      "gameloft-sofia",
+      "gameloft-yogyakarta",
+      "platige-warsaw-production",
+      "platige-warsaw-mocap",
+      "plastic-wax-rhodes",
+      "passion-republic-petaling-jaya",
+      "trident-los-angeles",
+      "studio-du-chateau-montreal",
+      "the-monk-bangkok",
+      "lemon-sky-shah-alam",
+      "hype-porto-alegre",
+      "lightfarm-rio",
+      "barajoun-dubai",
+      "luma-melbourne",
+      "luma-vancouver",
+      "resin-adelaide",
+      "sea-monster-cape-town",
+      "demente-guadalajara",
+      "portsmouth-eldon-mocap",
+      "uca-farnham-mocap"
+    ],
+    "unchanged_records": [],
+    "potential_duplicates": [
+      {
+        "id": "sparx-ho-chi-minh-city",
+        "matches": [
+          {
+            "ids": [
+              "glass-egg-ho-chi-minh-city",
+              "sparx-ho-chi-minh-city"
+            ],
+            "reasons": [
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      },
+      {
+        "id": "counterpunch-los-angeles",
+        "matches": [
+          {
+            "ids": [
+              "beyond-fx-los-angeles",
+              "counterpunch-los-angeles"
+            ],
+            "reasons": [
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      },
+      {
+        "id": "atomhawk-leamington-spa",
+        "matches": [
+          {
+            "ids": [
+              "sumo-leamington",
+              "atomhawk-leamington-spa"
+            ],
+            "reasons": [
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      },
+      {
+        "id": "lab42-leamington-spa",
+        "matches": [
+          {
+            "ids": [
+              "sumo-leamington",
+              "lab42-leamington-spa"
+            ],
+            "reasons": [
+              "website/city"
+            ]
+          },
+          {
+            "ids": [
+              "atomhawk-leamington-spa",
+              "lab42-leamington-spa"
+            ],
+            "reasons": [
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      },
+      {
+        "id": "platige-warsaw-mocap",
+        "matches": [
+          {
+            "ids": [
+              "platige-warsaw-production",
+              "platige-warsaw-mocap"
+            ],
+            "reasons": [
+              "company/city",
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      }
+    ],
+    "rejected_records": [],
+    "validation_warnings": [
+      "beyond-vancouver: approximate coordinates (city); not a verified street address",
+      "beyond-montreal: approximate coordinates (city); not a verified street address",
+      "animatrik-burnaby: approximate coordinates (city); not a verified street address",
+      "centroid-uxbridge: approximate coordinates (city); not a verified street address",
+      "centroid-london: approximate coordinates (city); not a verified street address",
+      "centroid-london: legacy/unreviewed evidence; source presence is not independent verification",
+      "hom-hollywood: approximate coordinates (approximate); not a verified street address",
+      "hom-hollywood: legacy/unreviewed evidence; source presence is not independent verification",
+      "aut-auckland: approximate coordinates (approximate); not a verified street address",
+      "aut-auckland: legacy/unreviewed evidence; source presence is not independent verification",
+      "motion-arcade: approximate coordinates (city); not a verified street address",
+      "motion-arcade: legacy/unreviewed evidence; source presence is not independent verification",
+      "ubisoft-toronto: approximate coordinates (city); not a verified street address",
+      "ubisoft-toronto: legacy/unreviewed evidence; source presence is not independent verification",
+      "aura-osaka: approximate coordinates (city); not a verified street address",
+      "aura-osaka: legacy/unreviewed evidence; source presence is not independent verification",
+      "studio-anima: approximate coordinates (unverified); not a verified street address",
+      "studio-anima: legacy/unreviewed evidence; source presence is not independent verification",
+      "metropolia: approximate coordinates (city); not a verified street address",
+      "metropolia: legacy/unreviewed evidence; source presence is not independent verification",
+      "koawa: approximate coordinates (city); not a verified street address",
+      "koawa: legacy/unreviewed evidence; source presence is not independent verification",
+      "audiomotion: approximate coordinates (city); not a verified street address",
+      "versatile: approximate coordinates (city); not a verified street address",
+      "versatile: legacy/unreviewed evidence; source presence is not independent verification",
+      "lategra: approximate coordinates (unverified); not a verified street address",
+      "lategra: legacy/unreviewed evidence; source presence is not independent verification",
+      "mocaplab: approximate coordinates (city); not a verified street address",
+      "mocaplab: legacy/unreviewed evidence; source presence is not independent verification",
+      "rouge: approximate coordinates (city); not a verified street address",
+      "rouge: legacy/unreviewed evidence; source presence is not independent verification",
+      "weta-fx-wellington: approximate coordinates (city); not a verified street address",
+      "ilm-san-francisco: approximate coordinates (city); not a verified street address",
+      "ilm-vancouver: approximate coordinates (city); not a verified street address",
+      "ilm-london: approximate coordinates (city); not a verified street address",
+      "ilm-sydney: approximate coordinates (city); not a verified street address",
+      "ilm-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-london: approximate coordinates (city); not a verified street address",
+      "framestore-montreal: approximate coordinates (city); not a verified street address",
+      "framestore-chicago: approximate coordinates (city); not a verified street address",
+      "framestore-los-angeles: approximate coordinates (city); not a verified street address",
+      "framestore-new-york: approximate coordinates (city); not a verified street address",
+      "framestore-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-melbourne: approximate coordinates (city); not a verified street address",
+      "dneg-london: approximate coordinates (city); not a verified street address",
+      "dneg-vancouver: approximate coordinates (city); not a verified street address",
+      "dneg-mumbai: approximate coordinates (city); not a verified street address",
+      "dneg-los-angeles: approximate coordinates (city); not a verified street address",
+      "dneg-chennai: approximate coordinates (city); not a verified street address",
+      "dneg-montreal: approximate coordinates (city); not a verified street address",
+      "dneg-mohali: approximate coordinates (city); not a verified street address",
+      "dneg-bengaluru: approximate coordinates (city); not a verified street address",
+      "dneg-toronto: approximate coordinates (city); not a verified street address",
+      "dneg-sydney: approximate coordinates (city); not a verified street address",
+      "dneg-barcelona: approximate coordinates (city); not a verified street address",
+      "dneg-budapest: approximate coordinates (city); not a verified street address",
+      "dneg-sofia: approximate coordinates (city); not a verified street address",
+      "dneg-pune: approximate coordinates (city); not a verified street address",
+      "dneg-kolkata: approximate coordinates (city); not a verified street address",
+      "dneg-trivandrum: approximate coordinates (city); not a verified street address",
+      "dneg-hyderabad: approximate coordinates (city); not a verified street address",
+      "dneg-patna: approximate coordinates (city); not a verified street address",
+      "dneg-goa: approximate coordinates (city); not a verified street address",
+      "cinesite-london: approximate coordinates (city); not a verified street address",
+      "cinesite-montreal: approximate coordinates (city); not a verified street address",
+      "cinesite-vancouver: approximate coordinates (city); not a verified street address",
+      "latelier-animation-montreal: approximate coordinates (city); not a verified street address",
+      "assemblage-mumbai: approximate coordinates (city); not a verified street address",
+      "assemblage-bengaluru: approximate coordinates (city); not a verified street address",
+      "fx3x-skopje: approximate coordinates (city); not a verified street address",
+      "fx3x-belgrade: approximate coordinates (city); not a verified street address",
+      "image-engine-vancouver: approximate coordinates (city); not a verified street address",
+      "squeeze-montreal: approximate coordinates (city); not a verified street address",
+      "squeeze-quebec: approximate coordinates (city); not a verified street address",
+      "trixter-munich: approximate coordinates (city); not a verified street address",
+      "trixter-berlin: approximate coordinates (city); not a verified street address",
+      "imaginarium-pinewood: approximate coordinates (city); not a verified street address",
+      "imaginarium-side-london: approximate coordinates (city); not a verified street address",
+      "the-mill-paris: approximate coordinates (city); not a verified street address",
+      "the-mill-london: approximate coordinates (city); not a verified street address",
+      "the-mill-liege: approximate coordinates (city); not a verified street address",
+      "the-mill-bengaluru: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-vancouver: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-montreal: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-vancouver: approximate coordinates (city); not a verified street address",
+      "digital-domain-montreal: approximate coordinates (city); not a verified street address",
+      "digital-domain-hyderabad: approximate coordinates (city); not a verified street address",
+      "digital-domain-shanghai: approximate coordinates (city); not a verified street address",
+      "eyeline-los-angeles: approximate coordinates (city); not a verified street address",
+      "eyeline-vancouver: approximate coordinates (city); not a verified street address",
+      "eyeline-seoul: approximate coordinates (city); not a verified street address",
+      "eyeline-london: approximate coordinates (city); not a verified street address",
+      "eyeline-hyderabad: approximate coordinates (city); not a verified street address",
+      "weta-fx-vancouver: approximate coordinates (city); not a verified street address",
+      "weta-fx-melbourne: approximate coordinates (city); not a verified street address",
+      "criterion-games-guildford: approximate coordinates (city); not a verified street address",
+      "dice-stockholm: approximate coordinates (city); not a verified street address",
+      "motive-montreal: approximate coordinates (city); not a verified street address",
+      "respawn-los-angeles: approximate coordinates (city); not a verified street address",
+      "respawn-madison: approximate coordinates (city); not a verified street address",
+      "ripple-effect-marina-del-rey: approximate coordinates (city); not a verified street address",
+      "ea-sports-orlando: approximate coordinates (city); not a verified street address",
+      "metalhead-victoria: approximate coordinates (city); not a verified street address",
+      "codemasters-southam: approximate coordinates (city); not a verified street address",
+      "codemasters-birmingham: approximate coordinates (city); not a verified street address",
+      "codemasters-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "ea-sports-bucharest: approximate coordinates (city); not a verified street address",
+      "ea-korea-seoul: approximate coordinates (city); not a verified street address",
+      "ea-sports-fc-mobile-shanghai: approximate coordinates (city); not a verified street address",
+      "ea-sports-madrid: approximate coordinates (city); not a verified street address",
+      "ea-sports-burnaby: approximate coordinates (city); not a verified street address",
+      "blackhouse-sao-paulo: approximate coordinates (city); not a verified street address",
+      "xr-africa-cape-town: approximate coordinates (city); not a verified street address",
+      "ubisoft-montreal: approximate coordinates (city); not a verified street address",
+      "ubisoft-quebec-city: approximate coordinates (city); not a verified street address",
+      "ubisoft-saguenay: approximate coordinates (city); not a verified street address",
+      "ubisoft-sherbrooke: approximate coordinates (city); not a verified street address",
+      "ubisoft-sofia: approximate coordinates (city); not a verified street address",
+      "ubisoft-singapore: approximate coordinates (city); not a verified street address",
+      "ubisoft-redlynx: approximate coordinates (city); not a verified street address",
+      "ubisoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "ubisoft-da-nang: approximate coordinates (city); not a verified street address",
+      "ubisoft-chengdu: approximate coordinates (city); not a verified street address",
+      "ubisoft-shanghai: approximate coordinates (city); not a verified street address",
+      "ubisoft-berlin: approximate coordinates (city); not a verified street address",
+      "ubisoft-dusseldorf: approximate coordinates (city); not a verified street address",
+      "ubisoft-mainz: approximate coordinates (city); not a verified street address",
+      "ubisoft-bucharest: approximate coordinates (city); not a verified street address",
+      "ubisoft-craiova: approximate coordinates (city); not a verified street address",
+      "ubisoft-kyiv: approximate coordinates (city); not a verified street address",
+      "ubisoft-odesa: approximate coordinates (city); not a verified street address",
+      "ubisoft-bordeaux: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-warsaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-krakow: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-wroclaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-vancouver: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-boston: approximate coordinates (city); not a verified street address",
+      "remedy-espoo: approximate coordinates (city); not a verified street address",
+      "remedy-stockholm: approximate coordinates (city); not a verified street address",
+      "metricminds-frankfurt: approximate coordinates (city); not a verified street address",
+      "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+      "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+      "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+      "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+      "massive-malmo: approximate coordinates (city); not a verified street address",
+      "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+      "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+      "larian-gent: approximate coordinates (city); not a verified street address",
+      "larian-barcelona: approximate coordinates (city); not a verified street address",
+      "larian-dublin: approximate coordinates (city); not a verified street address",
+      "larian-guildford: approximate coordinates (city); not a verified street address",
+      "larian-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "larian-quebec: approximate coordinates (city); not a verified street address",
+      "larian-warsaw: approximate coordinates (city); not a verified street address",
+      "rise-fx-berlin: approximate coordinates (city); not a verified street address",
+      "rise-fx-cologne: approximate coordinates (city); not a verified street address",
+      "rise-fx-london: approximate coordinates (city); not a verified street address",
+      "rise-fx-munich: approximate coordinates (city); not a verified street address",
+      "rise-fx-stuttgart: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-bournemouth: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-london: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-montreal: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-mumbai: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-stuttgart: approximate coordinates (city); not a verified street address",
+      "flying-bark-sydney: approximate coordinates (city); not a verified street address",
+      "flying-bark-burbank: approximate coordinates (city); not a verified street address",
+      "flying-bark-madrid: approximate coordinates (city); not a verified street address",
+      "triggerfish-cape-town: approximate coordinates (city); not a verified street address",
+      "triggerfish-galway: approximate coordinates (city); not a verified street address",
+      "folks-montreal: approximate coordinates (city); not a verified street address",
+      "folks-toronto: approximate coordinates (city); not a verified street address",
+      "folks-bogota: approximate coordinates (city); not a verified street address",
+      "folks-saguenay: approximate coordinates (city); not a verified street address",
+      "folks-mumbai: approximate coordinates (city); not a verified street address",
+      "folks-burbank: approximate coordinates (city); not a verified street address",
+      "folks-new-york: approximate coordinates (city); not a verified street address",
+      "folks-atlanta: approximate coordinates (city); not a verified street address",
+      "folks-vancouver: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-johannesburg: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-cape-town: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-adelaide: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-brisbane: approximate coordinates (city); not a verified street address",
+      "el-ranchito-madrid: approximate coordinates (city); not a verified street address",
+      "el-ranchito-barcelona: approximate coordinates (city); not a verified street address",
+      "annapurna-am-mocap-hyderabad: approximate coordinates (city); not a verified street address",
+      "annapurna-anr-vp-hyderabad: approximate coordinates (city); not a verified street address",
+      "ubisoft-reflections-newcastle: approximate coordinates (city); not a verified street address",
+      "massive-stockholm: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+      "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)",
+      "possible duplicate: ['annapurna-am-mocap-hyderabad', 'annapurna-anr-vp-hyderabad'] (company/city, website/city)",
+      "virtuos-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "virtuos-xian: approximate coordinates (city); not a verified street address",
+      "virtuos-chengdu: approximate coordinates (city); not a verified street address",
+      "virtuos-shanghai: approximate coordinates (city); not a verified street address",
+      "virtuos-paris: approximate coordinates (city); not a verified street address",
+      "virtuos-lyon: approximate coordinates (city); not a verified street address",
+      "virtuos-montpellier: approximate coordinates (city); not a verified street address",
+      "virtuos-prague: approximate coordinates (city); not a verified street address",
+      "virtuos-warsaw: approximate coordinates (city); not a verified street address",
+      "virtuos-montreal: approximate coordinates (city); not a verified street address",
+      "glass-egg-dalat: approximate coordinates (city); not a verified street address",
+      "glass-egg-ho-chi-minh-city: approximate coordinates (city); not a verified street address",
+      "sparx-ho-chi-minh-city: approximate coordinates (city); not a verified street address",
+      "beyond-fx-los-angeles: approximate coordinates (city); not a verified street address",
+      "counterpunch-los-angeles: approximate coordinates (city); not a verified street address",
+      "black-shamrock-dublin: approximate coordinates (city); not a verified street address",
+      "third-kind-games-leamington: approximate coordinates (city); not a verified street address",
+      "abstraction-valkenswaard: approximate coordinates (city); not a verified street address",
+      "pipeworks-eugene: approximate coordinates (city); not a verified street address",
+      "sumo-sheffield: approximate coordinates (city); not a verified street address",
+      "sumo-nottingham: approximate coordinates (city); not a verified street address",
+      "sumo-leamington: approximate coordinates (city); not a verified street address",
+      "sumo-prague: approximate coordinates (city); not a verified street address",
+      "sumo-pune: approximate coordinates (city); not a verified street address",
+      "sumo-bengaluru: approximate coordinates (city); not a verified street address",
+      "atomhawk-gateshead: approximate coordinates (city); not a verified street address",
+      "atomhawk-leamington-spa: approximate coordinates (city); not a verified street address",
+      "red-kite-games-leeds: approximate coordinates (city); not a verified street address",
+      "lab42-leamington-spa: approximate coordinates (city); not a verified street address",
+      "sperasoft-krakow: approximate coordinates (city); not a verified street address",
+      "sperasoft-warsaw: approximate coordinates (city); not a verified street address",
+      "sperasoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "sperasoft-belgrade: approximate coordinates (city); not a verified street address",
+      "sperasoft-yerevan: approximate coordinates (city); not a verified street address",
+      "gameloft-barcelona: approximate coordinates (city); not a verified street address",
+      "gameloft-brisbane: approximate coordinates (city); not a verified street address",
+      "gameloft-bucharest: approximate coordinates (city); not a verified street address",
+      "gameloft-hanoi: approximate coordinates (city); not a verified street address",
+      "gameloft-montreal: approximate coordinates (city); not a verified street address",
+      "gameloft-paris: approximate coordinates (city); not a verified street address",
+      "gameloft-saigon: approximate coordinates (city); not a verified street address",
+      "gameloft-sofia: approximate coordinates (city); not a verified street address",
+      "gameloft-yogyakarta: approximate coordinates (city); not a verified street address",
+      "platige-warsaw-production: approximate coordinates (city); not a verified street address",
+      "platige-warsaw-mocap: approximate coordinates (city); not a verified street address",
+      "plastic-wax-rhodes: approximate coordinates (city); not a verified street address",
+      "passion-republic-petaling-jaya: approximate coordinates (city); not a verified street address",
+      "trident-los-angeles: approximate coordinates (city); not a verified street address",
+      "studio-du-chateau-montreal: approximate coordinates (city); not a verified street address",
+      "the-monk-bangkok: approximate coordinates (city); not a verified street address",
+      "lemon-sky-shah-alam: approximate coordinates (city); not a verified street address",
+      "hype-porto-alegre: approximate coordinates (city); not a verified street address",
+      "lightfarm-rio: approximate coordinates (city); not a verified street address",
+      "barajoun-dubai: approximate coordinates (city); not a verified street address",
+      "luma-melbourne: approximate coordinates (city); not a verified street address",
+      "luma-vancouver: approximate coordinates (city); not a verified street address",
+      "resin-adelaide: approximate coordinates (city); not a verified street address",
+      "sea-monster-cape-town: approximate coordinates (city); not a verified street address",
+      "demente-guadalajara: approximate coordinates (city); not a verified street address",
+      "portsmouth-eldon-mocap: approximate coordinates (city); not a verified street address",
+      "uca-farnham-mocap: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['glass-egg-ho-chi-minh-city', 'sparx-ho-chi-minh-city'] (website/city)",
+      "possible duplicate: ['beyond-fx-los-angeles', 'counterpunch-los-angeles'] (website/city)",
+      "possible duplicate: ['sumo-leamington', 'atomhawk-leamington-spa'] (website/city)",
+      "possible duplicate: ['sumo-leamington', 'lab42-leamington-spa'] (website/city)",
+      "possible duplicate: ['atomhawk-leamington-spa', 'lab42-leamington-spa'] (website/city)",
+      "possible duplicate: ['platige-warsaw-production', 'platige-warsaw-mocap'] (company/city, website/city)"
+    ],
+    "database_errors": [],
+    "written": false
+  },
+  "repeat": {
+    "new_records": [],
+    "unchanged_records": [
+      "virtuos-kuala-lumpur",
+      "virtuos-xian",
+      "virtuos-chengdu",
+      "virtuos-shanghai",
+      "virtuos-paris",
+      "virtuos-lyon",
+      "virtuos-montpellier",
+      "virtuos-prague",
+      "virtuos-warsaw",
+      "virtuos-montreal",
+      "glass-egg-dalat",
+      "glass-egg-ho-chi-minh-city",
+      "sparx-ho-chi-minh-city",
+      "beyond-fx-los-angeles",
+      "counterpunch-los-angeles",
+      "black-shamrock-dublin",
+      "third-kind-games-leamington",
+      "abstraction-valkenswaard",
+      "pipeworks-eugene",
+      "sumo-sheffield",
+      "sumo-nottingham",
+      "sumo-leamington",
+      "sumo-prague",
+      "sumo-pune",
+      "sumo-bengaluru",
+      "atomhawk-gateshead",
+      "atomhawk-leamington-spa",
+      "red-kite-games-leeds",
+      "lab42-leamington-spa",
+      "sperasoft-krakow",
+      "sperasoft-warsaw",
+      "sperasoft-abu-dhabi",
+      "sperasoft-belgrade",
+      "sperasoft-yerevan",
+      "gameloft-barcelona",
+      "gameloft-brisbane",
+      "gameloft-bucharest",
+      "gameloft-hanoi",
+      "gameloft-montreal",
+      "gameloft-paris",
+      "gameloft-saigon",
+      "gameloft-sofia",
+      "gameloft-yogyakarta",
+      "platige-warsaw-production",
+      "platige-warsaw-mocap",
+      "plastic-wax-rhodes",
+      "passion-republic-petaling-jaya",
+      "trident-los-angeles",
+      "studio-du-chateau-montreal",
+      "the-monk-bangkok",
+      "lemon-sky-shah-alam",
+      "hype-porto-alegre",
+      "lightfarm-rio",
+      "barajoun-dubai",
+      "luma-melbourne",
+      "luma-vancouver",
+      "resin-adelaide",
+      "sea-monster-cape-town",
+      "demente-guadalajara",
+      "portsmouth-eldon-mocap",
+      "uca-farnham-mocap"
+    ],
+    "potential_duplicates": [],
+    "rejected_records": [],
+    "validation_warnings": [
+      "beyond-vancouver: approximate coordinates (city); not a verified street address",
+      "beyond-montreal: approximate coordinates (city); not a verified street address",
+      "animatrik-burnaby: approximate coordinates (city); not a verified street address",
+      "centroid-uxbridge: approximate coordinates (city); not a verified street address",
+      "centroid-london: approximate coordinates (city); not a verified street address",
+      "centroid-london: legacy/unreviewed evidence; source presence is not independent verification",
+      "hom-hollywood: approximate coordinates (approximate); not a verified street address",
+      "hom-hollywood: legacy/unreviewed evidence; source presence is not independent verification",
+      "aut-auckland: approximate coordinates (approximate); not a verified street address",
+      "aut-auckland: legacy/unreviewed evidence; source presence is not independent verification",
+      "motion-arcade: approximate coordinates (city); not a verified street address",
+      "motion-arcade: legacy/unreviewed evidence; source presence is not independent verification",
+      "ubisoft-toronto: approximate coordinates (city); not a verified street address",
+      "ubisoft-toronto: legacy/unreviewed evidence; source presence is not independent verification",
+      "aura-osaka: approximate coordinates (city); not a verified street address",
+      "aura-osaka: legacy/unreviewed evidence; source presence is not independent verification",
+      "studio-anima: approximate coordinates (unverified); not a verified street address",
+      "studio-anima: legacy/unreviewed evidence; source presence is not independent verification",
+      "metropolia: approximate coordinates (city); not a verified street address",
+      "metropolia: legacy/unreviewed evidence; source presence is not independent verification",
+      "koawa: approximate coordinates (city); not a verified street address",
+      "koawa: legacy/unreviewed evidence; source presence is not independent verification",
+      "audiomotion: approximate coordinates (city); not a verified street address",
+      "versatile: approximate coordinates (city); not a verified street address",
+      "versatile: legacy/unreviewed evidence; source presence is not independent verification",
+      "lategra: approximate coordinates (unverified); not a verified street address",
+      "lategra: legacy/unreviewed evidence; source presence is not independent verification",
+      "mocaplab: approximate coordinates (city); not a verified street address",
+      "mocaplab: legacy/unreviewed evidence; source presence is not independent verification",
+      "rouge: approximate coordinates (city); not a verified street address",
+      "rouge: legacy/unreviewed evidence; source presence is not independent verification",
+      "weta-fx-wellington: approximate coordinates (city); not a verified street address",
+      "ilm-san-francisco: approximate coordinates (city); not a verified street address",
+      "ilm-vancouver: approximate coordinates (city); not a verified street address",
+      "ilm-london: approximate coordinates (city); not a verified street address",
+      "ilm-sydney: approximate coordinates (city); not a verified street address",
+      "ilm-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-london: approximate coordinates (city); not a verified street address",
+      "framestore-montreal: approximate coordinates (city); not a verified street address",
+      "framestore-chicago: approximate coordinates (city); not a verified street address",
+      "framestore-los-angeles: approximate coordinates (city); not a verified street address",
+      "framestore-new-york: approximate coordinates (city); not a verified street address",
+      "framestore-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-melbourne: approximate coordinates (city); not a verified street address",
+      "dneg-london: approximate coordinates (city); not a verified street address",
+      "dneg-vancouver: approximate coordinates (city); not a verified street address",
+      "dneg-mumbai: approximate coordinates (city); not a verified street address",
+      "dneg-los-angeles: approximate coordinates (city); not a verified street address",
+      "dneg-chennai: approximate coordinates (city); not a verified street address",
+      "dneg-montreal: approximate coordinates (city); not a verified street address",
+      "dneg-mohali: approximate coordinates (city); not a verified street address",
+      "dneg-bengaluru: approximate coordinates (city); not a verified street address",
+      "dneg-toronto: approximate coordinates (city); not a verified street address",
+      "dneg-sydney: approximate coordinates (city); not a verified street address",
+      "dneg-barcelona: approximate coordinates (city); not a verified street address",
+      "dneg-budapest: approximate coordinates (city); not a verified street address",
+      "dneg-sofia: approximate coordinates (city); not a verified street address",
+      "dneg-pune: approximate coordinates (city); not a verified street address",
+      "dneg-kolkata: approximate coordinates (city); not a verified street address",
+      "dneg-trivandrum: approximate coordinates (city); not a verified street address",
+      "dneg-hyderabad: approximate coordinates (city); not a verified street address",
+      "dneg-patna: approximate coordinates (city); not a verified street address",
+      "dneg-goa: approximate coordinates (city); not a verified street address",
+      "cinesite-london: approximate coordinates (city); not a verified street address",
+      "cinesite-montreal: approximate coordinates (city); not a verified street address",
+      "cinesite-vancouver: approximate coordinates (city); not a verified street address",
+      "latelier-animation-montreal: approximate coordinates (city); not a verified street address",
+      "assemblage-mumbai: approximate coordinates (city); not a verified street address",
+      "assemblage-bengaluru: approximate coordinates (city); not a verified street address",
+      "fx3x-skopje: approximate coordinates (city); not a verified street address",
+      "fx3x-belgrade: approximate coordinates (city); not a verified street address",
+      "image-engine-vancouver: approximate coordinates (city); not a verified street address",
+      "squeeze-montreal: approximate coordinates (city); not a verified street address",
+      "squeeze-quebec: approximate coordinates (city); not a verified street address",
+      "trixter-munich: approximate coordinates (city); not a verified street address",
+      "trixter-berlin: approximate coordinates (city); not a verified street address",
+      "imaginarium-pinewood: approximate coordinates (city); not a verified street address",
+      "imaginarium-side-london: approximate coordinates (city); not a verified street address",
+      "the-mill-paris: approximate coordinates (city); not a verified street address",
+      "the-mill-london: approximate coordinates (city); not a verified street address",
+      "the-mill-liege: approximate coordinates (city); not a verified street address",
+      "the-mill-bengaluru: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-vancouver: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-montreal: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-vancouver: approximate coordinates (city); not a verified street address",
+      "digital-domain-montreal: approximate coordinates (city); not a verified street address",
+      "digital-domain-hyderabad: approximate coordinates (city); not a verified street address",
+      "digital-domain-shanghai: approximate coordinates (city); not a verified street address",
+      "eyeline-los-angeles: approximate coordinates (city); not a verified street address",
+      "eyeline-vancouver: approximate coordinates (city); not a verified street address",
+      "eyeline-seoul: approximate coordinates (city); not a verified street address",
+      "eyeline-london: approximate coordinates (city); not a verified street address",
+      "eyeline-hyderabad: approximate coordinates (city); not a verified street address",
+      "weta-fx-vancouver: approximate coordinates (city); not a verified street address",
+      "weta-fx-melbourne: approximate coordinates (city); not a verified street address",
+      "criterion-games-guildford: approximate coordinates (city); not a verified street address",
+      "dice-stockholm: approximate coordinates (city); not a verified street address",
+      "motive-montreal: approximate coordinates (city); not a verified street address",
+      "respawn-los-angeles: approximate coordinates (city); not a verified street address",
+      "respawn-madison: approximate coordinates (city); not a verified street address",
+      "ripple-effect-marina-del-rey: approximate coordinates (city); not a verified street address",
+      "ea-sports-orlando: approximate coordinates (city); not a verified street address",
+      "metalhead-victoria: approximate coordinates (city); not a verified street address",
+      "codemasters-southam: approximate coordinates (city); not a verified street address",
+      "codemasters-birmingham: approximate coordinates (city); not a verified street address",
+      "codemasters-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "ea-sports-bucharest: approximate coordinates (city); not a verified street address",
+      "ea-korea-seoul: approximate coordinates (city); not a verified street address",
+      "ea-sports-fc-mobile-shanghai: approximate coordinates (city); not a verified street address",
+      "ea-sports-madrid: approximate coordinates (city); not a verified street address",
+      "ea-sports-burnaby: approximate coordinates (city); not a verified street address",
+      "blackhouse-sao-paulo: approximate coordinates (city); not a verified street address",
+      "xr-africa-cape-town: approximate coordinates (city); not a verified street address",
+      "ubisoft-montreal: approximate coordinates (city); not a verified street address",
+      "ubisoft-quebec-city: approximate coordinates (city); not a verified street address",
+      "ubisoft-saguenay: approximate coordinates (city); not a verified street address",
+      "ubisoft-sherbrooke: approximate coordinates (city); not a verified street address",
+      "ubisoft-sofia: approximate coordinates (city); not a verified street address",
+      "ubisoft-singapore: approximate coordinates (city); not a verified street address",
+      "ubisoft-redlynx: approximate coordinates (city); not a verified street address",
+      "ubisoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "ubisoft-da-nang: approximate coordinates (city); not a verified street address",
+      "ubisoft-chengdu: approximate coordinates (city); not a verified street address",
+      "ubisoft-shanghai: approximate coordinates (city); not a verified street address",
+      "ubisoft-berlin: approximate coordinates (city); not a verified street address",
+      "ubisoft-dusseldorf: approximate coordinates (city); not a verified street address",
+      "ubisoft-mainz: approximate coordinates (city); not a verified street address",
+      "ubisoft-bucharest: approximate coordinates (city); not a verified street address",
+      "ubisoft-craiova: approximate coordinates (city); not a verified street address",
+      "ubisoft-kyiv: approximate coordinates (city); not a verified street address",
+      "ubisoft-odesa: approximate coordinates (city); not a verified street address",
+      "ubisoft-bordeaux: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-warsaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-krakow: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-wroclaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-vancouver: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-boston: approximate coordinates (city); not a verified street address",
+      "remedy-espoo: approximate coordinates (city); not a verified street address",
+      "remedy-stockholm: approximate coordinates (city); not a verified street address",
+      "metricminds-frankfurt: approximate coordinates (city); not a verified street address",
+      "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+      "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+      "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+      "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+      "massive-malmo: approximate coordinates (city); not a verified street address",
+      "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+      "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+      "larian-gent: approximate coordinates (city); not a verified street address",
+      "larian-barcelona: approximate coordinates (city); not a verified street address",
+      "larian-dublin: approximate coordinates (city); not a verified street address",
+      "larian-guildford: approximate coordinates (city); not a verified street address",
+      "larian-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "larian-quebec: approximate coordinates (city); not a verified street address",
+      "larian-warsaw: approximate coordinates (city); not a verified street address",
+      "rise-fx-berlin: approximate coordinates (city); not a verified street address",
+      "rise-fx-cologne: approximate coordinates (city); not a verified street address",
+      "rise-fx-london: approximate coordinates (city); not a verified street address",
+      "rise-fx-munich: approximate coordinates (city); not a verified street address",
+      "rise-fx-stuttgart: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-bournemouth: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-london: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-montreal: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-mumbai: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-stuttgart: approximate coordinates (city); not a verified street address",
+      "flying-bark-sydney: approximate coordinates (city); not a verified street address",
+      "flying-bark-burbank: approximate coordinates (city); not a verified street address",
+      "flying-bark-madrid: approximate coordinates (city); not a verified street address",
+      "triggerfish-cape-town: approximate coordinates (city); not a verified street address",
+      "triggerfish-galway: approximate coordinates (city); not a verified street address",
+      "folks-montreal: approximate coordinates (city); not a verified street address",
+      "folks-toronto: approximate coordinates (city); not a verified street address",
+      "folks-bogota: approximate coordinates (city); not a verified street address",
+      "folks-saguenay: approximate coordinates (city); not a verified street address",
+      "folks-mumbai: approximate coordinates (city); not a verified street address",
+      "folks-burbank: approximate coordinates (city); not a verified street address",
+      "folks-new-york: approximate coordinates (city); not a verified street address",
+      "folks-atlanta: approximate coordinates (city); not a verified street address",
+      "folks-vancouver: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-johannesburg: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-cape-town: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-adelaide: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-brisbane: approximate coordinates (city); not a verified street address",
+      "el-ranchito-madrid: approximate coordinates (city); not a verified street address",
+      "el-ranchito-barcelona: approximate coordinates (city); not a verified street address",
+      "annapurna-am-mocap-hyderabad: approximate coordinates (city); not a verified street address",
+      "annapurna-anr-vp-hyderabad: approximate coordinates (city); not a verified street address",
+      "ubisoft-reflections-newcastle: approximate coordinates (city); not a verified street address",
+      "massive-stockholm: approximate coordinates (city); not a verified street address",
+      "virtuos-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "virtuos-xian: approximate coordinates (city); not a verified street address",
+      "virtuos-chengdu: approximate coordinates (city); not a verified street address",
+      "virtuos-shanghai: approximate coordinates (city); not a verified street address",
+      "virtuos-paris: approximate coordinates (city); not a verified street address",
+      "virtuos-lyon: approximate coordinates (city); not a verified street address",
+      "virtuos-montpellier: approximate coordinates (city); not a verified street address",
+      "virtuos-prague: approximate coordinates (city); not a verified street address",
+      "virtuos-warsaw: approximate coordinates (city); not a verified street address",
+      "virtuos-montreal: approximate coordinates (city); not a verified street address",
+      "glass-egg-dalat: approximate coordinates (city); not a verified street address",
+      "glass-egg-ho-chi-minh-city: approximate coordinates (city); not a verified street address",
+      "sparx-ho-chi-minh-city: approximate coordinates (city); not a verified street address",
+      "beyond-fx-los-angeles: approximate coordinates (city); not a verified street address",
+      "counterpunch-los-angeles: approximate coordinates (city); not a verified street address",
+      "black-shamrock-dublin: approximate coordinates (city); not a verified street address",
+      "third-kind-games-leamington: approximate coordinates (city); not a verified street address",
+      "abstraction-valkenswaard: approximate coordinates (city); not a verified street address",
+      "pipeworks-eugene: approximate coordinates (city); not a verified street address",
+      "sumo-sheffield: approximate coordinates (city); not a verified street address",
+      "sumo-nottingham: approximate coordinates (city); not a verified street address",
+      "sumo-leamington: approximate coordinates (city); not a verified street address",
+      "sumo-prague: approximate coordinates (city); not a verified street address",
+      "sumo-pune: approximate coordinates (city); not a verified street address",
+      "sumo-bengaluru: approximate coordinates (city); not a verified street address",
+      "atomhawk-gateshead: approximate coordinates (city); not a verified street address",
+      "atomhawk-leamington-spa: approximate coordinates (city); not a verified street address",
+      "red-kite-games-leeds: approximate coordinates (city); not a verified street address",
+      "lab42-leamington-spa: approximate coordinates (city); not a verified street address",
+      "sperasoft-krakow: approximate coordinates (city); not a verified street address",
+      "sperasoft-warsaw: approximate coordinates (city); not a verified street address",
+      "sperasoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "sperasoft-belgrade: approximate coordinates (city); not a verified street address",
+      "sperasoft-yerevan: approximate coordinates (city); not a verified street address",
+      "gameloft-barcelona: approximate coordinates (city); not a verified street address",
+      "gameloft-brisbane: approximate coordinates (city); not a verified street address",
+      "gameloft-bucharest: approximate coordinates (city); not a verified street address",
+      "gameloft-hanoi: approximate coordinates (city); not a verified street address",
+      "gameloft-montreal: approximate coordinates (city); not a verified street address",
+      "gameloft-paris: approximate coordinates (city); not a verified street address",
+      "gameloft-saigon: approximate coordinates (city); not a verified street address",
+      "gameloft-sofia: approximate coordinates (city); not a verified street address",
+      "gameloft-yogyakarta: approximate coordinates (city); not a verified street address",
+      "platige-warsaw-production: approximate coordinates (city); not a verified street address",
+      "platige-warsaw-mocap: approximate coordinates (city); not a verified street address",
+      "plastic-wax-rhodes: approximate coordinates (city); not a verified street address",
+      "passion-republic-petaling-jaya: approximate coordinates (city); not a verified street address",
+      "trident-los-angeles: approximate coordinates (city); not a verified street address",
+      "studio-du-chateau-montreal: approximate coordinates (city); not a verified street address",
+      "the-monk-bangkok: approximate coordinates (city); not a verified street address",
+      "lemon-sky-shah-alam: approximate coordinates (city); not a verified street address",
+      "hype-porto-alegre: approximate coordinates (city); not a verified street address",
+      "lightfarm-rio: approximate coordinates (city); not a verified street address",
+      "barajoun-dubai: approximate coordinates (city); not a verified street address",
+      "luma-melbourne: approximate coordinates (city); not a verified street address",
+      "luma-vancouver: approximate coordinates (city); not a verified street address",
+      "resin-adelaide: approximate coordinates (city); not a verified street address",
+      "sea-monster-cape-town: approximate coordinates (city); not a verified street address",
+      "demente-guadalajara: approximate coordinates (city); not a verified street address",
+      "portsmouth-eldon-mocap: approximate coordinates (city); not a verified street address",
+      "uca-farnham-mocap: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+      "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)",
+      "possible duplicate: ['annapurna-am-mocap-hyderabad', 'annapurna-anr-vp-hyderabad'] (company/city, website/city)",
+      "possible duplicate: ['glass-egg-ho-chi-minh-city', 'sparx-ho-chi-minh-city'] (website/city)",
+      "possible duplicate: ['beyond-fx-los-angeles', 'counterpunch-los-angeles'] (website/city)",
+      "possible duplicate: ['sumo-leamington', 'atomhawk-leamington-spa'] (website/city)",
+      "possible duplicate: ['sumo-leamington', 'lab42-leamington-spa'] (website/city)",
+      "possible duplicate: ['atomhawk-leamington-spa', 'lab42-leamington-spa'] (website/city)",
+      "possible duplicate: ['platige-warsaw-production', 'platige-warsaw-mocap'] (company/city, website/city)"
+    ],
+    "database_errors": [],
+    "written": false
+  },
+  "human_approval": "pending exact-content PR review and manual merge",
+  "approved_claims": 0,
+  "main_written": false,
+  "record_changes": [
+    {
+      "id": "virtuos-kuala-lumpur",
+      "before": null,
+      "after": {
+        "id": "virtuos-kuala-lumpur",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Kuala Lumpur",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia",
+        "lat": 3.1412,
+        "lng": 101.68653,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/kuala-lumpur/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/kuala-lumpur/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/kuala-lumpur/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Bangsar South production studio.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1735161/kuala-lumpur.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-xian",
+      "before": null,
+      "after": {
+        "id": "virtuos-xian",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Xi’an",
+        "city": "Xi’an",
+        "country": "China",
+        "lat": 34.25833,
+        "lng": 108.92861,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/xian/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/xian/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/xian/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Shaanxi production studio; distinct from similarly named towns.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1790630",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-chengdu",
+      "before": null,
+      "after": {
+        "id": "virtuos-chengdu",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Chengdu",
+        "city": "Chengdu",
+        "country": "China",
+        "lat": 30.66667,
+        "lng": 104.06667,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/chengdu/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/chengdu/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/chengdu/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Chengdu game production studio.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1815286/chengdu.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-shanghai",
+      "before": null,
+      "after": {
+        "id": "virtuos-shanghai",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Shanghai",
+        "city": "Shanghai",
+        "country": "China",
+        "lat": 31.22222,
+        "lng": 121.45806,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/shanghai/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/shanghai/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/shanghai/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Shanghai game production studio.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1796236/shanghai.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-paris",
+      "before": null,
+      "after": {
+        "id": "virtuos-paris",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Paris / Cergy",
+        "city": "Cergy",
+        "country": "France",
+        "lat": 49.03645,
+        "lng": 2.07613,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/paris/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/paris/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/paris/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Marketed as Paris; official street address is in Cergy.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3027883",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-lyon",
+      "before": null,
+      "after": {
+        "id": "virtuos-lyon",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos Labs — Lyon",
+        "city": "Lyon",
+        "country": "France",
+        "lat": 45.74906,
+        "lng": 4.84789,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/lyon/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/lyon/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/lyon/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Lyon Labs game engineering team, not capture.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2996944",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-montpellier",
+      "before": null,
+      "after": {
+        "id": "virtuos-montpellier",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos Labs — Montpellier",
+        "city": "Montpellier",
+        "country": "France",
+        "lat": 43.61093,
+        "lng": 3.87635,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/montpellier/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/montpellier/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/montpellier/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Montpellier Labs game engineering team.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2992166",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-prague",
+      "before": null,
+      "after": {
+        "id": "virtuos-prague",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos Labs — Prague",
+        "city": "Prague",
+        "country": "Czechia",
+        "lat": 50.08804,
+        "lng": 14.42076,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/prague/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/prague/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/prague/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Prague Labs game engineering team.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3067696",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-warsaw",
+      "before": null,
+      "after": {
+        "id": "virtuos-warsaw",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Warsaw",
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/warsaw/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/warsaw/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/warsaw/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Warsaw game engineering and production team.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/756135/warsaw.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "virtuos-montreal",
+      "before": null,
+      "after": {
+        "id": "virtuos-montreal",
+        "company_id": "virtuos",
+        "company_name": "Virtuos",
+        "name": "Virtuos — Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/montreal/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Concept Art"
+        ],
+        "capabilities": [
+          "Concept Art"
+        ],
+        "capability_evidence": {
+          "Concept Art": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/montreal/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/montreal/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Concept-art production is supported; full game development and capture are not inferred. Umanaia shares a listed address and remains in the identity review queue.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/6077243/montreal.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "glass-egg-dalat",
+      "before": null,
+      "after": {
+        "id": "glass-egg-dalat",
+        "company_id": "glass-egg",
+        "company_name": "Glass Egg",
+        "name": "Glass Egg — Da Lat",
+        "city": "Da Lat",
+        "country": "Vietnam",
+        "lat": 11.94646,
+        "lng": 108.44193,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/glass-egg/dalat/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art"
+        ],
+        "capabilities": [
+          "Game Art"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/glass-egg/dalat/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/glass-egg/dalat/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Separate Da Lat character/environment art studio opened in 2023; current individual listing.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1584071",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "glass-egg-ho-chi-minh-city",
+      "before": null,
+      "after": {
+        "id": "glass-egg-ho-chi-minh-city",
+        "company_id": "glass-egg",
+        "company_name": "Glass Egg",
+        "name": "Glass Egg — Ho Chi Minh City",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "lat": 10.82302,
+        "lng": 106.62965,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/glass-egg/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art"
+        ],
+        "capabilities": [
+          "Game Art"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/glass-egg/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/glass-egg/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Ho Chi Minh City vehicle/hard-surface and 2D/3D game-art production.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1566083",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sparx-ho-chi-minh-city",
+      "before": null,
+      "after": {
+        "id": "sparx-ho-chi-minh-city",
+        "company_id": "sparx",
+        "company_name": "Sparx*",
+        "name": "Sparx* — Ho Chi Minh City",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "lat": 10.82302,
+        "lng": 106.62965,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/sparx/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "VFX",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "Animation",
+          "VFX",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/sparx/",
+            "verified_on": "2026-11-06"
+          },
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/sparx/",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/sparx/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/sparx/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Separate operating brand and physical site at Truong Son; not Glass Egg on Doan Van Bo.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1566083",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "beyond-fx-los-angeles",
+      "before": null,
+      "after": {
+        "id": "beyond-fx-los-angeles",
+        "company_id": "beyond-fx",
+        "company_name": "Beyond-FX",
+        "name": "Beyond-FX — Los Angeles",
+        "city": "Los Angeles",
+        "country": "United States",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/beyond-fx/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/beyond-fx/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/beyond-fx/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Interactive visual effects studio. Individual page gives Westgate Avenue; global roster has a conflicting older street address. City reference only. Separate from Beyond Capture.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/5368361/los-angeles.html",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "counterpunch-los-angeles",
+      "before": null,
+      "after": {
+        "id": "counterpunch-los-angeles",
+        "company_id": "counterpunch",
+        "company_name": "CounterPunch",
+        "name": "CounterPunch — Los Angeles",
+        "city": "Los Angeles",
+        "country": "United States",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/counterpunch/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "Cinematics",
+          "Previsualization"
+        ],
+        "capabilities": [
+          "Animation",
+          "Cinematics",
+          "Previsualization"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/counterpunch/",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/counterpunch/",
+            "verified_on": "2026-11-06"
+          },
+          "Previsualization": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/counterpunch/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/counterpunch/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Animation/previs production. Capture planning/production services alone do not establish a locally operated capture stage.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/5368361/los-angeles.html",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "black-shamrock-dublin",
+      "before": null,
+      "after": {
+        "id": "black-shamrock-dublin",
+        "company_id": "black-shamrock",
+        "company_name": "Black Shamrock",
+        "name": "Black Shamrock — Dublin",
+        "city": "Dublin",
+        "country": "Ireland",
+        "lat": 53.33306,
+        "lng": -6.24889,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.virtuosgames.com/studio/black-shamrock/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development",
+          "Animation"
+        ],
+        "capabilities": [
+          "Game Development",
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/black-shamrock/",
+            "verified_on": "2026-11-06"
+          },
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.virtuosgames.com/studio/black-shamrock/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.virtuosgames.com/studio/black-shamrock/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Full development studio at Guinness Enterprise Centre.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2964574",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "third-kind-games-leamington",
+      "before": null,
+      "after": {
+        "id": "third-kind-games-leamington",
+        "company_id": "third-kind-games",
+        "company_name": "Third Kind Games",
+        "name": "Third Kind Games — Leamington Spa",
+        "city": "Leamington Spa",
+        "country": "United Kingdom",
+        "lat": 52.2852,
+        "lng": -1.52,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://thirdkindgames.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://thirdkindgames.com/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://thirdkindgames.com/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current UK studio; Poland and Spain branches require municipality/site research.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2644737",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/virtuos-offices/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "abstraction-valkenswaard",
+      "before": null,
+      "after": {
+        "id": "abstraction-valkenswaard",
+        "company_id": "abstraction",
+        "company_name": "Abstraction",
+        "name": "Abstraction — Valkenswaard",
+        "city": "Valkenswaard",
+        "country": "Netherlands",
+        "lat": 51.35083,
+        "lng": 5.45972,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://abstraction.games/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://abstraction.games/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://abstraction.games/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Deken Mandersplein physical headquarters; remote collaborators are not extra branches.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2745860",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/news/virtuos-new-era-of-collaborative-game-development-strategic-acquisitions-of-pipeworks-abstraction-umanaia/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pipeworks-eugene",
+      "before": null,
+      "after": {
+        "id": "pipeworks-eugene",
+        "company_id": "pipeworks",
+        "company_name": "Pipeworks Studios",
+        "name": "Pipeworks Studios — Eugene",
+        "city": "Eugene",
+        "country": "United States",
+        "lat": 44.05207,
+        "lng": -123.08675,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.pipeworks.com/new-careers/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.pipeworks.com/new-careers/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.pipeworks.com/new-careers/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Eugene production building and in-house/hybrid game team; no remote home offices added.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/5725846",
+        "relationships": [
+          {
+            "id": "virtuos",
+            "name": "Virtuos",
+            "type": "group_member",
+            "evidence": "https://www.virtuosgames.com/news/virtuos-new-era-of-collaborative-game-development-strategic-acquisitions-of-pipeworks-abstraction-umanaia/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sumo-sheffield",
+      "before": null,
+      "after": {
+        "id": "sumo-sheffield",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Sheffield",
+        "city": "Sheffield",
+        "country": "United Kingdom",
+        "lat": 53.38297,
+        "lng": -1.4659,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. Street-location listing cross-checked with the studio roster.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2638077",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sumo-nottingham",
+      "before": null,
+      "after": {
+        "id": "sumo-nottingham",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Nottingham",
+        "city": "Nottingham",
+        "country": "United Kingdom",
+        "lat": 52.9536,
+        "lng": -1.15047,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. Street-location listing cross-checked with the studio roster.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2641170",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sumo-leamington",
+      "before": null,
+      "after": {
+        "id": "sumo-leamington",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Leamington Spa",
+        "city": "Leamington Spa",
+        "country": "United Kingdom",
+        "lat": 52.2852,
+        "lng": -1.52,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. No second Midoki facility inferred from its shared Leamington team listing.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2644737",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sumo-prague",
+      "before": null,
+      "after": {
+        "id": "sumo-prague",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Prague",
+        "city": "Prague",
+        "country": "Czechia",
+        "lat": 50.08804,
+        "lng": 14.42076,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. Street-location listing cross-checked with the studio roster.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3067696",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sumo-pune",
+      "before": null,
+      "after": {
+        "id": "sumo-pune",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Pune",
+        "city": "Pune",
+        "country": "India",
+        "lat": 18.51957,
+        "lng": 73.85535,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. Street-location listing cross-checked with the studio roster.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1259229/pune.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sumo-bengaluru",
+      "before": null,
+      "after": {
+        "id": "sumo-bengaluru",
+        "company_id": "sumo-digital",
+        "company_name": "Sumo Digital",
+        "name": "Sumo Digital — Bengaluru",
+        "city": "Bengaluru",
+        "country": "India",
+        "lat": 12.97194,
+        "lng": 77.59369,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current studio roster supports local game production/engineering. Street-location listing cross-checked with the studio roster.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1277333/bengaluru.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "atomhawk-gateshead",
+      "before": null,
+      "after": {
+        "id": "atomhawk-gateshead",
+        "company_id": "atomhawk",
+        "company_name": "Atomhawk",
+        "name": "Atomhawk — Gateshead",
+        "city": "Gateshead",
+        "country": "United Kingdom",
+        "lat": 54.96209,
+        "lng": -1.60168,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://atomhawk.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art"
+        ],
+        "capabilities": [
+          "Game Art"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://atomhawk.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://atomhawk.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current named production hub. Art-production classification does not imply full game development or on-site capture.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2648773",
+        "relationships": [
+          {
+            "id": "sumo-digital",
+            "name": "Sumo Digital",
+            "type": "group_member",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "atomhawk-leamington-spa",
+      "before": null,
+      "after": {
+        "id": "atomhawk-leamington-spa",
+        "company_id": "atomhawk",
+        "company_name": "Atomhawk",
+        "name": "Atomhawk — Leamington Spa",
+        "city": "Leamington Spa",
+        "country": "United Kingdom",
+        "lat": 52.2852,
+        "lng": -1.52,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/our-studios/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art"
+        ],
+        "capabilities": [
+          "Game Art"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current named production hub. Art-production classification does not imply full game development or on-site capture.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2644737",
+        "relationships": [
+          {
+            "id": "sumo-digital",
+            "name": "Sumo Digital",
+            "type": "group_member",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "red-kite-games-leeds",
+      "before": null,
+      "after": {
+        "id": "red-kite-games-leeds",
+        "company_id": "red-kite-games",
+        "company_name": "Red Kite Games",
+        "name": "Red Kite Games — Leeds",
+        "city": "Leeds",
+        "country": "United Kingdom",
+        "lat": 53.79648,
+        "lng": -1.54785,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/our-studios/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current named production hub. Separate operating studio identity retained.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2644688",
+        "relationships": [
+          {
+            "id": "sumo-digital",
+            "name": "Sumo Digital",
+            "type": "group_member",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lab42-leamington-spa",
+      "before": null,
+      "after": {
+        "id": "lab42-leamington-spa",
+        "company_id": "lab42",
+        "company_name": "Lab42 Games",
+        "name": "Lab42 Games — Leamington Spa",
+        "city": "Leamington Spa",
+        "country": "United Kingdom",
+        "lat": 52.2852,
+        "lng": -1.52,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.sumo-digital.com/our-studios/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.sumo-digital.com/our-studios/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current named production hub. Separate operating studio identity retained.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2644737",
+        "relationships": [
+          {
+            "id": "sumo-digital",
+            "name": "Sumo Digital",
+            "type": "group_member",
+            "evidence": "https://www.sumo-digital.com/our-studios/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sperasoft-krakow",
+      "before": null,
+      "after": {
+        "id": "sperasoft-krakow",
+        "company_id": "sperasoft",
+        "company_name": "Sperasoft",
+        "name": "Sperasoft — Kraków",
+        "city": "Kraków",
+        "country": "Poland",
+        "lat": 50.06143,
+        "lng": 19.93658,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://sperasoft.com/about/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://sperasoft.com/about/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named development studio in the current operator roster; no capture inferred. Burbank HQ and disputed Malta municipality are deferred.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3094802/krakow.html",
+        "relationships": [
+          {
+            "id": "keywords-studios",
+            "name": "Keywords Studios",
+            "type": "group_member",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sperasoft-warsaw",
+      "before": null,
+      "after": {
+        "id": "sperasoft-warsaw",
+        "company_id": "sperasoft",
+        "company_name": "Sperasoft",
+        "name": "Sperasoft — Warsaw",
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://sperasoft.com/about/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://sperasoft.com/about/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named development studio in the current operator roster; no capture inferred. Burbank HQ and disputed Malta municipality are deferred.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/756135/warsaw.html",
+        "relationships": [
+          {
+            "id": "keywords-studios",
+            "name": "Keywords Studios",
+            "type": "group_member",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sperasoft-abu-dhabi",
+      "before": null,
+      "after": {
+        "id": "sperasoft-abu-dhabi",
+        "company_id": "sperasoft",
+        "company_name": "Sperasoft",
+        "name": "Sperasoft — Abu Dhabi",
+        "city": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "lat": 24.45118,
+        "lng": 54.39696,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://sperasoft.com/about/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://sperasoft.com/about/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named development studio in the current operator roster; no capture inferred. Burbank HQ and disputed Malta municipality are deferred.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/292968/abu-dhabi.html",
+        "relationships": [
+          {
+            "id": "keywords-studios",
+            "name": "Keywords Studios",
+            "type": "group_member",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sperasoft-belgrade",
+      "before": null,
+      "after": {
+        "id": "sperasoft-belgrade",
+        "company_id": "sperasoft",
+        "company_name": "Sperasoft",
+        "name": "Sperasoft — Belgrade",
+        "city": "Belgrade",
+        "country": "Serbia",
+        "lat": 44.80401,
+        "lng": 20.46513,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://sperasoft.com/about/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://sperasoft.com/about/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named development studio in the current operator roster; no capture inferred. Burbank HQ and disputed Malta municipality are deferred.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/792680/belgrade.html",
+        "relationships": [
+          {
+            "id": "keywords-studios",
+            "name": "Keywords Studios",
+            "type": "group_member",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sperasoft-yerevan",
+      "before": null,
+      "after": {
+        "id": "sperasoft-yerevan",
+        "company_id": "sperasoft",
+        "company_name": "Sperasoft",
+        "name": "Sperasoft — Yerevan",
+        "city": "Yerevan",
+        "country": "Armenia",
+        "lat": 40.17765,
+        "lng": 44.5126,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://sperasoft.com/about/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://sperasoft.com/about/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named development studio in the current operator roster; no capture inferred. Burbank HQ and disputed Malta municipality are deferred.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/616052",
+        "relationships": [
+          {
+            "id": "keywords-studios",
+            "name": "Keywords Studios",
+            "type": "group_member",
+            "evidence": "https://sperasoft.com/about/",
+            "verified_on": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gameloft-barcelona",
+      "before": null,
+      "after": {
+        "id": "gameloft-barcelona",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Barcelona",
+        "city": "Barcelona",
+        "country": "Spain",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/barcelona",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/barcelona",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/barcelona",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3128760/barcelona.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-brisbane",
+      "before": null,
+      "after": {
+        "id": "gameloft-brisbane",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Brisbane",
+        "city": "Brisbane",
+        "country": "Australia",
+        "lat": -27.46794,
+        "lng": 153.02809,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/brisbane",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/brisbane",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/brisbane",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2174003",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-bucharest",
+      "before": null,
+      "after": {
+        "id": "gameloft-bucharest",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Bucharest",
+        "city": "Bucharest",
+        "country": "Romania",
+        "lat": 44.43225,
+        "lng": 26.10626,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/bucharest",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/bucharest",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/bucharest",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/683506/bucharest.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-hanoi",
+      "before": null,
+      "after": {
+        "id": "gameloft-hanoi",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Hanoi",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "lat": 21.0245,
+        "lng": 105.84117,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/hanoi",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/hanoi",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/hanoi",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1581130",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-montreal",
+      "before": null,
+      "after": {
+        "id": "gameloft-montreal",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/montreal",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/montreal",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/montreal",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/6077243/montreal.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-paris",
+      "before": null,
+      "after": {
+        "id": "gameloft-paris",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Paris",
+        "city": "Paris",
+        "country": "France",
+        "lat": 48.85341,
+        "lng": 2.3488,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/paris",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/paris",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/paris",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2988507/paris.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-saigon",
+      "before": null,
+      "after": {
+        "id": "gameloft-saigon",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Saigon / Ho Chi Minh City",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "lat": 10.82302,
+        "lng": 106.62965,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/saigon",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/saigon",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/saigon",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1566083",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-sofia",
+      "before": null,
+      "after": {
+        "id": "gameloft-sofia",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Sofia",
+        "city": "Sofia",
+        "country": "Bulgaria",
+        "lat": 42.69751,
+        "lng": 23.32415,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/sofia",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/sofia",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/sofia",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/727011/sofia.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "gameloft-yogyakarta",
+      "before": null,
+      "after": {
+        "id": "gameloft-yogyakarta",
+        "company_id": "gameloft",
+        "company_name": "Gameloft",
+        "name": "Gameloft — Yogyakarta",
+        "city": "Yogyakarta",
+        "country": "Indonesia",
+        "lat": -7.80139,
+        "lng": 110.36472,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.gameloft.com/gameloft-studios/yogyakarta",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.gameloft.com/gameloft-studios/yogyakarta",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.gameloft.com/gameloft-studios/yogyakarta",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Individual current studio page supports local game development and physical/hybrid studio presence; historical closed studios are not imported.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1621177",
+        "relationships": []
+      }
+    },
+    {
+      "id": "platige-warsaw-production",
+      "before": null,
+      "after": {
+        "id": "platige-warsaw-production",
+        "company_id": "platige",
+        "company_name": "Platige Image",
+        "name": "Platige Image — Warsaw production",
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://platige.com/studio/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX",
+          "Animation",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "VFX",
+          "Animation",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/studio/",
+            "verified_on": "2026-11-06"
+          },
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/studio/",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/studio/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://platige.com/studio/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Production headquarters on W. Szpilmana, separate from Jutrzenki capture facility. No on-site capture capability is assigned to this address.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/756135/warsaw.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "platige-warsaw-mocap",
+      "before": null,
+      "after": {
+        "id": "platige-warsaw-mocap",
+        "company_id": "platige",
+        "company_name": "Platige Image",
+        "name": "Platige Image — Warsaw MoCap Studio",
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://platige.com/pl/mocap/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Performance Capture",
+          "Retargeting",
+          "Previsualization"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Performance Capture",
+          "Retargeting",
+          "Previsualization"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/pl/mocap/",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/pl/mocap/",
+            "verified_on": "2026-11-06"
+          },
+          "Retargeting": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/pl/mocap/",
+            "verified_on": "2026-11-06"
+          },
+          "Previsualization": {
+            "state": "confirmed",
+            "evidence": "https://platige.com/pl/mocap/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://platige.com/pl/mocap/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Named capture facility at Jutrzenki 99/101, Hall D2. Body/performance recording, data cleanup/retargeting and on-session previs explicitly described. HMC equipment alone is not used to infer facial capture.",
+        "location_type": "capture_facility",
+        "coordinate_source": "https://www.geonames.org/756135/warsaw.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "plastic-wax-rhodes",
+      "before": null,
+      "after": {
+        "id": "plastic-wax-rhodes",
+        "company_id": "plastic-wax",
+        "company_name": "Plastic Wax",
+        "name": "Plastic Wax — Rhodes studio",
+        "city": "Rhodes",
+        "country": "Australia",
+        "lat": -33.82663,
+        "lng": 151.0881,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.plasticwax.com/enquiries",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "VFX",
+          "Motion Capture",
+          "Facial Capture",
+          "Retargeting",
+          "Previsualization"
+        ],
+        "capabilities": [
+          "Animation",
+          "VFX",
+          "Motion Capture",
+          "Facial Capture",
+          "Retargeting",
+          "Previsualization"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/",
+            "verified_on": "2026-11-06"
+          },
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/",
+            "verified_on": "2026-11-06"
+          },
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/motion-capture",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/motion-capture",
+            "verified_on": "2026-11-06"
+          },
+          "Retargeting": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/motion-capture",
+            "verified_on": "2026-11-06"
+          },
+          "Previsualization": {
+            "state": "confirmed",
+            "evidence": "https://www.plasticwax.com/motion-capture",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.plasticwax.com/enquiries",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Production and owned capture stage at Leeds Street, Rhodes (Sydney metropolitan area), not central Sydney. Exact stage coordinates not established.",
+        "location_type": "mixed_campus",
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/australia/rhodes",
+        "relationships": []
+      }
+    },
+    {
+      "id": "passion-republic-petaling-jaya",
+      "before": null,
+      "after": {
+        "id": "passion-republic-petaling-jaya",
+        "company_id": "passion-republic",
+        "company_name": "Passion Republic",
+        "name": "Passion Republic — Bandar Sunway",
+        "city": "Petaling Jaya",
+        "country": "Malaysia",
+        "lat": 3.10726,
+        "lng": 101.60671,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.passionrepublic.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art",
+          "Motion Capture"
+        ],
+        "capabilities": [
+          "Game Art",
+          "Motion Capture"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://www.passionrepublic.com/",
+            "verified_on": "2026-11-06"
+          },
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.passionrepublic.com/studio/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.passionrepublic.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Official Petaling Jaya address and studio page identify production areas and an on-site motion capture studio. Facial capture and full game development not inferred.",
+        "location_type": "mixed_campus",
+        "coordinate_source": "https://www.geonames.org/1735158",
+        "relationships": []
+      }
+    },
+    {
+      "id": "trident-los-angeles",
+      "before": null,
+      "after": {
+        "id": "trident-los-angeles",
+        "company_id": "trident-motion-capture-lab",
+        "company_name": "Trident Motion Capture Lab",
+        "name": "Trident Motion Capture Lab — Hollywood",
+        "city": "Los Angeles",
+        "country": "United States",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://mocapschool.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture"
+        ],
+        "capabilities": [
+          "Motion Capture"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://mocapschool.com/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://mocapschool.com/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Hollywood training/production stage at Highland Avenue, Los Angeles. Partner services do not establish facial capture at this site.",
+        "location_type": "capture_facility",
+        "coordinate_source": "https://www.geonames.org/5368361/los-angeles.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "studio-du-chateau-montreal",
+      "before": null,
+      "after": {
+        "id": "studio-du-chateau-montreal",
+        "company_id": "studio-du-chateau",
+        "company_name": "Studio du Château",
+        "name": "Studio du Château — Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://studioduchateau.com/video-mocap-studio-location-montreal.html",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Facial Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Facial Capture",
+          "Performance Capture"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://studioduchateau.com/motion-capture-mocap-studio-montreal.html",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://studioduchateau.com/motion-capture-mocap-studio-montreal.html",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://studioduchateau.com/motion-capture-mocap-studio-montreal.html",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://studioduchateau.com/video-mocap-studio-location-montreal.html",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. St-Ferdinand physical studio and specific capture systems/workflow reviewed. Real-time visualization does not alone establish an LED virtual-production stage.",
+        "location_type": "capture_facility",
+        "coordinate_source": "https://www.geonames.org/6077243/montreal.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "the-monk-bangkok",
+      "before": null,
+      "after": {
+        "id": "the-monk-bangkok",
+        "company_id": "the-monk-studios",
+        "company_name": "The Monk Studios",
+        "name": "The Monk Studios — Bangkok",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "lat": 13.75398,
+        "lng": 100.50144,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://themonkstudios.com/about-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "VFX"
+        ],
+        "capabilities": [
+          "Animation",
+          "VFX"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://themonkstudios.com/about-us/",
+            "verified_on": "2026-11-06"
+          },
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://themonkstudios.com/about-us/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://themonkstudios.com/about-us/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Bangkok production headquarters at Pattanakarn 17. Vancouver listing remains in review because local production scope is unclear.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1609350",
+        "relationships": []
+      }
+    },
+    {
+      "id": "lemon-sky-shah-alam",
+      "before": null,
+      "after": {
+        "id": "lemon-sky-shah-alam",
+        "company_id": "lemon-sky",
+        "company_name": "Lemon Sky Studios",
+        "name": "Lemon Sky Studios — Shah Alam",
+        "city": "Shah Alam",
+        "country": "Malaysia",
+        "lat": 3.08507,
+        "lng": 101.53281,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.lemonskystudios.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Art",
+          "Animation",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "Game Art",
+          "Animation",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "Game Art": {
+            "state": "confirmed",
+            "evidence": "https://www.lemonskystudios.com/",
+            "verified_on": "2026-11-06"
+          },
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.lemonskystudios.com/animation/",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://www.lemonskystudios.com/animation/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.lemonskystudios.com/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. UOA Business Park studio address in Shah Alam, rather than marketed Kuala Lumpur. No capture capability inherited from corporate history.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/1732903",
+        "relationships": []
+      }
+    },
+    {
+      "id": "hype-porto-alegre",
+      "before": null,
+      "after": {
+        "id": "hype-porto-alegre",
+        "company_id": "hype",
+        "company_name": "Hype Entertainment",
+        "name": "Hype — Porto Alegre",
+        "city": "Porto Alegre",
+        "country": "Brazil",
+        "lat": -30.03283,
+        "lng": -51.23019,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.hype.cg/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.hype.cg/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.hype.cg/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Porto Alegre animation production listing; Los Amigos collaboration does not establish ownership of Punkrobot.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3452925",
+        "relationships": []
+      }
+    },
+    {
+      "id": "lightfarm-rio",
+      "before": null,
+      "after": {
+        "id": "lightfarm-rio",
+        "company_id": "lightfarm",
+        "company_name": "Lightfarm Studios",
+        "name": "Lightfarm Studios — Rio de Janeiro",
+        "city": "Rio de Janeiro",
+        "country": "Brazil",
+        "lat": -22.90642,
+        "lng": -43.18223,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://lightfarm.com.br/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "Animation",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://lightfarm.com.br/about",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://lightfarm.com.br/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://lightfarm.com.br/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Rio production studio at Leblon. Capture and virtual production terms need more facility-specific equipment evidence before inclusion.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3451190",
+        "relationships": []
+      }
+    },
+    {
+      "id": "barajoun-dubai",
+      "before": null,
+      "after": {
+        "id": "barajoun-dubai",
+        "company_id": "barajoun",
+        "company_name": "Barajoun Studios",
+        "name": "Barajoun Studios — Dubai",
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "lat": 25.07725,
+        "lng": 55.30927,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.barajoun.com/contact.html",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation",
+          "VFX"
+        ],
+        "capabilities": [
+          "Animation",
+          "VFX"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.barajoun.com/about.html",
+            "verified_on": "2026-11-06"
+          },
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.barajoun.com/about.html",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.barajoun.com/contact.html",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Dubai animation/VFX studio; specific capture services not evidenced.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/292223",
+        "relationships": []
+      }
+    },
+    {
+      "id": "luma-melbourne",
+      "before": null,
+      "after": {
+        "id": "luma-melbourne",
+        "company_id": "luma-pictures",
+        "company_name": "Luma Pictures",
+        "name": "Luma Pictures — Melbourne",
+        "city": "Melbourne",
+        "country": "Australia",
+        "lat": -37.814,
+        "lng": 144.96332,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.lumapictures.com/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.lumapictures.com/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.lumapictures.com/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current official VFX studio roster and city-specific street listing. Los Angeles/Santa Monica listing requires separate physical-production research.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2158177/melbourne.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "luma-vancouver",
+      "before": null,
+      "after": {
+        "id": "luma-vancouver",
+        "company_id": "luma-pictures",
+        "company_name": "Luma Pictures",
+        "name": "Luma Pictures — Vancouver",
+        "city": "Vancouver",
+        "country": "Canada",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.lumapictures.com/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.lumapictures.com/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.lumapictures.com/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current official VFX studio roster and city-specific street listing. Los Angeles/Santa Monica listing requires separate physical-production research.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/6173331/vancouver.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "resin-adelaide",
+      "before": null,
+      "after": {
+        "id": "resin-adelaide",
+        "company_id": "resin",
+        "company_name": "Resin",
+        "name": "Resin — Adelaide",
+        "city": "Adelaide",
+        "country": "Australia",
+        "lat": -34.92866,
+        "lng": 138.59863,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.resin.com.au/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.resin.com.au/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.resin.com.au/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Adelaide principal production studio. Other advertised studio spaces need site-specific scope research; not added from a generic footprint statement.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/2078025",
+        "relationships": []
+      }
+    },
+    {
+      "id": "sea-monster-cape-town",
+      "before": null,
+      "after": {
+        "id": "sea-monster-cape-town",
+        "company_id": "sea-monster",
+        "company_name": "Sea Monster",
+        "name": "Sea Monster — Cape Town",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.seamonster.digital/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.seamonster.digital/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.seamonster.digital/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Caxton Street game design/development studio. Older animation profile does not establish current capture services.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/3369157/cape-town.html",
+        "relationships": []
+      }
+    },
+    {
+      "id": "demente-guadalajara",
+      "before": null,
+      "after": {
+        "id": "demente-guadalajara",
+        "company_id": "demente",
+        "company_name": "Demente Animation Studio",
+        "name": "Demente Animation Studio — Guadalajara",
+        "city": "Guadalajara",
+        "country": "Mexico",
+        "lat": 20.67738,
+        "lng": -103.34749,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://demente.studio/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://demente.studio/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://demente.studio/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current animation production site at Calle 14 in Guadalajara, confirmed on official page. No game-development inference from producing game trailers.",
+        "location_type": "production_studio",
+        "coordinate_source": "https://www.geonames.org/4005539",
+        "relationships": []
+      }
+    },
+    {
+      "id": "portsmouth-eldon-mocap",
+      "before": null,
+      "after": {
+        "id": "portsmouth-eldon-mocap",
+        "company_id": "university-of-portsmouth",
+        "company_name": "University of Portsmouth",
+        "name": "University of Portsmouth — Eldon Motion Capture Studio",
+        "city": "Portsmouth",
+        "country": "United Kingdom",
+        "lat": 50.79899,
+        "lng": -1.09125,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.port.ac.uk/about-us/our-facilities/teaching-and-learning-spaces/motion-capture-studio",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Facial Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Facial Capture",
+          "Performance Capture"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.port.ac.uk/about-us/our-facilities/teaching-and-learning-spaces/motion-capture-studio",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.port.ac.uk/about-us/our-facilities/teaching-and-learning-spaces/motion-capture-studio",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.port.ac.uk/about-us/our-facilities/teaching-and-learning-spaces/motion-capture-studio",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.port.ac.uk/about-us/our-facilities/teaching-and-learning-spaces/motion-capture-studio",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Eldon Building studio explicitly serves external commercial productions as well as teaching; capture equipment listed for this room.",
+        "location_type": "capture_facility",
+        "coordinate_source": "https://www.geonames.org/2639996",
+        "relationships": []
+      }
+    },
+    {
+      "id": "uca-farnham-mocap",
+      "before": null,
+      "after": {
+        "id": "uca-farnham-mocap",
+        "company_id": "university-for-the-creative-arts",
+        "company_name": "University for the Creative Arts",
+        "name": "UCA — Farnham Motion Capture Studio",
+        "city": "Farnham",
+        "country": "United Kingdom",
+        "lat": 51.21444,
+        "lng": -0.80054,
+        "address": "Approximate city reference — not a verified facility coordinate or street address",
+        "website": "https://www.theagency.uca.ac.uk/hire/facility-hire/motion-capture/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Facial Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Facial Capture"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.theagency.uca.ac.uk/hire/facility-hire/motion-capture/",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.theagency.uca.ac.uk/hire/facility-hire/motion-capture/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.theagency.uca.ac.uk/hire/facility-hire/motion-capture/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Farnham facility offered for external production hire; body/facial tracking explicitly listed. No additional campus inferred from university-wide services.",
+        "location_type": "capture_facility",
+        "coordinate_source": "https://www.geonames.org/2649660",
+        "relationships": []
+      }
+    },
+    {
+      "id": "beyond-vancouver",
+      "before": {
+        "id": "beyond-vancouver",
+        "company_id": "beyond",
+        "name": "Beyond Capture",
+        "city": "Vancouver",
+        "country": "Canada",
+        "lat": 49.2827,
+        "lng": -123.1207,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.beyond-capture.com/",
+        "email": "vancouver@beyond-capture.com",
+        "phone": "+1 778 736 1234",
+        "categories": [
+          "Motion Capture",
+          "Virtual Production"
+        ],
+        "capabilities": [
+          "Body Capture",
+          "Facial Capture",
+          "Finger Capture",
+          "Performance Capture",
+          "Motion Capture"
+        ],
+        "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "unknown",
+        "legacy_research": {
+          "evidence_state": "confirmed",
+          "status": "Website verified",
+          "verified_on": "2026-11-06",
+          "lat": 49.2831,
+          "lng": -123.1074,
+          "address": "151 West Cordova Street, Vancouver, BC",
+          "coordinate_precision": "unverified"
+        },
+        "capability_evidence": {
+          "Body Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Facial Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Finger Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Performance Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Motion Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          }
+        }
+      },
+      "after": {
+        "id": "beyond-vancouver",
+        "company_id": "beyond",
+        "name": "Beyond Capture",
+        "city": "Vancouver",
+        "country": "Canada",
+        "lat": 49.2827,
+        "lng": -123.1207,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.beyond-capture.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Vancouver performance-capture volume; existing campus identity retained. No extra record for a room within the same campus.",
+        "evidence": "https://www.beyond-capture.com/studio-vancouver",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "confirmed",
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.beyond-capture.com/studio-vancouver",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.beyond-capture.com/studio-vancouver",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "location_type": "capture_facility"
+      }
+    },
+    {
+      "id": "beyond-montreal",
+      "before": {
+        "id": "beyond-montreal",
+        "company_id": "beyond",
+        "name": "Beyond Capture",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.5017,
+        "lng": -73.5673,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.beyond-capture.com/",
+        "email": "montreal@beyond-capture.com",
+        "phone": "+1 778 736 1234",
+        "categories": [
+          "Motion Capture",
+          "Virtual Production"
+        ],
+        "capabilities": [
+          "Body Capture",
+          "Facial Capture",
+          "Finger Capture",
+          "Performance Capture",
+          "Motion Capture"
+        ],
+        "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+        "evidence": "https://www.beyond-capture.com/studios",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "unknown",
+        "legacy_research": {
+          "evidence_state": "confirmed",
+          "status": "Website verified",
+          "verified_on": "2026-11-06",
+          "lat": 45.4834,
+          "lng": -73.5657,
+          "address": "1600 Rue St-Patrick, Montréal, QC",
+          "coordinate_precision": "unverified"
+        },
+        "capability_evidence": {
+          "Body Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Facial Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Finger Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Performance Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          },
+          "Motion Capture": {
+            "state": "unknown",
+            "evidence": "https://www.beyond-capture.com/studios",
+            "verified_on": ""
+          }
+        }
+      },
+      "after": {
+        "id": "beyond-montreal",
+        "company_id": "beyond",
+        "name": "Beyond Capture",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.5017,
+        "lng": -73.5673,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.beyond-capture.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Montréal campus names three recording volumes. Campus identity retained; no duplicate campus-plus-room counts. Facial capture not claimed without site-specific evidence.",
+        "evidence": "https://www.beyond-capture.com/studio-montreal",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "confirmed",
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.beyond-capture.com/studio-montreal",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.beyond-capture.com/studio-montreal",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "location_type": "capture_facility"
+      }
+    },
+    {
+      "id": "animatrik-burnaby",
+      "before": {
+        "id": "animatrik-burnaby",
+        "company_id": "animatrik",
+        "name": "Animatrik Film Design",
+        "city": "Burnaby",
+        "country": "Canada",
+        "lat": 49.2488,
+        "lng": -122.9805,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.animatrik.com/",
+        "email": "",
+        "phone": "+1 604 291 2200",
+        "categories": [
+          "Motion Capture",
+          "Previsualization",
+          "Virtual Production"
+        ],
+        "capabilities": [
+          "Body Capture",
+          "Facial Capture",
+          "Virtual Camera",
+          "Performance Capture",
+          "Motion Capture"
+        ],
+        "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+        "evidence": "https://www.animatrik.com/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "unknown",
+        "legacy_research": {
+          "evidence_state": "confirmed",
+          "status": "Website verified",
+          "verified_on": "2026-11-06",
+          "lat": 49.2701,
+          "lng": -123.0152,
+          "address": "4088 1st Ave, Burnaby, BC",
+          "coordinate_precision": "unverified"
+        },
+        "capability_evidence": {
+          "Body Capture": {
+            "state": "unknown",
+            "evidence": "https://www.animatrik.com/about",
+            "verified_on": ""
+          },
+          "Facial Capture": {
+            "state": "unknown",
+            "evidence": "https://www.animatrik.com/about",
+            "verified_on": ""
+          },
+          "Virtual Camera": {
+            "state": "unknown",
+            "evidence": "https://www.animatrik.com/about",
+            "verified_on": ""
+          },
+          "Performance Capture": {
+            "state": "unknown",
+            "evidence": "https://www.animatrik.com/about",
+            "verified_on": ""
+          },
+          "Motion Capture": {
+            "state": "unknown",
+            "evidence": "https://www.animatrik.com/about",
+            "verified_on": ""
+          }
+        }
+      },
+      "after": {
+        "id": "animatrik-burnaby",
+        "company_id": "animatrik",
+        "name": "Animatrik Film Design",
+        "city": "Burnaby",
+        "country": "Canada",
+        "lat": 49.2488,
+        "lng": -122.9805,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.animatrik.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Burnaby address and purpose-built Vancouver-marketed soundstage supported by individual page and operator homepage. Los Angeles branch remains in review for municipality/address evidence.",
+        "evidence": "https://www.animatrik.com/locations/vancouver",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "confirmed",
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.animatrik.com/",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.animatrik.com/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "location_type": "capture_facility"
+      }
+    }
+  ]
+}

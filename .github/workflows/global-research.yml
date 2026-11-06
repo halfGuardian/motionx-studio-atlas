@@ -7,6 +7,9 @@ on:
       - 'tools/source_policy.py'
       - 'tools/source_adapters.py'
       - 'tools/discovery.py'
+      - 'tools/checkpoints.py'
+      - 'tools/restore_discovery.py'
+      - 'tools/review_rules.py'
       - 'data/discovery/**'
       - 'data/research/**'
       - 'tools/triage.py'
@@ -26,21 +29,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Inventory main review rules without changing settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/review_rules.py --repository '${{ github.repository }}' --output review-rules.json
       - name: Audit only explicit public policy URLs; never auto-enable sources
         run: python tools/source_policy.py --config data/discovery/source-candidates.json --output policy-audit.json
       - name: Restore previous discovery and preserve history
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
-          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then exit 1; fi
-          gh run download "$run_id" --name studio-discovery --dir previous
+          python tools/restore_discovery.py --output previous
       - name: Collect only registry-reviewed sources and prepare unverified dossiers
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           git show '${{ github.event.pull_request.base.sha }}:studios.json' > /tmp/published-studios.json
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
+          recovery_flag=()
+          if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then recovery_flag+=(--suppress-missing); fi
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --checkpoint data/research/v1.0-launch/queue.json "${recovery_flag[@]}" --output discovery-run
+          cp previous/recovery.json discovery-run/recovery.json
           python - <<'PYCODE'
           import json, os, subprocess
           from pathlib import Path
@@ -80,6 +88,7 @@ jobs:
         with:
           name: global-research-review
           path: |
+            review-rules.json
             policy-audit.json
             discovery-run/
             research-review/

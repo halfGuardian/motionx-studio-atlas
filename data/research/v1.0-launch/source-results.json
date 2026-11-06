@@ -1,0 +1,90 @@
+{
+  "reviewed_on": "2026-11-06",
+  "commit": "82c8b334ecfa67b25887c51035cc01ffb4a79e94",
+  "actions_run": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42276804227",
+  "provenance": "Read from completed GitHub job logs; downloadable artifacts contain the full raw state. This is an audit projection, not a substitute for the raw history.",
+  "sources": [
+    {
+      "id": "dneg-studios",
+      "url": "https://www.dneg.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 19,
+      "body_sha256": "bd47ca661708f051fa10ae00fef8573db6b8534c0632342e3054250b92fdd237",
+      "extraction_hash": "7de34df5b2f7bc0b8e96a446699d47c34651e3bbc57979e740be5c5b89b54c29"
+    },
+    {
+      "id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "ddd6d8e760fb277ceb0a40c42f4c1d18835837ede23ac9b4a4a9d268d0562dcc",
+      "extraction_hash": "99b2a3fd25b58fb17555e673f2e10afa1309a62c367c4ee7e9f39f29893f9fb2"
+    },
+    {
+      "id": "framestore-locations",
+      "url": "https://www.framestore.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 7,
+      "body_sha256": "d6e9816b939a42c7fbfa43b26cad2b8ce9fe5d14f2477802a2978206e958d340",
+      "extraction_hash": "c939e4cbae02bf6f8237328e725fd9ccd6e067bb5245e7b30ebcdc714e73be41"
+    },
+    {
+      "id": "larian-locations",
+      "url": "https://larian.com/careers",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 6,
+      "body_sha256": "578d4e1e1a306548db77ae3d167edbdce137178195d63d7810988e66309bfe39",
+      "extraction_hash": "fcdc52cfb651792ed083d22ec55aaa3a02cc1ca519bcfa6f2bcda0ac28ef1201"
+    },
+    {
+      "id": "rise-locations",
+      "url": "https://www.risefx.com/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "a11b3f80dfe70c860e2d6f9fba9a08e8372a1077a7a4bd19eb6e3fca1f49d2cc",
+      "extraction_hash": "f54460442d0f70e4ea97104da600b6ad646c9c5439f5b49920b191e0d9fc91e1"
+    },
+    {
+      "id": "outpost-locations",
+      "url": "https://www.outpost-vfx.com/en/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "caf9b8c01804abf388dac3d0f881bb20154d54ec0a3f7d22bf0bf47d52e704b3",
+      "extraction_hash": "5d416b3829d0d8ace369a7363b86e6c53f0aa26901d0896365ce7e34c3c0a8cb"
+    },
+    {
+      "id": "flyingbark-locations",
+      "url": "https://www.flyingbark.com.au/about",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "1e7b9c301c52ce7c17a8accc5f1d03052a4cf4a62185afed1ed81d2fcecad43d",
+      "extraction_hash": "0d054afcf29aeefcd8c361c7f76abf20386802c52facf04b70138f79ca07ea3d"
+    },
+    {
+      "id": "folks-locations",
+      "url": "https://folksvfx.com/contact/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 10,
+      "body_sha256": "2f3e9e2000e0d7385817fc8ca9e0c332c633cdf30ada5dee13934e59c1db5da8",
+      "extraction_hash": "f083a8c8c3f323cca76f492031f0bfe87ff002a2101e108cb8f05d7e0e2b6952"
+    }
+  ],
+  "candidate_counts": {
+    "already_represented": 91,
+    "potentially_new": 7,
+    "irrelevant": 25,
+    "requires_research": 77
+  },
+  "continuity": {
+    "retained": 133,
+    "history_snapshots": 5
+  }
+}

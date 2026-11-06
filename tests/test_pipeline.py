@@ -31,12 +31,12 @@ class ValidationTests(unittest.TestCase):
     def test_canonical_database_and_relationships(self):
         rows = read_records(ROOT / 'studios.json')
         self.assertEqual(validate(rows)[0], [])
-        self.assertEqual(len(rows), 182)
-        self.assertEqual(len({r['company_id'] for r in rows}), 88)
+        self.assertEqual(len(rows), 243)
+        self.assertEqual(len({r['company_id'] for r in rows}), 119)
         for company in ('beyond', 'centroid'):
             self.assertEqual(sum(r['company_id'] == company for r in rows), 2)
         legacy = [r for r in rows if 'legacy_research' in r]
-        self.assertEqual(len(legacy), 18)
+        self.assertEqual(len(legacy), 15)
         self.assertEqual({r['id'] for r in legacy if r['evidence_state'] != 'unknown'}, {'audiomotion','centroid-uxbridge'})
 
     def test_non_mocap_sector_is_valid(self):

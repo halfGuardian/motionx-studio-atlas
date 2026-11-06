@@ -62,6 +62,8 @@ def classify(candidate, source, database, rejected):
     rows = scope_rows(database, company)
     if candidate.get('observation_kind') == 'location_reference' and candidate.get('city') and candidate.get('country'):
         matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and country_key(r['country']) == country_key(candidate['country'])]
+        if matches and (len(matches)>1 or source.get('unit_scope')=='facility'):
+            return result('requires_research','unknown','facility_identity','Same organisation and place may contain distinct facilities; compare named site evidence before marking represented.',matches,'multiple_locations')
         return result('already_represented' if matches else 'potentially_new', 'likely', 'structured_place',
                       'Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research.', matches, 'location' if matches else 'none')
     branch = bool(re.search(r'/(?:location|locations)/.+$', path)) and kind == 'branch_links'
@@ -109,6 +111,8 @@ def classify(candidate, source, database, rejected):
     # Structured location data still needs identity plus exact city/country to match.
     if candidate.get('city') and candidate.get('country'):
         matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and country_key(r['country']) == country_key(candidate['country'])]
+        if matches and (len(matches)>1 or source.get('unit_scope')=='facility'):
+            return result('requires_research','unknown','facility_identity','Same place does not identify a particular facility.',matches,'multiple_locations')
         if matches:
             return result('already_represented', 'likely', 'structured_place', 'Organisation/group and structured city/country match existing locations; not independent verification.', matches, 'location')
         return result('potentially_new', 'likely', 'structured_place', 'Structured organisation/city/country has no existing scoped location match; research required before publication.')

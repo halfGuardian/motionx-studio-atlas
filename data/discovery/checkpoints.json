@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "queue_path": "data/research/v0.9.3-global/queue.json",
+  "source_run_id": 42161951705,
+  "archived_on": "2026-11-06",
+  "business_claim_approval": false,
+  "note": "Reviewed v0.9.3 job-log projection, 172 candidates including all 41 original backlog entries. Not complete raw artifact history.",
+  "files": [
+    {
+      "path": "data/research/v0.9.3-global/queue.json",
+      "kind": "queue",
+      "sha256": "fefbafd667ce19adf56a98383162542522335ba56a72f190dc903a00838a64ce"
+    },
+    {
+      "path": "data/research/v0.9.3-global/discovery-results.json",
+      "kind": "report",
+      "sha256": "03975e007e6a879490c9d2ed8f223a3358b9b74c74e1cfddfe1b58edb6996d58"
+    }
+  ]
+}

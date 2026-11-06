@@ -17,10 +17,10 @@ from urllib import error, parse, request, robotparser
 import xml.etree.ElementTree as ET
 
 from import_csv import plan_import
-from validate import CSV_FIELDS, DuplicateIndex, url_valid, validate
+from validate import CSV_FIELDS, DuplicateIndex, url_valid, validate, normalized
 
 ROOT = Path(__file__).resolve().parents[1]
-USER_AGENT = 'MotionXDiscovery/0.9.3'
+USER_AGENT = 'MotionXDiscovery/1.0'
 MAX_BYTES = 2_000_000
 MAX_ITEMS = 2000
 CHECKS = ('location', 'city_country', 'sectors', 'capabilities', 'coordinates', 'identity')
@@ -287,7 +287,7 @@ def signals(label):
     return [key for key, pattern in patterns.items() if re.search(pattern, label, re.I)]
 
 
-def scan(config, previous, database, fetcher=None, today=None):
+def scan(config, previous, database, fetcher=None, today=None, detect_absence=True):
     load_config(config)
     today = today or date.today().isoformat()
     fetcher = fetcher or Fetcher()
@@ -323,14 +323,18 @@ def scan(config, previous, database, fetcher=None, today=None):
                              'content_hash': content_hash, 'signals': signals(item['label']+' '+' '.join(item.get('status_terms',[]))),
                              'review_status': 'pending', 'missing_since': None}
                 # The matching is advisory only; source IDs/labels never become public studio IDs.
-                candidate['existing_matches'] = [r['id'] for r in database if
-                    item['url'].rstrip('/') in (r['website'].rstrip('/'), r.get('evidence', '').rstrip('/')) or
-                    (item['city'] and item['country'] and item['city'].casefold() == r['city'].casefold() and item['country'].casefold() == r['country'].casefold() and source.get('company_id') == r['company_id'])]
+                scoped=[r for r in database if source.get('company_id') == r['company_id'] or
+                        any(relation['id']==source.get('company_id') for relation in r.get('relationships',[]))]
+                if item['city'] and item['country']:
+                    candidate['existing_matches']=[r['id'] for r in scoped if normalized(item['city'])==normalized(r['city']) and normalized(item['country'])==normalized(r['country'])]
+                else:
+                    direct=[r['id'] for r in scoped if item['url'].rstrip('/') in (r['website'].rstrip('/'),r.get('evidence','').rstrip('/'))]
+                    candidate['existing_matches']=direct if len(direct)==1 else []
                 state['candidates'][cid] = candidate
                 if event:
                     report['events'].append({'id': cid, 'type': event, 'previous_hash': old['content_hash'] if old else None, 'content_hash': content_hash, 'signals': candidate['signals']})
             # Empty/failed extraction may indicate a redesign, never a mass closure.
-            if observations and not rules_changed:
+            if observations and not rules_changed and detect_absence:
                 for cid, candidate in state['candidates'].items():
                     if source['adapter'] == 'location_labels' and candidate.get('observation_kind') != 'location_reference':
                         continue
@@ -458,7 +462,7 @@ def safe_output(output, inputs):
 def archive_history(previous_run, output):
     """Carry immutable raw queue/report snapshots forward with every artifact."""
     previous_run, output = Path(previous_run), Path(output)
-    paths = [previous_run/'queue.json', previous_run/'report.json']
+    paths = [previous_run/'queue.json', previous_run/'report.json', previous_run/'recovery.json']
     paths += sorted((previous_run/'history').glob('*.json'))
     for path in paths:
         if path.is_symlink():
@@ -484,6 +488,8 @@ def merge_checkpoint(state, checkpoint):
         first=date.fromisoformat(candidate['first_seen'])
         if cid not in merged['candidates']:
             merged['candidates'][cid]=copy.deepcopy(candidate);added.append(cid)
+        elif any((candidate.get(k) or '')!=(merged['candidates'][cid].get(k) or '') for k in ('source_id','url','unit_key')):
+            raise ValueError('checkpoint candidate identity conflict: '+cid)
         elif first<date.fromisoformat(merged['candidates'][cid]['first_seen']):
             merged['candidates'][cid]['first_seen']=first.isoformat();earlier.append(cid)
     return merged,{'added_candidate_ids':added,'earlier_first_seen_ids':earlier,
@@ -517,7 +523,8 @@ def main():
     scan_cmd.add_argument('--database', type=Path, default=ROOT / 'studios.json')
     scan_cmd.add_argument('--output', type=Path, required=True)
     scan_cmd.add_argument('--previous-run', type=Path, help='archive prior queue/report and carry history forward')
-    scan_cmd.add_argument('--checkpoint',type=Path,help='merge missing committed PR observations without resetting run history')
+    scan_cmd.add_argument('--suppress-missing',action='store_true',help='after partial recovery, do not infer missing-evidence events')
+    scan_cmd.add_argument('--checkpoint',type=Path,action='append',help='merge missing committed PR observations without resetting run history')
     proposal = commands.add_parser('prepare', help='prepare an approved proposal, never publish')
     for flag in ('queue', 'records', 'reviews'):
         proposal.add_argument('--' + flag, type=Path, required=True)
@@ -532,6 +539,7 @@ def main():
     args = parser.parse_args()
     try:
         paths = [v for k, v in vars(args).items() if isinstance(v, Path) and k != 'output']
+        paths.extend(args.checkpoint or [] if args.command=='scan' else [])
         safe_output(args.output, paths)
         # Require a new directory: don't leave stale outputs after failed preparation.
         if args.output.exists():
@@ -541,16 +549,20 @@ def main():
             errors, _ = validate(database)
             if errors: raise ValueError('invalid canonical database')
             previous=read(args.state);checkpoint_audit=None
-            if args.checkpoint:previous,checkpoint_audit=merge_checkpoint(previous,read(args.checkpoint))
-            state, report = scan(read(args.config), previous, database)
+            if args.checkpoint:
+                checkpoint_audit=[]
+                for path in args.checkpoint:
+                    previous,audit=merge_checkpoint(previous,read(path));checkpoint_audit.append({'path':str(path),**audit})
+            state, report = scan(read(args.config), previous, database, detect_absence=not args.suppress_missing)
             if checkpoint_audit:report['checkpoint_merge']=checkpoint_audit
             write(args.output / 'queue.json', state)
             write(args.output / 'report.json', report)
             if args.previous_run:
                 archive_history(args.previous_run, args.output)
             if args.checkpoint:
-                body=args.checkpoint.read_bytes();folder=args.output/'history';folder.mkdir(exist_ok=True)
-                (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+                for path in args.checkpoint:
+                    body=path.read_bytes();folder=args.output/'history';folder.mkdir(exist_ok=True)
+                    (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
             print(json.dumps({'pending': report['pending_candidates'], 'source_status': report['sources'], 'published': 0}))
         elif args.command == 'review-template':
             queue, records = read(args.queue), read(args.records)

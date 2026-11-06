@@ -14,6 +14,12 @@ def before_v092():
 
 
 def before_v093():
-    rows = json.loads((ROOT/'studios.json').read_text())[:141]
+    rows = before_v10()[:141]
     originals = json.loads((ROOT/'data/research/v0.9.3-global/evidence.json').read_text())['before_updates']
+    return [copy.deepcopy(originals.get(r['id'], r)) for r in rows]
+
+
+def before_v10():
+    rows = json.loads((ROOT/'studios.json').read_text())[:182]
+    originals = json.loads((ROOT/'data/research/v1.0-launch/evidence.json').read_text())['before_updates']
     return [copy.deepcopy(originals.get(r['id'], r)) for r in rows]
