@@ -1,4 +1,4 @@
-/* MotionX v1.0. Static GitHub Pages; every public record comes from studios.json. */
+/* Static GitHub Pages. Reviewed baseline + optional hash-bound bulk catalogue. */
 'use strict';
 const $=id=>document.getElementById(id), D=MotionXData;
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -8,6 +8,7 @@ const countLabel=(n,label)=>`${n} ${label}${n===1?'':'s'}`;
 const pageSize=50;
 let studios=[],directory=null,matches=[],selected=null,page=0,loaded=false,viewMode='locations',opener=null,openerHash=null;
 let markerGroups=[],spatial=null,searchTimer;
+let catalog=null,routeVersion=0;
 const timings=globalThis.MotionXPerformance={};
 const map=globalThis.L?L.map('map',{worldCopyJump:true,preferCanvas:true}).setView([28,-25],2):null;
 const layer=map?L.layerGroup().addTo(map):null;
@@ -19,7 +20,7 @@ if(map){
   osm.on('tileerror',()=>{status.hidden=false;});osm.on('tileload',()=>{status.hidden=true;});
 }else $('map').textContent='Map library could not load. Use the studio directory, or reload to retry.';
 function controls(){return {query:$('search').value,country:$('country').value,city:$('city').value,sector:$('category').value,
-  locationType:$('locationType').value,confirmedOnly:$('confirmedOnly').checked,capabilityMode:$('capabilityMode').value,
+  locationType:$('locationType').value,evidenceClass:$('evidenceClass').value,confirmedOnly:$('confirmedOnly').checked,capabilityMode:$('capabilityMode').value,
   capabilities:[...document.querySelectorAll('#capabilityOptions input:checked')].map(input=>input.value)};}
 function filtered(){return matches;}
 function locationCard(s){
@@ -29,7 +30,7 @@ function locationCard(s){
     <h3>${profileLink('location',s.id,s.name,`class="profile-link" data-id="${esc(s.id)}"`)}</h3>
     <div class="muted">${esc(s.city)}, ${esc(s.country)}</div>
     ${s.categories.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}
-    <div class="confidence ${esc(s.evidence_state)}">Evidence: ${esc(s.evidence_state)} · ${esc(s.coordinate_precision)} coordinates</div></article>`;
+    <div class="confidence ${esc(s.evidence_state)}">${s.evidence_class==='B'?'Class B · Source-listed, uncorroborated':s.evidence_state==='confirmed'?'Class A · Source-reviewed location':'Legacy evidence unknown'} · ${esc(s.coordinate_precision)} coordinates</div></article>`;
 }
 function organisationCard(org,rows){return `<article class="entry"><div class="eyebrow">OPERATING ORGANISATION</div>
   <h3>${profileLink('organisation',org.id,org.name,'class="profile-link"')}</h3>
@@ -41,6 +42,7 @@ function renderList(){
   page=Math.min(page,Math.max(0,Math.ceil(items.length/pageSize)-1));
   $('count').textContent=countLabel(matches.length,'location');
   $('companies').textContent=`${countLabel(grouped.size,'organization')} · ${studios.length} total locations / ${countLabel(directory.organisations.size,'organization')}`;
+  if(catalog){const c=catalog.manifest.counts;$('companies').textContent=`${grouped.size} matching identities · ${c.class_a} Class A / ${c.class_b} Class B locations · ${c.reviewed_operating_organisations} reviewed operating organisations / ${c.provisional_source_identities} provisional source identities`;}
   $('list').innerHTML=items.slice(page*pageSize,(page+1)*pageSize).map(item=>viewMode==='locations'?locationCard(item):organisationCard(directory.organisations.get(item),grouped.get(item))).join('')||
     '<div class="empty-state"><h3>No studios match yet.</h3><p class="muted">Try fewer capabilities, a broader city search, or reset the filters.</p><button data-reset>Reset all filters</button></div>';
   $('pageInfo').textContent=items.length?`${page*pageSize+1}–${Math.min((page+1)*pageSize,items.length)} of ${items.length}`:'0 results';
@@ -102,15 +104,16 @@ function locationProfile(s){
   return `<div class="eyebrow">STUDIO LOCATION</div><h2 id="profileTitle" tabindex="-1">${esc(s.name)}</h2>
     <p class="muted">${esc(s.city)}, ${esc(s.country)}</p>
     <p>${profileLink('organisation',org.id,org.name)} · ${countLabel(org.rows.length,'location')} in this operating organisation</p>
-    <span class="stat">Evidence confidence: ${esc(s.evidence_state)}</span><span class="stat">${esc((s.location_type||'uncertain').replaceAll('_',' '))}</span>
+    <span class="stat">${s.evidence_class==='B'?'Class B — Source-listed, not independently corroborated':s.evidence_state==='confirmed'?'Class A — Source-reviewed location':'Legacy evidence unknown'} · Evidence confidence: ${esc(s.evidence_state)}</span><span class="stat">${esc((s.location_type||'uncertain').replaceAll('_',' '))}</span>
     <p class="source-note muted">${esc(s.status)}</p>
     <h3>Source-confirmed capabilities</h3>${capabilities('confirmed')?'<ul>'+capabilities('confirmed')+'</ul>':'<p class="muted">No facility capability is confirmed in the recorded evidence.</p>'}
     ${capabilities('likely')?'<h3>Likely capabilities</h3><ul>'+capabilities('likely')+'</ul>':''}
     ${capabilities('unknown')?'<h3>Unreviewed capabilities</h3><ul>'+capabilities('unknown')+'</ul>':''}
     <h3>Specialisations & location</h3><p>${s.categories.map(c=>`<span class="tag">${esc(c)}</span>`).join('')}</p>
-    <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,'Official website')}</dd></dl>
+    <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.evidence_class==='B'?'Original directory point source':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':'Official website')}</dd></dl>
     <h3>Evidence & review</h3><p>${external(s.evidence,'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
     <h3>Organisation relationships</h3>${relationshipList([s])}
+    ${s.evidence_class==='B'?'<h3>Directory provenance & reuse</h3><p class="source-note">Current operation, physical facility type and services have not been independently corroborated. The source category is not a verified capability. Observed: '+esc(s.source_observed_on)+'. Identity: '+esc(s.identity_status.replaceAll('_',' '))+'</p><ul>'+s.source_provenance.map(p=>'<li>'+esc(p.source_id+' / '+p.source_record_id)+' · '+external(p.url,'Source object')+' · '+external(p.license_url,p.license)+' · '+esc(p.observed_on)+'</li>').join('')+'</ul><p class="muted">'+esc(s.attribution)+'</p>':''}
     <h3>Other branches & facilities</h3>${branches.length?branchLinks(branches):'<p class="muted">No other branch is currently listed under this operating identity.</p>'}
     ${branches.length>12?'<p>'+profileLink('organisation',org.id,'Browse all '+org.rows.length+' locations')+'</p>':''}
     <p>${profileLink('organisation',org.id,'View organisation and related operating brands')}</p>
@@ -134,12 +137,14 @@ function organisationProfile(id){
 }
 function navigate(kind,id,element){if(element){opener=element;openerHash=element.getAttribute('href');}const hash=D.profileHash(kind,id);if(location.hash!==hash)history.pushState(null,'',hash);applyRoute();}
 function closeProfile(restoreFocus=true){if(location.hash)history.pushState(null,'',location.pathname+location.search);applyRoute(restoreFocus);}
-function applyRoute(restoreFocus=true){
-  if(!loaded)return;const start=performance.now(),route=D.parseProfileHash(location.hash);
+async function applyRoute(restoreFocus=true){
+  if(!loaded)return;const version=++routeVersion,start=performance.now(),route=D.parseProfileHash(location.hash);
   if(route.kind==='directory'){$('detail').hidden=true;selected=null;renderList();if(restoreFocus&&opener){const target=[...$('list').querySelectorAll('a')].find(a=>a.getAttribute('href')===openerHash);if(target?.getClientRects().length)target.focus();else if($('search').getClientRects().length)$('search').focus();else $('map').focus();}return;}
   let content=null;
   if(route.kind==='location'){
-    const s=directory.byId.get(route.id);if(s){selected=s.id;content=locationProfile(s);
+    let s=directory.byId.get(route.id);if(s||catalog?.researchOnly.has(route.id)){
+      if(catalog){$('detail').hidden=false;$('detailContent').textContent='Loading profile evidence…';try{s=await catalog.details(route.id);}catch(error){if(version!==routeVersion)return;$('detailContent').innerHTML='<h2 id="profileTitle" tabindex="-1">Profile evidence unavailable</h2><p>'+esc(error.message)+'</p><button data-retry-profile>Retry profile</button>';return;}if(version!==routeVersion)return;}
+      selected=s.id;content=locationProfile(s);
       if(map&&!map.getBounds().contains([s.lat,s.lng]))map.setView([s.lat,s.lng],Math.max(map.getZoom(),6),{animate:false});}
   }else if(route.kind==='organisation'){selected='organisation:'+route.id;content=organisationProfile(route.id);}
   $('detailContent').innerHTML=content||'<div class="eyebrow">PROFILE UNAVAILABLE</div><h2 id="profileTitle" tabindex="-1">This profile could not be found.</h2><p>The link may be incomplete or the identity may not be listed yet.</p><button data-close>Back to directory</button>';
@@ -151,6 +156,7 @@ $('mapTab').onclick=()=>{document.body.classList.remove('show-list');updateTabs(
 $('listTab').onclick=()=>{document.body.classList.add('show-list');updateTabs();};
 $('close').onclick=()=>closeProfile();document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('detail').hidden){e.preventDefault();closeProfile();}});
 document.addEventListener('click',e=>{
+  if(e.target.closest('[data-retry-profile]')){applyRoute();return;}
   if(e.target.closest('.skip-link')){e.preventDefault();closeProfile(false);if(innerWidth<=750){document.body.classList.add('show-list');updateTabs();}$('search').focus();return;}
   const reset=e.target.closest('[data-reset]');if(reset){resetFilters();return;}
   if(e.target.closest('[data-close]')){closeProfile();return;}
@@ -160,21 +166,21 @@ document.addEventListener('click',e=>{
   const anchor=e.target.closest('a[href^="#/"]');if(!anchor||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
   const route=D.parseProfileHash(anchor.getAttribute('href'));e.preventDefault();if(route.kind==='directory')closeProfile();else if(route.kind!=='invalid')navigate(route.kind,route.id,anchor);
 });
-function resetFilters(){for(const id of ['search','country','city','category','locationType'])$(id).value='';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile(false);render();}
+function resetFilters(){for(const id of ['search','country','city','category','locationType','evidenceClass'])$(id).value='';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile(false);render();}
 $('resetFilters').onclick=resetFilters;
-for(const id of ['search','country','city','category','locationType','confirmedOnly','capabilityMode','capabilityOptions'])$(id).addEventListener('input',()=>{
+for(const id of ['search','country','city','category','locationType','evidenceClass','confirmedOnly','capabilityMode','capabilityOptions'])$(id).addEventListener('input',()=>{
   clearTimeout(searchTimer);searchTimer=setTimeout(()=>{page=0;closeProfile(false);render();},['search','city'].includes(id)?120:0);
 });
 for(const mode of ['locations','organisations'])$(mode+'View').onclick=()=>{viewMode=mode;page=0;for(const m of ['locations','organisations'])$(m+'View').setAttribute('aria-pressed',String(m===mode));renderList();};
 $('previousPage').onclick=()=>{page--;renderList();};$('nextPage').onclick=()=>{page++;renderList();};
 $('fitResults').onclick=()=>{if(matches.length&&map)map.fitBounds(L.latLngBounds(matches.map(r=>[r.lat,r.lng])).pad(.25),{maxZoom:10,animate:false});};
-$('exportCsv').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(matches)],{type:'text/csv;charset=utf-8'}));a.download='motionx_studios_filtered_v1.0.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);};
+$('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const rows=catalog?await catalog.exportRows(snapshot):snapshot;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows)],{type:'text/csv;charset=utf-8'}));a.download='motionx_studios_filtered_v1.0.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
 window.addEventListener('resize',()=>setTimeout(()=>map?.invalidateSize(),80));
 function setControls(enabled){document.querySelectorAll('#filters input,#filters select,#exportCsv,#resetFilters,#fitResults,#locationsView,#organisationsView,#previousPage,#nextPage').forEach(el=>{el.disabled=!enabled;});if(!map)$('fitResults').disabled=true;}
 async function initialize(){
   const start=performance.now();loaded=false;setControls(false);$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='Loading studio database… ';$('retryLoad').hidden=true;$('count').textContent='Loading locations…';$('companies').textContent='';$('detail').hidden=true;
   try{
-    studios=await D.loadDatabase();timings.load_validate_ms=performance.now()-start;const indexing=performance.now();directory=D.createDirectoryIndex(studios);timings.index_ms=performance.now()-indexing;
+    if(document.documentElement.dataset.catalog==='sharded'){catalog=await MotionXCatalog.load(D);studios=catalog.rows;}else{catalog=null;studios=(await D.loadDatabase()).map(r=>({...r,evidence_class:r.evidence_state==='confirmed'?'A':'legacy'}));}timings.load_validate_ms=performance.now()-start;const indexing=performance.now();directory=D.createDirectoryIndex(studios);timings.index_ms=performance.now()-indexing;
     $('country').replaceChildren(new Option('All countries',''),...[...new Set(studios.map(r=>r.country))].sort().map(c=>new Option(c,c)));
     $('category').replaceChildren(new Option('All sectors',''),...[...new Set([...D.sectors,...studios.flatMap(r=>r.categories)])].sort().map(c=>new Option(c,c)));
     $('capabilityOptions').replaceChildren();for(const capability of [...new Set(studios.flatMap(r=>r.capabilities))].sort()){

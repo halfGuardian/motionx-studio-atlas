@@ -44,7 +44,8 @@ def compact(path,value):
     text=json.dumps(value,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n';path.write_text(text,encoding='utf-8')
     # Sidecars for mirrors/previews. Pages negotiates its own compression; never
     # pretend GitHub Pages will serve these with Content-Encoding automatically.
-    with gzip.GzipFile(filename='',fileobj=path.with_suffix(path.suffix+'.gz').open('wb'),mode='wb',mtime=0) as f:f.write(text.encode())
+    with path.with_suffix(path.suffix+'.gz').open('wb') as raw:
+        with gzip.GzipFile(filename='',fileobj=raw,mode='wb',mtime=0) as f:f.write(text.encode())
 
 def build(records,baseline,output,policy_hash,run_id):
     baseline=Path(baseline);base=read(baseline);errors,warnings=validate(base)

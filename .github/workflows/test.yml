@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '22'
       - run: python -m unittest discover -s tests -p 'test_*.py' -v
-      - run: node tests/data.test.js
+      - run: node --test tests/*.test.js
       - run: python tools/validate.py studios.json
   browser:
     runs-on: ubuntu-24.04
@@ -39,11 +39,13 @@ jobs:
             python -m playwright install --with-deps chromium
           fi
       - run: python tests/browser_smoke.py
+      - run: python tests/bulk_browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: http-browser-and-50000-location-performance
           path: |
             /tmp/motionx-v10-performance.json
+            /tmp/motionx-v11-bulk-performance.json
             /tmp/motionx-v08-desktop.png
             /tmp/motionx-v08-mobile.png

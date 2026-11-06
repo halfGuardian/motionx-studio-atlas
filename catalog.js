@@ -28,7 +28,7 @@
     if(path!=='./data/public/manifest.json')throw new Error('Unapproved catalogue manifest path.');
     const [{value:m},{value:base,text:baseText}]=await Promise.all([json(fetcher,path,null,2000000),json(fetcher,'./studios.json',null,60000000)]);
     D.validateDatabase(base);
-    if(m.version!==1||m.baseline?.path!=='./studios.json'||m.index?.path!=='index.json'||!m.shards||!Array.isArray(m.baseline.eligible_ids)||!Array.isArray(m.baseline.research_only_ids)||await sha(baseText)!==m.baseline.sha256)throw new Error('Invalid catalogue/baseline integrity.');
+    if(m.version!==1||m.baseline?.path!=='./studios.json'||m.index?.path!=='index.json'||!m.shards||!Array.isArray(m.baseline.eligible_ids)||!Array.isArray(m.baseline.research_only_ids)||await sha(baseText)!==m.baseline.sha256||!/^[a-f0-9]{64}$/.test(m.index.sha256)||Object.entries(m.shards).some(([key,v])=>!shardPath.test(key)||!/^[a-f0-9]{64}$/.test(v.sha256)||!Number.isInteger(v.records)||v.records<1||v.records>1000))throw new Error('Invalid catalogue/baseline integrity.');
     const baseMap=new Map(base.map(r=>[r.id,r])),ids=new Set(),rows=[];
     for(const id of m.baseline.eligible_ids){const r=baseMap.get(id);if(!r||r.evidence_state!=='confirmed'||!r.evidence||!r.verified_on||ids.has(id))throw new Error('Invalid Class A baseline identity.');ids.add(id);rows.push({...r,evidence_class:'A'});}
     const held=new Set(m.baseline.research_only_ids);

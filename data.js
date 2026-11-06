@@ -11,7 +11,7 @@
       const host=url.hostname.replace(/\.$/,'').toLowerCase();
       if(!host.includes('.') || host==='localhost' || /\.(localhost|local|internal)$/.test(host) || /^[\d.]+$/.test(host) || host.includes(':')) return false;
       if(/[\u0000-\u001f\u007f]/.test(value) || /[?&](access_token|api[_-]?key|auth|password|token)=/i.test(value)) return false;
-      return typeof value === 'string' && url.protocol === 'https:' && !!url.hostname &&
+      return typeof value === 'string' && !value.includes('\\') && url.port!=='0' && url.protocol === 'https:' && !!url.hostname &&
         !url.username && !url.password && !/\s/.test(value);
     } catch { return false; }
   }

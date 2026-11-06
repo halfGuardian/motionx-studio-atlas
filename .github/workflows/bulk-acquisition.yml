@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 120
     concurrency:
       group: licensed-bulk-${{ github.event.pull_request.number || 'manual' }}
-      cancel-in-progress: false
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

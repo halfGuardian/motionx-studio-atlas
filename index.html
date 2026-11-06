@@ -24,6 +24,7 @@
 <label class="wide">Production sector<select id="category"><option value="">All sectors</option></select></label>
 <details class="capability-picker wide" id="capabilityPicker"><summary id="capabilitySummary">Capabilities · any</summary><fieldset><legend>Select specific facility capabilities</legend><div id="capabilityOptions"></div><label class="wide">Combine selected capabilities<select id="capabilityMode"><option value="all">Match all selected (AND)</option><option value="any">Match any selected (OR)</option></select></label></fieldset></details>
 <label class="wide">Location type<select id="locationType"><option value="">All location types</option><option value="production_studio">Production studio</option><option value="capture_facility">Capture facility</option><option value="mixed_campus">Mixed campus</option><option value="creative_hub">Creative hub</option><option value="production_office">Production office</option><option value="uncertain">Type not established</option></select></label>
+<label class="wide">Location evidence<select id="evidenceClass"><option value="">All evidence classes</option><option value="A">Class A — Source-reviewed location</option><option value="B">Class B — Directory-listed, uncorroborated</option></select></label>
 <label class="check-label wide"><input type="checkbox" id="confirmedOnly"> Confirmed capability evidence only</label>
 <p class="filter-help wide">Different filters combine with AND. City and search match text. Confirmed-only checks selected capabilities, the selected sector, or any confirmed capability when neither is selected. Parent services are never inherited.</p>
 </div>
@@ -38,5 +39,5 @@
 </main>
 <nav class="mobile-nav" aria-label="Mobile navigation"><button id="mapTab" class="active" aria-pressed="true">◉ Map</button><button id="listTab" aria-pressed="false">☷ Studios</button></nav>
 <section class="detail" id="detail" hidden role="region" aria-label="Studio or organisation profile"><button class="close" id="close" aria-label="Close profile">✕</button><div id="detailContent"></div></section>
-<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script defer src="data.js"></script><script defer src="app.js"></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script defer src="data.js"></script><script defer src="catalog.js"></script><script defer src="app.js"></script>
 </body></html>

@@ -49,12 +49,16 @@ def run(output,release=RELEASE):
         if not keys:raise ValueError('documented release has no accessible Places parquet objects')
         report['listing_sha256']=hashlib.sha256(listing).hexdigest();report['objects']=keys
         write(output/'overture-collection.json',report)
+        print('OVERTURE_PHASE '+json.dumps({'phase':'object_listing','objects':len(keys),'elapsed_seconds':round(time.monotonic()-start,3)}),flush=True)
         con=duckdb.connect();con.execute("SET memory_limit='1500MB'; SET threads=2; SET temp_directory='/tmp/motionx-duckdb';")
         con.execute('INSTALL httpfs; LOAD httpfs;')
-        con.execute("SET s3_region='us-west-2'; SET http_timeout=120000; SET http_retries=2;")
+        # DuckDB uses SECONDS (not milliseconds). Bound individual network calls.
+        con.execute("SET s3_region='us-west-2'; SET http_timeout=120; SET http_retries=2;")
+        print('OVERTURE_PHASE '+json.dumps({'phase':'httpfs_ready','elapsed_seconds':round(time.monotonic()-start,3)}),flush=True)
         uris=[BUCKET+'/'+k for k in keys]
         relation='read_parquet('+repr(uris)+',union_by_name=true,filename=true,hive_partitioning=true)'
         description=con.execute('DESCRIBE SELECT * FROM '+relation).fetchall();report['columns']=[r[0] for r in description]
+        print('OVERTURE_PHASE '+json.dumps({'phase':'schema','columns':report['columns'],'elapsed_seconds':round(time.monotonic()-start,3)}),flush=True)
         write(folder/'schema.json',description)
         if 'taxonomy' in report['columns']:cat='taxonomy.primary'
         elif 'categories' in report['columns']:cat='categories.primary'
@@ -83,6 +87,7 @@ def run(output,release=RELEASE):
             if path.exists() and read(path)!=cleaned:raise ValueError('immutable snapshot conflict; use a new release/run directory')
             write(path,cleaned);write(meta,{'source':'overture','release':release,'observed_on':report['observed_on'],'license':'per-provider','row_count':len(cleaned),'projection_hash':digest(cleaned),'query_pattern':CANDIDATE_PATTERN,'source_objects':keys})
             count+=len(cleaned);page+=1
+            print('OVERTURE_PROGRESS '+json.dumps({'source_records':count,'pages':page,'projection_hash':digest(cleaned),'elapsed_seconds':round(time.monotonic()-start,3)}),flush=True)
         report.update(complete=True,raw_source_records=count,pages=page)
         con.close()
     except Exception as e:

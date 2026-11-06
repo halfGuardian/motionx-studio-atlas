@@ -7,6 +7,8 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 import bulk_collect as collect
 import bulk_ingest as bulk
 import bulk_batch as batch
+import bulk_archive as archive
+import bulk_catalog as catalog
 from discovery import read,write,digest
 
 def policy():
@@ -131,5 +133,37 @@ class BatchTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'stable'):batch.project({'name':'studio'})
         r=batch.project({'source_record_id':'one','name':'Test','lat':'not a number','lng':'2','sectors':'Animation|VFX'})
         self.assertIsNone(r['lat']);self.assertEqual(r['sectors'],['Animation','VFX'])
+
+class CatalogueArchiveTests(unittest.TestCase):
+    setUp=BulkTests.setUp
+    snapshot=BulkTests.snapshot
+    run_ingest=BulkTests.run_ingest
+    def test_catalogue_preserves_all_ids_and_shards_original_geometry(self):
+        self.snapshot([place()]);self.run_ingest();base=read(ROOT/'studios.json');write(self.root/'baseline.json',base)
+        rows=read(self.root/'out1/proposed-b.json');m=catalog.build(rows,self.root/'baseline.json',self.root/'public',digest(self.config),'run')
+        self.assertEqual(m['baseline']['retained_records'],243);self.assertEqual(m['counts']['class_a'],230)
+        self.assertEqual(m['counts']['retained_legacy_research'],13);self.assertEqual(m['counts']['class_b'],1)
+        index=read(self.root/'public/index.json');self.assertEqual(index[0][5:7],[20,10]);self.assertEqual(len(index[0]),11)
+        self.assertEqual(read(self.root/'baseline.json'),base);self.assertFalse(m['publication_approved'])
+    def test_verified_claims_or_existing_identity_cannot_enter_b_catalogue(self):
+        self.snapshot([place()]);self.run_ingest();row=read(self.root/'out1/proposed-b.json')[0]
+        self.assertEqual(catalog.validate_b([row])[0],[])
+        for changes in ({'verified_on':'2026-11-06'},{'evidence_class':'A'},{'capabilities':['Motion Capture']},{'email':'private@example.test'},{'source_provenance':[]}):
+            self.assertTrue(catalog.validate_b([{**row,**changes}])[0])
+        write(self.root/'base.json',[row])
+        with self.assertRaisesRegex(ValueError,'overwrite'):catalog.build([row],self.root/'base.json',self.root/'public','policy','run')
+    def test_archive_round_trip_and_expired_artifact_recovery(self):
+        self.snapshot([place()]);self.run_ingest()
+        m=archive.archive(self.root/'input',self.root/'out1',self.root/'archive','1234')
+        restored=archive.restore(self.root/'archive',self.root/'restored');self.assertEqual(m,restored)
+        self.assertEqual(read(self.root/'restored/snapshots/overture/places-00000.json'),[place()])
+        with patch('builtins.print'):r=bulk.ingest(self.root/'restored/snapshots',self.root/'rebuilt',self.config,[])
+        self.assertEqual(r['candidate_classes'],{'B':1});self.assertEqual(r['published_records'],0)
+    def test_corrupt_or_missing_archive_never_yields_partial_state(self):
+        self.snapshot([place()]);self.run_ingest();m=archive.archive(self.root/'input',self.root/'out1',self.root/'archive','1234')
+        path=self.root/'archive'/m['files'][0]['path'];path.write_bytes(b'broken')
+        with self.assertRaisesRegex(ValueError,'integrity'):archive.restore(self.root/'archive',self.root/'restored')
+        self.assertFalse((self.root/'restored').exists());path.unlink()
+        with self.assertRaises(FileNotFoundError):archive.restore(self.root/'archive',self.root/'restored')
 
 if __name__=='__main__':unittest.main()
