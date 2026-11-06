@@ -56,5 +56,6 @@
     "ea_fetched": false
   },
   "publication": "Proposed development-branch data only; PR is not merged. No human approval is impersonated.",
-  "approved_bundle_workflow": "Deliberately blocked by pending reviews; not claimed as a successful approved publication run."
+  "approved_bundle_workflow": "Deliberately blocked by pending reviews; not claimed as a successful approved publication run.",
+  "additional_unverified_followups": 3
 }

@@ -1,0 +1,35 @@
+[
+  {
+    "candidate": "StudioT3D / Target3D \u2014 Gateshead reference",
+    "sources": [
+      "https://www.studiot3d.com/virtual-production"
+    ],
+    "reason": "The service page mentions a Gateshead studio, but current independent operation, facility address and relationship to network partners were not established in this pass. Do not copy London capabilities or create a branch from a service-page mention.",
+    "confidence": "unknown",
+    "decision": "requires_research",
+    "observed_on": "2026-11-06",
+    "publication_approved": false
+  },
+  {
+    "candidate": "StudioT3D / Target3D \u2014 Spain office reference",
+    "sources": [
+      "https://www.studiot3d.com/our-team"
+    ],
+    "reason": "The operator mentions offices in Spain without establishing a city or separately operating production/capture facility. Equipment sales/support offices are not automatically studio locations.",
+    "confidence": "unknown",
+    "decision": "requires_research",
+    "observed_on": "2026-11-06",
+    "publication_approved": false
+  },
+  {
+    "candidate": "StudioT3D / Target3D \u2014 New Zealand office reference",
+    "sources": [
+      "https://www.studiot3d.com/our-team"
+    ],
+    "reason": "The operator mentions offices in New Zealand without establishing a city or separately operating production/capture facility. Location type and site-specific services need research.",
+    "confidence": "unknown",
+    "decision": "requires_research",
+    "observed_on": "2026-11-06",
+    "publication_approved": false
+  }
+]
