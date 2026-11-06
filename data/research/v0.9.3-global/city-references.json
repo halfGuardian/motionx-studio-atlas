@@ -1,0 +1,198 @@
+{
+  "reviewed_on": "2026-11-06",
+  "licence": "GeoNames CC BY 4.0; city reference points, not facility coordinates. New entries reviewed via GeoNames; existing city points reused with their original source. No endorsement.",
+  "references": {
+    "Ghent": {
+      "city": "Ghent",
+      "lat": 51.05,
+      "lng": 3.71667,
+      "source": "https://www.geonames.org/2797656"
+    },
+    "Barcelona": {
+      "city": "Barcelona",
+      "lat": 41.38879,
+      "lng": 2.15899,
+      "source": "https://www.geonames.org/3128760/barcelona.html"
+    },
+    "Dublin": {
+      "city": "Dublin",
+      "lat": 53.33306,
+      "lng": -6.24889,
+      "source": "https://www.geonames.org/2964574"
+    },
+    "Guildford": {
+      "city": "Guildford",
+      "lat": 51.23536,
+      "lng": -0.57427,
+      "source": "https://www.geonames.org/2647793/guildford.html"
+    },
+    "Kuala Lumpur": {
+      "city": "Kuala Lumpur",
+      "lat": 3.1412,
+      "lng": 101.68653,
+      "source": "https://www.geonames.org/1735161/kuala-lumpur.html"
+    },
+    "Québec": {
+      "city": "Québec",
+      "lat": 46.81228,
+      "lng": -71.21454,
+      "source": "https://www.geonames.org/6325494/quebec.html"
+    },
+    "Warsaw": {
+      "city": "Warsaw",
+      "lat": 52.22977,
+      "lng": 21.01178,
+      "source": "https://www.geonames.org/756135/warsaw.html"
+    },
+    "Berlin": {
+      "city": "Berlin",
+      "lat": 52.52437,
+      "lng": 13.41053,
+      "source": "https://www.geonames.org/2950159/berlin.html"
+    },
+    "Cologne": {
+      "city": "Cologne",
+      "lat": 50.93333,
+      "lng": 6.95,
+      "source": "https://www.geonames.org/2886242"
+    },
+    "London": {
+      "city": "London",
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "source": "https://www.geonames.org/2643743/london.html"
+    },
+    "Munich": {
+      "city": "Munich",
+      "lat": 48.13743,
+      "lng": 11.57549,
+      "source": "https://www.geonames.org/2867714/munich.html"
+    },
+    "Stuttgart": {
+      "city": "Stuttgart",
+      "lat": 48.78232,
+      "lng": 9.17702,
+      "source": "https://www.geonames.org/2825297"
+    },
+    "Bournemouth": {
+      "city": "Bournemouth",
+      "lat": 50.72048,
+      "lng": -1.8795,
+      "source": "https://www.geonames.org/2655095"
+    },
+    "Montréal": {
+      "city": "Montréal",
+      "lat": 45.50884,
+      "lng": -73.58781,
+      "source": "https://www.geonames.org/6077243/montreal.html"
+    },
+    "Mumbai": {
+      "city": "Mumbai",
+      "lat": 19.07283,
+      "lng": 72.88261,
+      "source": "https://www.geonames.org/1275339/mumbai.html"
+    },
+    "Sydney": {
+      "city": "Sydney",
+      "lat": -33.86785,
+      "lng": 151.20732,
+      "source": "https://www.geonames.org/2147714/sydney.html"
+    },
+    "Burbank": {
+      "city": "Burbank",
+      "lat": 34.18084,
+      "lng": -118.30897,
+      "source": "https://www.geonames.org/5331835"
+    },
+    "Madrid": {
+      "city": "Madrid",
+      "lat": 40.4165,
+      "lng": -3.70256,
+      "source": "https://www.geonames.org/3117735/madrid.html"
+    },
+    "Cape Town": {
+      "city": "Cape Town",
+      "lat": -33.92584,
+      "lng": 18.42322,
+      "source": "https://www.geonames.org/3369157/cape-town.html"
+    },
+    "Galway": {
+      "city": "Galway",
+      "lat": 53.27245,
+      "lng": -9.05095,
+      "source": "https://www.geonames.org/2964180"
+    },
+    "Toronto": {
+      "city": "Toronto",
+      "lat": 43.65333,
+      "lng": -79.38389,
+      "source": "https://www.geonames.org/6167865/toronto.html"
+    },
+    "Bogotá": {
+      "city": "Bogotá",
+      "lat": 4.60971,
+      "lng": -74.08175,
+      "source": "https://www.geonames.org/3688689"
+    },
+    "Saguenay": {
+      "city": "Saguenay",
+      "lat": 48.41675,
+      "lng": -71.06573,
+      "source": "https://www.geonames.org/6137270/saguenay.html"
+    },
+    "New York": {
+      "city": "New York",
+      "lat": 40.71427,
+      "lng": -74.00597,
+      "source": "https://www.geonames.org/5128581"
+    },
+    "Atlanta": {
+      "city": "Atlanta",
+      "lat": 33.749,
+      "lng": -84.38798,
+      "source": "https://www.geonames.org/4180439"
+    },
+    "Vancouver": {
+      "city": "Vancouver",
+      "lat": 49.24966,
+      "lng": -123.11934,
+      "source": "https://www.geonames.org/6173331/vancouver.html"
+    },
+    "Johannesburg": {
+      "city": "Johannesburg",
+      "lat": -26.20227,
+      "lng": 28.04363,
+      "source": "https://www.geonames.org/993800"
+    },
+    "Adelaide": {
+      "city": "Adelaide",
+      "lat": -34.92866,
+      "lng": 138.59863,
+      "source": "https://www.geonames.org/2078025"
+    },
+    "Brisbane": {
+      "city": "Brisbane",
+      "lat": -27.46794,
+      "lng": 153.02809,
+      "source": "https://www.geonames.org/2174003"
+    },
+    "Hyderabad": {
+      "city": "Hyderabad",
+      "lat": 17.38405,
+      "lng": 78.45636,
+      "source": "https://www.geonames.org/1269843/hyderabad.html"
+    },
+    "Newcastle upon Tyne": {
+      "city": "Newcastle upon Tyne",
+      "lat": 54.97328,
+      "lng": -1.61396,
+      "source": "https://www.geonames.org/2641673"
+    },
+    "Stockholm": {
+      "city": "Stockholm",
+      "lat": 59.32938,
+      "lng": 18.06871,
+      "source": "https://www.geonames.org/2673730/stockholm.html"
+    }
+  }
+}

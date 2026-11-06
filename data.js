@@ -81,9 +81,9 @@
       return validateDatabase(await response.json());
     } finally { clearTimeout(timeout); }
   }
-  function filterRecords(rows, query = '', category = '', country = '') {
+  function filterRecords(rows, query = '', category = '', country = '', confirmedOnly = false) {
     const q = query.trim().toLocaleLowerCase();
-    return rows.filter(row => (!category || row.categories.includes(category) || row.capabilities.includes(category)) &&
+    return rows.filter(row => (!confirmedOnly || (category ? row.capability_evidence[category]?.state === 'confirmed' : Object.values(row.capability_evidence).some(e => e.state === 'confirmed'))) && (!category || row.categories.includes(category) || row.capabilities.includes(category)) &&
       (!country || row.country === country) && (!q ||
         [row.name, row.city, row.country, ...(row.relationships || []).map(r => r.name), ...row.categories, ...row.capabilities].join(' ').toLocaleLowerCase().includes(q)));
   }

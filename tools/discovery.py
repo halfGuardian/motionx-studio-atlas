@@ -275,6 +275,8 @@ def extract(source, text):
 def signals(label):
     patterns = {'possible_closure': r'\b(clos(?:e[ds]?|ing|ure)|shut(?:s|ting)? down|ceas(?:e[ds]?|ing))\b',
                 'possible_acquisition': r'\b(acquir\w*|acquisition|merg\w*)\b',
+                'possible_opening': r'\b(open(?:s|ed|ing)?|launch(?:es|ed|ing)?)\b.*\b(studio|facility|stage|branch)\b|\bnew (?:studio|facility|stage|branch)\b',
+                'possible_rebrand': r'\b(rebrand\w*|renam\w*|formerly)\b',
                 'possible_relocation': r'\b(relocat\w*|mov(?:e[ds]?|ing) (?:to|from)|new (?:studio|office|branch|facility))\b'}
     return [key for key, pattern in patterns.items() if re.search(pattern, label, re.I)]
 

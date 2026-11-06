@@ -65,17 +65,15 @@
       "triage_kind": "organisation_roster",
       "link_label_pattern": "(?i)^find out more$",
       "policy_urls": [
-        "https://cinesite.com/privacy-policy/"
+        "https://cinesite.com/terms-of-use/"
       ],
       "organisation_name": "Cinesite Group",
-      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "disabled_reason": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission.",
       "access_review": {
-        "decision": "manual_review_required",
         "reviewed_on": "2026-11-06",
-        "policy_urls": [
-          "https://cinesite.com/privacy-policy/"
-        ],
-        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+        "decision": "automated_collection_disabled",
+        "url": "https://cinesite.com/terms-of-use/",
+        "note": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission."
       },
       "sector_hints": [
         "VFX",
@@ -167,19 +165,19 @@
     {
       "id": "framestore-locations",
       "organisation_name": "Framestore",
-      "url": "https://framestore.com/contact",
+      "url": "https://www.framestore.com/contact",
       "enabled": true,
       "kind": "official",
       "adapter": "location_labels",
       "policy_urls": [
-        "https://framestore.com/privacy-policy-cookies"
+        "https://www.framestore.com/privacy-policy-cookies"
       ],
       "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
       "access_review": {
         "decision": "bounded_metadata_reviewed",
         "reviewed_on": "2026-11-06",
         "policy_urls": [
-          "https://framestore.com/privacy-policy-cookies"
+          "https://www.framestore.com/privacy-policy-cookies"
         ],
         "note": "Reviewed published privacy/cookie policy: no collection restriction found there. Factual location labels only; no express reuse licence inferred. Runtime robots rules remain mandatory; not independent verification or written permission."
       },
@@ -411,7 +409,7 @@
       "enabled": true,
       "kind": "official",
       "adapter": "links",
-      "link_pattern": "^https://larian\\.com/careers/location/[a-z-]+/?$",
+      "link_pattern": "^https://(?:larian\\.com/careers/location/[a-z-]+/?|quebec\\.larian\\.com/?)$",
       "policy_urls": [
         "https://larian.com/tos"
       ],
@@ -708,20 +706,20 @@
       "id": "folks-locations",
       "organisation_name": "FOLKS",
       "url": "https://folksvfx.com/contact/",
-      "enabled": false,
+      "enabled": true,
       "kind": "official",
       "adapter": "location_labels",
       "policy_urls": [
-        "https://folksvfx.com/privacy-policy/"
+        "https://folksvfx.com/fr/privacy-policy/"
       ],
       "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
       "access_review": {
-        "decision": "manual_review_required",
+        "decision": "bounded_metadata_reviewed",
         "reviewed_on": "2026-11-06",
         "policy_urls": [
-          "https://folksvfx.com/privacy-policy/"
+          "https://folksvfx.com/fr/privacy-policy/"
         ],
-        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+        "note": "Robots allowed in Actions run 42158704983. Published French privacy policy reviewed; automated references concern analytics/personal data. Factual location labels only, not content republication or an express reuse licence. Runtime robots mandatory; no independent business verification."
       },
       "company_id": "folks",
       "place_labels": {
@@ -779,7 +777,6 @@
       "parent_hints": [
         "pitch-black"
       ],
-      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
       "sector_hints": [
         "VFX",
         "Animation"

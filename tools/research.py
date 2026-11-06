@@ -15,13 +15,12 @@ from triage import triage
 from validate import CSV_FIELDS,DuplicateIndex,normalized,url_valid,validate
 
 
-def dossier(queue,source_report,database,config,records=(),updates=(),as_of=None):
+def dossier(queue,source_report,database,config,records=(),as_of=None):
     today=date.fromisoformat(as_of or date.today().isoformat())
     routed=triage(queue,source_report,database,config)
     sources={s['id']:s for s in config['sources']}
     proposals=[]
     by_id={r['id']:r for r in database}
-    authored={r['id']:r for r in records}
     changes=[]
     for record in records:
         errors,warnings=validate([record])
@@ -49,6 +48,7 @@ def dossier(queue,source_report,database,config,records=(),updates=(),as_of=None
                           'potential_sector':{'status':'unverified_hint','values':source.get('sector_hints',[])},
                           'facility_claims':claims,'existing_matches':[{'id':r['id'],'company_id':r['company_id'],'name':r['name'],'city':r['city'],'country':r['country']} for r in matching],
                           'matching_reasons':routed_candidate['reasons'],'triage':routed_candidate['classification'],
+                          'triage_confidence':routed_candidate['triage_confidence'],'discovery_confidence':c['confidence'],
                           'identity_risks':risks,'evidence_age_days':age,'observed_on':c['last_seen'],
                           'alerts':[{'signal':s,'status':'requires_investigation','source':c['url']} for s in c.get('signals',[])],
                           'unresolved_questions':questions,'review_status':'unverified','publication_approved':False})
@@ -67,11 +67,17 @@ def review_html(report):
           '<p><strong>No records or claims have been approved or published by this report.</strong> A human must review and authorise the exact PR content before manual merge.</p>',
           '<h2>Candidate summary</h2><dl>'+''.join(f'<dt>{esc(k)}</dt><dd>{v}</dd>' for k,v in report['candidate_counts'].items())+'</dl>',
           '<h2>Proposed record changes</h2>']
-    for change in report['record_changes']:
+    previous_group=None
+    for change in sorted(report['record_changes'],key=lambda c:(c['after'].get('company_id',''),c['after'].get('country',''),c['id'])):
         before=change['before'] or {};after=change['after']
+        group=(after.get('company_id',''),after.get('country',''))
+        if group!=previous_group:body.append('<h3>'+esc(group[0])+' / '+esc(group[1])+'</h3>');previous_group=group
         fields=[k for k in sorted(set(before)|set(after)) if before.get(k)!=after.get(k)]
         body.append(f'<details><summary>{esc(change["action"])} · {esc(change["id"])} · {esc(after.get("name",""))} — {esc(after.get("country",""))}</summary>')
         body.append('<p>Source-researched; human PR approval pending. Validation errors: '+esc(change['validation_errors'])+'</p>')
+        body.append('<p>Warnings: '+esc(change['warnings'])+'</p>')
+        evidence=list(dict.fromkeys([after.get('evidence',''),*[e.get('evidence','') for e in after.get('capability_evidence',{}).values()],*[r['evidence'] for r in after.get('relationships',[])]]))
+        body.append('<ul>'+''.join('<li>'+link(u)+'</li>' for u in evidence if u)+'</ul>')
         body.append('<table><caption>Before and after — changed fields only</caption><thead><tr><th>Field</th><th>Before</th><th>Proposed</th></tr></thead><tbody>')
         for field in fields:
             body.append('<tr><th>'+esc(field)+'</th><td><pre>'+esc(json.dumps(before.get(field),ensure_ascii=False,indent=2))+'</pre></td><td><pre>'+esc(json.dumps(after.get(field),ensure_ascii=False,indent=2))+'</pre></td></tr>')
@@ -83,7 +89,7 @@ def review_html(report):
         body.append(f'<section id="group-{i}"><h2>{esc(name)} / {esc(country)}</h2>')
         for item in items:
             body.append('<details><summary>'+esc(item['candidate_location_name'])+' · '+esc(item['triage'])+' · '+esc(item['review_status'])+'</summary>')
-            body.append('<p>'+esc(item['city'] or 'City unresolved')+' · observed '+esc(item['observed_on'])+' · '+str(item['evidence_age_days'])+' days old</p>')
+            body.append('<p>'+esc(item['city'] or 'City unresolved')+' · observed '+esc(item['observed_on'])+' · '+str(item['evidence_age_days'])+' days old · routing confidence: '+esc(item['triage_confidence'])+' · evidence confidence: '+esc(item['discovery_confidence'])+'</p>')
             body.append('<h3>Evidence</h3><ul>'+''.join('<li>'+link(u)+'</li>' for u in item['evidence_urls'])+'</ul>')
             for title,key in [('Existing matches','existing_matches'),('Matching reasons','matching_reasons'),('Potential sector (unverified)','potential_sector'),('Facility terms (unverified)','facility_claims'),('Parent/group hints (unverified)','parent_relationships'),('Identity/duplicate risks','identity_risks'),('Closure/relocation/rebrand alerts — investigate','alerts'),('Research questions','unresolved_questions')]:
                 body.append('<h3>'+title+'</h3><pre>'+esc(json.dumps(item[key],ensure_ascii=False,indent=2))+'</pre>')
@@ -97,6 +103,7 @@ def stage(existing,records,manifest,allow_distinct=()):
     """Stage source-researched records on a PR branch. No human approval is granted."""
     if manifest.get('publication_mode')!='github_PR_human_review' or manifest.get('baseline_hash')!=digest(existing):
         raise ValueError('PR mode and matching current database hash required; stale proposals must be researched/rebased')
+    if not isinstance(records,list) or not records:raise ValueError('nonempty source-researched records required')
     errors,_=validate(records)
     if errors:raise ValueError('invalid proposed records: '+'; '.join(errors))
     allowed=set(CSV_FIELDS)|{'legacy_research'}
@@ -111,12 +118,16 @@ def stage(existing,records,manifest,allow_distinct=()):
         if research.get('record_hash')!=digest(row):raise ValueError('research manifest must bind the exact proposed record')
         reviewed=date.fromisoformat(research.get('reviewed_on',''))
         if not 0 <= (date.today()-reviewed).days <= 30:raise ValueError('source research is stale or future dated')
+        if row.get('verified_on')!=reviewed.isoformat() or any(c['verified_on']!=reviewed.isoformat() for c in row['capability_evidence'].values()):
+            raise ValueError('location and capability reviews must match the manifest review date')
         if row['id'] in allow_distinct and not research.get('distinct_reason'):
             raise ValueError('distinct-facility approval requires a source-backed rationale')
         if not research.get('location_sources') or row.get('evidence') not in research['location_sources'] or research.get('capability_evidence')!=row['capability_evidence']:
             raise ValueError('per-record source research manifest required; discovery alone cannot stage a canonical record')
         if row['id'] in by_id and row!=by_id[row['id']]:
             if research.get('previous_record_hash')!=digest(by_id[row['id']]):raise ValueError('explicit update requires matching previous record hash')
+            if row['company_id']!=by_id[row['id']]['company_id'] and not research.get('identity_change_reason'):
+                raise ValueError('organisation identity changes require an explicit sourced rationale')
             updates.append(row)
         else:additions.append(row)
     revised=[next((u for u in updates if u['id']==r['id']),r) for r in existing]

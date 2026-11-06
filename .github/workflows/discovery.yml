@@ -26,7 +26,8 @@ jobs:
           previous_run=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
           if [ -n "$previous_run" ]; then
             if ! gh run download "$previous_run" --name studio-discovery --dir previous; then
-              echo '::warning::Previous artifact unavailable; starting from committed backlog. Historical disappearance detection is unavailable for this run.'
+              echo '::error::Previous discovery artifact unavailable. Stop to avoid losing observations/history; restore an archived artifact or reviewed checkpoint.'
+              exit 1
             fi
           fi
           if [ ! -f previous/queue.json ]; then
@@ -52,6 +53,10 @@ jobs:
         run: |
           python tools/triage.py --queue discovery-run/queue.json --report discovery-run/report.json --discovery-run "$GITHUB_RUN_ID" --output triage-output
           cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Prepare research-review dashboard without approving claims
+        run: |
+          python tools/research.py report --queue discovery-run/queue.json --report discovery-run/report.json --config data/discovery/sources.json --output research-review
+          cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: studio-discovery
@@ -61,4 +66,9 @@ jobs:
         with:
           name: studio-discovery-triage
           path: triage-output/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        with:
+          name: studio-research-review
+          path: research-review/
           retention-days: 90
