@@ -1,8 +1,18 @@
-# MotionX Studio Atlas v0.8 — Global Studio Expansion
+# MotionX Studio Atlas v0.9 — Automated Studio Discovery
 
 Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **129 locations across 66 organisations in 28 countries**. v0.8 adds 98 source-supported locations and 47 operating organisations in 26 countries, preserving all 31 v0.7 records unchanged. Motion capture is an optional searchable capability, not an admission requirement.
 
 The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
+
+## v0.9 discovery infrastructure
+
+[Discovery documentation](data/discovery/README.md) explains the source registry, bounded robots-aware collection, unverified queue, change signals and content-bound evidence reviews. Weekly discovery produces an artifact only. A separate manually dispatched workflow prepares a validated **draft PR** from an approved review bundle; humans review and merge before publication. No newly discovered studio is automatically trusted or added. The public database remains the v0.8 dataset; 41 deferred candidates are preserved separately for follow-up.
+
+```sh
+python tools/discovery.py scan --output /tmp/motionx-discovery-run
+```
+
+The local live-source attempt was blocked by this environment's domain/DNS access; the [run report](data/discovery/initial-run-report.json) records all six failures without claiming discoveries. Offline fixtures exercise the full pipeline. New industry directory sources require explicit terms/robots/adapter review before enabling. The first live Actions run still needs source-level review.
 
 ## v0.8 research release
 
@@ -124,6 +134,6 @@ python tests/browser_smoke.py
 
 ## Limits and public-data safety
 
-The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Server-side search, spatial tiling or clustering may become useful at larger scales. Search includes unknown capabilities; read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
+The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. Above 2,000 filtered coordinate groups, marker rendering follows the padded viewport while counts, search, CSV export and fit-results retain the complete filtered results. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Spatial indexing, server-side search, tiling or clustering may become useful at larger scales. Discovery remains separate from the public database and cannot prove business facts. Search includes unknown capabilities; read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
 
-Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.8 adds no private records or credentials.
+Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.9 adds no private records or credentials.

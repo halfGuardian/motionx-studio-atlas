@@ -1,0 +1,76 @@
+name: Prepare approved studio proposal
+on:
+  workflow_dispatch:
+    inputs:
+      bundle:
+        description: 'Committed data/research/<batch> directory containing queue.json, records.json and reviews.json'
+        required: true
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: studio-proposal
+  cancel-in-progress: false
+jobs:
+  proposal:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build reviewed proposal without changing canonical input
+        env:
+          BUNDLE: ${{ inputs.bundle }}
+        run: |
+          python - <<'PY'
+          import os, subprocess
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          bundle = (root / os.environ['BUNDLE']).resolve()
+          research = root / 'data/research'
+          if research not in bundle.parents or not bundle.is_dir():
+              raise SystemExit('Bundle must be a committed directory below data/research')
+          files = [bundle / name for name in ('queue.json', 'records.json', 'reviews.json')]
+          if any(not p.is_file() or p.is_symlink() or research not in p.resolve().parents for p in files):
+              raise SystemExit('Bundle must contain regular review files')
+          subprocess.run(['python', 'tools/discovery.py', 'prepare', '--queue', str(files[0]), '--records', str(files[1]), '--reviews', str(files[2]), '--output', 'approved-proposal'], check=True)
+          PY
+      - name: Validate proposed database
+        run: |
+          python tools/validate.py approved-proposal/studios.json --report approved-proposal/validation.json
+          node -e "require('./data.js').validateDatabase(JSON.parse(require('fs').readFileSync('approved-proposal/studios.json', 'utf8')))"
+          python -m unittest discover -s tests -p 'test_*.py'
+          node tests/data.test.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: approved-studio-proposal
+          path: approved-proposal/
+      - name: Open draft PR for human review; never merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/studio-proposal-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          cp approved-proposal/studios.json studios.json
+          report_dir="data/research/proposal-${GITHUB_RUN_ID}"
+          mkdir -p "$report_dir"
+          cp approved-proposal/report.json "$report_dir/review-report.json"
+          cp approved-proposal/validation.json "$report_dir/validation.json"
+          cp approved-proposal/batch.csv "$report_dir/batch.csv"
+          git add studios.json "$report_dir"
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Prepare reviewed studio database proposal'
+          git push origin "$branch"
+          cat > /tmp/studio-proposal-body.md <<'BODY'
+          Prepared from a committed evidence/review bundle after content-bound approval checks, canonical validation and duplicate/idempotency checks. See the committed review report for the exact approvals and before/after database hashes.
+
+          This draft requires human review and manual merge. No source discovery alone establishes a studio's current operation or capabilities. No automatic merge or Pages change is performed.
+
+          Proposals opened with GITHUB_TOKEN may not trigger other workflows. Validation ran in the preparation job; rerun PR checks as a maintainer before merging.
+          BODY
+          gh pr create --base main --head "$branch" --draft --title 'Reviewed studio discovery proposal' --body-file /tmp/studio-proposal-body.md

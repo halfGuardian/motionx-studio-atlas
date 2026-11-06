@@ -1,0 +1,34 @@
+{
+  "release": "v0.9",
+  "tested_on": "2026-11-06",
+  "canonical_database_changed": false,
+  "canonical_sha256": "f532cf1186ca7c3ddfcf5b71c491c587f2d550db38def83462e477fb7db496bb",
+  "locations": 129,
+  "organisations": 66,
+  "countries": 28,
+  "new_published_records": 0,
+  "retained_pending_backlog": 41,
+  "python_tests_passed": 63,
+  "javascript_tests_passed": 20,
+  "http_browser_checks_passed": 15,
+  "validation_errors": 0,
+  "validation_warnings": 147,
+  "performance": {
+    "synthetic_locations": 10000,
+    "unique_coordinate_groups": 10000,
+    "viewport_markers_at_zoom_4": 1617,
+    "list_page_size": 50,
+    "load_pan_paginate_filter_seconds": 1.693
+  },
+  "live_discovery": {
+    "sources_attempted": 6,
+    "successful_sources": 0,
+    "reason": "Managed environment DNS/domain access unavailable. No successful extraction or live business verification claimed."
+  },
+  "limitations": [
+    "New discovery workflows require first live main-branch run after merge.",
+    "No third-party directory enabled pending reuse/robots review.",
+    "Preparation reviews submitted snapshots, not later remote changes.",
+    "GitHub Actions PR creation requires repository permission; branch-protection and manual merge remain maintainer responsibilities."
+  ]
+}

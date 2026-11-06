@@ -85,7 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v0.8.csv'
+            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -191,7 +191,25 @@ def main():
             page.goto(url, wait_until='domcontentloaded')
             expect(page.locator('#count')).to_have_text('10000 locations', timeout=20000)
             assert page.locator('.entry').count() == 50
-            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in records})
+            page.evaluate('() => { map.setView([0, 0], 4, {animate:false}); }')
+            expected_visible = page.evaluate('''() => {
+                const b = map.getBounds().pad(.2);
+                return MotionXData.visibleCoordinateGroups(markerGroups,
+                    {west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()}).length;
+            }''')
+            assert page.evaluate('layer.getLayers().length') == expected_visible
+            assert 0 < expected_visible < 2000
+            page.evaluate('() => { map.setView([35, 140], 4, {animate:false}); }')
+            # Longitude -179 is also in a viewport spanning 170..190 (world wrapping).
+            assert page.evaluate('''() => {
+                const b=map.getBounds().pad(.2), visible=MotionXData.visibleCoordinateGroups(markerGroups,
+                    {west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()});
+                const expected=new Set(visible.map(g=>JSON.stringify([g[0].lat,g[0].lng])));
+                return layer.getLayers().length === expected.size && layer.getLayers().every(m=>{
+                    const p=m.getLatLng(); return expected.has(JSON.stringify([p.lat,p.lng]));
+                });
+            }''')
+            expect(page.locator('#count')).to_have_text('10000 locations')
             page.locator('#nextPage').click()
             expect(page.locator('#pageInfo')).to_have_text('51–100 of 10000')
             page.locator('#category').select_option('VFX')
@@ -200,8 +218,22 @@ def main():
             expect(page.locator('#count')).to_have_text('1 location')
             elapsed = time.monotonic() - start
             assert elapsed < 20, f'10k smoke path exceeded 20 seconds: {elapsed}'
-            Path('/tmp/motionx-v08-performance.json').write_text(json.dumps({'synthetic_locations':len(records),'unique_coordinate_markers':len({(r['lat'], r['lng']) for r in records}),'list_page_size':50,'load_paginate_filter_seconds':round(elapsed,3)}))
-            passed(f'10000 synthetic locations, 50-row pagination, canvas markers, VFX-only filtering ({time.monotonic() - start:.1f}s)')
+            Path('/tmp/motionx-v09-performance.json').write_text(json.dumps({'synthetic_locations':len(records),'unique_coordinate_groups':len({(r['lat'], r['lng']) for r in records}),'viewport_markers_at_zoom_4':expected_visible,'list_page_size':50,'load_pan_paginate_filter_seconds':round(elapsed,3)}))
+            passed(f'10000 synthetic locations, viewport rendering/panning, 50-row pagination, filtering ({elapsed:.1f}s)')
+            # A coincident chooser must retain every filtered studio and keyboard focus
+            # even when Leaflet auto-pans its popup in viewport mode.
+            page.unroute('**/studios.json')
+            records[5001].update(lat=records[5000]['lat'],lng=records[5000]['lng'])
+            page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
+            page.goto(url, wait_until='domcontentloaded')
+            expect(page.locator('#count')).to_have_text('10000 locations')
+            page.evaluate('() => { map.setView([studios[5000].lat, studios[5000].lng], 5, {animate:false}); }')
+            page.evaluate('layer.getLayers().find(m => m.getPopup()).openPopup()')
+            expect(page.locator('.leaflet-popup-content button')).to_have_count(2)
+            page.wait_for_timeout(400)
+            page.locator('.leaflet-popup-content button').last.press('Enter')
+            expect(page.locator('#detailContent h2')).to_have_text('VFX test fixture 5001')
+            passed('viewport-mode coincident chooser preserves keyboard selection and profile navigation')
             page.close()
             browser.close()
     finally:

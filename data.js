@@ -96,7 +96,17 @@
     }
     return [...groups.values()];
   }
-  const api = {validateDatabase, loadDatabase, filterRecords, coordinateGroups, sectors};
+  function visibleCoordinateGroups(groups, bounds) {
+    if (bounds.east - bounds.west >= 360) return groups.filter(g => g[0].lat >= bounds.south && g[0].lat <= bounds.north);
+    const wrap = lng => ((lng + 180) % 360 + 360) % 360 - 180;
+    const west = wrap(bounds.west), east = wrap(bounds.east);
+    return groups.filter(group => {
+      const {lat, lng} = group[0], longitude = wrap(lng);
+      return lat >= bounds.south && lat <= bounds.north &&
+        (west <= east ? longitude >= west && longitude <= east : longitude >= west || longitude <= east);
+    });
+  }
+  const api = {validateDatabase, loadDatabase, filterRecords, coordinateGroups, visibleCoordinateGroups, sectors};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.MotionXData = api;
 })(globalThis);

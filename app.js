@@ -5,6 +5,7 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c =>
   ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 let studios = [], selected = null, page = 0, loaded = false;
 const pageSize = 50;
+let markerGroups = [];
 const countLabel = (count, label) => `${count} ${label}${count === 1 ? '' : 's'}`;
 const map = globalThis.L ? L.map('map', {worldCopyJump: true, preferCanvas: true}).setView([28, -25], 2) : null;
 const layer = map ? L.layerGroup().addTo(map) : null;
@@ -46,9 +47,17 @@ function render() {
   if (!loaded) return;
   const rows = filtered();
   renderList(rows);
+  markerGroups = MotionXData.coordinateGroups(rows);
+  renderMarkers();
+}
+function renderMarkers() {
   if (!layer) return;
   layer.clearLayers();
-  for (const group of MotionXData.coordinateGroups(rows)) {
+  // Keep a small dataset fully rendered; large datasets render only the padded viewport.
+  const bounds = map.getBounds().pad(.2);
+  const visible = markerGroups.length > 2000 ? MotionXData.visibleCoordinateGroups(markerGroups,
+    {west: bounds.getWest(), east: bounds.getEast(), south: bounds.getSouth(), north: bounds.getNorth()}) : markerGroups;
+  for (const group of visible) {
     const s = group[0];
     const marker = L.circleMarker([s.lat, s.lng], {radius: 8, color: '#ffd1d2', weight: 2,
       fillColor: '#e74f60', fillOpacity: .88}).addTo(layer);
@@ -74,6 +83,13 @@ function render() {
     marker.on('popupopen', () => panel.querySelector('button')?.focus());
   }
 }
+map?.on('moveend', () => {
+  // Leaflet may auto-pan an open chooser. Keep its buttons and keyboard focus alive.
+  if (markerGroups.length > 2000 && !layer.getLayers().some(marker => marker.isPopupOpen())) renderMarkers();
+});
+map?.on('popupclose', () => requestAnimationFrame(() => {
+  if (markerGroups.length > 2000 && !layer.getLayers().some(marker => marker.isPopupOpen())) renderMarkers();
+}));
 function show(s) {
   selected = s.id;
   $('detail').style.display = 'block';
@@ -143,7 +159,7 @@ $('exportCsv').onclick = () => {
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.8.csv';
+  a.download = 'motionx_studios_filtered_v0.9.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };
@@ -168,7 +184,7 @@ async function initialize() {
     loaded = true; page = 0; setControls(true); render();
     $('dataStatus').hidden = true;
   } catch (error) {
-    studios = []; layer?.clearLayers();
+    studios = []; markerGroups = []; layer?.clearLayers();
     $('count').textContent = 'Studio data unavailable'; $('companies').textContent = '';
     $('list').textContent = 'No records loaded. Retry when the database is available.';
     $('dataStatus').firstChild.textContent = `Unable to load studios.json. ${error.name === 'AbortError' ? 'Request timed out.' : error.message} Serve this site over HTTP and check your connection. `;

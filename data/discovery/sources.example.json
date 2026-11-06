@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "directory-example-disabled",
+      "enabled": false,
+      "kind": "directory",
+      "adapter": "links",
+      "url": "https://directory.example.org/studios",
+      "link_pattern": "^https://directory\\.example\\.org/studios/.+",
+      "reuse_note": "EXAMPLE ONLY. Replace with a real approved directory after reviewing automation/reuse terms and robots. Do not enable this placeholder."
+    },
+    {
+      "id": "news-example-disabled",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "feed",
+      "url": "https://studio.example.org/news/feed.xml",
+      "reuse_note": "EXAMPLE ONLY. Replace after reviewing official RSS/Atom availability, reuse terms and robots."
+    }
+  ]
+}

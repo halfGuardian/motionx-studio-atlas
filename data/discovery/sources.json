@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "link_pattern": "^https://www\\.ubisoft\\.com/en-us/company/careers/locations/.+",
+      "company_id": "ubisoft",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    },
+    {
+      "id": "ea-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ea.com/careers/teams/ea-studios",
+      "link_pattern": "^https://www\\.ea\\.com/(ea-studios/|careers/locations)",
+      "company_id": "electronic-arts",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    },
+    {
+      "id": "cinesite-group",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://cinesite.com/our-studios/",
+      "link_pattern": "^https://(?:www\\.)?(?:cinesite\\.com|latelieranimation\\.com|madassemblage\\.com|fx3x\\.com|image-engine\\.com|squeezestudio\\.com|trixter\\.de|imaginariumstudios\\.co\\.uk)(?:/|$)",
+      "company_id": "cinesite-group",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    },
+    {
+      "id": "dneg-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.dneg.com/contact",
+      "link_pattern": "^https://www\\.dneg\\.com/location/.+",
+      "company_id": "dneg",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    },
+    {
+      "id": "imaginarium-sites",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "link_pattern": "^https://www\\.imaginariumstudios\\.co\\.uk/(locations|services)(?:/|$)",
+      "company_id": "imaginarium",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    },
+    {
+      "id": "metricminds-services",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://metricminds.com/performance-capture/",
+      "link_pattern": "^https://metricminds\\.com/(performance-capture|contact|animation|cinematics)(?:/|$)",
+      "company_id": "metricminds",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence."
+    }
+  ]
+}
