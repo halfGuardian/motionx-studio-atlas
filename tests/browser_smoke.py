@@ -85,7 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.3.csv'
+            assert download.suggested_filename == 'motionx_studios_filtered_v1.0.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')

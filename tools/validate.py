@@ -16,7 +16,7 @@ REQUIRED = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng',
             'capabilities', 'capability_evidence')
 STATES = {'confirmed', 'likely', 'unknown'}
 PRECISIONS = {'exact', 'approximate', 'city', 'region', 'unverified'}
-CSV_FIELDS = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng', 'address',
+CSV_FIELDS = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng', 'address', 'company_name',
               'website', 'email', 'phone', 'categories', 'capabilities', 'capability_evidence',
               'evidence_state', 'evidence', 'verified_on', 'coordinate_precision', 'status', 'location_type', 'coordinate_source', 'relationships')
 LOCATION_TYPES = {'production_studio', 'capture_facility', 'creative_hub', 'mixed_campus', 'production_office', 'uncertain'}
@@ -89,6 +89,7 @@ def possible_duplicates(rows):
 
 def validate(rows):
     errors, warnings, seen = [], [], set()
+    company_names = {}
     if not isinstance(rows, list):
         return ['database must be a JSON array'], []
     for i, r in enumerate(rows, 1):
@@ -96,6 +97,12 @@ def validate(rows):
             errors.append(f'row-{i}: record must be an object')
             continue
         ref = r.get('id') or f'row-{i}'
+        if 'company_name' in r:
+            value = r['company_name']
+            company = r.get('company_id')
+            if not isinstance(value,str) or not value.strip():errors.append(f'{ref}: invalid company_name')
+            elif company_names.get(company,value)!=value:errors.append(f'{ref}: conflicting operating organisation name')
+            else:company_names[company]=value
         def error(message):
             errors.append(f'{ref}: {message}')
         for k in REQUIRED:
@@ -235,7 +242,7 @@ def read_records(path):
                 pass
         for key in ('categories', 'capabilities'):
             row[key] = [v.strip() for v in row.get(key, '').split('|') if v.strip()]
-        for key in ('location_type', 'coordinate_source', 'relationships'):
+        for key in ('location_type', 'coordinate_source', 'relationships', 'company_name'):
             if key in row and not row[key]:
                 del row[key]
         if 'relationships' in row:

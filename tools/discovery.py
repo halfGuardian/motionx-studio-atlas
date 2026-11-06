@@ -287,7 +287,7 @@ def signals(label):
     return [key for key, pattern in patterns.items() if re.search(pattern, label, re.I)]
 
 
-def scan(config, previous, database, fetcher=None, today=None):
+def scan(config, previous, database, fetcher=None, today=None, detect_absence=True):
     load_config(config)
     today = today or date.today().isoformat()
     fetcher = fetcher or Fetcher()
@@ -330,7 +330,7 @@ def scan(config, previous, database, fetcher=None, today=None):
                 if event:
                     report['events'].append({'id': cid, 'type': event, 'previous_hash': old['content_hash'] if old else None, 'content_hash': content_hash, 'signals': candidate['signals']})
             # Empty/failed extraction may indicate a redesign, never a mass closure.
-            if observations and not rules_changed:
+            if observations and not rules_changed and detect_absence:
                 for cid, candidate in state['candidates'].items():
                     if source['adapter'] == 'location_labels' and candidate.get('observation_kind') != 'location_reference':
                         continue
@@ -458,7 +458,7 @@ def safe_output(output, inputs):
 def archive_history(previous_run, output):
     """Carry immutable raw queue/report snapshots forward with every artifact."""
     previous_run, output = Path(previous_run), Path(output)
-    paths = [previous_run/'queue.json', previous_run/'report.json']
+    paths = [previous_run/'queue.json', previous_run/'report.json', previous_run/'recovery.json']
     paths += sorted((previous_run/'history').glob('*.json'))
     for path in paths:
         if path.is_symlink():
@@ -517,6 +517,7 @@ def main():
     scan_cmd.add_argument('--database', type=Path, default=ROOT / 'studios.json')
     scan_cmd.add_argument('--output', type=Path, required=True)
     scan_cmd.add_argument('--previous-run', type=Path, help='archive prior queue/report and carry history forward')
+    scan_cmd.add_argument('--suppress-missing',action='store_true',help='after partial recovery, do not infer missing-evidence events')
     scan_cmd.add_argument('--checkpoint',type=Path,help='merge missing committed PR observations without resetting run history')
     proposal = commands.add_parser('prepare', help='prepare an approved proposal, never publish')
     for flag in ('queue', 'records', 'reviews'):
@@ -542,7 +543,7 @@ def main():
             if errors: raise ValueError('invalid canonical database')
             previous=read(args.state);checkpoint_audit=None
             if args.checkpoint:previous,checkpoint_audit=merge_checkpoint(previous,read(args.checkpoint))
-            state, report = scan(read(args.config), previous, database)
+            state, report = scan(read(args.config), previous, database, detect_absence=not args.suppress_missing)
             if checkpoint_audit:report['checkpoint_merge']=checkpoint_audit
             write(args.output / 'queue.json', state)
             write(args.output / 'report.json', report)

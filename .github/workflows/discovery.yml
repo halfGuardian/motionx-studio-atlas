@@ -22,25 +22,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p previous
-          previous_run=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
-          if [ -n "$previous_run" ]; then
-            if ! gh run download "$previous_run" --name studio-discovery --dir previous; then
-              echo '::error::Previous discovery artifact unavailable. Stop to avoid losing observations/history; restore an archived artifact or reviewed checkpoint.'
-              exit 1
-            fi
-          fi
-          if [ ! -f previous/queue.json ]; then
-            if [ -n "$previous_run" ]; then
-              echo '::error::Restored artifact has no queue; refusing to reset history.'
-              exit 1
-            fi
-            echo '::warning::No prior queue artifact; starting from committed backlog. This run cannot detect historical disappearances.'
-            cp data/discovery/backlog.json previous/queue.json
+          python tools/restore_discovery.py --output previous
+          if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then
+            echo '::warning::Recovered continuity is partial. No closure/absence signal will be inferred; archive missing history for review.'
           fi
       - name: Collect candidates without editing the public database
         run: |
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
+          recovery_flag=()
+          if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then recovery_flag+=(--suppress-missing); fi
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json "${recovery_flag[@]}" --output discovery-run
+          cp previous/recovery.json discovery-run/recovery.json
           python - <<'PY'
           import json, os
           from pathlib import Path

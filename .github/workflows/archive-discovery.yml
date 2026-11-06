@@ -1,0 +1,67 @@
+name: Archive discovery continuity in a draft PR
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        type: string
+        required: true
+        description: 'Successful main discovery run to preserve, including raw queue/report/history'
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source run and download its complete unverified history
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+        run: |
+          if ! [[ "$RUN_ID" =~ ^[1-9][0-9]*$ ]]; then exit 1; fi
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" > /tmp/discovery-run.json
+          python - <<'PY'
+          import json,os
+          r=json.load(open('/tmp/discovery-run.json'))
+          if r.get('head_branch')!='main' or r.get('path')!='.github/workflows/discovery.yml' or r.get('conclusion')!='success' or r.get('head_repository',{}).get('full_name')!=os.environ['GITHUB_REPOSITORY']:
+              raise SystemExit('Only successful discovery runs from this repository main are eligible')
+          PY
+          gh run download "$RUN_ID" --name studio-discovery --dir /tmp/discovery-archive
+      - name: Bind immutable snapshot hashes; no business approval
+        env:
+          RUN_ID: ${{ inputs.run_id }}
+        run: |
+          python - <<'PY'
+          import os,shutil,sys
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          from checkpoints import archive_manifest
+          from discovery import write
+          root=Path.cwd();source=Path('/tmp/discovery-archive');target=root/'data/discovery'/('checkpoint-'+os.environ['RUN_ID'])
+          if target.exists():raise SystemExit('Checkpoint already archived; never overwrite historical snapshots')
+          files=list(source.rglob('*'))
+          if any(p.is_symlink() or p.is_file() and not (p.name in ('queue.json','report.json','recovery.json') and p.parent==source or p.parent==source/'history' and p.suffix=='.json') for p in files):raise SystemExit('Unexpected archive paths')
+          if sum(p.stat().st_size for p in files if p.is_file())>250_000_000:raise SystemExit('Archive limit exceeded; partition without dropping history')
+          shutil.copytree(source,target)
+          write(root/'data/discovery/checkpoints.json',archive_manifest(target,int(os.environ['RUN_ID'])))
+          PY
+      - name: Open draft checkpoint PR for human review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+        run: |
+          branch="automation/discovery-checkpoint-${RUN_ID}-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git add data/discovery/
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Archive unverified discovery state and content-bound checkpoint'
+          git push origin "$branch"
+          cat > /tmp/checkpoint-pr.md <<'BODY'
+          Preserves the original unverified discovery queue, source report and complete downloaded historical snapshots, binding their exact bytes in the recovery manifest. This technical checkpoint does not approve business claims or modify studios.json. Review archive provenance and hashes before manual merge. No automatic approval, merge or deployment.
+          BODY
+          gh pr create --draft --base main --head "$branch" --title 'Archive discovery checkpoint for continuity review' --body-file /tmp/checkpoint-pr.md

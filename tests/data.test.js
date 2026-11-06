@@ -162,3 +162,61 @@ test('20000 locations retain complete identity and coordinates in viewport rende
   assert.equal(JSON.stringify(fixture),before);
   assert.ok(performance.now()-start < 3000);
 });
+
+const Directory = require('../data.js');
+test('operating organisation pages retain separate branches and subsidiaries', () => {
+  const index=Directory.createDirectoryIndex(rows);
+  assert.equal(index.organisations.get('dneg').rows.length,19);
+  assert.equal(index.organisations.get('dneg').name,'DNEG');
+  assert.ok(index.groups.get('cinesite-group').members.has('imaginarium'));
+  assert.ok(!index.organisations.has('cinesite-group'));
+  assert.equal(index.organisations.get('studiot3d').rows.length,2);
+  assert.ok(Directory.relatedOrganisations(index,'imaginarium').some(o=>o.id==='cinesite'));
+  assert.ok(!Directory.relatedOrganisations(index,'annapurna-studios').some(o=>o.id==='animatrik'));
+});
+test('multi-capability AND and OR are explicit and never inherit parent services', () => {
+  const index=Directory.createDirectoryIndex(rows);
+  const both=Directory.queryDirectory(index,{capabilities:['Motion Capture','Facial Capture'],confirmedOnly:true});
+  assert.ok(both.length>0 && both.every(r=>r.capability_evidence['Motion Capture'].state==='confirmed' && r.capability_evidence['Facial Capture'].state==='confirmed'));
+  const any=Directory.queryDirectory(index,{capabilities:['Motion Capture','Facial Capture'],capabilityMode:'any',confirmedOnly:true});
+  assert.ok(any.length>=both.length);
+  assert.ok(!both.some(r=>r.id==='larian-kuala-lumpur'));
+  assert.equal(Directory.queryDirectory(index,{company:'dneg',capabilities:['Motion Capture']}).length,0);
+});
+test('country, city, sector, type and multiword search combine with AND', () => {
+  const index=Directory.createDirectoryIndex(rows);
+  const hits=Directory.queryDirectory(index,{query:'Larian Studios',country:'Malaysia',city:'kuala',sector:'Game Development',locationType:'production_studio',capabilities:['Motion Capture'],confirmedOnly:true});
+  assert.deepEqual(hits.map(r=>r.id),['larian-kuala-lumpur']);
+  assert.equal(Directory.queryDirectory(index,{...{query:'Larian'},country:'Canada',city:'Paris'}).length,0);
+  assert.ok(Directory.queryDirectory(index,{query:'montreal'}).some(r=>r.city==='Montréal'));
+});
+test('GitHub Pages profile hashes round-trip IDs and reject hostile or broken routes', () => {
+  for(const kind of ['location','organisation']) assert.deepEqual(Directory.parseProfileHash(Directory.profileHash(kind,'a-stable-identity')),{kind,id:'a-stable-identity'});
+  for(const hash of ['#/location/../main','#/location/%2F%2Fevil.test','#/location/%E0%A4%A','#/organisation/<script>','#/location/a?redirect=https://evil.test','#/unknown/a','#'.repeat(400)]) assert.equal(Directory.parseProfileHash(hash).kind,'invalid');
+  assert.equal(Directory.parseProfileHash('').kind,'directory');
+  assert.throws(()=>Directory.profileHash('location','https://evil.test'));
+});
+test('CSV guards formulas, preserves numeric coordinates and quotes multiline text', () => {
+  for(const text of ['=IMPORTXML("evil")',' +cmd','\t@SUM(1)','\r\n-unsafe','\u200B=1']) assert.ok(Directory.csvCell(text).startsWith('"\''));
+  assert.equal(Directory.csvCell(-73.5),'"-73.5"');
+  assert.equal(Directory.csvCell('a,"b"\nc'),'"a,""b""\nc"');
+  assert.ok(Directory.exportCSV([rows[0]]).includes(rows[0].id));
+  assert.ok(!Directory.exportCSV([rows[0]]).split('\r\n')[0].includes('phone'));
+});
+test('spatial buckets match exact viewport results including antimeridian and poles', () => {
+  const fixture=Array.from({length:50000},(_,i)=>({id:`fixture-${i}`,lat:(i%250)*.64-80,lng:Math.floor(i/250)*1.75-175}));
+  fixture.push({id:'north',lat:90,lng:180},{id:'south',lat:-90,lng:-180});
+  const groups=Directory.coordinateGroups(fixture), index=Directory.createSpatialIndex(groups);
+  for(const bounds of [{west:-20,east:20,south:-20,north:20},{west:170,east:195,south:-90,north:90},{west:-190,east:-170,south:-90,north:90},{west:-360,east:360,south:-90,north:90}]) {
+    const actual=index.query(bounds).flat().map(r=>r.id).sort(), expected=Directory.visibleCoordinateGroups(groups,bounds).flat().map(r=>r.id).sort();
+    assert.deepEqual(actual,expected);
+  }
+});
+test('50000-record map groups retain every identity and never move coordinates', () => {
+  const fixture=Array.from({length:50000},(_,i)=>({id:`fixture-${i}`,lat:(i%250)*.64-80,lng:Math.floor(i/250)*1.75-175}));
+  fixture[1]={...fixture[1],lat:fixture[0].lat,lng:fixture[0].lng};
+  const before=JSON.stringify(fixture), groups=Directory.coordinateGroups(fixture), clusters=Directory.clusterCoordinateGroups(groups,2);
+  assert.ok(clusters.length<1000);
+  assert.equal(new Set(clusters.flatMap(c=>c.rows.map(r=>r.id))).size,50000);
+  assert.equal(JSON.stringify(fixture),before);
+});

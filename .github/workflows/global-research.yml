@@ -7,6 +7,8 @@ on:
       - 'tools/source_policy.py'
       - 'tools/source_adapters.py'
       - 'tools/discovery.py'
+      - 'tools/checkpoints.py'
+      - 'tools/restore_discovery.py'
       - 'data/discovery/**'
       - 'data/research/**'
       - 'tools/triage.py'
@@ -32,15 +34,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
-          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then exit 1; fi
-          gh run download "$run_id" --name studio-discovery --dir previous
+          python tools/restore_discovery.py --output previous
       - name: Collect only registry-reviewed sources and prepare unverified dossiers
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           git show '${{ github.event.pull_request.base.sha }}:studios.json' > /tmp/published-studios.json
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
+          recovery_flag=()
+          if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then recovery_flag+=(--suppress-missing); fi
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json "${recovery_flag[@]}" --output discovery-run
+          cp previous/recovery.json discovery-run/recovery.json
           python - <<'PYCODE'
           import json, os, subprocess
           from pathlib import Path
