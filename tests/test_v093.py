@@ -10,13 +10,13 @@ from discovery import read,digest
 from validate import read_records,validate
 from import_csv import plan_import
 from research import stage,dossier,review_html
-from snapshots import before_v093
+from snapshots import before_v093,before_v10
 P=ROOT/'data/research/v0.9.3-global'
 
 class BatchTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.base=before_v093();cls.current=read(ROOT/'studios.json');cls.records=read(P/'records.json');cls.batch=read_records(P/'batch.csv');cls.manifest=read(P/'evidence.json')
+        cls.base=before_v093();cls.current=before_v10();cls.records=read(P/'records.json');cls.batch=read_records(P/'batch.csv');cls.manifest=read(P/'evidence.json')
 
     def test_totals_preserve_baseline_and_exact_explicit_update(self):
         self.assertEqual(digest(self.base),self.manifest['baseline_hash'])

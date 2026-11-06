@@ -1,0 +1,300 @@
+{
+  "reviewed_on": "2026-11-06",
+  "licence": "GeoNames CC BY 4.0; Rhodes reference from Geodatos, city-level factual coordinates. Existing city references reused with source links. All pins approximate.",
+  "references": {
+    "Abu Dhabi": {
+      "city": "Abu Dhabi",
+      "lat": 24.45118,
+      "lng": 54.39696,
+      "source": "https://www.geonames.org/292968/abu-dhabi.html"
+    },
+    "Adelaide": {
+      "city": "Adelaide",
+      "lat": -34.92866,
+      "lng": 138.59863,
+      "source": "https://www.geonames.org/2078025"
+    },
+    "Bangkok": {
+      "city": "Bangkok",
+      "lat": 13.75398,
+      "lng": 100.50144,
+      "source": "https://www.geonames.org/1609350"
+    },
+    "Barcelona": {
+      "city": "Barcelona",
+      "lat": 41.38879,
+      "lng": 2.15899,
+      "source": "https://www.geonames.org/3128760/barcelona.html"
+    },
+    "Belgrade": {
+      "city": "Belgrade",
+      "lat": 44.80401,
+      "lng": 20.46513,
+      "source": "https://www.geonames.org/792680/belgrade.html"
+    },
+    "Bengaluru": {
+      "city": "Bengaluru",
+      "lat": 12.97194,
+      "lng": 77.59369,
+      "source": "https://www.geonames.org/1277333/bengaluru.html"
+    },
+    "Brisbane": {
+      "city": "Brisbane",
+      "lat": -27.46794,
+      "lng": 153.02809,
+      "source": "https://www.geonames.org/2174003"
+    },
+    "Bucharest": {
+      "city": "Bucharest",
+      "lat": 44.43225,
+      "lng": 26.10626,
+      "source": "https://www.geonames.org/683506/bucharest.html"
+    },
+    "Burnaby": {
+      "city": "Burnaby",
+      "lat": 49.26636,
+      "lng": -122.95263,
+      "source": "https://www.geonames.org/5911606/burnaby.html"
+    },
+    "Cape Town": {
+      "city": "Cape Town",
+      "lat": -33.92584,
+      "lng": 18.42322,
+      "source": "https://www.geonames.org/3369157/cape-town.html"
+    },
+    "Cergy": {
+      "city": "Cergy",
+      "lat": 49.03645,
+      "lng": 2.07613,
+      "source": "https://www.geonames.org/3027883"
+    },
+    "Chengdu": {
+      "city": "Chengdu",
+      "lat": 30.66667,
+      "lng": 104.06667,
+      "source": "https://www.geonames.org/1815286/chengdu.html"
+    },
+    "Da Lat": {
+      "city": "Da Lat",
+      "lat": 11.94646,
+      "lng": 108.44193,
+      "source": "https://www.geonames.org/1584071"
+    },
+    "Dubai": {
+      "city": "Dubai",
+      "lat": 25.07725,
+      "lng": 55.30927,
+      "source": "https://www.geonames.org/292223"
+    },
+    "Dublin": {
+      "city": "Dublin",
+      "lat": 53.33306,
+      "lng": -6.24889,
+      "source": "https://www.geonames.org/2964574"
+    },
+    "Eugene": {
+      "city": "Eugene",
+      "lat": 44.05207,
+      "lng": -123.08675,
+      "source": "https://www.geonames.org/5725846"
+    },
+    "Farnham": {
+      "city": "Farnham",
+      "lat": 51.21444,
+      "lng": -0.80054,
+      "source": "https://www.geonames.org/2649660"
+    },
+    "Gateshead": {
+      "city": "Gateshead",
+      "lat": 54.96209,
+      "lng": -1.60168,
+      "source": "https://www.geonames.org/2648773"
+    },
+    "Guadalajara": {
+      "city": "Guadalajara",
+      "lat": 20.67738,
+      "lng": -103.34749,
+      "source": "https://www.geonames.org/4005539"
+    },
+    "Hanoi": {
+      "city": "Hanoi",
+      "lat": 21.0245,
+      "lng": 105.84117,
+      "source": "https://www.geonames.org/1581130"
+    },
+    "Ho Chi Minh City": {
+      "city": "Ho Chi Minh City",
+      "lat": 10.82302,
+      "lng": 106.62965,
+      "source": "https://www.geonames.org/1566083"
+    },
+    "Kraków": {
+      "city": "Kraków",
+      "lat": 50.06143,
+      "lng": 19.93658,
+      "source": "https://www.geonames.org/3094802/krakow.html"
+    },
+    "Kuala Lumpur": {
+      "city": "Kuala Lumpur",
+      "lat": 3.1412,
+      "lng": 101.68653,
+      "source": "https://www.geonames.org/1735161/kuala-lumpur.html"
+    },
+    "Leamington Spa": {
+      "city": "Leamington Spa",
+      "lat": 52.2852,
+      "lng": -1.52,
+      "source": "https://www.geonames.org/2644737"
+    },
+    "Leeds": {
+      "city": "Leeds",
+      "lat": 53.79648,
+      "lng": -1.54785,
+      "source": "https://www.geonames.org/2644688"
+    },
+    "Los Angeles": {
+      "city": "Los Angeles",
+      "lat": 34.05223,
+      "lng": -118.24368,
+      "source": "https://www.geonames.org/5368361/los-angeles.html"
+    },
+    "Lyon": {
+      "city": "Lyon",
+      "lat": 45.74906,
+      "lng": 4.84789,
+      "source": "https://www.geonames.org/2996944"
+    },
+    "Melbourne": {
+      "city": "Melbourne",
+      "lat": -37.814,
+      "lng": 144.96332,
+      "source": "https://www.geonames.org/2158177/melbourne.html"
+    },
+    "Montpellier": {
+      "city": "Montpellier",
+      "lat": 43.61093,
+      "lng": 3.87635,
+      "source": "https://www.geonames.org/2992166"
+    },
+    "Montréal": {
+      "city": "Montréal",
+      "lat": 45.50884,
+      "lng": -73.58781,
+      "source": "https://www.geonames.org/6077243/montreal.html"
+    },
+    "Nottingham": {
+      "city": "Nottingham",
+      "lat": 52.9536,
+      "lng": -1.15047,
+      "source": "https://www.geonames.org/2641170"
+    },
+    "Paris": {
+      "city": "Paris",
+      "lat": 48.85341,
+      "lng": 2.3488,
+      "source": "https://www.geonames.org/2988507/paris.html"
+    },
+    "Petaling Jaya": {
+      "city": "Petaling Jaya",
+      "lat": 3.10726,
+      "lng": 101.60671,
+      "source": "https://www.geonames.org/1735158"
+    },
+    "Porto Alegre": {
+      "city": "Porto Alegre",
+      "lat": -30.03283,
+      "lng": -51.23019,
+      "source": "https://www.geonames.org/3452925"
+    },
+    "Portsmouth": {
+      "city": "Portsmouth",
+      "lat": 50.79899,
+      "lng": -1.09125,
+      "source": "https://www.geonames.org/2639996"
+    },
+    "Prague": {
+      "city": "Prague",
+      "lat": 50.08804,
+      "lng": 14.42076,
+      "source": "https://www.geonames.org/3067696"
+    },
+    "Pune": {
+      "city": "Pune",
+      "lat": 18.51957,
+      "lng": 73.85535,
+      "source": "https://www.geonames.org/1259229/pune.html"
+    },
+    "Rhodes": {
+      "city": "Rhodes",
+      "lat": -33.82663,
+      "lng": 151.0881,
+      "source": "https://www.geodatos.net/en/coordinates/australia/rhodes"
+    },
+    "Rio de Janeiro": {
+      "city": "Rio de Janeiro",
+      "lat": -22.90642,
+      "lng": -43.18223,
+      "source": "https://www.geonames.org/3451190"
+    },
+    "Shah Alam": {
+      "city": "Shah Alam",
+      "lat": 3.08507,
+      "lng": 101.53281,
+      "source": "https://www.geonames.org/1732903"
+    },
+    "Shanghai": {
+      "city": "Shanghai",
+      "lat": 31.22222,
+      "lng": 121.45806,
+      "source": "https://www.geonames.org/1796236/shanghai.html"
+    },
+    "Sheffield": {
+      "city": "Sheffield",
+      "lat": 53.38297,
+      "lng": -1.4659,
+      "source": "https://www.geonames.org/2638077"
+    },
+    "Sofia": {
+      "city": "Sofia",
+      "lat": 42.69751,
+      "lng": 23.32415,
+      "source": "https://www.geonames.org/727011/sofia.html"
+    },
+    "Valkenswaard": {
+      "city": "Valkenswaard",
+      "lat": 51.35083,
+      "lng": 5.45972,
+      "source": "https://www.geonames.org/2745860"
+    },
+    "Vancouver": {
+      "city": "Vancouver",
+      "lat": 49.24966,
+      "lng": -123.11934,
+      "source": "https://www.geonames.org/6173331/vancouver.html"
+    },
+    "Warsaw": {
+      "city": "Warsaw",
+      "lat": 52.22977,
+      "lng": 21.01178,
+      "source": "https://www.geonames.org/756135/warsaw.html"
+    },
+    "Xi’an": {
+      "city": "Xi’an",
+      "lat": 34.25833,
+      "lng": 108.92861,
+      "source": "https://www.geonames.org/1790630"
+    },
+    "Yerevan": {
+      "city": "Yerevan",
+      "lat": 40.17765,
+      "lng": 44.5126,
+      "source": "https://www.geonames.org/616052"
+    },
+    "Yogyakarta": {
+      "city": "Yogyakarta",
+      "lat": -7.80139,
+      "lng": 110.36472,
+      "source": "https://www.geonames.org/1621177"
+    }
+  }
+}

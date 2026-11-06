@@ -73,13 +73,14 @@ def main():
                 expect(page.locator('#detailContent h2')).to_have_text(label.split(' — ')[0])
                 page.locator('#close').click()
             passed('coincident marker popup lists all studios and keyboard selection opens each profile')
-            page.locator('#search').fill('beyond')
+            page.locator('#country').select_option('Canada')
+            page.locator('#search').fill('Beyond Capture')
             expect(page.locator('#count')).to_have_text('2 locations')
             expect(page.locator('#companies')).to_contain_text('1 organization')
             page.locator('[data-id="beyond-vancouver"]').click()
-            expect(page.locator('#detailContent')).to_contain_text('unknown')
+            expect(page.locator('#detailContent')).to_contain_text('confirmed')
             expect(page.locator('#detailContent')).to_contain_text('approximate reference pin')
-            expect(page.locator('#detailContent')).to_contain_text('not independently verified')
+            expect(page.locator('#detailContent')).to_contain_text('Source presence does not prove')
             page.locator('#close').click()
             passed('search, company grouping and profile evidence / coordinate precision')
             with page.expect_download() as download_info:
@@ -92,7 +93,8 @@ def main():
             page.locator('#search').fill('')
             page.locator('#country').select_option('Canada')
             page.locator('#category').select_option('Performance Capture')
-            expect(page.locator('#count')).to_have_text('5 locations')
+            expected_performance=sum(r['country']=='Canada' and 'Performance Capture' in r['capabilities'] for r in database)
+            expect(page.locator('#count')).to_have_text(f'{expected_performance} locations')
             page.locator('#fitResults').click()
             assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database if r['country'] == 'Canada' and 'Performance Capture' in r['capabilities']})
             page.locator('#country').select_option('')
@@ -179,13 +181,52 @@ def main():
             expect(page.locator('#detailContent h2')).to_contain_text('ANR Virtual Production Stage')
             expect(page.locator('#detailContent')).not_to_contain_text('Facial Capture — confirmed')
             page.locator('#close').click()
-            page.locator('#search').fill('Beyond')
+            page.locator('#search').fill('Koawa')
             expect(page.locator('#count')).to_have_text('0 locations')
             page.locator('#confirmedOnly').uncheck()
-            expect(page.locator('#count')).to_have_text('2 locations')
+            expect(page.locator('#count')).to_have_text('1 location')
             page.locator('#search').fill('')
             expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
             passed('confirmed capability filtering, site-specific capture and keyboard selection between Annapurna stages')
+
+            page.goto(url+'#/location/dneg-london',wait_until='domcontentloaded')
+            page.evaluate('window.releaseDatabase()')
+            expect(page.locator('#profileTitle')).to_have_text('DNEG — London')
+            assert page.evaluate('document.activeElement.id')=='profileTitle'
+            page.locator('#detailContent a[href="#/organisation/dneg"]').first.click()
+            expect(page.locator('#profileTitle')).to_have_text('DNEG')
+            expect(page.locator('#organisationBranches a')).to_have_count(19)
+            page.go_back()
+            expect(page.locator('#profileTitle')).to_have_text('DNEG — London')
+            page.go_forward()
+            expect(page.locator('#profileTitle')).to_have_text('DNEG')
+            page.locator('#close').press('Enter')
+            expect(page.locator('#detail')).to_be_hidden()
+            page.goto(url+'#/organisation/cinesite-group',wait_until='domcontentloaded')
+            page.evaluate('window.releaseDatabase()')
+            expect(page.locator('#detailContent')).to_contain_text('separate operating brands')
+            expect(page.locator('#detailContent')).to_contain_text('Imaginarium')
+            page.keyboard.press('Escape')
+            page.locator('#search').fill('Plastic Wax')
+            page.locator('#capabilityOptions').evaluate("e=>e.closest('details').open=true")
+            page.locator('#capabilityOptions input[value="Motion Capture"]').check()
+            page.locator('#capabilityOptions input[value="Facial Capture"]').check()
+            page.locator('#confirmedOnly').check()
+            page.locator('#city').fill('Rhodes')
+            page.locator('#locationType').select_option('mixed_campus')
+            expect(page.locator('#count')).to_have_text('1 location')
+            page.locator('#capabilityOptions input[value="Volumetric Capture"]').check()
+            expect(page.locator('#count')).to_have_text('0 locations')
+            expect(page.locator('#list')).to_contain_text('No studios match')
+            page.locator('#capabilityMode').select_option('any')
+            expect(page.locator('#count')).to_have_text('1 location')
+            page.locator('#resetFilters').click()
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            assert not page.locator('#capabilityOptions input:checked').count()
+            page.locator('a[href="#search"]').focus()
+            page.locator('a[href="#search"]').press('Enter')
+            expect(page.locator('#detail')).to_be_hidden()
+            passed('direct profile links, organisation/parent identities, back/forward, focus, AND/OR capabilities, city/type/confirmed-only, empty state and reset')
 
             page.screenshot(path='/tmp/motionx-v08-desktop.png')
             page.set_viewport_size({'width': 390, 'height': 844})
@@ -202,6 +243,32 @@ def main():
             passed('390px mobile list, profile, map navigation and no horizontal overflow')
             assert not errors, errors
             page.close()
+
+            page=browser.new_page(viewport={'width':390,'height':844},accept_downloads=True)
+            fixture=[{**database[0],'id':f'coincident-{i}','company_id':'fixture','name':f'Facility {i}', 'lat':51.5,'lng':-.12} for i in range(65)]
+            fixture[64]['name']='=HYPERLINK("https://example.test","<img src=x onerror=window.injected=true>")'
+            page.route('**/studios.json',lambda route:route.fulfill(content_type='application/json',body=json.dumps(fixture)))
+            page.goto(url,wait_until='domcontentloaded');expect(page.locator('#count')).to_have_text('65 locations')
+            page.evaluate('()=>layer.getLayers()[0].openPopup()')
+            expect(page.locator('.leaflet-popup-content li button')).to_have_count(30)
+            page.locator('.leaflet-popup-content button').filter(has_text='Next').press('Enter')
+            page.locator('.leaflet-popup-content button').filter(has_text='Next').press('Enter')
+            expect(page.locator('.leaflet-popup-content li button')).to_have_count(5)
+            page.locator('.leaflet-popup-content li button').last.press('Enter')
+            expect(page.locator('#profileTitle')).to_contain_text('<img src=x')
+            assert not page.locator('#detailContent img').count()
+            assert not page.evaluate('!!window.injected')
+            assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+            assert page.locator('#detailContent a[target="_blank"]:not([rel="noopener noreferrer"])').count()==0
+            page.keyboard.press('Escape')
+            page.locator('#listTab').click()
+            with page.expect_download() as info:page.locator('#exportCsv').click()
+            text=Path(info.value.path()).read_text(encoding='utf-8-sig')
+            assert "'=HYPERLINK" in text
+            page.goto(url+'#/location/%3Cscript%3E',wait_until='domcontentloaded')
+            expect(page.locator('#profileTitle')).to_have_text('This profile could not be found.')
+            assert not page.evaluate('!!window.injected')
+            page.close();passed('65 coincident studios remain selectable through popup pagination on mobile; hostile text, URL routes, external links and formula CSV are safe')
 
             # Every failure is explicit, disables actions and has no embedded fallback.
             for label, status, body in [('404', 404, '{}'), ('invalid JSON', 200, '{broken'),
@@ -226,60 +293,75 @@ def main():
             page.close()
             passed('network failure state')
 
-            page = browser.new_page()
+            page = browser.new_page(viewport={'width':1440,'height':950},accept_downloads=True)
             original = json.loads((ROOT / 'studios.json').read_text())[0]
-            records = [{**original, 'id': f'load-test-{i}', 'company_id': f'company-{i}',
-                        'name': f'VFX test fixture {i}', 'categories': ['VFX'], 'capabilities': [],
-                        'capability_evidence': {}, 'lat': (i % 200) * .8 - 80, 'lng': (i // 200) * 3.5 - 175}
-                       for i in range(20000)]
-            page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
-            start = time.monotonic()
-            page.goto(url, wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('20000 locations', timeout=20000)
-            assert page.locator('.entry').count() == 50
-            page.evaluate('() => { map.setView([0, 0], 4, {animate:false}); }')
-            expected_visible = page.evaluate('''() => {
-                const b = map.getBounds().pad(.2);
-                return MotionXData.visibleCoordinateGroups(markerGroups,
-                    {west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()}).length;
-            }''')
-            assert page.evaluate('layer.getLayers().length') == expected_visible
-            assert 0 < expected_visible < 5000
-            page.evaluate('() => { map.setView([35, 140], 4, {animate:false}); }')
-            # Longitude -179 is also in a viewport spanning 170..190 (world wrapping).
-            assert page.evaluate('''() => {
-                const b=map.getBounds().pad(.2), visible=MotionXData.visibleCoordinateGroups(markerGroups,
-                    {west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()});
-                const expected=new Set(visible.map(g=>JSON.stringify([g[0].lat,g[0].lng])));
-                return layer.getLayers().length === expected.size && layer.getLayers().every(m=>{
-                    const p=m.getLatLng(); return expected.has(JSON.stringify([p.lat,p.lng]));
-                });
-            }''')
-            expect(page.locator('#count')).to_have_text('20000 locations')
-            page.locator('#nextPage').click()
-            expect(page.locator('#pageInfo')).to_have_text('51–100 of 20000')
-            page.locator('#category').select_option('VFX')
-            expect(page.locator('#count')).to_have_text('20000 locations')
-            page.locator('#search').fill('VFX test fixture 19999')
+            records = [{**original, 'id': f'load-test-{i}', 'company_id': f'company-{i//2}',
+                        'name': f'VFX test fixture {i}', 'country':['Canada','United States','Japan','Brazil','Kenya'][i%5],
+                        'city':f'City {i%20}', 'categories':['VFX','Animation'] if i%2==0 else ['VFX'],
+                        'capabilities':['VFX','Animation'] if i%2==0 else ['VFX'],
+                        'capability_evidence':{cap:{'state':'confirmed','evidence':'https://example.test/fixture','verified_on':'2026-11-06'} for cap in (['VFX','Animation'] if i%2==0 else ['VFX'])},
+                        'location_type':'production_studio' if i%2==0 else 'capture_facility',
+                        'lat': (i % 250) * .64 - 80, 'lng': (i // 250) * 1.75 - 175}
+                       for i in range(50000)]
+            body=json.dumps(records)
+            page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=body))
+            start=time.monotonic();page.goto(url,wait_until='domcontentloaded')
+            expect(page.locator('#count')).to_have_text('50000 locations',timeout=30000)
+            initial=time.monotonic()-start
+            assert page.locator('.entry').count()==50
+            assert page.evaluate('layer.getLayers().length')<2000
+            page.evaluate('() => { map.setView([0,0],4,{animate:false}); }')
+            assert page.evaluate("""() => {
+                const b=map.getBounds().pad(.2), visible=MotionXData.visibleCoordinateGroups(markerGroups,{west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()});
+                const expected=visible.flat().map(r=>r.id).sort();
+                const actual=layer.getLayers().flatMap(m=>m.motionxLocations).sort();
+                return JSON.stringify(actual)===JSON.stringify(expected);
+            }""")
+            page.evaluate('() => { map.setView([35,179],4,{animate:false}); }')
+            assert page.evaluate("""() => {
+                const b=map.getBounds().pad(.2), visible=MotionXData.visibleCoordinateGroups(markerGroups,{west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()});
+                return JSON.stringify(layer.getLayers().flatMap(m=>m.motionxLocations).sort())===JSON.stringify(visible.flat().map(r=>r.id).sort());
+            }""")
+            page.locator('#nextPage').click();expect(page.locator('#pageInfo')).to_have_text('51–100 of 50000')
+            page.locator('#country').select_option('Canada')
+            page.locator('#locationType').select_option('production_studio')
+            page.locator('#confirmedOnly').check()
+            page.locator('#capabilityPicker summary').click()
+            page.locator('#capabilityOptions input[value="VFX"]').check()
+            page.locator('#capabilityOptions input[value="Animation"]').check()
+            expect(page.locator('#count')).to_have_text('5000 locations')
+            multifilter_ms=page.evaluate('MotionXPerformance.search_ms')
+            page.locator('#search').fill('VFX test fixture 49990')
             expect(page.locator('#count')).to_have_text('1 location')
-            elapsed = time.monotonic() - start
-            assert elapsed < 20, f'20k smoke path exceeded 20 seconds: {elapsed}'
-            Path('/tmp/motionx-v09-performance.json').write_text(json.dumps({'synthetic_locations':len(records),'unique_coordinate_groups':len({(r['lat'], r['lng']) for r in records}),'viewport_markers_at_zoom_4':expected_visible,'list_page_size':50,'load_pan_paginate_filter_seconds':round(elapsed,3)}))
-            passed(f'20000 synthetic locations, viewport rendering/panning, 50-row pagination, filtering ({elapsed:.1f}s)')
-            # A coincident chooser must retain every filtered studio and keyboard focus
-            # even when Leaflet auto-pans its popup in viewport mode.
-            page.unroute('**/studios.json')
+            search_ms=page.evaluate('MotionXPerformance.search_ms')
+            page.locator('[data-id="load-test-49990"]').click()
+            expect(page.locator('#detailContent h2')).to_have_text('VFX test fixture 49990')
+            profile_ms=page.evaluate('MotionXPerformance.profile_open_ms')
+            page.locator('#close').click()
+            page.set_viewport_size({'width':390,'height':844});page.locator('#listTab').click()
+            page.locator('[data-id="load-test-49990"]').click()
+            assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+            page.locator('#close').click();page.locator('#mapTab').click()
+            elapsed=time.monotonic()-start
+            assert initial<20 and elapsed<30, (initial,elapsed)
+            assert max(search_ms,multifilter_ms)<1500 and profile_ms<1500
+            metrics={'synthetic_locations':len(records),'fixture_json_bytes':len(body.encode()),'initial_http_ready_seconds':round(initial,3),
+                'search_ms':round(search_ms,3),'multi_filter_ms':round(multifilter_ms,3),'profile_open_ms':round(profile_ms,3),
+                'complete_smoke_seconds':round(elapsed,3),'list_page_size':50,'client_timings':page.evaluate('MotionXPerformance')}
+            Path('/tmp/motionx-v10-performance.json').write_text(json.dumps(metrics,indent=2))
+            passed(f'50000 synthetic locations, indexed filters, grouped viewport rendering, profiles and mobile ({elapsed:.1f}s)')
+            page.close()
+            # Distinct identities at exactly the same coordinate stay directly selectable.
+            page=browser.new_page(viewport={'width':1440,'height':950})
             records[5001].update(lat=records[5000]['lat'],lng=records[5000]['lng'])
-            page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
-            page.goto(url, wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('20000 locations')
-            page.evaluate('() => { map.setView([studios[5000].lat, studios[5000].lng], 5, {animate:false}); }')
-            page.evaluate('() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }')
+            page.route('**/studios.json',lambda route:route.fulfill(content_type='application/json',body=json.dumps(records)))
+            page.goto(url,wait_until='domcontentloaded');expect(page.locator('#count')).to_have_text('50000 locations',timeout=30000)
+            page.evaluate('() => { map.setView([studios[5000].lat,studios[5000].lng],17,{animate:false}); }')
+            page.evaluate('() => { layer.getLayers().find(m=>m.motionxLocations.includes("load-test-5000")).openPopup(); }')
             expect(page.locator('.leaflet-popup-content button')).to_have_count(2)
-            page.wait_for_timeout(400)
             page.locator('.leaflet-popup-content button').last.press('Enter')
             expect(page.locator('#detailContent h2')).to_have_text('VFX test fixture 5001')
-            passed('viewport-mode coincident chooser preserves keyboard selection and profile navigation')
+            passed('50000-location shared-coordinate chooser preserves keyboard selection and original coordinates')
             page.close()
             browser.close()
     finally:

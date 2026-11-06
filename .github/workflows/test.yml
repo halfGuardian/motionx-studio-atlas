@@ -42,8 +42,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: http-browser-and-20000-location-performance
+          name: http-browser-and-50000-location-performance
           path: |
-            /tmp/motionx-v09-performance.json
+            /tmp/motionx-v10-performance.json
             /tmp/motionx-v08-desktop.png
             /tmp/motionx-v08-mobile.png

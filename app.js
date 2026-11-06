@@ -6,7 +6,7 @@ const external=(url,label)=>D.httpsURL(url)?`<a href="${esc(url)}" target="_blan
 const profileLink=(kind,id,label,extra='')=>`<a href="${D.profileHash(kind,id)}" ${extra}>${esc(label)}</a>`;
 const countLabel=(n,label)=>`${n} ${label}${n===1?'':'s'}`;
 const pageSize=50;
-let studios=[],directory=null,matches=[],selected=null,page=0,loaded=false,viewMode='locations',opener=null;
+let studios=[],directory=null,matches=[],selected=null,page=0,loaded=false,viewMode='locations',opener=null,openerHash=null;
 let markerGroups=[],spatial=null,searchTimer;
 const timings=globalThis.MotionXPerformance={};
 const map=globalThis.L?L.map('map',{worldCopyJump:true,preferCanvas:true}).setView([28,-25],2):null;
@@ -128,15 +128,15 @@ function organisationProfile(id){
     ${org?'<h3>Parent & group evidence</h3>'+relationshipList(rows):''}
     <h3>${org?'Branches & facilities':'Locations across operating brands'}</h3><div id="organisationBranches">${branchLinks(rows,50)}</div>
     ${rows.length>50?`<button id="moreBranches" data-org="${esc(id)}" data-offset="50">Show more locations</button>`:''}
-    <h3>${org?'Related operating brands':'Operating brands'}</h3>${related.length?'<ul class="branch-list">'+related.slice(0,100).map(o=>`<li>${profileLink('organisation',o.id,o.name+' · '+countLabel(o.rows.length,'location'))}</li>`).join('')+'</ul>':'<p class="muted">No related operating brand is established in the recorded ownership evidence.</p>'}
+    <h3>${org?'Related operating brands':'Operating brands'}</h3>${related.length?'<ul class="branch-list">'+related.map(o=>`<li>${profileLink('organisation',o.id,o.name+' · '+countLabel(o.rows.length,'location'))}</li>`).join('')+'</ul>':'<p class="muted">No related operating brand is established in the recorded ownership evidence.</p>'}
     <p class="muted">Grouping is based on cited relationships; related brands do not inherit each other’s services.</p>
     ${!org?relationshipList(rows):''}<p><a href="${D.profileHash('organisation',id)}">Permanent link to this ${org?'organisation':'group'}</a></p>`;
 }
-function navigate(kind,id,element){if(element)opener=element;const hash=D.profileHash(kind,id);if(location.hash!==hash)history.pushState(null,'',hash);applyRoute();}
-function closeProfile(){if(location.hash)history.pushState(null,'',location.pathname+location.search);applyRoute();}
-function applyRoute(){
+function navigate(kind,id,element){if(element){opener=element;openerHash=element.getAttribute('href');}const hash=D.profileHash(kind,id);if(location.hash!==hash)history.pushState(null,'',hash);applyRoute();}
+function closeProfile(restoreFocus=true){if(location.hash)history.pushState(null,'',location.pathname+location.search);applyRoute(restoreFocus);}
+function applyRoute(restoreFocus=true){
   if(!loaded)return;const start=performance.now(),route=D.parseProfileHash(location.hash);
-  if(route.kind==='directory'){$('detail').hidden=true;selected=null;renderList();if(opener?.isConnected)opener.focus();return;}
+  if(route.kind==='directory'){$('detail').hidden=true;selected=null;renderList();if(restoreFocus&&opener){const target=[...$('list').querySelectorAll('a')].find(a=>a.getAttribute('href')===openerHash);if(target?.getClientRects().length)target.focus();else if($('search').getClientRects().length)$('search').focus();else $('map').focus();}return;}
   let content=null;
   if(route.kind==='location'){
     const s=directory.byId.get(route.id);if(s){selected=s.id;content=locationProfile(s);
@@ -149,8 +149,9 @@ window.addEventListener('hashchange',applyRoute);
 function updateTabs(){const list=document.body.classList.contains('show-list');for(const[id,on]of[['mapTab',!list],['listTab',list]]){$(id).classList.toggle('active',on);$(id).setAttribute('aria-pressed',String(on));}}
 $('mapTab').onclick=()=>{document.body.classList.remove('show-list');updateTabs();setTimeout(()=>map?.invalidateSize(),60);};
 $('listTab').onclick=()=>{document.body.classList.add('show-list');updateTabs();};
-$('close').onclick=closeProfile;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('detail').hidden){e.preventDefault();closeProfile();}});
+$('close').onclick=()=>closeProfile();document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('detail').hidden){e.preventDefault();closeProfile();}});
 document.addEventListener('click',e=>{
+  if(e.target.closest('.skip-link')){e.preventDefault();closeProfile(false);if(innerWidth<=750){document.body.classList.add('show-list');updateTabs();}$('search').focus();return;}
   const reset=e.target.closest('[data-reset]');if(reset){resetFilters();return;}
   if(e.target.closest('[data-close]')){closeProfile();return;}
   const more=e.target.closest('#moreBranches');if(more){const org=directory.organisations.get(more.dataset.org),group=directory.groups.get(more.dataset.org);
@@ -159,10 +160,10 @@ document.addEventListener('click',e=>{
   const anchor=e.target.closest('a[href^="#/"]');if(!anchor||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
   const route=D.parseProfileHash(anchor.getAttribute('href'));e.preventDefault();if(route.kind==='directory')closeProfile();else if(route.kind!=='invalid')navigate(route.kind,route.id,anchor);
 });
-function resetFilters(){for(const id of ['search','country','city','category','locationType'])$(id).value='';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile();render();}
+function resetFilters(){for(const id of ['search','country','city','category','locationType'])$(id).value='';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile(false);render();}
 $('resetFilters').onclick=resetFilters;
 for(const id of ['search','country','city','category','locationType','confirmedOnly','capabilityMode','capabilityOptions'])$(id).addEventListener('input',()=>{
-  clearTimeout(searchTimer);searchTimer=setTimeout(()=>{page=0;closeProfile();render();},['search','city'].includes(id)?120:0);
+  clearTimeout(searchTimer);searchTimer=setTimeout(()=>{page=0;closeProfile(false);render();},['search','city'].includes(id)?120:0);
 });
 for(const mode of ['locations','organisations'])$(mode+'View').onclick=()=>{viewMode=mode;page=0;for(const m of ['locations','organisations'])$(m+'View').setAttribute('aria-pressed',String(m===mode));renderList();};
 $('previousPage').onclick=()=>{page--;renderList();};$('nextPage').onclick=()=>{page++;renderList();};

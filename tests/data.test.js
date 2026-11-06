@@ -3,10 +3,12 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const {loadDatabase, validateDatabase, filterRecords} = require('../data.js');
-const rows = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../studios.json')));
+const canonical = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../studios.json')));
+const originals=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'../data/research/v1.0-launch/evidence.json'))).before_updates;
+const rows=canonical.slice(0,182).map(r=>originals[r.id]||r);
 test('canonical database loads and retains all identities', () => {
-  assert.equal(validateDatabase(rows).length, 182);
-  assert.equal(new Set(rows.map(r => r.company_id)).size, 88);
+  assert.equal(validateDatabase(canonical).length, 243);
+  assert.equal(new Set(canonical.map(r => r.company_id)).size, 119);
 });
 test('relative URL is GitHub Pages compatible and disables stale cache', async () => {
   const result = await loadDatabase(async (path, options) => {
@@ -219,4 +221,23 @@ test('50000-record map groups retain every identity and never move coordinates',
   assert.ok(clusters.length<1000);
   assert.equal(new Set(clusters.flatMap(c=>c.rows.map(r=>r.id))).size,50000);
   assert.equal(JSON.stringify(fixture),before);
+});
+test('parent operators with their own branches can navigate separately owned brands',()=>{
+  const D=require('../data.js'),index=D.createDirectoryIndex(canonical);
+  assert.equal(index.organisations.get('virtuos').rows.length,10);
+  assert.ok(D.relatedOrganisations(index,'virtuos').some(o=>o.id==='glass-egg'));
+  assert.ok(D.relatedOrganisations(index,'glass-egg').some(o=>o.id==='virtuos'));
+  assert.equal(index.organisations.get('glass-egg').rows.length,2);
+  assert.ok(!D.queryDirectory(index,{company:'virtuos',capabilities:['Motion Capture']}).length);
+});
+test('operating names are validated consistently and skip-to-search is a directory route',()=>{
+  const D=require('../data.js'),r={...rows[18],company_name:'Test'};
+  assert.throws(()=>D.validateDatabase([r,{...r,id:'other',company_name:'Other'}]));
+  assert.equal(D.parseProfileHash('#search').kind,'directory');
+  assert.throws(()=>D.createSpatialIndex([],0));
+});
+test('public links exclude IP literals, credentials, controls and token queries',()=>{
+ const {httpsURL}=require('../data.js');
+ for(const url of ['https://user:pass@example.org/','https://localhost/','https://127.1/','https://10.0.0.1/','https://[::1]/','https://service.internal/','https://example.org/?token=secret','https://example.org/\x00']) assert.equal(httpsURL(url),false,url);
+ assert.equal(httpsURL('https://example.org/public-source'),true);
 });

@@ -1,0 +1,282 @@
+[
+  {
+    "candidate_id": "v10-review-eb019403603deb02970500cf",
+    "candidate": "Virtuos Singapore",
+    "source": "https://www.virtuosgames.com/virtuos-offices/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Listed as headquarters office, not production studio.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-cec972b8151d8bc110e9f6c7",
+    "candidate": "Virtuos Vancouver",
+    "source": "https://www.virtuosgames.com/virtuos-offices/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Listed as office with Port Moody PO box; production not established.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-d093c1a3184b8d9dd23d0121",
+    "candidate": "Virtuos San Francisco",
+    "source": "https://www.virtuosgames.com/virtuos-offices/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Listed as Concord office, not San Francisco production facility.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-cb0e4516fff8bb6093607e14",
+    "candidate": "Virtuos Seoul",
+    "source": "https://www.virtuosgames.com/studio/seoul/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Roster says studio but individual recruitment shortcode says sales office; local production scope unresolved.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-7e40ccc4562f0e0c23797fb7",
+    "candidate": "Virtuos Tokyo",
+    "source": "https://www.virtuosgames.com/studio/tokyo/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Partnership/access office description does not substantiate local production.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-521faf22c5998554ed48c992",
+    "candidate": "Umanaia Montréal",
+    "source": "https://www.virtuosgames.com/virtuos-offices/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Separate acquired operating brand shares Virtuos Montréal street address; site and team identity need review before adding another physical facility.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-e4351d9ac0cdfa550b746834",
+    "candidate": "Third Kind Games Poland",
+    "source": "https://thirdkindgames.com/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Current country-level studio announcement; municipality and physical site unresolved.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-dd2319056b24efa06dd17520",
+    "candidate": "Third Kind Games Spain",
+    "source": "https://thirdkindgames.com/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Current country-level studio announcement; municipality and physical site unresolved.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-4609ec7b14b0a1f93023c99f",
+    "candidate": "Volmi studios",
+    "source": "https://www.virtuosgames.com/virtuos-offices/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Historical group footprint is not a current physical-site inventory; revisit official local evidence.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-f63fc2ccd343bfd243264fbc",
+    "candidate": "Sperasoft Burbank",
+    "source": "https://sperasoft.com/about/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "HQ listing does not separately establish an active development studio.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-9f59d63ec60eeba9d5ea2ac1",
+    "candidate": "Sperasoft Malta",
+    "source": "https://sperasoft.com/about/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Official roster says Valletta; current role listings use Saint Julian’s. Resolve municipality and site address.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-bbc183683520520dc01557c1",
+    "candidate": "Sperasoft Astana / Tashkent",
+    "source": "https://apply.workable.com/sperasoft/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Remote recruitment geography does not establish physical branches.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-4e58cb0d0aa8a7b6ac55ef2c",
+    "candidate": "Gameloft Ukraine",
+    "source": "https://www.gameloft.com/gameloft-studios/ukraine",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Merged country team, Kharkiv address and Lviv job locations do not resolve wartime physical-site operation.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-1d6eaf31c6ac0410679cf6ef",
+    "candidate": "Midoki Leamington",
+    "source": "https://www.sumo-digital.com/our-studios/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Distinct operating brand within Sumo Leamington team; do not infer a second physical facility or overwrite the brand identity.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-ac0778f0b3b4e484a696e325",
+    "candidate": "The Monk Vancouver",
+    "source": "https://themonkstudios.com/about-us/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Office address listed; current local production capability needs site-specific evidence.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-c96b0b92bbd32305c00863ab",
+    "candidate": "Luma Los Angeles / Santa Monica",
+    "source": "https://www.lumapictures.com/about",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Current address uses Santa Monica suite/mail-style numbering; distinguish production site from correspondence before publishing.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-fc1cf45d0b0783040ead6d51",
+    "candidate": "Resin Sydney / Melbourne / Brisbane",
+    "source": "https://www.resin.com.au/contact",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Advertised studio space without enough site-specific production scope; three branches retained for investigation.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-617fd5d82ddcfb632f20b35d",
+    "candidate": "Platige US / Canaries / Tokyo / Montréal",
+    "source": "https://platige.com/studio/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Contact listings alone do not resolve local production versus representation; four candidates require research.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-fce3f677c6260998bb5438d7",
+    "candidate": "Motus Digital",
+    "source": "https://motusdigital.com/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Official page says team now operates in Colorado, formerly Dallas; current municipality and physical capture facility unresolved. No old Plano/Dallas record added.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-fa63a2c9be6fa02b99d60347",
+    "candidate": "Don Porfirio Mérida",
+    "source": "https://www.donporfirio.tv/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Official page returned 502; corroborated directory evidence insufficient for current physical operation in this batch.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-43d94982670d8ef67b987728",
+    "candidate": "MAAN Creative Johannesburg",
+    "source": "https://www.maancreative.com/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Official page inaccessible; retain candidate rather than publish from third-party profile alone.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-dbb649f107c33befdd151301",
+    "candidate": "Punkrobot Santiago",
+    "source": "https://punkrobot.cl/estudio/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Animation activity supported, but current municipal/site evidence not resolved in this review.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-fb1dff86c8b9159466278687",
+    "candidate": "Bitt Buenos Aires",
+    "source": "https://www.bittanimation.com/",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Current animation/VFX services supported; official contact page does not resolve physical-site location.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-95890e7f47d534f77990bb25",
+    "candidate": "FIN studios",
+    "source": "https://www.findesign.com.au/contact",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Current contact page lacks explicit branch inventory; historical overseas listings conflict with Australian footprint. Revisit before importing.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-592ffacd3d2edd2373787eef",
+    "candidate": "Beyond Montréal separate volumes",
+    "source": "https://www.beyond-capture.com/studio-montreal",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Three named volumes within existing campus retained in evidence note; inventory room-versus-distinct-facility identity before adding IDs.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-f992b210c893e419441c100c",
+    "candidate": "Animatrik Los Angeles / NantStudio",
+    "source": "https://www.animatrik.com/locations/los-angeles",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Branch production activity supported; municipality/street source not sufficiently resolved for a new site pin.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-cce1988bcfee1da0c2705e63",
+    "candidate": "Mocaplab Paris-area stage",
+    "source": "https://www.mocaplab.com/company/facilities",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "Official facility described near Stade de France, not central Paris. Resolve physical municipality separately from Paris office before correcting legacy record.",
+    "confidence": "unknown",
+    "publication_approved": false
+  },
+  {
+    "candidate_id": "v10-review-03cc0bcddf3303d8615ddc4d",
+    "candidate": "Remaining legacy evidence",
+    "source": "https://github.com/halfGuardian/motionx-studio-atlas/blob/main/studios.json",
+    "reviewed_on": "2026-11-06",
+    "decision": "defer",
+    "reason": "13 legacy unknown-evidence records remain; individual facility research required, never inferred from source URL presence.",
+    "confidence": "unknown",
+    "publication_approved": false
+  }
+]

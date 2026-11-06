@@ -8,6 +8,9 @@
   function httpsURL(value) {
     try {
       const url = new URL(value);
+      const host=url.hostname.replace(/\.$/,'').toLowerCase();
+      if(!host.includes('.') || host==='localhost' || /\.(localhost|local|internal)$/.test(host) || /^[\d.]+$/.test(host) || host.includes(':')) return false;
+      if(/[\u0000-\u001f\u007f]/.test(value) || /[?&](access_token|api[_-]?key|auth|password|token)=/i.test(value)) return false;
       return typeof value === 'string' && url.protocol === 'https:' && !!url.hostname &&
         !url.username && !url.password && !/\s/.test(value);
     } catch { return false; }
@@ -156,7 +159,10 @@
   }
   function relatedOrganisations(index, id) {
     const related = new Set();
-    for (const group of index.groups.values()) if (group.members.has(id)) for (const member of group.members) if (member!==id) related.add(member);
+    for (const group of index.groups.values()) if (group.id===id || group.members.has(id)) {
+      for (const member of group.members) if (member!==id) related.add(member);
+      if (group.id!==id && index.organisations.has(group.id)) related.add(group.id);
+    }
     return [...related].map(key=>index.organisations.get(key));
   }
   function profileHash(kind, id) {
@@ -164,14 +170,14 @@
     return `#/${kind}/${id}`;
   }
   function parseProfileHash(hash) {
-    if (!hash || hash==='#' || hash==='#/') return {kind:'directory',id:''};
+    if (!hash || hash==='#' || hash==='#/' || hash==='#search') return {kind:'directory',id:''};
     if (typeof hash!=='string' || hash.length>300) return {kind:'invalid',id:''};
     try {
       const decoded=decodeURIComponent(hash), match=/^#\/(location|organisation)\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(decoded);
       return match?{kind:match[1],id:match[2]}:{kind:'invalid',id:''};
     } catch { return {kind:'invalid',id:''}; }
   }
-  const csvColumns=['id','company_id','name','city','country','lat','lng','address','website','categories','capabilities',
+  const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
     'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
@@ -181,18 +187,20 @@
   }
   function exportCSV(rows) { return [csvColumns.join(','),...rows.map(r=>csvColumns.map(c=>csvCell(r[c])).join(','))].join('\r\n'); }
   function createSpatialIndex(groups, cellSize=5) {
+    if (!(cellSize>0 && cellSize<=180 && Number.isFinite(cellSize))) throw new Error('Invalid spatial cell size');
+    const maxX=Math.ceil(360/cellSize)-1,maxY=Math.ceil(180/cellSize)-1;
     const buckets=new Map(), wrap=lng=>((lng+180)%360+360)%360-180;
     for (const group of groups) {
-      const key=`${Math.floor((wrap(group[0].lng)+180)/cellSize)},${Math.min(35,Math.floor((group[0].lat+90)/cellSize))}`;
+      const key=`${Math.floor((wrap(group[0].lng)+180)/cellSize)},${Math.min(maxY,Math.floor((group[0].lat+90)/cellSize))}`;
       if (!buckets.has(key)) buckets.set(key,[]);buckets.get(key).push(group);
     }
     return {query(bounds) {
       const south=Math.max(-90,bounds.south), north=Math.min(90,bounds.north);
-      const y0=Math.max(0,Math.floor((south+90)/cellSize)), y1=Math.min(35,Math.floor((north+90)/cellSize));
+      const y0=Math.max(0,Math.floor((south+90)/cellSize)), y1=Math.min(maxY,Math.floor((north+90)/cellSize));
       const west=wrap(bounds.west),east=wrap(bounds.east);
       const ranges=bounds.east-bounds.west>=360?[[-180,180]]:west<=east?[[west,east]]:[[west,180],[-180,east]];
       const found=new Set();
-      for (const [w,e] of ranges) for(let x=Math.floor((w+180)/cellSize);x<=Math.min(71,Math.floor((e+180)/cellSize));x++)
+      for (const [w,e] of ranges) for(let x=Math.floor((w+180)/cellSize);x<=Math.min(maxX,Math.floor((e+180)/cellSize));x++)
         for(let y=y0;y<=y1;y++) for(const group of buckets.get(`${x},${y}`)||[]) found.add(group);
       return visibleCoordinateGroups([...found],bounds);
     }};

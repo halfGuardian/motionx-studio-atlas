@@ -4,6 +4,7 @@ import argparse
 import csv
 import json
 import math
+import ipaddress
 import re
 import sys
 import unicodedata
@@ -27,6 +28,14 @@ ID = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 def url_valid(value):
     try:
         u = urlsplit(value)
+        hostname=(u.hostname or '').rstrip('.').casefold()
+        if '\\' in value or re.fullmatch(r'(?:0x[0-9a-f]+|[0-9]+)(?:\.(?:0x[0-9a-f]+|[0-9]+))*',hostname):return False
+        if hostname=='localhost' or hostname.endswith(('.localhost','.local','.internal')) or '.' not in hostname:return False
+        try:
+            ipaddress.ip_address(hostname)
+            return False  # Public directory links use hostnames, never IP literals.
+        except ValueError:pass
+        if any(ord(c)<32 or ord(c)==127 for c in value) or re.search(r'[?&](?:access_token|api[_-]?key|auth|password|token)=',value,re.I):return False
         return (u.scheme == 'https' and bool(u.hostname) and not u.username
                 and not u.password and not any(c.isspace() for c in value)
                 and u.port != 0)

@@ -1,10 +1,31 @@
-# MotionX Studio Atlas v0.9.3 — Global Discovery & Research Automation
+# MotionX Studio Atlas v1.0 — Public Launch & Global Scale
 
-Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **182 locations across 88 organisations in 32 countries** on this proposal branch. v0.9.3 proposes **41 additions and one explicitly audited Centroid evidence correction**; publication awaits human review and manual merge. Motion capture is an optional searchable capability, not an admission requirement.
+A public, static directory of VFX, animation, game development and performance-production facilities. The canonical database is **`studios.json`**. This draft proposes **243 locations / 119 operating organisations / 38 countries**, including **61 additions and three explicit evidence corrections**. All 182 previous location IDs and coordinates remain. Human review and manual merge are required before publication.
 
-The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
+The dark, responsive Leaflet / OpenStreetMap atlas loads **`./studios.json`** asynchronously on GitHub Pages. It has no embedded fallback, mandatory backend or paid mapping API. Loading, retry, empty-result, missing-profile and map/tile failures have explicit states. OSM attribution is retained.
 
-## v0.9.3 research and automation
+## Public atlas
+
+- Browse locations or operating organisations, then open a location, all branches under its stable operating ID, or sourced parent/group and related-brand views. Distinct subsidiaries remain separate operating identities. Partnerships are not ownership.
+- Share `#/location/dneg-london` or `#/organisation/dneg` URLs. Hash routes work under GitHub Pages subdirectories, reloads and browser back/forward. Profiles show evidence/date, confirmed/likely/unknown claims, location type, coordinate precision, official links and other branches.
+- Search words combine with **AND**, ignoring accents/case. Search covers studio, operating ID/name, city, country, sectors, capabilities and sourced relationship names. City matches text; country/type are exact. Different controls combine with **AND**.
+- Select multiple facility capabilities with **all (AND)**, or explicitly choose **any (OR)**. Confirmed-only checks the selected capabilities, selected sector when no capability is selected, or at least one confirmed capability when neither is selected. Parent services never become branch capabilities.
+- Reset filters, inspect visible result totals and export **all filtered locations across pages**. CSV preserves IDs, relationships and evidence, omits contact fields and neutralises spreadsheet-formula prefixes. Capability evidence states are retained; “confirmed” describes a reviewed source claim, not an independent audit of business operation.
+- Individual access to coincident coordinates is preserved through paginated selection. Above 2,000 coordinate groups, spatial buckets select the viewport and pixel-grid map groups reduce marker overhead. A group uses one actual member coordinate; original coordinates are never offset. The full directory and CSV remain available outside the viewport.
+
+## v1.0 research, safety and review
+
+The [release audit](data/research/v1.0-launch/README.md), [readable review dashboard](data/research/v1.0-launch/review.html), [evidence manifest](data/research/v1.0-launch/evidence.json), [CSV](data/research/v1.0-launch/batch.csv), [import audit](data/research/v1.0-launch/import-audit.json) and [deferred queue](data/research/v1.0-launch/review-queue.json) present exact additions and before/after corrections. The dashboard is a research file/downloadable Actions artifact; the public app never loads it or the discovery queue. Seven new capture locations have individual site evidence. Thirteen legacy unknown-evidence records remain. Canonical validation: **0 errors / 265 warnings**, all listed in the release bundle.
+
+The registry remains **25 entries / eight enabled collectors**. No new source permission is inferred from research access. EA, Cinesite and other prohibited/unresolved sources remain disabled. Collection does not use screenshots, OCR, hidden APIs, alternate hosts, recursive crawling or paywall workarounds. Failed fetches or changed/disappearing pages never remove a published studio.
+
+Discovery now scopes shared contact-page matches by company and place, flags ambiguous same-city facilities, highlights fresh genuinely new candidates, and labels stale observations for revisit. `restore_discovery.py` tries recent successful main-branch artifacts, then a SHA-256-bound committed checkpoint. Partial recovery is explicit and suppresses disappearance signals; missing history cannot be reconstructed. Invalid checkpoint identity conflicts fail closed. Both the original 172-candidate checkpoint and 28 new deferred review topics are preserved. `archive-discovery.yml` can archive a complete main discovery run into a **state-only draft PR** before artifacts expire; it grants no business approval.
+
+This release uses **the manually reviewed GitHub PR route**, not a fabricated approval JSON bundle. `research.py stage-pr` binds the current baseline, every exact proposed record, previous update contents, per-capability evidence and review dates. Actions regenerate the readable review and reject an unexpected canonical diff. Only an authorised human merge publishes. `review_rules.py` inventories main's effective/classic protection read-only; unavailable API results mean enforcement is unconfirmed. Maintainers must inspect required reviewers and bypass rights; a passing test, clicked link or generated report never grants approval. The separate historical content-bound approval-bundle workflow remains available and is not retroactively approved by this release.
+
+See the release audit for full tests, identical-fixture v0.9.3/1.0 performance measurements, source results and operational limits. Synthetic 50,000-location fixtures exist only in test memory or temporary files and never enter the public database.
+
+## Historical v0.9.3 research and automation
 
 The [release report](data/research/v0.9.3-global/README.md), [exact-record evidence manifest](data/research/v0.9.3-global/evidence.json), [CSV batch](data/research/v0.9.3-global/batch.csv), import reports, before/after correction and deferred queue document this proposal. All 141 previous IDs remain; Centroid Riverside alone receives an explicit evidence update. All original coordinates remain unchanged. New locations use attributed approximate city references, including Burbank for facilities marketed as Los Angeles. No organisation-wide capture claims are copied to branches.
 

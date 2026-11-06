@@ -30,7 +30,7 @@ jobs:
         run: |
           recovery_flag=()
           if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then recovery_flag+=(--suppress-missing); fi
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json "${recovery_flag[@]}" --output discovery-run
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --checkpoint data/research/v1.0-launch/queue.json "${recovery_flag[@]}" --output discovery-run
           cp previous/recovery.json discovery-run/recovery.json
           python - <<'PY'
           import json, os

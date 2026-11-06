@@ -50,6 +50,8 @@ def dossier(queue,source_report,database,config,records=(),as_of=None):
                           'facility_claims':claims,'existing_matches':[{'id':r['id'],'company_id':r['company_id'],'name':r['name'],'city':r['city'],'country':r['country']} for r in matching],
                           'matching_reasons':routed_candidate['reasons'],'triage':routed_candidate['classification'],
                           'triage_confidence':routed_candidate['triage_confidence'],'discovery_confidence':c['confidence'],
+                          'review_priority':'high' if routed_candidate['classification']=='potentially_new' and 0<=age<=30 else 'medium' if routed_candidate['classification']=='requires_research' else 'low',
+                          'evidence_freshness':'current_observation' if 0<=age<=30 else 'revisit_required',
                           'identity_risks':risks,'evidence_age_days':age,'observed_on':c['last_seen'],
                           'alerts':[{'signal':s,'status':'requires_investigation','source':c['url']} for s in c.get('signals',[])],
                           'unresolved_questions':questions,'review_status':'unverified','publication_approved':False})
@@ -91,7 +93,7 @@ def review_html(report):
     for i,((name,country),items) in enumerate(sorted(groups.items())):
         body.append(f'<section id="group-{i}"><h2>{esc(name)} / {esc(country)}</h2>')
         for item in items:
-            body.append('<details><summary>'+esc(item['candidate_location_name'])+' · '+esc(item['triage'])+' · '+esc(item['review_status'])+'</summary>')
+            body.append('<details><summary>'+esc(item['candidate_location_name'])+' · '+esc(item.get('review_priority','medium'))+' priority · '+esc(item['triage'])+' · '+esc(item['review_status'])+'</summary>')
             body.append('<p>'+esc(item['city'] or 'City unresolved')+' · observed '+esc(item['observed_on'])+' · '+str(item['evidence_age_days'])+' days old · routing confidence: '+esc(item['triage_confidence'])+' · evidence confidence: '+esc(item['discovery_confidence'])+'</p>')
             body.append('<h3>Evidence</h3><ul>'+''.join('<li>'+link(u)+'</li>' for u in item['evidence_urls'])+'</ul>')
             for title,key in [('Existing matches','existing_matches'),('Matching reasons','matching_reasons'),('Potential sector (unverified)','potential_sector'),('Facility terms (unverified)','facility_claims'),('Parent/group hints (unverified)','parent_relationships'),('Identity/duplicate risks','identity_risks'),('Closure/relocation/rebrand alerts — investigate','alerts'),('Research questions','unresolved_questions')]:

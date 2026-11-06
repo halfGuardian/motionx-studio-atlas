@@ -1,0 +1,324 @@
+[
+  {
+    "id": "beyond-vancouver",
+    "before": {
+      "id": "beyond-vancouver",
+      "company_id": "beyond",
+      "name": "Beyond Capture",
+      "city": "Vancouver",
+      "country": "Canada",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.beyond-capture.com/",
+      "email": "vancouver@beyond-capture.com",
+      "phone": "+1 778 736 1234",
+      "categories": [
+        "Motion Capture",
+        "Virtual Production"
+      ],
+      "capabilities": [
+        "Body Capture",
+        "Facial Capture",
+        "Finger Capture",
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.beyond-capture.com/studios",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 49.2831,
+        "lng": -123.1074,
+        "address": "151 West Cordova Street, Vancouver, BC",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Body Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Facial Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Finger Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        }
+      }
+    },
+    "after": {
+      "id": "beyond-vancouver",
+      "company_id": "beyond",
+      "name": "Beyond Capture",
+      "city": "Vancouver",
+      "country": "Canada",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.beyond-capture.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "capabilities": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Vancouver performance-capture volume; existing campus identity retained. No extra record for a room within the same campus.",
+      "evidence": "https://www.beyond-capture.com/studio-vancouver",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "confirmed",
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.beyond-capture.com/studio-vancouver",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.beyond-capture.com/studio-vancouver",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "location_type": "capture_facility"
+    }
+  },
+  {
+    "id": "beyond-montreal",
+    "before": {
+      "id": "beyond-montreal",
+      "company_id": "beyond",
+      "name": "Beyond Capture",
+      "city": "Montréal",
+      "country": "Canada",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.beyond-capture.com/",
+      "email": "montreal@beyond-capture.com",
+      "phone": "+1 778 736 1234",
+      "categories": [
+        "Motion Capture",
+        "Virtual Production"
+      ],
+      "capabilities": [
+        "Body Capture",
+        "Facial Capture",
+        "Finger Capture",
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.beyond-capture.com/studios",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 45.4834,
+        "lng": -73.5657,
+        "address": "1600 Rue St-Patrick, Montréal, QC",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Body Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Facial Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Finger Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.beyond-capture.com/studios",
+          "verified_on": ""
+        }
+      }
+    },
+    "after": {
+      "id": "beyond-montreal",
+      "company_id": "beyond",
+      "name": "Beyond Capture",
+      "city": "Montréal",
+      "country": "Canada",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.beyond-capture.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "capabilities": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Montréal campus names three recording volumes. Campus identity retained; no duplicate campus-plus-room counts. Facial capture not claimed without site-specific evidence.",
+      "evidence": "https://www.beyond-capture.com/studio-montreal",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "confirmed",
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.beyond-capture.com/studio-montreal",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.beyond-capture.com/studio-montreal",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "location_type": "capture_facility"
+    }
+  },
+  {
+    "id": "animatrik-burnaby",
+    "before": {
+      "id": "animatrik-burnaby",
+      "company_id": "animatrik",
+      "name": "Animatrik Film Design",
+      "city": "Burnaby",
+      "country": "Canada",
+      "lat": 49.2488,
+      "lng": -122.9805,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.animatrik.com/",
+      "email": "",
+      "phone": "+1 604 291 2200",
+      "categories": [
+        "Motion Capture",
+        "Previsualization",
+        "Virtual Production"
+      ],
+      "capabilities": [
+        "Body Capture",
+        "Facial Capture",
+        "Virtual Camera",
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.animatrik.com/about",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 49.2701,
+        "lng": -123.0152,
+        "address": "4088 1st Ave, Burnaby, BC",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Body Capture": {
+          "state": "unknown",
+          "evidence": "https://www.animatrik.com/about",
+          "verified_on": ""
+        },
+        "Facial Capture": {
+          "state": "unknown",
+          "evidence": "https://www.animatrik.com/about",
+          "verified_on": ""
+        },
+        "Virtual Camera": {
+          "state": "unknown",
+          "evidence": "https://www.animatrik.com/about",
+          "verified_on": ""
+        },
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.animatrik.com/about",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.animatrik.com/about",
+          "verified_on": ""
+        }
+      }
+    },
+    "after": {
+      "id": "animatrik-burnaby",
+      "company_id": "animatrik",
+      "name": "Animatrik Film Design",
+      "city": "Burnaby",
+      "country": "Canada",
+      "lat": 49.2488,
+      "lng": -122.9805,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.animatrik.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "capabilities": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "status": "Official source reviewed; source-supported claims, not an independent audit of current operation or registration. Current Burnaby address and purpose-built Vancouver-marketed soundstage supported by individual page and operator homepage. Los Angeles branch remains in review for municipality/address evidence.",
+      "evidence": "https://www.animatrik.com/locations/vancouver",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "confirmed",
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.animatrik.com/",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.animatrik.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "location_type": "capture_facility"
+    }
+  }
+]

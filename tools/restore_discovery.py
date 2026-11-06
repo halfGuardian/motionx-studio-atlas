@@ -2,7 +2,7 @@
 """Try recent main-branch discovery artifacts, then an explicitly partial hashed checkpoint."""
 import argparse,json,subprocess,tempfile,shutil
 from pathlib import Path
-from checkpoints import check_queue,recover
+from checkpoints import check_queue,recover,MAX_FILE,MAX_TOTAL
 from discovery import ROOT,read,write
 
 def restore(output,runner=subprocess.run,manifest=None):
@@ -19,8 +19,16 @@ def restore(output,runner=subprocess.run,manifest=None):
             r=runner(['gh','run','download',str(rid),'--name','studio-discovery','--dir',str(attempt)],capture_output=True,text=True)
             if r.returncode==0:
                 try:
+                    total=0;count=0
                     for p in attempt.rglob('*'):
-                        if p.is_symlink():raise ValueError('artifact symlinks are not allowed')
+                        count+=1
+                        if count>10000 or p.is_symlink():raise ValueError('artifact path limit or symlink')
+                        if not p.is_file():continue
+                        relative=p.relative_to(attempt)
+                        if relative.as_posix() not in ('queue.json','report.json','recovery.json') and not (len(relative.parts)==2 and relative.parts[0]=='history' and p.suffix=='.json'):
+                            raise ValueError('unexpected discovery artifact file')
+                        size=p.stat().st_size;total+=size
+                        if size>MAX_FILE or total>MAX_TOTAL:raise ValueError('discovery artifact exceeds size limit')
                     check_queue(read(attempt/'queue.json'));report=read(attempt/'report.json')
                     if not isinstance(report.get('sources'),list):raise ValueError('invalid source report')
                     shutil.copytree(attempt,output)

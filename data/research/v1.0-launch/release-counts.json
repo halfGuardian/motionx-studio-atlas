@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "locations": 182,
+    "organisations": 88,
+    "countries": 32,
+    "validation_warnings": 201,
+    "unknown_evidence": 16
+  },
+  "proposed": {
+    "locations": 243,
+    "organisations": 119,
+    "countries": 38,
+    "validation_errors": 0,
+    "validation_warnings": 265,
+    "unknown_evidence": 13
+  },
+  "new_locations": 61,
+  "new_organisations": 31,
+  "new_capture_locations": 7,
+  "updates": [
+    "beyond-vancouver",
+    "beyond-montreal",
+    "animatrik-burnaby"
+  ],
+  "deferred_review_items": 28,
+  "preserved_checkpoint_observations": 172,
+  "queue_total": 200,
+  "human_approval": "pending exact-content PR review and manual merge",
+  "approved_claims": 0
+}
