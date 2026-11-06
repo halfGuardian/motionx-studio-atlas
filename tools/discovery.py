@@ -20,7 +20,7 @@ from import_csv import plan_import
 from validate import CSV_FIELDS, DuplicateIndex, url_valid, validate
 
 ROOT = Path(__file__).resolve().parents[1]
-USER_AGENT = 'MotionXDiscovery/0.9'
+USER_AGENT = 'MotionXDiscovery/0.9.3'
 MAX_BYTES = 2_000_000
 MAX_ITEMS = 2000
 CHECKS = ('location', 'city_country', 'sectors', 'capabilities', 'coordinates', 'identity')
@@ -74,9 +74,15 @@ def load_config(config):
         seen.add(source['id'])
         if type(source.get('enabled')) is not bool or source.get('kind') not in ('official', 'directory'):
             raise ValueError('sources require enabled and official/directory kind')
-        if source.get('adapter') not in ('links', 'jsonld', 'feed') or not source.get('reuse_note'):
+        if source.get('adapter') not in ('links', 'jsonld', 'feed', 'location_labels') or not source.get('reuse_note'):
             raise ValueError('source requires an adapter and public reuse/automation note')
         public_url(source['url'])
+        if config.get('require_access_review') and source['enabled']:
+            review=source.get('access_review', {})
+            if review.get('decision') != 'bounded_metadata_reviewed' or not review.get('reviewed_on') or not review.get('note') or not review.get('policy_urls'):
+                raise ValueError('enabled sources require a recorded robots/reuse policy review')
+        if source.get('adapter') == 'location_labels' and not source.get('place_labels'):
+            raise ValueError('location-label adapters require reviewed source-specific labels')
         if source['adapter'] == 'links':
             pattern = source.get('link_pattern', '')
             if not pattern or len(pattern) > 300:
@@ -210,7 +216,10 @@ class Page(HTMLParser):
 
 def extract(source, text):
     found = []
-    if source['adapter'] == 'feed':
+    if source['adapter'] == 'location_labels':
+        from source_adapters import location_labels
+        found = location_labels(source, text)
+    elif source['adapter'] == 'feed':
         if re.search(r'<!DOCTYPE|<!ENTITY', text, re.I):
             raise ValueError('DTD/entity feeds are not supported')
         root = ET.fromstring(text)
@@ -229,6 +238,12 @@ def extract(source, text):
                 url = link_url(source['url'], href)
                 if url and link_allowed(source, url, label):
                     found.append({'url': url, 'label': label})
+            if source.get('supplemental_place_labels'):
+                from source_adapters import location_labels,norm
+                # Some reviewed roster members have visible text but no branch href.
+                labels={label:place for label,place in source['supplemental_place_labels'].items()
+                        if not any(norm(label) in norm(item['label']) for item in found)}
+                found.extend(location_labels({**source,'place_labels':labels},text))
         else:
             def walk(node):
                 if isinstance(node, list):
@@ -252,7 +267,11 @@ def extract(source, text):
         if not url or not label:
             continue
         value = {'url': url, 'label': label, 'city': clean(str(item.get('city', ''))), 'country': clean(str(item.get('country', '')))}
-        key = digest([url, value['city'], value['country']])
+        for field in ('unit_key','observation_kind','claim_terms','place_basis','status_terms'):
+            if field in item:value[field]=item[field]
+        identity=[url, value['city'], value['country']]
+        if value.get('unit_key'):identity.append(value['unit_key'])
+        key = digest(identity)
         output.setdefault(key, value)
         if len(output) > MAX_ITEMS:
             raise ValueError('too many extracted candidates; narrow the source adapter')
@@ -262,6 +281,8 @@ def extract(source, text):
 def signals(label):
     patterns = {'possible_closure': r'\b(clos(?:e[ds]?|ing|ure)|shut(?:s|ting)? down|ceas(?:e[ds]?|ing))\b',
                 'possible_acquisition': r'\b(acquir\w*|acquisition|merg\w*)\b',
+                'possible_opening': r'\bupcoming\b|\b(open(?:s|ed|ing)?|launch(?:es|ed|ing)?)\b.*\b(studio|facility|stage|branch)\b|\bnew (?:studio|facility|stage|branch)\b',
+                'possible_rebrand': r'\b(rebrand\w*|renam\w*|formerly)\b',
                 'possible_relocation': r'\b(relocat\w*|mov(?:e[ds]?|ing) (?:to|from)|new (?:studio|office|branch|facility))\b'}
     return [key for key, pattern in patterns.items() if re.search(pattern, label, re.I)]
 
@@ -282,14 +303,16 @@ def scan(config, previous, database, fetcher=None, today=None):
         try:
             body = fetcher(source)
             observations = extract(source, body)
-            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern')})
+            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern', 'place_labels', 'roster_sentence_pattern', 'supplemental_place_labels')})
             old_status = state['sources'].get(source['id'], {})
             rules_changed = bool(old_status) and old_status.get('extraction_hash') != extraction_hash
             if rules_changed:
                 report['events'].append({'source_id': source['id'], 'type': 'extraction_rules_changed', 'note': 'Retain omitted candidates; filtering changes are not disappearance evidence.'})
             seen = set()
             for item in observations:
-                cid = 'discovery-' + digest([source['id'], item['url'], item['city'], item['country']])[:24]
+                identity=[source['id'], item['url'], item['city'], item['country']]
+                if item.get('unit_key'):identity.append(item['unit_key'])
+                cid = 'discovery-' + digest(identity)[:24]
                 seen.add(cid)
                 old = state['candidates'].get(cid)
                 content_hash = digest(item)
@@ -297,7 +320,7 @@ def scan(config, previous, database, fetcher=None, today=None):
                 candidate = {**item, 'id': cid, 'source_id': source['id'], 'source_kind': source['kind'],
                              'hint_company_id': source.get('company_id', ''), 'confidence': 'unknown',
                              'first_seen': old['first_seen'] if old else today, 'last_seen': today,
-                             'content_hash': content_hash, 'signals': signals(item['label']),
+                             'content_hash': content_hash, 'signals': signals(item['label']+' '+' '.join(item.get('status_terms',[]))),
                              'review_status': 'pending', 'missing_since': None}
                 # The matching is advisory only; source IDs/labels never become public studio IDs.
                 candidate['existing_matches'] = [r['id'] for r in database if
@@ -309,7 +332,9 @@ def scan(config, previous, database, fetcher=None, today=None):
             # Empty/failed extraction may indicate a redesign, never a mass closure.
             if observations and not rules_changed:
                 for cid, candidate in state['candidates'].items():
-                    if source['adapter'] == 'links' and not link_allowed(source, candidate['url'], candidate['label']):
+                    if source['adapter'] == 'location_labels' and candidate.get('observation_kind') != 'location_reference':
+                        continue
+                    if source['adapter'] == 'links' and candidate.get('observation_kind')!='location_reference' and not link_allowed(source, candidate['url'], candidate['label']):
                         continue  # historical filtered-out navigation is not a missing studio
                     if candidate['source_id'] == source['id'] and cid not in seen and not candidate.get('missing_since'):
                         candidate['missing_since'] = today
@@ -447,6 +472,24 @@ def archive_history(previous_run, output):
         (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
 
 
+def merge_checkpoint(state, checkpoint):
+    """Add committed PR discoveries without replacing newer run evidence or approvals."""
+    for queue in (state,checkpoint):
+        if queue.get('version')!=1 or not isinstance(queue.get('candidates'),dict):
+            raise ValueError('invalid discovery checkpoint')
+    merged=copy.deepcopy(state);added=[];earlier=[]
+    for cid,candidate in checkpoint['candidates'].items():
+        if not isinstance(candidate,dict) or candidate.get('id')!=cid or not url_valid(candidate.get('url')):
+            raise ValueError('invalid checkpoint candidate')
+        first=date.fromisoformat(candidate['first_seen'])
+        if cid not in merged['candidates']:
+            merged['candidates'][cid]=copy.deepcopy(candidate);added.append(cid)
+        elif first<date.fromisoformat(merged['candidates'][cid]['first_seen']):
+            merged['candidates'][cid]['first_seen']=first.isoformat();earlier.append(cid)
+    return merged,{'added_candidate_ids':added,'earlier_first_seen_ids':earlier,
+                   'note':'Existing run evidence/reviews retained; checkpoint is not business or publication approval.'}
+
+
 def review_template(database, queue, records, candidate_ids):
     if len(records) != len(candidate_ids) or not records:
         raise ValueError('provide one candidate ID per proposed record, in the same order')
@@ -474,6 +517,7 @@ def main():
     scan_cmd.add_argument('--database', type=Path, default=ROOT / 'studios.json')
     scan_cmd.add_argument('--output', type=Path, required=True)
     scan_cmd.add_argument('--previous-run', type=Path, help='archive prior queue/report and carry history forward')
+    scan_cmd.add_argument('--checkpoint',type=Path,help='merge missing committed PR observations without resetting run history')
     proposal = commands.add_parser('prepare', help='prepare an approved proposal, never publish')
     for flag in ('queue', 'records', 'reviews'):
         proposal.add_argument('--' + flag, type=Path, required=True)
@@ -496,11 +540,17 @@ def main():
         if args.command == 'scan':
             errors, _ = validate(database)
             if errors: raise ValueError('invalid canonical database')
-            state, report = scan(read(args.config), read(args.state), database)
+            previous=read(args.state);checkpoint_audit=None
+            if args.checkpoint:previous,checkpoint_audit=merge_checkpoint(previous,read(args.checkpoint))
+            state, report = scan(read(args.config), previous, database)
+            if checkpoint_audit:report['checkpoint_merge']=checkpoint_audit
             write(args.output / 'queue.json', state)
             write(args.output / 'report.json', report)
             if args.previous_run:
                 archive_history(args.previous_run, args.output)
+            if args.checkpoint:
+                body=args.checkpoint.read_bytes();folder=args.output/'history';folder.mkdir(exist_ok=True)
+                (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
             print(json.dumps({'pending': report['pending_candidates'], 'source_status': report['sources'], 'published': 0}))
         elif args.command == 'review-template':
             queue, records = read(args.queue), read(args.records)

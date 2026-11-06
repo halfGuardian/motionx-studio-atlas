@@ -1,0 +1,839 @@
+{
+  "version": 1,
+  "require_access_review": true,
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "link_pattern": "^https://www\\.ubisoft\\.com/en-us/company/careers/locations/.+",
+      "company_id": "ubisoft",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links",
+      "policy_urls": [
+        "https://www.ubisoft.com/privacy-policy/"
+      ],
+      "organisation_name": "Ubisoft",
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.ubisoft.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "sector_hints": [
+        "Game Development"
+      ]
+    },
+    {
+      "id": "ea-studios",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ea.com/careers/teams/ea-studios",
+      "link_pattern": "^https://www\\.ea\\.com/(ea-studios/|careers/locations)",
+      "company_id": "electronic-arts",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "navigation_index",
+      "disabled_reason": "EA robots.txt reserves rights and explicitly prohibits web scraping/text-data mining without written authorisation. Manual evidence research only; no adapter expansion enabled.",
+      "access_review": {
+        "reviewed_on": "2026-11-06",
+        "url": "https://www.ea.com/robots.txt",
+        "decision": "automated_collection_disabled"
+      },
+      "policy_urls": [
+        "https://www.ea.com/privacy-policy/"
+      ],
+      "organisation_name": "Electronic Arts",
+      "sector_hints": [
+        "Game Development"
+      ]
+    },
+    {
+      "id": "cinesite-group",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://cinesite.com/our-studios/",
+      "link_pattern": "^https://[^/]+/?$",
+      "company_id": "cinesite-group",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence. v0.9.1: operator-CTA links only, including future operator domains as evidence pointers; never follow them automatically.",
+      "triage_kind": "organisation_roster",
+      "link_label_pattern": "(?i)^find out more$",
+      "policy_urls": [
+        "https://cinesite.com/terms-of-use/"
+      ],
+      "organisation_name": "Cinesite Group",
+      "disabled_reason": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission.",
+      "access_review": {
+        "reviewed_on": "2026-11-06",
+        "decision": "automated_collection_disabled",
+        "url": "https://cinesite.com/terms-of-use/",
+        "note": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission."
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    },
+    {
+      "id": "dneg-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.dneg.com/contact",
+      "link_pattern": "^https://www\\.dneg\\.com/location/.+",
+      "company_id": "dneg",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links",
+      "policy_urls": [
+        "https://www.dneg.com/privacy-policy/"
+      ],
+      "organisation_name": "DNEG",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.dneg.com/privacy-policy/"
+        ],
+        "note": "Privacy automation references describe personal-data handling; scoped branch URLs only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    },
+    {
+      "id": "imaginarium-sites",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "link_pattern": "^https://www\\.imaginariumstudios\\.co\\.uk/(locations|services)(?:/|$)",
+      "company_id": "imaginarium",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "facility_index",
+      "policy_urls": [
+        "https://www.imaginariumstudios.co.uk/privacy-policy/"
+      ],
+      "organisation_name": "Imaginarium Studios",
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.imaginariumstudios.co.uk/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    },
+    {
+      "id": "metricminds-services",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://metricminds.com/performance-capture/",
+      "link_pattern": "^https://metricminds\\.com/(performance-capture|contact|animation|cinematics)(?:/|$)",
+      "company_id": "metricminds",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "service_index",
+      "policy_urls": [
+        "https://metricminds.com/privacy-policy/"
+      ],
+      "organisation_name": "metricminds",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://metricminds.com/privacy-policy/"
+        ],
+        "note": "Privacy describes personal-data processing and analytics; scoped service evidence pointers only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    },
+    {
+      "id": "framestore-locations",
+      "organisation_name": "Framestore",
+      "url": "https://www.framestore.com/contact",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://www.framestore.com/privacy-policy-cookies"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.framestore.com/privacy-policy-cookies"
+        ],
+        "note": "Reviewed published privacy/cookie policy: no collection restriction found there. Factual location labels only; no express reuse licence inferred. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "place_labels": {
+        "London": {
+          "city": "London",
+          "country": "United Kingdom",
+          "unit_key": "london"
+        },
+        "Montréal": {
+          "city": "Montréal",
+          "country": "Canada",
+          "unit_key": "montreal"
+        },
+        "Chicago": {
+          "city": "Chicago",
+          "country": "United States",
+          "unit_key": "chicago"
+        },
+        "Los Angeles": {
+          "city": "Los Angeles",
+          "country": "United States",
+          "unit_key": "los-angeles"
+        },
+        "New York": {
+          "city": "New York",
+          "country": "United States",
+          "unit_key": "new-york"
+        },
+        "Mumbai": {
+          "city": "Mumbai",
+          "country": "India",
+          "unit_key": "mumbai"
+        },
+        "Melbourne": {
+          "city": "Melbourne",
+          "country": "Australia",
+          "unit_key": "melbourne"
+        }
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "framestore"
+    },
+    {
+      "id": "ilm-locations",
+      "organisation_name": "Industrial Light & Magic",
+      "url": "https://www.ilm.com/locations/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.ilm.com/terms-of-use/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.ilm.com/terms-of-use/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "ilm"
+    },
+    {
+      "id": "weta-locations",
+      "organisation_name": "Wētā FX",
+      "url": "https://www.wetafx.co.nz/about",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.wetafx.co.nz/terms_and_privacy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.wetafx.co.nz/terms_and_privacy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "weta-fx"
+    },
+    {
+      "id": "imageworks-locations",
+      "organisation_name": "Sony Pictures Imageworks",
+      "url": "https://www.imageworks.com/contact-us",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.imageworks.com/terms-of-use"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.imageworks.com/terms-of-use"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "sony-imageworks"
+    },
+    {
+      "id": "digital-domain-locations",
+      "organisation_name": "Digital Domain",
+      "url": "https://digitaldomain.com/about/contact-us/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://digitaldomain.com/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://digitaldomain.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Published policy reserves duplication/redistribution in any form; broader Terms of Use need review. Collection disabled.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "digital-domain"
+    },
+    {
+      "id": "eyeline-locations",
+      "organisation_name": "Eyeline / Scanline VFX",
+      "url": "https://apply.eyelinestudios.com/careers/artist/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://apply.eyelinestudios.com/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://apply.eyelinestudios.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "eyeline"
+    },
+    {
+      "id": "cdpr-locations",
+      "organisation_name": "CD PROJEKT RED",
+      "url": "https://www.cdprojektred.com/en/jobs",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.cdprojektred.com/en/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.cdprojektred.com/en/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "Game Development"
+      ],
+      "company_id": "cd-projekt-red"
+    },
+    {
+      "id": "remedy-locations",
+      "organisation_name": "Remedy Entertainment",
+      "url": "https://www.remedygames.com/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.remedygames.com/terms-conditions"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "reviewed_on": "2026-11-06",
+        "decision": "automated_collection_disabled",
+        "url": "https://www.remedygames.com/terms-conditions",
+        "note": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
+      },
+      "sector_hints": [
+        "Game Development"
+      ],
+      "company_id": "remedy",
+      "disabled_reason": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
+    },
+    {
+      "id": "larian-locations",
+      "organisation_name": "Larian Studios",
+      "url": "https://larian.com/careers",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://(?:larian\\.com/careers/location/[a-z-]+/?|quebec\\.larian\\.com/?)$",
+      "policy_urls": [
+        "https://larian.com/tos"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://larian.com/tos"
+        ],
+        "note": "Terms code of conduct prohibits personal-data scraping and disruption. No personal data, account access or game content collected; bounded public branch URLs only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "triage_kind": "branch_links",
+      "sector_hints": [
+        "Game Development"
+      ],
+      "supplemental_place_labels": {
+        "Quebec": {
+          "city": "Québec",
+          "country": "Canada",
+          "unit_key": "quebec"
+        }
+      },
+      "roster_sentence_pattern": "studios across the world",
+      "company_id": "larian"
+    },
+    {
+      "id": "rise-locations",
+      "organisation_name": "RISE Visual Effects Studios",
+      "url": "https://www.risefx.com/",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://www\\.risefx\\.com/rise-visual-effects-studios-contact-[a-z-]+\\.php$",
+      "policy_urls": [
+        "https://www.risefx.com/rise-visual-effects-studios-imprint-privacy-policy.php"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.risefx.com/rise-visual-effects-studios-imprint-privacy-policy.php"
+        ],
+        "note": "Imprint reserves copyrighted works beyond statutory exceptions. Only factual studio identity/location links; no images, page text or personal contacts copied. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "triage_kind": "branch_links",
+      "branch_url_pattern": "/rise-visual-effects-studios-contact-([a-z-]+)\\.php$",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "rise-fx"
+    },
+    {
+      "id": "outpost-locations",
+      "organisation_name": "Outpost VFX",
+      "url": "https://www.outpost-vfx.com/en/contact",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://www.outpost-vfx.com/en/legal"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.outpost-vfx.com/en/legal"
+        ],
+        "note": "Reviewed published legal landing page, privacy and workplace-policy links. Only factual location labels; no express reuse licence inferred. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "place_labels": {
+        "Bournemouth": {
+          "city": "Bournemouth",
+          "country": "United Kingdom",
+          "unit_key": "bournemouth"
+        },
+        "London": {
+          "city": "London",
+          "country": "United Kingdom",
+          "unit_key": "london"
+        },
+        "Montreal": {
+          "city": "Montréal",
+          "country": "Canada",
+          "unit_key": "montreal"
+        },
+        "Mumbai": {
+          "city": "Mumbai",
+          "country": "India",
+          "unit_key": "mumbai"
+        },
+        "Stuttgart": {
+          "city": "Stuttgart",
+          "country": "Germany",
+          "unit_key": "stuttgart"
+        }
+      },
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "outpost-vfx"
+    },
+    {
+      "id": "flyingbark-locations",
+      "organisation_name": "Flying Bark Productions",
+      "url": "https://www.flyingbark.com.au/about",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://www.flyingbark.com.au/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.flyingbark.com.au/privacy-policy"
+        ],
+        "note": "Published privacy policy reviewed; factual studio location labels only. No full-page reuse or implied licence. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "place_labels": {
+        "Sydney, Australia (HQ)": {
+          "city": "Sydney",
+          "country": "Australia",
+          "unit_key": "sydney"
+        },
+        "Los Angeles, USA": {
+          "city": "Burbank",
+          "country": "United States",
+          "unit_key": "burbank"
+        },
+        "Madrid, Spain": {
+          "city": "Madrid",
+          "country": "Spain",
+          "unit_key": "madrid"
+        }
+      },
+      "parent_hints": [
+        "studio-100"
+      ],
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "flying-bark"
+    },
+    {
+      "id": "triggerfish-locations",
+      "organisation_name": "Triggerfish Animation",
+      "url": "https://www.triggerfish.com/faq/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://www.triggerfish.com/academy/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.triggerfish.com/academy/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "roster_sentence_pattern": "South African studio",
+      "place_labels": {
+        "Cape Town": {
+          "city": "Cape Town",
+          "country": "South Africa",
+          "unit_key": "cape-town"
+        },
+        "Galway": {
+          "city": "Galway",
+          "country": "Ireland",
+          "unit_key": "galway"
+        }
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "triggerfish"
+    },
+    {
+      "id": "reelfx-locations",
+      "organisation_name": "Reel FX",
+      "url": "https://www.reelfx.com/contact/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.reelfx.com/terms/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.reelfx.com/terms/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Terms restrict public/commercial reuse; permission/clarification required. No automated collection.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "reel-fx"
+    },
+    {
+      "id": "rodeo-locations",
+      "organisation_name": "Rodeo FX",
+      "url": "https://www.rodeofx.com/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.rodeofx.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.rodeofx.com/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "rodeo-fx"
+    },
+    {
+      "id": "chocolate-tribe-locations",
+      "organisation_name": "Chocolate Tribe",
+      "url": "https://chocolatetribe.co.za/contact/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://chocolatetribe.co.za/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://chocolatetribe.co.za/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "place_labels": {
+        "Chocolate Tribe - Johannesburg": {
+          "city": "Johannesburg",
+          "country": "South Africa",
+          "unit_key": "johannesburg"
+        },
+        "Chocolate Tribe - Cape Town": {
+          "city": "Cape Town",
+          "country": "South Africa",
+          "unit_key": "cape-town"
+        }
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "chocolate-tribe"
+    },
+    {
+      "id": "studiot3d-locations",
+      "organisation_name": "StudioT3D",
+      "url": "https://www.studiot3d.com/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.studiot3d.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.studiot3d.com/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ],
+      "company_id": "studiot3d"
+    },
+    {
+      "id": "folks-locations",
+      "organisation_name": "FOLKS",
+      "url": "https://folksvfx.com/contact/",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "location_labels",
+      "policy_urls": [
+        "https://folksvfx.com/fr/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://folksvfx.com/fr/privacy-policy/"
+        ],
+        "note": "Robots allowed in Actions run 42158704983. Published French privacy policy reviewed; automated references concern analytics/personal data. Factual location labels only, not content republication or an express reuse licence. Runtime robots mandatory; no independent business verification."
+      },
+      "company_id": "folks",
+      "place_labels": {
+        "MONTREAL": {
+          "city": "Montréal",
+          "country": "Canada",
+          "unit_key": "montreal"
+        },
+        "TORONTO": {
+          "city": "Toronto",
+          "country": "Canada",
+          "unit_key": "toronto"
+        },
+        "BOGOTA": {
+          "city": "Bogotá",
+          "country": "Colombia",
+          "unit_key": "bogota"
+        },
+        "SAGUENAY": {
+          "city": "Saguenay",
+          "country": "Canada",
+          "unit_key": "saguenay"
+        },
+        "MUMBAI": {
+          "city": "Mumbai",
+          "country": "India",
+          "unit_key": "mumbai"
+        },
+        "LOS ANGELES": {
+          "city": "Burbank",
+          "country": "United States",
+          "unit_key": "burbank"
+        },
+        "NEW YORK": {
+          "city": "New York",
+          "country": "United States",
+          "unit_key": "new-york"
+        },
+        "ATLANTA": {
+          "city": "Atlanta",
+          "country": "United States",
+          "unit_key": "atlanta"
+        },
+        "VANCOUVER": {
+          "city": "Vancouver",
+          "country": "Canada",
+          "unit_key": "vancouver"
+        },
+        "LONDON": {
+          "city": "London",
+          "country": "United Kingdom",
+          "unit_key": "london-upcoming"
+        }
+      },
+      "parent_hints": [
+        "pitch-black"
+      ],
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    },
+    {
+      "id": "rsp-locations",
+      "organisation_name": "Rising Sun Pictures",
+      "url": "https://www.rsp.com.au/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "jsonld",
+      "policy_urls": [
+        "https://www.rsp.com.au/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.rsp.com.au/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "company_id": "rising-sun-pictures",
+      "parent_hints": [
+        "pitch-black"
+      ],
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
+      "sector_hints": [
+        "VFX",
+        "Animation"
+      ]
+    }
+  ]
+}

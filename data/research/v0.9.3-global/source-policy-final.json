@@ -1,0 +1,442 @@
+{
+  "run_id": 42160730347,
+  "inspection_job": 127705498507,
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "source_url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.ubisoft.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.ubisoft.com/privacy-policy/",
+          "status": "fetched",
+          "sha256": "22136d281d8567862a2499d6946f6252bcbe67884f711e72e8da13debf54a6e6",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "dda74278f51870414cc34ccd6200290d8ab3c2b8e45614281e25cfed15e2bf54",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "ea-studios",
+      "decision": "previously_prohibited_not_fetched",
+      "source_fetched": false
+    },
+    {
+      "id": "cinesite-group",
+      "decision": "previously_prohibited_not_fetched",
+      "source_fetched": false
+    },
+    {
+      "id": "dneg-studios",
+      "source_url": "https://www.dneg.com/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.dneg.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.dneg.com/privacy-policy/",
+          "status": "fetched",
+          "sha256": "78cdf89b9a3340540eb8c771a010bb082acf042ce72b1e3fbe7a02d28fbaaf91",
+          "review_keywords": [
+            "automated",
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "fa09f04e3c322cc8c3054a46643c2553ac7b2b23b36727bedd9f7ebfd7ecf79b",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "imaginarium-sites",
+      "source_url": "https://www.imaginariumstudios.co.uk/locations",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.imaginariumstudios.co.uk/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.imaginariumstudios.co.uk/privacy-policy/",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "fe84c7fa513a91258b9548c879a48f52dd063d2b3bb9b21ffe13d57482a26489",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "metricminds-services",
+      "source_url": "https://metricminds.com/performance-capture/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://metricminds.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://metricminds.com/privacy-policy/",
+          "status": "fetched",
+          "sha256": "7896e66d4be9cca92a27e4b38a9b148ad35acd145d23cdc10e93ab9a5255c3d2",
+          "review_keywords": [
+            "automated",
+            "automatically",
+            "automattic"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "d84fe2aab9fd599a31aa7594fa261a9cd6dee46e789abe136c6e866416607122",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "framestore-locations",
+      "source_url": "https://www.framestore.com/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.framestore.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.framestore.com/privacy-policy-cookies",
+          "status": "fetched",
+          "sha256": "6157102efe86a85cfcbaf98b5d28357fa5f53bac5d42e2ce771de3b330ad36d7",
+          "review_keywords": [
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "d7fe0d83ca2c9116938ccd781413351fed1fbc8fa4dbb1cd0365df8400c42542",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "ilm-locations",
+      "source_url": "https://www.ilm.com/locations/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.ilm.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.ilm.com/terms-of-use/",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "2bc62b6f2cb963fd5f29bd10fa0a9f2fcdfba9c6890ae55c24e08ff63d6b74e9",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "weta-locations",
+      "source_url": "https://www.wetafx.co.nz/about",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.wetafx.co.nz/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.wetafx.co.nz/terms_and_privacy",
+          "status": "unavailable",
+          "error_type": "ValueError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_allows_collector": true,
+      "robots_status": 404
+    },
+    {
+      "id": "imageworks-locations",
+      "source_url": "https://www.imageworks.com/contact-us",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.imageworks.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.imageworks.com/terms-of-use",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "e0d25f82c0e463702a7da3ce72264d456250208249f4f783756fc64783154e51",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "digital-domain-locations",
+      "source_url": "https://digitaldomain.com/about/contact-us/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://digitaldomain.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://digitaldomain.com/privacy-policy/",
+          "status": "fetched",
+          "sha256": "cf37a280b1d4fba359a82789014ce565d1b95531d885916d9603ef100518706a",
+          "review_keywords": [
+            "automatic",
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "7d4d775a8133e0084472cd688b8430a4026b868f17003d88f4ecdb93f1f7a948",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "eyeline-locations",
+      "source_url": "https://apply.eyelinestudios.com/careers/artist/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://apply.eyelinestudios.com/robots.txt",
+      "terms": [],
+      "source_fetched": false,
+      "decision": "blocked_or_unavailable_robots",
+      "robots_sha256": "ffa21c8ea40020c1cc43de10e4c748a803164ee0d489f94e63db32d81fe632d5",
+      "robots_allows_collector": false
+    },
+    {
+      "id": "cdpr-locations",
+      "source_url": "https://www.cdprojektred.com/en/jobs",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.cdprojektred.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.cdprojektred.com/en/privacy-policy",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "28193bdd982586677464a248a320aeffeb73097c7666d21b553cbb34d4a707b3",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "remedy-locations",
+      "source_url": "https://www.remedygames.com/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.remedygames.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.remedygames.com/privacy-policy",
+          "status": "fetched",
+          "sha256": "79ff9376b36a8a862551959e7b6ef16cf2d2de65f31e641acdecaf6cb465d4fa",
+          "review_keywords": [
+            "automated",
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "cded0a011faee465a277455dc8b5c0bae88449e301b9547dc34dd92d176848d0",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "larian-locations",
+      "source_url": "https://larian.com/careers",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://larian.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://larian.com/tos",
+          "status": "fetched",
+          "sha256": "8d488a1250ab44f729cbd2db40b8891f65cc2280c0e3ef50ab057fc69adaaf1f",
+          "review_keywords": [
+            "automated",
+            "scrape"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "3073d1e371afb3271c7666148766fedc5145f7d8440f7114062db79b7bd58add",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "rise-locations",
+      "source_url": "https://www.risefx.com/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.risefx.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.risefx.com/rise-visual-effects-studios-imprint-privacy-policy.php",
+          "status": "fetched",
+          "sha256": "e00963f0a7c323813318ea16d6d68e48cdea924a9c7f9c17e0422ad2aaeba0fe",
+          "review_keywords": [
+            "automated",
+            "automatic",
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "9161be18445c110a38762535bbea7a492f2893795ce8de2e551db6bd303ddb4e",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "outpost-locations",
+      "source_url": "https://www.outpost-vfx.com/en/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.outpost-vfx.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.outpost-vfx.com/en/legal",
+          "status": "fetched",
+          "sha256": "815d85604e3bb1993cf86911af6d64c1c2e015c82fc9fa5c0e36bf009a475d23",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "e391e2a79417736bdba341532fd0cf32d69c00a2a793088055d2d8c27c9dca41",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "flyingbark-locations",
+      "source_url": "https://www.flyingbark.com.au/about",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.flyingbark.com.au/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.flyingbark.com.au/privacy-policy",
+          "status": "fetched",
+          "sha256": "3dc55d1241349069d4790632cc5ced2589eee1312312c1f0bb38833e9b05ca0a",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "cb1fe25f4dd3ac8346fa1838ee961b143c37fa6ce90610b84f336ff2bde1b81b",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "triggerfish-locations",
+      "source_url": "https://www.triggerfish.com/faq/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.triggerfish.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.triggerfish.com/academy/privacy-policy/",
+          "status": "fetched",
+          "sha256": "b1d924d9585beb15a0f88be5686ec97015fa721a518e71729880b3f4e33afdd2",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "8bd5d3e881c3d3d02791399eee3d07ce7190ab4ea5dd40192e208e812d8945ed",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "reelfx-locations",
+      "source_url": "https://www.reelfx.com/contact/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.reelfx.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.reelfx.com/terms/",
+          "status": "fetched",
+          "sha256": "94be033af8d7aad87912a716adc67d44c34528aaeef193591bb2ba251bd2b210",
+          "review_keywords": [
+            "automatically"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "7fe222d26fedea56e9b1f4da8a7028e1eeebecb451437b4aa89a395fd7d48804",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "rodeo-locations",
+      "source_url": "https://www.rodeofx.com/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.rodeofx.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.rodeofx.com/privacy-policy",
+          "status": "fetched",
+          "sha256": "93d8eed4e02fee0969f9fcc9ffbea124b036df7a265f76a749ab0a0319e2b1d7",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "f6a75c4cb4a95967fb7d3ffc46a554b782f7c43f9cc403109e198c90b3c655b6",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "chocolate-tribe-locations",
+      "source_url": "https://chocolatetribe.co.za/contact/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://chocolatetribe.co.za/robots.txt",
+      "terms": [
+        {
+          "url": "https://chocolatetribe.co.za/privacy-policy/",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "524e6cf538788cabd7ad9079596897bc3ff99126d79094cef7611869d3f7a6b9",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "studiot3d-locations",
+      "source_url": "https://www.studiot3d.com/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.studiot3d.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.studiot3d.com/privacy-policy",
+          "status": "unavailable",
+          "error_type": "HTTPError"
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "1ff9278d683c62dea0bf9282ea67733b83746c20bc6a4da04585c9cb5cd6a2ec",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "folks-locations",
+      "source_url": "https://folksvfx.com/contact/",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://folksvfx.com/robots.txt",
+      "terms": [
+        {
+          "url": "https://folksvfx.com/fr/privacy-policy/",
+          "status": "fetched",
+          "sha256": "5399193afc1f480fca966faf69ff564466632df205e2835d9fb202f77e064a64",
+          "review_keywords": [
+            "automatiquement"
+          ]
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "b2385f54624d3efead9d859c0223b74e0b0fc18af0df87de4620724620adecac",
+      "robots_allows_collector": true
+    },
+    {
+      "id": "rsp-locations",
+      "source_url": "https://www.rsp.com.au/contact",
+      "reviewed_on": "2026-11-06",
+      "robots_url": "https://www.rsp.com.au/robots.txt",
+      "terms": [
+        {
+          "url": "https://www.rsp.com.au/privacy-policy",
+          "status": "fetched",
+          "sha256": "d5bec19dfc76d6ee82b7157503500def1b9e841c97b77240c3385509f7075f15",
+          "review_keywords": []
+        }
+      ],
+      "source_fetched": false,
+      "decision": "manual_review_required",
+      "robots_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "robots_allows_collector": true
+    }
+  ]
+}

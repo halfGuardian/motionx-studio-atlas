@@ -85,7 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.2.csv'
+            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.3.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -162,6 +162,31 @@ def main():
             expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
             passed('new co-located capture stages, precise capability filters and explicitly reviewed legacy correction')
 
+            page.locator('#search').fill('Larian')
+            page.locator('#category').select_option('Motion Capture')
+            page.locator('#confirmedOnly').check()
+            expect(page.locator('#count')).to_have_text('1 location')
+            page.locator('[data-id="larian-kuala-lumpur"]').click()
+            expect(page.locator('#detailContent')).to_contain_text('Motion Capture — confirmed')
+            expect(page.locator('#detailContent')).not_to_contain_text('Facial Capture — confirmed')
+            page.locator('#close').click()
+            page.locator('#category').select_option('')
+            page.locator('#search').fill('Annapurna')
+            expect(page.locator('#count')).to_have_text('2 locations')
+            page.evaluate('() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }')
+            expect(page.locator('.leaflet-popup-content button')).to_have_count(2)
+            page.locator('.leaflet-popup-content button').last.press('Enter')
+            expect(page.locator('#detailContent h2')).to_contain_text('ANR Virtual Production Stage')
+            expect(page.locator('#detailContent')).not_to_contain_text('Facial Capture — confirmed')
+            page.locator('#close').click()
+            page.locator('#search').fill('Beyond')
+            expect(page.locator('#count')).to_have_text('0 locations')
+            page.locator('#confirmedOnly').uncheck()
+            expect(page.locator('#count')).to_have_text('2 locations')
+            page.locator('#search').fill('')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            passed('confirmed capability filtering, site-specific capture and keyboard selection between Annapurna stages')
+
             page.screenshot(path='/tmp/motionx-v08-desktop.png')
             page.set_viewport_size({'width': 390, 'height': 844})
             page.locator('#listTab').click()
@@ -205,12 +230,12 @@ def main():
             original = json.loads((ROOT / 'studios.json').read_text())[0]
             records = [{**original, 'id': f'load-test-{i}', 'company_id': f'company-{i}',
                         'name': f'VFX test fixture {i}', 'categories': ['VFX'], 'capabilities': [],
-                        'capability_evidence': {}, 'lat': (i % 100) * 1.6 - 80, 'lng': (i // 100) * 3.5 - 175}
-                       for i in range(10000)]
+                        'capability_evidence': {}, 'lat': (i % 200) * .8 - 80, 'lng': (i // 200) * 3.5 - 175}
+                       for i in range(20000)]
             page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
             start = time.monotonic()
             page.goto(url, wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('10000 locations', timeout=20000)
+            expect(page.locator('#count')).to_have_text('20000 locations', timeout=20000)
             assert page.locator('.entry').count() == 50
             page.evaluate('() => { map.setView([0, 0], 4, {animate:false}); }')
             expected_visible = page.evaluate('''() => {
@@ -219,7 +244,7 @@ def main():
                     {west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()}).length;
             }''')
             assert page.evaluate('layer.getLayers().length') == expected_visible
-            assert 0 < expected_visible < 2000
+            assert 0 < expected_visible < 5000
             page.evaluate('() => { map.setView([35, 140], 4, {animate:false}); }')
             # Longitude -179 is also in a viewport spanning 170..190 (world wrapping).
             assert page.evaluate('''() => {
@@ -230,24 +255,24 @@ def main():
                     const p=m.getLatLng(); return expected.has(JSON.stringify([p.lat,p.lng]));
                 });
             }''')
-            expect(page.locator('#count')).to_have_text('10000 locations')
+            expect(page.locator('#count')).to_have_text('20000 locations')
             page.locator('#nextPage').click()
-            expect(page.locator('#pageInfo')).to_have_text('51–100 of 10000')
+            expect(page.locator('#pageInfo')).to_have_text('51–100 of 20000')
             page.locator('#category').select_option('VFX')
-            expect(page.locator('#count')).to_have_text('10000 locations')
-            page.locator('#search').fill('VFX test fixture 9999')
+            expect(page.locator('#count')).to_have_text('20000 locations')
+            page.locator('#search').fill('VFX test fixture 19999')
             expect(page.locator('#count')).to_have_text('1 location')
             elapsed = time.monotonic() - start
-            assert elapsed < 20, f'10k smoke path exceeded 20 seconds: {elapsed}'
+            assert elapsed < 20, f'20k smoke path exceeded 20 seconds: {elapsed}'
             Path('/tmp/motionx-v09-performance.json').write_text(json.dumps({'synthetic_locations':len(records),'unique_coordinate_groups':len({(r['lat'], r['lng']) for r in records}),'viewport_markers_at_zoom_4':expected_visible,'list_page_size':50,'load_pan_paginate_filter_seconds':round(elapsed,3)}))
-            passed(f'10000 synthetic locations, viewport rendering/panning, 50-row pagination, filtering ({elapsed:.1f}s)')
+            passed(f'20000 synthetic locations, viewport rendering/panning, 50-row pagination, filtering ({elapsed:.1f}s)')
             # A coincident chooser must retain every filtered studio and keyboard focus
             # even when Leaflet auto-pans its popup in viewport mode.
             page.unroute('**/studios.json')
             records[5001].update(lat=records[5000]['lat'],lng=records[5000]['lng'])
             page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
             page.goto(url, wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('10000 locations')
+            expect(page.locator('#count')).to_have_text('20000 locations')
             page.evaluate('() => { map.setView([studios[5000].lat, studios[5000].lng], 5, {animate:false}); }')
             page.evaluate('() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }')
             expect(page.locator('.leaflet-popup-content button')).to_have_count(2)

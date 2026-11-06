@@ -5,8 +5,8 @@ const fs = require('node:fs');
 const {loadDatabase, validateDatabase, filterRecords} = require('../data.js');
 const rows = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../studios.json')));
 test('canonical database loads and retains all identities', () => {
-  assert.equal(validateDatabase(rows).length, 141);
-  assert.equal(new Set(rows.map(r => r.company_id)).size, 77);
+  assert.equal(validateDatabase(rows).length, 182);
+  assert.equal(new Set(rows.map(r => r.company_id)).size, 88);
 });
 test('relative URL is GitHub Pages compatible and disables stale cache', async () => {
   const result = await loadDatabase(async (path, options) => {
@@ -139,4 +139,26 @@ test('viewport grouping handles the antimeridian and repeated world copies', () 
     assert.deepEqual(visibleCoordinateGroups(groups,{west,east,south:-10,north:10}).map(g=>g[0].id),['east','west']);
   }
   assert.deepEqual(visibleCoordinateGroups(groups,{west:-200,east:200,south:-10,north:10}).map(g=>g[0].id),['east','west','centre']);
+});
+
+test('confirmed-only filtering uses the specific selected capability evidence', () => {
+  const unknown = {...rows[0], id: 'fixture-unknown', categories: ['VFX'], capabilities: ['Motion Capture'],
+    capability_evidence: {'Motion Capture': {state:'unknown', evidence:'', verified_on:''}}};
+  const known = rows.find(r => r.id === 'larian-kuala-lumpur');
+  assert.deepEqual(filterRecords([unknown, known], '', 'Motion Capture', '', true), [known]);
+  assert.equal(filterRecords([unknown, known], '', 'Motion Capture', '', false).length, 2);
+  assert.equal(filterRecords([known], '', 'Motion Capture', 'Canada', true).length, 0);
+  assert.equal(filterRecords([known], '', 'Facial Capture', '', true).length, 0);
+});
+test('20000 locations retain complete identity and coordinates in viewport rendering', () => {
+  const {coordinateGroups, visibleCoordinateGroups} = require('../data.js');
+  const fixture = Array.from({length:20000}, (_, i) => ({id:`fixture-${i}`, lat:(i%200)*.8-80, lng:Math.floor(i/200)*3.5-175}));
+  fixture[5001] = {...fixture[5001], lat:fixture[5000].lat, lng:fixture[5000].lng};
+  const before=JSON.stringify(fixture), start=performance.now(), groups=coordinateGroups(fixture);
+  const visible=visibleCoordinateGroups(groups, {west:-20,east:20,south:-20,north:20});
+  assert.equal(groups.flat().length,20000);
+  assert.equal(groups.find(g => g.length===2).length,2);
+  assert.ok(visible.length < 2000 && visible.length > 0);
+  assert.equal(JSON.stringify(fixture),before);
+  assert.ok(performance.now()-start < 3000);
 });

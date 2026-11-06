@@ -32,7 +32,7 @@ def observed(html=HTML, previous=None, today=TODAY):
 class ExtractionTests(unittest.TestCase):
     def test_enabled_sources_are_bounded_and_explicit(self):
         config=load_config(read(ROOT/'data/discovery/sources.json'))
-        self.assertEqual(len(config['sources']),6)
+        self.assertEqual(len(config['sources']),25)
         self.assertTrue(all(s['kind']=='official' for s in config['sources']))
         for changes in ({'id':'BAD'}, {'adapter':'execute-js'}, {'reuse_note':''}, {'url':'http://example.org'}, {'link_pattern':''}):
             with self.assertRaises(ValueError):load_config({'version':1,'sources':[{**SOURCE,**changes}]})

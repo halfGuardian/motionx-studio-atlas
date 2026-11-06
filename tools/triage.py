@@ -16,6 +16,12 @@ from discovery import ROOT, digest, load_config, read, safe_output, write
 from validate import normalized, url_valid, validate
 
 CLASSES = ('already_represented', 'potentially_new', 'irrelevant', 'requires_research')
+
+
+def country_key(value):
+    key=normalized(value)
+    return {'usa':'unitedstates','us':'unitedstates','unitedstatesofamerica':'unitedstates',
+            'uk':'unitedkingdom','greatbritain':'unitedkingdom'}.get(key,key)
 NON_STUDIO = {'about', 'about-us', 'contact', 'contact-us', 'privacy', 'privacy-policy', 'cookies',
               'cookie-policy', 'terms', 'terms-and-conditions', 'news', 'blog', 'careers', 'jobs',
               'services', 'work', 'our-work', 'projects', 'portfolio', 'sustainability', 'technology',
@@ -54,7 +60,14 @@ def classify(candidate, source, database, rejected):
     kind = source.get('triage_kind', '')
     company = source.get('company_id', '')
     rows = scope_rows(database, company)
+    if candidate.get('observation_kind') == 'location_reference' and candidate.get('city') and candidate.get('country'):
+        matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and country_key(r['country']) == country_key(candidate['country'])]
+        return result('already_represented' if matches else 'potentially_new', 'likely', 'structured_place',
+                      'Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research.', matches, 'location' if matches else 'none')
     branch = bool(re.search(r'/(?:location|locations)/.+$', path)) and kind == 'branch_links'
+    if source.get('branch_url_pattern') and kind == 'branch_links':
+        extracted = re.search(source['branch_url_pattern'], path)
+        if extracted:branch=True;slug=extracted.group(1)
     if kind == 'organisation_roster' and path:
         return result('irrelevant', 'confirmed', 'navigation_or_service', 'Roster link leads to navigation, a service, policy, contact or article rather than an individual operator homepage/facility. Preserve it as source history.')
     # Generic service/contact/navigation pages do not establish a physical location.
@@ -95,7 +108,7 @@ def classify(candidate, source, database, rejected):
         return result('potentially_new', 'likely', 'branch_link', 'Official branch-shaped link has no location match in the current database. Candidate only: city, country, operation and capabilities remain unverified.')
     # Structured location data still needs identity plus exact city/country to match.
     if candidate.get('city') and candidate.get('country'):
-        matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and normalized(r['country']) == normalized(candidate['country'])]
+        matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and country_key(r['country']) == country_key(candidate['country'])]
         if matches:
             return result('already_represented', 'likely', 'structured_place', 'Organisation/group and structured city/country match existing locations; not independent verification.', matches, 'location')
         return result('potentially_new', 'likely', 'structured_place', 'Structured organisation/city/country has no existing scoped location match; research required before publication.')
@@ -137,7 +150,7 @@ def triage(queue, observation_report, database, config, rejected=(), observed_on
         if source.get('disabled_reason'):
             result['reasons'].append('Automated source disabled: ' + source['disabled_reason'])
         outcomes.append(result)
-        duplicates[(url_key(candidate['url']), normalized(candidate['label']), normalized(candidate.get('city', '')), normalized(candidate.get('country', '')))].append(cid)
+        duplicates[(url_key(candidate['url']), normalized(candidate['label']), normalized(candidate.get('city', '')), country_key(candidate.get('country', '')))].append(cid)
     groups = [ids for ids in duplicates.values() if len(ids) > 1]
     by_id = {r['id']: r for r in outcomes}
     for ids in groups:

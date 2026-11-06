@@ -1,0 +1,87 @@
+name: Global research and source checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/research.py'
+      - 'tools/source_policy.py'
+      - 'tools/source_adapters.py'
+      - 'tools/discovery.py'
+      - 'data/discovery/**'
+      - 'data/research/**'
+      - 'tools/triage.py'
+      - 'tools/import_csv.py'
+      - 'tools/validate.py'
+      - '.github/workflows/global-research.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit only explicit public policy URLs; never auto-enable sources
+        run: python tools/source_policy.py --config data/discovery/source-candidates.json --output policy-audit.json
+      - name: Restore previous discovery and preserve history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then exit 1; fi
+          gh run download "$run_id" --name studio-discovery --dir previous
+      - name: Collect only registry-reviewed sources and prepare unverified dossiers
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git show '${{ github.event.pull_request.base.sha }}:studios.json' > /tmp/published-studios.json
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
+          python - <<'PYCODE'
+          import json, os, subprocess
+          from pathlib import Path
+          base=os.environ['BASE_SHA']
+          changed=subprocess.run(['git','diff','--name-only',base,'--','data/research'],capture_output=True,text=True,check=True).stdout.splitlines()
+          bundles=[Path(p) for p in changed if Path(p).name=='records.json' and Path(p).is_file()]
+          if len(bundles)>1:raise SystemExit('Use one exact research record bundle per proposal PR')
+          report=['python','tools/research.py','report','--database','/tmp/published-studios.json','--queue','discovery-run/queue.json','--report','discovery-run/report.json','--config','data/discovery/sources.json','--output','research-review']
+          if bundles:
+              records=bundles[0];manifest=records.with_name('evidence.json');root=(Path.cwd()/'data/research').resolve()
+              if any(p.is_symlink() or root not in p.resolve().parents for p in (records,manifest)):raise SystemExit('Regular committed research files required')
+              evidence=json.loads(manifest.read_text())
+              stage=['python','tools/research.py','stage-pr','--database','/tmp/published-studios.json','--records',str(records),'--manifest',str(manifest),'--output','staged-proposal']
+              for entry in evidence.get('records',[]):
+                  if entry.get('distinct_reason'):stage+=['--allow-distinct-location',entry['id']]
+              subprocess.run(stage,check=True)
+              canonical=json.loads(Path('studios.json').read_text())
+              if canonical!=json.loads(Path('/tmp/published-studios.json').read_text()) and canonical!=json.loads(Path('staged-proposal/studios.json').read_text()):raise SystemExit('Canonical diff must match the exact staged proposal')
+              report+=['--records',str(records)]
+          subprocess.run(report,check=True)
+          PYCODE
+          cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('discovery-run/report.json').read_text())
+          print('LIVE_SOURCES '+json.dumps(report['sources']))
+          print('RESEARCH_COUNTS '+json.dumps(json.loads(Path('research-review/proposals.json').read_text())['candidate_counts']))
+          queue=json.loads(Path('discovery-run/queue.json').read_text())
+          print('QUEUE_CONTINUITY '+json.dumps({'retained':len(set(json.loads(Path('previous/queue.json').read_text())['candidates']) & set(queue['candidates'])),'history_snapshots':len(list(Path('discovery-run/history').glob('*.json')))}))
+          for candidate in queue['candidates'].values():
+              if candidate['source_id'] not in ('v08-review-backlog',):
+                  print('LIVE_CANDIDATE '+json.dumps(candidate))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-research-review
+          path: |
+            policy-audit.json
+            discovery-run/
+            research-review/
+            staged-proposal/
+          retention-days: 90

@@ -182,7 +182,7 @@ class ContinuityTests(unittest.TestCase):
         def fail(_):raise OSError('network unavailable')
         state,report=scan(config,queue,[],fetcher=fail)
         self.assertEqual(state['candidates'],queue['candidates'])
-        self.assertEqual(len(report['sources']),5)  # EA disabled, never fetched
+        self.assertEqual(len(report['sources']),sum(s['enabled'] for s in config['sources']))  # EA is never fetched
         self.assertTrue(all(s['status']=='fetch_or_parse_error' for s in report['sources']))
 
 

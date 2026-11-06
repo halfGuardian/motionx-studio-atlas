@@ -1,0 +1,2502 @@
+{
+  "publication_mode": "github_PR_human_review",
+  "baseline_hash": "6cd445ba078647482a629915b819d3d070e4568dc37d19634bee196ab6402e28",
+  "proposed_hash": "f6e6a1d6388d5e06385f2e23f186e097d34f9e68ce962d5a851ab9cd246c1fc3",
+  "additions": [
+    "larian-gent",
+    "larian-barcelona",
+    "larian-dublin",
+    "larian-guildford",
+    "larian-kuala-lumpur",
+    "larian-quebec",
+    "larian-warsaw",
+    "rise-fx-berlin",
+    "rise-fx-cologne",
+    "rise-fx-london",
+    "rise-fx-munich",
+    "rise-fx-stuttgart",
+    "outpost-vfx-bournemouth",
+    "outpost-vfx-london",
+    "outpost-vfx-montreal",
+    "outpost-vfx-mumbai",
+    "outpost-vfx-stuttgart",
+    "flying-bark-sydney",
+    "flying-bark-burbank",
+    "flying-bark-madrid",
+    "triggerfish-cape-town",
+    "triggerfish-galway",
+    "folks-montreal",
+    "folks-toronto",
+    "folks-bogota",
+    "folks-saguenay",
+    "folks-mumbai",
+    "folks-burbank",
+    "folks-new-york",
+    "folks-atlanta",
+    "folks-vancouver",
+    "chocolate-tribe-johannesburg",
+    "chocolate-tribe-cape-town",
+    "rising-sun-pictures-adelaide",
+    "rising-sun-pictures-brisbane",
+    "el-ranchito-madrid",
+    "el-ranchito-barcelona",
+    "annapurna-am-mocap-hyderabad",
+    "annapurna-anr-vp-hyderabad",
+    "ubisoft-reflections-newcastle",
+    "massive-stockholm"
+  ],
+  "updates": [
+    "centroid-uxbridge"
+  ],
+  "preview": {
+    "new_records": [
+      "larian-gent",
+      "larian-barcelona",
+      "larian-dublin",
+      "larian-guildford",
+      "larian-kuala-lumpur",
+      "larian-quebec",
+      "larian-warsaw",
+      "rise-fx-berlin",
+      "rise-fx-cologne",
+      "rise-fx-london",
+      "rise-fx-munich",
+      "rise-fx-stuttgart",
+      "outpost-vfx-bournemouth",
+      "outpost-vfx-london",
+      "outpost-vfx-montreal",
+      "outpost-vfx-mumbai",
+      "outpost-vfx-stuttgart",
+      "flying-bark-sydney",
+      "flying-bark-burbank",
+      "flying-bark-madrid",
+      "triggerfish-cape-town",
+      "triggerfish-galway",
+      "folks-montreal",
+      "folks-toronto",
+      "folks-bogota",
+      "folks-saguenay",
+      "folks-mumbai",
+      "folks-burbank",
+      "folks-new-york",
+      "folks-atlanta",
+      "folks-vancouver",
+      "chocolate-tribe-johannesburg",
+      "chocolate-tribe-cape-town",
+      "rising-sun-pictures-adelaide",
+      "rising-sun-pictures-brisbane",
+      "el-ranchito-madrid",
+      "el-ranchito-barcelona",
+      "annapurna-am-mocap-hyderabad",
+      "annapurna-anr-vp-hyderabad",
+      "ubisoft-reflections-newcastle",
+      "massive-stockholm"
+    ],
+    "unchanged_records": [],
+    "potential_duplicates": [
+      {
+        "id": "annapurna-anr-vp-hyderabad",
+        "matches": [
+          {
+            "ids": [
+              "annapurna-am-mocap-hyderabad",
+              "annapurna-anr-vp-hyderabad"
+            ],
+            "reasons": [
+              "company/city",
+              "website/city"
+            ]
+          }
+        ],
+        "allowed_as_distinct": true
+      }
+    ],
+    "rejected_records": [],
+    "validation_warnings": [
+      "beyond-vancouver: approximate coordinates (city); not a verified street address",
+      "beyond-vancouver: legacy/unreviewed evidence; source presence is not independent verification",
+      "beyond-montreal: approximate coordinates (city); not a verified street address",
+      "beyond-montreal: legacy/unreviewed evidence; source presence is not independent verification",
+      "animatrik-burnaby: approximate coordinates (city); not a verified street address",
+      "animatrik-burnaby: legacy/unreviewed evidence; source presence is not independent verification",
+      "centroid-uxbridge: approximate coordinates (city); not a verified street address",
+      "centroid-london: approximate coordinates (city); not a verified street address",
+      "centroid-london: legacy/unreviewed evidence; source presence is not independent verification",
+      "hom-hollywood: approximate coordinates (approximate); not a verified street address",
+      "hom-hollywood: legacy/unreviewed evidence; source presence is not independent verification",
+      "aut-auckland: approximate coordinates (approximate); not a verified street address",
+      "aut-auckland: legacy/unreviewed evidence; source presence is not independent verification",
+      "motion-arcade: approximate coordinates (city); not a verified street address",
+      "motion-arcade: legacy/unreviewed evidence; source presence is not independent verification",
+      "ubisoft-toronto: approximate coordinates (city); not a verified street address",
+      "ubisoft-toronto: legacy/unreviewed evidence; source presence is not independent verification",
+      "aura-osaka: approximate coordinates (city); not a verified street address",
+      "aura-osaka: legacy/unreviewed evidence; source presence is not independent verification",
+      "studio-anima: approximate coordinates (unverified); not a verified street address",
+      "studio-anima: legacy/unreviewed evidence; source presence is not independent verification",
+      "metropolia: approximate coordinates (city); not a verified street address",
+      "metropolia: legacy/unreviewed evidence; source presence is not independent verification",
+      "koawa: approximate coordinates (city); not a verified street address",
+      "koawa: legacy/unreviewed evidence; source presence is not independent verification",
+      "audiomotion: approximate coordinates (city); not a verified street address",
+      "versatile: approximate coordinates (city); not a verified street address",
+      "versatile: legacy/unreviewed evidence; source presence is not independent verification",
+      "lategra: approximate coordinates (unverified); not a verified street address",
+      "lategra: legacy/unreviewed evidence; source presence is not independent verification",
+      "mocaplab: approximate coordinates (city); not a verified street address",
+      "mocaplab: legacy/unreviewed evidence; source presence is not independent verification",
+      "rouge: approximate coordinates (city); not a verified street address",
+      "rouge: legacy/unreviewed evidence; source presence is not independent verification",
+      "weta-fx-wellington: approximate coordinates (city); not a verified street address",
+      "ilm-san-francisco: approximate coordinates (city); not a verified street address",
+      "ilm-vancouver: approximate coordinates (city); not a verified street address",
+      "ilm-london: approximate coordinates (city); not a verified street address",
+      "ilm-sydney: approximate coordinates (city); not a verified street address",
+      "ilm-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-london: approximate coordinates (city); not a verified street address",
+      "framestore-montreal: approximate coordinates (city); not a verified street address",
+      "framestore-chicago: approximate coordinates (city); not a verified street address",
+      "framestore-los-angeles: approximate coordinates (city); not a verified street address",
+      "framestore-new-york: approximate coordinates (city); not a verified street address",
+      "framestore-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-melbourne: approximate coordinates (city); not a verified street address",
+      "dneg-london: approximate coordinates (city); not a verified street address",
+      "dneg-vancouver: approximate coordinates (city); not a verified street address",
+      "dneg-mumbai: approximate coordinates (city); not a verified street address",
+      "dneg-los-angeles: approximate coordinates (city); not a verified street address",
+      "dneg-chennai: approximate coordinates (city); not a verified street address",
+      "dneg-montreal: approximate coordinates (city); not a verified street address",
+      "dneg-mohali: approximate coordinates (city); not a verified street address",
+      "dneg-bengaluru: approximate coordinates (city); not a verified street address",
+      "dneg-toronto: approximate coordinates (city); not a verified street address",
+      "dneg-sydney: approximate coordinates (city); not a verified street address",
+      "dneg-barcelona: approximate coordinates (city); not a verified street address",
+      "dneg-budapest: approximate coordinates (city); not a verified street address",
+      "dneg-sofia: approximate coordinates (city); not a verified street address",
+      "dneg-pune: approximate coordinates (city); not a verified street address",
+      "dneg-kolkata: approximate coordinates (city); not a verified street address",
+      "dneg-trivandrum: approximate coordinates (city); not a verified street address",
+      "dneg-hyderabad: approximate coordinates (city); not a verified street address",
+      "dneg-patna: approximate coordinates (city); not a verified street address",
+      "dneg-goa: approximate coordinates (city); not a verified street address",
+      "cinesite-london: approximate coordinates (city); not a verified street address",
+      "cinesite-montreal: approximate coordinates (city); not a verified street address",
+      "cinesite-vancouver: approximate coordinates (city); not a verified street address",
+      "latelier-animation-montreal: approximate coordinates (city); not a verified street address",
+      "assemblage-mumbai: approximate coordinates (city); not a verified street address",
+      "assemblage-bengaluru: approximate coordinates (city); not a verified street address",
+      "fx3x-skopje: approximate coordinates (city); not a verified street address",
+      "fx3x-belgrade: approximate coordinates (city); not a verified street address",
+      "image-engine-vancouver: approximate coordinates (city); not a verified street address",
+      "squeeze-montreal: approximate coordinates (city); not a verified street address",
+      "squeeze-quebec: approximate coordinates (city); not a verified street address",
+      "trixter-munich: approximate coordinates (city); not a verified street address",
+      "trixter-berlin: approximate coordinates (city); not a verified street address",
+      "imaginarium-pinewood: approximate coordinates (city); not a verified street address",
+      "imaginarium-side-london: approximate coordinates (city); not a verified street address",
+      "the-mill-paris: approximate coordinates (city); not a verified street address",
+      "the-mill-london: approximate coordinates (city); not a verified street address",
+      "the-mill-liege: approximate coordinates (city); not a verified street address",
+      "the-mill-bengaluru: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-vancouver: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-montreal: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-vancouver: approximate coordinates (city); not a verified street address",
+      "digital-domain-montreal: approximate coordinates (city); not a verified street address",
+      "digital-domain-hyderabad: approximate coordinates (city); not a verified street address",
+      "digital-domain-shanghai: approximate coordinates (city); not a verified street address",
+      "eyeline-los-angeles: approximate coordinates (city); not a verified street address",
+      "eyeline-vancouver: approximate coordinates (city); not a verified street address",
+      "eyeline-seoul: approximate coordinates (city); not a verified street address",
+      "eyeline-london: approximate coordinates (city); not a verified street address",
+      "eyeline-hyderabad: approximate coordinates (city); not a verified street address",
+      "weta-fx-vancouver: approximate coordinates (city); not a verified street address",
+      "weta-fx-melbourne: approximate coordinates (city); not a verified street address",
+      "criterion-games-guildford: approximate coordinates (city); not a verified street address",
+      "dice-stockholm: approximate coordinates (city); not a verified street address",
+      "motive-montreal: approximate coordinates (city); not a verified street address",
+      "respawn-los-angeles: approximate coordinates (city); not a verified street address",
+      "respawn-madison: approximate coordinates (city); not a verified street address",
+      "ripple-effect-marina-del-rey: approximate coordinates (city); not a verified street address",
+      "ea-sports-orlando: approximate coordinates (city); not a verified street address",
+      "metalhead-victoria: approximate coordinates (city); not a verified street address",
+      "codemasters-southam: approximate coordinates (city); not a verified street address",
+      "codemasters-birmingham: approximate coordinates (city); not a verified street address",
+      "codemasters-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "ea-sports-bucharest: approximate coordinates (city); not a verified street address",
+      "ea-korea-seoul: approximate coordinates (city); not a verified street address",
+      "ea-sports-fc-mobile-shanghai: approximate coordinates (city); not a verified street address",
+      "ea-sports-madrid: approximate coordinates (city); not a verified street address",
+      "ea-sports-burnaby: approximate coordinates (city); not a verified street address",
+      "blackhouse-sao-paulo: approximate coordinates (city); not a verified street address",
+      "xr-africa-cape-town: approximate coordinates (city); not a verified street address",
+      "ubisoft-montreal: approximate coordinates (city); not a verified street address",
+      "ubisoft-quebec-city: approximate coordinates (city); not a verified street address",
+      "ubisoft-saguenay: approximate coordinates (city); not a verified street address",
+      "ubisoft-sherbrooke: approximate coordinates (city); not a verified street address",
+      "ubisoft-sofia: approximate coordinates (city); not a verified street address",
+      "ubisoft-singapore: approximate coordinates (city); not a verified street address",
+      "ubisoft-redlynx: approximate coordinates (city); not a verified street address",
+      "ubisoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "ubisoft-da-nang: approximate coordinates (city); not a verified street address",
+      "ubisoft-chengdu: approximate coordinates (city); not a verified street address",
+      "ubisoft-shanghai: approximate coordinates (city); not a verified street address",
+      "ubisoft-berlin: approximate coordinates (city); not a verified street address",
+      "ubisoft-dusseldorf: approximate coordinates (city); not a verified street address",
+      "ubisoft-mainz: approximate coordinates (city); not a verified street address",
+      "ubisoft-bucharest: approximate coordinates (city); not a verified street address",
+      "ubisoft-craiova: approximate coordinates (city); not a verified street address",
+      "ubisoft-kyiv: approximate coordinates (city); not a verified street address",
+      "ubisoft-odesa: approximate coordinates (city); not a verified street address",
+      "ubisoft-bordeaux: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-warsaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-krakow: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-wroclaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-vancouver: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-boston: approximate coordinates (city); not a verified street address",
+      "remedy-espoo: approximate coordinates (city); not a verified street address",
+      "remedy-stockholm: approximate coordinates (city); not a verified street address",
+      "metricminds-frankfurt: approximate coordinates (city); not a verified street address",
+      "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+      "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+      "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+      "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+      "massive-malmo: approximate coordinates (city); not a verified street address",
+      "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+      "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+      "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)",
+      "larian-gent: approximate coordinates (city); not a verified street address",
+      "larian-barcelona: approximate coordinates (city); not a verified street address",
+      "larian-dublin: approximate coordinates (city); not a verified street address",
+      "larian-guildford: approximate coordinates (city); not a verified street address",
+      "larian-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "larian-quebec: approximate coordinates (city); not a verified street address",
+      "larian-warsaw: approximate coordinates (city); not a verified street address",
+      "rise-fx-berlin: approximate coordinates (city); not a verified street address",
+      "rise-fx-cologne: approximate coordinates (city); not a verified street address",
+      "rise-fx-london: approximate coordinates (city); not a verified street address",
+      "rise-fx-munich: approximate coordinates (city); not a verified street address",
+      "rise-fx-stuttgart: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-bournemouth: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-london: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-montreal: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-mumbai: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-stuttgart: approximate coordinates (city); not a verified street address",
+      "flying-bark-sydney: approximate coordinates (city); not a verified street address",
+      "flying-bark-burbank: approximate coordinates (city); not a verified street address",
+      "flying-bark-madrid: approximate coordinates (city); not a verified street address",
+      "triggerfish-cape-town: approximate coordinates (city); not a verified street address",
+      "triggerfish-galway: approximate coordinates (city); not a verified street address",
+      "folks-montreal: approximate coordinates (city); not a verified street address",
+      "folks-toronto: approximate coordinates (city); not a verified street address",
+      "folks-bogota: approximate coordinates (city); not a verified street address",
+      "folks-saguenay: approximate coordinates (city); not a verified street address",
+      "folks-mumbai: approximate coordinates (city); not a verified street address",
+      "folks-burbank: approximate coordinates (city); not a verified street address",
+      "folks-new-york: approximate coordinates (city); not a verified street address",
+      "folks-atlanta: approximate coordinates (city); not a verified street address",
+      "folks-vancouver: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-johannesburg: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-cape-town: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-adelaide: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-brisbane: approximate coordinates (city); not a verified street address",
+      "el-ranchito-madrid: approximate coordinates (city); not a verified street address",
+      "el-ranchito-barcelona: approximate coordinates (city); not a verified street address",
+      "annapurna-am-mocap-hyderabad: approximate coordinates (city); not a verified street address",
+      "annapurna-anr-vp-hyderabad: approximate coordinates (city); not a verified street address",
+      "ubisoft-reflections-newcastle: approximate coordinates (city); not a verified street address",
+      "massive-stockholm: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['annapurna-am-mocap-hyderabad', 'annapurna-anr-vp-hyderabad'] (company/city, website/city)"
+    ],
+    "database_errors": [],
+    "written": false
+  },
+  "repeat": {
+    "new_records": [],
+    "unchanged_records": [
+      "larian-gent",
+      "larian-barcelona",
+      "larian-dublin",
+      "larian-guildford",
+      "larian-kuala-lumpur",
+      "larian-quebec",
+      "larian-warsaw",
+      "rise-fx-berlin",
+      "rise-fx-cologne",
+      "rise-fx-london",
+      "rise-fx-munich",
+      "rise-fx-stuttgart",
+      "outpost-vfx-bournemouth",
+      "outpost-vfx-london",
+      "outpost-vfx-montreal",
+      "outpost-vfx-mumbai",
+      "outpost-vfx-stuttgart",
+      "flying-bark-sydney",
+      "flying-bark-burbank",
+      "flying-bark-madrid",
+      "triggerfish-cape-town",
+      "triggerfish-galway",
+      "folks-montreal",
+      "folks-toronto",
+      "folks-bogota",
+      "folks-saguenay",
+      "folks-mumbai",
+      "folks-burbank",
+      "folks-new-york",
+      "folks-atlanta",
+      "folks-vancouver",
+      "chocolate-tribe-johannesburg",
+      "chocolate-tribe-cape-town",
+      "rising-sun-pictures-adelaide",
+      "rising-sun-pictures-brisbane",
+      "el-ranchito-madrid",
+      "el-ranchito-barcelona",
+      "annapurna-am-mocap-hyderabad",
+      "annapurna-anr-vp-hyderabad",
+      "ubisoft-reflections-newcastle",
+      "massive-stockholm"
+    ],
+    "potential_duplicates": [],
+    "rejected_records": [],
+    "validation_warnings": [
+      "beyond-vancouver: approximate coordinates (city); not a verified street address",
+      "beyond-vancouver: legacy/unreviewed evidence; source presence is not independent verification",
+      "beyond-montreal: approximate coordinates (city); not a verified street address",
+      "beyond-montreal: legacy/unreviewed evidence; source presence is not independent verification",
+      "animatrik-burnaby: approximate coordinates (city); not a verified street address",
+      "animatrik-burnaby: legacy/unreviewed evidence; source presence is not independent verification",
+      "centroid-uxbridge: approximate coordinates (city); not a verified street address",
+      "centroid-london: approximate coordinates (city); not a verified street address",
+      "centroid-london: legacy/unreviewed evidence; source presence is not independent verification",
+      "hom-hollywood: approximate coordinates (approximate); not a verified street address",
+      "hom-hollywood: legacy/unreviewed evidence; source presence is not independent verification",
+      "aut-auckland: approximate coordinates (approximate); not a verified street address",
+      "aut-auckland: legacy/unreviewed evidence; source presence is not independent verification",
+      "motion-arcade: approximate coordinates (city); not a verified street address",
+      "motion-arcade: legacy/unreviewed evidence; source presence is not independent verification",
+      "ubisoft-toronto: approximate coordinates (city); not a verified street address",
+      "ubisoft-toronto: legacy/unreviewed evidence; source presence is not independent verification",
+      "aura-osaka: approximate coordinates (city); not a verified street address",
+      "aura-osaka: legacy/unreviewed evidence; source presence is not independent verification",
+      "studio-anima: approximate coordinates (unverified); not a verified street address",
+      "studio-anima: legacy/unreviewed evidence; source presence is not independent verification",
+      "metropolia: approximate coordinates (city); not a verified street address",
+      "metropolia: legacy/unreviewed evidence; source presence is not independent verification",
+      "koawa: approximate coordinates (city); not a verified street address",
+      "koawa: legacy/unreviewed evidence; source presence is not independent verification",
+      "audiomotion: approximate coordinates (city); not a verified street address",
+      "versatile: approximate coordinates (city); not a verified street address",
+      "versatile: legacy/unreviewed evidence; source presence is not independent verification",
+      "lategra: approximate coordinates (unverified); not a verified street address",
+      "lategra: legacy/unreviewed evidence; source presence is not independent verification",
+      "mocaplab: approximate coordinates (city); not a verified street address",
+      "mocaplab: legacy/unreviewed evidence; source presence is not independent verification",
+      "rouge: approximate coordinates (city); not a verified street address",
+      "rouge: legacy/unreviewed evidence; source presence is not independent verification",
+      "weta-fx-wellington: approximate coordinates (city); not a verified street address",
+      "ilm-san-francisco: approximate coordinates (city); not a verified street address",
+      "ilm-vancouver: approximate coordinates (city); not a verified street address",
+      "ilm-london: approximate coordinates (city); not a verified street address",
+      "ilm-sydney: approximate coordinates (city); not a verified street address",
+      "ilm-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-london: approximate coordinates (city); not a verified street address",
+      "framestore-montreal: approximate coordinates (city); not a verified street address",
+      "framestore-chicago: approximate coordinates (city); not a verified street address",
+      "framestore-los-angeles: approximate coordinates (city); not a verified street address",
+      "framestore-new-york: approximate coordinates (city); not a verified street address",
+      "framestore-mumbai: approximate coordinates (city); not a verified street address",
+      "framestore-melbourne: approximate coordinates (city); not a verified street address",
+      "dneg-london: approximate coordinates (city); not a verified street address",
+      "dneg-vancouver: approximate coordinates (city); not a verified street address",
+      "dneg-mumbai: approximate coordinates (city); not a verified street address",
+      "dneg-los-angeles: approximate coordinates (city); not a verified street address",
+      "dneg-chennai: approximate coordinates (city); not a verified street address",
+      "dneg-montreal: approximate coordinates (city); not a verified street address",
+      "dneg-mohali: approximate coordinates (city); not a verified street address",
+      "dneg-bengaluru: approximate coordinates (city); not a verified street address",
+      "dneg-toronto: approximate coordinates (city); not a verified street address",
+      "dneg-sydney: approximate coordinates (city); not a verified street address",
+      "dneg-barcelona: approximate coordinates (city); not a verified street address",
+      "dneg-budapest: approximate coordinates (city); not a verified street address",
+      "dneg-sofia: approximate coordinates (city); not a verified street address",
+      "dneg-pune: approximate coordinates (city); not a verified street address",
+      "dneg-kolkata: approximate coordinates (city); not a verified street address",
+      "dneg-trivandrum: approximate coordinates (city); not a verified street address",
+      "dneg-hyderabad: approximate coordinates (city); not a verified street address",
+      "dneg-patna: approximate coordinates (city); not a verified street address",
+      "dneg-goa: approximate coordinates (city); not a verified street address",
+      "cinesite-london: approximate coordinates (city); not a verified street address",
+      "cinesite-montreal: approximate coordinates (city); not a verified street address",
+      "cinesite-vancouver: approximate coordinates (city); not a verified street address",
+      "latelier-animation-montreal: approximate coordinates (city); not a verified street address",
+      "assemblage-mumbai: approximate coordinates (city); not a verified street address",
+      "assemblage-bengaluru: approximate coordinates (city); not a verified street address",
+      "fx3x-skopje: approximate coordinates (city); not a verified street address",
+      "fx3x-belgrade: approximate coordinates (city); not a verified street address",
+      "image-engine-vancouver: approximate coordinates (city); not a verified street address",
+      "squeeze-montreal: approximate coordinates (city); not a verified street address",
+      "squeeze-quebec: approximate coordinates (city); not a verified street address",
+      "trixter-munich: approximate coordinates (city); not a verified street address",
+      "trixter-berlin: approximate coordinates (city); not a verified street address",
+      "imaginarium-pinewood: approximate coordinates (city); not a verified street address",
+      "imaginarium-side-london: approximate coordinates (city); not a verified street address",
+      "the-mill-paris: approximate coordinates (city); not a verified street address",
+      "the-mill-london: approximate coordinates (city); not a verified street address",
+      "the-mill-liege: approximate coordinates (city); not a verified street address",
+      "the-mill-bengaluru: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-vancouver: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-montreal: approximate coordinates (city); not a verified street address",
+      "sony-imageworks-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-los-angeles: approximate coordinates (city); not a verified street address",
+      "digital-domain-vancouver: approximate coordinates (city); not a verified street address",
+      "digital-domain-montreal: approximate coordinates (city); not a verified street address",
+      "digital-domain-hyderabad: approximate coordinates (city); not a verified street address",
+      "digital-domain-shanghai: approximate coordinates (city); not a verified street address",
+      "eyeline-los-angeles: approximate coordinates (city); not a verified street address",
+      "eyeline-vancouver: approximate coordinates (city); not a verified street address",
+      "eyeline-seoul: approximate coordinates (city); not a verified street address",
+      "eyeline-london: approximate coordinates (city); not a verified street address",
+      "eyeline-hyderabad: approximate coordinates (city); not a verified street address",
+      "weta-fx-vancouver: approximate coordinates (city); not a verified street address",
+      "weta-fx-melbourne: approximate coordinates (city); not a verified street address",
+      "criterion-games-guildford: approximate coordinates (city); not a verified street address",
+      "dice-stockholm: approximate coordinates (city); not a verified street address",
+      "motive-montreal: approximate coordinates (city); not a verified street address",
+      "respawn-los-angeles: approximate coordinates (city); not a verified street address",
+      "respawn-madison: approximate coordinates (city); not a verified street address",
+      "ripple-effect-marina-del-rey: approximate coordinates (city); not a verified street address",
+      "ea-sports-orlando: approximate coordinates (city); not a verified street address",
+      "metalhead-victoria: approximate coordinates (city); not a verified street address",
+      "codemasters-southam: approximate coordinates (city); not a verified street address",
+      "codemasters-birmingham: approximate coordinates (city); not a verified street address",
+      "codemasters-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "ea-sports-bucharest: approximate coordinates (city); not a verified street address",
+      "ea-korea-seoul: approximate coordinates (city); not a verified street address",
+      "ea-sports-fc-mobile-shanghai: approximate coordinates (city); not a verified street address",
+      "ea-sports-madrid: approximate coordinates (city); not a verified street address",
+      "ea-sports-burnaby: approximate coordinates (city); not a verified street address",
+      "blackhouse-sao-paulo: approximate coordinates (city); not a verified street address",
+      "xr-africa-cape-town: approximate coordinates (city); not a verified street address",
+      "ubisoft-montreal: approximate coordinates (city); not a verified street address",
+      "ubisoft-quebec-city: approximate coordinates (city); not a verified street address",
+      "ubisoft-saguenay: approximate coordinates (city); not a verified street address",
+      "ubisoft-sherbrooke: approximate coordinates (city); not a verified street address",
+      "ubisoft-sofia: approximate coordinates (city); not a verified street address",
+      "ubisoft-singapore: approximate coordinates (city); not a verified street address",
+      "ubisoft-redlynx: approximate coordinates (city); not a verified street address",
+      "ubisoft-abu-dhabi: approximate coordinates (city); not a verified street address",
+      "ubisoft-da-nang: approximate coordinates (city); not a verified street address",
+      "ubisoft-chengdu: approximate coordinates (city); not a verified street address",
+      "ubisoft-shanghai: approximate coordinates (city); not a verified street address",
+      "ubisoft-berlin: approximate coordinates (city); not a verified street address",
+      "ubisoft-dusseldorf: approximate coordinates (city); not a verified street address",
+      "ubisoft-mainz: approximate coordinates (city); not a verified street address",
+      "ubisoft-bucharest: approximate coordinates (city); not a verified street address",
+      "ubisoft-craiova: approximate coordinates (city); not a verified street address",
+      "ubisoft-kyiv: approximate coordinates (city); not a verified street address",
+      "ubisoft-odesa: approximate coordinates (city); not a verified street address",
+      "ubisoft-bordeaux: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-warsaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-krakow: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-wroclaw: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-vancouver: approximate coordinates (city); not a verified street address",
+      "cd-projekt-red-boston: approximate coordinates (city); not a verified street address",
+      "remedy-espoo: approximate coordinates (city); not a verified street address",
+      "remedy-stockholm: approximate coordinates (city); not a verified street address",
+      "metricminds-frankfurt: approximate coordinates (city); not a verified street address",
+      "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+      "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+      "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+      "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+      "massive-malmo: approximate coordinates (city); not a verified street address",
+      "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+      "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+      "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+      "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+      "larian-gent: approximate coordinates (city); not a verified street address",
+      "larian-barcelona: approximate coordinates (city); not a verified street address",
+      "larian-dublin: approximate coordinates (city); not a verified street address",
+      "larian-guildford: approximate coordinates (city); not a verified street address",
+      "larian-kuala-lumpur: approximate coordinates (city); not a verified street address",
+      "larian-quebec: approximate coordinates (city); not a verified street address",
+      "larian-warsaw: approximate coordinates (city); not a verified street address",
+      "rise-fx-berlin: approximate coordinates (city); not a verified street address",
+      "rise-fx-cologne: approximate coordinates (city); not a verified street address",
+      "rise-fx-london: approximate coordinates (city); not a verified street address",
+      "rise-fx-munich: approximate coordinates (city); not a verified street address",
+      "rise-fx-stuttgart: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-bournemouth: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-london: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-montreal: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-mumbai: approximate coordinates (city); not a verified street address",
+      "outpost-vfx-stuttgart: approximate coordinates (city); not a verified street address",
+      "flying-bark-sydney: approximate coordinates (city); not a verified street address",
+      "flying-bark-burbank: approximate coordinates (city); not a verified street address",
+      "flying-bark-madrid: approximate coordinates (city); not a verified street address",
+      "triggerfish-cape-town: approximate coordinates (city); not a verified street address",
+      "triggerfish-galway: approximate coordinates (city); not a verified street address",
+      "folks-montreal: approximate coordinates (city); not a verified street address",
+      "folks-toronto: approximate coordinates (city); not a verified street address",
+      "folks-bogota: approximate coordinates (city); not a verified street address",
+      "folks-saguenay: approximate coordinates (city); not a verified street address",
+      "folks-mumbai: approximate coordinates (city); not a verified street address",
+      "folks-burbank: approximate coordinates (city); not a verified street address",
+      "folks-new-york: approximate coordinates (city); not a verified street address",
+      "folks-atlanta: approximate coordinates (city); not a verified street address",
+      "folks-vancouver: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-johannesburg: approximate coordinates (city); not a verified street address",
+      "chocolate-tribe-cape-town: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-adelaide: approximate coordinates (city); not a verified street address",
+      "rising-sun-pictures-brisbane: approximate coordinates (city); not a verified street address",
+      "el-ranchito-madrid: approximate coordinates (city); not a verified street address",
+      "el-ranchito-barcelona: approximate coordinates (city); not a verified street address",
+      "annapurna-am-mocap-hyderabad: approximate coordinates (city); not a verified street address",
+      "annapurna-anr-vp-hyderabad: approximate coordinates (city); not a verified street address",
+      "ubisoft-reflections-newcastle: approximate coordinates (city); not a verified street address",
+      "massive-stockholm: approximate coordinates (city); not a verified street address",
+      "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+      "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)",
+      "possible duplicate: ['annapurna-am-mocap-hyderabad', 'annapurna-anr-vp-hyderabad'] (company/city, website/city)"
+    ],
+    "database_errors": [],
+    "written": false
+  },
+  "human_approval": "pending exact-content PR review and manual merge",
+  "approved_claims": 0,
+  "main_written": false,
+  "record_changes": [
+    {
+      "id": "larian-gent",
+      "before": null,
+      "after": {
+        "id": "larian-gent",
+        "company_id": "larian",
+        "name": "Larian Studios — Ghent",
+        "city": "Ghent",
+        "country": "Belgium",
+        "lat": 51.05,
+        "lng": 3.71667,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/gent",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/gent",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/gent",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2797656",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "larian-barcelona",
+      "before": null,
+      "after": {
+        "id": "larian-barcelona",
+        "company_id": "larian",
+        "name": "Larian Studios — Barcelona",
+        "city": "Barcelona",
+        "country": "Spain",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/barcelona",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/barcelona",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/barcelona",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3128760/barcelona.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "larian-dublin",
+      "before": null,
+      "after": {
+        "id": "larian-dublin",
+        "company_id": "larian",
+        "name": "Larian Studios — Dublin",
+        "city": "Dublin",
+        "country": "Ireland",
+        "lat": 53.33306,
+        "lng": -6.24889,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/dublin",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "Game Development",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/dublin",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/dublin",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/dublin",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2964574",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "larian-guildford",
+      "before": null,
+      "after": {
+        "id": "larian-guildford",
+        "company_id": "larian",
+        "name": "Larian Studios — Guildford",
+        "city": "Guildford",
+        "country": "United Kingdom",
+        "lat": 51.23536,
+        "lng": -0.57427,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/guildford",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development",
+          "Cinematics"
+        ],
+        "capabilities": [
+          "Game Development",
+          "Cinematics"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/guildford",
+            "verified_on": "2026-11-06"
+          },
+          "Cinematics": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/guildford",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/guildford",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2647793/guildford.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "larian-kuala-lumpur",
+      "before": null,
+      "after": {
+        "id": "larian-kuala-lumpur",
+        "company_id": "larian",
+        "name": "Larian Studios — Kuala Lumpur",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia",
+        "lat": 3.1412,
+        "lng": 101.68653,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/kuala-lumpur",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development",
+          "Motion Capture"
+        ],
+        "capabilities": [
+          "Game Development",
+          "Motion Capture"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/kuala-lumpur",
+            "verified_on": "2026-11-06"
+          },
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/kuala-lumpur",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/kuala-lumpur",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/1735161/kuala-lumpur.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Kuala Lumpur page explicitly identifies its on-site mocap studio; no capture capability inherited by other branches."
+      }
+    },
+    {
+      "id": "larian-quebec",
+      "before": null,
+      "after": {
+        "id": "larian-quebec",
+        "company_id": "larian",
+        "name": "Larian Studios — Québec",
+        "city": "Québec",
+        "country": "Canada",
+        "lat": 46.81228,
+        "lng": -71.21454,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://quebec.larian.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://quebec.larian.com/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://quebec.larian.com/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6325494/quebec.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "larian-warsaw",
+      "before": null,
+      "after": {
+        "id": "larian-warsaw",
+        "company_id": "larian",
+        "name": "Larian Studios — Warsaw",
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://larian.com/careers/location/warsaw",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://larian.com/careers/location/warsaw",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://larian.com/careers/location/warsaw",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/756135/warsaw.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "rise-fx-berlin",
+      "before": null,
+      "after": {
+        "id": "rise-fx-berlin",
+        "company_id": "rise-fx",
+        "name": "RISE Visual Effects Studios — Berlin",
+        "city": "Berlin",
+        "country": "Germany",
+        "lat": 52.52437,
+        "lng": 13.41053,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2950159/berlin.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "rise-fx-cologne",
+      "before": null,
+      "after": {
+        "id": "rise-fx-cologne",
+        "company_id": "rise-fx",
+        "name": "RISE Visual Effects Studios — Cologne",
+        "city": "Cologne",
+        "country": "Germany",
+        "lat": 50.93333,
+        "lng": 6.95,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2886242",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "rise-fx-london",
+      "before": null,
+      "after": {
+        "id": "rise-fx-london",
+        "company_id": "rise-fx",
+        "name": "RISE Visual Effects Studios — London",
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2643743/london.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "rise-fx-munich",
+      "before": null,
+      "after": {
+        "id": "rise-fx-munich",
+        "company_id": "rise-fx",
+        "name": "RISE Visual Effects Studios — Munich",
+        "city": "Munich",
+        "country": "Germany",
+        "lat": 48.13743,
+        "lng": 11.57549,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2867714/munich.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "rise-fx-stuttgart",
+      "before": null,
+      "after": {
+        "id": "rise-fx-stuttgart",
+        "company_id": "rise-fx",
+        "name": "RISE Visual Effects Studios — Stuttgart",
+        "city": "Stuttgart",
+        "country": "Germany",
+        "lat": 48.78232,
+        "lng": 9.17702,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2825297",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "outpost-vfx-bournemouth",
+      "before": null,
+      "after": {
+        "id": "outpost-vfx-bournemouth",
+        "company_id": "outpost-vfx",
+        "name": "Outpost VFX — Bournemouth",
+        "city": "Bournemouth",
+        "country": "United Kingdom",
+        "lat": 50.72048,
+        "lng": -1.8795,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.outpost-vfx.com/en/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.outpost-vfx.com/en/contact",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.outpost-vfx.com/en/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2655095",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "outpost-vfx-london",
+      "before": null,
+      "after": {
+        "id": "outpost-vfx-london",
+        "company_id": "outpost-vfx",
+        "name": "Outpost VFX — London",
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.outpost-vfx.com/en/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.outpost-vfx.com/en/contact",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.outpost-vfx.com/en/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2643743/london.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "outpost-vfx-montreal",
+      "before": null,
+      "after": {
+        "id": "outpost-vfx-montreal",
+        "company_id": "outpost-vfx",
+        "name": "Outpost VFX — Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.outpost-vfx.com/en/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.outpost-vfx.com/en/contact",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.outpost-vfx.com/en/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6077243/montreal.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "outpost-vfx-mumbai",
+      "before": null,
+      "after": {
+        "id": "outpost-vfx-mumbai",
+        "company_id": "outpost-vfx",
+        "name": "Outpost VFX — Mumbai",
+        "city": "Mumbai",
+        "country": "India",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.outpost-vfx.com/en/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.outpost-vfx.com/en/contact",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.outpost-vfx.com/en/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/1275339/mumbai.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "outpost-vfx-stuttgart",
+      "before": null,
+      "after": {
+        "id": "outpost-vfx-stuttgart",
+        "company_id": "outpost-vfx",
+        "name": "Outpost VFX — Stuttgart",
+        "city": "Stuttgart",
+        "country": "Germany",
+        "lat": 48.78232,
+        "lng": 9.17702,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.outpost-vfx.com/en/contact",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.cgw.com/Press-Center/News/2026/Outpost-VFX-opens-in-Germany-i-House-of-the-Drag.aspx",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.outpost-vfx.com/en/contact",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2825297",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. October 2026 company announcement carried by CGW corroborates active German production teams; current official contact names Stuttgart."
+      }
+    },
+    {
+      "id": "flying-bark-sydney",
+      "before": null,
+      "after": {
+        "id": "flying-bark-sydney",
+        "company_id": "flying-bark",
+        "name": "Flying Bark Productions — Sydney",
+        "city": "Sydney",
+        "country": "Australia",
+        "lat": -33.86785,
+        "lng": 151.20732,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.flyingbark.com.au/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.flyingbark.com.au/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2147714/sydney.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "studio-100",
+            "name": "Studio 100",
+            "type": "subsidiary_of",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "flying-bark-burbank",
+      "before": null,
+      "after": {
+        "id": "flying-bark-burbank",
+        "company_id": "flying-bark",
+        "name": "Flying Bark Productions — Los Angeles (Burbank)",
+        "city": "Burbank",
+        "country": "United States",
+        "lat": 34.18084,
+        "lng": -118.30897,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.flyingbark.com.au/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.flyingbark.com.au/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/5331835",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "studio-100",
+            "name": "Studio 100",
+            "type": "subsidiary_of",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Marketed Los Angeles studio is on Empire Avenue in Burbank."
+      }
+    },
+    {
+      "id": "flying-bark-madrid",
+      "before": null,
+      "after": {
+        "id": "flying-bark-madrid",
+        "company_id": "flying-bark",
+        "name": "Flying Bark Productions — Madrid",
+        "city": "Madrid",
+        "country": "Spain",
+        "lat": 40.4165,
+        "lng": -3.70256,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.flyingbark.com.au/about",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.flyingbark.com.au/about",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3117735/madrid.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "studio-100",
+            "name": "Studio 100",
+            "type": "subsidiary_of",
+            "evidence": "https://www.flyingbark.com.au/about",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "triggerfish-cape-town",
+      "before": null,
+      "after": {
+        "id": "triggerfish-cape-town",
+        "company_id": "triggerfish",
+        "name": "Triggerfish Animation — Cape Town",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.triggerfish.com/faq/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.triggerfish.com/faq/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.triggerfish.com/faq/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3369157/cape-town.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. FAQ identifies both physical studio bases; worldwide remote staff are not additional locations."
+      }
+    },
+    {
+      "id": "triggerfish-galway",
+      "before": null,
+      "after": {
+        "id": "triggerfish-galway",
+        "company_id": "triggerfish",
+        "name": "Triggerfish Animation — Galway",
+        "city": "Galway",
+        "country": "Ireland",
+        "lat": 53.27245,
+        "lng": -9.05095,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.triggerfish.com/faq/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Animation"
+        ],
+        "capabilities": [
+          "Animation"
+        ],
+        "capability_evidence": {
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://www.triggerfish.com/faq/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.triggerfish.com/faq/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2964180",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. FAQ identifies both physical studio bases; worldwide remote staff are not additional locations."
+      }
+    },
+    {
+      "id": "folks-montreal",
+      "before": null,
+      "after": {
+        "id": "folks-montreal",
+        "company_id": "folks",
+        "name": "FOLKS — Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6077243/montreal.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-toronto",
+      "before": null,
+      "after": {
+        "id": "folks-toronto",
+        "company_id": "folks",
+        "name": "FOLKS — Toronto",
+        "city": "Toronto",
+        "country": "Canada",
+        "lat": 43.65333,
+        "lng": -79.38389,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6167865/toronto.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-bogota",
+      "before": null,
+      "after": {
+        "id": "folks-bogota",
+        "company_id": "folks",
+        "name": "FOLKS — Bogotá",
+        "city": "Bogotá",
+        "country": "Colombia",
+        "lat": 4.60971,
+        "lng": -74.08175,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3688689",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-saguenay",
+      "before": null,
+      "after": {
+        "id": "folks-saguenay",
+        "company_id": "folks",
+        "name": "FOLKS — Saguenay",
+        "city": "Saguenay",
+        "country": "Canada",
+        "lat": 48.41675,
+        "lng": -71.06573,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6137270/saguenay.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Chicoutimi is a district of Saguenay, not a second studio."
+      }
+    },
+    {
+      "id": "folks-mumbai",
+      "before": null,
+      "after": {
+        "id": "folks-mumbai",
+        "company_id": "folks",
+        "name": "FOLKS — Mumbai",
+        "city": "Mumbai",
+        "country": "India",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/1275339/mumbai.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-burbank",
+      "before": null,
+      "after": {
+        "id": "folks-burbank",
+        "company_id": "folks",
+        "name": "FOLKS — Los Angeles (Burbank)",
+        "city": "Burbank",
+        "country": "United States",
+        "lat": 34.18084,
+        "lng": -118.30897,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/5331835",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Marketed Los Angeles studio address is in Burbank."
+      }
+    },
+    {
+      "id": "folks-new-york",
+      "before": null,
+      "after": {
+        "id": "folks-new-york",
+        "company_id": "folks",
+        "name": "FOLKS — New York",
+        "city": "New York",
+        "country": "United States",
+        "lat": 40.71427,
+        "lng": -74.00597,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/5128581",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-atlanta",
+      "before": null,
+      "after": {
+        "id": "folks-atlanta",
+        "company_id": "folks",
+        "name": "FOLKS — Atlanta",
+        "city": "Atlanta",
+        "country": "United States",
+        "lat": 33.749,
+        "lng": -84.38798,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/4180439",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "folks-vancouver",
+      "before": null,
+      "after": {
+        "id": "folks-vancouver",
+        "company_id": "folks",
+        "name": "FOLKS — Vancouver",
+        "city": "Vancouver",
+        "country": "Canada",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://folksvfx.com/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://folksvfx.com/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://folksvfx.com/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/6173331/vancouver.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "chocolate-tribe-johannesburg",
+      "before": null,
+      "after": {
+        "id": "chocolate-tribe-johannesburg",
+        "company_id": "chocolate-tribe",
+        "name": "Chocolate Tribe — Johannesburg",
+        "city": "Johannesburg",
+        "country": "South Africa",
+        "lat": -26.20227,
+        "lng": 28.04363,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://chocolatetribe.co.za/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX",
+          "Animation"
+        ],
+        "capabilities": [
+          "VFX",
+          "Animation"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+            "verified_on": "2026-11-06"
+          },
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://chocolatetribe.co.za/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/993800",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Both physical studios remain on the current contact page; production services supported by the company studio/relocation announcement. Staff biographies do not establish capture services."
+      }
+    },
+    {
+      "id": "chocolate-tribe-cape-town",
+      "before": null,
+      "after": {
+        "id": "chocolate-tribe-cape-town",
+        "company_id": "chocolate-tribe",
+        "name": "Chocolate Tribe — Cape Town",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://chocolatetribe.co.za/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX",
+          "Animation"
+        ],
+        "capabilities": [
+          "VFX",
+          "Animation"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+            "verified_on": "2026-11-06"
+          },
+          "Animation": {
+            "state": "confirmed",
+            "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://chocolatetribe.co.za/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3369157/cape-town.html",
+        "location_type": "production_studio",
+        "relationships": [],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Both physical studios remain on the current contact page; production services supported by the company studio/relocation announcement. Staff biographies do not establish capture services."
+      }
+    },
+    {
+      "id": "rising-sun-pictures-adelaide",
+      "before": null,
+      "after": {
+        "id": "rising-sun-pictures-adelaide",
+        "company_id": "rising-sun-pictures",
+        "name": "Rising Sun Pictures — Adelaide",
+        "city": "Adelaide",
+        "country": "Australia",
+        "lat": -34.92866,
+        "lng": 138.59863,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2078025",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Current parent roster supports both sites; Ausfilm member news explicitly describes VFX artists in both production studios. Exact facility address not asserted."
+      }
+    },
+    {
+      "id": "rising-sun-pictures-brisbane",
+      "before": null,
+      "after": {
+        "id": "rising-sun-pictures-brisbane",
+        "company_id": "rising-sun-pictures",
+        "name": "Rising Sun Pictures — Brisbane",
+        "city": "Brisbane",
+        "country": "Australia",
+        "lat": -27.46794,
+        "lng": 153.02809,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2174003",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Current parent roster supports both sites; Ausfilm member news explicitly describes VFX artists in both production studios. Exact facility address not asserted."
+      }
+    },
+    {
+      "id": "el-ranchito-madrid",
+      "before": null,
+      "after": {
+        "id": "el-ranchito-madrid",
+        "company_id": "el-ranchito",
+        "name": "El Ranchito — Madrid",
+        "city": "Madrid",
+        "country": "Spain",
+        "lat": 40.4165,
+        "lng": -3.70256,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://elranchito.es/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://elranchito.es/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://elranchito.es/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3117735/madrid.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "el-ranchito-barcelona",
+      "before": null,
+      "after": {
+        "id": "el-ranchito-barcelona",
+        "company_id": "el-ranchito",
+        "name": "El Ranchito — Barcelona",
+        "city": "Barcelona",
+        "country": "Spain",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://elranchito.es/contact/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "VFX"
+        ],
+        "capabilities": [
+          "VFX"
+        ],
+        "capability_evidence": {
+          "VFX": {
+            "state": "confirmed",
+            "evidence": "https://elranchito.es/contact/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://elranchito.es/contact/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/3128760/barcelona.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "pitch-black",
+            "name": "Pitch Black",
+            "type": "group_member",
+            "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "annapurna-am-mocap-hyderabad",
+      "before": null,
+      "after": {
+        "id": "annapurna-am-mocap-hyderabad",
+        "company_id": "annapurna-studios",
+        "name": "A&M MoCap Lab at Annapurna Studios",
+        "city": "Hyderabad",
+        "country": "India",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://annapurnastudios.com/a-m-mocaplab.html",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Body Capture",
+          "Facial Capture",
+          "Performance Capture",
+          "Retargeting"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Body Capture",
+          "Facial Capture",
+          "Performance Capture",
+          "Retargeting"
+        ],
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          },
+          "Body Capture": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          },
+          "Retargeting": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/1269843/hyderabad.html",
+        "location_type": "capture_facility",
+        "relationships": [
+          {
+            "id": "mihira-visual-labs",
+            "name": "MIHIRA Visual Labs",
+            "type": "partner_of",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          },
+          {
+            "id": "animatrik",
+            "name": "Animatrik Film Design",
+            "type": "partner_of",
+            "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Named physical capture volume at the Annapurna campus; separate from the LED virtual production stage. No volumetric capture or motion-editing claim inferred."
+      }
+    },
+    {
+      "id": "annapurna-anr-vp-hyderabad",
+      "before": null,
+      "after": {
+        "id": "annapurna-anr-vp-hyderabad",
+        "company_id": "annapurna-studios",
+        "name": "ANR Virtual Production Stage — Annapurna / Qube",
+        "city": "Hyderabad",
+        "country": "India",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://annapurnastudios.com/virtual-production.html",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Virtual Production"
+        ],
+        "capabilities": [
+          "Virtual Production"
+        ],
+        "capability_evidence": {
+          "Virtual Production": {
+            "state": "confirmed",
+            "evidence": "https://annapurnastudios.com/virtual-production.html",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://annapurnastudios.com/virtual-production.html",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/1269843/hyderabad.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "qube-cinema",
+            "name": "Qube Cinema",
+            "type": "partner_of",
+            "evidence": "https://annapurnastudios.com/virtual-production.html",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Current Annapurna stage page and campus homepage retain this service; Qube milestones corroborate launch. Separate LED production stage, not the A&M capture volume."
+      }
+    },
+    {
+      "id": "ubisoft-reflections-newcastle",
+      "before": null,
+      "after": {
+        "id": "ubisoft-reflections-newcastle",
+        "company_id": "ubisoft-reflections",
+        "name": "Ubisoft Reflections",
+        "city": "Newcastle upon Tyne",
+        "country": "United Kingdom",
+        "lat": 54.97328,
+        "lng": -1.61396,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2641673",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "ubisoft",
+            "name": "Ubisoft",
+            "type": "subsidiary_of",
+            "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin."
+      }
+    },
+    {
+      "id": "massive-stockholm",
+      "before": null,
+      "after": {
+        "id": "massive-stockholm",
+        "company_id": "massive-entertainment",
+        "name": "Massive Entertainment — Stockholm",
+        "city": "Stockholm",
+        "country": "Sweden",
+        "lat": 59.32938,
+        "lng": 18.06871,
+        "address": "Approximate city reference — not facility coordinates",
+        "website": "https://www.massive.se/our-studio/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Game Development"
+        ],
+        "capabilities": [
+          "Game Development"
+        ],
+        "capability_evidence": {
+          "Game Development": {
+            "state": "confirmed",
+            "evidence": "https://www.massive.se/our-studio/",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "evidence_state": "confirmed",
+        "evidence": "https://www.massive.se/our-studio/",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "coordinate_source": "https://www.geonames.org/2673730/stockholm.html",
+        "location_type": "production_studio",
+        "relationships": [
+          {
+            "id": "ubisoft",
+            "name": "Ubisoft",
+            "type": "subsidiary_of",
+            "evidence": "https://www.massive.se/our-studio/",
+            "verified_on": "2026-11-06"
+          }
+        ],
+        "status": "Official source reviewed on 2026-11-06; source-supported location and listed capabilities, not independent verification of current operation. Approximate city reference; not a verified facility pin. Current Massive pages identify Stockholm and Malmö studios. Reuses the existing Massive operating-organisation identity, rather than duplicating the site as Ubisoft Stockholm."
+      }
+    },
+    {
+      "id": "centroid-uxbridge",
+      "before": {
+        "id": "centroid-uxbridge",
+        "company_id": "centroid",
+        "name": "Centroid",
+        "city": "Uxbridge",
+        "country": "United Kingdom",
+        "lat": 51.5462,
+        "lng": -0.4796,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.centroid3d.com/",
+        "email": "",
+        "phone": "+44 20 3329 0251",
+        "categories": [
+          "Motion Capture",
+          "Previsualization",
+          "Animation"
+        ],
+        "capabilities": [
+          "Body Capture",
+          "Facial Capture",
+          "Retargeting",
+          "Motion Editing",
+          "Performance Capture",
+          "Motion Capture"
+        ],
+        "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+        "evidence": "https://www.centroid3d.com/services",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "unknown",
+        "legacy_research": {
+          "evidence_state": "confirmed",
+          "status": "Website verified",
+          "verified_on": "2026-11-06",
+          "lat": 51.5485,
+          "lng": -0.4796,
+          "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+          "coordinate_precision": "unverified"
+        },
+        "capability_evidence": {
+          "Body Capture": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          },
+          "Facial Capture": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          },
+          "Retargeting": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          },
+          "Motion Editing": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          },
+          "Performance Capture": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          },
+          "Motion Capture": {
+            "state": "unknown",
+            "evidence": "https://www.centroid3d.com/services",
+            "verified_on": ""
+          }
+        }
+      },
+      "after": {
+        "id": "centroid-uxbridge",
+        "company_id": "centroid",
+        "name": "Centroid — Riverside Studio",
+        "city": "Uxbridge",
+        "country": "United Kingdom",
+        "lat": 51.5462,
+        "lng": -0.4796,
+        "address": "Approximate city location — street address not verified",
+        "website": "https://www.centroid3d.com/",
+        "email": "",
+        "phone": "",
+        "categories": [
+          "Motion Capture",
+          "Performance Capture"
+        ],
+        "capabilities": [
+          "Motion Capture",
+          "Body Capture",
+          "Facial Capture",
+          "Performance Capture"
+        ],
+        "status": "Riverside performance-capture volume and Uxbridge address reviewed on the official facilities/contact pages. Body, face and full-performance capture supported at this site. Prior unsupported service claims removed; original city-reference coordinates retained. Source review is not independent verification.",
+        "evidence": "https://www.centroid3d.com/facilities",
+        "verified_on": "2026-11-06",
+        "coordinate_precision": "city",
+        "evidence_state": "confirmed",
+        "legacy_research": {
+          "evidence_state": "confirmed",
+          "status": "Website verified",
+          "verified_on": "2026-11-06",
+          "lat": 51.5485,
+          "lng": -0.4796,
+          "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+          "coordinate_precision": "unverified"
+        },
+        "capability_evidence": {
+          "Motion Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.centroid3d.com/facilities",
+            "verified_on": "2026-11-06"
+          },
+          "Body Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.centroid3d.com/facilities",
+            "verified_on": "2026-11-06"
+          },
+          "Facial Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.centroid3d.com/facilities",
+            "verified_on": "2026-11-06"
+          },
+          "Performance Capture": {
+            "state": "confirmed",
+            "evidence": "https://www.centroid3d.com/facilities",
+            "verified_on": "2026-11-06"
+          }
+        },
+        "location_type": "capture_facility"
+      }
+    }
+  ]
+}

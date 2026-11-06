@@ -11,14 +11,14 @@ sys.path.insert(0,str(ROOT/'tools'))
 from discovery import digest,prepare,read
 from import_csv import plan_import
 from validate import read_records,validate
-from snapshots import before_v092
+from snapshots import before_v092,before_v093
 FOLDER=ROOT/'data/research/v0.9.2-batch-1'
 
 
 class VerifiedBatchTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.rows=read(ROOT/'studios.json')
+        cls.rows=before_v093()
         cls.baseline=before_v092()
         cls.manifest=read(FOLDER/'evidence.json')
         cls.batch=read_records(FOLDER/'batch.csv')

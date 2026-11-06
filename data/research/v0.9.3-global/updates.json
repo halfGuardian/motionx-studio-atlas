@@ -1,0 +1,139 @@
+[
+  {
+    "id": "centroid-uxbridge",
+    "previous_record_hash": "999645df51034ae7201217a1bf1f4b931c42ddd73cc5e027f6cfaab3ee24a9a4",
+    "before": {
+      "id": "centroid-uxbridge",
+      "company_id": "centroid",
+      "name": "Centroid",
+      "city": "Uxbridge",
+      "country": "United Kingdom",
+      "lat": 51.5462,
+      "lng": -0.4796,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.centroid3d.com/",
+      "email": "",
+      "phone": "+44 20 3329 0251",
+      "categories": [
+        "Motion Capture",
+        "Previsualization",
+        "Animation"
+      ],
+      "capabilities": [
+        "Body Capture",
+        "Facial Capture",
+        "Retargeting",
+        "Motion Editing",
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.centroid3d.com/services",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 51.5485,
+        "lng": -0.4796,
+        "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Body Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Facial Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Retargeting": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Motion Editing": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        }
+      }
+    },
+    "after": {
+      "id": "centroid-uxbridge",
+      "company_id": "centroid",
+      "name": "Centroid — Riverside Studio",
+      "city": "Uxbridge",
+      "country": "United Kingdom",
+      "lat": 51.5462,
+      "lng": -0.4796,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.centroid3d.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "capabilities": [
+        "Motion Capture",
+        "Body Capture",
+        "Facial Capture",
+        "Performance Capture"
+      ],
+      "status": "Riverside performance-capture volume and Uxbridge address reviewed on the official facilities/contact pages. Body, face and full-performance capture supported at this site. Prior unsupported service claims removed; original city-reference coordinates retained. Source review is not independent verification.",
+      "evidence": "https://www.centroid3d.com/facilities",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "confirmed",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 51.5485,
+        "lng": -0.4796,
+        "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Body Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "location_type": "capture_facility"
+    },
+    "reason": "Only Riverside scope upgraded. Retargeting/motion editing and generic Animation/Previs claims removed pending site-specific evidence. Molinare and Serbia require separate research."
+  }
+]

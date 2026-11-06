@@ -1,0 +1,1376 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-06",
+  "publication_mode": "github_PR_human_review",
+  "baseline_hash": "6cd445ba078647482a629915b819d3d070e4568dc37d19634bee196ab6402e28",
+  "records": [
+    {
+      "id": "larian-gent",
+      "record_hash": "2340019804afa8dcf617ff46ac38a0ab2e7fa42c123cc14a4c88e9782a892f01",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/gent",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/gent",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Ghent",
+        "lat": 51.05,
+        "lng": 3.71667,
+        "source": "https://www.geonames.org/2797656"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "larian-barcelona",
+      "record_hash": "967fa431f54a3d724ed8324b6d69ea3c24cdc9ed21ac8ae50c0f57a72f943743",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/barcelona",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/barcelona",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Barcelona",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "source": "https://www.geonames.org/3128760/barcelona.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "larian-dublin",
+      "record_hash": "df8ba53801358940efb59f89aabdf304bd32065f9c199c8e4cc7b249c316fbc4",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/dublin",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/dublin",
+          "verified_on": "2026-11-06"
+        },
+        "Cinematics": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/dublin",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Dublin",
+        "lat": 53.33306,
+        "lng": -6.24889,
+        "source": "https://www.geonames.org/2964574"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "larian-guildford",
+      "record_hash": "e17c1322d4b48dbc95ca25bbe56ba41e5ee243b03ef95a901e6021bd2865d62a",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/guildford",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/guildford",
+          "verified_on": "2026-11-06"
+        },
+        "Cinematics": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/guildford",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Guildford",
+        "lat": 51.23536,
+        "lng": -0.57427,
+        "source": "https://www.geonames.org/2647793/guildford.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "larian-kuala-lumpur",
+      "record_hash": "87716f0f6941630265ad414216b91487a1ec7c0d87b464bd45fcdf26c8ac8799",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/kuala-lumpur",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/kuala-lumpur",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/kuala-lumpur",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Kuala Lumpur",
+        "lat": 3.1412,
+        "lng": 101.68653,
+        "source": "https://www.geonames.org/1735161/kuala-lumpur.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Kuala Lumpur page explicitly identifies its on-site mocap studio; no capture capability inherited by other branches."
+    },
+    {
+      "id": "larian-quebec",
+      "record_hash": "44bbe7ab40f704aece309be42657d7f79bd051e2dfd4ceed6e13a5efd3e35d55",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://quebec.larian.com/",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://quebec.larian.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Québec",
+        "lat": 46.81228,
+        "lng": -71.21454,
+        "source": "https://www.geonames.org/6325494/quebec.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "larian-warsaw",
+      "record_hash": "06e7f7242a7239b7d0ec9bb6e8e7124d523418b0f0570aab863a686be66e4c65",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://larian.com/careers/location/warsaw",
+        "https://larian.com/careers"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://larian.com/careers/location/warsaw",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Warsaw",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "source": "https://www.geonames.org/756135/warsaw.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "rise-fx-berlin",
+      "record_hash": "353ea799481dbfd17b8e3d4ffae880ba457f5a016e61a3a0987cded6afb8e58d",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
+        "https://www.risefx.com/",
+        "https://www.risefx.com/rise-visual-effects-studios-jobs.php"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Berlin",
+        "lat": 52.52437,
+        "lng": 13.41053,
+        "source": "https://www.geonames.org/2950159/berlin.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "rise-fx-cologne",
+      "record_hash": "81ab14c119884b18b0ed66ac9a2d7241d6dc8ddefa8599c1de63be2fea6c0add",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
+        "https://www.risefx.com/",
+        "https://www.risefx.com/rise-visual-effects-studios-jobs.php"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Cologne",
+        "lat": 50.93333,
+        "lng": 6.95,
+        "source": "https://www.geonames.org/2886242"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "rise-fx-london",
+      "record_hash": "72e05669a5c06f0cbea6a9b5e7c389eece9d5b946708e156f3fdcd38967dbb72",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
+        "https://www.risefx.com/",
+        "https://www.risefx.com/rise-visual-effects-studios-jobs.php"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "rise-fx-munich",
+      "record_hash": "c6f3dfe183dd5b6dcedea6f6b08e18e57c5cb7ccc0d38209cdb613c2436d7a4f",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
+        "https://www.risefx.com/",
+        "https://www.risefx.com/rise-visual-effects-studios-jobs.php"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Munich",
+        "lat": 48.13743,
+        "lng": 11.57549,
+        "source": "https://www.geonames.org/2867714/munich.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "rise-fx-stuttgart",
+      "record_hash": "d82d0b88c6016cc9164d4324478227d100c7cc521b7e42ed82194a86141314b9",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
+        "https://www.risefx.com/",
+        "https://www.risefx.com/rise-visual-effects-studios-jobs.php"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Stuttgart",
+        "lat": 48.78232,
+        "lng": 9.17702,
+        "source": "https://www.geonames.org/2825297"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "outpost-vfx-bournemouth",
+      "record_hash": "57411584d65b25363831d2f757879b9e4d978f9236a5ae56fc200f23bdf8f8d2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.outpost-vfx.com/en/contact",
+        "https://www.outpost-vfx.com/en/about"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.outpost-vfx.com/en/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Bournemouth",
+        "lat": 50.72048,
+        "lng": -1.8795,
+        "source": "https://www.geonames.org/2655095"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "outpost-vfx-london",
+      "record_hash": "02022d9dda69920b8816eb4140251b3b63a3b3eeb92ed84f95bf7628482475e7",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.outpost-vfx.com/en/contact",
+        "https://www.outpost-vfx.com/en/about"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.outpost-vfx.com/en/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "outpost-vfx-montreal",
+      "record_hash": "fda2048b6cb5be97e4333fd35b3028cab3f04e42f26c6ba536667024362c3656",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.outpost-vfx.com/en/contact",
+        "https://www.outpost-vfx.com/en/about"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.outpost-vfx.com/en/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "outpost-vfx-mumbai",
+      "record_hash": "e0752565d4977339386516daf2a49d213acfac962b9f5e32f587c2b41c98f29b",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.outpost-vfx.com/en/contact",
+        "https://www.outpost-vfx.com/en/about"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.outpost-vfx.com/en/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Mumbai",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "source": "https://www.geonames.org/1275339/mumbai.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "outpost-vfx-stuttgart",
+      "record_hash": "9feed8c3b472a1b26580819a18f5b788ac7238568a95d7106a1f372357b89525",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.outpost-vfx.com/en/contact",
+        "https://www.outpost-vfx.com/en/about",
+        "https://www.cgw.com/Press-Center/News/2026/Outpost-VFX-opens-in-Germany-i-House-of-the-Drag.aspx"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.cgw.com/Press-Center/News/2026/Outpost-VFX-opens-in-Germany-i-House-of-the-Drag.aspx",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Stuttgart",
+        "lat": 48.78232,
+        "lng": 9.17702,
+        "source": "https://www.geonames.org/2825297"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "October 2026 company announcement carried by CGW corroborates active German production teams; current official contact names Stuttgart."
+    },
+    {
+      "id": "flying-bark-sydney",
+      "record_hash": "739ab1de08fb4dd9d90849c43d7fa179d61ed920f343b5d7c9c5c95e14fd9afb",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.flyingbark.com.au/about"
+      ],
+      "capability_evidence": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "studio-100",
+          "name": "Studio 100",
+          "type": "subsidiary_of",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Sydney",
+        "lat": -33.86785,
+        "lng": 151.20732,
+        "source": "https://www.geonames.org/2147714/sydney.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "flying-bark-burbank",
+      "record_hash": "084ede20f99cb62b966a48693e90160f6ee6ca3ec219a16af2d86817c62d0c9c",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.flyingbark.com.au/about"
+      ],
+      "capability_evidence": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "studio-100",
+          "name": "Studio 100",
+          "type": "subsidiary_of",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Burbank",
+        "lat": 34.18084,
+        "lng": -118.30897,
+        "source": "https://www.geonames.org/5331835"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Marketed Los Angeles studio is on Empire Avenue in Burbank."
+    },
+    {
+      "id": "flying-bark-madrid",
+      "record_hash": "158fd5df8ec9934bb35d81886d73446a6afdf1815a7422d17e5d598bda6389e2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.flyingbark.com.au/about"
+      ],
+      "capability_evidence": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "studio-100",
+          "name": "Studio 100",
+          "type": "subsidiary_of",
+          "evidence": "https://www.flyingbark.com.au/about",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Madrid",
+        "lat": 40.4165,
+        "lng": -3.70256,
+        "source": "https://www.geonames.org/3117735/madrid.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "triggerfish-cape-town",
+      "record_hash": "569d9cc80ec547d90f3c3bc9af84d76145918dac45aabc9ceea6b2509f6a5f91",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.triggerfish.com/faq/",
+        "https://www.triggerfish.com/",
+        "https://www.triggerfish.com/jobs/"
+      ],
+      "capability_evidence": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.triggerfish.com/faq/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Cape Town",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "source": "https://www.geonames.org/3369157/cape-town.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "FAQ identifies both physical studio bases; worldwide remote staff are not additional locations."
+    },
+    {
+      "id": "triggerfish-galway",
+      "record_hash": "180e6f42cd81a28b0752fc595e78d3d0c94eb8b14d202580a4ca474f2264360c",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.triggerfish.com/faq/",
+        "https://www.triggerfish.com/",
+        "https://www.triggerfish.com/jobs/"
+      ],
+      "capability_evidence": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.triggerfish.com/faq/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Galway",
+        "lat": 53.27245,
+        "lng": -9.05095,
+        "source": "https://www.geonames.org/2964180"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "FAQ identifies both physical studio bases; worldwide remote staff are not additional locations."
+    },
+    {
+      "id": "folks-montreal",
+      "record_hash": "b482a5cfd64544fcd8718ed4a2619f75cd9ccd71e7fe46b36d40d3a1ff938a18",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-toronto",
+      "record_hash": "8a1a434ad0156ec90e84681f52acb3ffe29e4fe1d6e5eb03aba8db71f01978b5",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Toronto",
+        "lat": 43.65333,
+        "lng": -79.38389,
+        "source": "https://www.geonames.org/6167865/toronto.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-bogota",
+      "record_hash": "4b787bddaa67338801e208fe71d59eb059dbcc37ea97652cdd462d50ce46ebb2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bogotá",
+        "lat": 4.60971,
+        "lng": -74.08175,
+        "source": "https://www.geonames.org/3688689"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-saguenay",
+      "record_hash": "e97f24ff20e600f2e8d92d1516fa1ead0961b2e8f5417dddf1dcfa765471a74c",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Saguenay",
+        "lat": 48.41675,
+        "lng": -71.06573,
+        "source": "https://www.geonames.org/6137270/saguenay.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Chicoutimi is a district of Saguenay, not a second studio."
+    },
+    {
+      "id": "folks-mumbai",
+      "record_hash": "5956bf7e8ea3769abcb6b938b3de7a46628a396975da7d7fac011811057ccfc2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Mumbai",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "source": "https://www.geonames.org/1275339/mumbai.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-burbank",
+      "record_hash": "f54867ccedb39618106d2065f92cdd00e53fcd938efe2daf6136bfae849bac95",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Burbank",
+        "lat": 34.18084,
+        "lng": -118.30897,
+        "source": "https://www.geonames.org/5331835"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Marketed Los Angeles studio address is in Burbank."
+    },
+    {
+      "id": "folks-new-york",
+      "record_hash": "bb76b1b52ffff059c8baf7030a3c5ed1d1f2adbfcef6871e12febaeee8695291",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "New York",
+        "lat": 40.71427,
+        "lng": -74.00597,
+        "source": "https://www.geonames.org/5128581"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-atlanta",
+      "record_hash": "c7cf8c0894babcc4e7104fe6deed551f956d7baa34b30249d9b9046160cf83f2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Atlanta",
+        "lat": 33.749,
+        "lng": -84.38798,
+        "source": "https://www.geonames.org/4180439"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "folks-vancouver",
+      "record_hash": "0b5fc4c4380c1dd1ece56ba86b2120245e6522fa2eb40182827d1fc60030bc66",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://folksvfx.com/contact/",
+        "https://folksvfx.com/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://folksvfx.com/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "chocolate-tribe-johannesburg",
+      "record_hash": "cff288876d3c83a468c3bd29e2db198042aa74a4ad8f92af2b43643691a4191e",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://chocolatetribe.co.za/contact/",
+        "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Johannesburg",
+        "lat": -26.20227,
+        "lng": 28.04363,
+        "source": "https://www.geonames.org/993800"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Both physical studios remain on the current contact page; production services supported by the company studio/relocation announcement. Staff biographies do not establish capture services."
+    },
+    {
+      "id": "chocolate-tribe-cape-town",
+      "record_hash": "08ed5ff333a47069aa33d54089d0a86e110989e474fb0e129c3d529093448ba3",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://chocolatetribe.co.za/contact/",
+        "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Cape Town",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "source": "https://www.geonames.org/3369157/cape-town.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Both physical studios remain on the current contact page; production services supported by the company studio/relocation announcement. Staff biographies do not establish capture services."
+    },
+    {
+      "id": "rising-sun-pictures-adelaide",
+      "record_hash": "7ef54ff28379a854527e28dbd7b48e363a49110329fcd8234f82da9b96ec71f8",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Adelaide",
+        "lat": -34.92866,
+        "lng": 138.59863,
+        "source": "https://www.geonames.org/2078025"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current parent roster supports both sites; Ausfilm member news explicitly describes VFX artists in both production studios. Exact facility address not asserted."
+    },
+    {
+      "id": "rising-sun-pictures-brisbane",
+      "record_hash": "95a2e06075880bc0566aa3b84a9614c2c9520504ea47c80b2e12c97dc60ed82a",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://pitchblackcompany.com/pitch-black-contact-us/",
+        "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Brisbane",
+        "lat": -27.46794,
+        "lng": 153.02809,
+        "source": "https://www.geonames.org/2174003"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current parent roster supports both sites; Ausfilm member news explicitly describes VFX artists in both production studios. Exact facility address not asserted."
+    },
+    {
+      "id": "el-ranchito-madrid",
+      "record_hash": "ed0d1272b905865409a0463abcee28e872e082bf9192024ecab9558af46c85ea",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://elranchito.es/contact/",
+        "https://elranchito.es/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://elranchito.es/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Madrid",
+        "lat": 40.4165,
+        "lng": -3.70256,
+        "source": "https://www.geonames.org/3117735/madrid.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "el-ranchito-barcelona",
+      "record_hash": "e9214df5df1c823e058a4078e57f9f1769e5745b7e77972fc83d365701d1b566",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://elranchito.es/contact/",
+        "https://elranchito.es/",
+        "https://pitchblackcompany.com/pitch-black-contact-us/"
+      ],
+      "capability_evidence": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://elranchito.es/contact/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "pitch-black",
+          "name": "Pitch Black",
+          "type": "group_member",
+          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Barcelona",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "source": "https://www.geonames.org/3128760/barcelona.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "annapurna-am-mocap-hyderabad",
+      "record_hash": "cb1093e39512b7db7f414f4ada82fa1749abf34df5fbf00e3780d54d8c762e4a",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://annapurnastudios.com/a-m-mocaplab.html",
+        "https://www.annapurnastudios.com/contact.html"
+      ],
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        },
+        "Body Capture": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        },
+        "Retargeting": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "mihira-visual-labs",
+          "name": "MIHIRA Visual Labs",
+          "type": "partner_of",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "animatrik",
+          "name": "Animatrik Film Design",
+          "type": "partner_of",
+          "evidence": "https://annapurnastudios.com/a-m-mocaplab.html",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Hyderabad",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "source": "https://www.geonames.org/1269843/hyderabad.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Named physical capture volume at the Annapurna campus; separate from the LED virtual production stage. No volumetric capture or motion-editing claim inferred."
+    },
+    {
+      "id": "annapurna-anr-vp-hyderabad",
+      "record_hash": "77415bfe667157d7c8b18cf59693b07de3f2ca9255257d458759027a112fd378",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://annapurnastudios.com/virtual-production.html",
+        "https://www.annapurnastudios.com/",
+        "https://qubecinema.com/about-us",
+        "https://www.annapurnastudios.com/contact.html",
+        "https://www.qubecinema.com/news/annapurna-studios-and-qube-cinema-announce-launch-full-service-virtual-production-stage"
+      ],
+      "capability_evidence": {
+        "Virtual Production": {
+          "state": "confirmed",
+          "evidence": "https://annapurnastudios.com/virtual-production.html",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "qube-cinema",
+          "name": "Qube Cinema",
+          "type": "partner_of",
+          "evidence": "https://annapurnastudios.com/virtual-production.html",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Hyderabad",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "source": "https://www.geonames.org/1269843/hyderabad.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current Annapurna stage page and campus homepage retain this service; Qube milestones corroborate launch. Separate LED production stage, not the A&M capture volume.",
+      "distinct_reason": "Same campus and city pin; separately named LED virtual-production stage and A&M motion-capture volume have distinct official facility pages and capabilities."
+    },
+    {
+      "id": "ubisoft-reflections-newcastle",
+      "record_hash": "4ab2f1a4d8c052c5f5c798aac3ab38b0a433f9eeea422ef89dfbd5f8fcfb8462",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+        "https://www.ubisoft.com/en-gb/company/careers/locations/uk/about-us"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "subsidiary_of",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/newcastle-upon%20tyne/ubisoft-reflections",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Newcastle upon Tyne",
+        "lat": 54.97328,
+        "lng": -1.61396,
+        "source": "https://www.geonames.org/2641673"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current official studio roster/contact and production context reviewed. No specialised capture capability inferred."
+    },
+    {
+      "id": "massive-stockholm",
+      "record_hash": "059e13c7e43fe4fc86121071a2536497116d128bbb88a21ff684ba0b56a601de",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.massive.se/our-studio/",
+        "https://www.massive.se/contact/",
+        "https://www.ubisoft.com/en-us/company/careers/locations/stockholm"
+      ],
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.massive.se/our-studio/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "subsidiary_of",
+          "evidence": "https://www.massive.se/our-studio/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Stockholm",
+        "lat": 59.32938,
+        "lng": 18.06871,
+        "source": "https://www.geonames.org/2673730/stockholm.html"
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Current Massive pages identify Stockholm and Malmö studios. Reuses the existing Massive operating-organisation identity, rather than duplicating the site as Ubisoft Stockholm."
+    },
+    {
+      "id": "centroid-uxbridge",
+      "record_hash": "6e57727eead8d87381f3dcc51f210603ef6cb39b8e4a2ef2adaa223e8f91a28c",
+      "previous_record_hash": "999645df51034ae7201217a1bf1f4b931c42ddd73cc5e027f6cfaab3ee24a9a4",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.centroid3d.com/facilities",
+        "https://www.centroid3d.com/contact"
+      ],
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Body Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.centroid3d.com/facilities",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "research_confidence": "official_primary_source_supported",
+      "research_note": "Only Riverside scope upgraded. Retargeting/motion editing and generic Animation/Previs claims removed pending site-specific evidence. Molinare and Serbia require separate research."
+    }
+  ],
+  "before_updates": {
+    "centroid-uxbridge": {
+      "id": "centroid-uxbridge",
+      "company_id": "centroid",
+      "name": "Centroid",
+      "city": "Uxbridge",
+      "country": "United Kingdom",
+      "lat": 51.5462,
+      "lng": -0.4796,
+      "address": "Approximate city location — street address not verified",
+      "website": "https://www.centroid3d.com/",
+      "email": "",
+      "phone": "+44 20 3329 0251",
+      "categories": [
+        "Motion Capture",
+        "Previsualization",
+        "Animation"
+      ],
+      "capabilities": [
+        "Body Capture",
+        "Facial Capture",
+        "Retargeting",
+        "Motion Editing",
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.centroid3d.com/services",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Website verified",
+        "verified_on": "2026-11-06",
+        "lat": 51.5485,
+        "lng": -0.4796,
+        "address": "Unit 32, Riverside Way, Uxbridge, UB8 2YF",
+        "coordinate_precision": "unverified"
+      },
+      "capability_evidence": {
+        "Body Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Facial Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Retargeting": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Motion Editing": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.centroid3d.com/services",
+          "verified_on": ""
+        }
+      }
+    }
+  },
+  "human_approval": "pending exact-content PR review and manual merge",
+  "note": "Source research assembled by Codex. No human approval or independent current-business verification is claimed."
+}

@@ -28,7 +28,7 @@ Recorded approval is a maintainer trust boundary, not cryptographic proof of a p
 
 ## Source registry and collection
 
-[`sources.json`](sources.json) contains six registered official sources (five enabled; EA disabled after its v0.9.1 access review) already used in the v0.8 research: Ubisoft, EA, Cinesite group, DNEG, Imaginarium and metricminds. These prioritise existing game-studio gaps, independent animation operators and specialist capture facilities. `company_id` here is a **hint** for duplicate review, never a new public identity or an inherited capability.
+[`sources.json`](sources.json) contains 25 official source entries. Eight are enabled after policy review: DNEG, metricminds, Framestore, Larian, RISE, Outpost, Flying Bark and FOLKS. Seventeen remain disabled, including EA, Cinesite and Remedy. The original six-source registry is retained in the historical source-policy audit; see the v0.9.3 section below for current access decisions. `company_id` here is a **hint** for duplicate review, never a new public identity or an inherited capability.
 
 No third-party industry directory has been approved for automated collection yet. Before enabling one, review its terms/reuse rights, confirm public directory content, choose narrow link rules and document that decision in `reuse_note` in a reviewed registry PR. [`sources.example.json`](sources.example.json) contains **disabled fictitious-host examples**, not working sources or evidence. The `directory` kind is supported but always yields unknown-confidence candidates.
 
@@ -59,7 +59,7 @@ python tools/discovery.py scan --output /tmp/motionx-discovery-run-1
 python tools/discovery.py scan --state /tmp/motionx-discovery-run-1/queue.json --previous-run /tmp/motionx-discovery-run-1 --output /tmp/motionx-discovery-run-2
 ```
 
-[`initial-run-report.json`](initial-run-report.json) is the actual local attempt on 6 November 2026: **six DNS/access failures, 41 retained pending candidates, zero published records**. This managed environment does not provide access to these company domains. No successful live-source extraction is claimed here. Deterministic fixtures test all adapters and approval paths; the first live Actions source/adapter review is now recorded in the v0.9.1 report linked above. There is no synthetic studio disguised as a real discovery result.
+[`initial-run-report.json`](initial-run-report.json) is the actual local attempt on 6 November 2026: **six DNS/access failures, 41 retained pending candidates, zero published records**. This managed environment does not provide access to these company domains. No successful live-source extraction is claimed for that initial local attempt; current successful Actions results are linked below. Deterministic fixtures test all adapters and approval paths; the first live Actions source/adapter review is now recorded in the v0.9.1 report linked above. There is no synthetic studio disguised as a real discovery result.
 
 ## Research, review and preparation
 
@@ -100,10 +100,25 @@ Approvals are declarations, not a replacement for public evidence. Repository wr
 
 The public website loads only `studios.json`; it never loads discovery candidates or review artifacts. Lists remain paginated at 50. Above 2,000 filtered coordinate groups, only the padded viewport's groups have Leaflet canvas markers; panning refreshes them. Filtering/counts/search/CSV export and fit-results use the **whole filtered dataset**. All matching studios at a shared original coordinate stay in a single accessible chooser. A chooser retains keyboard focus when Leaflet auto-pans it; markers refresh after it closes. Longitude wrapping includes antimeridian and repeated-world views. No coordinate is moved and no paid map service is added.
 
-The browser suite exercises 10,000 distinct groups, panning, filtering and pagination, then a second 10,000-location fixture with coincident studios and keyboard selection. This limits rendering work at local zooms, but the browser still fetches, validates and indexes the entire file. Viewport filtering is linear in coordinate groups; further indexing/worker/tiling work may be warranted at much larger scales. See `qa-report.json` for actual runner observations, not a promise for every device.
+The current browser suite exercises 20,000 distinct groups, panning, filtering and pagination, then a second 20,000-location fixture with coincident studios and keyboard selection. The older v0.9 measurements below used 10,000 records. This limits rendering work at local zooms, but the browser still fetches, validates and indexes the entire file. Viewport filtering is linear in coordinate groups; further indexing/worker/tiling work may be warranted at much larger scales. See `qa-report.json` for actual runner observations, not a promise for every device.
 
 ## Release QA
 
 **63 Python tests, 20 JavaScript tests and 15 HTTP browser checks passed.** Canonical validation remains **0 errors / 147 disclosed warnings** (129 approximate coordinates, 18 legacy unknown-evidence records); no original record or coordinate changed.
 
 The 10,000-distinct-coordinate browser fixture completed load/pan/paginate/filter in **1.693 seconds** on this runner. At the tested local zoom, **1,617 markers** were rendered instead of 10,000; list pagination remained 50. A second fixture proved keyboard selection of overlapping studios in viewport mode. Live Leaflet/OSM tiles, attribution, mobile layout and error/retry paths also passed. These observations are saved in [qa-report.json](qa-report.json). Full live collection is still blocked locally as disclosed above; fixture success is not a live research result.
+
+
+## v0.9.3 review reports and source coverage
+
+The current registry has 25 official source entries, with eight enabled for bounded factual metadata and 17 disabled pending policy/access review or permission. EA and Cinesite are expressly disabled; the latter's current Terms of Use prohibit automated scraping/text-data mining. Existing observations from disabled sources remain in the queue. Robots are checked at collection time; policy-review notes are not a licence or independent business verification. Refer to the [v0.9.3 release audit](../research/v0.9.3-global/README.md) for all attempts and limitations.
+
+`location_labels` adapters extract only reviewed visible location cards, carry a separate facility key, ignore navigation/scripts and never copy capability terms to the next card. Link adapters are narrowed to actual branch pages (RISE and Larian included). Unrecognised new labels cause source page-change alerts rather than invented geographic classifications. Opening/rebrand/acquisition/relocation/missing-link signals need investigation; failures/empty extraction never invalidate a studio.
+
+`tools/research.py report` creates offline `review.html`, `proposals.json` and `summary.md`. Weekly discovery uploads `studio-research-review`; PR checks upload `global-research-review`. Dossiers and authored proposals have separate unverified/pending-review states. Authored comparisons group by company and country and include direct evidence links. Reports have no approve button or active scripts and never edit public data.
+
+For GitHub-native review, the manual `prepare-research-pr.yml` workflow validates an exact source-researched bundle and opens a draft data PR, with a downloadable staged HTML review. It grants no approval and cannot merge. Configure required reviews/stale-review dismissal and personally review the exact head before manual merge. The informational review-state workflow does not turn account metadata into proof of human intent. The older hash-bound approval-bundle workflow remains available separately and is unchanged; historical pending reviews are not fabricated or reused.
+
+History is carried forward from the latest successful discovery artifact. If that artifact cannot be restored, or lacks its queue, the workflow now stops instead of resetting to the 41-entry seed. Download/archive artifacts before their 90-day expiry; a maintainer must restore a reviewed archive/checkpoint if needed. All older research/backlog files remain unchanged.
+
+Committed PR discovery checkpoints are merged additively into later scans: missing candidates and earliest observation dates are retained without replacing newer run evidence or reviews. The checkpoint itself is archived and grants no approval.

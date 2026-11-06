@@ -26,7 +26,7 @@ if (map) {
   $('map').textContent = 'Map library could not load. Use the studio list or reload to retry.';
 }
 function filtered() {
-  return MotionXData.filterRecords(studios, $('search').value, $('category').value, $('country').value);
+  return MotionXData.filterRecords(studios, $('search').value, $('category').value, $('country').value, $('confirmedOnly').checked);
 }
 function renderList(rows = filtered()) {
   page = Math.min(page, Math.max(0, Math.ceil(rows.length / pageSize) - 1));
@@ -134,7 +134,7 @@ $('list').onclick = event => {
 };
 $('close').onclick = () => { $('detail').style.display = 'none'; selected = null; renderList(); };
 let searchTimer;
-for (const id of ['search', 'category', 'country']) {
+for (const id of ['search', 'category', 'country', 'confirmedOnly']) {
   $(id).addEventListener('input', () => {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => {
@@ -159,13 +159,13 @@ $('exportCsv').onclick = () => {
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.9.2.csv';
+  a.download = 'motionx_studios_filtered_v0.9.3.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };
 window.addEventListener('resize', () => setTimeout(() => map?.invalidateSize(), 80));
 function setControls(enabled) {
-  for (const id of ['search', 'category', 'country', 'exportCsv', 'fitResults', 'previousPage', 'nextPage']) $(id).disabled = !enabled;
+  for (const id of ['search', 'category', 'country', 'confirmedOnly', 'exportCsv', 'fitResults', 'previousPage', 'nextPage']) $(id).disabled = !enabled;
   if (!map) $('fitResults').disabled = true;
 }
 async function initialize() {
