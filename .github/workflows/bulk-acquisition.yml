@@ -23,8 +23,11 @@ jobs:
           path: bulk-run
           key: bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-${{ github.run_id }}
           restore-keys: bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-
+      - run: pip install duckdb==1.4.3
       - name: Collect approved API metadata, never canonical records
-        run: python tools/bulk_collect.py --output bulk-run
+        run: |
+          python tools/bulk_collect.py --output bulk-run
+          python tools/bulk_overture.py --output bulk-run
       - name: Prepare research ledger and coverage report when available
         run: |
           if [ -f tools/bulk_ingest.py ]; then python tools/bulk_ingest.py --input bulk-run --output bulk-review; fi

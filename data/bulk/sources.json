@@ -3,8 +3,25 @@
   "reviewed_on": "2026-11-06",
   "sources": [
     {
-      "id": "wikidata",
+      "id": "overture",
       "enabled": true,
+      "adapter": "overture_geoparquet",
+      "endpoint": "https://overturemaps-us-west-2.s3.amazonaws.com/",
+      "release": "2026-10-21.0",
+      "license": "per-provider",
+      "license_url": "https://docs.overturemaps.org/attribution/",
+      "publication_license": "per-provider",
+      "policy_urls": [
+        "https://docs.overturemaps.org/getting-data/",
+        "https://docs.overturemaps.org/guides/places/",
+        "https://docs.overturemaps.org/attribution/"
+      ],
+      "review": "Official public bulk Places GeoParquet. Provider CDLA-Permissive-2.0/Apache-2.0/CC0 obligations preserved; complete projected category slices, no web scraping or source-API workaround. Places explicitly contains no OpenStreetMap data. Exclude unknown provider licences; include agreement texts and Foursquare NOTICE with derivative extracts. Only documented release objects; no personal contacts or street addresses.",
+      "attribution": "Overture Maps Foundation and original per-record providers; see data/bulk/LICENSES."
+    },
+    {
+      "id": "wikidata",
+      "enabled": false,
       "adapter": "wikidata_sparql",
       "endpoint": "https://query.wikidata.org/sparql",
       "license": "CC0-1.0",
@@ -23,11 +40,12 @@
         "Q1762059": "Film Production",
         "Q375336": "Film Production",
         "Q21550789": "Film Production"
-      }
+      },
+      "disabled_reason": "Runtime robots disallowed canonical API endpoint in Actions run 42282499526. No records collected; no alternative host or user-agent workaround."
     },
     {
       "id": "openstreetmap",
-      "enabled": true,
+      "enabled": false,
       "adapter": "overpass",
       "endpoint": "https://overpass-api.de/api/interpreter",
       "license": "ODbL-1.0",
@@ -38,7 +56,8 @@
       ],
       "review": "One selective global tag query, not world-dump bounding-box stitching or per-element harvesting. Cache snapshot; no scheduled refresh by default. Stop at 429/denial and retain partial results. Runtime robots required. Derived source shards and their modification history stay separately distributed under ODbL, with visible attribution and license fields in export. No Nominatim bulk geocoding.",
       "publication_license": "ODbL-1.0",
-      "attribution": "\u00a9 OpenStreetMap contributors; data under ODbL 1.0 (https://www.openstreetmap.org/copyright)."
+      "attribution": "\u00a9 OpenStreetMap contributors; data under ODbL 1.0 (https://www.openstreetmap.org/copyright).",
+      "disabled_reason": "Runtime robots disallowed canonical API endpoint in Actions run 42282499526. No records collected; no alternative host or user-agent workaround."
     },
     {
       "id": "gamedev-studios-db",

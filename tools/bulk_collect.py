@@ -93,7 +93,7 @@ def collect(config,output,client=None,page_size=1000,max_pages=None):
     client=client or Client();output=Path(output);output.mkdir(parents=True,exist_ok=True)
     report=read(output/'collection.json') if (output/'collection.json').exists() else {'version':1,'observed_on':date.today().isoformat(),'sources':[],'publication_approved':False,'published_records':0}
     for source in config['sources']:
-        if not source.get('enabled'):continue
+        if not source.get('enabled') or source.get('adapter') not in ('wikidata_sparql','overpass'):continue
         status={'id':source['id'],'license':source['license'],'endpoint':source['endpoint'],'pages':[],'complete':False,'errors':[]}
         folder=output/source['id'];folder.mkdir(exist_ok=True)
         try:
