@@ -389,26 +389,25 @@
       "id": "remedy-locations",
       "organisation_name": "Remedy Entertainment",
       "url": "https://www.remedygames.com/contact",
-      "enabled": true,
+      "enabled": false,
       "kind": "official",
       "adapter": "links",
       "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
       "policy_urls": [
-        "https://www.remedygames.com/privacy-policy"
+        "https://www.remedygames.com/terms-conditions"
       ],
       "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
       "access_review": {
-        "decision": "bounded_metadata_reviewed",
         "reviewed_on": "2026-11-06",
-        "policy_urls": [
-          "https://www.remedygames.com/privacy-policy"
-        ],
-        "note": "Privacy automated-processing clauses concern personal data; collect factual location metadata only. Runtime robots rules remain mandatory; not independent verification or written permission."
+        "decision": "automated_collection_disabled",
+        "url": "https://www.remedygames.com/terms-conditions",
+        "note": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
       },
       "sector_hints": [
         "Game Development"
       ],
-      "company_id": "remedy"
+      "company_id": "remedy",
+      "disabled_reason": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
     },
     {
       "id": "larian-locations",

@@ -111,7 +111,7 @@ The 10,000-distinct-coordinate browser fixture completed load/pan/paginate/filte
 
 ## v0.9.3 review reports and source coverage
 
-The current registry has 25 official source entries, with nine enabled for bounded factual metadata and 16 disabled pending policy/access review or permission. EA and Cinesite are expressly disabled; the latter's current Terms of Use prohibit automated scraping/text-data mining. Existing observations from disabled sources remain in the queue. Robots are checked at collection time; policy-review notes are not a licence or independent business verification. Refer to the [v0.9.3 release audit](../research/v0.9.3-global/README.md) for all attempts and limitations.
+The current registry has 25 official source entries, with eight enabled for bounded factual metadata and 17 disabled pending policy/access review or permission. EA and Cinesite are expressly disabled; the latter's current Terms of Use prohibit automated scraping/text-data mining. Existing observations from disabled sources remain in the queue. Robots are checked at collection time; policy-review notes are not a licence or independent business verification. Refer to the [v0.9.3 release audit](../research/v0.9.3-global/README.md) for all attempts and limitations.
 
 `location_labels` adapters extract only reviewed visible location cards, carry a separate facility key, ignore navigation/scripts and never copy capability terms to the next card. Link adapters are narrowed to actual branch pages (RISE and Larian included). Unrecognised new labels cause source page-change alerts rather than invented geographic classifications. Opening/rebrand/acquisition/relocation/missing-link signals need investigation; failures/empty extraction never invalidate a studio.
 
