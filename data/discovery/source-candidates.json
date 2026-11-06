@@ -221,7 +221,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "framestore"
     },
     {
       "id": "ilm-locations",
@@ -247,7 +248,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "ilm"
     },
     {
       "id": "weta-locations",
@@ -273,7 +275,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "weta-fx"
     },
     {
       "id": "imageworks-locations",
@@ -299,7 +302,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "sony-imageworks"
     },
     {
       "id": "digital-domain-locations",
@@ -325,11 +329,12 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "digital-domain"
     },
     {
       "id": "eyeline-locations",
-      "organisation_name": "Eyeline",
+      "organisation_name": "Eyeline / Scanline VFX",
       "url": "https://apply.eyelinestudios.com/careers/artist/",
       "enabled": false,
       "kind": "official",
@@ -351,7 +356,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "eyeline"
     },
     {
       "id": "cdpr-locations",
@@ -376,7 +382,8 @@
       "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback.",
       "sector_hints": [
         "Game Development"
-      ]
+      ],
+      "company_id": "cd-projekt-red"
     },
     {
       "id": "remedy-locations",
@@ -400,7 +407,8 @@
       },
       "sector_hints": [
         "Game Development"
-      ]
+      ],
+      "company_id": "remedy"
     },
     {
       "id": "larian-locations",
@@ -433,11 +441,12 @@
           "unit_key": "quebec"
         }
       },
-      "roster_sentence_pattern": "studios across the world"
+      "roster_sentence_pattern": "studios across the world",
+      "company_id": "larian"
     },
     {
       "id": "rise-locations",
-      "organisation_name": "RISE",
+      "organisation_name": "RISE Visual Effects Studios",
       "url": "https://www.risefx.com/",
       "enabled": true,
       "kind": "official",
@@ -460,7 +469,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "rise-fx"
     },
     {
       "id": "outpost-locations",
@@ -511,7 +521,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "outpost-vfx"
     },
     {
       "id": "flyingbark-locations",
@@ -555,11 +566,12 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "flying-bark"
     },
     {
       "id": "triggerfish-locations",
-      "organisation_name": "Triggerfish",
+      "organisation_name": "Triggerfish Animation",
       "url": "https://www.triggerfish.com/faq/",
       "enabled": false,
       "kind": "official",
@@ -593,7 +605,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "triggerfish"
     },
     {
       "id": "reelfx-locations",
@@ -619,7 +632,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "reel-fx"
     },
     {
       "id": "rodeo-locations",
@@ -645,7 +659,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "rodeo-fx"
     },
     {
       "id": "chocolate-tribe-locations",
@@ -682,7 +697,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "chocolate-tribe"
     },
     {
       "id": "studiot3d-locations",
@@ -708,7 +724,8 @@
       "sector_hints": [
         "VFX",
         "Animation"
-      ]
+      ],
+      "company_id": "studiot3d"
     },
     {
       "id": "folks-locations",

@@ -44,15 +44,15 @@ The public UI adds an optional **Confirmed capability evidence only** filter. Wi
 
 The [release research log](data/research/v0.9.2-batch-1/README.md), [evidence manifest](data/research/v0.9.2-batch-1/evidence.json), [candidate decisions](data/research/v0.9.2-batch-1/decisions.json) and import/repeat reports retain the complete audit. All 14 discovery leads plus three specialist topics were researched: ten game-development locations and two distinct StudioT3D London capture stages are proposed, while Audiomotion's existing record is corrected to its officially stated Didcot facility. Four leads are excluded and two research topics remain deferred. No capture capabilities are inferred from game development.
 
-The five-source live collector refresh passed with EA disabled, Cinesite reduced to seven operator links, and all 133 candidates plus history retained. Explicit human approval remains pending; the content-bound preparation gate correctly blocks unapproved bundles. Validation reports **0 errors / 160 warnings** covering approximate pins, remaining legacy unknown evidence and two reviewed co-location pairs. The public website continues to load only canonical data, never the unverified discovery queue.
+PR #7 merged this data into main. The five-source collector refresh at that release retained all 133 candidates plus history. Historical JSON approval bundles remain pending and are not retroactively approved by that merge; v0.9.3 uses a separately documented human PR-review route. Cinesite automation is now disabled under its newly reviewed terms. Validation reports **0 errors / 160 warnings** covering approximate pins, remaining legacy unknown evidence and two reviewed co-location pairs. The public website continues to load only canonical data, never the unverified discovery queue.
 
-## v0.9.1 discovery triage
+## Historical v0.9.1 discovery triage
 
 The [triage release report](data/discovery/triage-v0.9.1/README.md) documents the actual first successful Actions artifact: **133 candidates → 46 represented, 14 potentially new, 24 irrelevant, 49 requiring research**. Eight represented matches are organisation-only; no new studio or capability is approved. All 41 backlog entries remain intact.
 
 Read-only Actions jobs produce `triage.json`, `summary.md` and preserved original inputs. Discovery now carries raw report/queue history forward and handles filter changes without false disappearance signals. Cinesite collection targets operator links. EA automation is disabled because its current access policy prohibits scraping/text-data mining without written authorisation; screenshots/OCR are not an access-rule workaround. The public database remains unchanged.
 
-## v0.9 discovery infrastructure
+## Historical v0.9 discovery infrastructure
 
 [Discovery documentation](data/discovery/README.md) explains the source registry, bounded robots-aware collection, unverified queue, change signals and content-bound evidence reviews. Weekly discovery produces an artifact only. A separate manually dispatched workflow prepares a validated **draft PR** from an approved review bundle; humans review and merge before publication. No newly discovered studio is automatically trusted or added. The public database remains the v0.8 dataset; 41 deferred candidates are preserved separately for follow-up.
 
@@ -62,11 +62,11 @@ python tools/discovery.py scan --output /tmp/motionx-discovery-run
 
 The local live-source attempt was blocked by this environment's domain/DNS access; the [run report](data/discovery/initial-run-report.json) records all six failures without claiming discoveries. Offline fixtures exercise the full pipeline. New industry directory sources require explicit terms/robots/adapter review before enabling. The first live Actions run still needs source-level review.
 
-## v0.8 research release
+## Historical v0.8 research release
 
 The [research report](data/research/v0.8-global-expansion/README.md) documents imported organisations, six source-supported capture facilities, branch-coverage limits, coordinate licensing, tests and performance. The [evidence manifest](data/research/v0.8-global-expansion/evidence.json), [CSV batch](data/research/v0.8-global-expansion/batch.csv), dry-run/apply/repeat reports and [review queue](data/research/v0.8-global-expansion/review-queue.json) are retained. Review date: **6 November 2026**. Validation at v0.8: **0 errors / 147 warnings**, covering 129 approximate coordinates and 18 legacy unknown-evidence records. Ubisoft and EA coverage remains partial; unresolved candidates are queued rather than published.
 
-## v0.7 research batch 1
+## Historical v0.7 research batch 1
 
 The [batch research log](data/research/v0.7-batch-1/README.md) documents every imported location, primary source, coordinate reference and unresolved claim. The [CSV](data/research/v0.7-batch-1/batch.csv), [per-location evidence manifest](data/research/v0.7-batch-1/evidence.json), dry-run/import/repeat reports and batch validation are retained together. Verification dates use **6 November 2026, Pacific/Auckland**; these indicate review of the cited claims, not independent verification of registration or current operation.
 

@@ -49,9 +49,12 @@ class AdaptersTests(unittest.TestCase):
 
     def test_labels_ignore_navigation_and_do_not_inherit_next_card_claims(self):
         source=self.source()
-        rows=extract(source,'<nav>London</nav><h2>London</h2><p>Office reference</p><h2>Paris</h2><p>Facial capture</p><footer>Motion capture</footer>')
+        rows=extract(source,'<nav>London</nav><h2>London</h2><p>Upcoming</p><h2>Paris</h2><p>Facial capture</p><footer>Motion capture</footer>')
         self.assertEqual(len(rows),2)
         self.assertEqual(rows[0]['claim_terms'],[])
+        self.assertEqual(rows[0]['status_terms'],['upcoming'])
+        queue,_=scan({'version':1,'sources':[source]},EMPTY,[],fetcher=lambda _:'<h2>London</h2><p>Upcoming</p>')
+        self.assertEqual(next(iter(queue['candidates'].values()))['signals'],['possible_opening'])
         self.assertEqual(rows[1]['claim_terms'],['Facial Capture'])
         self.assertEqual(rows[0]['observation_kind'],'location_reference')
 
@@ -77,6 +80,7 @@ class AdaptersTests(unittest.TestCase):
         with self.assertRaises(ValueError):load_config({**CONFIG,'require_access_review':True})
         config=json.loads((ROOT/'data/discovery/sources.json').read_text())
         self.assertEqual(len(load_config(config)['sources']),25)
+        self.assertTrue(all(s.get('company_id') and s.get('organisation_name') for s in config['sources']))
         self.assertFalse(next(s for s in config['sources'] if s['id']=='ea-studios')['enabled'])
 
     def test_structured_roster_is_not_discarded_as_contact_navigation(self):
@@ -85,6 +89,14 @@ class AdaptersTests(unittest.TestCase):
         result=dossier(queue,report,[],{'version':1,'sources':[source]})
         self.assertEqual(result['candidate_counts']['potentially_new'],1)
         self.assertFalse(result['dossiers'][0]['publication_approved'])
+
+    def test_structured_country_alias_matches_canonical_identity(self):
+        source=self.source();source['place_labels']['London']['country']='UK'
+        queue,report=scan({'version':1,'sources':[source]},EMPTY,[],fetcher=lambda _:'<h2>London</h2>')
+        database=[record(city='London',country='United Kingdom')]
+        result=dossier(queue,report,database,{'version':1,'sources':[source]})
+        self.assertEqual(result['candidate_counts']['already_represented'],1)
+        self.assertEqual(result['dossiers'][0]['existing_matches'][0]['id'],database[0]['id'])
 
 class PolicyTests(unittest.TestCase):
     def test_policy_keywords_never_grant_permission(self):

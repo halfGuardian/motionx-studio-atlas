@@ -8,7 +8,10 @@ on:
       - 'tools/source_adapters.py'
       - 'tools/discovery.py'
       - 'data/discovery/**'
-      - 'data/research/v0.9.3-global/**'
+      - 'data/research/**'
+      - 'tools/triage.py'
+      - 'tools/import_csv.py'
+      - 'tools/validate.py'
       - '.github/workflows/global-research.yml'
 permissions:
   contents: read
@@ -33,11 +36,32 @@ jobs:
           if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then exit 1; fi
           gh run download "$run_id" --name studio-discovery --dir previous
       - name: Collect only registry-reviewed sources and prepare unverified dossiers
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           git show '${{ github.event.pull_request.base.sha }}:studios.json' > /tmp/published-studios.json
           python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
-          python tools/research.py stage-pr --database /tmp/published-studios.json --records data/research/v0.9.3-global/records.json --manifest data/research/v0.9.3-global/evidence.json --allow-distinct-location annapurna-anr-vp-hyderabad --output staged-proposal
-          python tools/research.py report --database /tmp/published-studios.json --records data/research/v0.9.3-global/records.json --queue discovery-run/queue.json --report discovery-run/report.json --config data/discovery/sources.json --output research-review
+          python - <<'PYCODE'
+          import json, os, subprocess
+          from pathlib import Path
+          base=os.environ['BASE_SHA']
+          changed=subprocess.run(['git','diff','--name-only',base,'--','data/research'],capture_output=True,text=True,check=True).stdout.splitlines()
+          bundles=[Path(p) for p in changed if Path(p).name=='records.json' and Path(p).is_file()]
+          if len(bundles)>1:raise SystemExit('Use one exact research record bundle per proposal PR')
+          report=['python','tools/research.py','report','--database','/tmp/published-studios.json','--queue','discovery-run/queue.json','--report','discovery-run/report.json','--config','data/discovery/sources.json','--output','research-review']
+          if bundles:
+              records=bundles[0];manifest=records.with_name('evidence.json');root=(Path.cwd()/'data/research').resolve()
+              if any(p.is_symlink() or root not in p.resolve().parents for p in (records,manifest)):raise SystemExit('Regular committed research files required')
+              evidence=json.loads(manifest.read_text())
+              stage=['python','tools/research.py','stage-pr','--database','/tmp/published-studios.json','--records',str(records),'--manifest',str(manifest),'--output','staged-proposal']
+              for entry in evidence.get('records',[]):
+                  if entry.get('distinct_reason'):stage+=['--allow-distinct-location',entry['id']]
+              subprocess.run(stage,check=True)
+              canonical=json.loads(Path('studios.json').read_text())
+              if canonical!=json.loads(Path('/tmp/published-studios.json').read_text()) and canonical!=json.loads(Path('staged-proposal/studios.json').read_text()):raise SystemExit('Canonical diff must match the exact staged proposal')
+              report+=['--records',str(records)]
+          subprocess.run(report,check=True)
+          PYCODE
           cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"
           python - <<'PY'
           import json

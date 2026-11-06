@@ -49,8 +49,10 @@ def location_labels(source,body):
             local=' '.join(following)
             local=local[:1200]
             claims=[] if roster_match else [label for label,pattern in CLAIMS.items() if re.search(pattern,local,re.I)]
+            status_terms=[] if roster_match else [term for term in ('upcoming','relocating','closed','rebranded') if re.search(r'\b'+term+r'\b',local,re.I)]
             output.append({'url':source['url'],'label':place.get('name') or label,'city':place.get('city',''),
                            'country':place.get('country',''),'unit_key':place.get('unit_key') or norm(label),
                            'observation_kind':'location_reference','claim_terms':claims,
+                           'status_terms':status_terms,
                            'place_basis':'reviewed source-label mapping; candidate, not verified canonical data'})
     return output

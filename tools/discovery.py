@@ -267,7 +267,7 @@ def extract(source, text):
         if not url or not label:
             continue
         value = {'url': url, 'label': label, 'city': clean(str(item.get('city', ''))), 'country': clean(str(item.get('country', '')))}
-        for field in ('unit_key','observation_kind','claim_terms','place_basis'):
+        for field in ('unit_key','observation_kind','claim_terms','place_basis','status_terms'):
             if field in item:value[field]=item[field]
         identity=[url, value['city'], value['country']]
         if value.get('unit_key'):identity.append(value['unit_key'])
@@ -281,7 +281,7 @@ def extract(source, text):
 def signals(label):
     patterns = {'possible_closure': r'\b(clos(?:e[ds]?|ing|ure)|shut(?:s|ting)? down|ceas(?:e[ds]?|ing))\b',
                 'possible_acquisition': r'\b(acquir\w*|acquisition|merg\w*)\b',
-                'possible_opening': r'\b(open(?:s|ed|ing)?|launch(?:es|ed|ing)?)\b.*\b(studio|facility|stage|branch)\b|\bnew (?:studio|facility|stage|branch)\b',
+                'possible_opening': r'\bupcoming\b|\b(open(?:s|ed|ing)?|launch(?:es|ed|ing)?)\b.*\b(studio|facility|stage|branch)\b|\bnew (?:studio|facility|stage|branch)\b',
                 'possible_rebrand': r'\b(rebrand\w*|renam\w*|formerly)\b',
                 'possible_relocation': r'\b(relocat\w*|mov(?:e[ds]?|ing) (?:to|from)|new (?:studio|office|branch|facility))\b'}
     return [key for key, pattern in patterns.items() if re.search(pattern, label, re.I)]
@@ -320,7 +320,7 @@ def scan(config, previous, database, fetcher=None, today=None):
                 candidate = {**item, 'id': cid, 'source_id': source['id'], 'source_kind': source['kind'],
                              'hint_company_id': source.get('company_id', ''), 'confidence': 'unknown',
                              'first_seen': old['first_seen'] if old else today, 'last_seen': today,
-                             'content_hash': content_hash, 'signals': signals(item['label']),
+                             'content_hash': content_hash, 'signals': signals(item['label']+' '+' '.join(item.get('status_terms',[]))),
                              'review_status': 'pending', 'missing_since': None}
                 # The matching is advisory only; source IDs/labels never become public studio IDs.
                 candidate['existing_matches'] = [r['id'] for r in database if
@@ -334,7 +334,7 @@ def scan(config, previous, database, fetcher=None, today=None):
                 for cid, candidate in state['candidates'].items():
                     if source['adapter'] == 'location_labels' and candidate.get('observation_kind') != 'location_reference':
                         continue
-                    if source['adapter'] == 'links' and not link_allowed(source, candidate['url'], candidate['label']):
+                    if source['adapter'] == 'links' and candidate.get('observation_kind')!='location_reference' and not link_allowed(source, candidate['url'], candidate['label']):
                         continue  # historical filtered-out navigation is not a missing studio
                     if candidate['source_id'] == source['id'] and cid not in seen and not candidate.get('missing_since'):
                         candidate['missing_since'] = today

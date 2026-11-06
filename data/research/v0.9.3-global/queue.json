@@ -2792,7 +2792,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "larian-kuala-lumpur"
+      ]
     },
     "discovery-eecde83cd5a892be7b861cf9": {
       "url": "https://larian.com/careers/location/dublin",
@@ -2810,7 +2812,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "larian-dublin"
+      ]
     },
     "discovery-cf0527e629685d34a7eb70eb": {
       "url": "https://larian.com/careers/location/guildford",
@@ -2828,7 +2832,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "larian-guildford"
+      ]
     },
     "discovery-0911dac394aa29a96bd35b5b": {
       "url": "https://larian.com/careers/location/gent",
@@ -2846,7 +2852,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "larian-gent"
+      ]
     },
     "discovery-db8fda98a62006a686712124": {
       "url": "https://larian.com/careers/location/barcelona",
@@ -2864,7 +2872,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "larian-barcelona"
+      ]
     },
     "discovery-d21645729648ceec81b9e3ed": {
       "url": "https://www.risefx.com/rise-visual-effects-studios-contact-berlin.php",
@@ -2882,7 +2892,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "rise-fx-berlin"
+      ]
     },
     "discovery-522ae908fc4dfcfb6a61f86f": {
       "url": "https://www.risefx.com/rise-visual-effects-studios-contact-cologne.php",
@@ -2900,7 +2912,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "rise-fx-cologne"
+      ]
     },
     "discovery-4a343e2980ecb2f7c850d1ec": {
       "url": "https://www.risefx.com/rise-visual-effects-studios-contact-london.php",
@@ -2918,7 +2932,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "rise-fx-london"
+      ]
     },
     "discovery-3ebdabba89c141501d633221": {
       "url": "https://www.risefx.com/rise-visual-effects-studios-contact-munich.php",
@@ -2936,7 +2952,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "rise-fx-munich"
+      ]
     },
     "discovery-860c9c07bb47c3e8586dabcb": {
       "url": "https://www.risefx.com/rise-visual-effects-studios-contact-stuttgart.php",
@@ -2954,7 +2972,9 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "rise-fx-stuttgart"
+      ]
     },
     "discovery-1ba6110d451eb467e3498e19": {
       "url": "https://www.outpost-vfx.com/en/contact",
@@ -2976,7 +2996,13 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "outpost-vfx-bournemouth",
+        "outpost-vfx-london",
+        "outpost-vfx-montreal",
+        "outpost-vfx-mumbai",
+        "outpost-vfx-stuttgart"
+      ]
     },
     "discovery-377b8fc4a637bc6cca952dd8": {
       "url": "https://www.outpost-vfx.com/en/contact",
@@ -2998,7 +3024,13 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "outpost-vfx-bournemouth",
+        "outpost-vfx-london",
+        "outpost-vfx-montreal",
+        "outpost-vfx-mumbai",
+        "outpost-vfx-stuttgart"
+      ]
     },
     "discovery-26b9d099e953a31a19eec265": {
       "url": "https://www.outpost-vfx.com/en/contact",
@@ -3020,7 +3052,13 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "outpost-vfx-bournemouth",
+        "outpost-vfx-london",
+        "outpost-vfx-montreal",
+        "outpost-vfx-mumbai",
+        "outpost-vfx-stuttgart"
+      ]
     },
     "discovery-3fe4840a8b59de6c429f2e64": {
       "url": "https://www.outpost-vfx.com/en/contact",
@@ -3042,7 +3080,13 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "outpost-vfx-bournemouth",
+        "outpost-vfx-london",
+        "outpost-vfx-montreal",
+        "outpost-vfx-mumbai",
+        "outpost-vfx-stuttgart"
+      ]
     },
     "discovery-8fd008a011373a6312e7b1d9": {
       "url": "https://www.outpost-vfx.com/en/contact",
@@ -3066,7 +3110,13 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "outpost-vfx-bournemouth",
+        "outpost-vfx-london",
+        "outpost-vfx-montreal",
+        "outpost-vfx-mumbai",
+        "outpost-vfx-stuttgart"
+      ]
     },
     "discovery-c57d40902bd3ef823ebf8ef7": {
       "url": "https://www.flyingbark.com.au/about",
@@ -3088,7 +3138,11 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "flying-bark-sydney",
+        "flying-bark-burbank",
+        "flying-bark-madrid"
+      ]
     },
     "discovery-0d7939d907d335f8a9479bdc": {
       "url": "https://www.flyingbark.com.au/about",
@@ -3109,7 +3163,7 @@
       "content_hash": "0aaef203056131d0a098c90945d770026f18828e051f7963b0ef66f30292131b",
       "signals": [],
       "review_status": "pending",
-      "missing_since": null,
+      "missing_since": "2026-11-06",
       "existing_matches": []
     },
     "discovery-95e782e9a0dfcb8267344bcc": {
@@ -3132,7 +3186,567 @@
       "signals": [],
       "review_status": "pending",
       "missing_since": null,
-      "existing_matches": []
+      "existing_matches": [
+        "flying-bark-sydney",
+        "flying-bark-burbank",
+        "flying-bark-madrid"
+      ]
+    },
+    "discovery-dd47fd3459530b3024214035": {
+      "url": "https://www.framestore.com/contact",
+      "label": "London",
+      "city": "London",
+      "country": "United Kingdom",
+      "unit_key": "london",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-dd47fd3459530b3024214035",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "3fc9b114ddd7a4f1b498762c19f60bb40cec25a73fe801d6445bca3c7bc1f3e0",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-c10b89987b3125acc87494e7": {
+      "url": "https://www.framestore.com/contact",
+      "label": "Montréal",
+      "city": "Montréal",
+      "country": "Canada",
+      "unit_key": "montreal",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-c10b89987b3125acc87494e7",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "d9acc9e3120ddc5a289e5bc7996ddc90999553d2aa512fd6693e9e16d99dd878",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-c8aeb05cfd3461ee90372aa7": {
+      "url": "https://www.framestore.com/contact",
+      "label": "Chicago",
+      "city": "Chicago",
+      "country": "United States",
+      "unit_key": "chicago",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-c8aeb05cfd3461ee90372aa7",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "1ef433950bfc9670f08dd4aca2384630611d5725a443c38e7ee254b67dd483a0",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-07fb5439bb4552f86ce3970c": {
+      "url": "https://www.framestore.com/contact",
+      "label": "Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States",
+      "unit_key": "los-angeles",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-07fb5439bb4552f86ce3970c",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "239992a4a35591962b4480ea00c7ebacf3f476de6df9d80fd303801c5a96e211",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-24fc70533e33db38bd3f349e": {
+      "url": "https://www.framestore.com/contact",
+      "label": "New York",
+      "city": "New York",
+      "country": "United States",
+      "unit_key": "new-york",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-24fc70533e33db38bd3f349e",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "d446d5909fb376dd6d263f4b8b575240150da7795b119a4154977a6032b4bceb",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-9d6ac7475be31a2ceb441423": {
+      "url": "https://www.framestore.com/contact",
+      "label": "Mumbai",
+      "city": "Mumbai",
+      "country": "India",
+      "unit_key": "mumbai",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-9d6ac7475be31a2ceb441423",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "c6bb3e30663fcebef0a821a2a41be789a5cabf5c0ee5e4ef531acff138e45db5",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-b486408cdcd6d4533f82940a": {
+      "url": "https://www.framestore.com/contact",
+      "label": "Melbourne",
+      "city": "Melbourne",
+      "country": "Australia",
+      "unit_key": "melbourne",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-b486408cdcd6d4533f82940a",
+      "source_id": "framestore-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "fde9c5cefb821cf926b33f9b934620ae76e83ba5e3cbf45b476d9b9f136cdd26",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "framestore-london",
+        "framestore-montreal",
+        "framestore-chicago",
+        "framestore-los-angeles",
+        "framestore-new-york",
+        "framestore-mumbai",
+        "framestore-melbourne"
+      ]
+    },
+    "discovery-451027f197897c3111cc7b1f": {
+      "url": "https://www.flyingbark.com.au/about",
+      "label": "Los Angeles, USA",
+      "city": "Burbank",
+      "country": "United States",
+      "unit_key": "burbank",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-451027f197897c3111cc7b1f",
+      "source_id": "flyingbark-locations",
+      "source_kind": "official",
+      "hint_company_id": "",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "52c5540f25ed59bd9d18a80b3a4655600860c5c2ddaf76b2850613f4d1826b72",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "flying-bark-sydney",
+        "flying-bark-burbank",
+        "flying-bark-madrid"
+      ]
+    },
+    "discovery-8632bcfa808141c81ca047e9": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "MONTREAL",
+      "city": "Montréal",
+      "country": "Canada",
+      "unit_key": "montreal",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-8632bcfa808141c81ca047e9",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "b0264b45f88b155a97474cf368eff0c5fa26ea66b6590405c2d0d061f791d225",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-9be93a63f419e0a981634474": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "TORONTO",
+      "city": "Toronto",
+      "country": "Canada",
+      "unit_key": "toronto",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-9be93a63f419e0a981634474",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "5b549e4a10dc2c7d5ced07ff6c871660c3ed4ce77d0d0d901ba404664e635d7b",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-6d0509b39f9aa01d5934ba44": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "BOGOTA",
+      "city": "Bogotá",
+      "country": "Colombia",
+      "unit_key": "bogota",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-6d0509b39f9aa01d5934ba44",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "47f52f6da3aaeb04a7a55eff09e62017eec68c9285b5bc01595ec75bdd898bc9",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-2fbc3d4c239afb587ff3a9fd": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "SAGUENAY",
+      "city": "Saguenay",
+      "country": "Canada",
+      "unit_key": "saguenay",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-2fbc3d4c239afb587ff3a9fd",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "26b79ed9b70c56be4aa9182667524d8cb76636e59568e127f133b9a61b35b556",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-5a57094ae6a057c754965f2b": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "MUMBAI",
+      "city": "Mumbai",
+      "country": "India",
+      "unit_key": "mumbai",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-5a57094ae6a057c754965f2b",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "b6ef7036aca0fb1592e2fe8057f3518900ae4052d1a2a2fef7e16441e7208475",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-8d20202cda687b8d2443cf51": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "LOS ANGELES",
+      "city": "Burbank",
+      "country": "United States",
+      "unit_key": "burbank",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-8d20202cda687b8d2443cf51",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "c4c1dd4f7163ed3a171cbba5cc20f6ef6965cd0174712115ab579d5c8fcab778",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-879cdd7038df3e3188749972": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "NEW YORK",
+      "city": "New York",
+      "country": "United States",
+      "unit_key": "new-york",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-879cdd7038df3e3188749972",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "7567a86ea9ccbd2b1a61f761aa0f6cc55621170b543859608c703604b9e89da0",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-0387945c2ad3fb7eb4c33533": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "ATLANTA",
+      "city": "Atlanta",
+      "country": "United States",
+      "unit_key": "atlanta",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-0387945c2ad3fb7eb4c33533",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "a6c17811a73168e4ad20b69fa0c86a5546540dc5ea6baefe52c1ebcc3b7f0ea4",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-4aae090c2eb496c5b8202d97": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "VANCOUVER",
+      "city": "Vancouver",
+      "country": "Canada",
+      "unit_key": "vancouver",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-4aae090c2eb496c5b8202d97",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "8cae126ec1f205ff0bcddcbea6088c2ab9d2161fd2b61146083b7eeb7f9dec8f",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
+    },
+    "discovery-26319602236f2e71b6113d3a": {
+      "url": "https://folksvfx.com/contact/",
+      "label": "LONDON",
+      "city": "London",
+      "country": "United Kingdom",
+      "unit_key": "london-upcoming",
+      "observation_kind": "location_reference",
+      "claim_terms": [],
+      "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+      "id": "discovery-26319602236f2e71b6113d3a",
+      "source_id": "folks-locations",
+      "source_kind": "official",
+      "hint_company_id": "folks",
+      "confidence": "unknown",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06",
+      "content_hash": "06f53de9e5a6ab3fc9194e4c459033db706d9326831ccf131f5264a023064b22",
+      "signals": [],
+      "review_status": "pending",
+      "missing_since": null,
+      "existing_matches": [
+        "folks-montreal",
+        "folks-toronto",
+        "folks-bogota",
+        "folks-saguenay",
+        "folks-mumbai",
+        "folks-burbank",
+        "folks-new-york",
+        "folks-atlanta",
+        "folks-vancouver"
+      ]
     }
   }
 }

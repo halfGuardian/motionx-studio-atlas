@@ -1,0 +1,99 @@
+{
+  "run_id": 42160730347,
+  "inspection_job": 127705498507,
+  "sources": [
+    {
+      "id": "dneg-studios",
+      "url": "https://www.dneg.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 19,
+      "body_sha256": "8549c6980ed7da0e36babc763a7e3272d845d6e28def0791b37fdf4e8d017213",
+      "extraction_hash": "7de34df5b2f7bc0b8e96a446699d47c34651e3bbc57979e740be5c5b89b54c29"
+    },
+    {
+      "id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "0fb61393ce76f21c4c6521462527a04b0b55a382aebf985921774e01032b929d",
+      "extraction_hash": "99b2a3fd25b58fb17555e673f2e10afa1309a62c367c4ee7e9f39f29893f9fb2"
+    },
+    {
+      "id": "framestore-locations",
+      "url": "https://www.framestore.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 7,
+      "body_sha256": "3de76647ddd66ef2c03328ed391d12deb766d9d80772bd903309a5b41e5d85d3",
+      "extraction_hash": "c939e4cbae02bf6f8237328e725fd9ccd6e067bb5245e7b30ebcdc714e73be41"
+    },
+    {
+      "id": "remedy-locations",
+      "url": "https://www.remedygames.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 2,
+      "body_sha256": "bba2fd23308297ffe8d8912cadcbed1a08cb11cab7f8706c672640e0bcc2cea5",
+      "extraction_hash": "335c8b164aa7a238942298a9fe81c8a4e10c012f944531dcd745c2210f28e1ac"
+    },
+    {
+      "id": "larian-locations",
+      "url": "https://larian.com/careers",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 6,
+      "body_sha256": "a5197fdb4720068c7d05364bf665832d69059a0fe07747c283875984c4bd059f",
+      "extraction_hash": "fcdc52cfb651792ed083d22ec55aaa3a02cc1ca519bcfa6f2bcda0ac28ef1201"
+    },
+    {
+      "id": "rise-locations",
+      "url": "https://www.risefx.com/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "6eeb805e94dbe6badd79fb72d5bdca00dd27ba63e4b59a96696711e302d8d24b",
+      "extraction_hash": "f54460442d0f70e4ea97104da600b6ad646c9c5439f5b49920b191e0d9fc91e1"
+    },
+    {
+      "id": "outpost-locations",
+      "url": "https://www.outpost-vfx.com/en/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "9ed98b37b0b84e46e0d772f88d56778faf7cac8885ff60914e1469fdf52b3246",
+      "extraction_hash": "5d416b3829d0d8ace369a7363b86e6c53f0aa26901d0896365ce7e34c3c0a8cb"
+    },
+    {
+      "id": "flyingbark-locations",
+      "url": "https://www.flyingbark.com.au/about",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "ea580ec0c2626785b3b13cde41916a5f35074b35b33170b518835c9eada77949",
+      "extraction_hash": "0d054afcf29aeefcd8c361c7f76abf20386802c52facf04b70138f79ca07ea3d"
+    },
+    {
+      "id": "folks-locations",
+      "url": "https://folksvfx.com/contact/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 10,
+      "body_sha256": "2f3e9e2000e0d7385817fc8ca9e0c332c633cdf30ada5dee13934e59c1db5da8",
+      "extraction_hash": "f083a8c8c3f323cca76f492031f0bfe87ff002a2101e108cb8f05d7e0e2b6952"
+    }
+  ],
+  "candidate_counts": {
+    "already_represented": 55,
+    "potentially_new": 44,
+    "irrelevant": 25,
+    "requires_research": 48
+  },
+  "continuity": {
+    "retained": 133,
+    "history_snapshots": 3
+  },
+  "published_records": 0,
+  "approved_claims": 0
+}

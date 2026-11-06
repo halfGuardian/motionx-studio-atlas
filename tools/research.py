@@ -40,7 +40,8 @@ def dossier(queue,source_report,database,config,records=(),as_of=None):
         if not c.get('city') or not c.get('country'):risks.append('City/country not present in observation; research required.')
         matching=[by_id[i] for i in routed_candidate['matched_location_ids']]
         claims=[{'claim':term,'status':'unverified_source_term','source':c['url'],'requires_site_verification':True} for term in c.get('claim_terms',[])]
-        proposals.append({'candidate_id':c['id'],'candidate_hash':digest(c),'organisation_name':source.get('organisation_name') or c.get('hint_company_id') or 'Identity unresolved',
+        backlog_name=c['label'].partition(' — ')[0] if c.get('source_kind')=='manual_backlog' else ''
+        proposals.append({'candidate_id':c['id'],'candidate_hash':digest(c),'organisation_name':source.get('organisation_name') or c.get('hint_company_id') or backlog_name or 'Identity unresolved',
                           'candidate_location_name':c['label'],'city':c.get('city',''),'country':c.get('country',''),
                           'place_status':'unverified_source_reference' if c.get('city') else 'unknown',
                           'parent_relationships':{'status':'unverified_hint','values':source.get('parent_hints',[])},
@@ -55,6 +56,8 @@ def dossier(queue,source_report,database,config,records=(),as_of=None):
     return {'version':1,'as_of':today.isoformat(),'publication_mode':'human_review_and_manual_merge_of_exact_GitHub_PR',
             'queue_hash':digest(queue),'database_hash':digest(database),'source_report_hash':digest(source_report),
             'sources':source_report.get('sources',[]),'candidate_counts':routed['counts'],'dossiers':proposals,'record_changes':changes,
+            'source_access':[{'id':s['id'],'enabled':s['enabled'],'review':s.get('access_review',{}),
+                              'disabled_reason':s.get('disabled_reason','')} for s in config['sources']],
             'approved_claims':0,'published_records':0,'warning':'Source terms, schema checks and link clicks are not human approval or independent business verification.'}
 
 
@@ -96,6 +99,11 @@ def review_html(report):
             body.append('</details>')
         body.append('</section>')
     body.append('<h2>Source collection status</h2><pre>'+esc(json.dumps(report['sources'],ensure_ascii=False,indent=2))+'</pre>')
+    body.append('<h2>Source access review — no automatic permission grants</h2><table><thead><tr><th>Source</th><th>Collection</th><th>Review / restrictions</th></tr></thead><tbody>')
+    for source in report.get('source_access',[]):
+        review=source['review'];urls=review.get('policy_urls') or ([review['url']] if review.get('url') else [])
+        body.append('<tr><th>'+esc(source['id'])+'</th><td>'+('Enabled; runtime robots mandatory' if source['enabled'] else 'Disabled')+'</td><td>'+esc(review.get('note') or source['disabled_reason'])+'<ul>'+''.join('<li>'+link(u)+'</li>' for u in urls)+'</ul></td></tr>')
+    body.append('</tbody></table>')
     return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><title>MotionX research review</title><style>body{font:16px/1.5 system-ui;background:#101722;color:#eef2f7;max-width:1100px;margin:2rem auto;padding:0 1rem}a{color:#9ed7ff}details{background:#1c2636;border:1px solid #546070;padding:1rem;margin:1rem 0;border-radius:8px}summary{cursor:pointer;font-weight:650}summary:focus-visible,a:focus-visible{outline:3px solid #ffdf6f;outline-offset:4px}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;table-layout:fixed}td,th{border:1px solid #6d7b90;padding:.5rem;vertical-align:top;text-align:left;overflow-wrap:anywhere}dt{font-weight:700}dd{margin-bottom:.5rem}</style><main>'+''.join(body)+'</main></html>'
 
 
