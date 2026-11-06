@@ -9,6 +9,7 @@ import bulk_ingest as bulk
 import bulk_batch as batch
 import bulk_archive as archive
 import bulk_catalog as catalog
+import bulk_snapshot as snapshot
 from discovery import read,write,digest
 
 def policy():
@@ -69,6 +70,10 @@ class BulkTests(unittest.TestCase):
         self.snapshot([place()]);write(self.root/'input/overture/places-00000.json',[])
         with self.assertRaisesRegex(ValueError,'hash'):self.run_ingest()
         self.assertFalse((self.root/'out1').exists())
+    def test_conflicting_source_versions_are_audited_not_silently_coalesced(self):
+        self.snapshot([place()]);self.snapshot([place(name='Conflicting facility name')],'places-00001')
+        result=self.run_ingest();self.assertEqual(result['candidate_classes'],{'C':1});self.assertEqual(result['conflicting_source_identities'],1);self.assertEqual(result['duplicate_source_observations_coalesced'],0)
+        c=json.loads((self.root/'out1/candidates.jsonl').read_text());self.assertEqual(len(c['conflicting_source_versions']),2)
     def test_disabled_source_not_processed_and_policy_required(self):
         self.snapshot([place()]);self.config['sources'][0]['enabled']=False
         self.assertEqual(self.run_ingest()['raw_source_records'],0)
@@ -90,6 +95,11 @@ class BulkTests(unittest.TestCase):
     def test_no_official_source_claim_from_fallback_listing(self):
         r=bulk.normalize_overture(place(websites=[]),'2026-11-06',policy())
         self.assertEqual(r['website_kind'],'source_listing');self.assertEqual(r['website'],r['evidence_urls'][0])
+    def test_overture_confidence_metadata_inherits_paired_provider_licence(self):
+        raw=place();raw['sources'].append({'dataset':'Overture','property':'/properties/confidence'})
+        r=bulk.normalize_overture(raw,'2026-11-06',policy());self.assertEqual(r['class'],'B');self.assertEqual(r['license'],'CDLA-Permissive-2.0')
+        raw['sources'].append({'dataset':'Overture-signals','property':'/properties/operating_status'})
+        self.assertEqual(bulk.normalize_overture(raw,'2026-11-06',policy())['class'],'C')
 
 class NetworkTests(unittest.TestCase):
     def test_robots_denial_stops_before_query_no_fallback(self):
@@ -124,6 +134,7 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(r['accepted_observations'],1);self.assertEqual(len(r['rejected']),1)
             result=bulk.ingest(root/'input',root/'out',{'sources':[policy]},[])
             self.assertEqual(result['candidate_classes'],{'B':1})
+            self.assertEqual(result['raw_source_records'],2);self.assertEqual(result['retained_source_observations'],1);self.assertEqual(result['rejected_malformed_records'],1);self.assertTrue(result['acquisition_complete'])
             with (root/'batch.csv').open('w',newline='') as f:
                 w=csv.DictWriter(f,fieldnames=list(row));w.writeheader();w.writerow({**row,'sectors':'Animation'})
             r=batch.prepare(root/'batch.csv',root/'csv',policy['id'],{'sources':[policy]},'2026-11-06')
@@ -165,5 +176,28 @@ class CatalogueArchiveTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'integrity'):archive.restore(self.root/'archive',self.root/'restored')
         self.assertFalse((self.root/'restored').exists());path.unlink()
         with self.assertRaises(FileNotFoundError):archive.restore(self.root/'archive',self.root/'restored')
+    def test_disappearing_records_or_changed_sources_never_delete_existing_b(self):
+        self.snapshot([place()]);self.run_ingest();write(self.root/'base.json',read(ROOT/'studios.json'));records=read(self.root/'out1/proposed-b.json')
+        first=self.root/'public1';catalog.build(records,self.root/'base.json',first,'policy','run1')
+        second=self.root/'public2';m=catalog.build([],self.root/'base.json',second,'policy','failed-source',first)
+        self.assertEqual(m['counts']['class_b'],1);self.assertEqual(catalog.existing_catalog(second),records)
+        changed=[{**records[0],'name':'Unreviewed new name'}];third=self.root/'public3';catalog.build(changed,self.root/'base.json',third,'policy','run3',second)
+        self.assertEqual(catalog.existing_catalog(third),records);self.assertEqual(len(read(third/'audit.json')['incremental_audit']['updates_deferred']),1)
+        fourth=self.root/'public4';catalog.build(records,self.root/'base.json',fourth,'policy','repeat',third)
+        self.assertEqual(read(fourth/'index.json'),read(first/'index.json'))
+    def test_duplicate_reports_bound_pair_detail_without_discarding_records(self):
+        from validate import DuplicateIndex
+        index=DuplicateIndex([{'id':'same-'+str(i),'company_id':'same','name':'same','city':'City','country':'Country','website':'https://example.test'} for i in range(1000)])
+        matches=index.matches({'id':'other','company_id':'same','name':'same','city':'City','country':'Country','website':'https://example.test'})
+        self.assertEqual(len(matches),20);self.assertEqual(matches[0]['additional_group_matches']['website/city'],980)
+    def test_public_projection_withholds_unresolved_overlay_but_preserves_identity_hash(self):
+        raw=place();raw['sources']+=[{'dataset':'Overture','property':'/properties/confidence'},{'dataset':'Overture-signals','property':'/properties/operating_status'}];self.snapshot([raw])
+        report=snapshot.project(self.root/'input',self.root/'safe');self.assertEqual(report['status_overlays_withheld'],1)
+        clean=read(self.root/'safe/overture/places-00000.json')[0];self.assertEqual(clean['source_record_id'],raw['source_record_id']);self.assertEqual(clean['original_observation_hash'],digest(raw))
+        self.assertIsNone(clean['operating_status']);self.assertNotIn('Overture-signals',[s['dataset'] for s in clean['sources']])
+        self.assertEqual(bulk.normalize_overture(clean,'2026-11-06',policy())['class'],'C')
+    def test_municipality_alias_near_existing_city_reference_is_deferred(self):
+        self.snapshot([place(city='Neighbouring Municipality')]);base=[{'id':'existing','company_id':'existing-org','name':'Test Production','city':'Marketed Metro','country':'New Zealand','website':'https://example.test','lat':20.1,'lng':10.1}]
+        r=self.run_ingest(base=base);self.assertEqual(r['candidate_classes'],{'C':1});self.assertEqual(r['potential_existing_duplicates'],1)
 
 if __name__=='__main__':unittest.main()

@@ -37,6 +37,7 @@ def main():
         (site/'index.html').write_text((site/'index.html').read_text().replace('<html lang="en">','<html lang="en" data-catalog="sharded">'))
         rows=[fixture(i) for i in range(50000)]
         (site/'data').mkdir();manifest=build(rows,site/'studios.json',site/'data/public','a'*64,'synthetic-benchmark')
+        shutil.copytree(ROOT/'data/bulk/LICENSES',site/'data/bulk/LICENSES')
         server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(root)));threading.Thread(target=server.serve_forever,daemon=True).start()
         url=f'http://127.0.0.1:{server.server_port}/atlas/'
         try:

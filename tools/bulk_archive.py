@@ -11,9 +11,9 @@ def archive(source,review,destination,run_id):
     destination=Path(destination)
     if destination.exists():raise ValueError('immutable archive destination already exists')
     destination.mkdir(parents=True);files=[]
-    for label,folder in [('snapshots',Path(source)),('review',Path(review))]:
+    for label,folder in [('snapshots',Path(source)),('review',Path(review)),('licences',Path(__file__).resolve().parents[1]/'data/bulk/LICENSES')]:
         for path in sorted(folder.rglob('*')):
-            if not path.is_file() or path.is_symlink() or path.suffix not in ('.json','.jsonl','.csv','.html','.sqlite'):continue
+            if not path.is_file() or path.is_symlink() or path.suffix not in ('.json','.jsonl','.csv','.html','.sqlite','.txt'):continue
             relative=Path(label)/path.relative_to(folder)
             raw=path.read_bytes();packed=gzip.compress(raw,mtime=0)
             if len(packed)>40_000_000:raise ValueError('archive object too large; shard the research source before archiving')
@@ -30,9 +30,9 @@ def restore(source,destination):
     staged=[]
     for f in m['files']:
         path=Path(f['path'])
-        if path.is_absolute() or '..' in path.parts or path.parts[0] not in ('snapshots','review') or path.suffix!='.gz':raise ValueError('unsafe archive path')
+        if path.is_absolute() or '..' in path.parts or path.parts[0] not in ('snapshots','review','licences') or path.suffix!='.gz':raise ValueError('unsafe archive path')
         object_path=source/path
-        if object_path.is_symlink():raise ValueError('archive symlink rejected')
+        if object_path.is_symlink() or not object_path.resolve().is_relative_to(source.resolve()):raise ValueError('archive symlink/path escape rejected')
         data=object_path.read_bytes()
         if hash_bytes(data)!=f['sha256']:raise ValueError('archive object integrity mismatch')
         if not 0<=f['bytes']<=300_000_000:raise ValueError('archive decompression limit')

@@ -5,20 +5,26 @@ Optional acquisition dependency: duckdb==1.4.3. The ingestion/ledger tools remai
 standard-library only. Column projection excludes phones, emails, people and street
 addresses. The Places theme has no OSM data; do not use other Overture themes here.
 """
-import argparse,hashlib,json,re,time
+import argparse,hashlib,json,re,time,socket,ipaddress
 from datetime import date
 from pathlib import Path
 from urllib import request,parse
 import xml.etree.ElementTree as ET
 from discovery import read,write,digest
+from bulk_snapshot import safe_website
+from bulk_collect import SameOrigin
 
 BUCKET='https://overturemaps-us-west-2.s3.amazonaws.com'
 RELEASE='2026-10-21.0'
 CANDIDATE_PATTERN=r'(film|movie|video|television).*(produc|studio)|animat|visual_effect|game_develop|game_studio|motion_capture|performance_capture|virtual_production|post_produc|sound_stage|cinematic'
 
 def metadata(url):
+    parts=parse.urlsplit(url)
+    if parts.scheme!='https' or parts.hostname!='overturemaps-us-west-2.s3.amazonaws.com' or parts.username or parts.password or parts.port not in (None,443):raise ValueError('unapproved dataset origin')
+    answers=socket.getaddrinfo(parts.hostname,443,type=socket.SOCK_STREAM)
+    if not answers or any(not ipaddress.ip_address(a[4][0]).is_global for a in answers):raise ValueError('nonpublic dataset DNS')
     req=request.Request(url,headers={'User-Agent':'MotionXBulkResearch/1.1 (https://github.com/halfGuardian/motionx-studio-atlas)','Accept':'application/xml,application/json'})
-    with request.urlopen(req,timeout=60) as r:
+    with request.build_opener(SameOrigin(parts.hostname)).open(req,timeout=60) as r:
         body=r.read(8_000_001)
         if len(body)>8_000_000:raise ValueError('listing metadata exceeds limit')
         return body
@@ -80,7 +86,7 @@ def run(output,release=RELEASE):
             if not values:break
             cleaned=[]
             for values_row in values:
-                r=dict(zip(columns,values_row));r['addresses']=[{k:a.get(k) for k in ('locality','region','country')} for a in r.get('addresses') or []]
+                r=dict(zip(columns,values_row));r['websites']=[u for u in r.get('websites') or [] if safe_website(u)];r['addresses']=[{k:a.get(k) for k in ('locality','region','country')} for a in r.get('addresses') or []]
                 r['sources']=[{k:s.get(k) for k in ('property','dataset','record_id','update_time','confidence')} for s in r.get('sources') or []]
                 cleaned.append(r)
             key=f'places-{page:05d}';path=folder/(key+'.json');meta=folder/(key+'.meta.json')

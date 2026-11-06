@@ -103,15 +103,15 @@ function locationProfile(s){
   }).join('');
   return `<div class="eyebrow">STUDIO LOCATION</div><h2 id="profileTitle" tabindex="-1">${esc(s.name)}</h2>
     <p class="muted">${esc(s.city)}, ${esc(s.country)}</p>
-    <p>${profileLink('organisation',org.id,org.name)} · ${countLabel(org.rows.length,'location')} in this operating organisation</p>
+    <p>${profileLink('organisation',org.id,org.name)} · ${countLabel(org.rows.length,'location')} in this ${s.identity_status==='source_provisional'?'provisional source identity':'operating organisation'}</p>
     <span class="stat">${s.evidence_class==='B'?'Class B — Source-listed, not independently corroborated':s.evidence_state==='confirmed'?'Class A — Source-reviewed location':'Legacy evidence unknown'} · Evidence confidence: ${esc(s.evidence_state)}</span><span class="stat">${esc((s.location_type||'uncertain').replaceAll('_',' '))}</span>
     <p class="source-note muted">${esc(s.status)}</p>
     <h3>Source-confirmed capabilities</h3>${capabilities('confirmed')?'<ul>'+capabilities('confirmed')+'</ul>':'<p class="muted">No facility capability is confirmed in the recorded evidence.</p>'}
     ${capabilities('likely')?'<h3>Likely capabilities</h3><ul>'+capabilities('likely')+'</ul>':''}
     ${capabilities('unknown')?'<h3>Unreviewed capabilities</h3><ul>'+capabilities('unknown')+'</ul>':''}
     <h3>Specialisations & location</h3><p>${s.categories.map(c=>`<span class="tag">${esc(c)}</span>`).join('')}</p>
-    <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.evidence_class==='B'?'Original directory point source':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':'Official website')}</dd></dl>
-    <h3>Evidence & review</h3><p>${external(s.evidence,'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
+    <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.evidence_class==='B'?'Original directory point source':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':s.evidence_class==='B'?'Website listed by source':'Official website')}</dd></dl>
+    <h3>Evidence & review</h3><p>${external(s.evidence,s.evidence_class==='B'?'Directory dataset (GeoParquet)':'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
     <h3>Organisation relationships</h3>${relationshipList([s])}
     ${s.evidence_class==='B'?'<h3>Directory provenance & reuse</h3><p class="source-note">Current operation, physical facility type and services have not been independently corroborated. The source category is not a verified capability. Observed: '+esc(s.source_observed_on)+'. Identity: '+esc(s.identity_status.replaceAll('_',' '))+'</p><ul>'+s.source_provenance.map(p=>'<li>'+esc(p.source_id+' / '+p.source_record_id)+' · '+external(p.url,'Source object')+' · '+external(p.license_url,p.license)+' · '+esc(p.observed_on)+'</li>').join('')+'</ul><p class="muted">'+esc(s.attribution)+'</p>':''}
     <h3>Other branches & facilities</h3>${branches.length?branchLinks(branches):'<p class="muted">No other branch is currently listed under this operating identity.</p>'}
@@ -123,13 +123,14 @@ function organisationProfile(id){
   const org=directory.organisations.get(id),group=directory.groups.get(id);
   if(!org&&!group)return null;
   const rows=org?org.rows:[...group.members].flatMap(key=>directory.organisations.get(key).rows);
+  const provisional=rows.every(r=>r.evidence_class==='B'&&r.identity_status==='source_provisional');
   const name=org?org.name:group.name;
   const related=org?D.relatedOrganisations(directory,id):[...group.members].map(key=>directory.organisations.get(key));
-  return `<div class="eyebrow">${org?'OPERATING ORGANISATION':'SOURCED PARENT / GROUP'}</div><h2 id="profileTitle" tabindex="-1">${esc(name)}</h2>
+  return `<div class="eyebrow">${provisional?'PROVISIONAL SOURCE IDENTITY':org?'OPERATING ORGANISATION':'SOURCED PARENT / GROUP'}</div><h2 id="profileTitle" tabindex="-1">${esc(name)}</h2>
     <p class="muted">${countLabel(rows.length,'location')} · ${countLabel(new Set(rows.map(r=>r.country)).size,'country')}</p>
-    <p class="source-note">${org?'Locations share this stable operating identity. Capabilities remain specific to each facility.':'These are separate operating brands linked by cited ownership/group relationships. This group is not counted as an additional operating studio.'}</p>
+    <p class="source-note">${provisional?'This provisional source grouping uses directory names and links. Operating identity, physical branches and ownership require research. Grouping confirms no facility services.':org?'Locations share this stable operating identity. Capabilities remain specific to each facility.':'These are separate operating brands linked by cited ownership/group relationships. This group is not counted as an additional operating studio.'}</p>
     ${org?'<h3>Parent & group evidence</h3>'+relationshipList(rows):''}
-    <h3>${org?'Branches & facilities':'Locations across operating brands'}</h3><div id="organisationBranches">${branchLinks(rows,50)}</div>
+    <h3>${provisional?'Source-listed locations':org?'Branches & facilities':'Locations across operating brands'}</h3><div id="organisationBranches">${branchLinks(rows,50)}</div>
     ${rows.length>50?`<button id="moreBranches" data-org="${esc(id)}" data-offset="50">Show more locations</button>`:''}
     <h3>${org?'Related operating brands':'Operating brands'}</h3>${related.length?'<ul class="branch-list">'+related.map(o=>`<li>${profileLink('organisation',o.id,o.name+' · '+countLabel(o.rows.length,'location'))}</li>`).join('')+'</ul>':'<p class="muted">No related operating brand is established in the recorded ownership evidence.</p>'}
     <p class="muted">Grouping is based on cited relationships; related brands do not inherit each other’s services.</p>
@@ -174,7 +175,7 @@ for(const id of ['search','country','city','category','locationType','evidenceCl
 for(const mode of ['locations','organisations'])$(mode+'View').onclick=()=>{viewMode=mode;page=0;for(const m of ['locations','organisations'])$(m+'View').setAttribute('aria-pressed',String(m===mode));renderList();};
 $('previousPage').onclick=()=>{page--;renderList();};$('nextPage').onclick=()=>{page++;renderList();};
 $('fitResults').onclick=()=>{if(matches.length&&map)map.fitBounds(L.latLngBounds(matches.map(r=>[r.lat,r.lng])).pad(.25),{maxZoom:10,animate:false});};
-$('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const rows=catalog?await catalog.exportRows(snapshot):snapshot;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows)],{type:'text/csv;charset=utf-8'}));a.download='motionx_studios_filtered_v1.0.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
+$('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const bundle=catalog?await catalog.exportBundle(snapshot):{rows:snapshot};const rows=bundle.rows;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows,bundle)],{type:'text/csv;charset=utf-8'}));a.download='motionx_studios_filtered_v1.0.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
 window.addEventListener('resize',()=>setTimeout(()=>map?.invalidateSize(),80));
 function setControls(enabled){document.querySelectorAll('#filters input,#filters select,#exportCsv,#resetFilters,#fitResults,#locationsView,#organisationsView,#previousPage,#nextPage').forEach(el=>{el.disabled=!enabled;});if(!map)$('fitResults').disabled=true;}
 async function initialize(){
@@ -188,7 +189,7 @@ async function initialize(){
     }
     loaded=true;page=0;setControls(true);render();$('dataStatus').hidden=true;timings.ready_ms=performance.now()-start;applyRoute();
   }catch(error){studios=[];matches=[];markerGroups=[];directory=null;layer?.clearLayers();$('count').textContent='Studio data unavailable';$('companies').textContent='';$('list').textContent='No records loaded. Retry when the database is available.';
-    $('dataStatus').firstChild.textContent=`Unable to load studios.json. ${error.name==='AbortError'?'Request timed out.':error.message} Serve this site over HTTP and check your connection. `;$('retryLoad').hidden=false;console.error('MotionX database load failed:',error);
+    $('dataStatus').firstChild.textContent=`${document.documentElement.dataset.catalog==='sharded'?'Unable to load studio catalogue.':'Unable to load studios.json.'} ${error.name==='AbortError'?'Request timed out.':error.message} Serve this site over HTTP and check your connection. `;$('retryLoad').hidden=false;console.error('MotionX database load failed:',error);
   }
 }
 $('retryLoad').onclick=initialize;initialize();

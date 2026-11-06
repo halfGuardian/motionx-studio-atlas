@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from discovery import ROOT,digest,read,write
 from validate import normalized,url_valid,DuplicateIndex,validate
+from bulk_snapshot import safe_website
 
 COUNTRIES=read(ROOT/'data/bulk/country-codes.json')['codes']
 ALIASES={'usa':'United States','unitedstatesofamerica':'United States','uk':'United Kingdom','czechrepublic':'Czechia','republicofkorea':'South Korea','russianfederation':'Russia','vietnam':'Vietnam','cotedivoire':'Côte d’Ivoire','türkiye':'Türkiye','turkey':'Türkiye'}
@@ -39,9 +40,19 @@ def domains(rows):
     for r in rows:
         for name in [r['name'],r.get('company_name',''),r['company_id'],r['name'].partition(' — ')[0]]:
             if name:by_name[normalized(name)].add(r['company_id'])
-        try:by_domain[(urlsplit(r['website']).hostname or '').removeprefix('www.')].add(r['company_id'])
+        try:
+            h=(urlsplit(r['website']).hostname or '').removeprefix('www.')
+            if r.get('website_kind')!='source_listing' and h and h not in SHARED_HOSTS:by_domain[h].add(r['company_id'])
         except ValueError:pass
     return by_name,by_domain
+
+SHARED_HOSTS={'facebook.com','instagram.com','linkedin.com','youtube.com','youtu.be','tiktok.com','linktr.ee','sites.google.com','overturemaps-us-west-2.s3.amazonaws.com'}
+
+def near(a,b,km=80):
+    if any(type(r.get(k)) not in (int,float) for r in (a,b) for k in ('lat','lng')):return False
+    lat1,lat2=math.radians(a['lat']),math.radians(b['lat']);dl=math.radians(a['lng']-b['lng']);dp=lat1-lat2
+    distance=6371*2*math.asin(min(1,math.sqrt(math.sin(dp/2)**2+math.cos(lat1)*math.cos(lat2)*math.sin(dl/2)**2)))
+    return distance<=km
 
 def normalize_wikidata(raw,observed,policy):
     qid=raw['source_record_id'];types={u.rsplit('/',1)[-1] for u in raw.get('types',[])}
@@ -114,22 +125,31 @@ def normalize_overture(raw,observed,policy):
     sector=policy.get('eligible_categories',{}).get(category)
     if not sector:reasons.append('category not yet reviewed as an eligible production business/facility; research only')
     if raw.get('operating_status') in ('permanently_closed','temporarily_closed'):reasons.append('directory has a closure signal; requires research, never closes an existing published location')
-    if type(raw.get('confidence')) not in (float,int) or not math.isfinite(raw['confidence']) or not .9<=raw['confidence']<=1:reasons.append('provider existence confidence below 0.9 or unavailable; not an independent verification score')
-    name=raw.get('name','');coords=wkb_point(raw.get('geometry_wkb'))
+    threshold=policy.get('minimum_provider_confidence',.9)
+    if not .9<=threshold<=1:raise ValueError('relaxing the reviewed 0.9 existence-quality floor requires a code/policy review')
+    if type(raw.get('confidence')) not in (float,int) or not math.isfinite(raw['confidence']) or not threshold<=raw['confidence']<=1:reasons.append('provider existence confidence below '+str(threshold)+' or unavailable; not an independent verification score')
+    name=raw.get('name') if isinstance(raw.get('name'),str) else '';coords=wkb_point(raw.get('geometry_wkb'))
     if not coords:reasons.append('exact source Point geometry missing; bbox/city coordinates not substituted')
     addresses=raw.get('addresses') or []
     countries=list(dict.fromkeys(country(a.get('country')) for a in addresses if country(a.get('country'))))
     if len(countries)!=1:reasons.append('country absent or conflicting in the source')
-    cities=list(dict.fromkeys(a.get('locality') for a in addresses if a.get('locality')))
-    if len(cities)>1:reasons.append('conflicting source municipalities require review')
+    cities=list(dict.fromkeys(a['locality'].strip() for a in addresses if isinstance(a.get('locality'),str) and a['locality'].strip()))
+    if len(cities)!=1:reasons.append('source municipality absent or conflicting; no invented city or bulk reverse-geocoding')
     city=cities[0] if len(cities)==1 else 'Municipality not supplied'
     if not isinstance(name,str) or not name.strip():reasons.append('operating/facility name missing')
     providers=raw.get('sources') or []
-    licences=sorted({PROVIDER_LICENSES.get(normalized(s.get('dataset','')),'unresolved') for s in providers})
+    if raw.get('withheld_overlays'):reasons.append('source-provider status-overlay redistribution mapping unresolved; payload withheld and candidate remains research-only')
+    # Official October 2026 licence table lists each original provider together
+    # with Overture under that provider's licence. Confidence-only Overture
+    # transformation metadata is not a separate content provider. Unknown status
+    # overlays remain unresolved; do not invent a licence for Overture-signals.
+    content_providers=[s for s in providers if not (s.get('dataset')=='Overture' and s.get('property')=='/properties/confidence')]
+    licences=sorted({PROVIDER_LICENSES.get(normalized(s.get('dataset') or ''),'unresolved') for s in content_providers})
     if not licences or 'unresolved' in licences:reasons.append('source-provider redistribution licence unresolved')
-    website=next((u for u in raw.get('websites') or [] if url_valid(u)),None)
+    website=next((u for u in raw.get('websites') or [] if url_valid(u) and safe_website(u)),None)
     source=raw['filename']
-    if not source.startswith('https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy['release']+'/theme=places/type=place/') or not source.endswith('.parquet'):raise ValueError('unapproved source object path')
+    prefix='https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy['release']+'/theme=places/type=place/'
+    if not source.startswith(prefix) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*\.parquet',source[len(prefix):]):raise ValueError('unapproved source object path')
     organisation='overture-org-'+digest([normalized(name),(urlsplit(website).hostname or '').removeprefix('www.')])[:24] if website else 'overture-org-'+digest(rid)[:24]
     return {'candidate_id':'overture-'+re.sub('[^a-z0-9]+','-',rid.lower()).strip('-'),'source_record_id':rid,'source_id':'overture','organisation_key':organisation,
         'name':name,'city':city,'country':countries[0] if len(countries)==1 else '', 'lat':coords[0] if coords else None,'lng':coords[1] if coords else None,
@@ -184,14 +204,15 @@ def inputs(folder,policies):
                 if sid=='wikidata':r={**r,'physical_facility':meta.get('class')=='Q21550789'}
                 yield sid,r,meta
 
-def ingest(folder,output,config,base,ledger=None):
+def ingest(folder,output,config,base,ledger=None,existing=()):
     output=Path(output)
     if output.exists():raise ValueError('fresh output directory required; reuse --ledger for incremental history')
     policies=source_policy(config);db=sqlite3.connect(ledger or ':memory:');db.executescript(SCHEMA)
-    grouped={};dates={};raw_count=0;source_counts=Counter();repeat=0;observed=date.today().isoformat();hashes=[]
+    grouped={};dates={};conflicts=defaultdict(list);raw_count=0;source_counts=Counter();repeat=0;observed=date.today().isoformat();hashes=[];unique_versions=set()
     with db:
         for sid,r,meta in inputs(Path(folder),policies):
             raw_count+=1;source_counts[sid]+=1;key=r['source_record_id'];h=digest(r);observed=meta['observed_on'];hashes.append(digest([sid,key,h,observed]))
+            unique_versions.add((sid,key,h))
             cursor=db.execute('INSERT OR IGNORE INTO observations VALUES(?,?,?,?,?,?)',(sid,key,h,observed,observed,json.dumps(r,ensure_ascii=False)))
             if not cursor.rowcount:repeat+=1
             db.execute('UPDATE observations SET first_seen=min(first_seen,?),last_seen=max(last_seen,?) WHERE source=? AND source_key=? AND content_hash=?',(observed,observed,sid,key,h))
@@ -203,21 +224,38 @@ def ingest(folder,output,config,base,ledger=None):
                     for value in r.get(field,[]):
                         if value not in g[field]:g[field].append(value)
                 g['physical_facility']=g.get('physical_facility',False) or r.get('physical_facility',False)
-        run=digest([sorted(hashes),digest(base),digest(config)])
+            elif grouped[sid,key]!=r:
+                conflicts[sid,key].append({'observation_hash':h,'observed_on':observed})
+        processor_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+        run=digest([sorted(hashes),digest(base),digest(config),digest(list(existing)),processor_hash])
         db.execute('INSERT OR IGNORE INTO runs VALUES(?,?,?,?,?)',(run,observed,digest(sorted(hashes)),digest(base),digest(config)))
-        names,hosts=domains(base);index=DuplicateIndex(base);decisions=[];proposed=[];dupes=[]
+        matching_base=base+list(existing);existing_by_id={r['id']:r for r in matching_base};names,hosts=domains(matching_base);index=DuplicateIndex(matching_base);decisions=[];proposed=[];dupes=[]
         for (sid,key),raw in sorted(grouped.items()):
             seen_on=dates[sid,key]
             adapter=policies[sid]['adapter']
             normalizer={'wikidata_sparql':normalize_wikidata,'overpass':normalize_osm,'overture_geoparquet':normalize_overture,'licensed_batch':normalize_batch}[adapter]
             c=normalizer(raw,seen_on,policies[sid]);c['observation_hash']=digest(raw)
-            company_matches=names.get(normalized(c['name']),set()) or hosts.get((urlsplit(c['website']).hostname or '').removeprefix('www.'),set())
+            if conflicts[sid,key]:
+                if c['class']=='B':c['reasons']=[]
+                c['class']='C';c['reasons'].append('conflicting versions share one source identity; no version selected for publication');c['conflicting_source_versions']=[{'observation_hash':digest(raw),'observed_on':seen_on}]+conflicts[sid,key]
+            identity_host=(urlsplit(c['website']).hostname or '').removeprefix('www.') if c['website_kind']=='official' else ''
+            company_matches=names.get(normalized(c['name']),set()) or hosts.get(identity_host,set())
             c['existing_organisation_matches']=sorted(company_matches)
+            previous=existing_by_id.get(c['candidate_id'])
+            if previous:
+                before={k:previous.get(k) for k in ('name','city','country','lat','lng','categories','source_observed_on')}
+                after={k:c.get(k) for k in ('name','city','country','lat','lng','source_observed_on')};after['categories']=c['sectors']
+                c['existing_record_change_proposal']={'id':previous['id'],'before_hash':digest(previous),'before':before,'observed_source_values':after,'changed_fields':[k for k in before if before[k]!=after[k]],'research_only':True,'approval_required':True}
             # Company matching is advisory; never merges distinct branches or inherits services.
             tentative={'id':c['candidate_id'],'company_id':next(iter(company_matches)) if len(company_matches)==1 else c['organisation_key'],'name':c['name'],'city':c['city'],'country':c['country'],'website':c['website']}
             match_row={**tentative,'website':c['website'] if c['website_kind']=='official' else ''}
             matches=index.matches(match_row) if c['city']!='Municipality not supplied' else []
+            # A city reference and a real municipality label may describe the same
+            # branch. Defer nearby same-organisation matches without merging pins.
+            if not matches and company_matches:
+                matches=[{'ids':[r['id'],c['candidate_id']],'reasons':['same organisation near an existing reference; metropolitan/municipality identity requires review']} for r in matching_base if r['company_id'] in company_matches and country(r['country'])==c['country'] and near(r,c)]
             if matches:
+                if c['class']=='B':c['reasons']=[]
                 c['class']='C';c['reasons'].append('possible existing location: source/city/name match is insufficient to overwrite or auto-merge a reviewed facility');c['potential_duplicates']=matches;dupes.append(c['candidate_id'])
             c['provenance']=[{'source_id':sid,'source_record_id':key,'url':u,'license':c['license'],'license_url':c['license_url'],'observed_on':seen_on,'observation_hash':c['observation_hash']} for u in c['evidence_urls']]
             c['publication_approved']=False;c['decision']='propose_source_listed' if c['class']=='B' else 'research_required'
@@ -229,7 +267,15 @@ def ingest(folder,output,config,base,ledger=None):
                 index.add(match_row)
             db.execute('INSERT OR IGNORE INTO decisions VALUES(?,?,?,?,?)',(run,c['candidate_id'],c['class'],c['decision'],json.dumps(c,ensure_ascii=False)));decisions.append(c)
     counts=Counter(c['class'] for c in decisions)
-    report={'version':1,'run_id':run,'observed_on':observed,'raw_source_records':raw_count,'source_records':dict(source_counts),'unique_candidate_identities':len(decisions),'unique_location_references':sum(c['is_location_reference'] for c in decisions),'organisation_leads_without_physical_facility_evidence':sum(not c['is_location_reference'] for c in decisions),'duplicate_source_observations_coalesced':raw_count-len(decisions),'previously_seen_observation_versions':repeat,'potential_existing_duplicates':len(dupes),'candidate_classes':dict(counts),'proposed_public_additions':len(proposed),'baseline_locations_preserved':len(base),'baseline_hash':digest(base),'published_records':0,'approval':'human review of exact proposed files required; no source or classifier grants approval','sources':[{k:p.get(k) for k in ('id','license','license_url','attribution','endpoint','policy_urls','review')} for p in policies.values()],'reasons':dict(Counter(reason for c in decisions if c['class']=='C' for reason in c['reasons']))}
+    batch_path=Path(folder)/'batch-report.json'
+    batch_report=read(batch_path) if batch_path.exists() else {}
+    rejected=batch_report.get('rejected',[])
+    if batch_report and (batch_report.get('accepted_observations')!=raw_count or batch_report.get('raw_source_records')!=raw_count+len(rejected)):raise ValueError('batch report/snapshot record-count mismatch')
+    inventory=Path(folder)/'overture/category-inventory.json'
+    expected=sum(r['count'] for r in read(inventory) if r.get('selected_for_research')) if inventory.exists() else None
+    acquisition=Path(folder)/'overture-collection.json'
+    complete=read(acquisition).get('complete',False) if acquisition.exists() else None
+    report={'version':1,'run_id':run,'processor_hash':processor_hash,'observed_on':observed,'raw_source_records':raw_count+len(rejected),'retained_source_observations':raw_count,'source_records':dict(source_counts),'unique_candidate_identities':len(decisions),'unique_location_references':sum(c['is_location_reference'] for c in decisions),'organisation_leads_without_physical_facility_evidence':sum(not c['is_location_reference'] for c in decisions),'duplicate_source_observations_coalesced':raw_count-len(unique_versions),'conflicting_source_identities':sum(bool(v) for v in conflicts.values()),'previously_seen_observation_versions':repeat,'potential_existing_duplicates':len(dupes),'candidate_classes':dict(counts),'proposed_public_additions':len(proposed),'baseline_locations_preserved':len(base),'baseline_hash':digest(base),'existing_source_listed_preserved':len(existing),'expected_selected_source_records':expected,'acquisition_complete':(complete is True and (expected is None or expected==source_counts.get('overture',0))) or batch_report.get('complete',False) is True,'rejected_malformed_records':len(rejected),'rejected_record_audit':rejected,'deferred_candidates':counts.get('C',0),'proposed_countries':len({r['country'] for r in proposed}),'proposed_operating_identities':len({r['company_id'] for r in proposed}),'country_classes':{place:dict(Counter(c['class'] for c in decisions if c['country']==place)) for place in sorted({c['country'] for c in decisions})},'published_records':0,'approval':'human review of exact proposed files required; no source or classifier grants approval','sources':[{k:p.get(k) for k in ('id','license','license_url','attribution','endpoint','policy_urls','review')} for p in policies.values()],'reasons':dict(Counter(reason for c in decisions if c['class']=='C' for reason in c['reasons']))}
     output.mkdir(parents=True)
     write(output/'coverage.json',report);write(output/'proposed-b.json',proposed)
     with (output/'candidates.jsonl').open('w') as f:
@@ -240,8 +286,8 @@ def ingest(folder,output,config,base,ledger=None):
             text=json.dumps(value,ensure_ascii=False) if isinstance(value,list) else str(value)
             return "'"+text if re.match(r'^[\s\u200b\u200c\u200d]*[=+@-]',text) else text
         for c in decisions:w.writerow({k:safe(c[k]) for k in w.fieldnames})
-    rows=''.join('<tr><td>'+html.escape(c['name'])+'</td><td>'+html.escape(c['country'])+'</td><td>'+c['class']+'</td><td>'+html.escape('; '.join(c['reasons']))+'</td></tr>' for c in decisions)
-    (output/'coverage.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>MotionX bulk research</title><style>body{font:16px system-ui;background:#111824;color:#eef;padding:2rem}table{border-collapse:collapse}td,th{border:1px solid #789;padding:.5rem}pre{white-space:pre-wrap}</style><h1>Bulk acquisition review — no publication approved</h1><p>A: current site evidence. B: source-listed, not independently corroborated. C: research-only. Company leads are not physical studio counts.</p><pre>'+html.escape(json.dumps(report,indent=2))+'</pre><table><tr><th>Name</th><th>Country</th><th>Class</th><th>Reasons</th></tr>'+rows+'</table></html>')
+    from bulk_report import dashboard
+    dashboard(output/'coverage.html',report,decisions)
     if ledger:db.execute('PRAGMA wal_checkpoint(TRUNCATE)')
     db.close();print('BULK_COVERAGE '+json.dumps(report),flush=True);return report
 

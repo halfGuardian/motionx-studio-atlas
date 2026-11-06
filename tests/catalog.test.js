@@ -64,3 +64,10 @@ test('CSV carries class, source attribution and full provenance',async()=>{
   const s=await server(),catalog=await C.load(D,s.fetcher),rows=await catalog.exportRows(catalog.rows),csv=D.exportCSV(rows);
   assert.match(csv,/source_provenance/);assert.match(csv,/CC0-1.0/);assert.match(csv,/Test provider/);
 });
+test('CSV supplies full licence copies and fails closed when required notices are unavailable',async()=>{
+  const s=await server(),text='Test CC0 licence text\nThis is a fixture, not an acquired dataset.';
+  s.files.set('./data/bulk/LICENSES/CC0-1.0.txt',text);s.manifest.licence_files={'CC0-1.0.txt':{sha256:await C.sha(text)}};
+  s.files.set('./data/public/manifest.json',JSON.stringify(s.manifest));const catalog=await C.load(D,s.fetcher),bundle=await catalog.exportBundle(catalog.rows);
+  assert.match(D.exportCSV(bundle.rows,bundle),/Test CC0 licence text/);
+  s.files.delete('./data/bulk/LICENSES/CC0-1.0.txt');await assert.rejects(catalog.exportBundle(catalog.rows),/notices unavailable/);
+});

@@ -17,7 +17,21 @@
         "https://docs.overturemaps.org/attribution/"
       ],
       "review": "Official public bulk Places GeoParquet. Provider CDLA-Permissive-2.0/Apache-2.0/CC0 obligations preserved; complete projected category slices, no web scraping or source-API workaround. Places explicitly contains no OpenStreetMap data. Exclude unknown provider licences; include agreement texts and Foursquare NOTICE with derivative extracts. Only documented release objects; no personal contacts or street addresses.",
-      "attribution": "Overture Maps Foundation and original per-record providers; see data/bulk/LICENSES."
+      "attribution": "Overture Maps Foundation and original per-record providers; see data/bulk/LICENSES.",
+      "eligible_categories": {
+        "animation_studio": "Animation",
+        "movie_television_studio": "Film / Television Production",
+        "video_film_production": "Film / Video Production"
+      },
+      "category_review": {
+        "reviewed_on": "2026-11-06",
+        "evidence": "https://docs.overturemaps.org/guides/places/taxonomy/",
+        "actual_release_inventory_run": 42283891204,
+        "note": "Complete 88,418,121-place category inventory: 5,197 animation_studio; 18,621 movie_television_studio; 16,558 video_film_production. These source sectors do not imply VFX/game/capture services or a verified facility type. Broad game_publisher and broadcasting categories do not establish development/capture studios and are not published."
+      },
+      "derived_metadata_license_review": "Official October 2026 Places guide pairs original provider and Overture under the same licence. Confidence-only Overture transformation metadata inherits that listed provider licence. Overture-signals status overlays are not mapped to a licence and remain research-only pending clarification.",
+      "minimum_provider_confidence": 0.9,
+      "access_mode": "Officially documented public S3 dataset download/query; not website crawling. Do not interpret unrelated API robots denials as permission for those APIs."
     },
     {
       "id": "wikidata",
@@ -56,7 +70,7 @@
       ],
       "review": "One selective global tag query, not world-dump bounding-box stitching or per-element harvesting. Cache snapshot; no scheduled refresh by default. Stop at 429/denial and retain partial results. Runtime robots required. Derived source shards and their modification history stay separately distributed under ODbL, with visible attribution and license fields in export. No Nominatim bulk geocoding.",
       "publication_license": "ODbL-1.0",
-      "attribution": "\u00a9 OpenStreetMap contributors; data under ODbL 1.0 (https://www.openstreetmap.org/copyright).",
+      "attribution": "© OpenStreetMap contributors; data under ODbL 1.0 (https://www.openstreetmap.org/copyright).",
       "disabled_reason": "Runtime robots disallowed canonical API endpoint in Actions run 42282499526. No records collected; no alternative host or user-agent workaround."
     },
     {
@@ -100,6 +114,38 @@
       "enabled": false,
       "url": "https://www.ea.com/",
       "reason": "Previously prohibited automated collection; no permission obtained. No screenshots/OCR/alternate hosts."
+    },
+    {
+      "enabled": false,
+      "id": "prh-finland",
+      "url": "https://avoindata.prh.fi/en/info/swagger-ui",
+      "license": "CC-BY-4.0",
+      "reason": "Official open data grants CC BY 4.0 and programmatic use; registered companies/municipalities do not prove physical production studios. API parameters/current industry-code migration, runtime robots and field projection still require review. Disabled; no collection claimed."
+    },
+    {
+      "enabled": false,
+      "id": "animstudios",
+      "url": "https://animstudios.org/",
+      "reason": "Search index advertises CC BY 4.0 but live homepage returned HTTP 530 and robots could not be accessed during review. No live dataset/schema or rights chain confirmed; do not collect or claim its cached studio count."
+    },
+    {
+      "enabled": false,
+      "id": "korea-video-permits",
+      "url": "https://www.data.go.kr/data/15094974/fileData.do",
+      "license": "KOGL-Type-1",
+      "reason": "Official Yeongdeungpo video-production permit CSV lists attribution-only reuse. Bulk file endpoint, current operation, coordinate conversion EPSG:2097 and robots not fully validated. Mixed permit scope may include duplication businesses rather than studios; disabled pending adapter/review."
+    },
+    {
+      "enabled": false,
+      "id": "nyc-production-office-space",
+      "url": "https://catalog.data.gov/dataset/production-office-space",
+      "reason": "Official NYC dataset is last updated in 2018 and describes recording/sound space; current studio operation, screen-production eligibility and reuse terms require review. Disabled; historical directory not current verification."
+    },
+    {
+      "enabled": false,
+      "id": "game-dev-outsourcing",
+      "url": "https://www.gamedevoutsourcing.com/mcp",
+      "reason": "Provider explicitly offers CC BY 4.0 aggregates only and says per-company rows are not available as a bulk dataset. Do not treat aggregate licence as permission to scrape/repackage studio records."
     }
   ]
 }

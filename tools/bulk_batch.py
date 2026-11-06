@@ -10,6 +10,7 @@ from datetime import date
 from pathlib import Path
 from bulk_ingest import source_policy
 from discovery import ROOT,read,write,digest
+from validate import url_valid
 
 FIELDS={'source_record_id','name','city','country','lat','lng','website','sectors','source_url','source_updated_on','parent_claims'}
 
@@ -32,6 +33,7 @@ def rows(path):
 def project(row):
     if not isinstance(row,dict) or set(row)-FIELDS:raise ValueError('unsupported/private columns; supply the documented public projection')
     if not isinstance(row.get('source_record_id'),str) or not row['source_record_id'].strip():raise ValueError('stable source_record_id required')
+    if len(row['source_record_id'])>256 or not re.fullmatch(r'[A-Za-z0-9_.:/#-]+',row['source_record_id']):raise ValueError('public business/source identifier required, not contacts or query credentials')
     clean=dict(row)
     for k,v in clean.items():
         if isinstance(v,str) and (len(v)>2000 or any(ord(c)<32 for c in v)):raise ValueError('unsafe/oversized text field')
@@ -43,11 +45,18 @@ def project(row):
     if not isinstance(sectors,list) or any(not isinstance(v,str) for v in sectors):raise ValueError('invalid sectors')
     clean['sectors']=sectors
     if not isinstance(clean.get('name',''),str):raise ValueError('name must be text')
+    for field in ('website','source_url'):
+        if clean.get(field) and not url_valid(clean[field]):raise ValueError('invalid/unsafe public URL field')
+    if clean.get('source_updated_on'):
+        try:
+            if date.fromisoformat(clean['source_updated_on']).isoformat()!=clean['source_updated_on']:raise ValueError()
+        except (TypeError,ValueError):raise ValueError('invalid source update date')
     parents=clean.get('parent_claims',[])
     if isinstance(parents,str):parents=json.loads(parents or '[]')
     if not isinstance(parents,list) or len(parents)>20:raise ValueError('invalid parent claims')
     for p in parents:
         if not isinstance(p,dict) or set(p)-{'name','source_url'} or not isinstance(p.get('name'),str):raise ValueError('parent claims require public name/source only')
+        if not url_valid(p.get('source_url')):raise ValueError('unsafe parent-claim URL')
     clean['parent_claims']=parents
     return clean
 
@@ -71,7 +80,12 @@ def prepare(path,output,source,config,observed):
             if len(page)==2000:flush();page=[]
         except (ValueError,TypeError) as exc:rejected.append({'row':number,'reason':str(exc)})
     if page:flush()
-    report={'source':source,'observed_on':observed,'accepted_observations':count,'rejected':rejected,'pages':pages,'publication_approved':False}
+    import hashlib
+    h=hashlib.sha256()
+    with path.open('rb') as stream:
+        for chunk in iter(lambda:stream.read(1_048_576),b''):h.update(chunk)
+    input_hash=h.hexdigest()
+    report={'source':source,'observed_on':observed,'raw_source_records':count+len(rejected),'accepted_observations':count,'rejected':rejected,'pages':pages,'input_sha256':input_hash,'complete':True,'publication_approved':False}
     write(output/'batch-report.json',report);return report
 
 def main():

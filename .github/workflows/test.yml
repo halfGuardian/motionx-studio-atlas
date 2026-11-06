@@ -21,6 +21,8 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_*.py' -v
       - run: node --test tests/*.test.js
       - run: python tools/validate.py studios.json
+      - name: Reproduce source-listed catalogue and preserve reviewed baseline
+        run: if [ -f data/bulk/release.json ]; then python tools/check_bulk_release.py; fi
   browser:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -40,6 +42,8 @@ jobs:
           fi
       - run: python tests/browser_smoke.py
       - run: python tests/bulk_browser.py
+      - name: Actual source-listed public catalogue over HTTP
+        run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -47,5 +51,6 @@ jobs:
           path: |
             /tmp/motionx-v10-performance.json
             /tmp/motionx-v11-bulk-performance.json
+            /tmp/motionx-v11-real-performance.json
             /tmp/motionx-v08-desktop.png
             /tmp/motionx-v08-mobile.png

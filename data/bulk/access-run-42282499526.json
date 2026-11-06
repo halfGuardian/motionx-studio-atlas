@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-06",
+  "sources": [
+    {
+      "id": "wikidata",
+      "license": "CC0-1.0",
+      "endpoint": "https://query.wikidata.org/sparql",
+      "pages": [],
+      "complete": false,
+      "errors": [
+        {
+          "type": "ValueError",
+          "reason": "robots disallows configured API endpoint; no fallback host"
+        }
+      ],
+      "robots": {
+        "url": "https://query.wikidata.org/robots.txt",
+        "sha256": "212a112f9e27af6072758663789987cf84bfde70bd9b87f97ef76f91fd089b0c",
+        "allows": false
+      }
+    },
+    {
+      "id": "openstreetmap",
+      "license": "ODbL-1.0",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "pages": [],
+      "complete": false,
+      "errors": [
+        {
+          "type": "ValueError",
+          "reason": "robots disallows configured API endpoint; no fallback host"
+        }
+      ],
+      "robots": {
+        "url": "https://overpass-api.de/robots.txt",
+        "sha256": "4c7aae02b09ceed9bf8bb0fa01a1b11807fdc8a0402642a42d126732e7b99d3d",
+        "allows": false
+      }
+    }
+  ],
+  "publication_approved": false,
+  "published_records": 0
+}

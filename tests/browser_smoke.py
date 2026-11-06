@@ -1,7 +1,9 @@
 """HTTP browser checks. Optional QA dependency: pip install playwright.
 
 Uses installed Chromium (CHROMIUM env override) or Playwright's browser.
-Real Leaflet CDN and OpenStreetMap tile requests are not stubbed.
+Real Leaflet CDN and OpenStreetMap tile requests are not stubbed. This is the
+retained 243-record compatibility fixture; public_catalog_smoke.py separately
+tests the actual full sharded public catalogue and its Class C exclusion.
 """
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -19,6 +21,13 @@ ROOT = Path(__file__).resolve().parents[1]
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *_):
         pass
+
+    def do_GET(self):
+        from urllib.parse import urlsplit
+        if urlsplit(self.path).path in (f'/{ROOT.name}/',f'/{ROOT.name}/index.html'):
+            body=(ROOT/'index.html').read_text().replace(' data-catalog="sharded"','').encode()
+            self.send_response(200);self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
+        else:super().do_GET()
 
 
 def main():

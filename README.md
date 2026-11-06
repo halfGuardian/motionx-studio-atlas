@@ -1,8 +1,16 @@
-# MotionX Studio Atlas v1.0 — Public Launch & Global Scale
+# MotionX Studio Atlas v1.1 — Global Bulk Data Acquisition
 
-A public, static directory of VFX, animation, game development and performance-production facilities. The canonical database is **`studios.json`**. This draft proposes **243 locations / 119 operating organisations / 38 countries**, including **61 additions and three explicit evidence corrections**. All 182 previous location IDs and coordinates remain. Human review and manual merge are required before publication.
+A static global directory of production studios and facilities, with separate reviewed evidence and directory-listed data. This release prepares **thousands of real source-listed locations**, rather than manually assembling another small company batch. See the [bulk acquisition report](data/bulk/README.md), generated coverage dashboard and exact proposed counts linked there. The 20,000-location objective is a research target, not a claim of verified coverage.
 
-The dark, responsive Leaflet / OpenStreetMap atlas loads **`./studios.json`** asynchronously on GitHub Pages. It has no embedded fallback, mandatory backend or paid mapping API. Loading, retry, empty-result, missing-profile and map/tile failures have explicit states. OSM attribution is retained.
+**All 243 original location IDs and their evidence remain byte-for-byte in `studios.json`.** The active catalogue uses 230 source-reviewed Class A records plus proposed Class B shards in `data/public/`. The 13 legacy unknown-evidence identities remain in the original database and research audit, pending review; they are not relabelled as verified or displayed in the A/B catalogue. No confirmed capability is removed.
+
+- **A — Verified / source-reviewed:** current recorded evidence supports the specific location. Capability confidence remains specific to each claim; this is not an independent business audit.
+- **B — Source-listed:** a permitted production-place directory lists the location. Current operation, physical facility type, ownership and services remain uncorroborated. B carries **no confirmed capture or other capability claims**. Source identities remain provisional unless matched to a retained operating identity.
+- **C — Research candidate:** unresolved evidence, identity, licensing, coordinates or operation. New C candidates stay outside the public atlas.
+
+The dark Leaflet / OpenStreetMap atlas remains a GitHub Pages site with no backend, paid API or embedded fallback. A compact, hash-bound index supports full search/counts/map access; provenance shards load only when opening profiles or exporting CSV. Exact original point coordinates and shared-coordinate selection are preserved. Loading, missing/corrupt shards, profile errors and CSV failures are explicit. Exports include source provenance, licence copies and required notices; a failed detail/notice fetch never produces a partial file.
+
+Bulk collection creates **read-only Actions artifacts**, never public database changes. Publication uses a **manually reviewed PR**, separate from the older content-bound approval-bundle workflow. No historical approvals are reused. Draft status and passing tests do not enforce human review: repository rule enforcement has not been verified from this environment. Maintainers must review and authorise the exact diff before merging. Pages settings are unchanged.
 
 ## Public atlas
 
@@ -13,7 +21,7 @@ The dark, responsive Leaflet / OpenStreetMap atlas loads **`./studios.json`** as
 - Reset filters, inspect visible result totals and export **all filtered locations across pages**. CSV preserves IDs, relationships and evidence, omits contact fields and neutralises spreadsheet-formula prefixes. Capability evidence states are retained; “confirmed” describes a reviewed source claim, not an independent audit of business operation.
 - Individual access to coincident coordinates is preserved through paginated selection. Above 2,000 coordinate groups, spatial buckets select the viewport and pixel-grid map groups reduce marker overhead. A group uses one actual member coordinate; original coordinates are never offset. The full directory and CSV remain available outside the viewport.
 
-## v1.0 research, safety and review
+## Historical v1.0 research, safety and review
 
 The [release audit](data/research/v1.0-launch/README.md), [readable review dashboard](data/research/v1.0-launch/review.html), [evidence manifest](data/research/v1.0-launch/evidence.json), [CSV](data/research/v1.0-launch/batch.csv), [import audit](data/research/v1.0-launch/import-audit.json) and [deferred queue](data/research/v1.0-launch/review-queue.json) present exact additions and before/after corrections. The dashboard is a research file/downloadable Actions artifact; the public app never loads it or the discovery queue. Seven new capture locations have individual site evidence. Thirteen legacy unknown-evidence records remain. Canonical validation: **0 errors / 265 warnings**, all listed in the release bundle.
 

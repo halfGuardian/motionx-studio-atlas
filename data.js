@@ -180,14 +180,14 @@
   }
   const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
     'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships',
-    'evidence_class','source_observed_on','website_kind','identity_status','source_provenance','license','attribution'];
+    'evidence_class','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','export_licences','export_notices'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
       value && typeof value==='object'?JSON.stringify(value):String(value??'');
     if (typeof value!=='number' && /^[\s\u200B\u200C\u200D]*[=+@-]/u.test(text)) text="'"+text;
     return '"'+text.replace(/"/g,'""')+'"';
   }
-  function exportCSV(rows) { return [csvColumns.join(','),...rows.map(r=>csvColumns.map(c=>csvCell(r[c])).join(','))].join('\r\n'); }
+  function exportCSV(rows,metadata={}) { return [csvColumns.join(','),...rows.map((r,i)=>csvColumns.map(c=>csvCell(c==='export_licences'?(i===0?metadata.licenseTexts:''):c==='export_notices'?(i===0?metadata.notices:''):r[c])).join(','))].join('\r\n'); }
   function createSpatialIndex(groups, cellSize=5) {
     if (!(cellSize>0 && cellSize<=180 && Number.isFinite(cellSize))) throw new Error('Invalid spatial cell size');
     const maxX=Math.ceil(360/cellSize)-1,maxY=Math.ceil(180/cellSize)-1;

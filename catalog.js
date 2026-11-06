@@ -19,6 +19,14 @@
       return {value:JSON.parse(text),text};
     }finally{clearTimeout(timer);}
   }
+  async function licence(fetcher,name,hash){
+    if(!/^(CDLA-Permissive-2\.0|Apache-2\.0|CC0-1\.0|CC-BY-4\.0|Foursquare-NOTICE)\.txt$/.test(name)||!/^[a-f0-9]{64}$/.test(hash||''))throw new Error('Unreviewed redistribution licence.');
+    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);
+    try{const response=await fetcher('./data/bulk/LICENSES/'+name,{signal:controller.signal});
+      if(!response.ok)throw new Error('Redistribution notices unavailable.');
+      const text=await response.text();if(text.length>100000||await sha(text)!==hash)throw new Error('Redistribution notice integrity mismatch.');return text;
+    }finally{clearTimeout(timer);}
+  }
   function checkB(D,row){
     D.validateDatabase([row]);
     if(row.evidence_class!=='B'||row.evidence_state!=='unknown'||row.verified_on||row.capabilities.length||Object.keys(row.capability_evidence).length||row.relationships?.length||row.coordinate_precision==='exact'||!row.license||!row.attribution||!D.validDate(row.source_observed_on)||!['official','source_listing'].includes(row.website_kind)||!['source_provisional','matched_existing'].includes(row.identity_status)||!Array.isArray(row.source_provenance)||!row.source_provenance.length)throw new Error('Invalid source-listed evidence.');
@@ -66,7 +74,13 @@
       const results=new Array(filtered.length);let cursor=0;
       await Promise.all(Array.from({length:Math.min(3,filtered.length)},async()=>{while(cursor<filtered.length){const i=cursor++;results[i]=await details(filtered[i].id);}}));return results;
     }
-    return {rows,manifest:m,details,exportRows,researchOnly:held};
+    async function exportBundle(filtered){
+      const values=await exportRows(filtered),codes=[...new Set(values.filter(r=>r.evidence_class==='B').flatMap(r=>r.license.split(' AND ')))];
+      const texts=await Promise.all(codes.map(async code=>code+'\n'+await licence(fetcher,code+'.txt',m.licence_files?.[code+'.txt']?.sha256)));
+      const notices=codes.includes('Apache-2.0')?await licence(fetcher,'Foursquare-NOTICE.txt',m.licence_files?.['Foursquare-NOTICE.txt']?.sha256):'';
+      return {rows:values,licenseTexts:texts.join('\n\n'),notices};
+    }
+    return {rows,manifest:m,details,exportRows,exportBundle,researchOnly:held};
   }
   const api={load,sha,checkB};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MotionXCatalog=api;
 })(globalThis);

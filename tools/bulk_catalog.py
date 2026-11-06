@@ -32,6 +32,7 @@ def validate_b(rows):
         provenance=r.get('source_provenance')
         if not isinstance(provenance,list) or not provenance:error('record-level provenance required');continue
         for p in provenance:
+            if isinstance(p,dict) and set(p)-{'source_id','source_record_id','url','license','license_url','observed_on','observation_hash'}:error('unsupported/private provenance fields')
             if not isinstance(p,dict) or not url_valid(p.get('url')) or not url_valid(p.get('license_url')) or not p.get('source_id') or not p.get('source_record_id') or not re.fullmatch('[a-f0-9]{64}',p.get('observation_hash','')):
                 error('invalid record-level provenance');continue
             try:
@@ -47,10 +48,30 @@ def compact(path,value):
     with path.with_suffix(path.suffix+'.gz').open('wb') as raw:
         with gzip.GzipFile(filename='',fileobj=raw,mode='wb',mtime=0) as f:f.write(text.encode())
 
-def build(records,baseline,output,policy_hash,run_id):
+def existing_catalog(folder):
+    folder=Path(folder);manifest=read(folder/'manifest.json');records=[]
+    if manifest.get('version')!=1:raise ValueError('invalid previous catalogue')
+    for name,meta in manifest['shards'].items():
+        if not re.fullmatch(r'shards/[a-f0-9]{12}-\d{3,}\.json',name) or sha(folder/name)!=meta['sha256']:raise ValueError('previous catalogue shard integrity mismatch')
+        chunk=read(folder/name)
+        if len(chunk)!=meta['records']:raise ValueError('previous catalogue count mismatch')
+        records.extend(chunk)
+    errors,_=validate_b(records)
+    if errors:raise ValueError('invalid previous source-listed records')
+    return records
+
+def build(records,baseline,output,policy_hash,run_id,previous=None):
     baseline=Path(baseline);base=read(baseline);errors,warnings=validate(base)
     b_errors,b_warnings=validate_b(records)
     if errors or b_errors:raise ValueError('invalid catalogue: '+str((errors+b_errors)[:8]))
+    retained={r['id']:r for r in existing_catalog(previous)} if previous else {}
+    audit={'existing_source_listed_retained':len(retained),'new_ids':[],'unchanged_ids':[],'updates_deferred':[],'not_in_new_proposals_retained':sorted(set(retained)-{r['id'] for r in records})}
+    for row in records:
+        if row['id'] not in retained:retained[row['id']]=row;audit['new_ids'].append(row['id'])
+        elif row==retained[row['id']]:audit['unchanged_ids'].append(row['id'])
+        else:audit['updates_deferred'].append({'id':row['id'],'before_hash':digest(retained[row['id']]),'proposed_hash':digest(row),'reason':'Existing public record retained. Changes require an explicit evidence-backed correction PR; no silent overwrites.'})
+    records=sorted(retained.values(),key=lambda r:r['id'])
+    _,b_warnings=validate_b(records)
     base_ids={r['id'] for r in base}
     if any(r['id'] in base_ids for r in records):raise ValueError('bulk proposal cannot overwrite retained baseline IDs')
     output=Path(output)
@@ -78,14 +99,16 @@ def build(records,baseline,output,policy_hash,run_id):
         'source_policy_hash':policy_hash,'research_run_id':run_id,'counts':{'class_a':len(eligible),'class_b':len(records),'retained_legacy_research':len(held),'public_locations':len(all_public),'operating_identities':len({r['company_id'] for r in all_public}),'reviewed_operating_organisations':len({r['company_id'] for r in eligible}),'provisional_source_identities':len({r['company_id'] for r in records if r['identity_status']=='source_provisional'}),'countries':len({r['country'] for r in all_public})},
         'index_columns':['id','company_id','name','city','country','lat','lng','categories','detail_shard','source_observed_on','identity_status'],
         'licences':'../bulk/LICENSES/','warnings':{'baseline':len(warnings),'source_listed':len(b_warnings)},'warning_meaning':'Directory coordinates and operation are uncorroborated. Source-listed records carry no confirmed capabilities. Provisional source identities are not independently established operating organisations.'}
+    manifest['licence_files']={p.name:{'sha256':sha(p)} for p in sorted((ROOT/'data/bulk/LICENSES').glob('*.txt'))}
     write(output/'manifest.json',manifest)
-    write(output/'audit.json',{'baseline_sha256_before':sha(baseline),'baseline_sha256_after':sha(baseline),'retained_location_ids':[r['id'] for r in base], 'proposed_b_ids':[r['id'] for r in records],'research_only_legacy_ids':[r['id'] for r in held],'canonical_validation_errors':0,'source_listed_validation_errors':0,'source_listed_warnings':b_warnings,'approval_required':'Human must review the exact PR diff before merge. Draft status and tests do not enforce approval. No historical approval bundle is reused.'})
+    write(output/'audit.json',{'baseline_sha256_before':sha(baseline),'baseline_sha256_after':sha(baseline),'retained_location_ids':[r['id'] for r in base], 'proposed_b_ids':[r['id'] for r in records],'incremental_audit':audit,'research_only_legacy_ids':[r['id'] for r in held],'canonical_validation_errors':0,'source_listed_validation_errors':0,'source_listed_warnings':b_warnings,'approval_required':'Human must review the exact PR diff before merge. Draft status and tests do not enforce approval. No historical approval bundle is reused.'})
     return manifest
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--input',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--database',type=Path,default=ROOT/'studios.json');p.add_argument('--config',type=Path,default=ROOT/'data/bulk/sources.json');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--input',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--database',type=Path,default=ROOT/'studios.json');p.add_argument('--config',type=Path,default=ROOT/'data/bulk/sources.json');p.add_argument('--previous',type=Path,help='existing catalogue; always retained, never silently replaced');a=p.parse_args()
+    previous=a.previous or (ROOT/'data/public' if (ROOT/'data/public/manifest.json').exists() else None)
     with tempfile.TemporaryDirectory() as tmp:
-        folder=Path(tmp)/'review';report=ingest(a.input,folder,read(a.config),read(a.database))
-        manifest=build(read(folder/'proposed-b.json'),a.database,a.output,digest(read(a.config)),report['run_id'])
+        folder=Path(tmp)/'review';report=ingest(a.input,folder,read(a.config),read(a.database),existing=existing_catalog(previous) if previous else [])
+        manifest=build(read(folder/'proposed-b.json'),a.database,a.output,digest(read(a.config)),report['run_id'],previous)
     print(json.dumps(manifest['counts'],indent=2))
 if __name__=='__main__':main()
