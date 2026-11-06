@@ -194,17 +194,17 @@
         },
         "Chicago": {
           "city": "Chicago",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "chicago"
         },
         "Los Angeles": {
           "city": "Los Angeles",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "los-angeles"
         },
         "New York": {
           "city": "New York",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "new-york"
         },
         "Mumbai": {
@@ -532,7 +532,7 @@
         },
         "Los Angeles, USA": {
           "city": "Burbank",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "burbank"
         },
         "Madrid, Spain": {
@@ -750,17 +750,17 @@
         },
         "LOS ANGELES": {
           "city": "Burbank",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "burbank"
         },
         "NEW YORK": {
           "city": "New York",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "new-york"
         },
         "ATLANTA": {
           "city": "Atlanta",
-          "country": "USA",
+          "country": "United States",
           "unit_key": "atlanta"
         },
         "VANCOUVER": {

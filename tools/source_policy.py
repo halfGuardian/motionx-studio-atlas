@@ -6,9 +6,9 @@ import hashlib
 import json
 from pathlib import Path
 import re
-from urllib import error, parse, robotparser
+from urllib import error, robotparser
 
-from discovery import Fetcher, Page, USER_AGENT, public_url, read, safe_output, write
+from discovery import Fetcher, USER_AGENT, public_url, read, safe_output, write
 
 RESTRICTIONS = re.compile(r'\b(scrap\w*|crawl\w*|robots?|automat\w*|data.mining|text.and.data|artificial.intelligence|generative.ai)\b', re.I)
 
@@ -43,7 +43,11 @@ def audit(config, fetcher=None):
             try:
                 if public_url(url)!=host or not robot.can_fetch(USER_AGENT,url):
                     raise ValueError('policy URL not fetchable on this origin')
-                body,_,encoding=fetcher.response(url,host)
+                delay=max(1,robot.crawl_delay(USER_AGENT) or 0)
+                rate=robot.request_rate(USER_AGENT)
+                if rate:delay=max(delay,rate.seconds/rate.requests)
+                if delay>60:raise ValueError('policy requires slower/manual review')
+                body,_,encoding=fetcher.response(url,host,delay)
                 text=body.decode(encoding,errors='replace')
                 # Keywords are review leads, never an automatic permission/ban decision.
                 visible=re.sub('<[^>]+>',' ',text)

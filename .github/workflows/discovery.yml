@@ -31,6 +31,10 @@ jobs:
             fi
           fi
           if [ ! -f previous/queue.json ]; then
+            if [ -n "$previous_run" ]; then
+              echo '::error::Restored artifact has no queue; refusing to reset history.'
+              exit 1
+            fi
             echo '::warning::No prior queue artifact; starting from committed backlog. This run cannot detect historical disappearances.'
             cp data/discovery/backlog.json previous/queue.json
           fi

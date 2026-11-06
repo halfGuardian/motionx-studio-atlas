@@ -1,10 +1,46 @@
-# MotionX Studio Atlas v0.9.2 — Verified Discovery Batch 1
+# MotionX Studio Atlas v0.9.3 — Global Discovery & Research Automation
 
-Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **141 locations across 77 organisations in 30 countries** on this release branch. v0.9.2 proposes 12 source-supported additions and one explicit Audiomotion location correction; publication awaits maintainer review and merge. Motion capture is an optional searchable capability, not an admission requirement.
+Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **182 locations across 88 organisations in 32 countries** on this proposal branch. v0.9.3 proposes **41 additions and one explicitly audited Centroid evidence correction**; publication awaits human review and manual merge. Motion capture is an optional searchable capability, not an admission requirement.
 
 The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
 
-## v0.9.2 researched data release
+## v0.9.3 research and automation
+
+The [release report](data/research/v0.9.3-global/README.md), [exact-record evidence manifest](data/research/v0.9.3-global/evidence.json), [CSV batch](data/research/v0.9.3-global/batch.csv), import reports, before/after correction and deferred queue document this proposal. All 141 previous IDs remain; Centroid Riverside alone receives an explicit evidence update. All original coordinates remain unchanged. New locations use attributed approximate city references, including Burbank for facilities marketed as Los Angeles. No organisation-wide capture claims are copied to branches.
+
+The registry contains **25 official source entries; nine are enabled for bounded factual metadata collection** after recorded policy review. Sixteen remain disabled pending access/reuse clarification or permission. This deliberately falls short of 15–25 enabled collectors. EA remains disabled; newly reviewed Cinesite terms explicitly prohibit scraping, so its collection is disabled too. Unavailable or restrictive policies, JS-only pages and access failures are reported, never bypassed with browser screenshots/OCR or hidden APIs. A robots allowance or absence of policy keywords is not a reuse licence. Initial/second/final policy audits preserve the rejected URL guesses and corrected source decisions.
+
+Source adapters identify branch links or explicit location cards, retain separate facility keys and ignore navigation/scripts. Evidence-byte changes, openings, acquisition/rebrand, relocation and missing-link signals require investigation; none changes business status. A redesigned/failed/empty page cannot withdraw records. Label-card adapters cover reviewed labels; unknown new labels require reviewing the page-change alert and updating the mapping. Collection is bounded to configured pages, not recursive crawling.
+
+### Downloadable review report
+
+Weekly/manual **Discover studio candidates** runs generate `studio-research-review` (`review.html`, `proposals.json`, `summary.md`). PR source checks also upload `global-research-review`, including original discovery state/history, source-policy results, staged data and a company/country-grouped dashboard with before/after comparisons. Download and open `review.html` locally: it is self-contained, keyboard accessible and makes no script/network requests. This report is separate from the public directory. All discovered claims remain unverified; source-researched proposals are separately labelled **pending human PR review**.
+
+```sh
+python tools/research.py report --queue path/to/queue.json --report path/to/report.json \
+  --config data/discovery/sources.json --output /tmp/motionx-review
+# Add --records data/research/<batch>/records.json to display authored before/after proposals.
+```
+
+Dossiers include operating-identity hints, supported place references, potential sector/parent relationships, local capability terms, observation dates/freshness, existing matches and reasons, identity risks, change alerts and unresolved questions. Confidence is routing/evidence context, not human approval or independent confirmation of current operation.
+
+### Publication: two distinct routes
+
+**This v0.9.3 release uses GitHub-native human PR review and manual merge.** No human approval is claimed and no historical approval hashes are generated or reused. A maintainer must inspect the exact canonical diff and evidence, run the checks and personally authorise merge. New commits require renewed review. Configure required reviews and dismissal of stale approvals in repository rules for enforced review; this change does not alter repository/Pages settings. The informational review workflow reports exact-head account metadata, explicitly without claiming it proves human intent or authorises publication.
+
+For subsequent source-researched bundles committed to `main`, manually dispatch **Draft a source-researched data PR** with `data/research/<batch>`. It validates `records.json`/`evidence.json`, exact baseline/record/previous-record hashes, review dates, capability evidence and explicit distinct-facility rationales. It stages a draft branch/PR only; it cannot approve or merge. A stale baseline blocks preparation. GITHUB_TOKEN-created PRs may need maintainer-triggered required checks. Historical release bundles are audit records and cannot be re-used against a changed database.
+
+```sh
+python tools/research.py stage-pr --database path/to/current-baseline.json \
+  --records data/research/<batch>/records.json --manifest data/research/<batch>/evidence.json \
+  --output /tmp/motionx-staged-proposal
+```
+
+The **older content-bound approval-bundle route** (`prepare-studio-proposal.yml`, `discovery.py prepare`) remains separate and unchanged. It requires committed, named, exact-content approvals before preparing a proposal. Its historical pending approvals remain pending. Neither passing tests, clicking an evidence link, a reviewer-name string nor an AI-generated review is human approval.
+
+The public UI adds an optional **Confirmed capability evidence only** filter. With a specialisation selected, that specific capability must be confirmed; otherwise at least one capability must be confirmed. Confirmed means a cited claim was reviewed, not independently verified current business operation. Search, counts, profiles, co-located selection and CSV export use the same filtered records. The 20,000-location HTTP performance test retains original coordinates and viewport rendering without a paid API or backend.
+
+## Historical v0.9.2 researched data release
 
 The [release research log](data/research/v0.9.2-batch-1/README.md), [evidence manifest](data/research/v0.9.2-batch-1/evidence.json), [candidate decisions](data/research/v0.9.2-batch-1/decisions.json) and import/repeat reports retain the complete audit. All 14 discovery leads plus three specialist topics were researched: ten game-development locations and two distinct StudioT3D London capture stages are proposed, while Audiomotion's existing record is corrected to its officially stated Didcot facility. Four leads are excluded and two research topics remain deferred. No capture capabilities are inferred from game development.
 
@@ -28,7 +64,7 @@ The local live-source attempt was blocked by this environment's domain/DNS acces
 
 ## v0.8 research release
 
-The [research report](data/research/v0.8-global-expansion/README.md) documents imported organisations, six source-supported capture facilities, branch-coverage limits, coordinate licensing, tests and performance. The [evidence manifest](data/research/v0.8-global-expansion/evidence.json), [CSV batch](data/research/v0.8-global-expansion/batch.csv), dry-run/apply/repeat reports and [review queue](data/research/v0.8-global-expansion/review-queue.json) are retained. Review date: **6 November 2026**. Current validation: **0 errors / 147 warnings**, covering 129 approximate coordinates and 18 legacy unknown-evidence records. Ubisoft and EA coverage remains partial; unresolved candidates are queued rather than published.
+The [research report](data/research/v0.8-global-expansion/README.md) documents imported organisations, six source-supported capture facilities, branch-coverage limits, coordinate licensing, tests and performance. The [evidence manifest](data/research/v0.8-global-expansion/evidence.json), [CSV batch](data/research/v0.8-global-expansion/batch.csv), dry-run/apply/repeat reports and [review queue](data/research/v0.8-global-expansion/review-queue.json) are retained. Review date: **6 November 2026**. Validation at v0.8: **0 errors / 147 warnings**, covering 129 approximate coordinates and 18 legacy unknown-evidence records. Ubisoft and EA coverage remains partial; unresolved candidates are queued rather than published.
 
 ## v0.7 research batch 1
 
@@ -83,7 +119,7 @@ Confidence applies to the **specific claim**, not the whole organisation's legal
 
 Both `confirmed` and `likely` require a source URL and review date, at the location level and separately for each capability. Do not copy overall confidence to every capability. Missing/unknown capabilities do not exclude a studio. Keep source URLs and review dates; independently checking a website's presence does not establish current operation, registration, an address or a capability. Validation checks structure, not the truth or availability of external evidence.
 
-The v0.5 seed was explicitly not independently re-verified. v0.6 therefore set its current confidence and individual capability confidence to `unknown`, retaining legacy dates/source URLs and original labels under `legacy_research`. v0.9.2 explicitly re-researches Audiomotion from current primary sources, preserving its complete former record in the release audit; other unreviewed seeds remain unknown. `verified_on` on these records is a **legacy recorded review date**, labelled accordingly in profiles. These dates are preserved verbatim; the validator may flag them as future dates depending on the runner's date/timezone.
+The v0.5 seed was explicitly not independently re-verified. v0.6 therefore set its current confidence and individual capability confidence to `unknown`, retaining legacy dates/source URLs and original labels under `legacy_research`. v0.9.2 explicitly re-researches Audiomotion and v0.9.3 reviews Centroid Riverside, preserving their complete former records in release audits; 16 other unreviewed seeds remain unknown. `verified_on` on these records is a **legacy recorded review date**, labelled accordingly in profiles. These dates are preserved verbatim; the validator may flag them as future dates depending on the runner's date/timezone.
 
 Use city-level approximate coordinates when a street address cannot be verified. The five legacy street-looking pins were replaced by approximate city reference points and the original values retained as provenance. Existing campus/city estimates remain approximate. Records with an unverified city retain their existing regional reference pins explicitly marked `unverified`; their actual city still needs research. Never infer an exact address from a pin. New `exact` records require an address, evidence and a date; a researcher must ensure that evidence actually supports the coordinates. The interface labels every non-exact pin as approximate.
 
@@ -142,10 +178,10 @@ python -m playwright install chromium  # or use an existing Chromium
 python tests/browser_smoke.py
 ```
 
-`CHROMIUM=/path/to/chromium` can select a browser. The browser suite uses live unpkg/OSM resources, so network outages can fail its tile check. It checks loading, map attribution/tiles, search, combined filters, profiles, totals, CSV export, mobile navigation, error/retry states, and 10,000 **in-memory synthetic test locations with distinct coordinates** with pagination. These fixtures never enter `studios.json`. Screenshots go to the system temporary directory. Pull requests run offline validation/tests in GitHub Actions; no deployment workflow is added.
+`CHROMIUM=/path/to/chromium` can select a browser. The browser suite uses live unpkg/OSM resources, so network outages can fail its tile check. It checks loading, map attribution/tiles, search, combined filters, profiles, totals, CSV export, mobile navigation, error/retry states, and 20,000 **in-memory synthetic test locations with distinct coordinates** with pagination. These fixtures never enter `studios.json`. Screenshots go to the system temporary directory. Pull requests run offline validation/tests in GitHub Actions; no deployment workflow is added.
 
 ## Limits and public-data safety
 
-The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. Above 2,000 filtered coordinate groups, marker rendering follows the padded viewport while counts, search, CSV export and fit-results retain the complete filtered results. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Spatial indexing, server-side search, tiling or clustering may become useful at larger scales. Discovery remains separate from the public database and cannot prove business facts. Search includes unknown capabilities; read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
+The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. Above 2,000 filtered coordinate groups, marker rendering follows the padded viewport while counts, search, CSV export and fit-results retain the complete filtered results. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Spatial indexing, server-side search, tiling or clustering may become useful at larger scales. Discovery remains separate from the public database and cannot prove business facts. Search includes unknown capabilities by default; use the confirmed-only filter and read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
 
-Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.9.2 adds no private records or credentials.
+Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.9.3 adds no private records or credentials.

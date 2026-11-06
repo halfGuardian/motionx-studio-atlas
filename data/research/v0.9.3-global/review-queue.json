@@ -1,0 +1,244 @@
+[
+  {
+    "organisation": "FOLKS",
+    "candidate": "London",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current operator contact labels London Upcoming. Parent marketing roster does not establish an open production facility.",
+    "sources": [
+      "https://folksvfx.com/contact/"
+    ]
+  },
+  {
+    "organisation": "Outpost VFX",
+    "candidate": "Los Angeles",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Historical branch absent from current contact roster; investigate, do not infer closure or republish old office.",
+    "sources": [
+      "https://www.outpost-vfx.com/en/contact"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Montréal",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Québec",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Toronto",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Los Angeles",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Paris",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Rodeo FX",
+    "candidate": "Bengaluru",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current company/careers evidence suggests these sites, but complete per-site physical-facility and access-policy research is unfinished; Vue-only official pages are not an excuse for hidden-API collection.",
+    "sources": [
+      "https://www.rodeofx.com/contact",
+      "https://jobs.smartrecruiters.com/RodeoFX/744000150437964"
+    ]
+  },
+  {
+    "organisation": "Reel FX",
+    "candidate": "Dallas",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current contact roster found, but public/commercial reuse restrictions need permission/clarification; automated collection stays disabled.",
+    "sources": [
+      "https://www.reelfx.com/contact/",
+      "https://www.reelfx.com/terms/"
+    ]
+  },
+  {
+    "organisation": "Reel FX",
+    "candidate": "Montréal",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current contact roster found, but public/commercial reuse restrictions need permission/clarification; automated collection stays disabled.",
+    "sources": [
+      "https://www.reelfx.com/contact/",
+      "https://www.reelfx.com/terms/"
+    ]
+  },
+  {
+    "organisation": "Reel FX",
+    "candidate": "Los Angeles",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current contact roster found, but public/commercial reuse restrictions need permission/clarification; automated collection stays disabled.",
+    "sources": [
+      "https://www.reelfx.com/contact/",
+      "https://www.reelfx.com/terms/"
+    ]
+  },
+  {
+    "organisation": "Zombie Studio",
+    "candidate": "São Paulo",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Reuse restrictions and office-versus-production scope unresolved. No automated collection or capability inference.",
+    "sources": [
+      "https://zombiestudio.tv/studio"
+    ]
+  },
+  {
+    "organisation": "Zombie Studio",
+    "candidate": "New York",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Reuse restrictions and office-versus-production scope unresolved. No automated collection or capability inference.",
+    "sources": [
+      "https://zombiestudio.tv/studio"
+    ]
+  },
+  {
+    "organisation": "Zombie Studio",
+    "candidate": "Lisbon",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Reuse restrictions and office-versus-production scope unresolved. No automated collection or capability inference.",
+    "sources": [
+      "https://zombiestudio.tv/studio"
+    ]
+  },
+  {
+    "organisation": "Glassworks",
+    "candidate": "London",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Closure reporting conflicts with historical rosters; no adequate current primary evidence supports an active facility. Excluded from this batch, retained for investigation.",
+    "sources": [
+      "https://www.screendaily.com/news/longstanding-uk-vfx-house-glassworks-shuts-down/5207551.article"
+    ]
+  },
+  {
+    "organisation": "Glassworks",
+    "candidate": "Amsterdam",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Closure reporting conflicts with historical rosters; no adequate current primary evidence supports an active facility. Excluded from this batch, retained for investigation.",
+    "sources": [
+      "https://www.screendaily.com/news/longstanding-uk-vfx-house-glassworks-shuts-down/5207551.article"
+    ]
+  },
+  {
+    "organisation": "Glassworks",
+    "candidate": "Barcelona",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Closure reporting conflicts with historical rosters; no adequate current primary evidence supports an active facility. Excluded from this batch, retained for investigation.",
+    "sources": [
+      "https://www.screendaily.com/news/longstanding-uk-vfx-house-glassworks-shuts-down/5207551.article"
+    ]
+  },
+  {
+    "organisation": "Centroid",
+    "candidate": "Molinare storytelling stage, London",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current contact references retained, but Riverside capture evidence must not be copied to other facilities.",
+    "sources": [
+      "https://www.centroid3d.com/contact",
+      "https://www.centroid3d.com/facilities"
+    ]
+  },
+  {
+    "organisation": "Centroid",
+    "candidate": "Serbia",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Current contact references retained, but Riverside capture evidence must not be copied to other facilities.",
+    "sources": [
+      "https://www.centroid3d.com/contact",
+      "https://www.centroid3d.com/facilities"
+    ]
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Paris-area individual studios",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Region roster mixes production studios, film/TV teams and corporate offices; municipality/facility identity needs separate research.",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/paris-area"
+    ]
+  },
+  {
+    "organisation": "Barajoun",
+    "candidate": "Dubai",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "research_confidence": "unresolved",
+    "reason": "Production-company candidate identified; current physical-site evidence not adequately accessed this release.",
+    "sources": [
+      "https://www.barajoun.com/"
+    ]
+  }
+]

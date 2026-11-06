@@ -166,6 +166,10 @@ def main():
         else:
             combined,result=stage(database,read(a.records),read(a.manifest),a.allow_distinct_location)
             write(a.output/'studios.json',combined);write(a.output/'proposal-audit.json',result)
+            review=dossier({'version':1,'sources':{},'candidates':{}},{'sources':[]},database,
+                           {'version':1,'sources':[]},read(a.records))
+            write(a.output/'proposal-review.json',review)
+            (a.output/'review.html').write_text(review_html(review),encoding='utf-8')
         print(json.dumps({'mode':a.mode,'published_records':0,'approved_claims':0}))
         return 0
     except (OSError,ValueError,TypeError,KeyError) as exc:
