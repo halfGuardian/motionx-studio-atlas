@@ -111,7 +111,7 @@ function show(s) {
     ${s.email ? `<p><b>Public email</b><br><a href="mailto:${esc(s.email)}">${esc(s.email)}</a></p>` : ''}
     ${s.phone ? `<p><b>Public phone</b><br>${esc(s.phone)}</p>` : ''}
     <p><b>Research source</b><br>${s.evidence ? `<a href="${esc(s.evidence)}" target="_blank" rel="noopener noreferrer">Official/public source</a>` : 'No source recorded'}<br>
-    <span class="muted">${s.legacy_research ? 'Legacy recorded review date (not independently verified)' : 'Recorded review date'}: ${esc(s.verified_on || 'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>`;
+    <span class="muted">${s.legacy_research && s.evidence_state === 'unknown' ? 'Legacy recorded review date (not independently verified)' : 'Recorded review date'}: ${esc(s.verified_on || 'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>`;
   renderList();
 }
 function updateTabs() {
@@ -159,7 +159,7 @@ $('exportCsv').onclick = () => {
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.9.csv';
+  a.download = 'motionx_studios_filtered_v0.9.2.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };

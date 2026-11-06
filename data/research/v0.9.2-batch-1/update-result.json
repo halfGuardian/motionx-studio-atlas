@@ -1,0 +1,11 @@
+{
+  "written_to_development_branch": true,
+  "updated_records": [
+    "audiomotion"
+  ],
+  "expected_previous_record_hashes": {
+    "audiomotion": "d40f255253bf2b4dd5a5cafe374023e2ee68e6900490fb6f8b3385eb14e1aac7"
+  },
+  "publication": "not published; pending maintainer review/merge of PR",
+  "new_location_ids_on_update": []
+}

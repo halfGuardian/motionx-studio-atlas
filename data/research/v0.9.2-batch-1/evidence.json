@@ -1,0 +1,526 @@
+{
+  "release": "v0.9.2",
+  "reviewed_on": "2026-11-06",
+  "timezone": "Pacific/Auckland",
+  "baseline_commit": "6b98cf7bfe4641d1c20c406a7a2a55139aa0eaaa",
+  "baseline_locations": 129,
+  "baseline_hash": "b1ffcdb5671af616c2f016f214377e5266deb9c54891479562e9b8b328798da2",
+  "added_locations": 12,
+  "before_updates": {
+    "audiomotion": {
+      "id": "audiomotion",
+      "company_id": "audiomotion",
+      "name": "Audiomotion Studios",
+      "city": "United Kingdom (city unverified)",
+      "country": "United Kingdom",
+      "lat": 51.752,
+      "lng": -1.2577,
+      "address": "Approximate regional reference only — city and street address not verified",
+      "website": "https://www.audiomotion.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture"
+      ],
+      "capabilities": [
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.audiomotion.com/",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "unverified",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Official service page reviewed; registration not checked",
+        "verified_on": "2026-11-06"
+      },
+      "capability_evidence": {
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.audiomotion.com/",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.audiomotion.com/",
+          "verified_on": ""
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "blue-mammoth-alpharetta",
+      "candidate_id": "discovery-36aa50b52ae47c509014ced6",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+        "https://www.theesa.com/video-game-impact-map/state/georgia-2/"
+      ],
+      "finding": "Ubisoft markets the studio as Atlanta; ESA lists the municipality as Alpharetta. Brawlhalla development is explicit; no capture inferred.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Alpharetta",
+        "lat": 34.07038,
+        "lng": -84.27384,
+        "source": "https://www.geonames.org/11788370/city-of-alpharetta.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-philippines-taguig",
+      "candidate_id": "discovery-55742dcf45b5dd18a985ab6d",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/taguig"
+      ],
+      "finding": "Official branch page names Taguig and local AAA co-development teams.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Taguig",
+        "lat": 14.5243,
+        "lng": 121.0792,
+        "source": "https://www.geonames.org/1684308"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-barcelona-main",
+      "candidate_id": "discovery-8431a40c74ee7274ad8aacb1",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+        "https://www.linkedin.com/company/ubisoft-barcelona/"
+      ],
+      "finding": "Official career address and linked company-authored profile support this AAA production studio. Co-located with the separately named mobile studio; not the historical Sant Cugat address.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.linkedin.com/company/ubisoft-barcelona/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Barcelona",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "source": "https://www.geonames.org/3128760/barcelona.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-barcelona-mobile-main",
+      "candidate_id": "discovery-8431a40c74ee7274ad8aacb1",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile"
+      ],
+      "finding": "Official page separately identifies this F2P mobile studio and ninth-floor address. Same building as Ubisoft Barcelona; preserve operating identity.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Barcelona",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "source": "https://www.geonames.org/3128760/barcelona.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ivory-tower-villeurbanne",
+      "candidate_id": "discovery-b535bf8400ef5031ebb0f49f",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+        "https://www.ubisoft.com/en-us/studio/ivory-tower"
+      ],
+      "finding": "Marketed as Lyon; the official branch address is in Villeurbanne. Own studio page explicitly identifies The Crew development.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/studio/ivory-tower",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Villeurbanne",
+        "lat": 45.76601,
+        "lng": 4.8795,
+        "source": "https://www.geonames.org/2968254/villeurbanne.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-pune-main",
+      "candidate_id": "discovery-b69ec7ada60ff433a4f0b74e",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+        "https://www.ubisoft.com/en-us/company/careers/locations/india"
+      ],
+      "finding": "Official Pune address plus India page explicitly describing Pune mobile/console production, distinct from quality control.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/india",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Pune",
+        "lat": 18.51957,
+        "lng": 73.85535,
+        "source": "https://www.geonames.org/1259229/pune.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "massive-malmo",
+      "candidate_id": "discovery-c86b0ca34866d28e883c9af9",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6"
+      ],
+      "finding": "Official Malmö page identifies a local AAA development studio; postal box is not treated as a facility address.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Malmö",
+        "lat": 55.60587,
+        "lng": 13.00073,
+        "source": "https://www.geonames.org/2692969/malmoe.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-montpellier-main",
+      "candidate_id": "discovery-d9d65010b05772f42c02a1c2",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+        "https://www.ubisoft.com/en-us/studio/montpellier"
+      ],
+      "finding": "Official street municipality is Castelnau-le-Lez. Pin is a Montpellier urban-area reference, not a Castelnau city centroid or facility geocode; local geocode remains unresolved.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/studio/montpellier",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Montpellier urban area",
+        "lat": 43.61093,
+        "lng": 3.87635,
+        "source": "https://www.geonames.org/2992166/montpellier.html"
+      },
+      "coordinate_precision": "region",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-annecy-main",
+      "candidate_id": "discovery-f00bf25370760830ae8f259b",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+        "https://www.ubisoft.com/en-us/studio/annecy"
+      ],
+      "finding": "Current studio page identifies local game development and the same Annecy address as the careers page.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/studio/annecy",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Annecy",
+        "lat": 45.90878,
+        "lng": 6.12565,
+        "source": "https://www.geonames.org/3037543/annecy.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "ubisoft-milan-assago",
+      "candidate_id": "discovery-fbce1f44f76015621fadfc5b",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/milan"
+      ],
+      "finding": "Official address is Assago, not central Milan. Page explicitly describes the operating game-development team.",
+      "capability_evidence": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Assago",
+        "lat": 45.40887,
+        "lng": 9.12565,
+        "source": "https://www.geonames.org/6534466/assago.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "studiot3d-london-stage-1",
+      "candidate_id": "backlog-21f9c722f986316df3dc878f",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.studiot3d.com/studio-1",
+        "https://www.studiot3d.com/contact-us",
+        "https://www.studiot3d.com/",
+        "https://www.studiot3d.com/our-team"
+      ],
+      "finding": "A separately documented LED/performance-capture stage. Facial tracking is explicitly stated for both London volumes on the official home page; no games development inferred.",
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/studio-1",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/studio-1",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/",
+          "verified_on": "2026-11-06"
+        },
+        "Virtual Production": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/studio-1",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "target3d",
+          "name": "Target3D",
+          "type": "group_member",
+          "evidence": "https://www.studiot3d.com/our-team",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "studiot3d-london-stage-2",
+      "candidate_id": "backlog-21f9c722f986316df3dc878f",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.studiot3d.com/studio-2",
+        "https://www.studiot3d.com/contact-us",
+        "https://www.studiot3d.com/our-team"
+      ],
+      "finding": "Distinct documented volumetric/motion-capture stage in the same building. Guildhall partnership is explicit. LED virtual production and full performance capture are not copied from Stage 1.",
+      "capability_evidence": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/studio-2",
+          "verified_on": "2026-11-06"
+        },
+        "Volumetric Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.studiot3d.com/studio-2",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "coordinate_precision": "city",
+      "relationships": [
+        {
+          "id": "target3d",
+          "name": "Target3D",
+          "type": "group_member",
+          "evidence": "https://www.studiot3d.com/our-team",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "guildhall-production-studio",
+          "name": "Guildhall Production Studio",
+          "type": "partner_of",
+          "evidence": "https://www.studiot3d.com/studio-2",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "publication_review": "pending maintainer review of release PR"
+    },
+    {
+      "id": "audiomotion",
+      "candidate_id": "backlog-6a196528bef1076493a2cd33",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.audiomotion.com/about/",
+        "https://www.audiomotion.com/services/"
+      ],
+      "finding": "Correct the existing identity to the current officially stated Didcot facility; do not add an Oxford duplicate. Retargeting is explicit; no facial capture is inferred.",
+      "capability_evidence": {
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        },
+        "Retargeting": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_reference": {
+        "city": "Didcot",
+        "lat": 51.60928,
+        "lng": -1.24214,
+        "source": "https://www.geonames.org/2651269"
+      },
+      "coordinate_precision": "city",
+      "relationships": [],
+      "publication_review": "pending maintainer review of release PR"
+    }
+  ],
+  "confidence_definition": "Confirmed means the cited specific claim is directly source-supported, not independent physical, legal or operational verification. Maintainer publication approval is pending."
+}

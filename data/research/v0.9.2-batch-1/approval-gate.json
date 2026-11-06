@@ -1,0 +1,11 @@
+{
+  "tested_on": "2026-11-06",
+  "database": "Audited v0.9.1 baseline reconstructed from canonical prefix and explicit before-update record",
+  "command": "python tools/discovery.py prepare --queue queue.json --records records.json --reviews reviews.json --database <v0.9.1-baseline.json> --output <fresh-proposal-directory>",
+  "expected_exit_code": 1,
+  "actual_exit_code": 1,
+  "output": "Discovery blocked: explicit named approval and public rationale required",
+  "proposal_written": false,
+  "all_reviews_pending": true,
+  "explanation": "Source research is recorded, but the human approval-bound automation must not generate an approved proposal without a named maintainer review. The release data diff is presented directly in the unmerged PR for that review."
+}

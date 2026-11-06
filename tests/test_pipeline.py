@@ -24,17 +24,20 @@ def record(**changes):
     return row
 
 
+from snapshots import before_v092
+
+
 class ValidationTests(unittest.TestCase):
     def test_canonical_database_and_relationships(self):
         rows = read_records(ROOT / 'studios.json')
         self.assertEqual(validate(rows)[0], [])
-        self.assertEqual(len(rows), 129)
-        self.assertEqual(len({r['company_id'] for r in rows}), 66)
+        self.assertEqual(len(rows), 141)
+        self.assertEqual(len({r['company_id'] for r in rows}), 77)
         for company in ('beyond', 'centroid'):
             self.assertEqual(sum(r['company_id'] == company for r in rows), 2)
         legacy = [r for r in rows if 'legacy_research' in r]
         self.assertEqual(len(legacy), 18)
-        self.assertTrue(all(r['evidence_state'] == 'unknown' for r in legacy))
+        self.assertEqual({r['id'] for r in legacy if r['evidence_state'] != 'unknown'}, {'audiomotion'})
 
     def test_non_mocap_sector_is_valid(self):
         self.assertFalse(validate([record()])[0])
@@ -101,7 +104,7 @@ class ResearchBatchTests(unittest.TestCase):
     def setUp(self):
         self.folder = ROOT / 'data/research/v0.7-batch-1'
         self.batch = read_records(self.folder / 'batch.csv')
-        self.database = read_records(ROOT / 'studios.json')[:31]
+        self.database = before_v092()[:31]
         self.evidence = json.loads((self.folder / 'evidence.json').read_text())
 
     def test_batch_exactly_matches_imported_records(self):

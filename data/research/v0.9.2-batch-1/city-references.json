@@ -1,0 +1,72 @@
+{
+  "reviewed_on": "2026-11-06",
+  "licence": "GeoNames CC BY 4.0; reference points copied unchanged, no endorsement; Montpellier explicitly used as urban-area reference for Castelnau-le-Lez.",
+  "references": {
+    "London": {
+      "city": "London",
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "source": "https://www.geonames.org/2643743/london.html"
+    },
+    "Pune": {
+      "city": "Pune",
+      "lat": 18.51957,
+      "lng": 73.85535,
+      "source": "https://www.geonames.org/1259229/pune.html"
+    },
+    "Barcelona": {
+      "city": "Barcelona",
+      "lat": 41.38879,
+      "lng": 2.15899,
+      "source": "https://www.geonames.org/3128760/barcelona.html"
+    },
+    "Alpharetta": {
+      "city": "Alpharetta",
+      "lat": 34.07038,
+      "lng": -84.27384,
+      "source": "https://www.geonames.org/11788370/city-of-alpharetta.html"
+    },
+    "Taguig": {
+      "city": "Taguig",
+      "lat": 14.5243,
+      "lng": 121.0792,
+      "source": "https://www.geonames.org/1684308"
+    },
+    "Villeurbanne": {
+      "city": "Villeurbanne",
+      "lat": 45.76601,
+      "lng": 4.8795,
+      "source": "https://www.geonames.org/2968254/villeurbanne.html"
+    },
+    "Malmö": {
+      "city": "Malmö",
+      "lat": 55.60587,
+      "lng": 13.00073,
+      "source": "https://www.geonames.org/2692969/malmoe.html"
+    },
+    "Montpellier urban area": {
+      "city": "Montpellier urban area",
+      "lat": 43.61093,
+      "lng": 3.87635,
+      "source": "https://www.geonames.org/2992166/montpellier.html"
+    },
+    "Annecy": {
+      "city": "Annecy",
+      "lat": 45.90878,
+      "lng": 6.12565,
+      "source": "https://www.geonames.org/3037543/annecy.html"
+    },
+    "Assago": {
+      "city": "Assago",
+      "lat": 45.40887,
+      "lng": 9.12565,
+      "source": "https://www.geonames.org/6534466/assago.html"
+    },
+    "Didcot": {
+      "city": "Didcot",
+      "lat": 51.60928,
+      "lng": -1.24214,
+      "source": "https://www.geonames.org/2651269"
+    }
+  }
+}

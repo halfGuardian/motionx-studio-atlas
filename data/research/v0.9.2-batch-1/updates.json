@@ -1,0 +1,101 @@
+[
+  {
+    "id": "audiomotion",
+    "previous_record_hash": "d40f255253bf2b4dd5a5cafe374023e2ee68e6900490fb6f8b3385eb14e1aac7",
+    "before": {
+      "id": "audiomotion",
+      "company_id": "audiomotion",
+      "name": "Audiomotion Studios",
+      "city": "United Kingdom (city unverified)",
+      "country": "United Kingdom",
+      "lat": 51.752,
+      "lng": -1.2577,
+      "address": "Approximate regional reference only — city and street address not verified",
+      "website": "https://www.audiomotion.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture"
+      ],
+      "capabilities": [
+        "Performance Capture",
+        "Motion Capture"
+      ],
+      "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
+      "evidence": "https://www.audiomotion.com/",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "unverified",
+      "evidence_state": "unknown",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Official service page reviewed; registration not checked",
+        "verified_on": "2026-11-06"
+      },
+      "capability_evidence": {
+        "Performance Capture": {
+          "state": "unknown",
+          "evidence": "https://www.audiomotion.com/",
+          "verified_on": ""
+        },
+        "Motion Capture": {
+          "state": "unknown",
+          "evidence": "https://www.audiomotion.com/",
+          "verified_on": ""
+        }
+      }
+    },
+    "after": {
+      "id": "audiomotion",
+      "company_id": "audiomotion",
+      "name": "Audiomotion Studios",
+      "city": "Didcot",
+      "country": "United Kingdom",
+      "lat": 51.60928,
+      "lng": -1.24214,
+      "address": "Rebellion Film Studios, Didcot, as stated by Audiomotion; approximate town reference, not an entrance geocode",
+      "website": "https://www.audiomotion.com/",
+      "email": "",
+      "phone": "",
+      "categories": [
+        "Motion Capture",
+        "Performance Capture"
+      ],
+      "capabilities": [
+        "Performance Capture",
+        "Motion Capture",
+        "Retargeting"
+      ],
+      "status": "Current official About page identifies relocation to Rebellion Film Studios, Didcot and explicit body/performance capture and retargeting services. Original unverified regional reference retained in the release audit. Approximate Didcot reference only; no independent inspection or exact facility geocode.",
+      "evidence": "https://www.audiomotion.com/about/",
+      "verified_on": "2026-11-06",
+      "coordinate_precision": "city",
+      "evidence_state": "confirmed",
+      "legacy_research": {
+        "evidence_state": "confirmed",
+        "status": "Official service page reviewed; registration not checked",
+        "verified_on": "2026-11-06"
+      },
+      "capability_evidence": {
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        },
+        "Retargeting": {
+          "state": "confirmed",
+          "evidence": "https://www.audiomotion.com/about/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "coordinate_source": "https://www.geonames.org/2651269",
+      "location_type": "capture_facility",
+      "relationships": []
+    },
+    "reason": "Explicit current location correction from the official About/services pages, retaining identity and migration provenance."
+  }
+]

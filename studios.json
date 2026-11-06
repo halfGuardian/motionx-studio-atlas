@@ -746,26 +746,28 @@
     "id": "audiomotion",
     "company_id": "audiomotion",
     "name": "Audiomotion Studios",
-    "city": "United Kingdom (city unverified)",
+    "city": "Didcot",
     "country": "United Kingdom",
-    "lat": 51.752,
-    "lng": -1.2577,
-    "address": "Approximate regional reference only — city and street address not verified",
+    "lat": 51.60928,
+    "lng": -1.24214,
+    "address": "Rebellion Film Studios, Didcot, as stated by Audiomotion; approximate town reference, not an entrance geocode",
     "website": "https://www.audiomotion.com/",
     "email": "",
     "phone": "",
     "categories": [
-      "Motion Capture"
+      "Motion Capture",
+      "Performance Capture"
     ],
     "capabilities": [
       "Performance Capture",
-      "Motion Capture"
+      "Motion Capture",
+      "Retargeting"
     ],
-    "status": "Legacy research seed; source and capabilities require review. Registration and current operation unverified.",
-    "evidence": "https://www.audiomotion.com/",
+    "status": "Current official About page identifies relocation to Rebellion Film Studios, Didcot and explicit body/performance capture and retargeting services. Original unverified regional reference retained in the release audit. Approximate Didcot reference only; no independent inspection or exact facility geocode.",
+    "evidence": "https://www.audiomotion.com/about/",
     "verified_on": "2026-11-06",
-    "coordinate_precision": "unverified",
-    "evidence_state": "unknown",
+    "coordinate_precision": "city",
+    "evidence_state": "confirmed",
     "legacy_research": {
       "evidence_state": "confirmed",
       "status": "Official service page reviewed; registration not checked",
@@ -773,16 +775,24 @@
     },
     "capability_evidence": {
       "Performance Capture": {
-        "state": "unknown",
-        "evidence": "https://www.audiomotion.com/",
-        "verified_on": ""
+        "state": "confirmed",
+        "evidence": "https://www.audiomotion.com/about/",
+        "verified_on": "2026-11-06"
       },
       "Motion Capture": {
-        "state": "unknown",
-        "evidence": "https://www.audiomotion.com/",
-        "verified_on": ""
+        "state": "confirmed",
+        "evidence": "https://www.audiomotion.com/about/",
+        "verified_on": "2026-11-06"
+      },
+      "Retargeting": {
+        "state": "confirmed",
+        "evidence": "https://www.audiomotion.com/about/",
+        "verified_on": "2026-11-06"
       }
-    }
+    },
+    "coordinate_source": "https://www.geonames.org/2651269",
+    "location_type": "capture_facility",
+    "relationships": []
   },
   {
     "id": "versatile",
@@ -5421,6 +5431,545 @@
         "name": "THQ Nordic",
         "type": "group_member",
         "evidence": "https://metricminds.com/performance-capture/",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "blue-mammoth-alpharetta",
+    "company_id": "blue-mammoth",
+    "name": "Blue Mammoth Games",
+    "city": "Alpharetta",
+    "country": "United States",
+    "lat": 34.07038,
+    "lng": -84.27384,
+    "address": "Alpharetta, Georgia — municipality corroborated by ESA; street address not verified",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.theesa.com/video-game-impact-map/state/georgia-2/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Ubisoft markets the studio as Atlanta; ESA lists the municipality as Alpharetta. Brawlhalla development is explicit; no capture inferred. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/11788370/city-of-alpharetta.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-philippines-taguig",
+    "company_id": "ubisoft-philippines",
+    "name": "Ubisoft Philippines",
+    "city": "Taguig",
+    "country": "Philippines",
+    "lat": 14.5243,
+    "lng": 121.0792,
+    "address": "The Finance Centre, 26th Street corner 9th Avenue, Bonifacio Global City, Taguig City; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official branch page names Taguig and local AAA co-development teams. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/1684308",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/taguig",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-barcelona-main",
+    "company_id": "ubisoft-barcelona",
+    "name": "Ubisoft Barcelona",
+    "city": "Barcelona",
+    "country": "Spain",
+    "lat": 41.38879,
+    "lng": 2.15899,
+    "address": "Plaça Ernest Lluch i Martín 5, Torre Diagonal 00, 08019 Barcelona; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.linkedin.com/company/ubisoft-barcelona/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official career address and linked company-authored profile support this AAA production studio. Co-located with the separately named mobile studio; not the historical Sant Cugat address. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/3128760/barcelona.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-barcelona-mobile-main",
+    "company_id": "ubisoft-barcelona-mobile",
+    "name": "Ubisoft Barcelona Mobile",
+    "city": "Barcelona",
+    "country": "Spain",
+    "lat": 41.38879,
+    "lng": 2.15899,
+    "address": "Plaça d'Ernest Lluch i Martin 5, Planta 9, 08019 Barcelona; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official page separately identifies this F2P mobile studio and ninth-floor address. Same building as Ubisoft Barcelona; preserve operating identity. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/3128760/barcelona.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ivory-tower-villeurbanne",
+    "company_id": "ivory-tower",
+    "name": "Ubisoft Ivory Tower",
+    "city": "Villeurbanne",
+    "country": "France",
+    "lat": 45.76601,
+    "lng": 4.8795,
+    "address": "36 Rue de Bruxelles, 69100 Villeurbanne; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/studio/ivory-tower",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Marketed as Lyon; the official branch address is in Villeurbanne. Own studio page explicitly identifies The Crew development. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/2968254/villeurbanne.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-pune-main",
+    "company_id": "ubisoft-pune",
+    "name": "Ubisoft Pune",
+    "city": "Pune",
+    "country": "India",
+    "lat": 18.51957,
+    "lng": 73.85535,
+    "address": "Kumar Cerebrum IT Park, B3 fifth floor, Kalyaninagar, Pune; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/india",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official Pune address plus India page explicitly describing Pune mobile/console production, distinct from quality control. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/1259229/pune.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "massive-malmo",
+    "company_id": "massive-entertainment",
+    "name": "Massive Entertainment",
+    "city": "Malmö",
+    "country": "Sweden",
+    "lat": 55.60587,
+    "lng": 13.00073,
+    "address": "City reference only — street address not verified",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official Malmö page identifies a local AAA development studio; postal box is not treated as a facility address. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/2692969/malmoe.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-montpellier-main",
+    "company_id": "ubisoft-montpellier",
+    "name": "Ubisoft Montpellier",
+    "city": "Castelnau-le-Lez",
+    "country": "France",
+    "lat": 43.61093,
+    "lng": 3.87635,
+    "address": "85 rue Didier Daurat, 34170 Castelnau-le-Lez; approximate Montpellier urban-area reference pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/studio/montpellier",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "region",
+    "status": "Official street municipality is Castelnau-le-Lez. Pin is a Montpellier urban-area reference, not a Castelnau city centroid or facility geocode; local geocode remains unresolved. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/2992166/montpellier.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-annecy-main",
+    "company_id": "ubisoft-annecy",
+    "name": "Ubisoft Annecy",
+    "city": "Annecy",
+    "country": "France",
+    "lat": 45.90878,
+    "lng": 6.12565,
+    "address": "6 rue André Fumex, 74000 Annecy; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/studio/annecy",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Current studio page identifies local game development and the same Annecy address as the careers page. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/3037543/annecy.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ubisoft-milan-assago",
+    "company_id": "ubisoft-milan",
+    "name": "Ubisoft Milan",
+    "city": "Assago",
+    "country": "Italy",
+    "lat": 45.40887,
+    "lng": 9.12565,
+    "address": "Via del Bosco Rinnovato 6, Edificio U7, 20057 Assago; approximate city pin",
+    "website": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [
+      "Game Development"
+    ],
+    "capability_evidence": {
+      "Game Development": {
+        "state": "confirmed",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official address is Assago, not central Milan. Page explicitly describes the operating game-development team. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "production_studio",
+    "coordinate_source": "https://www.geonames.org/6534466/assago.html",
+    "relationships": [
+      {
+        "id": "ubisoft",
+        "name": "Ubisoft",
+        "type": "group_member",
+        "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/milan",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "studiot3d-london-stage-1",
+    "company_id": "studiot3d",
+    "name": "StudioT3D — Studio 1",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.50853,
+    "lng": -0.12574,
+    "address": "Studio 1, 11C Dock Street, London E1 8JN; approximate city pin",
+    "website": "https://www.studiot3d.com/studio-1",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Performance Capture",
+      "Facial Capture",
+      "Virtual Production"
+    ],
+    "capabilities": [
+      "Motion Capture",
+      "Performance Capture",
+      "Facial Capture",
+      "Virtual Production"
+    ],
+    "capability_evidence": {
+      "Motion Capture": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/studio-1",
+        "verified_on": "2026-11-06"
+      },
+      "Performance Capture": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/studio-1",
+        "verified_on": "2026-11-06"
+      },
+      "Facial Capture": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/",
+        "verified_on": "2026-11-06"
+      },
+      "Virtual Production": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/studio-1",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.studiot3d.com/studio-1",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "A separately documented LED/performance-capture stage. Facial tracking is explicitly stated for both London volumes on the official home page; no games development inferred. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "capture_facility",
+    "coordinate_source": "https://www.geonames.org/2643743/london.html",
+    "relationships": [
+      {
+        "id": "target3d",
+        "name": "Target3D",
+        "type": "group_member",
+        "evidence": "https://www.studiot3d.com/our-team",
+        "verified_on": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "studiot3d-london-stage-2",
+    "company_id": "studiot3d",
+    "name": "StudioT3D — Studio 2",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.50853,
+    "lng": -0.12574,
+    "address": "Studio 2, 11C Dock Street, London E1 8JN; approximate city pin",
+    "website": "https://www.studiot3d.com/studio-2",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "Motion Capture",
+      "Volumetric Capture"
+    ],
+    "capabilities": [
+      "Motion Capture",
+      "Volumetric Capture"
+    ],
+    "capability_evidence": {
+      "Motion Capture": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/studio-2",
+        "verified_on": "2026-11-06"
+      },
+      "Volumetric Capture": {
+        "state": "confirmed",
+        "evidence": "https://www.studiot3d.com/studio-2",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.studiot3d.com/studio-2",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Distinct documented volumetric/motion-capture stage in the same building. Guildhall partnership is explicit. LED virtual production and full performance capture are not copied from Stage 1. Source-supported claims reviewed 6 November 2026; no independent site inspection or legal/operational audit. Reference pin is approximate.",
+    "location_type": "capture_facility",
+    "coordinate_source": "https://www.geonames.org/2643743/london.html",
+    "relationships": [
+      {
+        "id": "target3d",
+        "name": "Target3D",
+        "type": "group_member",
+        "evidence": "https://www.studiot3d.com/our-team",
+        "verified_on": "2026-11-06"
+      },
+      {
+        "id": "guildhall-production-studio",
+        "name": "Guildhall Production Studio",
+        "type": "partner_of",
+        "evidence": "https://www.studiot3d.com/studio-2",
         "verified_on": "2026-11-06"
       }
     ]
