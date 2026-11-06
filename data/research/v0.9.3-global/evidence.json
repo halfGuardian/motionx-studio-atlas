@@ -426,7 +426,7 @@
     },
     {
       "id": "outpost-vfx-stuttgart",
-      "record_hash": "fe179cc630e6937103bb5d1901d3b72d189e1e6f37733aed0dba90081ff01fe1",
+      "record_hash": "9feed8c3b472a1b26580819a18f5b788ac7238568a95d7106a1f372357b89525",
       "reviewed_on": "2026-11-06",
       "location_sources": [
         "https://www.outpost-vfx.com/en/contact",
@@ -436,7 +436,7 @@
       "capability_evidence": {
         "VFX": {
           "state": "confirmed",
-          "evidence": "https://www.outpost-vfx.com/en/contact",
+          "evidence": "https://www.cgw.com/Press-Center/News/2026/Outpost-VFX-opens-in-Germany-i-House-of-the-Drag.aspx",
           "verified_on": "2026-11-06"
         }
       },
@@ -906,7 +906,7 @@
     },
     {
       "id": "chocolate-tribe-johannesburg",
-      "record_hash": "8228b1885e2ef6e717f2528c014ef6acfd80c539ad7e3c7fb04ba7b8223ca3f5",
+      "record_hash": "cff288876d3c83a468c3bd29e2db198042aa74a4ad8f92af2b43643691a4191e",
       "reviewed_on": "2026-11-06",
       "location_sources": [
         "https://chocolatetribe.co.za/contact/",
@@ -915,12 +915,12 @@
       "capability_evidence": {
         "VFX": {
           "state": "confirmed",
-          "evidence": "https://chocolatetribe.co.za/contact/",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
           "verified_on": "2026-11-06"
         },
         "Animation": {
           "state": "confirmed",
-          "evidence": "https://chocolatetribe.co.za/contact/",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
           "verified_on": "2026-11-06"
         }
       },
@@ -936,7 +936,7 @@
     },
     {
       "id": "chocolate-tribe-cape-town",
-      "record_hash": "0c75e9a2f0ff69a035d0da6827d109e22f1de1bd78e4ed66329aff0a9889f19e",
+      "record_hash": "08ed5ff333a47069aa33d54089d0a86e110989e474fb0e129c3d529093448ba3",
       "reviewed_on": "2026-11-06",
       "location_sources": [
         "https://chocolatetribe.co.za/contact/",
@@ -945,12 +945,12 @@
       "capability_evidence": {
         "VFX": {
           "state": "confirmed",
-          "evidence": "https://chocolatetribe.co.za/contact/",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
           "verified_on": "2026-11-06"
         },
         "Animation": {
           "state": "confirmed",
-          "evidence": "https://chocolatetribe.co.za/contact/",
+          "evidence": "https://chocolatetribe.co.za/cape-town-office-moved-to-a-new-location/",
           "verified_on": "2026-11-06"
         }
       },
@@ -966,7 +966,7 @@
     },
     {
       "id": "rising-sun-pictures-adelaide",
-      "record_hash": "344dd0cb9144edad5cb64f0710ed0a02ebc60dc03758af80990f8208c489bf87",
+      "record_hash": "7ef54ff28379a854527e28dbd7b48e363a49110329fcd8234f82da9b96ec71f8",
       "reviewed_on": "2026-11-06",
       "location_sources": [
         "https://pitchblackcompany.com/pitch-black-contact-us/",
@@ -975,7 +975,7 @@
       "capability_evidence": {
         "VFX": {
           "state": "confirmed",
-          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
           "verified_on": "2026-11-06"
         }
       },
@@ -999,7 +999,7 @@
     },
     {
       "id": "rising-sun-pictures-brisbane",
-      "record_hash": "14270c8e9f31180646046e436aa76876bfa462545dee86b065f71ea87c48ca0d",
+      "record_hash": "95a2e06075880bc0566aa3b84a9614c2c9520504ea47c80b2e12c97dc60ed82a",
       "reviewed_on": "2026-11-06",
       "location_sources": [
         "https://pitchblackcompany.com/pitch-black-contact-us/",
@@ -1008,7 +1008,7 @@
       "capability_evidence": {
         "VFX": {
           "state": "confirmed",
-          "evidence": "https://pitchblackcompany.com/pitch-black-contact-us/",
+          "evidence": "https://www.ausfilm.com.au/news/rsp-named-australian-exporter-of-the-year/",
           "verified_on": "2026-11-06"
         }
       },

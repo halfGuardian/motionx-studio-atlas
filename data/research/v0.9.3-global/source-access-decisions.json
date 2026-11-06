@@ -1,10 +1,12 @@
 {
   "reviewed_on": "2026-11-06",
-  "collector_enabled": 9,
+  "collector_enabled": 8,
   "registered": 25,
   "sources": [
     {
       "id": "ubisoft-studios",
+      "company_id": "ubisoft",
+      "organisation_name": "Ubisoft",
       "enabled": false,
       "source_url": "https://www.ubisoft.com/en-us/company/careers/locations",
       "policy_review": {
@@ -19,6 +21,8 @@
     },
     {
       "id": "ea-studios",
+      "company_id": "electronic-arts",
+      "organisation_name": "Electronic Arts",
       "enabled": false,
       "source_url": "https://www.ea.com/careers/teams/ea-studios",
       "policy_review": {
@@ -30,6 +34,8 @@
     },
     {
       "id": "cinesite-group",
+      "company_id": "cinesite-group",
+      "organisation_name": "Cinesite Group",
       "enabled": false,
       "source_url": "https://cinesite.com/our-studios/",
       "policy_review": {
@@ -42,6 +48,8 @@
     },
     {
       "id": "dneg-studios",
+      "company_id": "dneg",
+      "organisation_name": "DNEG",
       "enabled": true,
       "source_url": "https://www.dneg.com/contact",
       "policy_review": {
@@ -56,6 +64,8 @@
     },
     {
       "id": "imaginarium-sites",
+      "company_id": "imaginarium",
+      "organisation_name": "Imaginarium Studios",
       "enabled": false,
       "source_url": "https://www.imaginariumstudios.co.uk/locations",
       "policy_review": {
@@ -70,6 +80,8 @@
     },
     {
       "id": "metricminds-services",
+      "company_id": "metricminds",
+      "organisation_name": "metricminds",
       "enabled": true,
       "source_url": "https://metricminds.com/performance-capture/",
       "policy_review": {
@@ -84,6 +96,8 @@
     },
     {
       "id": "framestore-locations",
+      "company_id": "framestore",
+      "organisation_name": "Framestore",
       "enabled": true,
       "source_url": "https://www.framestore.com/contact",
       "policy_review": {
@@ -98,6 +112,8 @@
     },
     {
       "id": "ilm-locations",
+      "company_id": "ilm",
+      "organisation_name": "Industrial Light & Magic",
       "enabled": false,
       "source_url": "https://www.ilm.com/locations/",
       "policy_review": {
@@ -112,6 +128,8 @@
     },
     {
       "id": "weta-locations",
+      "company_id": "weta-fx",
+      "organisation_name": "Wētā FX",
       "enabled": false,
       "source_url": "https://www.wetafx.co.nz/about",
       "policy_review": {
@@ -126,6 +144,8 @@
     },
     {
       "id": "imageworks-locations",
+      "company_id": "sony-imageworks",
+      "organisation_name": "Sony Pictures Imageworks",
       "enabled": false,
       "source_url": "https://www.imageworks.com/contact-us",
       "policy_review": {
@@ -140,6 +160,8 @@
     },
     {
       "id": "digital-domain-locations",
+      "company_id": "digital-domain",
+      "organisation_name": "Digital Domain",
       "enabled": false,
       "source_url": "https://digitaldomain.com/about/contact-us/",
       "policy_review": {
@@ -154,6 +176,8 @@
     },
     {
       "id": "eyeline-locations",
+      "company_id": "eyeline",
+      "organisation_name": "Eyeline / Scanline VFX",
       "enabled": false,
       "source_url": "https://apply.eyelinestudios.com/careers/artist/",
       "policy_review": {
@@ -168,6 +192,8 @@
     },
     {
       "id": "cdpr-locations",
+      "company_id": "cd-projekt-red",
+      "organisation_name": "CD PROJEKT RED",
       "enabled": false,
       "source_url": "https://www.cdprojektred.com/en/jobs",
       "policy_review": {
@@ -182,20 +208,22 @@
     },
     {
       "id": "remedy-locations",
-      "enabled": true,
+      "company_id": "remedy",
+      "organisation_name": "Remedy Entertainment",
+      "enabled": false,
       "source_url": "https://www.remedygames.com/contact",
       "policy_review": {
-        "decision": "bounded_metadata_reviewed",
         "reviewed_on": "2026-11-06",
-        "policy_urls": [
-          "https://www.remedygames.com/privacy-policy"
-        ],
-        "note": "Privacy automated-processing clauses concern personal data; collect factual location metadata only. Runtime robots rules remain mandatory; not independent verification or written permission."
+        "decision": "automated_collection_disabled",
+        "url": "https://www.remedygames.com/terms-conditions",
+        "note": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
       },
-      "disabled_reason": null
+      "disabled_reason": "Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
     },
     {
       "id": "larian-locations",
+      "company_id": "larian",
+      "organisation_name": "Larian Studios",
       "enabled": true,
       "source_url": "https://larian.com/careers",
       "policy_review": {
@@ -210,6 +238,8 @@
     },
     {
       "id": "rise-locations",
+      "company_id": "rise-fx",
+      "organisation_name": "RISE Visual Effects Studios",
       "enabled": true,
       "source_url": "https://www.risefx.com/",
       "policy_review": {
@@ -224,6 +254,8 @@
     },
     {
       "id": "outpost-locations",
+      "company_id": "outpost-vfx",
+      "organisation_name": "Outpost VFX",
       "enabled": true,
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "policy_review": {
@@ -238,6 +270,8 @@
     },
     {
       "id": "flyingbark-locations",
+      "company_id": "flying-bark",
+      "organisation_name": "Flying Bark Productions",
       "enabled": true,
       "source_url": "https://www.flyingbark.com.au/about",
       "policy_review": {
@@ -252,6 +286,8 @@
     },
     {
       "id": "triggerfish-locations",
+      "company_id": "triggerfish",
+      "organisation_name": "Triggerfish Animation",
       "enabled": false,
       "source_url": "https://www.triggerfish.com/faq/",
       "policy_review": {
@@ -266,6 +302,8 @@
     },
     {
       "id": "reelfx-locations",
+      "company_id": "reel-fx",
+      "organisation_name": "Reel FX",
       "enabled": false,
       "source_url": "https://www.reelfx.com/contact/",
       "policy_review": {
@@ -280,6 +318,8 @@
     },
     {
       "id": "rodeo-locations",
+      "company_id": "rodeo-fx",
+      "organisation_name": "Rodeo FX",
       "enabled": false,
       "source_url": "https://www.rodeofx.com/contact",
       "policy_review": {
@@ -294,6 +334,8 @@
     },
     {
       "id": "chocolate-tribe-locations",
+      "company_id": "chocolate-tribe",
+      "organisation_name": "Chocolate Tribe",
       "enabled": false,
       "source_url": "https://chocolatetribe.co.za/contact/",
       "policy_review": {
@@ -308,6 +350,8 @@
     },
     {
       "id": "studiot3d-locations",
+      "company_id": "studiot3d",
+      "organisation_name": "StudioT3D",
       "enabled": false,
       "source_url": "https://www.studiot3d.com/",
       "policy_review": {
@@ -322,6 +366,8 @@
     },
     {
       "id": "folks-locations",
+      "company_id": "folks",
+      "organisation_name": "FOLKS",
       "enabled": true,
       "source_url": "https://folksvfx.com/contact/",
       "policy_review": {
@@ -336,6 +382,8 @@
     },
     {
       "id": "rsp-locations",
+      "company_id": "rising-sun-pictures",
+      "organisation_name": "Rising Sun Pictures",
       "enabled": false,
       "source_url": "https://www.rsp.com.au/contact",
       "policy_review": {
