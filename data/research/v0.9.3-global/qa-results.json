@@ -1,0 +1,46 @@
+{
+  "reviewed_on": "2026-11-06",
+  "tested_database_hash": "f6e6a1d6388d5e06385f2e23f186e097d34f9e68ce962d5a851ab9cd246c1fc3",
+  "python": {
+    "passed": 110,
+    "failed": 0
+  },
+  "javascript": {
+    "passed": 22,
+    "failed": 0
+  },
+  "http_browser": {
+    "passed": 17,
+    "failed": 0,
+    "leaflet_and_osm": "live resources; attribution preserved"
+  },
+  "research_dashboard_http": {
+    "passed": 1,
+    "scope": "staged before/after review, keyboard expansion, 390px layout, evidence links and no external asset requests"
+  },
+  "performance": {
+    "synthetic_locations": 20000,
+    "unique_coordinate_groups": 20000,
+    "viewport_markers_at_zoom_4": 3201,
+    "list_page_size": 50,
+    "load_pan_paginate_filter_seconds": 3.225
+  },
+  "canonical_validation": {
+    "errors": 0,
+    "warnings": 201
+  },
+  "import_idempotency": {
+    "new_records": 0,
+    "unchanged_records": 41
+  },
+  "github_http_qa_run": 42161461479,
+  "source_collection_run": 42161951705,
+  "source_collectors": {
+    "registered": 25,
+    "enabled": 8,
+    "succeeded": 8,
+    "observations": 58
+  },
+  "publication_authorised": false,
+  "human_approval": "pending exact-content PR review and manual merge"
+}

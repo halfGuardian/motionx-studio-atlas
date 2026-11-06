@@ -1,6 +1,6 @@
 {
-  "run_id": 42160730347,
-  "inspection_job": 127705498507,
+  "run_id": 42161951705,
+  "inspection_job": 127709451015,
   "sources": [
     {
       "id": "dneg-studios",
@@ -17,7 +17,7 @@
       "attempted_on": "2026-11-06",
       "status": "ok",
       "candidate_count": 3,
-      "body_sha256": "0fb61393ce76f21c4c6521462527a04b0b55a382aebf985921774e01032b929d",
+      "body_sha256": "841cf33bced6d75d00eb5b388c4b63ce033345a19d2a36ad374ad558977111ba",
       "extraction_hash": "99b2a3fd25b58fb17555e673f2e10afa1309a62c367c4ee7e9f39f29893f9fb2"
     },
     {
@@ -26,17 +26,8 @@
       "attempted_on": "2026-11-06",
       "status": "ok",
       "candidate_count": 7,
-      "body_sha256": "3de76647ddd66ef2c03328ed391d12deb766d9d80772bd903309a5b41e5d85d3",
+      "body_sha256": "28397f8dc19edde2ab31a2b4a8c758bee8a6c63177be461c54f30fec60b1635c",
       "extraction_hash": "c939e4cbae02bf6f8237328e725fd9ccd6e067bb5245e7b30ebcdc714e73be41"
-    },
-    {
-      "id": "remedy-locations",
-      "url": "https://www.remedygames.com/contact",
-      "attempted_on": "2026-11-06",
-      "status": "ok",
-      "candidate_count": 2,
-      "body_sha256": "bba2fd23308297ffe8d8912cadcbed1a08cb11cab7f8706c672640e0bcc2cea5",
-      "extraction_hash": "335c8b164aa7a238942298a9fe81c8a4e10c012f944531dcd745c2210f28e1ac"
     },
     {
       "id": "larian-locations",
@@ -44,7 +35,7 @@
       "attempted_on": "2026-11-06",
       "status": "ok",
       "candidate_count": 6,
-      "body_sha256": "a5197fdb4720068c7d05364bf665832d69059a0fe07747c283875984c4bd059f",
+      "body_sha256": "3b5dfa81b31b2851eb11f0b48dfc68904e2f71917498c5d530a17f815e587988",
       "extraction_hash": "fcdc52cfb651792ed083d22ec55aaa3a02cc1ca519bcfa6f2bcda0ac28ef1201"
     },
     {
@@ -53,7 +44,7 @@
       "attempted_on": "2026-11-06",
       "status": "ok",
       "candidate_count": 5,
-      "body_sha256": "6eeb805e94dbe6badd79fb72d5bdca00dd27ba63e4b59a96696711e302d8d24b",
+      "body_sha256": "cc74e5bb89c4c4ee572b901f4e85d2ee3863090e2216cb6e2b939a72f8f390b2",
       "extraction_hash": "f54460442d0f70e4ea97104da600b6ad646c9c5439f5b49920b191e0d9fc91e1"
     },
     {
@@ -62,7 +53,7 @@
       "attempted_on": "2026-11-06",
       "status": "ok",
       "candidate_count": 5,
-      "body_sha256": "9ed98b37b0b84e46e0d772f88d56778faf7cac8885ff60914e1469fdf52b3246",
+      "body_sha256": "773ec20ab2c37d207e858dfed630dc72866cda5c2883ec548de16811ca6e97ae",
       "extraction_hash": "5d416b3829d0d8ace369a7363b86e6c53f0aa26901d0896365ce7e34c3c0a8cb"
     },
     {
@@ -85,10 +76,10 @@
     }
   ],
   "candidate_counts": {
-    "already_represented": 55,
-    "potentially_new": 44,
+    "already_represented": 62,
+    "potentially_new": 36,
     "irrelevant": 25,
-    "requires_research": 48
+    "requires_research": 49
   },
   "continuity": {
     "retained": 133,

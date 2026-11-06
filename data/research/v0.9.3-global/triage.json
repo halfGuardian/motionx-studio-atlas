@@ -1,21 +1,26 @@
 {
   "version": 1,
   "triaged_on": "2026-11-06",
-  "queue_hash": "88062f46b22045fbafce3a371c659190602d95178e1ac86900cc190c450fc9f8",
+  "queue_hash": "0bb4d903bc1a0513c01d0879d78d0a49ea68f5d634d19a4baf0297fd98feb693",
   "database_hash": "6cd445ba078647482a629915b819d3d070e4568dc37d19634bee196ab6402e28",
-  "discovery_report_hash": "1754831ebccf857719988cf566e58cd08ad675c6addd1d450f42051897917dc4",
-  "config_hash": "5bd447909f189cbfa2a1329699093dc0359a8ff3694209cbc04cde20ed9adad5",
+  "discovery_report_hash": "c0beaf8ba9ccd69178b32d4664b9ce79ba5a0e4807ac9f9954d94593776a7554",
+  "config_hash": "ccc3196d9ce27fcedaaba6f2b70f62fe2379503afd79a54ae4e367fae8fbfcee",
   "published_location_count": 141,
   "published_organisation_count": 77,
   "candidate_count": 172,
   "counts": {
-    "already_represented": 55,
-    "potentially_new": 44,
+    "already_represented": 62,
+    "potentially_new": 36,
     "irrelevant": 25,
-    "requires_research": 48
+    "requires_research": 49
   },
   "counting_policy": "Counts are observations, including backlog and duplicates, not unique facilities. Organisation-only matches do not establish branch completeness.",
-  "duplicate_observation_groups": [],
+  "duplicate_observation_groups": [
+    [
+      "discovery-0d7939d907d335f8a9479bdc",
+      "discovery-451027f197897c3111cc7b1f"
+    ]
+  ],
   "source_coverage": [
     {
       "source_id": "cdpr-locations",
@@ -116,10 +121,12 @@
       "last_run_observations": 10,
       "retained_candidates": 10,
       "counts": {
-        "potentially_new": 10
+        "potentially_new": 9,
+        "requires_research": 1
       },
       "candidate_types": {
-        "structured_place": 10
+        "structured_place": 9,
+        "change_signal": 1
       }
     },
     {
@@ -129,7 +136,7 @@
       "last_run_observations": 7,
       "retained_candidates": 7,
       "counts": {
-        "potentially_new": 7
+        "already_represented": 7
       },
       "candidate_types": {
         "structured_place": 7
@@ -216,9 +223,9 @@
     },
     {
       "source_id": "remedy-locations",
-      "enabled": true,
-      "last_run_status": "ok",
-      "last_run_observations": 2,
+      "enabled": false,
+      "last_run_status": "backlog_or_not_attempted",
+      "last_run_observations": 0,
       "retained_candidates": 2,
       "counts": {
         "irrelevant": 1,
@@ -1985,6 +1992,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-0387945c2ad3fb7eb4c33533",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -1992,7 +2000,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "a6c17811a73168e4ad20b69fa0c86a5546540dc5ea6baefe52c1ebcc3b7f0ea4",
+        "content_hash": "a53e5593d1d0ae5be93fc44eacf3a4f4fef22800aeda80719f9fd276b570f8b9",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2010,7 +2018,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "2482cee5c656336861d5f396db39fa05d466150300fc92e0aff85c9bd59629ab"
+      "candidate_hash": "5688c321444bbed60ac0ab419a98472cafa9454567e9beecd3a8c1e02776cdaf"
     },
     {
       "id": "discovery-04045c0181bb21006a934289",
@@ -2086,15 +2094,19 @@
     },
     {
       "id": "discovery-07fb5439bb4552f86ce3970c",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-los-angeles"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "Los Angeles",
@@ -2104,14 +2116,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-07fb5439bb4552f86ce3970c",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "239992a4a35591962b4480ea00c7ebacf3f476de6df9d80fd303801c5a96e211",
+        "content_hash": "c66a959a4d986ac8fb9b701a360d37088c2e211ed6d7220dbeb13cdc35d786af",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2127,7 +2140,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "7e6d70a1688ddf0226df88fc1a2ed4c0d51ff34981652c1befc655ef300b9c3a"
+      "candidate_hash": "ed766e9ad997448bd202d0cb86b9750fec0406360f87bd6e95e55ef5c45f1e77"
     },
     {
       "id": "discovery-081546d7ed9077211e47886f",
@@ -2187,7 +2200,7 @@
         "id": "discovery-0911dac394aa29a96bd35b5b",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -2201,7 +2214,7 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "1e36f9c50a9dba2bf9a07bd1a320141744f84bfc3aae80d639553fdd6e0b2b37"
+      "candidate_hash": "e87d5057165d91ecd8109bc47512da8216fae3c69b6eb43bfa61c277f8f9d2db"
     },
     {
       "id": "discovery-0d7939d907d335f8a9479bdc",
@@ -2238,7 +2251,10 @@
       },
       "source_url": "https://www.flyingbark.com.au/about",
       "source_enabled": true,
-      "candidate_hash": "28b9f9c70b6fdc7bfdc75f144139069eb2eace66912194daf78b91a7d51da917"
+      "candidate_hash": "28b9f9c70b6fdc7bfdc75f144139069eb2eace66912194daf78b91a7d51da917",
+      "duplicate_observation_ids": [
+        "discovery-451027f197897c3111cc7b1f"
+      ]
     },
     {
       "id": "discovery-0e06a74c5b757e499826f413",
@@ -2323,7 +2339,8 @@
       "candidate_type": "navigation_or_service",
       "matching_scope": "none",
       "reasons": [
-        "Generic navigation/service/contact page, not an individually identified physical studio. Retain observation for audit."
+        "Generic navigation/service/contact page, not an individually identified physical studio. Retain observation for audit.",
+        "Automated source disabled: Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
       ],
       "matched_location_ids": [],
       "matched_organisation_ids": [],
@@ -2349,7 +2366,7 @@
         ]
       },
       "source_url": "https://www.remedygames.com/contact",
-      "source_enabled": true,
+      "source_enabled": false,
       "candidate_hash": "33cd1ce67554a414ce5d96236fcec29b0b6297f986265759b7c716cedc93c78f"
     },
     {
@@ -2372,14 +2389,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-1ba6110d451eb467e3498e19",
         "source_id": "outpost-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "outpost-vfx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "f38250da196a5bf793ad1739da83aae555150189ca8d71cf4107a6b05f89bd92",
+        "content_hash": "b57789993c5e9528cb70db3d142ef91e1166fcaad4308e3c3ac427925553ce40",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2393,7 +2411,7 @@
       },
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "source_enabled": true,
-      "candidate_hash": "63644d507c938530f3978f8f7066c8fcfd479dd803ac9f8a33efef1ff766dd99"
+      "candidate_hash": "2ebc1d9df2dc42df8b75d12d24f380581f2cd60e7a5e005fd3c4f94b9e048104"
     },
     {
       "id": "discovery-1c4ae35f417bbce4d24e1b8d",
@@ -2614,7 +2632,8 @@
       "candidate_type": "unresolved_link",
       "matching_scope": "none",
       "reasons": [
-        "Insufficient facility/identity evidence in this observation; do not infer a studio from a navigation link."
+        "Insufficient facility/identity evidence in this observation; do not infer a studio from a navigation link.",
+        "Automated source disabled: Terms limit website use/material reuse; explicit permission or clarification is required before extracting facility metadata. Earlier navigation observations retained."
       ],
       "matched_location_ids": [],
       "matched_organisation_ids": [],
@@ -2637,20 +2656,24 @@
         "existing_matches": []
       },
       "source_url": "https://www.remedygames.com/contact",
-      "source_enabled": true,
+      "source_enabled": false,
       "candidate_hash": "66adad0ed9d3ff4a8aff296d3ad46fb36b74d200bf5bb26496b9ee51a428fa92"
     },
     {
       "id": "discovery-24fc70533e33db38bd3f349e",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-new-york"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "New York",
@@ -2660,14 +2683,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-24fc70533e33db38bd3f349e",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "d446d5909fb376dd6d263f4b8b575240150da7795b119a4154977a6032b4bceb",
+        "content_hash": "eddd7735e8d587424daf4ed88c5924092a48ad4d7005272d85d6da0744e8e39a",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2683,16 +2707,16 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "8b47048d2f3af719839ef4adb53eb1eeb6f868c761a177798060635eef58fb04"
+      "candidate_hash": "7d4aa8f890151c93e6de2aea0d87e305edee4e2d03518891db64e432ad8d3e9a"
     },
     {
       "id": "discovery-26319602236f2e71b6113d3a",
-      "classification": "potentially_new",
-      "triage_confidence": "likely",
-      "candidate_type": "structured_place",
+      "classification": "requires_research",
+      "triage_confidence": "unknown",
+      "candidate_type": "change_signal",
       "matching_scope": "none",
       "reasons": [
-        "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
+        "Missing/changed-business signal needs current primary research; no deletion or status claim inferred."
       ],
       "matched_location_ids": [],
       "matched_organisation_ids": [],
@@ -2705,6 +2729,9 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [
+          "upcoming"
+        ],
         "id": "discovery-26319602236f2e71b6113d3a",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -2712,8 +2739,10 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "06f53de9e5a6ab3fc9194e4c459033db706d9326831ccf131f5264a023064b22",
-        "signals": [],
+        "content_hash": "350dab4e6bbcd2589ae86cb6870e567437db42be819de8c6d65968babb08775b",
+        "signals": [
+          "possible_opening"
+        ],
         "review_status": "pending",
         "missing_since": null,
         "existing_matches": [
@@ -2730,7 +2759,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "9b88a25f79b3914b6fa47284f77071e750ab65745455a137e3f5d3f0f5abbed8"
+      "candidate_hash": "e39c3420a84d6a5b0ce6f8104b5168e71675a5da4edfa4528ef7db0c17c4b5e9"
     },
     {
       "id": "discovery-26b9d099e953a31a19eec265",
@@ -2752,14 +2781,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-26b9d099e953a31a19eec265",
         "source_id": "outpost-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "outpost-vfx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "9377ee726f70ab21e1b00531c7cddea166c1ff44745681c450f1e52f5dc36c9f",
+        "content_hash": "581e4548e55f91c260fd417375005375e65a35f5abbe181a6e2fe186ffefcc5c",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2773,7 +2803,7 @@
       },
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "source_enabled": true,
-      "candidate_hash": "4d7c13daf275fd7332ef04b44c35eb70083be1c22fed0e858ce132e8d02f5e63"
+      "candidate_hash": "2e9d43cf0f0b7b6d7f6a92a6ad0eb7bb4a59c722e2da0fa29d7ae88109328581"
     },
     {
       "id": "discovery-2bfc72bbd5ff4636639874cb",
@@ -2834,6 +2864,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-2fbc3d4c239afb587ff3a9fd",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -2841,7 +2872,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "26b79ed9b70c56be4aa9182667524d8cb76636e59568e127f133b9a61b35b556",
+        "content_hash": "44860d9d7daa90f7a8ccd1d6bda6cd10ce49e6673d0e1ada0e82b720c488a555",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2859,7 +2890,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "09b814ade318475e3a330185b0d7e081fb88516dbcc5304fca198e7e4772eae1"
+      "candidate_hash": "d2e9bd0924ee9534a157e75889882e3f167257caf9955471ba53f5dd72f44e88"
     },
     {
       "id": "discovery-36aa50b52ae47c509014ced6",
@@ -2919,14 +2950,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-377b8fc4a637bc6cca952dd8",
         "source_id": "outpost-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "outpost-vfx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "b40f55479ba2044c05a3cc6bc3fd9b010b31c2d392b012fefff6cff55090ea4b",
+        "content_hash": "1d90740362766a58103d23e1e3210d33c19c51c65f281d252cd8f3976c753395",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -2940,7 +2972,7 @@
       },
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "source_enabled": true,
-      "candidate_hash": "1fbd69c960618a7f02ff825496ef90f5fe052a4bf58e7f9903fde5def990c908"
+      "candidate_hash": "fe7301af1ce76554b503eea9953afd93b2b8da9a34763eead9827873e75ad3e4"
     },
     {
       "id": "discovery-3c345791eea7a820b27e0684",
@@ -3035,7 +3067,7 @@
         "id": "discovery-3ebdabba89c141501d633221",
         "source_id": "rise-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "rise-fx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -3049,7 +3081,7 @@
       },
       "source_url": "https://www.risefx.com/",
       "source_enabled": true,
-      "candidate_hash": "df9e1112fe4c05557c7974e6869444b53eb4c81c18544704f8a977fed9ed97ae"
+      "candidate_hash": "13e0b94d14155692ec2a5aec54a4c0e207392edb036e26206d0057189fd6a50f"
     },
     {
       "id": "discovery-3fe4840a8b59de6c429f2e64",
@@ -3071,14 +3103,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-3fe4840a8b59de6c429f2e64",
         "source_id": "outpost-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "outpost-vfx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "7439051f68fd10dcfb3c8880ff011a4dc125773f0702cc09b82672cb3e40d953",
+        "content_hash": "3f9505a55c0f875b239ba6a60e69b025e95fb0fddddbf041bad55b010063ef6d",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -3092,7 +3125,7 @@
       },
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "source_enabled": true,
-      "candidate_hash": "65270d88bd54c2994fde63ca0cb42a0a74c5865583279a8faffa8401e8a4e82c"
+      "candidate_hash": "f04c9b0285611e2d336783c662b043593475ed7f5844995f6a4c5b616b487f44"
     },
     {
       "id": "discovery-441843d75c95576a897d8ad0",
@@ -3153,14 +3186,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-451027f197897c3111cc7b1f",
         "source_id": "flyingbark-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "flying-bark",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "52c5540f25ed59bd9d18a80b3a4655600860c5c2ddaf76b2850613f4d1826b72",
+        "content_hash": "4d0414d9cae6e1196db01faa0ba00f86ba99c58d3e9c944e73d54d1c1a92713d",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -3172,7 +3206,10 @@
       },
       "source_url": "https://www.flyingbark.com.au/about",
       "source_enabled": true,
-      "candidate_hash": "881464bc39e25e245aebaa66e30a27211771eb9100b7e745fa38cc481a8844a2"
+      "candidate_hash": "c07d0b9fe5d4259f3cd4de76d2e039402e1bcb812c523414cfd647c7f64fff13",
+      "duplicate_observation_ids": [
+        "discovery-0d7939d907d335f8a9479bdc"
+      ]
     },
     {
       "id": "discovery-463cac4544d3184a870d566c",
@@ -3233,7 +3270,7 @@
         "id": "discovery-4a343e2980ecb2f7c850d1ec",
         "source_id": "rise-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "rise-fx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -3247,7 +3284,7 @@
       },
       "source_url": "https://www.risefx.com/",
       "source_enabled": true,
-      "candidate_hash": "b6f6fa451fb0a47a453e846f24d1276c80cd9ff5853b9a33cc388dfe7742b391"
+      "candidate_hash": "a385b2a162b953a248c53a921e03d112858f04e679378536b87257cd36c39255"
     },
     {
       "id": "discovery-4aae090c2eb496c5b8202d97",
@@ -3269,6 +3306,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-4aae090c2eb496c5b8202d97",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -3276,7 +3314,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "8cae126ec1f205ff0bcddcbea6088c2ab9d2161fd2b61146083b7eeb7f9dec8f",
+        "content_hash": "3e94eb57867d9bcd6a6c0b520330aecb672f4387b6a963a914d2af31d80716aa",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -3294,7 +3332,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "d23194212fe8798e88fd8694ac741e142e85bcb51b76a2ef5640370fd6f5da8f"
+      "candidate_hash": "bc2f515f0cc46084efc809172949deea88042caf6fabc6dd2f2d8969d374594c"
     },
     {
       "id": "discovery-4b53ef2a55ef7ea5b5ed4268",
@@ -3465,7 +3503,7 @@
         "id": "discovery-522ae908fc4dfcfb6a61f86f",
         "source_id": "rise-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "rise-fx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -3479,7 +3517,7 @@
       },
       "source_url": "https://www.risefx.com/",
       "source_enabled": true,
-      "candidate_hash": "e28ccd652f3fe66453d56f767cadf94e8680643ed60762ad14931021041e67b4"
+      "candidate_hash": "6317194187f3e8069d9a94189cfb0a00eeafcda3876783388bd25f912bcf4af1"
     },
     {
       "id": "discovery-53d8c24a1cbf4bae16066526",
@@ -3611,6 +3649,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-5a57094ae6a057c754965f2b",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -3618,7 +3657,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "b6ef7036aca0fb1592e2fe8057f3518900ae4052d1a2a2fef7e16441e7208475",
+        "content_hash": "e6795bbfb0fa621a9843041bf5d74014c4bc9dffb7d4cd98359cc6e0be129c0c",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -3636,7 +3675,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "38c7ff5c14abf31cdbbcaa90dbb4ecc900e10bc3909dd22a6e7534d832af5786"
+      "candidate_hash": "ab30d745afec86e2f4d4bc2fdcb8cb4a15bbad078fc1140f8f62a222250a3d0d"
     },
     {
       "id": "discovery-6457023d7d9f5ecf9c416442",
@@ -3769,7 +3808,7 @@
         "id": "discovery-681caa1a45dae0a6b4fe4185",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -3783,7 +3822,7 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "60854c083a0db98d71fbec5d165a54ea03dca08c4a835fcecfb625524fc3dc52"
+      "candidate_hash": "f3f427d63e8650b00ad87445145338c188eeaf439aca0ef0bc9498fe29befadf"
     },
     {
       "id": "discovery-6d0509b39f9aa01d5934ba44",
@@ -3805,6 +3844,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-6d0509b39f9aa01d5934ba44",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -3812,7 +3852,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "47f52f6da3aaeb04a7a55eff09e62017eec68c9285b5bc01595ec75bdd898bc9",
+        "content_hash": "ad1b131caf09493fd0324b3dcfc2103c1907fddf0bf2e5829f81178a14f0c3a1",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -3830,7 +3870,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "b392304728b5f5ee4667e1dc54295d108d237f1dc7bbdd832604c3453f6ff3b2"
+      "candidate_hash": "d3a96e1709cc952bc72a8db7605c4bb89f0636eeb6032c3ddb9003a929cc65b2"
     },
     {
       "id": "discovery-6de8dcefdb9c2c754ff9e907",
@@ -4223,7 +4263,7 @@
         "id": "discovery-860c9c07bb47c3e8586dabcb",
         "source_id": "rise-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "rise-fx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -4237,7 +4277,7 @@
       },
       "source_url": "https://www.risefx.com/",
       "source_enabled": true,
-      "candidate_hash": "4b393757a09483654b370279ad723b0c52700282ab68d42af803b7cae21cb5a4"
+      "candidate_hash": "9d66c2415521357e00c73531226c5b3c3e7ca3458d1d782cba07f70d5d286d25"
     },
     {
       "id": "discovery-8632bcfa808141c81ca047e9",
@@ -4259,6 +4299,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-8632bcfa808141c81ca047e9",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -4266,7 +4307,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "b0264b45f88b155a97474cf368eff0c5fa26ea66b6590405c2d0d061f791d225",
+        "content_hash": "8be82079fd16a7b17322c095f7ec67b845e1328185f22f77f43c89a5fd0a963e",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4284,7 +4325,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "07344ac4a85c32fba1ad240ac370a7fc366379155461eec2c564af048446e4d7"
+      "candidate_hash": "d1cdef3626b6dab225fb9108dd00f2dbb81330e4cbb50c8b24f1475b93e23150"
     },
     {
       "id": "discovery-86615b57126b6e0077cffaab",
@@ -4340,6 +4381,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-879cdd7038df3e3188749972",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -4347,7 +4389,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "7567a86ea9ccbd2b1a61f761aa0f6cc55621170b543859608c703604b9e89da0",
+        "content_hash": "a7bd198b28c196fcdde788ff40e245b392faebddaf9659810458847a824e2e4c",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4365,7 +4407,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "0fd38d9923958421ca02572ad91ad80dab91b0a05d9711f9329edbc76b60d7dd"
+      "candidate_hash": "e703cfcbb77c9db63957fafc7109546ce867756d92fab953030e1bcc3eb48ae4"
     },
     {
       "id": "discovery-87a29ba457d3fa9fb14393e9",
@@ -4421,6 +4463,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-8d20202cda687b8d2443cf51",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -4428,7 +4471,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "c4c1dd4f7163ed3a171cbba5cc20f6ef6965cd0174712115ab579d5c8fcab778",
+        "content_hash": "eb42ea294a91f279f1a50fc5fb8afe8683f2a11091e0dc08bf000a7db598e5ef",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4446,7 +4489,7 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "9af54888064dfb53aabd56aa3275ce7f958e04a9cea73c91ad283a85bf680f34"
+      "candidate_hash": "8ee907a70d139c701f96534e52bb6043e4b7645b1da513cead1814560f77f830"
     },
     {
       "id": "discovery-8d97bc2ba47218a1ce64aec1",
@@ -4501,7 +4544,7 @@
         "id": "discovery-8e6dc45bdbba269350a4401f",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -4513,7 +4556,7 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "59a27064cb6e724ff54348bb3a108a31cc598442386b260f95bb63562a0f83bd"
+      "candidate_hash": "514bc2ee71d5c7b3db7aae0c9535c1d1892f15e811db4e813c41d1abc8e3c31e"
     },
     {
       "id": "discovery-8ebfb3a955b3369aad222895",
@@ -4610,14 +4653,15 @@
           "VFX"
         ],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-8fd008a011373a6312e7b1d9",
         "source_id": "outpost-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "outpost-vfx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "5e022555a984924b657fc99f7ed3bca50234cb36b9c3e1a4c3b22c85486808d8",
+        "content_hash": "d1f0fadb0454dd5926536cc4c08051895d12bb48388bde920fcfa2f74c56e83f",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4631,7 +4675,7 @@
       },
       "source_url": "https://www.outpost-vfx.com/en/contact",
       "source_enabled": true,
-      "candidate_hash": "a738ced371ae3f659842ace4827dd8b3d0906e1e77a3004648c259d2b09b5038"
+      "candidate_hash": "6615331cdaf272be2cd7a8eadfe77ef9449cd1ce044af556ab7910e7eb4ec042"
     },
     {
       "id": "discovery-9570a793082b407a6b55e7ae",
@@ -4687,14 +4731,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-95e782e9a0dfcb8267344bcc",
         "source_id": "flyingbark-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "flying-bark",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "4d68e409a9de9763ca1f805f9924ed2b8d61573cf754e4a41d78d00e37042c9d",
+        "content_hash": "84dee8a51511b9b9f67201546750fbf8dc0a5e9fda9de0e74a7cc282cfe52db9",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4706,7 +4751,7 @@
       },
       "source_url": "https://www.flyingbark.com.au/about",
       "source_enabled": true,
-      "candidate_hash": "4066fb25aefadae5e5e7eee1f61e94a8956a9d301a99ecc0f3ac35ec47b426d2"
+      "candidate_hash": "4c8b066c2986557383d631459f061b46a0945f5d0dd50734d22ca39c3e81c9e3"
     },
     {
       "id": "discovery-994f41b26bed41f6536a2f42",
@@ -4806,6 +4851,7 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-9be93a63f419e0a981634474",
         "source_id": "folks-locations",
         "source_kind": "official",
@@ -4813,7 +4859,7 @@
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "5b549e4a10dc2c7d5ced07ff6c871660c3ed4ce77d0d0d901ba404664e635d7b",
+        "content_hash": "0ba06900c65b83b6d46222c165bdb00ef5156096b1385971961fb9a109fea47a",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4831,19 +4877,23 @@
       },
       "source_url": "https://folksvfx.com/contact/",
       "source_enabled": true,
-      "candidate_hash": "18b3ae98926c08612175d7867315b1bd61aeede8d866f866d97d292e019692a0"
+      "candidate_hash": "399ec21ecb469732517fab187281a850206abbabdeb2fbecb9a1141aad117ad8"
     },
     {
       "id": "discovery-9d6ac7475be31a2ceb441423",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-mumbai"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "Mumbai",
@@ -4853,14 +4903,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-9d6ac7475be31a2ceb441423",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "c6bb3e30663fcebef0a821a2a41be789a5cabf5c0ee5e4ef531acff138e45db5",
+        "content_hash": "aa045358241e125ff697c9aa768534046f3161b4cca63e682c4230eeb166c8c8",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -4876,7 +4927,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "da2acb346f1c5aea55719fdbd3929aededdd729c1a8091eb6d45992307550467"
+      "candidate_hash": "58379ec20dfa3db77692b5b615575ceb79967479a181cc347112a9b0a388bc66"
     },
     {
       "id": "discovery-9daa14f63465bc7877aed80b",
@@ -5301,15 +5352,19 @@
     },
     {
       "id": "discovery-b486408cdcd6d4533f82940a",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-melbourne"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "Melbourne",
@@ -5319,14 +5374,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-b486408cdcd6d4533f82940a",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "fde9c5cefb821cf926b33f9b934620ae76e83ba5e3cbf45b476d9b9f136cdd26",
+        "content_hash": "1236b0ac9896829f67127efd01840852eff042ccdd102405613a956b1234fa30",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -5342,7 +5398,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "e4f732ae78898def5e774bc908b463394e176495a110dd73498ca04fd25be697"
+      "candidate_hash": "6c28f2672b684bb4f0a2521a2ecd20ff7f9ca041aec9efdf5024d7e3c2a2e220"
     },
     {
       "id": "discovery-b535bf8400ef5031ebb0f49f",
@@ -5686,15 +5742,19 @@
     },
     {
       "id": "discovery-c10b89987b3125acc87494e7",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-montreal"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "Montréal",
@@ -5704,14 +5764,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-c10b89987b3125acc87494e7",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "d9acc9e3120ddc5a289e5bc7996ddc90999553d2aa512fd6693e9e16d99dd878",
+        "content_hash": "a594b0c45fcf018ce1a818b282acdd328cc8b4639ffd1500fad4e5f26e3117d5",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -5727,7 +5788,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "4044de27227fe6ed45dc89ae733021645e749efedde30406492618d73b60f3d1"
+      "candidate_hash": "e6e92a085288dee9b709358cad4a475368d549912172f554e4e06bce6280dc25"
     },
     {
       "id": "discovery-c1a620da681b74c87540e59e",
@@ -5818,14 +5879,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-c57d40902bd3ef823ebf8ef7",
         "source_id": "flyingbark-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "flying-bark",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "cf980dedbff688285d551a151fa7384ff407bbe105abd5c86ac119525a21dfc1",
+        "content_hash": "5a12b4773020b0f82cbe0267d3298dfcd068feff45f2a80364cb5bb6dd38e7b5",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -5837,7 +5899,7 @@
       },
       "source_url": "https://www.flyingbark.com.au/about",
       "source_enabled": true,
-      "candidate_hash": "6679539ade68f309af2a14045043ebf267fed92a72d4f42cb14d6264aae120ac"
+      "candidate_hash": "299313e5b827b814cffa5b4016b54fb9ed46135e0c1c7b4d5d336d465c9431fe"
     },
     {
       "id": "discovery-c60010362ab699c51274679e",
@@ -5947,15 +6009,19 @@
     },
     {
       "id": "discovery-c8aeb05cfd3461ee90372aa7",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-chicago"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "Chicago",
@@ -5965,14 +6031,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-c8aeb05cfd3461ee90372aa7",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "1ef433950bfc9670f08dd4aca2384630611d5725a443c38e7ee254b67dd483a0",
+        "content_hash": "8caff927e4145a9827fb51248110bd4be570856a3a147eb5bcc0f3005d0a3f79",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -5988,7 +6055,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "8c5d603d471a3a82a5cec3cc143b111f8d2744d85f84acaa4dacb78c888c4cef"
+      "candidate_hash": "6ecd3a3ef30d4dace4250371995cf128e56f60856aa74e9207aed93dd029da66"
     },
     {
       "id": "discovery-ca504efb492a8cba67ab987b",
@@ -6124,7 +6191,7 @@
         "id": "discovery-cf0527e629685d34a7eb70eb",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -6138,7 +6205,7 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "3acbac36baf77ff2b630dc09bb74ec4fded94ae271faad88730c5fb6522612ac"
+      "candidate_hash": "eb2a7d4307f9cb9dd3c26efeab27fe60996f63a2ff776e857e9825229215f746"
     },
     {
       "id": "discovery-d124dbeef4bf0abc46627323",
@@ -6199,7 +6266,7 @@
         "id": "discovery-d21645729648ceec81b9e3ed",
         "source_id": "rise-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "rise-fx",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -6213,7 +6280,7 @@
       },
       "source_url": "https://www.risefx.com/",
       "source_enabled": true,
-      "candidate_hash": "62546dbc9e839676e1adc8d6e320acda6018ba73fc8078bc5aab472f5c65970f"
+      "candidate_hash": "8b8b48c17a3fcd5427e14218107099362be37faf82fabbc4f6d9a1a4598f2683"
     },
     {
       "id": "discovery-d4043ead61849d5786390511",
@@ -6306,7 +6373,7 @@
         "id": "discovery-db8fda98a62006a686712124",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -6320,19 +6387,23 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "943b39666a8667369f0fd5d07350c1487973ce8fd2d0ca320aa165496b949d0f"
+      "candidate_hash": "c7a22cd24685d2a3a3ae19b14f5393e227a347d9fddd480ea7b761b33ccf0c1b"
     },
     {
       "id": "discovery-dd47fd3459530b3024214035",
-      "classification": "potentially_new",
+      "classification": "already_represented",
       "triage_confidence": "likely",
       "candidate_type": "structured_place",
-      "matching_scope": "none",
+      "matching_scope": "location",
       "reasons": [
         "Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research."
       ],
-      "matched_location_ids": [],
-      "matched_organisation_ids": [],
+      "matched_location_ids": [
+        "framestore-london"
+      ],
+      "matched_organisation_ids": [
+        "framestore"
+      ],
       "observation": {
         "url": "https://www.framestore.com/contact",
         "label": "London",
@@ -6342,14 +6413,15 @@
         "observation_kind": "location_reference",
         "claim_terms": [],
         "place_basis": "reviewed source-label mapping; candidate, not verified canonical data",
+        "status_terms": [],
         "id": "discovery-dd47fd3459530b3024214035",
         "source_id": "framestore-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "framestore",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
-        "content_hash": "3fc9b114ddd7a4f1b498762c19f60bb40cec25a73fe801d6445bca3c7bc1f3e0",
+        "content_hash": "8d72261e7e1cc6bc807b453d779869006c32d81e8d86a567e045e8cf95f97d81",
         "signals": [],
         "review_status": "pending",
         "missing_since": null,
@@ -6365,7 +6437,7 @@
       },
       "source_url": "https://www.framestore.com/contact",
       "source_enabled": true,
-      "candidate_hash": "ed1c11706574eb78605b31091868d49056a30bcce796b7e23f0f2e0c41ddab5c"
+      "candidate_hash": "7a3bfe861a7072156d7654bda5c472e28c69174f34450b43da21f9439246da75"
     },
     {
       "id": "discovery-dd592799f45b4634e2b0076e",
@@ -6696,7 +6768,7 @@
         "id": "discovery-eecde83cd5a892be7b861cf9",
         "source_id": "larian-locations",
         "source_kind": "official",
-        "hint_company_id": "",
+        "hint_company_id": "larian",
         "confidence": "unknown",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
@@ -6710,7 +6782,7 @@
       },
       "source_url": "https://larian.com/careers",
       "source_enabled": true,
-      "candidate_hash": "90f27656fd876e8434cf6ff749432756dc5a11ec0d5ba823bd8df8b8c37a139f"
+      "candidate_hash": "72fc5f2f8173907a1d22d559342e06387f32c039d012d023f789e09a4af2bf8e"
     },
     {
       "id": "discovery-f00bf25370760830ae8f259b",
