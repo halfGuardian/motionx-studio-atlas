@@ -85,7 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v0.7.csv'
+            assert download.suggested_filename == 'motionx_studios_filtered_v0.8.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -107,7 +107,8 @@ def main():
             page.locator('#search').fill('')
             page.locator('#country').select_option('India')
             page.locator('#category').select_option('VFX')
-            expect(page.locator('#count')).to_have_text('2 locations')
+            india_vfx = [r for r in database if r['country'] == 'India' and 'VFX' in r['categories']]
+            expect(page.locator('#count')).to_have_text(f'{len(india_vfx)} locations')
             page.locator('[data-id="ilm-mumbai"]').click()
             expect(page.locator('#detailContent')).to_contain_text('Animation — confirmed')
             expect(page.locator('#detailContent')).to_contain_text('city — approximate reference pin')
@@ -118,7 +119,7 @@ def main():
                 page.locator('#exportCsv').click()
             batch_content = Path(batch_download.value.path()).read_text(encoding='utf-8-sig')
             assert 'ilm-mumbai' in batch_content and 'framestore-mumbai' in batch_content
-            assert batch_content.count('\n') == 2
+            assert batch_content.count('\n') == len(india_vfx)
             page.locator('#search').fill('Framestore')
             page.locator('#country').select_option('United Kingdom')
             page.locator('#category').select_option('Previsualization')
@@ -128,14 +129,26 @@ def main():
             page.locator('#country').select_option('')
             page.locator('#category').select_option('')
             expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
-            page.screenshot(path='/tmp/motionx-v07-desktop.png')
+            page.locator('#search').fill('Imaginarium')
+            expect(page.locator('#count')).to_have_text('2 locations')
+            page.locator('[data-id="imaginarium-pinewood"]').click()
+            expect(page.locator('#detailContent')).to_contain_text('capture facility')
+            expect(page.locator('#detailContent')).to_contain_text('Cinesite Group')
+            expect(page.locator('#detailContent')).to_contain_text('City reference source')
+            page.locator('#close').click()
+            page.locator('#search').fill('Cinesite Group')
+            expect(page.locator('#count')).to_have_text('15 locations')
+            page.locator('#search').fill('')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            passed('optional location type, sourced group relationships, coordinate provenance and relationship search')
+            page.screenshot(path='/tmp/motionx-v08-desktop.png')
             page.set_viewport_size({'width': 390, 'height': 844})
             page.locator('#listTab').click()
             expect(page.locator('aside')).to_be_visible()
             page.locator('[data-id="beyond-vancouver"]').click()
             expect(page.locator('#detail')).to_be_visible()
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
-            page.screenshot(path='/tmp/motionx-v07-mobile.png')
+            page.screenshot(path='/tmp/motionx-v08-mobile.png')
             page.locator('#close').click()
             page.locator('#listTab').click()
             page.locator('#mapTab').click()
@@ -171,21 +184,24 @@ def main():
             original = json.loads((ROOT / 'studios.json').read_text())[0]
             records = [{**original, 'id': f'load-test-{i}', 'company_id': f'company-{i}',
                         'name': f'VFX test fixture {i}', 'categories': ['VFX'], 'capabilities': [],
-                        'capability_evidence': {}, 'lat': (i % 160) - 80, 'lng': (i % 350) - 175}
-                       for i in range(5000)]
+                        'capability_evidence': {}, 'lat': (i % 100) * 1.6 - 80, 'lng': (i // 100) * 3.5 - 175}
+                       for i in range(10000)]
             page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=json.dumps(records)))
             start = time.monotonic()
             page.goto(url, wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('5000 locations', timeout=20000)
+            expect(page.locator('#count')).to_have_text('10000 locations', timeout=20000)
             assert page.locator('.entry').count() == 50
-            assert page.evaluate('layer.getLayers().length') == 5000
+            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in records})
             page.locator('#nextPage').click()
-            expect(page.locator('#pageInfo')).to_have_text('51–100 of 5000')
+            expect(page.locator('#pageInfo')).to_have_text('51–100 of 10000')
             page.locator('#category').select_option('VFX')
-            expect(page.locator('#count')).to_have_text('5000 locations')
-            page.locator('#search').fill('VFX test fixture 4999')
+            expect(page.locator('#count')).to_have_text('10000 locations')
+            page.locator('#search').fill('VFX test fixture 9999')
             expect(page.locator('#count')).to_have_text('1 location')
-            passed(f'5000 synthetic locations, 50-row pagination, canvas markers, VFX-only filtering ({time.monotonic() - start:.1f}s)')
+            elapsed = time.monotonic() - start
+            assert elapsed < 20, f'10k smoke path exceeded 20 seconds: {elapsed}'
+            Path('/tmp/motionx-v08-performance.json').write_text(json.dumps({'synthetic_locations':len(records),'unique_coordinate_markers':len({(r['lat'], r['lng']) for r in records}),'list_page_size':50,'load_paginate_filter_seconds':round(elapsed,3)}))
+            passed(f'10000 synthetic locations, 50-row pagination, canvas markers, VFX-only filtering ({time.monotonic() - start:.1f}s)')
             page.close()
             browser.close()
     finally:

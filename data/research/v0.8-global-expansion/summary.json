@@ -1,0 +1,34 @@
+{
+  "release": "v0.8",
+  "reviewed_on": "2026-11-06",
+  "new_locations": 98,
+  "new_organisations": 47,
+  "batch_countries": 26,
+  "total_locations": 129,
+  "total_organisations": 66,
+  "total_countries": 28,
+  "source_supported_capture_facilities": 6,
+  "queue_decisions": {
+    "reject": 14,
+    "defer": 41,
+    "already_present": 14
+  },
+  "validation_errors": 0,
+  "validation_warnings": 147,
+  "warning_breakdown": {
+    "approximate_coordinates": 129,
+    "legacy_unknown_evidence": 18
+  },
+  "tests": {
+    "python": 38,
+    "javascript": 18,
+    "http_browser_checks": 14,
+    "synthetic_performance": {
+      "synthetic_locations": 10000,
+      "unique_coordinate_markers": 10000,
+      "list_page_size": 50,
+      "load_paginate_filter_seconds": 1.942
+    }
+  },
+  "independent_site_inspections": 0
+}

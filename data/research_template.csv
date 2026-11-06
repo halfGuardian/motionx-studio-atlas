@@ -1,1 +1,1 @@
-id,company_id,name,city,country,lat,lng,address,website,email,phone,categories,capabilities,capability_evidence,evidence_state,evidence,verified_on,coordinate_precision,status
+id,company_id,name,city,country,lat,lng,address,website,email,phone,categories,capabilities,capability_evidence,evidence_state,evidence,verified_on,coordinate_precision,status,location_type,coordinate_source,relationships

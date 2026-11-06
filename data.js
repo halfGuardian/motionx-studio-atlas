@@ -45,6 +45,20 @@
       if (row.verified_on && !validDate(row.verified_on)) fail('invalid review date');
       if (row.evidence_state !== 'unknown' && (!row.evidence || !row.verified_on)) fail('missing evidence/review date');
       if (row.coordinate_precision === 'exact' && (!row.address || !row.evidence || !row.verified_on)) fail('missing exact location evidence');
+      if (row.location_type !== undefined && !['production_studio', 'capture_facility', 'creative_hub', 'mixed_campus', 'production_office', 'uncertain'].includes(row.location_type)) fail('invalid location type');
+      if (row.coordinate_source !== undefined && !httpsURL(row.coordinate_source)) fail('invalid coordinate source');
+      if (row.relationships !== undefined) {
+        if (!Array.isArray(row.relationships)) fail('relationships must be an array');
+        const seenRelations = new Set();
+        for (const relation of row.relationships) {
+          if (!relation || typeof relation.id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(relation.id) ||
+              relation.id === row.company_id || seenRelations.has(relation.id) ||
+              !['subsidiary_of', 'group_member', 'partner_of'].includes(relation.type) ||
+              typeof relation.name !== 'string' || !relation.name.trim() ||
+              !httpsURL(relation.evidence) || !validDate(relation.verified_on)) fail('invalid organisation relationship');
+          seenRelations.add(relation.id);
+        }
+      }
       const evidence = row.capability_evidence;
       if (!evidence || typeof evidence !== 'object' || Array.isArray(evidence) ||
           Object.keys(evidence).length !== row.capabilities.length ||
@@ -71,7 +85,7 @@
     const q = query.trim().toLocaleLowerCase();
     return rows.filter(row => (!category || row.categories.includes(category) || row.capabilities.includes(category)) &&
       (!country || row.country === country) && (!q ||
-        [row.name, row.city, row.country, ...row.categories, ...row.capabilities].join(' ').toLocaleLowerCase().includes(q)));
+        [row.name, row.city, row.country, ...(row.relationships || []).map(r => r.name), ...row.categories, ...row.capabilities].join(' ').toLocaleLowerCase().includes(q)));
   }
   function coordinateGroups(rows) {
     const groups = new Map();

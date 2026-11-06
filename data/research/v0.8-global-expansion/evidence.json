@@ -1,0 +1,3266 @@
+{
+  "release": "v0.8",
+  "reviewed_on": "2026-11-06",
+  "timezone": "Pacific/Auckland",
+  "baseline_commit": "5b5d94cb3153ab19564855d810ba93eda647d4d7",
+  "baseline_digest": "73bc9e3830257261fe89aaa9113643e445e4338e6e4e5d2166f690d097fa054e",
+  "baseline_locations": 31,
+  "baseline_organisations": 19,
+  "confidence_definition": "Confirmed means the cited claim is explicitly source-supported at the named location; not independent site inspection, legal or operational audit.",
+  "coordinate_policy": "City/settlement reference points only; original 31 records and their coordinates unchanged. No coordinate jitter.",
+  "records": [
+    {
+      "id": "dneg-london",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/london",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/london",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-vancouver",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/vancouver",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/vancouver",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-mumbai",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/mumbai",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/mumbai",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Mumbai",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "source": "https://www.geonames.org/1275339/mumbai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-los-angeles",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/los-angeles",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred. Los Angeles is the marketed studio name; the listed municipality is West Hollywood. Delivery versus client-facing functions are not separately established.",
+      "location_type": "production_office",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/los-angeles",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "West Hollywood",
+        "lat": 34.0900091,
+        "lng": -118.3617443,
+        "source": "https://www.geonames.org/search.html?q=Los+Angeles%2C+California&startRow=50"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-chennai",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/chennai",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/chennai",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Chennai",
+        "lat": 13.08784,
+        "lng": 80.27847,
+        "source": "https://www.geonames.org/1264527/chennai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-montreal",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/montreal",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/montreal",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-mohali",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/mohali",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/mohali",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Mohali",
+        "lat": 30.67995,
+        "lng": 76.72211,
+        "source": "https://www.geonames.org/6992326"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-bengaluru",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/bengaluru",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/bengaluru",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Bengaluru",
+        "lat": 12.97194,
+        "lng": 77.59369,
+        "source": "https://www.geonames.org/1277333/bengaluru.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-toronto",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/toronto",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred. The page identifies an operating local team but publishes no facility street address.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/toronto",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Toronto",
+        "lat": 43.65333,
+        "lng": -79.38389,
+        "source": "https://www.geonames.org/6167865/toronto.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-sydney",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/sydney",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/sydney",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Sydney",
+        "lat": -33.86785,
+        "lng": 151.20732,
+        "source": "https://www.geonames.org/2147714/sydney.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-barcelona",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/barcelona",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/barcelona",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Barcelona",
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "source": "https://www.geonames.org/3128760/barcelona.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-budapest",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/budapest",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/budapest",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Budapest",
+        "lat": 47.49835,
+        "lng": 19.04045,
+        "source": "https://www.geonames.org/3054643/budapest.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-sofia",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/sofia",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/sofia",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Sofia",
+        "lat": 42.69751,
+        "lng": 23.32415,
+        "source": "https://www.geonames.org/727011/sofia.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-pune",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/pune",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/pune",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Pune",
+        "lat": 18.51957,
+        "lng": 73.85535,
+        "source": "https://www.geonames.org/1259229/pune.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-kolkata",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/kolkata",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/kolkata",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Kolkata",
+        "lat": 22.56263,
+        "lng": 88.36304,
+        "source": "https://www.geonames.org/1275004/kolkata.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-trivandrum",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/trivandrum",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/trivandrum",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Thiruvananthapuram",
+        "lat": 8.4855,
+        "lng": 76.94924,
+        "source": "https://www.geonames.org/1254163/thiruvananthapuram.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-hyderabad",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/hyderabad",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/hyderabad",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Hyderabad",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "source": "https://www.geonames.org/1269843/hyderabad.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-patna",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/patna",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/patna",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Patna",
+        "lat": 25.59408,
+        "lng": 85.13563,
+        "source": "https://www.geonames.org/1260086/patna.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dneg-goa",
+      "company_id": "dneg",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.dneg.com/location/goa",
+        "https://www.dneg.com/contact"
+      ],
+      "finding": "DNEG names this branch in its current 19-studio roster; its individual location page identifies the local team. Specialist capture/previs/VP services are not inferred. The Goa branch address names Benaulim; a Benaulim reference is used rather than a state-capital pin.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.dneg.com/location/goa",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Benaulim",
+        "lat": 15.26435,
+        "lng": 73.92812,
+        "source": "https://www.geonames.org/1276472/benaulim.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cinesite-london",
+      "company_id": "cinesite",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/contacts-2/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "Current group roster and contact list identify this branded production studio. Animation and immersive services are not propagated to every branch.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/contacts-2/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cinesite-montreal",
+      "company_id": "cinesite",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/contacts-2/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "Current group roster and contact list identify this branded production studio. Animation and immersive services are not propagated to every branch.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/contacts-2/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cinesite-vancouver",
+      "company_id": "cinesite",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/contacts-2/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "Current group roster and contact list identify this branded production studio. Animation and immersive services are not propagated to every branch.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/contacts-2/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "latelier-animation-montreal",
+      "company_id": "latelier-animation",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://latelieranimation.com/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://latelieranimation.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "assemblage-mumbai",
+      "company_id": "assemblage",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.madassemblage.com/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://www.madassemblage.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Mumbai",
+        "lat": 19.07283,
+        "lng": 72.88261,
+        "source": "https://www.geonames.org/1275339/mumbai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "assemblage-bengaluru",
+      "company_id": "assemblage",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bengaluru",
+        "lat": 12.97194,
+        "lng": 77.59369,
+        "source": "https://www.geonames.org/1277333/bengaluru.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "fx3x-skopje",
+      "company_id": "fx3x",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://fx3x.com/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://fx3x.com/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://fx3x.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Skopje",
+        "lat": 41.99646,
+        "lng": 21.43141,
+        "source": "https://www.geonames.org/785842/skopje.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "fx3x-belgrade",
+      "company_id": "fx3x",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Belgrade",
+        "lat": 44.80401,
+        "lng": 20.46513,
+        "source": "https://www.geonames.org/792680/belgrade.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "image-engine-vancouver",
+      "company_id": "image-engine",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://image-engine.com/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://image-engine.com/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://image-engine.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "squeeze-montreal",
+      "company_id": "squeeze",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "squeeze-quebec",
+      "company_id": "squeeze",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Québec",
+        "lat": 46.81228,
+        "lng": -71.21454,
+        "source": "https://www.geonames.org/6325494/quebec.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "trixter-munich",
+      "company_id": "trixter",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Munich",
+        "lat": 48.13743,
+        "lng": 11.57549,
+        "source": "https://www.geonames.org/2867714/munich.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "trixter-berlin",
+      "company_id": "trixter",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "The current Cinesite group roster identifies this operating brand, city and sector. Group membership is recorded without inferring complete legal ownership. No specialist capture or game-development claims inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Berlin",
+        "lat": 52.52437,
+        "lng": 13.41053,
+        "source": "https://www.geonames.org/2950159/berlin.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "imaginarium-pinewood",
+      "company_id": "imaginarium",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.imaginariumstudios.co.uk/locations",
+        "https://www.imaginariumstudios.co.uk/",
+        "https://cinesite.com/our-studios/"
+      ],
+      "finding": "Pinewood N Stage is a dedicated capture volume in Iver Heath. The London registered address is not the stage. LED volume is described as a service set up on request, not a permanently installed wall.",
+      "location_type": "capture_facility",
+      "capability_sources": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/",
+          "verified_on": "2026-11-06"
+        },
+        "Virtual Production": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Iver Heath",
+        "lat": 51.539815,
+        "lng": -0.525331,
+        "source": "https://www.planning.data.gov.uk/entity/2504906"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "imaginarium-side-london",
+      "company_id": "imaginarium",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.imaginariumstudios.co.uk/locations"
+      ],
+      "finding": "Separate installed performance capture volume at SIDE London Studio 1, Tileyard. This is not the Pinewood stage or the registered office; no claim that Imaginarium owns SIDE.",
+      "location_type": "capture_facility",
+      "capability_sources": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.imaginariumstudios.co.uk/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "cinesite-group",
+          "name": "Cinesite Group",
+          "type": "group_member",
+          "evidence": "https://cinesite.com/our-studios/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "the-mill-paris",
+      "company_id": "the-mill",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.themill.com/contact",
+        "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+      ],
+      "finding": "Current The Mill studio contact entry after the MPC/The Mill unification. Original MPC lineage is retained in the manifest; no historical MPC office is assumed reopened.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.themill.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "transperfect",
+          "name": "TransPerfect",
+          "type": "subsidiary_of",
+          "evidence": "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Paris",
+        "lat": 48.85341,
+        "lng": 2.3488,
+        "source": "https://www.geonames.org/2988507/paris.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "the-mill-london",
+      "company_id": "the-mill",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.themill.com/contact",
+        "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+      ],
+      "finding": "Current The Mill studio contact entry after the MPC/The Mill unification. Original MPC lineage is retained in the manifest; no historical MPC office is assumed reopened.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.themill.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "transperfect",
+          "name": "TransPerfect",
+          "type": "subsidiary_of",
+          "evidence": "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "the-mill-liege",
+      "company_id": "the-mill",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.themill.com/contact",
+        "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+      ],
+      "finding": "Current The Mill studio contact entry after the MPC/The Mill unification. Original MPC lineage is retained in the manifest; no historical MPC office is assumed reopened.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.themill.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "transperfect",
+          "name": "TransPerfect",
+          "type": "subsidiary_of",
+          "evidence": "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Liège",
+        "lat": 50.63373,
+        "lng": 5.56749,
+        "source": "https://www.geonames.org/2792413/liege.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "the-mill-bengaluru",
+      "company_id": "the-mill",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.themill.com/contact",
+        "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+      ],
+      "finding": "Current The Mill studio contact entry after the MPC/The Mill unification. Original MPC lineage is retained in the manifest; no historical MPC office is assumed reopened.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.themill.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "transperfect",
+          "name": "TransPerfect",
+          "type": "subsidiary_of",
+          "evidence": "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bengaluru",
+        "lat": 12.97194,
+        "lng": 77.59369,
+        "source": "https://www.geonames.org/1277333/bengaluru.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "sony-imageworks-vancouver",
+      "company_id": "sony-imageworks",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.imageworks.com/contact-us/montreal",
+        "https://www.imageworks.com/",
+        "https://www.imageworks.com/job-postings"
+      ],
+      "finding": "Current city page identifies artists collaborating across Vancouver, Montréal and Los Angeles. Los Angeles is a production office, not evidence of a full-service capture stage.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.imageworks.com/our-craft/vfx",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "sony-imageworks-montreal",
+      "company_id": "sony-imageworks",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.imageworks.com/contact-us/montreal",
+        "https://www.imageworks.com/",
+        "https://www.imageworks.com/job-postings"
+      ],
+      "finding": "Current city page identifies artists collaborating across Vancouver, Montréal and Los Angeles. Los Angeles is a production office, not evidence of a full-service capture stage.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.imageworks.com/our-craft/vfx",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "sony-imageworks-los-angeles",
+      "company_id": "sony-imageworks",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.imageworks.com/contact-us/cc",
+        "https://www.imageworks.com/",
+        "https://www.imageworks.com/job-postings"
+      ],
+      "finding": "Current city page identifies artists collaborating across Vancouver, Montréal and Los Angeles. Los Angeles is a production office, not evidence of a full-service capture stage.",
+      "location_type": "production_office",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.imageworks.com/our-craft/vfx",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Los Angeles",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "source": "https://www.geonames.org/5368361/los-angeles.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "digital-domain-los-angeles",
+      "company_id": "digital-domain",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://digitaldomain.com/about/contact-us/",
+        "https://digitaldomain.com/about/"
+      ],
+      "finding": "Named on the current studio contact roster and in the production network. The marketed Los Angeles branch is located in Culver City; the pin is a Culver City reference, not a facility geocode.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://digitaldomain.com/about/contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Culver City",
+        "lat": 34.02112,
+        "lng": -118.39647,
+        "source": "https://www.geonames.org/5341114/culver-city.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "digital-domain-vancouver",
+      "company_id": "digital-domain",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://digitaldomain.com/about/contact-us/",
+        "https://digitaldomain.com/about/"
+      ],
+      "finding": "Named on the current studio contact roster and in the production network. The marketed Los Angeles branch is located in Culver City; the pin is a Culver City reference, not a facility geocode.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://digitaldomain.com/about/contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "digital-domain-montreal",
+      "company_id": "digital-domain",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://digitaldomain.com/about/contact-us/",
+        "https://digitaldomain.com/about/"
+      ],
+      "finding": "Named on the current studio contact roster and in the production network. The marketed Los Angeles branch is located in Culver City; the pin is a Culver City reference, not a facility geocode.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://digitaldomain.com/about/contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "digital-domain-hyderabad",
+      "company_id": "digital-domain",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://digitaldomain.com/about/contact-us/",
+        "https://digitaldomain.com/about/"
+      ],
+      "finding": "Named on the current studio contact roster and in the production network. The marketed Los Angeles branch is located in Culver City; the pin is a Culver City reference, not a facility geocode.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://digitaldomain.com/about/contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Hyderabad",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "source": "https://www.geonames.org/1269843/hyderabad.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "digital-domain-shanghai",
+      "company_id": "digital-domain",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://digitaldomain.com/about/contact-us/",
+        "https://digitaldomain.com/about/"
+      ],
+      "finding": "Named on the current studio contact roster and in the production network. The marketed Los Angeles branch is located in Culver City; the pin is a Culver City reference, not a facility geocode.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://digitaldomain.com/about/contact-us/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Shanghai",
+        "lat": 31.22222,
+        "lng": 121.45806,
+        "source": "https://www.geonames.org/1796236/shanghai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "eyeline-los-angeles",
+      "company_id": "eyeline",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+        "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+        "https://apply.eyelinestudios.com/careers/artist/"
+      ],
+      "finding": "Netflix’s March 2026 primary announcement identifies this current five-location network. Scanline/Eyeline merger retained as provenance; no city-specific capture stage inferred from the worldwide brand.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "netflix",
+          "name": "Netflix",
+          "type": "subsidiary_of",
+          "evidence": "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Los Angeles",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "source": "https://www.geonames.org/5368361/los-angeles.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "eyeline-vancouver",
+      "company_id": "eyeline",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+        "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+        "https://apply.eyelinestudios.com/careers/artist/"
+      ],
+      "finding": "Netflix’s March 2026 primary announcement identifies this current five-location network. Scanline/Eyeline merger retained as provenance; no city-specific capture stage inferred from the worldwide brand.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "netflix",
+          "name": "Netflix",
+          "type": "subsidiary_of",
+          "evidence": "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "eyeline-seoul",
+      "company_id": "eyeline",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+        "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+        "https://apply.eyelinestudios.com/careers/artist/"
+      ],
+      "finding": "Netflix’s March 2026 primary announcement identifies this current five-location network. Scanline/Eyeline merger retained as provenance; no city-specific capture stage inferred from the worldwide brand.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "netflix",
+          "name": "Netflix",
+          "type": "subsidiary_of",
+          "evidence": "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Seoul",
+        "lat": 37.566,
+        "lng": 126.9784,
+        "source": "https://www.geonames.org/1835848/seoul.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "eyeline-london",
+      "company_id": "eyeline",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+        "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+        "https://apply.eyelinestudios.com/careers/artist/"
+      ],
+      "finding": "Netflix’s March 2026 primary announcement identifies this current five-location network. Scanline/Eyeline merger retained as provenance; no city-specific capture stage inferred from the worldwide brand.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "netflix",
+          "name": "Netflix",
+          "type": "subsidiary_of",
+          "evidence": "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "source": "https://www.geonames.org/2643743/london.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "eyeline-hyderabad",
+      "company_id": "eyeline",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+        "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+        "https://apply.eyelinestudios.com/careers/artist/"
+      ],
+      "finding": "Netflix’s March 2026 primary announcement identifies this current five-location network. Scanline/Eyeline merger retained as provenance; no city-specific capture stage inferred from the worldwide brand.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "netflix",
+          "name": "Netflix",
+          "type": "subsidiary_of",
+          "evidence": "https://about.netflix.com/en/news/bringing-the-best-in-vfx-and-virtual-production-together-as-eyeline",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Hyderabad",
+        "lat": 17.38405,
+        "lng": 78.45636,
+        "source": "https://www.geonames.org/1269843/hyderabad.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "weta-fx-vancouver",
+      "company_id": "weta-fx",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.wetafx.co.nz/about"
+      ],
+      "finding": "Current About page names and addresses this creative hub. No full Wellington capture capability is inherited by this hub.",
+      "location_type": "creative_hub",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.wetafx.co.nz/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Vancouver",
+        "lat": 49.24966,
+        "lng": -123.11934,
+        "source": "https://www.geonames.org/6173331/vancouver.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "weta-fx-melbourne",
+      "company_id": "weta-fx",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.wetafx.co.nz/about"
+      ],
+      "finding": "Current About page names and addresses this creative hub. No full Wellington capture capability is inherited by this hub.",
+      "location_type": "creative_hub",
+      "capability_sources": {
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://www.wetafx.co.nz/about",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Melbourne",
+        "lat": -37.814,
+        "lng": 144.96332,
+        "source": "https://www.geonames.org/2158177/melbourne.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "criterion-games-guildford",
+      "company_id": "criterion-games",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/ea-studios/criterion-games/studio",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/ea-studios/criterion-games/studio",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Guildford",
+        "lat": 51.23536,
+        "lng": -0.57427,
+        "source": "https://www.geonames.org/2647793/guildford.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "dice-stockholm",
+      "company_id": "dice",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Stockholm",
+        "lat": 59.32938,
+        "lng": 18.06871,
+        "source": "https://www.geonames.org/2673730/stockholm.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "motive-montreal",
+      "company_id": "motive",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "respawn-los-angeles",
+      "company_id": "respawn",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Los Angeles",
+        "lat": 34.05223,
+        "lng": -118.24368,
+        "source": "https://www.geonames.org/5368361/los-angeles.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "respawn-madison",
+      "company_id": "respawn",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Madison",
+        "lat": 43.07305,
+        "lng": -89.40123,
+        "source": "https://www.geonames.org/5261457/madison.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ripple-effect-marina-del-rey",
+      "company_id": "ripple-effect",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Marina del Rey",
+        "lat": 33.98162,
+        "lng": -118.45371,
+        "source": "https://www.geonames.org/5370542/marina-del-rey.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-sports-orlando",
+      "company_id": "ea-sports",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Orlando",
+        "lat": 28.53834,
+        "lng": -81.37924,
+        "source": "https://www.geonames.org/4167147/orlando.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "metalhead-victoria",
+      "company_id": "metalhead",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/ea-studios/metalhead",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/ea-studios/metalhead",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Victoria",
+        "lat": 48.4359,
+        "lng": -123.35155,
+        "source": "https://www.geonames.org/6174041/victoria.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "codemasters-southam",
+      "company_id": "codemasters",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/ea-studios/codemasters",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/ea-studios/codemasters",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Southam",
+        "lat": 52.24888,
+        "lng": -1.38063,
+        "source": "https://www.geonames.org/7301505/southam.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "codemasters-birmingham",
+      "company_id": "codemasters",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/ea-studios/codemasters",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/ea-studios/codemasters",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Birmingham",
+        "lat": 52.48142,
+        "lng": -1.89983,
+        "source": "https://www.geonames.org/2655603/birmingham.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "codemasters-kuala-lumpur",
+      "company_id": "codemasters",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/ea-studios/codemasters",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/ea-studios/codemasters",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Kuala Lumpur",
+        "lat": 3.1412,
+        "lng": 101.68653,
+        "source": "https://www.geonames.org/1735161/kuala-lumpur.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-sports-bucharest",
+      "company_id": "ea-sports",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bucharest",
+        "lat": 44.43225,
+        "lng": 26.10626,
+        "source": "https://www.geonames.org/683506/bucharest.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-korea-seoul",
+      "company_id": "ea-korea",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Seoul",
+        "lat": 37.566,
+        "lng": 126.9784,
+        "source": "https://www.geonames.org/1835848/seoul.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-sports-fc-mobile-shanghai",
+      "company_id": "ea-sports-fc-mobile",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Shanghai",
+        "lat": 31.22222,
+        "lng": 121.45806,
+        "source": "https://www.geonames.org/1796236/shanghai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-sports-madrid",
+      "company_id": "ea-sports",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ea.com/careers/locations",
+        "https://www.ea.com/careers/teams/ea-studios"
+      ],
+      "finding": "Primary studio and location descriptions identify this development team and city. Mixed campus includes support/corporate functions; no additional on-site capture or VP capability inferred.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Madrid",
+        "lat": 40.4165,
+        "lng": -3.70256,
+        "source": "https://www.geonames.org/3117735/madrid.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ea-sports-burnaby",
+      "company_id": "ea-sports",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://careers.ea.com/ea-studios/ea-sports/job-opportunities",
+        "https://www.ea.com/careers/locations"
+      ],
+      "finding": "The primary EA page explicitly locates EA Vancouver in suburban Burnaby and identifies its motion capture studio. The campus is one location; internal teams are not invented as separate facilities.",
+      "location_type": "mixed_campus",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ea.com/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://careers.ea.com/ea-studios/ea-sports/job-opportunities",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "electronic-arts",
+          "name": "Electronic Arts",
+          "type": "group_member",
+          "evidence": "https://www.ea.com/careers/teams/ea-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Burnaby",
+        "lat": 49.26636,
+        "lng": -122.95263,
+        "source": "https://www.geonames.org/5911606/burnaby.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "blackhouse-sao-paulo",
+      "company_id": "blackhouse",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.blackhouse.com.br/work-1"
+      ],
+      "finding": "Official São Paulo capture-service page describes body/facial recording and retargeting/editing. No game-development capability inferred from supplying animation to games.",
+      "location_type": "capture_facility",
+      "capability_sources": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.blackhouse.com.br/work-1",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://www.blackhouse.com.br/work-1",
+          "verified_on": "2026-11-06"
+        },
+        "Retargeting": {
+          "state": "confirmed",
+          "evidence": "https://www.blackhouse.com.br/work-1",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Editing": {
+          "state": "confirmed",
+          "evidence": "https://www.blackhouse.com.br/work-1",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "São Paulo",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "source": "https://www.geonames.org/3448439/sao-paulo.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "xr-africa-cape-town",
+      "company_id": "xr-africa",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://hapogroup.co.za/companies/xr-africa"
+      ],
+      "finding": "Primary operator identifies Cape Town facility, LED volume, real-time motion capture and previsualisation. Specific facial-capture hardware is not asserted.",
+      "location_type": "capture_facility",
+      "capability_sources": {
+        "Virtual Production": {
+          "state": "confirmed",
+          "evidence": "https://hapogroup.co.za/companies/xr-africa",
+          "verified_on": "2026-11-06"
+        },
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://hapogroup.co.za/companies/xr-africa",
+          "verified_on": "2026-11-06"
+        },
+        "Previsualization": {
+          "state": "confirmed",
+          "evidence": "https://hapogroup.co.za/companies/xr-africa",
+          "verified_on": "2026-11-06"
+        },
+        "VFX": {
+          "state": "confirmed",
+          "evidence": "https://hapogroup.co.za/companies/xr-africa",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "hapo-group",
+          "name": "Hapo Group",
+          "type": "subsidiary_of",
+          "evidence": "https://hapogroup.co.za/companies/xr-africa",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Cape Town",
+        "lat": -33.92584,
+        "lng": 18.42322,
+        "source": "https://www.geonames.org/3369157/cape-town.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-montreal",
+      "company_id": "ubisoft-montreal",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/montreal",
+        "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "vantage-studios",
+          "name": "Vantage Studios",
+          "type": "group_member",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Montréal",
+        "lat": 45.50884,
+        "lng": -73.58781,
+        "source": "https://www.geonames.org/6077243/montreal.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-quebec-city",
+      "company_id": "ubisoft-quebec-city",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/quebec-city"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/quebec-city",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "vantage-studios",
+          "name": "Vantage Studios",
+          "type": "group_member",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Québec",
+        "lat": 46.81228,
+        "lng": -71.21454,
+        "source": "https://www.geonames.org/6325494/quebec.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-saguenay",
+      "company_id": "ubisoft-saguenay",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/chicoutimi"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/chicoutimi",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "vantage-studios",
+          "name": "Vantage Studios",
+          "type": "group_member",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Saguenay",
+        "lat": 48.41675,
+        "lng": -71.06573,
+        "source": "https://www.geonames.org/6137270/saguenay.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-sherbrooke",
+      "company_id": "ubisoft-sherbrooke",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/quebec-city/ubisoft-sherbrooke"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto. The page route/header says Quebec City, but its street address and studio narrative identify Sherbrooke; the latter is used.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/quebec-city/ubisoft-sherbrooke",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "vantage-studios",
+          "name": "Vantage Studios",
+          "type": "group_member",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Sherbrooke",
+        "lat": 45.40008,
+        "lng": -71.89908,
+        "source": "https://www.geonames.org/6146143/sherbrooke.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-sofia",
+      "company_id": "ubisoft-sofia",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/sofia",
+        "https://www.ubisoft.com/en-us/company/careers/locations/articles/the-history-of-our-projects"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/articles/the-history-of-our-projects",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        },
+        {
+          "id": "vantage-studios",
+          "name": "Vantage Studios",
+          "type": "group_member",
+          "evidence": "https://news.ubisoft.com/en-gb/article/7GvucOgSm41HwFaXt2ADX1/ubisoft-launches-brandnew-subsidiary-vantage-studios",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Sofia",
+        "lat": 42.69751,
+        "lng": 23.32415,
+        "source": "https://www.geonames.org/727011/sofia.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-singapore",
+      "company_id": "ubisoft-singapore",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/singapore"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/singapore",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Singapore",
+        "lat": 1.28967,
+        "lng": 103.85007,
+        "source": "https://www.geonames.org/1880252/singapore.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-redlynx",
+      "company_id": "ubisoft-redlynx",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/helsinki/ubisoft-redlynx"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/helsinki/ubisoft-redlynx",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Helsinki",
+        "lat": 60.16952,
+        "lng": 24.93545,
+        "source": "https://www.geonames.org/658225/helsinki.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-abu-dhabi",
+      "company_id": "ubisoft-abu-dhabi",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/abu-dhabi?pubDate=20260114"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/abu-dhabi?pubDate=20260114",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Abu Dhabi",
+        "lat": 24.45118,
+        "lng": 54.39696,
+        "source": "https://www.geonames.org/292968/abu-dhabi.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-da-nang",
+      "company_id": "ubisoft-da-nang",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/da-nang",
+        "https://www.ubisoft.com/en-us/company/careers/locations/articles/a-crowning-season-for-prince-of-persia-the-lost-crown-mobile"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/articles/a-crowning-season-for-prince-of-persia-the-lost-crown-mobile",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Da Nang",
+        "lat": 16.06778,
+        "lng": 108.22083,
+        "source": "https://www.geonames.org/1583992/da-nang.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-chengdu",
+      "company_id": "ubisoft-chengdu",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/chengdu",
+        "https://www.ubisoft.com/en-us/company/careers/search/744000147409729-senior-network-programmer"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/search/744000147409729-senior-network-programmer",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Chengdu",
+        "lat": 30.66667,
+        "lng": 104.06667,
+        "source": "https://www.geonames.org/1815286/chengdu.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-shanghai",
+      "company_id": "ubisoft-shanghai",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/shanghai",
+        "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Shanghai",
+        "lat": 31.22222,
+        "lng": 121.45806,
+        "source": "https://www.geonames.org/1796236/shanghai.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-berlin",
+      "company_id": "ubisoft-berlin",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/germany/berlin",
+        "https://www.ubisoft.com/en-us/company/careers/locations/germany"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/germany",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Berlin",
+        "lat": 52.52437,
+        "lng": 13.41053,
+        "source": "https://www.geonames.org/2950159/berlin.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-dusseldorf",
+      "company_id": "ubisoft-dusseldorf",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/germany/dusseldorf",
+        "https://www.ubisoft.com/en-us/company/careers/locations/germany"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/germany",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Düsseldorf",
+        "lat": 51.22319,
+        "lng": 6.77927,
+        "source": "https://www.geonames.org/search.html?country=DE"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-mainz",
+      "company_id": "ubisoft-mainz",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/mainz",
+        "https://www.ubisoft.com/en-us/company/careers/locations/germany"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/germany",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Mainz",
+        "lat": 49.98185,
+        "lng": 8.28008,
+        "source": "https://www.geonames.org/2874225/mainz.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-bucharest",
+      "company_id": "ubisoft-bucharest",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/bucharest",
+        "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bucharest",
+        "lat": 44.43225,
+        "lng": 26.10626,
+        "source": "https://www.geonames.org/683506/bucharest.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-craiova",
+      "company_id": "ubisoft-craiova",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/craiova"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/craiova",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Craiova",
+        "lat": 44.31667,
+        "lng": 23.8,
+        "source": "https://www.geonames.org/680332/craiova.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-kyiv",
+      "company_id": "ubisoft-kyiv",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/kyiv",
+        "https://www.ubisoft.com/en-us/company/careers/search/744000143805578-c-game-developer"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto. Current vacancy explicitly permits remote work or attendance at the Kyiv/Odesa offices; continued access/capacity may change due to the war.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/search/744000143805578-c-game-developer",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Kyiv",
+        "lat": 50.45466,
+        "lng": 30.5238,
+        "source": "https://www.geonames.org/703448/kyiv.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-odesa",
+      "company_id": "ubisoft-odesa",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/odesa",
+        "https://www.ubisoft.com/en-us/company/careers/search/744000143805578-c-game-developer"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto. Current vacancy explicitly permits remote work or attendance at the Kyiv/Odesa offices; continued access/capacity may change due to the war.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/search/744000143805578-c-game-developer",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Odesa",
+        "lat": 46.48572,
+        "lng": 30.74383,
+        "source": "https://www.geonames.org/698740/odesa.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "ubisoft-bordeaux",
+      "company_id": "ubisoft-bordeaux",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.ubisoft.com/en-us/company/careers/locations/bordeaux",
+        "https://www.ubisoft.com/en-us/company/careers/locations/articles/get-to-know-ubisoft-bordeaux-the-studio-behind-assassin-s-creed-mirage"
+      ],
+      "finding": "Current city listing and site-specific development description cross-checked; no capture services inherited from Ubisoft Toronto.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations/articles/get-to-know-ubisoft-bordeaux-the-studio-behind-assassin-s-creed-mirage",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "ubisoft",
+          "name": "Ubisoft",
+          "type": "group_member",
+          "evidence": "https://www.ubisoft.com/en-us/company/careers/locations",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Bordeaux",
+        "lat": 44.84124,
+        "lng": -0.58046,
+        "source": "https://www.geonames.org/3031582/bordeaux.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cd-projekt-red-warsaw",
+      "company_id": "cd-projekt-red",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.cdprojektred.com/en/jobs"
+      ],
+      "finding": "Current developer careers page lists this production location. Vancouver label is mapped to its explicitly listed Burnaby municipality; Boston uses a city reference only.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.cdprojektred.com/en/jobs",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Warsaw",
+        "lat": 52.22977,
+        "lng": 21.01178,
+        "source": "https://www.geonames.org/756135/warsaw.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cd-projekt-red-krakow",
+      "company_id": "cd-projekt-red",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.cdprojektred.com/en/jobs"
+      ],
+      "finding": "Current developer careers page lists this production location. Vancouver label is mapped to its explicitly listed Burnaby municipality; Boston uses a city reference only.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.cdprojektred.com/en/jobs",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Kraków",
+        "lat": 50.06143,
+        "lng": 19.93658,
+        "source": "https://www.geonames.org/3094802/krakow.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cd-projekt-red-wroclaw",
+      "company_id": "cd-projekt-red",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.cdprojektred.com/en/jobs"
+      ],
+      "finding": "Current developer careers page lists this production location. Vancouver label is mapped to its explicitly listed Burnaby municipality; Boston uses a city reference only.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.cdprojektred.com/en/jobs",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Wrocław",
+        "lat": 51.10286,
+        "lng": 17.03006,
+        "source": "https://www.geonames.org/3081368/wroclaw.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cd-projekt-red-vancouver",
+      "company_id": "cd-projekt-red",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.cdprojektred.com/en/jobs"
+      ],
+      "finding": "Current developer careers page lists this production location. Vancouver label is mapped to its explicitly listed Burnaby municipality; Boston uses a city reference only.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.cdprojektred.com/en/jobs",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Burnaby",
+        "lat": 49.26636,
+        "lng": -122.95263,
+        "source": "https://www.geonames.org/5911606/burnaby.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "cd-projekt-red-boston",
+      "company_id": "cd-projekt-red",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.cdprojektred.com/en/jobs"
+      ],
+      "finding": "Current developer careers page lists this production location. Vancouver label is mapped to its explicitly listed Burnaby municipality; Boston uses a city reference only.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.cdprojektred.com/en/jobs",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Boston",
+        "lat": 42.35843,
+        "lng": -71.05977,
+        "source": "https://www.geonames.org/4930956/boston.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "remedy-espoo",
+      "company_id": "remedy",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.remedygames.com/contact",
+        "https://investors.remedygames.com/en/in_brief"
+      ],
+      "finding": "Current contact page lists this office and the current investor company description confirms the two-city developer footprint.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.remedygames.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Espoo",
+        "lat": 60.2052,
+        "lng": 24.6522,
+        "source": "https://www.geonames.org/660158/espoo.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "remedy-stockholm",
+      "company_id": "remedy",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://www.remedygames.com/contact",
+        "https://investors.remedygames.com/en/in_brief"
+      ],
+      "finding": "Current contact page lists this office and the current investor company description confirms the two-city developer footprint.",
+      "location_type": "production_studio",
+      "capability_sources": {
+        "Game Development": {
+          "state": "confirmed",
+          "evidence": "https://www.remedygames.com/contact",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [],
+      "coordinate_reference": {
+        "city": "Stockholm",
+        "lat": 59.32938,
+        "lng": 18.06871,
+        "source": "https://www.geonames.org/2673730/stockholm.html"
+      },
+      "duplicate_candidates": []
+    },
+    {
+      "id": "metricminds-frankfurt",
+      "company_id": "metricminds",
+      "decision": "import",
+      "reviewed_on": "2026-11-06",
+      "location_sources": [
+        "https://metricminds.com/performance-capture/",
+        "https://metricminds.com/"
+      ],
+      "finding": "Current official Frankfurt address and dedicated performance-capture service page; no separate historical branch or game-development identity inferred from client work.",
+      "location_type": "capture_facility",
+      "capability_sources": {
+        "Motion Capture": {
+          "state": "confirmed",
+          "evidence": "https://metricminds.com/performance-capture/",
+          "verified_on": "2026-11-06"
+        },
+        "Performance Capture": {
+          "state": "confirmed",
+          "evidence": "https://metricminds.com/performance-capture/",
+          "verified_on": "2026-11-06"
+        },
+        "Facial Capture": {
+          "state": "confirmed",
+          "evidence": "https://metricminds.com/performance-capture/",
+          "verified_on": "2026-11-06"
+        },
+        "Animation": {
+          "state": "confirmed",
+          "evidence": "https://metricminds.com/",
+          "verified_on": "2026-11-06"
+        },
+        "Cinematics": {
+          "state": "confirmed",
+          "evidence": "https://metricminds.com/",
+          "verified_on": "2026-11-06"
+        }
+      },
+      "relationships": [
+        {
+          "id": "thq-nordic",
+          "name": "THQ Nordic",
+          "type": "group_member",
+          "evidence": "https://metricminds.com/performance-capture/",
+          "verified_on": "2026-11-06"
+        }
+      ],
+      "coordinate_reference": {
+        "city": "Frankfurt am Main",
+        "lat": 50.11552,
+        "lng": 8.68417,
+        "source": "https://www.geonames.org/2925533/frankfurt-am-main.html"
+      },
+      "duplicate_candidates": []
+    }
+  ]
+}

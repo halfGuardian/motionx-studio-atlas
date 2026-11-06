@@ -83,11 +83,13 @@ function show(s) {
     <p class="muted">${esc(s.city)}, ${esc(s.country)}</p>
     <div class="stats"><span class="stat">Evidence confidence: ${esc(s.evidence_state)}</span></div>
     <p class="muted">${esc(s.status)}</p>
+    ${s.location_type ? `<p><b>Location type</b><br>${esc(s.location_type.replaceAll('_', ' '))}</p>` : ''}
+    ${(s.relationships || []).length ? `<p><b>Organisation relationships</b></p><ul>${s.relationships.map(r => `<li>${esc(r.name)} — ${esc(r.type.replaceAll('_', ' '))} · <a href="${esc(r.evidence)}" target="_blank" rel="noopener noreferrer">Source</a> · ${esc(r.verified_on)}</li>`).join('')}</ul>` : ''}
     <p><b>Capabilities and confidence</b></p><ul>${s.capabilities.map(c => {
       const e = s.capability_evidence[c];
       return `<li>${esc(c)} — ${esc(e.state)}${e.evidence ? ` · <a href="${esc(e.evidence)}" target="_blank" rel="noopener noreferrer">Source</a>` : ''}${e.verified_on ? ` · reviewed ${esc(e.verified_on)}` : ' · not yet reviewed'}</li>`;
     }).join('')}</ul>
-    <p><b>Coordinate precision</b><br>${esc(precision)}</p>
+    <p><b>Coordinate precision</b><br>${esc(precision)}${s.coordinate_source ? ` · <a href="${esc(s.coordinate_source)}" target="_blank" rel="noopener noreferrer">City reference source</a>` : ''}</p>
     <p><b>Location reference</b><br>${esc(s.address || 'Street address not verified')}</p>
     <p><b>Website</b><br><a href="${esc(s.website)}" target="_blank" rel="noopener noreferrer">${esc(s.website)}</a></p>
     ${s.email ? `<p><b>Public email</b><br><a href="mailto:${esc(s.email)}">${esc(s.email)}</a></p>` : ''}
@@ -132,16 +134,16 @@ $('fitResults').onclick = () => {
 };
 $('exportCsv').onclick = () => {
   const columns = ['id', 'company_id', 'name', 'city', 'country', 'lat', 'lng', 'address', 'website', 'email', 'phone',
-    'categories', 'capabilities', 'capability_evidence', 'evidence_state', 'coordinate_precision', 'evidence', 'verified_on'];
+    'categories', 'capabilities', 'capability_evidence', 'evidence_state', 'coordinate_precision', 'evidence', 'verified_on', 'location_type', 'coordinate_source', 'relationships'];
   const quote = value => {
-    let text = Array.isArray(value) ? value.join('|') : typeof value === 'object' && value ? JSON.stringify(value) : String(value ?? '');
+    let text = Array.isArray(value) ? (value.some(v => typeof v === 'object') ? JSON.stringify(value) : value.join('|')) : typeof value === 'object' && value ? JSON.stringify(value) : String(value ?? '');
     if (typeof value !== 'number' && /^[\s]*[=+@-]/.test(text)) text = "'" + text; // Spreadsheet formula protection.
     return '"' + text.replace(/"/g, '""') + '"';
   };
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.7.csv';
+  a.download = 'motionx_studios_filtered_v0.8.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };

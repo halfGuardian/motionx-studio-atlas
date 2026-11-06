@@ -1,8 +1,12 @@
-# MotionX Studio Atlas v0.7 — Global Research Expansion, Batch 1
+# MotionX Studio Atlas v0.8 — Global Studio Expansion
 
-Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **31 locations across 19 organisations**. v0.7 adds 13 source-reviewed locations across Wētā FX, Industrial Light & Magic and Framestore, preserving all 18 v0.6 records unchanged. Motion capture is an optional searchable capability, not an admission requirement.
+Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **129 locations across 66 organisations in 28 countries**. v0.8 adds 98 source-supported locations and 47 operating organisations in 26 countries, preserving all 31 v0.7 records unchanged. Motion capture is an optional searchable capability, not an admission requirement.
 
 The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
+
+## v0.8 research release
+
+The [research report](data/research/v0.8-global-expansion/README.md) documents imported organisations, six source-supported capture facilities, branch-coverage limits, coordinate licensing, tests and performance. The [evidence manifest](data/research/v0.8-global-expansion/evidence.json), [CSV batch](data/research/v0.8-global-expansion/batch.csv), dry-run/apply/repeat reports and [review queue](data/research/v0.8-global-expansion/review-queue.json) are retained. Review date: **6 November 2026**. Current validation: **0 errors / 147 warnings**, covering 129 approximate coordinates and 18 legacy unknown-evidence records. Ubisoft and EA coverage remains partial; unresolved candidates are queued rather than published.
 
 ## v0.7 research batch 1
 
@@ -40,6 +44,9 @@ The JSON root is an array of **location** objects, preserving the v0.5 layout:
 | `coordinate_precision` | `exact`, `city`, `approximate`, `region` or `unverified` |
 | `website` | Required public HTTPS website |
 | `address`, `email`, `phone`, `status` | Optional public location reference, business contacts and research caveat |
+| `location_type` | Optional: `production_studio`, `capture_facility`, `creative_hub`, `mixed_campus`, `production_office` or `uncertain` |
+| `coordinate_source` | Optional HTTPS provenance for the coordinate reference, distinct from location evidence |
+| `relationships` | Optional array of `{id, name, type, evidence, verified_on}` for sourced `subsidiary_of`, `group_member` or `partner_of` relationships; does not merge operating identities |
 | `legacy_research` | Migration provenance only; original v0.5 claims, dates and replaced pin/address values, not current confidence |
 
 Do not derive company identity from a display name or website: multiple locations may share both. Preserve existing IDs when correcting records. A new location of an existing company gets a new `id` and the same `company_id`. The JSON remains denormalised for a simple static site; a separate company table/backend is not required. `schema.sql` is an older, unused database design sketch, not the v0.6 runtime schema. The archived `MotionX_Studio_Atlas_GitHub_Pages_v0.5/` directory is historical and is not loaded by the root website or tools.
@@ -65,6 +72,7 @@ Python **3.9+**, standard library only. Start a batch by copying **`data/researc
 - Retain all required headers. Unknown columns are rejected to help prevent accidental import of private research notes.
 - `categories` and `capabilities` use `|` separators (for example, `VFX|Animation`). Empty capabilities are allowed.
 - `capability_evidence` is a JSON object inside a CSV cell. For a capability `Animation`, a not-yet-reviewed value is `{"Animation":{"state":"unknown","evidence":"","verified_on":""}}`. Use `{}` when there are no capabilities. A CSV-aware writer handles the embedded quotes.
+- Optional `relationships` uses a JSON array inside a CSV cell; each entry requires a stable parent/group ID, name, type, evidence URL and review date. Blank optional metadata stays absent for legacy compatibility. `coordinate_source` documents geocoding provenance; `location_type` distinguishes studios, capture stages, creative hubs, campuses and production offices. Do not infer a relationship or site type from a shared address.
 - Use HTTPS URLs, numeric coordinates and calendar dates in `YYYY-MM-DD`. Unknown evidence can have a blank URL/date. Future dates produce warnings; malformed dates are errors.
 - Do not change existing records through a batch. Make corrections explicitly in `studios.json` in a separate reviewed change.
 
@@ -112,10 +120,10 @@ python -m playwright install chromium  # or use an existing Chromium
 python tests/browser_smoke.py
 ```
 
-`CHROMIUM=/path/to/chromium` can select a browser. The browser suite uses live unpkg/OSM resources, so network outages can fail its tile check. It checks loading, map attribution/tiles, search, combined filters, profiles, totals, CSV export, mobile navigation, error/retry states, and 5,000 **in-memory synthetic test locations** with pagination. These fixtures never enter `studios.json`. Screenshots go to the system temporary directory. Pull requests run offline validation/tests in GitHub Actions; no deployment workflow is added.
+`CHROMIUM=/path/to/chromium` can select a browser. The browser suite uses live unpkg/OSM resources, so network outages can fail its tile check. It checks loading, map attribution/tiles, search, combined filters, profiles, totals, CSV export, mobile navigation, error/retry states, and 10,000 **in-memory synthetic test locations with distinct coordinates** with pagination. These fixtures never enter `studios.json`. Screenshots go to the system temporary directory. Pull requests run offline validation/tests in GitHub Actions; no deployment workflow is added.
 
 ## Limits and public-data safety
 
 The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Server-side search, spatial tiling or clustering may become useful at larger scales. Search includes unknown capabilities; read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
 
-Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.7 adds no private records or credentials.
+Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.8 adds no private records or credentials.
