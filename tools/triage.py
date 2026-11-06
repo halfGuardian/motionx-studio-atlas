@@ -54,7 +54,14 @@ def classify(candidate, source, database, rejected):
     kind = source.get('triage_kind', '')
     company = source.get('company_id', '')
     rows = scope_rows(database, company)
+    if candidate.get('observation_kind') == 'location_reference' and candidate.get('city') and candidate.get('country'):
+        matches = [r for r in rows if normalized(r['city']) == normalized(candidate['city']) and normalized(r['country']) == normalized(candidate['country'])]
+        return result('already_represented' if matches else 'potentially_new', 'likely', 'structured_place',
+                      'Reviewed source label maps to an organisation/city/country reference. Matching only; separate facilities and operation require research.', matches, 'location' if matches else 'none')
     branch = bool(re.search(r'/(?:location|locations)/.+$', path)) and kind == 'branch_links'
+    if source.get('branch_url_pattern') and kind == 'branch_links':
+        extracted = re.search(source['branch_url_pattern'], path)
+        if extracted:branch=True;slug=extracted.group(1)
     if kind == 'organisation_roster' and path:
         return result('irrelevant', 'confirmed', 'navigation_or_service', 'Roster link leads to navigation, a service, policy, contact or article rather than an individual operator homepage/facility. Preserve it as source history.')
     # Generic service/contact/navigation pages do not establish a physical location.

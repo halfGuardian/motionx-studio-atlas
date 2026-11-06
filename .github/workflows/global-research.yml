@@ -41,6 +41,11 @@ jobs:
           report=json.loads(Path('discovery-run/report.json').read_text())
           print('LIVE_SOURCES '+json.dumps(report['sources']))
           print('RESEARCH_COUNTS '+json.dumps(json.loads(Path('research-review/proposals.json').read_text())['candidate_counts']))
+          queue=json.loads(Path('discovery-run/queue.json').read_text())
+          print('QUEUE_CONTINUITY '+json.dumps({'retained':len(set(json.loads(Path('previous/queue.json').read_text())['candidates']) & set(queue['candidates'])),'history_snapshots':len(queue.get('history',[]))}))
+          for candidate in queue['candidates'].values():
+              if candidate['source_id'] not in ('v08-review-backlog',):
+                  print('LIVE_CANDIDATE '+json.dumps(candidate))
           PY
       - uses: actions/upload-artifact@v4
         if: always()

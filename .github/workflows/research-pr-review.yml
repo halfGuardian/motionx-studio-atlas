@@ -1,0 +1,32 @@
+name: Describe exact-content research review
+on:
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Report review metadata without granting approval or merging
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          gh api --paginate --slurp "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/reviews" > /tmp/reviews.json
+          python tools/pr_reviews.py --reviews /tmp/reviews.json --head-sha "$HEAD_SHA" --author "$PR_AUTHOR" > review-state.json
+          echo 'Exact-head review metadata (informational, not publication authorisation):' >> "$GITHUB_STEP_SUMMARY"
+          cat review-state.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exact-head-review-state
+          path: review-state.json

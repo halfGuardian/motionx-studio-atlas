@@ -21,10 +21,10 @@ class VisibleLines(HTMLParser):
         if value:self.lines.append(value)
     def handle_starttag(self,tag,attrs):
         if tag in ('script','style','nav','header','footer'):self.skip+=1
-        if not self.skip and tag in ('h1','h2','h3','h4','p','li','div','section','article','br','option'):self.flush()
+        if not self.skip and tag in ('h1','h2','h3','h4','h5','h6','p','li','div','section','article','br','option'):self.flush()
     def handle_endtag(self,tag):
         if tag in ('script','style','nav','header','footer'):self.skip=max(0,self.skip-1)
-        if not self.skip and tag in ('h1','h2','h3','h4','p','li','div','section','article','option'):self.flush()
+        if not self.skip and tag in ('h1','h2','h3','h4','h5','h6','p','li','div','section','article','option'):self.flush()
     def handle_data(self,data):
         if not self.skip:self.chunks.append(data)
 
@@ -40,7 +40,11 @@ def location_labels(source,body):
                      re.search(r'(?<!\w)'+re.escape(label)+r'(?!\w)',line,re.I)]
         for position in matches[:1]:
             # Capability words must occur in this local card, not an unrelated global footer.
-            local=' '.join(parser.lines[position+1:position+5])
+            following=[]
+            for line in parser.lines[position+1:position+5]:
+                if norm(line) in {norm(label) for label in source['place_labels']}:break
+                following.append(line)
+            local=' '.join(following)
             local=local[:1200]
             claims=[label for label,pattern in CLAIMS.items() if re.search(pattern,local,re.I)]
             output.append({'url':source['url'],'label':place.get('name') or label,'city':place.get('city',''),

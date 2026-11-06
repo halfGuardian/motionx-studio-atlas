@@ -106,6 +106,13 @@ def stage(existing,records,manifest,allow_distinct=()):
     for row in records:
         if set(row)-allowed or row.get('email') or row.get('phone'):raise ValueError('private/unknown/contact fields excluded')
         research=evidence.get(row['id'],{})
+        if row.get('evidence_state') not in ('confirmed','likely') or any(v['state']=='unknown' for v in row['capability_evidence'].values()):
+            raise ValueError('unverified discoveries/unknown capability claims cannot become proposed public records')
+        if research.get('record_hash')!=digest(row):raise ValueError('research manifest must bind the exact proposed record')
+        reviewed=date.fromisoformat(research.get('reviewed_on',''))
+        if not 0 <= (date.today()-reviewed).days <= 30:raise ValueError('source research is stale or future dated')
+        if row['id'] in allow_distinct and not research.get('distinct_reason'):
+            raise ValueError('distinct-facility approval requires a source-backed rationale')
         if not research.get('location_sources') or row.get('evidence') not in research['location_sources'] or research.get('capability_evidence')!=row['capability_evidence']:
             raise ValueError('per-record source research manifest required; discovery alone cannot stage a canonical record')
         if row['id'] in by_id and row!=by_id[row['id']]:

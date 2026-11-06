@@ -1,0 +1,69 @@
+name: Draft a source-researched data PR
+on:
+  workflow_dispatch:
+    inputs:
+      bundle:
+        type: string
+        required: true
+        description: 'Committed data/research/<batch> with records.json and evidence.json; no approval JSON editing'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: research-data-proposal
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate exact content and stage a proposal only
+        env:
+          BUNDLE: ${{ inputs.bundle }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          root=Path.cwd().resolve(); research=root/'data/research'
+          bundle=(root/os.environ['BUNDLE']).resolve()
+          if research not in bundle.parents or not bundle.is_dir():raise SystemExit('A committed research bundle directory is required')
+          paths=[bundle/n for n in ('records.json','evidence.json')]
+          if any(p.is_symlink() or not p.is_file() or research not in p.resolve().parents for p in paths):raise SystemExit('Regular research files are required')
+          manifest=json.loads(paths[1].read_text())
+          args=['python','tools/research.py','stage-pr','--records',str(paths[0]),'--manifest',str(paths[1]),'--output','research-proposal']
+          for record in manifest.get('records',[]):
+              if record.get('distinct_reason'):args+=['--allow-distinct-location',record['id']]
+          subprocess.run(args,check=True)
+          PY
+          python tools/validate.py research-proposal/studios.json --report research-proposal/validation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: staged-research-proposal
+          path: research-proposal/
+      - name: Open draft for human review; never approve or merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/research-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          cp research-proposal/studios.json studios.json
+          report_dir="data/research/proposal-${GITHUB_RUN_ID}"
+          mkdir -p "$report_dir"
+          cp research-proposal/proposal-audit.json "$report_dir/proposal-audit.json"
+          cp research-proposal/validation.json "$report_dir/validation.json"
+          git add studios.json "$report_dir"
+          if git diff --cached --quiet; then echo 'No changes to propose'; exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Propose source-researched studio data for human review'
+          git push origin "$branch"
+          cat > /tmp/research-pr.md <<'BODY'
+          Source-researched proposal only. Review the evidence bundle, exact data diff and before/after audit before authorising publication. Schema/import tests and opening this PR do not constitute human approval.
+
+          Publication mode: GitHub-native human PR review and manual merge. No approval JSON edits are needed. This automation never approves reviews, merges or changes Pages settings. Require reviews and dismiss stale approvals in repository rules for enforced human review; those settings remain a maintainer responsibility. New commits require renewed review.
+
+          GITHUB_TOKEN-created PRs may not trigger other workflows; maintainers must run required checks before merging. The older content-bound approval-bundle workflow remains available separately; historical approvals are not generated or reused here.
+          BODY
+          gh pr create --draft --base main --head "$branch" --title 'Source-researched studio proposal — human review required' --body-file /tmp/research-pr.md
