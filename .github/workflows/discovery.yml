@@ -40,7 +40,7 @@ jobs:
           fi
       - name: Collect candidates without editing the public database
         run: |
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --output discovery-run
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
           python - <<'PY'
           import json, os
           from pathlib import Path

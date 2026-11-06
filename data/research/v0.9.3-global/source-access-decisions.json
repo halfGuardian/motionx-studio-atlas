@@ -1,0 +1,352 @@
+{
+  "reviewed_on": "2026-11-06",
+  "collector_enabled": 9,
+  "registered": 25,
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "enabled": false,
+      "source_url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.ubisoft.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "ea-studios",
+      "enabled": false,
+      "source_url": "https://www.ea.com/careers/teams/ea-studios",
+      "policy_review": {
+        "reviewed_on": "2026-11-06",
+        "url": "https://www.ea.com/robots.txt",
+        "decision": "automated_collection_disabled"
+      },
+      "disabled_reason": "EA robots.txt reserves rights and explicitly prohibits web scraping/text-data mining without written authorisation. Manual evidence research only; no adapter expansion enabled."
+    },
+    {
+      "id": "cinesite-group",
+      "enabled": false,
+      "source_url": "https://cinesite.com/our-studios/",
+      "policy_review": {
+        "reviewed_on": "2026-11-06",
+        "decision": "automated_collection_disabled",
+        "url": "https://cinesite.com/terms-of-use/",
+        "note": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission."
+      },
+      "disabled_reason": "Current Terms of Use section 3 expressly prohibits automated scraping/text-data mining. Retain existing observations; no collection or screenshot/OCR workaround without permission."
+    },
+    {
+      "id": "dneg-studios",
+      "enabled": true,
+      "source_url": "https://www.dneg.com/contact",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.dneg.com/privacy-policy/"
+        ],
+        "note": "Privacy automation references describe personal-data handling; scoped branch URLs only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "imaginarium-sites",
+      "enabled": false,
+      "source_url": "https://www.imaginariumstudios.co.uk/locations",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.imaginariumstudios.co.uk/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "metricminds-services",
+      "enabled": true,
+      "source_url": "https://metricminds.com/performance-capture/",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://metricminds.com/privacy-policy/"
+        ],
+        "note": "Privacy describes personal-data processing and analytics; scoped service evidence pointers only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "framestore-locations",
+      "enabled": true,
+      "source_url": "https://www.framestore.com/contact",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.framestore.com/privacy-policy-cookies"
+        ],
+        "note": "Reviewed published privacy/cookie policy: no collection restriction found there. Factual location labels only; no express reuse licence inferred. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "ilm-locations",
+      "enabled": false,
+      "source_url": "https://www.ilm.com/locations/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.ilm.com/terms-of-use/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "weta-locations",
+      "enabled": false,
+      "source_url": "https://www.wetafx.co.nz/about",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.wetafx.co.nz/terms_and_privacy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "imageworks-locations",
+      "enabled": false,
+      "source_url": "https://www.imageworks.com/contact-us",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.imageworks.com/terms-of-use"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "digital-domain-locations",
+      "enabled": false,
+      "source_url": "https://digitaldomain.com/about/contact-us/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://digitaldomain.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Published policy reserves duplication/redistribution in any form; broader Terms of Use need review. Collection disabled."
+    },
+    {
+      "id": "eyeline-locations",
+      "enabled": false,
+      "source_url": "https://apply.eyelinestudios.com/careers/artist/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://apply.eyelinestudios.com/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "cdpr-locations",
+      "enabled": false,
+      "source_url": "https://www.cdprojektred.com/en/jobs",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.cdprojektred.com/en/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "remedy-locations",
+      "enabled": true,
+      "source_url": "https://www.remedygames.com/contact",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.remedygames.com/privacy-policy"
+        ],
+        "note": "Privacy automated-processing clauses concern personal data; collect factual location metadata only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "larian-locations",
+      "enabled": true,
+      "source_url": "https://larian.com/careers",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://larian.com/tos"
+        ],
+        "note": "Terms code of conduct prohibits personal-data scraping and disruption. No personal data, account access or game content collected; bounded public branch URLs only. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "rise-locations",
+      "enabled": true,
+      "source_url": "https://www.risefx.com/",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.risefx.com/rise-visual-effects-studios-imprint-privacy-policy.php"
+        ],
+        "note": "Imprint reserves copyrighted works beyond statutory exceptions. Only factual studio identity/location links; no images, page text or personal contacts copied. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "outpost-locations",
+      "enabled": true,
+      "source_url": "https://www.outpost-vfx.com/en/contact",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.outpost-vfx.com/en/legal"
+        ],
+        "note": "Reviewed published legal landing page, privacy and workplace-policy links. Only factual location labels; no express reuse licence inferred. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "flyingbark-locations",
+      "enabled": true,
+      "source_url": "https://www.flyingbark.com.au/about",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.flyingbark.com.au/privacy-policy"
+        ],
+        "note": "Published privacy policy reviewed; factual studio location labels only. No full-page reuse or implied licence. Runtime robots rules remain mandatory; not independent verification or written permission."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "triggerfish-locations",
+      "enabled": false,
+      "source_url": "https://www.triggerfish.com/faq/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.triggerfish.com/academy/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "reelfx-locations",
+      "enabled": false,
+      "source_url": "https://www.reelfx.com/contact/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.reelfx.com/terms/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Terms restrict public/commercial reuse; permission/clarification required. No automated collection."
+    },
+    {
+      "id": "rodeo-locations",
+      "enabled": false,
+      "source_url": "https://www.rodeofx.com/contact",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.rodeofx.com/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "chocolate-tribe-locations",
+      "enabled": false,
+      "source_url": "https://chocolatetribe.co.za/contact/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://chocolatetribe.co.za/privacy-policy/"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "studiot3d-locations",
+      "enabled": false,
+      "source_url": "https://www.studiot3d.com/",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.studiot3d.com/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    },
+    {
+      "id": "folks-locations",
+      "enabled": true,
+      "source_url": "https://folksvfx.com/contact/",
+      "policy_review": {
+        "decision": "bounded_metadata_reviewed",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://folksvfx.com/fr/privacy-policy/"
+        ],
+        "note": "Robots allowed in Actions run 42158704983. Published French privacy policy reviewed; automated references concern analytics/personal data. Factual location labels only, not content republication or an express reuse licence. Runtime robots mandatory; no independent business verification."
+      },
+      "disabled_reason": null
+    },
+    {
+      "id": "rsp-locations",
+      "enabled": false,
+      "source_url": "https://www.rsp.com.au/contact",
+      "policy_review": {
+        "decision": "manual_review_required",
+        "reviewed_on": "2026-11-06",
+        "policy_urls": [
+          "https://www.rsp.com.au/privacy-policy"
+        ],
+        "note": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+      },
+      "disabled_reason": "Robots/reuse terms unavailable, restrictive or insufficiently reviewed. Manual review or permission required; no automated fallback."
+    }
+  ]
+}

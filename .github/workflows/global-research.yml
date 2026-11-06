@@ -35,7 +35,7 @@ jobs:
       - name: Collect only registry-reviewed sources and prepare unverified dossiers
         run: |
           git show '${{ github.event.pull_request.base.sha }}:studios.json' > /tmp/published-studios.json
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --output discovery-run
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --output discovery-run
           python tools/research.py stage-pr --database /tmp/published-studios.json --records data/research/v0.9.3-global/records.json --manifest data/research/v0.9.3-global/evidence.json --allow-distinct-location annapurna-anr-vp-hyderabad --output staged-proposal
           python tools/research.py report --database /tmp/published-studios.json --records data/research/v0.9.3-global/records.json --queue discovery-run/queue.json --report discovery-run/report.json --config data/discovery/sources.json --output research-review
           cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"

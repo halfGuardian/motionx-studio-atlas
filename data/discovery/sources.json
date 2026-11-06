@@ -425,7 +425,15 @@
       "triage_kind": "branch_links",
       "sector_hints": [
         "Game Development"
-      ]
+      ],
+      "supplemental_place_labels": {
+        "Quebec": {
+          "city": "Québec",
+          "country": "Canada",
+          "unit_key": "quebec"
+        }
+      },
+      "roster_sentence_pattern": "studios across the world"
     },
     {
       "id": "rise-locations",

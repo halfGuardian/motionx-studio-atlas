@@ -9,7 +9,7 @@ from urllib import error
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
-from discovery import digest,extract,scan,load_config
+from discovery import digest,extract,scan,load_config,merge_checkpoint
 from research import dossier,review_html,stage
 from source_policy import audit
 from pr_reviews import review_state
@@ -17,6 +17,33 @@ from test_discovery import SOURCE,CONFIG,EMPTY,observed,TODAY
 from test_pipeline import record
 
 class AdaptersTests(unittest.TestCase):
+    def test_larian_style_text_only_branch_does_not_inherit_roster_claims_or_duplicate_links(self):
+        source={**SOURCE,'supplemental_place_labels':{'Quebec':{'city':'Québec','country':'Canada','unit_key':'quebec'}},'roster_sentence_pattern':'studios across the world'}
+        body='<p>Seven studios across the world, including Quebec.</p><p>Motion capture</p>'
+        rows=extract(source,body)
+        self.assertEqual(len(rows),1);self.assertEqual(rows[0]['claim_terms'],[])
+        rows=extract(source,body+'<a href="/studio/quebec">Quebec, Canada</a>')
+        self.assertEqual(len(rows),1);self.assertNotIn('unit_key',rows[0])
+
+    def test_checkpoint_adds_pr_discoveries_without_overwriting_newer_evidence(self):
+        original,_=observed();newer=copy.deepcopy(original)
+        cid=next(iter(original['candidates']));newer['candidates'][cid]['label']='Newer run evidence'
+        extra=copy.deepcopy(original['candidates'][cid]);extra['id']='extra';original['candidates']['extra']=extra
+        combined,audit=merge_checkpoint(newer,original)
+        self.assertEqual(combined['candidates'][cid],newer['candidates'][cid])
+        self.assertEqual(audit['added_candidate_ids'],['extra'])
+        self.assertNotIn('extra',newer['candidates'])
+        self.assertEqual(merge_checkpoint(combined,original)[0],combined)
+
+    def test_checkpoint_preserves_first_seen_and_rejects_invalid_identity(self):
+        original,_=observed();checkpoint=copy.deepcopy(original);cid=next(iter(original['candidates']))
+        checkpoint['candidates'][cid]['first_seen']='2026-01-01'
+        merged,audit=merge_checkpoint(original,checkpoint)
+        self.assertEqual(merged['candidates'][cid]['first_seen'],'2026-01-01')
+        self.assertEqual(audit['earlier_first_seen_ids'],[cid])
+        checkpoint['candidates'][cid]['id']='wrong'
+        with self.assertRaises(ValueError):merge_checkpoint(original,checkpoint)
+
     def source(self):
         return {**SOURCE,'adapter':'location_labels','place_labels':{'London':{'city':'London','country':'United Kingdom','unit_key':'stage-a'},'Paris':{'city':'Paris','country':'France','unit_key':'stage-b'}}}
 

@@ -238,6 +238,12 @@ def extract(source, text):
                 url = link_url(source['url'], href)
                 if url and link_allowed(source, url, label):
                     found.append({'url': url, 'label': label})
+            if source.get('supplemental_place_labels'):
+                from source_adapters import location_labels,norm
+                # Some reviewed roster members have visible text but no branch href.
+                labels={label:place for label,place in source['supplemental_place_labels'].items()
+                        if not any(norm(label) in norm(item['label']) for item in found)}
+                found.extend(location_labels({**source,'place_labels':labels},text))
         else:
             def walk(node):
                 if isinstance(node, list):
@@ -297,7 +303,7 @@ def scan(config, previous, database, fetcher=None, today=None):
         try:
             body = fetcher(source)
             observations = extract(source, body)
-            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern', 'place_labels', 'roster_sentence_pattern')})
+            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern', 'place_labels', 'roster_sentence_pattern', 'supplemental_place_labels')})
             old_status = state['sources'].get(source['id'], {})
             rules_changed = bool(old_status) and old_status.get('extraction_hash') != extraction_hash
             if rules_changed:
@@ -466,6 +472,24 @@ def archive_history(previous_run, output):
         (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
 
 
+def merge_checkpoint(state, checkpoint):
+    """Add committed PR discoveries without replacing newer run evidence or approvals."""
+    for queue in (state,checkpoint):
+        if queue.get('version')!=1 or not isinstance(queue.get('candidates'),dict):
+            raise ValueError('invalid discovery checkpoint')
+    merged=copy.deepcopy(state);added=[];earlier=[]
+    for cid,candidate in checkpoint['candidates'].items():
+        if not isinstance(candidate,dict) or candidate.get('id')!=cid or not url_valid(candidate.get('url')):
+            raise ValueError('invalid checkpoint candidate')
+        first=date.fromisoformat(candidate['first_seen'])
+        if cid not in merged['candidates']:
+            merged['candidates'][cid]=copy.deepcopy(candidate);added.append(cid)
+        elif first<date.fromisoformat(merged['candidates'][cid]['first_seen']):
+            merged['candidates'][cid]['first_seen']=first.isoformat();earlier.append(cid)
+    return merged,{'added_candidate_ids':added,'earlier_first_seen_ids':earlier,
+                   'note':'Existing run evidence/reviews retained; checkpoint is not business or publication approval.'}
+
+
 def review_template(database, queue, records, candidate_ids):
     if len(records) != len(candidate_ids) or not records:
         raise ValueError('provide one candidate ID per proposed record, in the same order')
@@ -493,6 +517,7 @@ def main():
     scan_cmd.add_argument('--database', type=Path, default=ROOT / 'studios.json')
     scan_cmd.add_argument('--output', type=Path, required=True)
     scan_cmd.add_argument('--previous-run', type=Path, help='archive prior queue/report and carry history forward')
+    scan_cmd.add_argument('--checkpoint',type=Path,help='merge missing committed PR observations without resetting run history')
     proposal = commands.add_parser('prepare', help='prepare an approved proposal, never publish')
     for flag in ('queue', 'records', 'reviews'):
         proposal.add_argument('--' + flag, type=Path, required=True)
@@ -515,11 +540,17 @@ def main():
         if args.command == 'scan':
             errors, _ = validate(database)
             if errors: raise ValueError('invalid canonical database')
-            state, report = scan(read(args.config), read(args.state), database)
+            previous=read(args.state);checkpoint_audit=None
+            if args.checkpoint:previous,checkpoint_audit=merge_checkpoint(previous,read(args.checkpoint))
+            state, report = scan(read(args.config), previous, database)
+            if checkpoint_audit:report['checkpoint_merge']=checkpoint_audit
             write(args.output / 'queue.json', state)
             write(args.output / 'report.json', report)
             if args.previous_run:
                 archive_history(args.previous_run, args.output)
+            if args.checkpoint:
+                body=args.checkpoint.read_bytes();folder=args.output/'history';folder.mkdir(exist_ok=True)
+                (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
             print(json.dumps({'pending': report['pending_candidates'], 'source_status': report['sources'], 'published': 0}))
         elif args.command == 'review-template':
             queue, records = read(args.queue), read(args.records)
