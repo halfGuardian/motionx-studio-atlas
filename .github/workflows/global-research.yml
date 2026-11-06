@@ -1,0 +1,53 @@
+name: Global research and source checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/research.py'
+      - 'tools/source_policy.py'
+      - 'tools/source_adapters.py'
+      - 'tools/discovery.py'
+      - 'data/discovery/**'
+      - 'data/research/v0.9.3-global/**'
+      - '.github/workflows/global-research.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit only explicit public policy URLs; never auto-enable sources
+        run: python tools/source_policy.py --config data/discovery/source-candidates.json --output policy-audit.json
+      - name: Restore previous discovery and preserve history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then exit 1; fi
+          gh run download "$run_id" --name studio-discovery --dir previous
+      - name: Collect only registry-reviewed sources and prepare unverified dossiers
+        run: |
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --output discovery-run
+          python tools/research.py report --queue discovery-run/queue.json --report discovery-run/report.json --config data/discovery/sources.json --output research-review
+          cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('discovery-run/report.json').read_text())
+          print('LIVE_SOURCES '+json.dumps(report['sources']))
+          print('RESEARCH_COUNTS '+json.dumps(json.loads(Path('research-review/proposals.json').read_text())['candidate_counts']))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-research-review
+          path: |
+            policy-audit.json
+            discovery-run/
+            research-review/
+          retention-days: 90

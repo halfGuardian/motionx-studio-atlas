@@ -20,7 +20,7 @@ from import_csv import plan_import
 from validate import CSV_FIELDS, DuplicateIndex, url_valid, validate
 
 ROOT = Path(__file__).resolve().parents[1]
-USER_AGENT = 'MotionXDiscovery/0.9'
+USER_AGENT = 'MotionXDiscovery/0.9.3'
 MAX_BYTES = 2_000_000
 MAX_ITEMS = 2000
 CHECKS = ('location', 'city_country', 'sectors', 'capabilities', 'coordinates', 'identity')
@@ -74,9 +74,15 @@ def load_config(config):
         seen.add(source['id'])
         if type(source.get('enabled')) is not bool or source.get('kind') not in ('official', 'directory'):
             raise ValueError('sources require enabled and official/directory kind')
-        if source.get('adapter') not in ('links', 'jsonld', 'feed') or not source.get('reuse_note'):
+        if source.get('adapter') not in ('links', 'jsonld', 'feed', 'location_labels') or not source.get('reuse_note'):
             raise ValueError('source requires an adapter and public reuse/automation note')
         public_url(source['url'])
+        if config.get('require_access_review') and source['enabled']:
+            review=source.get('access_review', {})
+            if review.get('decision') != 'bounded_metadata_reviewed' or not review.get('reviewed_on') or not review.get('note') or not review.get('policy_urls'):
+                raise ValueError('enabled sources require a recorded robots/reuse policy review')
+        if source.get('adapter') == 'location_labels' and not source.get('place_labels'):
+            raise ValueError('location-label adapters require reviewed source-specific labels')
         if source['adapter'] == 'links':
             pattern = source.get('link_pattern', '')
             if not pattern or len(pattern) > 300:
@@ -210,7 +216,10 @@ class Page(HTMLParser):
 
 def extract(source, text):
     found = []
-    if source['adapter'] == 'feed':
+    if source['adapter'] == 'location_labels':
+        from source_adapters import location_labels
+        found = location_labels(source, text)
+    elif source['adapter'] == 'feed':
         if re.search(r'<!DOCTYPE|<!ENTITY', text, re.I):
             raise ValueError('DTD/entity feeds are not supported')
         root = ET.fromstring(text)
@@ -252,7 +261,11 @@ def extract(source, text):
         if not url or not label:
             continue
         value = {'url': url, 'label': label, 'city': clean(str(item.get('city', ''))), 'country': clean(str(item.get('country', '')))}
-        key = digest([url, value['city'], value['country']])
+        for field in ('unit_key','observation_kind','claim_terms','place_basis'):
+            if field in item:value[field]=item[field]
+        identity=[url, value['city'], value['country']]
+        if value.get('unit_key'):identity.append(value['unit_key'])
+        key = digest(identity)
         output.setdefault(key, value)
         if len(output) > MAX_ITEMS:
             raise ValueError('too many extracted candidates; narrow the source adapter')
@@ -282,14 +295,16 @@ def scan(config, previous, database, fetcher=None, today=None):
         try:
             body = fetcher(source)
             observations = extract(source, body)
-            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern')})
+            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern', 'place_labels', 'roster_sentence_pattern')})
             old_status = state['sources'].get(source['id'], {})
             rules_changed = bool(old_status) and old_status.get('extraction_hash') != extraction_hash
             if rules_changed:
                 report['events'].append({'source_id': source['id'], 'type': 'extraction_rules_changed', 'note': 'Retain omitted candidates; filtering changes are not disappearance evidence.'})
             seen = set()
             for item in observations:
-                cid = 'discovery-' + digest([source['id'], item['url'], item['city'], item['country']])[:24]
+                identity=[source['id'], item['url'], item['city'], item['country']]
+                if item.get('unit_key'):identity.append(item['unit_key'])
+                cid = 'discovery-' + digest(identity)[:24]
                 seen.add(cid)
                 old = state['candidates'].get(cid)
                 content_hash = digest(item)
@@ -309,6 +324,8 @@ def scan(config, previous, database, fetcher=None, today=None):
             # Empty/failed extraction may indicate a redesign, never a mass closure.
             if observations and not rules_changed:
                 for cid, candidate in state['candidates'].items():
+                    if source['adapter'] == 'location_labels' and candidate.get('observation_kind') != 'location_reference':
+                        continue
                     if source['adapter'] == 'links' and not link_allowed(source, candidate['url'], candidate['label']):
                         continue  # historical filtered-out navigation is not a missing studio
                     if candidate['source_id'] == source['id'] and cid not in seen and not candidate.get('missing_since'):

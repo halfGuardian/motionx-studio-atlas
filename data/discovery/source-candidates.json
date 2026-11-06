@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "link_pattern": "^https://www\\.ubisoft\\.com/en-us/company/careers/locations/.+",
+      "company_id": "ubisoft",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links",
+      "policy_urls": [
+        "https://www.ubisoft.com/privacy-policy/"
+      ]
+    },
+    {
+      "id": "ea-studios",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.ea.com/careers/teams/ea-studios",
+      "link_pattern": "^https://www\\.ea\\.com/(ea-studios/|careers/locations)",
+      "company_id": "electronic-arts",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "navigation_index",
+      "disabled_reason": "EA robots.txt reserves rights and explicitly prohibits web scraping/text-data mining without written authorisation. Manual evidence research only; no adapter expansion enabled.",
+      "access_review": {
+        "reviewed_on": "2026-11-06",
+        "url": "https://www.ea.com/robots.txt",
+        "decision": "automated_collection_disabled"
+      },
+      "policy_urls": [
+        "https://www.ea.com/privacy-policy/"
+      ]
+    },
+    {
+      "id": "cinesite-group",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://cinesite.com/our-studios/",
+      "link_pattern": "^https://[^/]+/?$",
+      "company_id": "cinesite-group",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence. v0.9.1: operator-CTA links only, including future operator domains as evidence pointers; never follow them automatically.",
+      "triage_kind": "organisation_roster",
+      "link_label_pattern": "(?i)^find out more$",
+      "policy_urls": [
+        "https://cinesite.com/privacy-policy/"
+      ]
+    },
+    {
+      "id": "dneg-studios",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.dneg.com/contact",
+      "link_pattern": "^https://www\\.dneg\\.com/location/.+",
+      "company_id": "dneg",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "branch_links",
+      "policy_urls": [
+        "https://www.dneg.com/privacy-policy/"
+      ]
+    },
+    {
+      "id": "imaginarium-sites",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "link_pattern": "^https://www\\.imaginariumstudios\\.co\\.uk/(locations|services)(?:/|$)",
+      "company_id": "imaginarium",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "facility_index",
+      "policy_urls": [
+        "https://www.imaginariumstudios.co.uk/privacy-policy/"
+      ]
+    },
+    {
+      "id": "metricminds-services",
+      "enabled": true,
+      "kind": "official",
+      "adapter": "links",
+      "url": "https://metricminds.com/performance-capture/",
+      "link_pattern": "^https://metricminds\\.com/(performance-capture|contact|animation|cinematics)(?:/|$)",
+      "company_id": "metricminds",
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
+      "triage_kind": "service_index",
+      "policy_urls": [
+        "https://metricminds.com/privacy-policy/"
+      ]
+    },
+    {
+      "id": "framestore-locations",
+      "organisation_name": "Framestore",
+      "url": "https://www.framestore.com/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.framestore.com/terms-and-conditions"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "ilm-locations",
+      "organisation_name": "Industrial Light & Magic",
+      "url": "https://www.ilm.com/locations/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.ilm.com/terms-of-use/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "weta-locations",
+      "organisation_name": "Wētā FX",
+      "url": "https://www.wetafx.co.nz/about",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.wetafx.co.nz/terms-and-conditions"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "imageworks-locations",
+      "organisation_name": "Sony Pictures Imageworks",
+      "url": "https://www.imageworks.com/contact-us",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.imageworks.com/terms-of-use"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "digital-domain-locations",
+      "organisation_name": "Digital Domain",
+      "url": "https://digitaldomain.com/about/contact-us/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://digitaldomain.com/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "eyeline-locations",
+      "organisation_name": "Eyeline",
+      "url": "https://apply.eyelinestudios.com/careers/artist/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://apply.eyelinestudios.com/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "cdpr-locations",
+      "organisation_name": "CD PROJEKT RED",
+      "url": "https://www.cdprojektred.com/en/jobs",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.cdprojektred.com/en/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "remedy-locations",
+      "organisation_name": "Remedy Entertainment",
+      "url": "https://www.remedygames.com/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.remedygames.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "larian-locations",
+      "organisation_name": "Larian Studios",
+      "url": "https://larian.com/careers",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://larian.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "rise-locations",
+      "organisation_name": "RISE",
+      "url": "https://www.risefx.com/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.risefx.com/imprint.php"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "outpost-locations",
+      "organisation_name": "Outpost VFX",
+      "url": "https://www.outpost-vfx.com/en/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.outpost-vfx.com/en/legal"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "flyingbark-locations",
+      "organisation_name": "Flying Bark Productions",
+      "url": "https://www.flyingbark.com.au/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.flyingbark.com.au/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "triggerfish-locations",
+      "organisation_name": "Triggerfish",
+      "url": "https://www.triggerfish.com/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.triggerfish.com/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "reelfx-locations",
+      "organisation_name": "Reel FX",
+      "url": "https://www.reelfx.com/contact/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.reelfx.com/terms/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "rodeo-locations",
+      "organisation_name": "Rodeo FX",
+      "url": "https://www.rodeofx.com/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.rodeofx.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "glassworks-locations",
+      "organisation_name": "Glassworks",
+      "url": "https://www.glassworks.co.uk/contact",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.glassworks.co.uk/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "chocolate-tribe-locations",
+      "organisation_name": "Chocolate Tribe",
+      "url": "https://www.chocolatetribe.co.za/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.chocolatetribe.co.za/privacy-policy/"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "zombie-locations",
+      "organisation_name": "Zombie Studio",
+      "url": "https://www.zombiestudio.com.br/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.zombiestudio.com.br/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    },
+    {
+      "id": "studiot3d-locations",
+      "organisation_name": "StudioT3D",
+      "url": "https://www.studiot3d.com/",
+      "enabled": false,
+      "kind": "official",
+      "adapter": "links",
+      "link_pattern": "^https://[^/]+/(?:locations?|studios?|contact)(?:/|$)",
+      "policy_urls": [
+        "https://www.studiot3d.com/privacy-policy"
+      ],
+      "reuse_note": "Pending explicit robots and reuse-policy review; no studio-page collection enabled yet.",
+      "access_review": {
+        "decision": "pending"
+      }
+    }
+  ]
+}
