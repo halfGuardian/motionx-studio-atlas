@@ -28,8 +28,8 @@ class ValidationTests(unittest.TestCase):
     def test_canonical_database_and_relationships(self):
         rows = read_records(ROOT / 'studios.json')
         self.assertEqual(validate(rows)[0], [])
-        self.assertEqual(len(rows), 31)
-        self.assertEqual(len({r['company_id'] for r in rows}), 19)
+        self.assertEqual(len(rows), 129)
+        self.assertEqual(len({r['company_id'] for r in rows}), 66)
         for company in ('beyond', 'centroid'):
             self.assertEqual(sum(r['company_id'] == company for r in rows), 2)
         legacy = [r for r in rows if 'legacy_research' in r]
@@ -101,7 +101,7 @@ class ResearchBatchTests(unittest.TestCase):
     def setUp(self):
         self.folder = ROOT / 'data/research/v0.7-batch-1'
         self.batch = read_records(self.folder / 'batch.csv')
-        self.database = read_records(ROOT / 'studios.json')
+        self.database = read_records(ROOT / 'studios.json')[:31]
         self.evidence = json.loads((self.folder / 'evidence.json').read_text())
 
     def test_batch_exactly_matches_imported_records(self):

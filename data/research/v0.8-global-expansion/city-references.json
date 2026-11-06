@@ -1,0 +1,396 @@
+{
+  "reviewed_on": "2026-11-06",
+  "references": {
+    "London": {
+      "city": "London",
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "source": "https://www.geonames.org/2643743/london.html"
+    },
+    "Vancouver": {
+      "city": "Vancouver",
+      "lat": 49.24966,
+      "lng": -123.11934,
+      "source": "https://www.geonames.org/6173331/vancouver.html"
+    },
+    "Mumbai": {
+      "city": "Mumbai",
+      "lat": 19.07283,
+      "lng": 72.88261,
+      "source": "https://www.geonames.org/1275339/mumbai.html"
+    },
+    "West Hollywood": {
+      "city": "West Hollywood",
+      "lat": 34.0900091,
+      "lng": -118.3617443,
+      "source": "https://www.geonames.org/search.html?q=Los+Angeles%2C+California&startRow=50"
+    },
+    "Chennai": {
+      "city": "Chennai",
+      "lat": 13.08784,
+      "lng": 80.27847,
+      "source": "https://www.geonames.org/1264527/chennai.html"
+    },
+    "Montréal": {
+      "city": "Montréal",
+      "lat": 45.50884,
+      "lng": -73.58781,
+      "source": "https://www.geonames.org/6077243/montreal.html"
+    },
+    "Mohali": {
+      "city": "Mohali",
+      "lat": 30.67995,
+      "lng": 76.72211,
+      "source": "https://www.geonames.org/6992326"
+    },
+    "Bengaluru": {
+      "city": "Bengaluru",
+      "lat": 12.97194,
+      "lng": 77.59369,
+      "source": "https://www.geonames.org/1277333/bengaluru.html"
+    },
+    "Toronto": {
+      "city": "Toronto",
+      "lat": 43.65333,
+      "lng": -79.38389,
+      "source": "https://www.geonames.org/6167865/toronto.html"
+    },
+    "Sydney": {
+      "city": "Sydney",
+      "lat": -33.86785,
+      "lng": 151.20732,
+      "source": "https://www.geonames.org/2147714/sydney.html"
+    },
+    "Barcelona": {
+      "city": "Barcelona",
+      "lat": 41.38879,
+      "lng": 2.15899,
+      "source": "https://www.geonames.org/3128760/barcelona.html"
+    },
+    "Budapest": {
+      "city": "Budapest",
+      "lat": 47.49835,
+      "lng": 19.04045,
+      "source": "https://www.geonames.org/3054643/budapest.html"
+    },
+    "Sofia": {
+      "city": "Sofia",
+      "lat": 42.69751,
+      "lng": 23.32415,
+      "source": "https://www.geonames.org/727011/sofia.html"
+    },
+    "Pune": {
+      "city": "Pune",
+      "lat": 18.51957,
+      "lng": 73.85535,
+      "source": "https://www.geonames.org/1259229/pune.html"
+    },
+    "Kolkata": {
+      "city": "Kolkata",
+      "lat": 22.56263,
+      "lng": 88.36304,
+      "source": "https://www.geonames.org/1275004/kolkata.html"
+    },
+    "Thiruvananthapuram": {
+      "city": "Thiruvananthapuram",
+      "lat": 8.4855,
+      "lng": 76.94924,
+      "source": "https://www.geonames.org/1254163/thiruvananthapuram.html"
+    },
+    "Hyderabad": {
+      "city": "Hyderabad",
+      "lat": 17.38405,
+      "lng": 78.45636,
+      "source": "https://www.geonames.org/1269843/hyderabad.html"
+    },
+    "Patna": {
+      "city": "Patna",
+      "lat": 25.59408,
+      "lng": 85.13563,
+      "source": "https://www.geonames.org/1260086/patna.html"
+    },
+    "Benaulim": {
+      "city": "Benaulim",
+      "lat": 15.26435,
+      "lng": 73.92812,
+      "source": "https://www.geonames.org/1276472/benaulim.html"
+    },
+    "Skopje": {
+      "city": "Skopje",
+      "lat": 41.99646,
+      "lng": 21.43141,
+      "source": "https://www.geonames.org/785842/skopje.html"
+    },
+    "Belgrade": {
+      "city": "Belgrade",
+      "lat": 44.80401,
+      "lng": 20.46513,
+      "source": "https://www.geonames.org/792680/belgrade.html"
+    },
+    "Québec": {
+      "city": "Québec",
+      "lat": 46.81228,
+      "lng": -71.21454,
+      "source": "https://www.geonames.org/6325494/quebec.html"
+    },
+    "Munich": {
+      "city": "Munich",
+      "lat": 48.13743,
+      "lng": 11.57549,
+      "source": "https://www.geonames.org/2867714/munich.html"
+    },
+    "Berlin": {
+      "city": "Berlin",
+      "lat": 52.52437,
+      "lng": 13.41053,
+      "source": "https://www.geonames.org/2950159/berlin.html"
+    },
+    "Iver Heath": {
+      "city": "Iver Heath",
+      "lat": 51.539815,
+      "lng": -0.525331,
+      "source": "https://www.planning.data.gov.uk/entity/2504906"
+    },
+    "Paris": {
+      "city": "Paris",
+      "lat": 48.85341,
+      "lng": 2.3488,
+      "source": "https://www.geonames.org/2988507/paris.html"
+    },
+    "Liège": {
+      "city": "Liège",
+      "lat": 50.63373,
+      "lng": 5.56749,
+      "source": "https://www.geonames.org/2792413/liege.html"
+    },
+    "Los Angeles": {
+      "city": "Los Angeles",
+      "lat": 34.05223,
+      "lng": -118.24368,
+      "source": "https://www.geonames.org/5368361/los-angeles.html"
+    },
+    "Culver City": {
+      "city": "Culver City",
+      "lat": 34.02112,
+      "lng": -118.39647,
+      "source": "https://www.geonames.org/5341114/culver-city.html"
+    },
+    "Shanghai": {
+      "city": "Shanghai",
+      "lat": 31.22222,
+      "lng": 121.45806,
+      "source": "https://www.geonames.org/1796236/shanghai.html"
+    },
+    "Seoul": {
+      "city": "Seoul",
+      "lat": 37.566,
+      "lng": 126.9784,
+      "source": "https://www.geonames.org/1835848/seoul.html"
+    },
+    "Melbourne": {
+      "city": "Melbourne",
+      "lat": -37.814,
+      "lng": 144.96332,
+      "source": "https://www.geonames.org/2158177/melbourne.html"
+    },
+    "Guildford": {
+      "city": "Guildford",
+      "lat": 51.23536,
+      "lng": -0.57427,
+      "source": "https://www.geonames.org/2647793/guildford.html"
+    },
+    "Stockholm": {
+      "city": "Stockholm",
+      "lat": 59.32938,
+      "lng": 18.06871,
+      "source": "https://www.geonames.org/2673730/stockholm.html"
+    },
+    "Madison": {
+      "city": "Madison",
+      "lat": 43.07305,
+      "lng": -89.40123,
+      "source": "https://www.geonames.org/5261457/madison.html"
+    },
+    "Marina del Rey": {
+      "city": "Marina del Rey",
+      "lat": 33.98162,
+      "lng": -118.45371,
+      "source": "https://www.geonames.org/5370542/marina-del-rey.html"
+    },
+    "Orlando": {
+      "city": "Orlando",
+      "lat": 28.53834,
+      "lng": -81.37924,
+      "source": "https://www.geonames.org/4167147/orlando.html"
+    },
+    "Victoria": {
+      "city": "Victoria",
+      "lat": 48.4359,
+      "lng": -123.35155,
+      "source": "https://www.geonames.org/6174041/victoria.html"
+    },
+    "Southam": {
+      "city": "Southam",
+      "lat": 52.24888,
+      "lng": -1.38063,
+      "source": "https://www.geonames.org/7301505/southam.html"
+    },
+    "Birmingham": {
+      "city": "Birmingham",
+      "lat": 52.48142,
+      "lng": -1.89983,
+      "source": "https://www.geonames.org/2655603/birmingham.html"
+    },
+    "Kuala Lumpur": {
+      "city": "Kuala Lumpur",
+      "lat": 3.1412,
+      "lng": 101.68653,
+      "source": "https://www.geonames.org/1735161/kuala-lumpur.html"
+    },
+    "Bucharest": {
+      "city": "Bucharest",
+      "lat": 44.43225,
+      "lng": 26.10626,
+      "source": "https://www.geonames.org/683506/bucharest.html"
+    },
+    "Madrid": {
+      "city": "Madrid",
+      "lat": 40.4165,
+      "lng": -3.70256,
+      "source": "https://www.geonames.org/3117735/madrid.html"
+    },
+    "Burnaby": {
+      "city": "Burnaby",
+      "lat": 49.26636,
+      "lng": -122.95263,
+      "source": "https://www.geonames.org/5911606/burnaby.html"
+    },
+    "São Paulo": {
+      "city": "São Paulo",
+      "lat": -23.5475,
+      "lng": -46.63611,
+      "source": "https://www.geonames.org/3448439/sao-paulo.html"
+    },
+    "Cape Town": {
+      "city": "Cape Town",
+      "lat": -33.92584,
+      "lng": 18.42322,
+      "source": "https://www.geonames.org/3369157/cape-town.html"
+    },
+    "Saguenay": {
+      "city": "Saguenay",
+      "lat": 48.41675,
+      "lng": -71.06573,
+      "source": "https://www.geonames.org/6137270/saguenay.html"
+    },
+    "Sherbrooke": {
+      "city": "Sherbrooke",
+      "lat": 45.40008,
+      "lng": -71.89908,
+      "source": "https://www.geonames.org/6146143/sherbrooke.html"
+    },
+    "Singapore": {
+      "city": "Singapore",
+      "lat": 1.28967,
+      "lng": 103.85007,
+      "source": "https://www.geonames.org/1880252/singapore.html"
+    },
+    "Helsinki": {
+      "city": "Helsinki",
+      "lat": 60.16952,
+      "lng": 24.93545,
+      "source": "https://www.geonames.org/658225/helsinki.html"
+    },
+    "Abu Dhabi": {
+      "city": "Abu Dhabi",
+      "lat": 24.45118,
+      "lng": 54.39696,
+      "source": "https://www.geonames.org/292968/abu-dhabi.html"
+    },
+    "Da Nang": {
+      "city": "Da Nang",
+      "lat": 16.06778,
+      "lng": 108.22083,
+      "source": "https://www.geonames.org/1583992/da-nang.html"
+    },
+    "Chengdu": {
+      "city": "Chengdu",
+      "lat": 30.66667,
+      "lng": 104.06667,
+      "source": "https://www.geonames.org/1815286/chengdu.html"
+    },
+    "Düsseldorf": {
+      "city": "Düsseldorf",
+      "lat": 51.22319,
+      "lng": 6.77927,
+      "source": "https://www.geonames.org/search.html?country=DE"
+    },
+    "Mainz": {
+      "city": "Mainz",
+      "lat": 49.98185,
+      "lng": 8.28008,
+      "source": "https://www.geonames.org/2874225/mainz.html"
+    },
+    "Craiova": {
+      "city": "Craiova",
+      "lat": 44.31667,
+      "lng": 23.8,
+      "source": "https://www.geonames.org/680332/craiova.html"
+    },
+    "Kyiv": {
+      "city": "Kyiv",
+      "lat": 50.45466,
+      "lng": 30.5238,
+      "source": "https://www.geonames.org/703448/kyiv.html"
+    },
+    "Odesa": {
+      "city": "Odesa",
+      "lat": 46.48572,
+      "lng": 30.74383,
+      "source": "https://www.geonames.org/698740/odesa.html"
+    },
+    "Bordeaux": {
+      "city": "Bordeaux",
+      "lat": 44.84124,
+      "lng": -0.58046,
+      "source": "https://www.geonames.org/3031582/bordeaux.html"
+    },
+    "Warsaw": {
+      "city": "Warsaw",
+      "lat": 52.22977,
+      "lng": 21.01178,
+      "source": "https://www.geonames.org/756135/warsaw.html"
+    },
+    "Kraków": {
+      "city": "Kraków",
+      "lat": 50.06143,
+      "lng": 19.93658,
+      "source": "https://www.geonames.org/3094802/krakow.html"
+    },
+    "Wrocław": {
+      "city": "Wrocław",
+      "lat": 51.10286,
+      "lng": 17.03006,
+      "source": "https://www.geonames.org/3081368/wroclaw.html"
+    },
+    "Boston": {
+      "city": "Boston",
+      "lat": 42.35843,
+      "lng": -71.05977,
+      "source": "https://www.geonames.org/4930956/boston.html"
+    },
+    "Espoo": {
+      "city": "Espoo",
+      "lat": 60.2052,
+      "lng": 24.6522,
+      "source": "https://www.geonames.org/660158/espoo.html"
+    },
+    "Frankfurt am Main": {
+      "city": "Frankfurt am Main",
+      "lat": 50.11552,
+      "lng": 8.68417,
+      "source": "https://www.geonames.org/2925533/frankfurt-am-main.html"
+    }
+  },
+  "attribution": "GeoNames CC BY 4.0; city references only. Iver Heath point: Office for National Statistics via Planning Data, Open Government Licence v3.0. No endorsement implied."
+}

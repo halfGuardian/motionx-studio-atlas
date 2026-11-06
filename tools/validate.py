@@ -18,7 +18,9 @@ STATES = {'confirmed', 'likely', 'unknown'}
 PRECISIONS = {'exact', 'approximate', 'city', 'region', 'unverified'}
 CSV_FIELDS = ('id', 'company_id', 'name', 'city', 'country', 'lat', 'lng', 'address',
               'website', 'email', 'phone', 'categories', 'capabilities', 'capability_evidence',
-              'evidence_state', 'evidence', 'verified_on', 'coordinate_precision', 'status')
+              'evidence_state', 'evidence', 'verified_on', 'coordinate_precision', 'status', 'location_type', 'coordinate_source', 'relationships')
+LOCATION_TYPES = {'production_studio', 'capture_facility', 'creative_hub', 'mixed_campus', 'production_office', 'uncertain'}
+RELATION_TYPES = {'subsidiary_of', 'group_member', 'partner_of'}
 ID = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
 
@@ -145,6 +147,36 @@ def validate(rows):
                     warnings.append(f'{ref}: {label} is in the future; review')
             except (ValueError, TypeError):
                 error(f'invalid {label}; use YYYY-MM-DD')
+        if 'location_type' in r and r['location_type'] not in tuple(LOCATION_TYPES):
+            error('invalid location_type')
+        if 'coordinate_source' in r and not url_valid(r['coordinate_source']):
+            error('coordinate_source must be a valid https URL')
+        if 'relationships' in r:
+            relations = r['relationships']
+            if not isinstance(relations, list):
+                error('relationships must be an array')
+            else:
+                relation_ids = set()
+                for relation in relations:
+                    if not isinstance(relation, dict):
+                        error('relationship must be an object')
+                        continue
+                    rid = relation.get('id')
+                    if not isinstance(rid, str) or not ID.fullmatch(rid) or rid == r.get('company_id'):
+                        error('invalid relationship organisation id')
+                    elif rid in relation_ids:
+                        error('duplicate relationship organisation id')
+                    else:
+                        relation_ids.add(rid)
+                    if relation.get('type') not in tuple(RELATION_TYPES):
+                        error('invalid relationship type')
+                    if not isinstance(relation.get('name'), str) or not relation['name'].strip():
+                        error('relationship requires organisation name')
+                    if not url_valid(relation.get('evidence')):
+                        error('relationship requires https evidence')
+                    if not isinstance(relation.get('verified_on'), str) or not relation['verified_on']:
+                        error('relationship requires review date')
+                    check_date(relation.get('verified_on'), 'relationship.verified_on')
         check_date(r.get('verified_on'), 'verified_on')
         if r.get('evidence_state') in ('confirmed', 'likely') and not r.get('verified_on'):
             error('confirmed/likely evidence requires verified_on')
@@ -203,6 +235,14 @@ def read_records(path):
                 pass
         for key in ('categories', 'capabilities'):
             row[key] = [v.strip() for v in row.get(key, '').split('|') if v.strip()]
+        for key in ('location_type', 'coordinate_source', 'relationships'):
+            if key in row and not row[key]:
+                del row[key]
+        if 'relationships' in row:
+            try:
+                row['relationships'] = json.loads(row['relationships'])
+            except json.JSONDecodeError:
+                row['relationships'] = None
         try:
             row['capability_evidence'] = json.loads(row.get('capability_evidence') or '{}')
         except json.JSONDecodeError:

@@ -1,0 +1,756 @@
+[
+  {
+    "organisation": "MPC",
+    "candidate": "London legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "MPC",
+    "candidate": "Vancouver legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "MPC",
+    "candidate": "Montréal legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "MPC",
+    "candidate": "Bengaluru legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "MPC",
+    "candidate": "Mumbai legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "MPC",
+    "candidate": "Los Angeles legacy MPC",
+    "decision": "reject",
+    "sources": [
+      "https://www.mpcvfx.com/en/news/mpc-and-the-mill-join-forces-under-one-brand-in-new-era-of-creative-production/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy Technicolor-era listing does not establish a currently active separate MPC facility. Current successor branches imported only under the present The Mill roster."
+  },
+  {
+    "organisation": "Digital Domain",
+    "candidate": "London",
+    "decision": "reject",
+    "sources": [
+      "https://digitaldomain.com/about/contact-us/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "The current contact entry explicitly says Coming Soon. Not published as operating."
+  },
+  {
+    "organisation": "Digital Domain",
+    "candidate": "Hong Kong",
+    "decision": "defer",
+    "sources": [
+      "https://digitaldomain.com/about/contact-us/",
+      "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=1923",
+      "https://www.investhk.gov.hk/en/our-clients/digital-domain/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Corporate contact, production subsidiary and planned R&D premises need separate site identities; do not conflate them."
+  },
+  {
+    "organisation": "Eyeline / Scanline VFX",
+    "candidate": "Munich",
+    "decision": "defer",
+    "sources": [
+      "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+      "https://www.linkedin.com/company/scanlinevfx",
+      "https://jobvfx.com/studios/eyeline"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Historical Scanline location remains in third-party rosters, but the newer primary five-location statement differs. Resolve current site identity before import."
+  },
+  {
+    "organisation": "Eyeline / Scanline VFX",
+    "candidate": "Stuttgart",
+    "decision": "defer",
+    "sources": [
+      "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+      "https://www.linkedin.com/company/scanlinevfx",
+      "https://jobvfx.com/studios/eyeline"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Historical Scanline location remains in third-party rosters, but the newer primary five-location statement differs. Resolve current site identity before import."
+  },
+  {
+    "organisation": "Eyeline / Scanline VFX",
+    "candidate": "Montréal",
+    "decision": "defer",
+    "sources": [
+      "https://about.netflix.com/en/news/netflix-opens-eyeline-studios-hyderabad",
+      "https://www.linkedin.com/company/scanlinevfx",
+      "https://jobvfx.com/studios/eyeline"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Historical Scanline location remains in third-party rosters, but the newer primary five-location statement differs. Resolve current site identity before import."
+  },
+  {
+    "organisation": "Eyeline",
+    "candidate": "Mumbai",
+    "decision": "reject",
+    "sources": [
+      "https://about.netflix.com/en/news/how-eyeline-helped-bring-the-creatures-of-one-piece-season-2-to-life"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Primary 2026 account says India office moved from Mumbai to Hyderabad."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "BioWare Edmonton",
+    "decision": "reject",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "October 2026 primary announcement closes BioWare and its Edmonton workspace."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "BioWare Austin",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Older BioWare references conflict with newer organisational changes; re-establish active physical site and operator."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Industrial Toys Pasadena",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy generic location entry is insufficient after reported closure; not included in current EA studio roster."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Codemasters Runcorn",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Generic EA studio list includes it, but current Codemasters-specific roster lists only Southam, Birmingham and Kuala Lumpur."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Firemonkeys Melbourne",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy EA location entry may conflict with ownership/team changes; current operator needs new verification."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Glu Foster City / San Francisco / Toronto",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Older mobile-game and corporate listings require current operator and facility confirmation."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "EA Gothenburg",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Resolve development-studio versus Frostbite/support function before publishing."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Full Circle Vancouver",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Current studio identity supported, but distinct physical facility from EA campus not established."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "Maxis Redwood City / other branches",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Development team is named at HQ, but current physical branches and distinct premises need confirmation."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "PopCap Kirkland",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Team listed at mixed campus; distinct current production facility not established."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "EA Slingshot Hyderabad",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Current operating studio name and production facility need confirmation."
+  },
+  {
+    "organisation": "Electronic Arts",
+    "candidate": "EA Bogotá / Galway / Lyon / Geneva / Singapore / Sydney / Cologne",
+    "decision": "defer",
+    "sources": [
+      "https://www.ea.com/careers/locations",
+      "https://www.ea.com/news/building-eas-next-chapter",
+      "https://www.ea.com/careers/teams/ea-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Primarily QA, customer service, publishing or corporate entries; not imported as production studios."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Sao Paulo",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Cary / Red Storm",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Los Angeles",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Atlanta / Blue Mammoth",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Milan / Assago",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Barcelona AAA",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Barcelona Mobile",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Annecy",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Ivory Tower / Lyon",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Montpellier",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Paris development / Paris Mobile / Ketchapp",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Malmö / Massive",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Pune",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Tokyo",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Taiwan / Hong Kong",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Taguig / Manila",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Guildford / former Leamington",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Newcastle / Reflections",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Belgrade",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Winnipeg",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Kolibri Berlin",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Warsaw",
+    "decision": "defer",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://www.ubisoft.com/en-us/company/careers/locations/articles/filipino-craftsmanship-in-assassin-s-creed-black-flag-resynced"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Listed or discovered branch; physical-site scope, current operating name, municipality or site-specific current capability evidence requires follow-up. Kept in review queue rather than inferred from an acquisition or credit."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Stockholm",
+    "decision": "reject",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://news.ubisoft.com/it-it/article/1EywTnGrZdDqCoxKs2zNhZ/ubisoft-discontinues-development-on-xdefiant",
+      "https://staticctf.ubisoft.com/8aefmxkxpxwl/59b4Z0RNls45UDTVV6gBNR/801a91a599b337779106af51cf08e539/Ubisoft_Jan_PR_draft_vF.pdf"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy roster conflicts with primary closure/ramp-down announcements; do not treat an old office page as proof of an active production studio."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Halifax",
+    "decision": "reject",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://news.ubisoft.com/it-it/article/1EywTnGrZdDqCoxKs2zNhZ/ubisoft-discontinues-development-on-xdefiant",
+      "https://staticctf.ubisoft.com/8aefmxkxpxwl/59b4Z0RNls45UDTVV6gBNR/801a91a599b337779106af51cf08e539/Ubisoft_Jan_PR_draft_vF.pdf"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy roster conflicts with primary closure/ramp-down announcements; do not treat an old office page as proof of an active production studio."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "San Francisco production",
+    "decision": "reject",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://news.ubisoft.com/it-it/article/1EywTnGrZdDqCoxKs2zNhZ/ubisoft-discontinues-development-on-xdefiant",
+      "https://staticctf.ubisoft.com/8aefmxkxpxwl/59b4Z0RNls45UDTVV6gBNR/801a91a599b337779106af51cf08e539/Ubisoft_Jan_PR_draft_vF.pdf"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy roster conflicts with primary closure/ramp-down announcements; do not treat an old office page as proof of an active production studio."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Osaka production",
+    "decision": "reject",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://news.ubisoft.com/it-it/article/1EywTnGrZdDqCoxKs2zNhZ/ubisoft-discontinues-development-on-xdefiant",
+      "https://staticctf.ubisoft.com/8aefmxkxpxwl/59b4Z0RNls45UDTVV6gBNR/801a91a599b337779106af51cf08e539/Ubisoft_Jan_PR_draft_vF.pdf"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy roster conflicts with primary closure/ramp-down announcements; do not treat an old office page as proof of an active production studio."
+  },
+  {
+    "organisation": "Ubisoft",
+    "candidate": "Sydney production",
+    "decision": "reject",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations",
+      "https://news.ubisoft.com/it-it/article/1EywTnGrZdDqCoxKs2zNhZ/ubisoft-discontinues-development-on-xdefiant",
+      "https://staticctf.ubisoft.com/8aefmxkxpxwl/59b4Z0RNls45UDTVV6gBNR/801a91a599b337779106af51cf08e539/Ubisoft_Jan_PR_draft_vF.pdf"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Legacy roster conflicts with primary closure/ramp-down announcements; do not treat an old office page as proof of an active production studio."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "London",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "Montréal",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "Chicago",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "Los Angeles",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "New York",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "Mumbai",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Framestore",
+    "candidate": "Melbourne",
+    "decision": "already_present",
+    "sources": [
+      "https://www.framestore.com/our-studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "ILM",
+    "candidate": "San Francisco",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ilm.com/locations/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "ILM",
+    "candidate": "Vancouver",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ilm.com/locations/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "ILM",
+    "candidate": "London",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ilm.com/locations/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "ILM",
+    "candidate": "Sydney",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ilm.com/locations/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "ILM",
+    "candidate": "Mumbai",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ilm.com/locations/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Wētā FX",
+    "candidate": "Wellington",
+    "decision": "already_present",
+    "sources": [
+      "https://www.wetafx.co.nz/about"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Ubisoft Toronto",
+    "candidate": "Toronto development and capture campus",
+    "decision": "already_present",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/toronto"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Already represented in the canonical database. No duplicate added; existing record remains unchanged."
+  },
+  {
+    "organisation": "Specialists",
+    "candidate": "Audiomotion Oxford",
+    "decision": "defer",
+    "sources": [
+      "https://www.audiomotion.com/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Existing audiomotion record has unverified city; resolve as a correction, not a second entry."
+  },
+  {
+    "organisation": "Specialists",
+    "candidate": "Metricminds additional facilities",
+    "decision": "defer",
+    "sources": [
+      "https://metricminds.com/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Current branch/stage address and service mapping not established in this pass."
+  },
+  {
+    "organisation": "Specialists",
+    "candidate": "Target3D facilities",
+    "decision": "defer",
+    "sources": [
+      "https://www.target3d.co.uk/"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Separate equipment vendors, demo labs and production providers before importing."
+  },
+  {
+    "organisation": "Regional",
+    "candidate": "Larian worldwide branches",
+    "decision": "defer",
+    "sources": [
+      "https://www.larian.com/studios"
+    ],
+    "reviewed_on": "2026-11-06",
+    "reason": "Official source inaccessible in this pass; do not reuse a historical branch list."
+  }
+]
