@@ -1,8 +1,14 @@
-# MotionX Studio Atlas v0.9 — Automated Studio Discovery
+# MotionX Studio Atlas v0.9.1 — Discovery Triage and Source Coverage
 
 Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **129 locations across 66 organisations in 28 countries**. v0.8 adds 98 source-supported locations and 47 operating organisations in 26 countries, preserving all 31 v0.7 records unchanged. Motion capture is an optional searchable capability, not an admission requirement.
 
 The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
+
+## v0.9.1 discovery triage
+
+The [triage release report](data/discovery/triage-v0.9.1/README.md) documents the actual first successful Actions artifact: **133 candidates → 46 represented, 14 potentially new, 24 irrelevant, 49 requiring research**. Eight represented matches are organisation-only; no new studio or capability is approved. All 41 backlog entries remain intact.
+
+Read-only Actions jobs produce `triage.json`, `summary.md` and preserved original inputs. Discovery now carries raw report/queue history forward and handles filter changes without false disappearance signals. Cinesite collection targets operator links. EA automation is disabled because its current access policy prohibits scraping/text-data mining without written authorisation; screenshots/OCR are not an access-rule workaround. The public database remains unchanged.
 
 ## v0.9 discovery infrastructure
 

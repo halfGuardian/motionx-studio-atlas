@@ -51,8 +51,10 @@ jobs:
           name: studio-discovery
           path: discovery-input
       - name: Classify without approving or publishing
+        env:
+          DISCOVERY_RUN: ${{ steps.resolve.outputs.run_id }}
         run: |
-          python tools/triage.py --queue discovery-input/queue.json --report discovery-input/report.json --output triage-output --inventory
+          python tools/triage.py --queue discovery-input/queue.json --report discovery-input/report.json --discovery-run "$DISCOVERY_RUN" --output triage-output --inventory
           cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
           if [ -d discovery-input/history ]; then
             cp -R discovery-input/history triage-output/history

@@ -137,7 +137,7 @@ def triage(queue, observation_report, database, config, rejected=(), observed_on
         if source.get('disabled_reason'):
             result['reasons'].append('Automated source disabled: ' + source['disabled_reason'])
         outcomes.append(result)
-        duplicates[(url_key(candidate['url']), normalized(candidate.get('city', '')), normalized(candidate.get('country', '')))].append(cid)
+        duplicates[(url_key(candidate['url']), normalized(candidate['label']), normalized(candidate.get('city', '')), normalized(candidate.get('country', '')))].append(cid)
     groups = [ids for ids in duplicates.values() if len(ids) > 1]
     by_id = {r['id']: r for r in outcomes}
     for ids in groups:
@@ -188,6 +188,7 @@ def main():
     parser.add_argument('--historical-reviews', type=Path, default=ROOT/'data/research/v0.8-global-expansion/review-queue.json')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--inventory', action='store_true', help='emit compact per-candidate routing for job-log inspection')
+    parser.add_argument('--discovery-run', type=int, help='original discovery Actions run ID for audit provenance')
     args = parser.parse_args()
     try:
         safe_output(args.output, [args.queue, args.report, args.database, args.config, args.historical_reviews])
@@ -195,6 +196,7 @@ def main():
             raise ValueError('choose a fresh output directory')
         rejected = [r for r in read(args.historical_reviews) if r['decision'] == 'reject']
         result = triage(read(args.queue), read(args.report), read(args.database), read(args.config), rejected)
+        result['discovery_run_id'] = args.discovery_run
         result['input_sha256'] = {key: hashlib.sha256(path.read_bytes()).hexdigest() for key, path in [('queue', args.queue), ('report', args.report), ('database', args.database)]}
         write(args.output/'triage.json', result)
         (args.output/'summary.md').write_text(markdown(result), encoding='utf-8')

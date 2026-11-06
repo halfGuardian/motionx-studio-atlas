@@ -50,7 +50,7 @@ jobs:
           PY
       - name: Triage all retained observations without modifying queue or claims
         run: |
-          python tools/triage.py --queue discovery-run/queue.json --report discovery-run/report.json --output triage-output
+          python tools/triage.py --queue discovery-run/queue.json --report discovery-run/report.json --discovery-run "$GITHUB_RUN_ID" --output triage-output
           cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:

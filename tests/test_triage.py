@@ -107,6 +107,9 @@ class TriageTests(unittest.TestCase):
         self.assertIn(original['id'],row['duplicate_observation_ids'])
         self.assertEqual(result['candidate_count'],134)
         self.assertEqual(row['classification'],'requires_research')
+        # Different deferred studios can legitimately cite the same roster URL.
+        backlog_ids=set(self.backlog['candidates'])
+        self.assertFalse(any(backlog_ids.intersection(ids) for ids in result['duplicate_observation_groups']))
 
     def test_failed_sources_and_backlog_are_never_deleted_or_approved(self):
         self.report['sources']=[{'id':s,'status':'fetch_or_parse_error'} for s in self.sources]
