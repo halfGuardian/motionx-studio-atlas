@@ -147,6 +147,7 @@ def normalize_overture(raw,observed,policy):
     licences=sorted({PROVIDER_LICENSES.get(normalized(s.get('dataset') or ''),'unresolved') for s in content_providers})
     if not licences or 'unresolved' in licences:reasons.append('source-provider redistribution licence unresolved')
     website=next((u for u in raw.get('websites') or [] if url_valid(u) and safe_website(u)),None)
+    website_hosts=sorted({(urlsplit(u).hostname or '').removeprefix('www.') for u in raw.get('websites') or [] if safe_website(u)})
     source=raw['filename']
     prefix='https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy['release']+'/theme=places/type=place/'
     if not source.startswith(prefix) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*\.parquet',source[len(prefix):]):raise ValueError('unapproved source object path')
@@ -156,7 +157,7 @@ def normalize_overture(raw,observed,policy):
         'website':website or source,'website_kind':'official' if website else 'source_listing','sectors':[sector] if sector else [],'facility_type':'uncertain',
         'place_basis':'Original Overture Point geometry, not a verified facility geocode. Municipality/country copied only from provider locality/country fields.',
         'parent_claims':[],'source_observed_on':observed,'evidence_urls':[source],'source_release':policy['release'],'source_category':category,'source_providers':providers,
-        'provider_confidence':raw.get('confidence'),'source_operating_status':raw.get('operating_status'),'license':' AND '.join(licences),
+        'provider_confidence':raw.get('confidence'),'source_operating_status':raw.get('operating_status'),'identity_website_hosts':website_hosts,'license':' AND '.join(licences),
         'license_url':policy['license_url'],'attribution':'Overture Maps Foundation; '+', '.join(sorted({s.get('dataset','') for s in providers}))+'. Foursquare data transformed to Overture schema; MotionX filters/normalizes fields. See data/bulk/LICENSES.',
         'class':'C' if reasons else 'B','reasons':reasons or ['Permissively licensed production-place directory listing; operating status, site type and capabilities remain uncorroborated'],
         'capabilities':[],'capability_evidence':{},'is_location_reference':bool(coords)}
@@ -230,6 +231,7 @@ def ingest(folder,output,config,base,ledger=None,existing=()):
         run=digest([sorted(hashes),digest(base),digest(config),digest(list(existing)),processor_hash])
         db.execute('INSERT OR IGNORE INTO runs VALUES(?,?,?,?,?)',(run,observed,digest(sorted(hashes)),digest(base),digest(config)))
         matching_base=base+list(existing);existing_by_id={r['id']:r for r in matching_base};names,hosts=domains(matching_base);index=DuplicateIndex(matching_base);decisions=[];proposed=[];dupes=[]
+        retained_companies={r['company_id'] for r in base}
         for (sid,key),raw in sorted(grouped.items()):
             seen_on=dates[sid,key]
             adapter=policies[sid]['adapter']
@@ -239,15 +241,24 @@ def ingest(folder,output,config,base,ledger=None,existing=()):
                 if c['class']=='B':c['reasons']=[]
                 c['class']='C';c['reasons'].append('conflicting versions share one source identity; no version selected for publication');c['conflicting_source_versions']=[{'observation_hash':digest(raw),'observed_on':seen_on}]+conflicts[sid,key]
             identity_host=(urlsplit(c['website']).hostname or '').removeprefix('www.') if c['website_kind']=='official' else ''
-            company_matches=names.get(normalized(c['name']),set()) or hosts.get(identity_host,set())
+            name_matches=names.get(normalized(c['name']),set());host_matches=set(hosts.get(identity_host,set()))
+            for h in c.get('identity_website_hosts',[]):
+                if h not in SHARED_HOSTS:host_matches.update(hosts.get(h,set()))
+            company_matches=name_matches | host_matches
+            compatible=host_matches & name_matches if name_matches else host_matches
+            resolved=next(iter(compatible)) if len(compatible)==1 else None
+            if name_matches and host_matches and not compatible:
+                if c['class']=='B':c['reasons']=[]
+                c['class']='C';c['reasons'].append('conflicting organisation name/domain signals; no operating identity merged')
             c['existing_organisation_matches']=sorted(company_matches)
+            c['organisation_matching_reasons']={'name_matches':sorted(name_matches),'directory_website_domain_matches':sorted(host_matches),'resolved_identity':resolved,'confidence':'source-domain association only; not independent ownership verification' if resolved else 'unresolved; name-only matches never merge operating identities'}
             previous=existing_by_id.get(c['candidate_id'])
             if previous:
                 before={k:previous.get(k) for k in ('name','city','country','lat','lng','categories','source_observed_on')}
                 after={k:c.get(k) for k in ('name','city','country','lat','lng','source_observed_on')};after['categories']=c['sectors']
                 c['existing_record_change_proposal']={'id':previous['id'],'before_hash':digest(previous),'before':before,'observed_source_values':after,'changed_fields':[k for k in before if before[k]!=after[k]],'research_only':True,'approval_required':True}
             # Company matching is advisory; never merges distinct branches or inherits services.
-            tentative={'id':c['candidate_id'],'company_id':next(iter(company_matches)) if len(company_matches)==1 else c['organisation_key'],'name':c['name'],'city':c['city'],'country':c['country'],'website':c['website']}
+            tentative={'id':c['candidate_id'],'company_id':resolved or c['organisation_key'],'name':c['name'],'city':c['city'],'country':c['country'],'website':c['website']}
             match_row={**tentative,'website':c['website'] if c['website_kind']=='official' else ''}
             matches=index.matches(match_row) if c['city']!='Municipality not supplied' else []
             # A city reference and a real municipality label may describe the same
@@ -260,7 +271,7 @@ def ingest(folder,output,config,base,ledger=None,existing=()):
             c['provenance']=[{'source_id':sid,'source_record_id':key,'url':u,'license':c['license'],'license_url':c['license_url'],'observed_on':seen_on,'observation_hash':c['observation_hash']} for u in c['evidence_urls']]
             c['publication_approved']=False;c['decision']='propose_source_listed' if c['class']=='B' else 'research_required'
             if c['class']=='B':
-                r={**tentative,'lat':c['lat'],'lng':c['lng'],'address':c['place_basis'],'categories':c['sectors'],'capabilities':[],'capability_evidence':{},'evidence_state':'unknown','evidence_class':'B','evidence':c['evidence_urls'][0],'verified_on':'','source_observed_on':seen_on,'coordinate_precision':'approximate','coordinate_source':c['evidence_urls'][0],'location_type':c['facility_type'],'relationships':[], 'status':'Source-listed directory record; current operation, physical precision and site capabilities have not been independently corroborated. '+c['place_basis'],'website_kind':c['website_kind'],'source_provenance':c['provenance'],'license':c['license'],'attribution':c['attribution'],'identity_status':'matched_existing' if len(company_matches)==1 else 'source_provisional'}
+                r={**tentative,'lat':c['lat'],'lng':c['lng'],'address':c['place_basis'],'categories':c['sectors'],'capabilities':[],'capability_evidence':{},'evidence_state':'unknown','evidence_class':'B','evidence':c['evidence_urls'][0],'verified_on':'','source_observed_on':seen_on,'coordinate_precision':'approximate','coordinate_source':c['evidence_urls'][0],'location_type':c['facility_type'],'relationships':[], 'status':'Source-listed directory record; current operation, physical precision and site capabilities have not been independently corroborated. '+c['place_basis'],'website_kind':c['website_kind'],'source_provenance':c['provenance'],'license':c['license'],'attribution':c['attribution'],'identity_status':'matched_existing' if resolved in retained_companies else 'source_provisional'}
                 proposed.append(r)
                 # Later observations are reviewed as possible duplicates, never silently
                 # merged into this proposal. Same-owner, same-city facilities survive in C.

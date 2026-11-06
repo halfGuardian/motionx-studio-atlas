@@ -64,3 +64,11 @@ jobs:
             bulk-archive/
             data/bulk/LICENSES/
           retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: licensed-bulk-public-ledger
+          path: |
+            bulk-run/research-public.sqlite
+            data/bulk/LICENSES/
+          retention-days: 90

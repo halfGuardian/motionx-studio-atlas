@@ -4,7 +4,7 @@ from pathlib import Path
 
 def dashboard(path,report,candidates):
     # Untrusted text never enters an HTML sink in the interactive table.
-    fields=('candidate_id','name','city','country','class','decision','source_id','source_record_id','evidence_urls','reasons','source_observed_on','license','existing_organisation_matches','potential_duplicates','existing_record_change_proposal')
+    fields=('candidate_id','name','city','country','class','decision','source_id','source_record_id','evidence_urls','reasons','source_observed_on','license','existing_organisation_matches','potential_duplicates','existing_record_change_proposal','organisation_matching_reasons')
     data=[{k:c.get(k) for k in fields} for c in candidates]
     blob=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
     template='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>MotionX bulk acquisition review</title>

@@ -49,6 +49,14 @@ class BulkTests(unittest.TestCase):
         self.snapshot([place('one'),place('two')]);base=[{'id':'existing','company_id':'known','name':'Test Production','city':'Test City','country':'New Zealand','website':'https://example.test'}];before=copy.deepcopy(base)
         r=self.run_ingest(base=base);self.assertEqual(r['candidate_classes'],{'C':2});self.assertEqual(base,before)
         self.assertEqual(read(self.root/'out1/proposed-b.json'),[])
+    def test_same_name_different_business_is_not_merged_into_retained_organisation(self):
+        self.snapshot([place(city='Other City')]);base=[{'id':'existing','company_id':'different-company','name':'Test Production','city':'Far City','country':'United Kingdom','website':'https://different.example.test','lat':55.,'lng':0.}]
+        result=self.run_ingest(base=base);row=read(self.root/'out1/proposed-b.json')[0]
+        self.assertEqual(result['candidate_classes'],{'B':1});self.assertNotEqual(row['company_id'],'different-company');self.assertEqual(row['identity_status'],'source_provisional')
+    def test_supplied_http_domain_is_identity_hint_without_invented_https_link(self):
+        self.snapshot([place(name='Source brand variation',websites=['http://example.test/'])]);base=[{'id':'existing','company_id':'known','name':'Operating Brand','city':'Test City','country':'New Zealand','website':'https://example.test/','lat':20.,'lng':10.}]
+        result=self.run_ingest(base=base);self.assertEqual(result['candidate_classes'],{'C':1})
+        c=json.loads((self.root/'out1/candidates.jsonl').read_text());self.assertEqual(c['website_kind'],'source_listing');self.assertEqual(c['existing_organisation_matches'],['known'])
     def test_two_facilities_same_city_remain_in_audit(self):
         self.snapshot([place('one'),place('two')]);r=self.run_ingest()
         self.assertEqual(r['unique_candidate_identities'],2);self.assertEqual(r['candidate_classes'],{'B':1,'C':1})

@@ -10,7 +10,7 @@ A static global directory of production studios and facilities, with separate re
 
 The dark Leaflet / OpenStreetMap atlas remains a GitHub Pages site with no backend, paid API or embedded fallback. A compact, hash-bound index supports full search/counts/map access; provenance shards load only when opening profiles or exporting CSV. Exact original point coordinates and shared-coordinate selection are preserved. Loading, missing/corrupt shards, profile errors and CSV failures are explicit. Exports include source provenance, licence copies and required notices; a failed detail/notice fetch never produces a partial file.
 
-Bulk collection creates **read-only Actions artifacts**, never public database changes. Publication uses a **manually reviewed PR**, separate from the older content-bound approval-bundle workflow. No historical approvals are reused. Draft status and passing tests do not enforce human review: repository rule enforcement has not been verified from this environment. Maintainers must review and authorise the exact diff before merging. Pages settings are unchanged.
+Bulk collection creates **read-only Actions artifacts**, never public database changes. Publication uses a **manually reviewed PR**, separate from the older content-bound approval-bundle workflow. No historical approvals are reused. Draft status and passing tests do not enforce human review: the current read-only Actions audit returned no effective rules and could not expose classic protection, so required-review enforcement remains unconfirmed. Maintainers must review and authorise the exact diff before merging. Pages settings are unchanged.
 
 ## Public atlas
 

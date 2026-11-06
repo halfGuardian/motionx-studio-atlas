@@ -83,7 +83,7 @@ python tools/bulk_archive.py restore /tmp/motionx-archive --output /tmp/motionx-
 
 Restore verifies manifest, compressed and uncompressed hashes before exposing any state. Missing/corrupt objects fail closed; partial history cannot create closure signals. An expired original artifact is recoverable from a complete committed projection for conservative triage; withheld raw overlay details require the original artifact/offline archive or a hash-checked re-extraction of the dated upstream release. We do not claim permanent availability of third-party hosting.
 
-An automated branch-write archive job was rejected by automatic approval review for granting contents-write access to PR-executed code. It was removed. Workflows retain **read-only repository permissions**, never commit published data or grant automatic publication rights. Manual commits to the draft development PR carry reviewable research archives. Draft PRs and tests do not enforce human approval; main-branch required-review rules could not be verified through the available API/network access.
+An automated branch-write archive job was rejected by automatic approval review for granting contents-write access to PR-executed code. It was removed. Workflows retain **read-only repository permissions**, never commit published data or grant automatic publication rights. Manual commits to the draft development PR carry reviewable research archives. Draft PRs and tests do not enforce human approval; the [current Actions rule audit](review-rules-run42287663788.json) returned an empty effective-rules list and unavailable classic protection. Required-review enforcement remains unconfirmed.
 
 ## Static delivery and scale
 
