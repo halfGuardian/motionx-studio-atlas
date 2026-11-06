@@ -998,5 +998,436 @@
         "verified_on": ""
       }
     }
+  },
+  {
+    "id": "weta-fx-wellington",
+    "company_id": "weta-fx",
+    "name": "Wētā FX",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "lat": -41.28664,
+    "lng": 174.77557,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.wetafx.co.nz/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX",
+      "Animation"
+    ],
+    "capabilities": [
+      "VFX",
+      "Animation"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.wetafx.co.nz/about",
+        "verified_on": "2026-11-06"
+      },
+      "Animation": {
+        "state": "confirmed",
+        "evidence": "https://www.wetafx.co.nz/about",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.wetafx.co.nz/about",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "ilm-san-francisco",
+    "company_id": "ilm",
+    "name": "Industrial Light & Magic",
+    "city": "San Francisco",
+    "country": "United States",
+    "lat": 37.77493,
+    "lng": -122.41942,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.ilm.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ilm.com/locations/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "ilm-vancouver",
+    "company_id": "ilm",
+    "name": "Industrial Light & Magic",
+    "city": "Vancouver",
+    "country": "Canada",
+    "lat": 49.24966,
+    "lng": -123.11934,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.ilm.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ilm.com/locations/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "ilm-london",
+    "company_id": "ilm",
+    "name": "Industrial Light & Magic",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.50853,
+    "lng": -0.12574,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.ilm.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ilm.com/locations/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "ilm-sydney",
+    "company_id": "ilm",
+    "name": "Industrial Light & Magic",
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.86785,
+    "lng": 151.20732,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.ilm.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ilm.com/locations/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "ilm-mumbai",
+    "company_id": "ilm",
+    "name": "Industrial Light & Magic",
+    "city": "Mumbai",
+    "country": "India",
+    "lat": 19.07283,
+    "lng": 72.88261,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.ilm.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX",
+      "Animation"
+    ],
+    "capabilities": [
+      "VFX",
+      "Animation"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      },
+      "Animation": {
+        "state": "confirmed",
+        "evidence": "https://www.ilm.com/locations/",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.ilm.com/locations/",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-london",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.50853,
+    "lng": -0.12574,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX",
+      "Previsualization"
+    ],
+    "capabilities": [
+      "VFX",
+      "Previsualization"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/work/loki-season-2",
+        "verified_on": "2026-11-06"
+      },
+      "Previsualization": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/work/foundation-season-2",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-montreal",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "Montréal",
+    "country": "Canada",
+    "lat": 45.50884,
+    "lng": -73.58781,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/work/foundation-season-2",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-chicago",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "Chicago",
+    "country": "United States",
+    "lat": 41.85003,
+    "lng": -87.65005,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/advertising/services",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-los-angeles",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.05223,
+    "lng": -118.24368,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/advertising/services",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location. Official studio label is Los Angeles; Our Studios describes a Santa Monica team. The map uses a Los Angeles city/market reference, not a claim about facility municipality or street position."
+  },
+  {
+    "id": "framestore-new-york",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "New York",
+    "country": "United States",
+    "lat": 40.71427,
+    "lng": -74.00597,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/advertising/services",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-mumbai",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "Mumbai",
+    "country": "India",
+    "lat": 19.07283,
+    "lng": 72.88261,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX",
+      "Animation"
+    ],
+    "capabilities": [
+      "VFX",
+      "Animation"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/work/foundation-season-2",
+        "verified_on": "2026-11-06"
+      },
+      "Animation": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/our-studios",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
+  },
+  {
+    "id": "framestore-melbourne",
+    "company_id": "framestore",
+    "name": "Framestore",
+    "city": "Melbourne",
+    "country": "Australia",
+    "lat": -37.814,
+    "lng": 144.96332,
+    "address": "Approximate city reference only — not a studio street address",
+    "website": "https://www.framestore.com/",
+    "email": "",
+    "phone": "",
+    "categories": [
+      "VFX"
+    ],
+    "capabilities": [
+      "VFX"
+    ],
+    "capability_evidence": {
+      "VFX": {
+        "state": "confirmed",
+        "evidence": "https://www.framestore.com/work/furiosa",
+        "verified_on": "2026-11-06"
+      }
+    },
+    "evidence_state": "confirmed",
+    "evidence": "https://www.framestore.com/contact",
+    "verified_on": "2026-11-06",
+    "coordinate_precision": "city",
+    "status": "Official source reviewed for this city listing; not an independent check of registration or current operation. City reference pin, not facility geocoding. Capture services not established for this location."
   }
 ]

@@ -1,4 +1,4 @@
-"""Offline tests: no external sources or invented production records."""
+"""Offline validation/import tests; synthetic fixtures never enter production data."""
 import copy
 import csv
 import json
@@ -28,11 +28,13 @@ class ValidationTests(unittest.TestCase):
     def test_canonical_database_and_relationships(self):
         rows = read_records(ROOT / 'studios.json')
         self.assertEqual(validate(rows)[0], [])
-        self.assertEqual(len(rows), 18)
-        self.assertEqual(len({r['company_id'] for r in rows}), 16)
+        self.assertEqual(len(rows), 31)
+        self.assertEqual(len({r['company_id'] for r in rows}), 19)
         for company in ('beyond', 'centroid'):
             self.assertEqual(sum(r['company_id'] == company for r in rows), 2)
-        self.assertTrue(all(r['evidence_state'] == 'unknown' for r in rows))
+        legacy = [r for r in rows if 'legacy_research' in r]
+        self.assertEqual(len(legacy), 18)
+        self.assertTrue(all(r['evidence_state'] == 'unknown' for r in legacy))
 
     def test_non_mocap_sector_is_valid(self):
         self.assertFalse(validate([record()])[0])
@@ -93,6 +95,62 @@ class ValidationTests(unittest.TestCase):
 
     def test_legitimate_other_city_is_not_duplicate(self):
         self.assertFalse(possible_duplicates([record(), record(id='another', city='Other city')]))
+
+
+class ResearchBatchTests(unittest.TestCase):
+    def setUp(self):
+        self.folder = ROOT / 'data/research/v0.7-batch-1'
+        self.batch = read_records(self.folder / 'batch.csv')
+        self.database = read_records(ROOT / 'studios.json')
+        self.evidence = json.loads((self.folder / 'evidence.json').read_text())
+
+    def test_batch_exactly_matches_imported_records(self):
+        self.assertEqual(len(self.batch), 13)
+        by_id = {r['id']: r for r in self.database}
+        for row in self.batch:
+            self.assertEqual(by_id[row['id']], row)
+        counts = {company: sum(r['company_id'] == company for r in self.batch)
+                  for company in ('weta-fx', 'ilm', 'framestore')}
+        self.assertEqual(counts, {'weta-fx': 1, 'ilm': 5, 'framestore': 7})
+
+    def test_research_evidence_and_city_references(self):
+        reviews = {r['id']: r for r in self.evidence['records']}
+        self.assertEqual(set(reviews), {r['id'] for r in self.batch})
+        for row in self.batch:
+            review = reviews[row['id']]
+            self.assertFalse(review['existing_id_match'])
+            self.assertFalse(review['existing_company_id_match'])
+            self.assertFalse(review['duplicate_candidates_against_baseline'])
+            self.assertIn(row['evidence'], review['location_sources'])
+            self.assertEqual(row['capability_evidence'], review['capability_sources'])
+            self.assertEqual(row['verified_on'], self.evidence['verified_on'])
+            geo = review['coordinate_reference']
+            self.assertEqual((row['lat'], row['lng']), (geo['lat'], geo['lng']))
+            self.assertEqual(row['coordinate_precision'], 'city')
+            self.assertTrue(geo['source'].startswith('https://www.geonames.org/'))
+            self.assertIn('VFX', row['categories'])
+            self.assertNotIn('Motion Capture', row['capabilities'])
+            self.assertNotIn('Performance Capture', row['capabilities'])
+            self.assertNotIn('Game Development', row['categories'])
+            for claim in row['capability_evidence'].values():
+                self.assertEqual(claim['state'], 'confirmed')
+                self.assertEqual(claim['verified_on'], row['verified_on'])
+
+    def test_batch_replay_is_idempotent(self):
+        combined, report = plan_import(self.database, self.batch)
+        self.assertEqual(combined, self.database)
+        self.assertEqual(len(report['unchanged_records']), 13)
+        self.assertFalse(report['new_records'])
+        self.assertFalse(report['rejected_records'])
+        self.assertFalse(report['potential_duplicates'])
+
+    def test_batch_can_be_replayed_against_preserved_seed(self):
+        baseline = [r for r in self.database if 'legacy_research' in r]
+        combined, report = plan_import(baseline, self.batch)
+        self.assertEqual(combined, self.database)
+        self.assertEqual(len(report['new_records']), 13)
+        self.assertFalse(report['database_errors'])
+        self.assertFalse(report['potential_duplicates'])
 
 
 class ImportTests(unittest.TestCase):

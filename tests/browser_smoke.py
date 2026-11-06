@@ -22,6 +22,9 @@ class QuietHandler(SimpleHTTPRequestHandler):
 
 
 def main():
+    database = json.loads((ROOT / 'studios.json').read_text())
+    total_locations = len(database)
+    total_companies = len({r['company_id'] for r in database})
     server = ThreadingHTTPServer(('127.0.0.1', 0), partial(QuietHandler, directory=str(ROOT.parent)))
     threading.Thread(target=server.serve_forever, daemon=True).start()
     url = f'http://127.0.0.1:{server.server_port}/{ROOT.name}/'
@@ -48,16 +51,28 @@ def main():
             expect(page.locator('#exportCsv')).to_be_disabled()
             page.wait_for_function('typeof window.releaseDatabase === "function"')
             page.evaluate('window.releaseDatabase()')
-            expect(page.locator('#count')).to_have_text('18 locations')
-            expect(page.locator('#companies')).to_contain_text('16 organizations')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            expect(page.locator('#companies')).to_contain_text(f'{total_companies} organizations')
             assert data_requests == [url + 'studios.json']
-            assert page.locator('.entry').count() == 18
-            passed('HTTP subdirectory loading, disabled loading controls, 18 locations / 16 organizations')
+            assert page.locator('.entry').count() == min(total_locations, 50)
+            passed(f'HTTP subdirectory loading, disabled loading controls, {total_locations} locations / {total_companies} organizations')
             expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap contributors')
             page.wait_for_function('document.querySelector(".leaflet-tile-loaded") !== null', timeout=20000)
             assert 200 in tile_responses
-            assert page.evaluate('layer.getLayers().length') == 18
+            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database})
             passed('real Leaflet map, live OpenStreetMap tiles and attribution')
+            page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+            buttons = page.locator('.leaflet-popup-content button')
+            labels = buttons.all_text_contents()
+            assert len(labels) >= 2
+            for label in labels:
+                page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+                button = page.locator('.leaflet-popup-content button').filter(has_text=label)
+                button.focus()
+                button.press('Enter')
+                expect(page.locator('#detailContent h2')).to_have_text(label.split(' — ')[0])
+                page.locator('#close').click()
+            passed('coincident marker popup lists all studios and keyboard selection opens each profile')
             page.locator('#search').fill('beyond')
             expect(page.locator('#count')).to_have_text('2 locations')
             expect(page.locator('#companies')).to_contain_text('1 organization')
@@ -70,6 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
+            assert download.suggested_filename == 'motionx_studios_filtered_v0.7.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -78,19 +94,48 @@ def main():
             page.locator('#category').select_option('Performance Capture')
             expect(page.locator('#count')).to_have_text('5 locations')
             page.locator('#fitResults').click()
-            assert page.evaluate('layer.getLayers().length') == 5
+            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database if r['country'] == 'Canada' and 'Performance Capture' in r['capabilities']})
             page.locator('#country').select_option('')
             page.locator('#category').select_option('')
-            expect(page.locator('#count')).to_have_text('18 locations')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
             passed('combined country / capability filtering and fit-results action')
-            page.screenshot(path='/tmp/motionx-v06-desktop.png')
+            page.locator('#search').fill('Industrial Light & Magic')
+            expect(page.locator('#count')).to_have_text('5 locations')
+            expect(page.locator('#companies')).to_contain_text('1 organization')
+            page.locator('#search').fill('Framestore')
+            expect(page.locator('#count')).to_have_text('7 locations')
+            page.locator('#search').fill('')
+            page.locator('#country').select_option('India')
+            page.locator('#category').select_option('VFX')
+            expect(page.locator('#count')).to_have_text('2 locations')
+            page.locator('[data-id="ilm-mumbai"]').click()
+            expect(page.locator('#detailContent')).to_contain_text('Animation — confirmed')
+            expect(page.locator('#detailContent')).to_contain_text('city — approximate reference pin')
+            expect(page.locator('#detailContent a').filter(has_text='Official/public source')).to_have_attribute('href', 'https://www.ilm.com/locations/')
+            assert 'Motion Capture' not in page.locator('#detailContent').inner_text()
+            page.locator('#close').click()
+            with page.expect_download() as batch_download:
+                page.locator('#exportCsv').click()
+            batch_content = Path(batch_download.value.path()).read_text(encoding='utf-8-sig')
+            assert 'ilm-mumbai' in batch_content and 'framestore-mumbai' in batch_content
+            assert batch_content.count('\n') == 2
+            page.locator('#search').fill('Framestore')
+            page.locator('#country').select_option('United Kingdom')
+            page.locator('#category').select_option('Previsualization')
+            expect(page.locator('#count')).to_have_text('1 location')
+            passed('batch 1 organisation grouping, VFX/country filters, confirmed profile evidence, new-record CSV export and London previs')
+            page.locator('#search').fill('')
+            page.locator('#country').select_option('')
+            page.locator('#category').select_option('')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            page.screenshot(path='/tmp/motionx-v07-desktop.png')
             page.set_viewport_size({'width': 390, 'height': 844})
             page.locator('#listTab').click()
             expect(page.locator('aside')).to_be_visible()
             page.locator('[data-id="beyond-vancouver"]').click()
             expect(page.locator('#detail')).to_be_visible()
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
-            page.screenshot(path='/tmp/motionx-v06-mobile.png')
+            page.screenshot(path='/tmp/motionx-v07-mobile.png')
             page.locator('#close').click()
             page.locator('#listTab').click()
             page.locator('#mapTab').click()
@@ -112,7 +157,7 @@ def main():
                 assert page.locator('.entry').count() == 0
                 page.unroute('**/studios.json')
                 page.locator('#retryLoad').click()
-                expect(page.locator('#count')).to_have_text('18 locations')
+                expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
                 page.close()
                 passed(f'{label} error state, no fallback, successful retry')
             page = browser.new_page()

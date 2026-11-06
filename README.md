@@ -1,8 +1,14 @@
-# MotionX Studio Atlas v0.6 — Scalable Data Foundation
+# MotionX Studio Atlas v0.7 — Global Research Expansion, Batch 1
 
-Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **18 locations across 16 organisations**. No new studios were added in v0.6. Motion capture is an optional searchable capability, not an admission requirement.
+Public directory of VFX, animation, games, motion capture, performance capture, previs, virtual production, cinematics and related studios. The canonical public database is **`studios.json`**, currently **31 locations across 19 organisations**. v0.7 adds 13 source-reviewed locations across Wētā FX, Industrial Light & Magic and Framestore, preserving all 18 v0.6 records unchanged. Motion capture is an optional searchable capability, not an admission requirement.
 
 The existing dark, responsive Leaflet / OpenStreetMap site remains a static GitHub Pages site. `index.html` loads `data.js` and `app.js`; the app asynchronously requests **`./studios.json`**. There is no embedded database or fallback snapshot. HTTP failures, invalid JSON and invalid records show an explicit error with retry and disable data actions. The map and studio list have separate failure handling.
+
+## v0.7 research batch 1
+
+The [batch research log](data/research/v0.7-batch-1/README.md) documents every imported location, primary source, coordinate reference and unresolved claim. The [CSV](data/research/v0.7-batch-1/batch.csv), [per-location evidence manifest](data/research/v0.7-batch-1/evidence.json), dry-run/import/repeat reports and batch validation are retained together. Verification dates use **6 November 2026, Pacific/Auckland**; these indicate review of the cited claims, not independent verification of registration or current operation.
+
+Imported: Wētā FX Wellington (1), ILM San Francisco/Vancouver/London/Sydney/Mumbai (5), and Framestore London/Montréal/Chicago/Los Angeles/New York/Mumbai/Melbourne (7). No duplicates or rejected candidates were found. New pins are explicitly approximate city references; facility geocodes and capture capabilities are not asserted. Coordinates are from [GeoNames](https://www.geonames.org/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), copied without transformation and used as city reference points. This is attribution, not a claim of GeoNames endorsement.
 
 ## Run locally
 
@@ -112,4 +118,4 @@ python tests/browser_smoke.py
 
 The client fetches and validates the whole JSON file; lists are paginated at 50 and markers use Leaflet's canvas renderer. This is a tested foundation for thousands of locations, not an unlimited dataset or a claim of performance on every phone. Server-side search, spatial tiling or clustering may become useful at larger scales. Search includes unknown capabilities; read confidence labels before relying on results. Duplicate detection does not prove identity, and offline validation does not verify sources or geocode addresses.
 
-Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.6 adds no private records or credentials.
+Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v0.7 adds no private records or credentials.

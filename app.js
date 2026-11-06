@@ -48,9 +48,30 @@ function render() {
   renderList(rows);
   if (!layer) return;
   layer.clearLayers();
-  for (const s of rows) {
-    L.circleMarker([s.lat, s.lng], {radius: 8, color: '#ffd1d2', weight: 2,
-      fillColor: '#e74f60', fillOpacity: .88}).addTo(layer).on('click', () => show(s));
+  for (const group of MotionXData.coordinateGroups(rows)) {
+    const s = group[0];
+    const marker = L.circleMarker([s.lat, s.lng], {radius: 8, color: '#ffd1d2', weight: 2,
+      fillColor: '#e74f60', fillOpacity: .88}).addTo(layer);
+    if (group.length === 1) {
+      marker.on('click', () => show(s));
+      continue;
+    }
+    const panel = document.createElement('div');
+    const heading = document.createElement('p');
+    heading.textContent = `${group.length} studios at this coordinate`;
+    panel.appendChild(heading);
+    const list = document.createElement('ul');
+    for (const studio of group) {
+      const item = document.createElement('li');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = `${studio.name} — ${studio.city}`;
+      button.addEventListener('click', () => { marker.closePopup(); show(studio); });
+      item.appendChild(button); list.appendChild(item);
+    }
+    panel.appendChild(list);
+    marker.bindPopup(panel, {maxWidth: 300});
+    marker.on('popupopen', () => panel.querySelector('button')?.focus());
   }
 }
 function show(s) {
@@ -120,7 +141,7 @@ $('exportCsv').onclick = () => {
   const csv = [columns.join(','), ...filtered().map(s => columns.map(k => quote(s[k])).join(','))].join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8'}));
-  a.download = 'motionx_studios_filtered_v0.6.csv';
+  a.download = 'motionx_studios_filtered_v0.7.csv';
   document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 };
