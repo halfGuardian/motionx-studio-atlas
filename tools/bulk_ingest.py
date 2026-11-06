@@ -4,7 +4,7 @@
 A source observation never approves publication. A/B proposals are staged separately
 on a PR branch. C is research-only. No existing canonical record is overwritten.
 """
-import argparse,csv,hashlib,html,json,math,re,sqlite3
+import argparse,csv,hashlib,html,json,math,re,sqlite3,struct
 from collections import Counter,defaultdict
 from datetime import date
 from pathlib import Path
@@ -14,9 +14,10 @@ from validate import normalized,url_valid,DuplicateIndex,validate
 
 COUNTRIES=read(ROOT/'data/bulk/country-codes.json')['codes']
 ALIASES={'usa':'United States','unitedstatesofamerica':'United States','uk':'United Kingdom','czechrepublic':'Czechia','republicofkorea':'South Korea','russianfederation':'Russia','vietnam':'Vietnam','cotedivoire':'Côte d’Ivoire','türkiye':'Türkiye','turkey':'Türkiye'}
+COUNTRY_NAMES={normalized(v):v for v in COUNTRIES.values()}
 def country(value):
     if not isinstance(value,str):return ''
-    return COUNTRIES.get(value.upper(),ALIASES.get(normalized(value),next((name for name in COUNTRIES.values() if normalized(name)==normalized(value)),'')))
+    return COUNTRIES.get(value.upper()) or ALIASES.get(normalized(value)) or COUNTRY_NAMES.get(normalized(value),'')
 def point(value):
     if not isinstance(value,str):return None
     m=re.fullmatch(r'Point\((-?[\d.]+) (-?[\d.]+)\)',value)
@@ -94,6 +95,50 @@ def normalize_osm(raw,observed,policy):
         'capabilities':[],'capability_evidence':{},'is_location_reference':physical and lat is not None and lng is not None,
         'identity_hints':{'wikidata':t.get('wikidata',''),'operator_wikidata':t.get('operator:wikidata',''),'brand_wikidata':t.get('brand:wikidata','')}}
 
+def wkb_point(value):
+    try:
+        b=bytes.fromhex(value);endian='<' if b[0]==1 else '>' if b[0]==0 else None
+        if not endian:return None
+        kind=struct.unpack(endian+'I',b[1:5])[0]
+        if kind & 0xffff != 1:return None
+        offset=9 if kind & 0x20000000 else 5
+        lng,lat=struct.unpack(endian+'dd',b[offset:offset+16])
+        return (lat,lng) if math.isfinite(lat) and math.isfinite(lng) and abs(lat)<=90 and abs(lng)<=180 else None
+    except (ValueError,TypeError,IndexError,struct.error):return None
+
+PROVIDER_LICENSES={**{normalized(n):'CDLA-Permissive-2.0' for n in ('Meta','Microsoft','PinMeTo','Krick','RenderSEO','DAC','BrightQuery','Birdeye','Uberall','OpenTravel','Overture','Overture-signals')},'foursquare':'Apache-2.0','alltheplaces':'CC0-1.0'}
+def normalize_overture(raw,observed,policy):
+    rid=raw['source_record_id'];category=raw.get('category','');reasons=[]
+    sector=policy.get('eligible_categories',{}).get(category)
+    if not sector:reasons.append('category not yet reviewed as an eligible production business/facility; research only')
+    if raw.get('operating_status') in ('permanently_closed','temporarily_closed'):reasons.append('directory has a closure signal; requires research, never closes an existing published location')
+    if not isinstance(raw.get('confidence'),(float,int)) or raw['confidence']<.9:reasons.append('provider existence confidence below 0.9 or unavailable; not an independent verification score')
+    name=raw.get('name','');coords=wkb_point(raw.get('geometry_wkb'))
+    if not coords:reasons.append('exact source Point geometry missing; bbox/city coordinates not substituted')
+    addresses=raw.get('addresses') or []
+    countries=list(dict.fromkeys(country(a.get('country')) for a in addresses if country(a.get('country'))))
+    if len(countries)!=1:reasons.append('country absent or conflicting in the source')
+    cities=list(dict.fromkeys(a.get('locality') for a in addresses if a.get('locality')))
+    if len(cities)>1:reasons.append('conflicting source municipalities require review')
+    city=cities[0] if len(cities)==1 else 'Municipality not supplied'
+    if not isinstance(name,str) or not name.strip():reasons.append('operating/facility name missing')
+    providers=raw.get('sources') or []
+    licences=sorted({PROVIDER_LICENSES.get(normalized(s.get('dataset','')),'unresolved') for s in providers})
+    if not licences or 'unresolved' in licences:reasons.append('source-provider redistribution licence unresolved')
+    website=next((u for u in raw.get('websites') or [] if url_valid(u)),None)
+    source=raw['filename']
+    if not source.startswith('https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy['release']+'/theme=places/type=place/') or not source.endswith('.parquet'):raise ValueError('unapproved source object path')
+    organisation='overture-org-'+digest([normalized(name),(urlsplit(website).hostname or '').removeprefix('www.')])[:24] if website else 'overture-org-'+digest(rid)[:24]
+    return {'candidate_id':'overture-'+re.sub('[^a-z0-9-]','-',rid.lower()),'source_record_id':rid,'source_id':'overture','organisation_key':organisation,
+        'name':name,'city':city,'country':countries[0] if len(countries)==1 else '', 'lat':coords[0] if coords else None,'lng':coords[1] if coords else None,
+        'website':website or source,'website_kind':'official' if website else 'source_listing','sectors':[sector] if sector else [],'facility_type':'uncertain',
+        'place_basis':'Original Overture Point geometry, not a verified facility geocode. Municipality/country copied only from provider locality/country fields.',
+        'parent_claims':[],'source_observed_on':observed,'evidence_urls':[source],'source_release':policy['release'],'source_category':category,'source_providers':providers,
+        'provider_confidence':raw.get('confidence'),'source_operating_status':raw.get('operating_status'),'license':' AND '.join(licences),
+        'license_url':policy['license_url'],'attribution':'Overture Maps Foundation; '+', '.join(sorted({s.get('dataset','') for s in providers}))+'. Foursquare data transformed to Overture schema; MotionX filters/normalizes fields. See data/bulk/LICENSES.',
+        'class':'C' if reasons else 'B','reasons':reasons or ['Permissively licensed production-place directory listing; operating status, site type and capabilities remain uncorroborated'],
+        'capabilities':[],'capability_evidence':{},'is_location_reference':bool(coords)}
+
 SCHEMA='''PRAGMA journal_mode=WAL;
 CREATE TABLE IF NOT EXISTS observations(source TEXT, source_key TEXT, content_hash TEXT, first_seen TEXT, last_seen TEXT, payload TEXT, PRIMARY KEY(source,source_key,content_hash));
 CREATE TABLE IF NOT EXISTS runs(run_id TEXT PRIMARY KEY, observed_on TEXT, input_hash TEXT, baseline_hash TEXT, policy_hash TEXT);
@@ -104,7 +149,7 @@ CREATE INDEX IF NOT EXISTS decision_class ON decisions(run_id,evidence_class);
 def inputs(folder,policies):
     for sid,p in policies.items():
         for path in sorted((folder/sid).glob('*.json')):
-            if path.name.endswith('.meta.json'):continue
+            if path.name.endswith('.meta.json') or not path.with_name(path.stem+'.meta.json').exists():continue
             meta=read(path.with_name(path.stem+'.meta.json'));rows=read(path)
             if meta.get('projection_hash')!=digest(rows) or meta.get('source')!=sid or meta.get('license')!=p['license']:raise ValueError('snapshot provenance/hash/licence mismatch: '+str(path))
             date.fromisoformat(meta['observed_on'])
@@ -134,7 +179,7 @@ def ingest(folder,output,config,base,ledger=None):
         db.execute('INSERT OR IGNORE INTO runs VALUES(?,?,?,?,?)',(run,observed,digest(sorted(hashes)),digest(base),digest(config)))
         names,hosts=domains(base);index=DuplicateIndex(base);decisions=[];proposed=[];dupes=[]
         for (sid,key),raw in sorted(grouped.items()):
-            c=(normalize_wikidata if sid=='wikidata' else normalize_osm)(raw,observed,policies[sid]);c['observation_hash']=digest(raw)
+            c={'wikidata':normalize_wikidata,'openstreetmap':normalize_osm,'overture':normalize_overture}[sid](raw,observed,policies[sid]);c['observation_hash']=digest(raw)
             company_matches=names.get(normalized(c['name']),set()) or hosts.get((urlsplit(c['website']).hostname or '').removeprefix('www.'),set())
             c['existing_organisation_matches']=sorted(company_matches)
             # Company matching is advisory; never merges distinct branches or inherits services.

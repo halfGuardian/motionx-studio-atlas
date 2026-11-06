@@ -53,7 +53,7 @@ def run(output,release=RELEASE):
         # All qualifying category rows, all countries. No arbitrary LIMIT.
         select=f'''SELECT id AS source_record_id,names.primary AS name,{cat} AS category,
           bbox.xmin AS lng,bbox.ymin AS lat,bbox.xmax AS xmax,bbox.ymax AS ymax,
-          websites,addresses,sources,confidence,operating_status,filename
+          hex(geometry) AS geometry_wkb,websites,addresses,sources,confidence,operating_status,filename
           FROM {relation} WHERE regexp_matches({cat},?)'''
         cursor=con.execute(select,[CANDIDATE_PATTERN]);columns=[r[0] for r in cursor.description]
         count=0;page=0
