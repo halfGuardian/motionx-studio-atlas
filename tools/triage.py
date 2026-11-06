@@ -43,6 +43,8 @@ def classify(candidate, source, database, rejected):
                 'matched_organisation_ids': sorted({r['company_id'] for r in matches})}
     if candidate.get('source_kind') == 'manual_backlog' or candidate.get('source_id') == 'v08-review-backlog':
         return result('requires_research', 'unknown', 'backlog', 'Preserved v0.8 deferred research; no new evidence resolves its stated uncertainty.')
+    if not source:
+        return result('requires_research', 'unknown', 'unresolved_link', 'Source no longer configured; retain observation and review provenance.')
     if candidate.get('missing_since') or candidate.get('signals'):
         return result('requires_research', 'unknown', 'change_signal', 'Missing/changed-business signal needs current primary research; no deletion or status claim inferred.')
     key = url_key(candidate['url'])
@@ -52,7 +54,9 @@ def classify(candidate, source, database, rejected):
     kind = source.get('triage_kind', '')
     company = source.get('company_id', '')
     rows = scope_rows(database, company)
-    branch = bool(re.search(r'/(?:location|locations)/[^/]+$', path)) and kind == 'branch_links'
+    branch = bool(re.search(r'/(?:location|locations)/.+$', path)) and kind == 'branch_links'
+    if kind == 'organisation_roster' and path:
+        return result('irrelevant', 'confirmed', 'navigation_or_service', 'Roster link leads to navigation, a service, policy, contact or article rather than an individual operator homepage/facility. Preserve it as source history.')
     # Generic service/contact/navigation pages do not establish a physical location.
     if slug in NON_STUDIO or (path.endswith('/careers/locations')):
         return result('irrelevant', 'confirmed', 'navigation_or_service', 'Generic navigation/service/contact page, not an individually identified physical studio. Retain observation for audit.')
@@ -61,6 +65,10 @@ def classify(candidate, source, database, rejected):
             return result('requires_research', 'unknown', 'facility_index', 'Multi-facility index; link alone does not identify each stage. Existing organisation does not prove branch completeness.', rows, 'organisation')
         return result('irrelevant', 'confirmed', 'navigation_or_service', 'Source/index link points back to itself, not a new individual facility.')
     if branch:
+        if url_key(source['url'])[0] != key[0]:
+            return result('requires_research', 'unknown', 'unresolved_link', 'Branch URL is outside the configured official source host; identity needs review.')
+        if slug in ('paris-area', 'taiwan') or slug.endswith('-hq'):
+            return result('requires_research', 'unknown', 'market_or_corporate_index', 'Area/country/HQ link does not resolve individual production facilities; review physical-site scope.')
         # Reject historical-location assumptions even if a stale careers page still links it.
         historic = [r for r in rejected if company.casefold() in r['organisation'].casefold() and
                     (normalized(slug) in normalized(r['candidate']) or normalized(candidate['label']) == normalized(r['candidate']))]
@@ -78,6 +86,9 @@ def classify(candidate, source, database, rejected):
                 return result('already_represented', 'confirmed' if direct else 'likely', 'branch_link',
                               'Exact published source URL match.' if direct else 'Source organisation/group plus exact existing location ID/city slug match; matching only, not new verification.', matches, 'location')
             return result('requires_research', 'unknown', 'market_index', 'One link covers multiple published municipalities; do not collapse them into a single facility.', matches, 'multiple_locations')
+        legacy_operator = [r for r in database if normalized(r['company_id']) == normalized(company + '-' + slug)]
+        if legacy_operator:
+            return result('already_represented', 'likely', 'branch_link', 'Stable operating organisation ID matches the branch slug. Existing entry may describe a specialist facility; same-site identity/branch completeness is NOT established.', legacy_operator, 'organisation')
         country_names = {normalized(r['country']) for r in database} | {'germany','india','china','france','canada','uk','usa','europe','asia','ukraine'}
         if normalized(slug) in country_names:
             return result('requires_research', 'unknown', 'market_index', 'Country/market roster link without an individual facility match; branch-level research required.')

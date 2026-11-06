@@ -82,6 +82,10 @@ def load_config(config):
             if not pattern or len(pattern) > 300:
                 raise ValueError('links adapter requires a bounded URL pattern')
             re.compile(pattern)
+            if source.get('link_label_pattern'):
+                if len(source['link_label_pattern']) > 300:
+                    raise ValueError('link label pattern exceeds limit')
+                re.compile(source['link_label_pattern'])
     return config
 
 
@@ -162,6 +166,11 @@ def link_url(base, href):
     return parse.urlunsplit((parts.scheme, parts.netloc.lower(), parts.path or '/', '', ''))
 
 
+def link_allowed(source, url, label):
+    return bool(re.search(source['link_pattern'], url) and
+                (not source.get('link_label_pattern') or re.search(source['link_label_pattern'], clean(label))))
+
+
 class Page(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -218,7 +227,7 @@ def extract(source, text):
         if source['adapter'] == 'links':
             for href, label in page.links:
                 url = link_url(source['url'], href)
-                if url and re.search(source['link_pattern'], url):
+                if url and link_allowed(source, url, label):
                     found.append({'url': url, 'label': label})
         else:
             def walk(node):
@@ -273,6 +282,11 @@ def scan(config, previous, database, fetcher=None, today=None):
         try:
             body = fetcher(source)
             observations = extract(source, body)
+            extraction_hash = digest({k: source.get(k) for k in ('url', 'adapter', 'link_pattern', 'link_label_pattern')})
+            old_status = state['sources'].get(source['id'], {})
+            rules_changed = bool(old_status) and old_status.get('extraction_hash') != extraction_hash
+            if rules_changed:
+                report['events'].append({'source_id': source['id'], 'type': 'extraction_rules_changed', 'note': 'Retain omitted candidates; filtering changes are not disappearance evidence.'})
             seen = set()
             for item in observations:
                 cid = 'discovery-' + digest([source['id'], item['url'], item['city'], item['country']])[:24]
@@ -293,12 +307,14 @@ def scan(config, previous, database, fetcher=None, today=None):
                 if event:
                     report['events'].append({'id': cid, 'type': event, 'previous_hash': old['content_hash'] if old else None, 'content_hash': content_hash, 'signals': candidate['signals']})
             # Empty/failed extraction may indicate a redesign, never a mass closure.
-            if observations:
+            if observations and not rules_changed:
                 for cid, candidate in state['candidates'].items():
+                    if source['adapter'] == 'links' and not link_allowed(source, candidate['url'], candidate['label']):
+                        continue  # historical filtered-out navigation is not a missing studio
                     if candidate['source_id'] == source['id'] and cid not in seen and not candidate.get('missing_since'):
                         candidate['missing_since'] = today
                         report['events'].append({'id': cid, 'type': 'missing_from_source', 'note': 'Review required; absence is not closure evidence.'})
-            status.update(status='ok' if observations else 'extraction_empty', candidate_count=len(observations), body_sha256=hashlib.sha256(body.encode()).hexdigest())
+            status.update(status='ok' if observations else 'extraction_empty', candidate_count=len(observations), body_sha256=hashlib.sha256(body.encode()).hexdigest(), extraction_hash=extraction_hash)
             if state['sources'].get(source['id'], {}).get('body_sha256') not in (None, status['body_sha256']):
                 report['events'].append({'source_id': source['id'], 'type': 'page_changed', 'note': 'Page bytes changed; business status is not inferred.'})
         except (OSError, ValueError, LookupError, ET.ParseError) as exc:
@@ -414,6 +430,23 @@ def safe_output(output, inputs):
             raise ValueError('output must not replace an input or canonical database')
 
 
+def archive_history(previous_run, output):
+    """Carry immutable raw queue/report snapshots forward with every artifact."""
+    previous_run, output = Path(previous_run), Path(output)
+    paths = [previous_run/'queue.json', previous_run/'report.json']
+    paths += sorted((previous_run/'history').glob('*.json'))
+    for path in paths:
+        if path.is_symlink():
+            raise ValueError('history must contain regular local files')
+        if not path.is_file():
+            continue
+        body = path.read_bytes()
+        json.loads(body)  # preserve exact bytes only after checking valid JSON
+        folder = output/'history'
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+
+
 def review_template(database, queue, records, candidate_ids):
     if len(records) != len(candidate_ids) or not records:
         raise ValueError('provide one candidate ID per proposed record, in the same order')
@@ -440,6 +473,7 @@ def main():
     scan_cmd.add_argument('--state', type=Path, default=ROOT / 'data/discovery/backlog.json')
     scan_cmd.add_argument('--database', type=Path, default=ROOT / 'studios.json')
     scan_cmd.add_argument('--output', type=Path, required=True)
+    scan_cmd.add_argument('--previous-run', type=Path, help='archive prior queue/report and carry history forward')
     proposal = commands.add_parser('prepare', help='prepare an approved proposal, never publish')
     for flag in ('queue', 'records', 'reviews'):
         proposal.add_argument('--' + flag, type=Path, required=True)
@@ -465,6 +499,8 @@ def main():
             state, report = scan(read(args.config), read(args.state), database)
             write(args.output / 'queue.json', state)
             write(args.output / 'report.json', report)
+            if args.previous_run:
+                archive_history(args.previous_run, args.output)
             print(json.dumps({'pending': report['pending_candidates'], 'source_status': report['sources'], 'published': 0}))
         elif args.command == 'review-template':
             queue, records = read(args.queue), read(args.records)

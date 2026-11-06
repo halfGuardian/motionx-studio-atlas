@@ -35,7 +35,7 @@ jobs:
           fi
       - name: Collect candidates without editing the public database
         run: |
-          python tools/discovery.py scan --state previous/queue.json --output discovery-run
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --output discovery-run
           python - <<'PY'
           import json, os
           from pathlib import Path
@@ -48,8 +48,17 @@ jobs:
                   if source['status'] != 'ok':
                       print(f"::warning::Source {source['id']}: {source['status']}. No closure or verification inferred.")
           PY
+      - name: Triage all retained observations without modifying queue or claims
+        run: |
+          python tools/triage.py --queue discovery-run/queue.json --report discovery-run/report.json --output triage-output
+          cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: studio-discovery
           path: discovery-run/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        with:
+          name: studio-discovery-triage
+          path: triage-output/
           retention-days: 90

@@ -35,10 +35,11 @@
       "kind": "official",
       "adapter": "links",
       "url": "https://cinesite.com/our-studios/",
-      "link_pattern": "^https://(?:www\\.)?(?:cinesite\\.com|latelieranimation\\.com|madassemblage\\.com|fx3x\\.com|image-engine\\.com|squeezestudio\\.com|trixter\\.de|imaginariumstudios\\.co\\.uk)(?:/|$)",
+      "link_pattern": "^https://[^/]+/?$",
       "company_id": "cinesite-group",
-      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence.",
-      "triage_kind": "organisation_roster"
+      "reuse_note": "Public primary-source links already used in v0.8 research. Collect link labels/URLs only; obey robots, rate limits and access restrictions. No full-page republication or implicit directory licence. v0.9.1: operator-CTA links only, including future operator domains as evidence pointers; never follow them automatically.",
+      "triage_kind": "organisation_roster",
+      "link_label_pattern": "(?i)^find out more$"
     },
     {
       "id": "dneg-studios",
