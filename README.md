@@ -60,7 +60,7 @@ Read-only Actions jobs produce `triage.json`, `summary.md` and preserved origina
 python tools/discovery.py scan --output /tmp/motionx-discovery-run
 ```
 
-The local live-source attempt was blocked by this environment's domain/DNS access; the [run report](data/discovery/initial-run-report.json) records all six failures without claiming discoveries. Offline fixtures exercise the full pipeline. New industry directory sources require explicit terms/robots/adapter review before enabling. The first live Actions run still needs source-level review.
+The local live-source attempt was blocked by this environment's domain/DNS access; the [run report](data/discovery/initial-run-report.json) records all six failures without claiming discoveries. Offline fixtures exercise the full pipeline. New industry directory sources require explicit terms/robots/adapter review before enabling. The original live-run source review is recorded in v0.9.1; current global collection results are linked in the v0.9.3 report above.
 
 ## Historical v0.8 research release
 
