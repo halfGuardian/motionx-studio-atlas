@@ -61,12 +61,12 @@ def main():
             assert 200 in tile_responses
             assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database})
             passed('real Leaflet map, live OpenStreetMap tiles and attribution')
-            page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+            page.evaluate("() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }")
             buttons = page.locator('.leaflet-popup-content button')
             labels = buttons.all_text_contents()
             assert len(labels) >= 2
             for label in labels:
-                page.evaluate("layer.getLayers().find(m => m.getPopup()).openPopup()")
+                page.evaluate("() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }")
                 button = page.locator('.leaflet-popup-content button').filter(has_text=label)
                 button.focus()
                 button.press('Enter')
@@ -85,7 +85,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.csv'
+            assert download.suggested_filename == 'motionx_studios_filtered_v0.9.2.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -141,6 +141,27 @@ def main():
             page.locator('#search').fill('')
             expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
             passed('optional location type, sourced group relationships, coordinate provenance and relationship search')
+
+            page.locator('#search').fill('StudioT3D')
+            expect(page.locator('#count')).to_have_text('2 locations')
+            page.locator('#category').select_option('Volumetric Capture')
+            expect(page.locator('#count')).to_have_text('1 location')
+            page.locator('[data-id="studiot3d-london-stage-2"]').click()
+            expect(page.locator('#detailContent')).to_contain_text('Guildhall Production Studio')
+            expect(page.locator('#detailContent')).not_to_contain_text('Virtual Production — confirmed')
+            page.locator('#close').click()
+            page.locator('#category').select_option('')
+            page.locator('#search').fill('Audiomotion')
+            expect(page.locator('#count')).to_have_text('1 location')
+            page.locator('[data-id="audiomotion"]').click()
+            expect(page.locator('#detailContent')).to_contain_text('Didcot')
+            expect(page.locator('#detailContent')).to_contain_text('Recorded review date: 2026-11-06')
+            expect(page.locator('#detailContent')).not_to_contain_text('Legacy recorded review date')
+            page.locator('#close').click()
+            page.locator('#search').fill('')
+            expect(page.locator('#count')).to_have_text(f'{total_locations} locations')
+            passed('new co-located capture stages, precise capability filters and explicitly reviewed legacy correction')
+
             page.screenshot(path='/tmp/motionx-v08-desktop.png')
             page.set_viewport_size({'width': 390, 'height': 844})
             page.locator('#listTab').click()
@@ -228,7 +249,7 @@ def main():
             page.goto(url, wait_until='domcontentloaded')
             expect(page.locator('#count')).to_have_text('10000 locations')
             page.evaluate('() => { map.setView([studios[5000].lat, studios[5000].lng], 5, {animate:false}); }')
-            page.evaluate('layer.getLayers().find(m => m.getPopup()).openPopup()')
+            page.evaluate('() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }')
             expect(page.locator('.leaflet-popup-content button')).to_have_count(2)
             page.wait_for_timeout(400)
             page.locator('.leaflet-popup-content button').last.press('Enter')

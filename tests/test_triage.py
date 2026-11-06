@@ -12,11 +12,12 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from discovery import archive_history, digest, extract, read, scan
 from triage import classify, markdown, triage
+from snapshots import before_v092
 
 
 class TriageTests(unittest.TestCase):
     def setUp(self):
-        self.database=read(ROOT/'studios.json')
+        self.database=before_v092()
         self.config=read(ROOT/'data/discovery/sources.json')
         self.sources={s['id']:s for s in self.config['sources']}
         self.backlog=read(ROOT/'data/discovery/backlog.json')

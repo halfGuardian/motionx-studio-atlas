@@ -1,0 +1,243 @@
+[
+  {
+    "candidate_id": "discovery-36aa50b52ae47c509014ced6",
+    "candidate_label": "Atlanta",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/atlanta",
+      "https://www.theesa.com/video-game-impact-map/state/georgia-2/"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "blue-mammoth-alpharetta"
+    ]
+  },
+  {
+    "candidate_id": "discovery-55742dcf45b5dd18a985ab6d",
+    "candidate_label": "Taguig",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/taguig"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-philippines-taguig"
+    ]
+  },
+  {
+    "candidate_id": "discovery-8431a40c74ee7274ad8aacb1",
+    "candidate_label": "Barcelona",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona",
+      "https://www.linkedin.com/company/ubisoft-barcelona/",
+      "https://www.ubisoft.com/en-us/company/careers/locations/barcelona/ubisoft-barcelona-mobile"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-barcelona-main",
+      "ubisoft-barcelona-mobile-main"
+    ]
+  },
+  {
+    "candidate_id": "discovery-b535bf8400ef5031ebb0f49f",
+    "candidate_label": "Lyon",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/lyon",
+      "https://www.ubisoft.com/en-us/studio/ivory-tower"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ivory-tower-villeurbanne"
+    ]
+  },
+  {
+    "candidate_id": "discovery-b69ec7ada60ff433a4f0b74e",
+    "candidate_label": "Pune",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/pune",
+      "https://www.ubisoft.com/en-us/company/careers/locations/india"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-pune-main"
+    ]
+  },
+  {
+    "candidate_id": "discovery-c86b0ca34866d28e883c9af9",
+    "candidate_label": "Malmö",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/malm%C3%B6"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "massive-malmo"
+    ]
+  },
+  {
+    "candidate_id": "discovery-d9d65010b05772f42c02a1c2",
+    "candidate_label": "Montpellier",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/montpellier",
+      "https://www.ubisoft.com/en-us/studio/montpellier"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-montpellier-main"
+    ]
+  },
+  {
+    "candidate_id": "discovery-f00bf25370760830ae8f259b",
+    "candidate_label": "Annecy",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/annecy",
+      "https://www.ubisoft.com/en-us/studio/annecy"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-annecy-main"
+    ]
+  },
+  {
+    "candidate_id": "discovery-fbce1f44f76015621fadfc5b",
+    "candidate_label": "Milan",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/milan"
+    ],
+    "reason": "Primary evidence supports the individual operating location and game-development classification. No specialist capture is inferred.",
+    "proposed_record_ids": [
+      "ubisoft-milan-assago"
+    ]
+  },
+  {
+    "candidate_id": "discovery-0e06a74c5b757e499826f413",
+    "candidate_label": "Cary",
+    "decision": "exclude",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/cary",
+      "https://www.gamedeveloper.com/business/ubisoft-lays-off-105-staff-at-red-storm-ends-game-development"
+    ],
+    "reason": "Current Ubisoft page combines customer support with legacy Red Storm. March 2026 reporting directly quotes the cessation of game development; surviving IT/engine or capture operations do not establish a current production facility in this review.",
+    "proposed_record_ids": []
+  },
+  {
+    "candidate_id": "discovery-1c4ae35f417bbce4d24e1b8d",
+    "candidate_label": "Los Angeles",
+    "decision": "exclude",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/los-angeles"
+    ],
+    "reason": "Current official page identifies Film & Television business/development teams, not site-specific VFX, animation, game development or capture facilities. Do not infer capabilities from its IP adaptations.",
+    "proposed_record_ids": []
+  },
+  {
+    "candidate_id": "discovery-4b53ef2a55ef7ea5b5ed4268",
+    "candidate_label": "Tokyo",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/tokyo"
+    ],
+    "reason": "Official page gives an office address but does not establish production-site type or local development/capture capabilities.",
+    "proposed_record_ids": []
+  },
+  {
+    "candidate_id": "discovery-6457023d7d9f5ecf9c416442",
+    "candidate_label": "Guildford",
+    "decision": "exclude",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/guildford"
+    ],
+    "reason": "Current page identifies Ubisoft Northern Europe office. No local game production or specialist capture evidence; do not reinterpret a regional office as a relocated development studio.",
+    "proposed_record_ids": []
+  },
+  {
+    "candidate_id": "discovery-857a0c231c4d061f3beff558",
+    "candidate_label": "Sao Paulo",
+    "decision": "exclude",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.ubisoft.com/en-us/company/careers/locations/sao-paulo"
+    ],
+    "reason": "Official page establishes Ubisoft Brazil office address without production capability evidence. Not proof of a restarted historical Brazilian development studio.",
+    "proposed_record_ids": []
+  },
+  {
+    "candidate_id": "backlog-21f9c722f986316df3dc878f",
+    "candidate_label": "Specialists — Target3D facilities",
+    "decision": "propose_add",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.studiot3d.com/studio-1",
+      "https://www.studiot3d.com/studio-2",
+      "https://www.studiot3d.com/contact-us",
+      "https://www.studiot3d.com/our-team"
+    ],
+    "reason": "Separate equipment vendor activity from the two independently documented StudioT3D London production stages. Other office/partner references are not imported.",
+    "proposed_record_ids": [
+      "studiot3d-london-stage-1",
+      "studiot3d-london-stage-2"
+    ]
+  },
+  {
+    "candidate_id": "backlog-6a196528bef1076493a2cd33",
+    "candidate_label": "Specialists — Audiomotion Oxford",
+    "decision": "propose_update",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://www.audiomotion.com/about/",
+      "https://www.audiomotion.com/services/"
+    ],
+    "reason": "Official site explicitly states the current Didcot location and capture volume. Correct the existing record; no extra Oxford location.",
+    "proposed_record_ids": [
+      "audiomotion"
+    ]
+  },
+  {
+    "candidate_id": "backlog-22003ae181c52e2866b99511",
+    "candidate_label": "Specialists — Metricminds additional facilities",
+    "decision": "defer",
+    "reviewed_on": "2026-11-06",
+    "reviewed_by": "Codex — primary-source research; maintainer publication review pending",
+    "sources": [
+      "https://metricminds.com/",
+      "https://metricminds.com/performance-capture/"
+    ],
+    "reason": "Current official site identifies Frankfurt only, already published. No adequately supported extra physical branch/stage found. No additional record invented.",
+    "proposed_record_ids": []
+  }
+]

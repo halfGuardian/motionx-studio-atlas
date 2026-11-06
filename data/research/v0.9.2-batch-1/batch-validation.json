@@ -1,0 +1,22 @@
+{
+  "records": 12,
+  "companies": 11,
+  "errors": [],
+  "warnings": [
+    "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+    "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+    "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+    "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+    "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+    "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+    "massive-malmo: approximate coordinates (city); not a verified street address",
+    "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+    "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+    "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+    "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+    "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+    "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+    "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)"
+  ],
+  "accepted": true
+}

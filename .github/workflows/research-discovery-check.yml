@@ -1,0 +1,60 @@
+name: Check discovery research cycle
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/research/v0.9.2-batch-1/**'
+      - '.github/workflows/research-discovery-check.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use the reviewed collector and source registry on main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore discovery history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if ! [[ "$run_id" =~ ^[0-9]+$ ]]; then
+            echo 'A previous successful discovery artifact is required for this continuity check.' >&2
+            exit 1
+          fi
+          gh run download "$run_id" --name studio-discovery --dir previous
+          echo "Previous discovery run: $run_id" >> "$GITHUB_STEP_SUMMARY"
+      - name: Refresh unverified candidates and inspect target evidence snapshots
+        run: |
+          python tools/discovery.py scan --state previous/queue.json --previous-run previous --output refreshed
+          python tools/triage.py --queue refreshed/queue.json --report refreshed/report.json --output refreshed/triage
+          cat refreshed/triage/summary.md >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from sys import path
+          path.insert(0, 'tools')
+          from discovery import digest
+          queue = json.loads(Path('refreshed/queue.json').read_text())
+          report = json.loads(Path('refreshed/report.json').read_text())
+          triage = json.loads(Path('refreshed/triage/triage.json').read_text())
+          assert all(s['id'] != 'ea-studios' for s in report['sources'])
+          assert all(cid in queue['candidates'] for cid in json.loads(Path('previous/queue.json').read_text())['candidates'])
+          print('RESEARCH_REFRESH ' + json.dumps({'sources': report['sources'], 'counts': triage['counts'], 'retained': len(queue['candidates']), 'history_snapshots': len(list(Path('refreshed/history').glob('*.json'))), 'collector_commit': __import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()}))
+          print('RESEARCH_QUEUE_META ' + json.dumps({'version':1,'sources':queue['sources'],'original_queue_hash':digest(queue)}))
+          for row in triage['candidates']:
+              c = row['observation']
+              if row['classification'] == 'potentially_new' or (c['source_id'] == 'v08-review-backlog' and c['label'].startswith('Specialists')):
+                  print('RESEARCH_CANDIDATE ' + json.dumps(c))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-discovery-refresh
+          path: refreshed/
+          retention-days: 90

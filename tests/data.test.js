@@ -5,8 +5,8 @@ const fs = require('node:fs');
 const {loadDatabase, validateDatabase, filterRecords} = require('../data.js');
 const rows = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../studios.json')));
 test('canonical database loads and retains all identities', () => {
-  assert.equal(validateDatabase(rows).length, 129);
-  assert.equal(new Set(rows.map(r => r.company_id)).size, 66);
+  assert.equal(validateDatabase(rows).length, 141);
+  assert.equal(new Set(rows.map(r => r.company_id)).size, 77);
 });
 test('relative URL is GitHub Pages compatible and disables stale cache', async () => {
   const result = await loadDatabase(async (path, options) => {
@@ -107,7 +107,7 @@ test('organisation relationship names are searchable without collapsing studios'
   assert.deepEqual(imaginarium.map(r => r.city).sort(), ['Iver Heath','London']);
 });
 test('new batch has six individually sourced capture facilities', () => {
-  const added = rows.slice(31);
+  const added = rows.slice(31, 129);
   const capture = added.filter(r => r.capabilities.some(c => ['Motion Capture','Facial Capture','Performance Capture'].includes(c)));
   assert.equal(capture.length, 6);
   assert.ok(capture.every(r => r.coordinate_precision === 'city'));

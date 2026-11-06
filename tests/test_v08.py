@@ -14,13 +14,15 @@ sys.path.insert(0, str(ROOT / 'tools'))
 from validate import read_records, validate, CSV_FIELDS
 from import_csv import plan_import
 
+from snapshots import before_v092
+
 FOLDER = ROOT / 'data/research/v0.8-global-expansion'
 
 
 class ExpansionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.rows = read_records(ROOT / 'studios.json')
+        cls.rows = before_v092()
         cls.batch = read_records(FOLDER / 'batch.csv')
         cls.manifest = json.loads((FOLDER / 'evidence.json').read_text())
 

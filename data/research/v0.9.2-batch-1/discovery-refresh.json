@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 41,
+      "body_sha256": "d20f3ac70818006bda9910fe586db980e590dca43e3c389f089d579c63c2a99c",
+      "extraction_hash": "21a949c1e067563bcb76844a3a76586ce4c1d907a3af7c1e59e00399150fc244"
+    },
+    {
+      "id": "cinesite-group",
+      "url": "https://cinesite.com/our-studios/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 7,
+      "body_sha256": "9bd0d7b7f000fb7cf56ce85a64713f9b4d8635d01b304bf8ce6294b2994babba",
+      "extraction_hash": "5618e904be31a546bc1543aa832339c584d5b1bb99e8852ede678a7a52fe903f"
+    },
+    {
+      "id": "dneg-studios",
+      "url": "https://www.dneg.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 19,
+      "body_sha256": "8549c6980ed7da0e36babc763a7e3272d845d6e28def0791b37fdf4e8d017213",
+      "extraction_hash": "caf37a655d0ee7a3a3304bf93c7a9580f2ea400c19cd5f5c71913b363a679fcc"
+    },
+    {
+      "id": "imaginarium-sites",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 1,
+      "body_sha256": "2c5b632a0f862344253a4091fb728a4ca8c6de663e4d805ffc12a863e78bf80b",
+      "extraction_hash": "7573605ab1740836f9eb8f7675428be4ae6e57db1811200d95ec4f6fb4dfc727"
+    },
+    {
+      "id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "attempted_on": "2026-11-06",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "b99f8969f36ae2c2f6a1c21ec67f18503e4215c25aa8190f024752c6994ebed9",
+      "extraction_hash": "d6e7fbb4045a19561dd17d3496366c9dfa77d12c4cc184ffb33d0cdda81d25ef"
+    }
+  ],
+  "counts": {
+    "already_represented": 46,
+    "potentially_new": 14,
+    "irrelevant": 24,
+    "requires_research": 49
+  },
+  "retained": 133,
+  "history_snapshots": 2,
+  "collector_commit": "6b98cf7bfe4641d1c20c406a7a2a55139aa0eaaa"
+}

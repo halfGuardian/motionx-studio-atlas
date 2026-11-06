@@ -1,0 +1,61 @@
+{
+  "release": "v0.9.2",
+  "reviewed_on": "2026-11-06",
+  "timezone": "Pacific/Auckland",
+  "research_candidates": 17,
+  "discovery_candidates": 14,
+  "specialist_backlog_topics": 3,
+  "new_locations": 12,
+  "new_operating_organisations": 11,
+  "updated_locations": [
+    "audiomotion"
+  ],
+  "total_locations": 141,
+  "total_operating_organisations": 77,
+  "total_countries": 30,
+  "batch_countries": 8,
+  "new_countries": [
+    "Italy",
+    "Philippines"
+  ],
+  "new_capture_stages": 2,
+  "updated_capture_locations": 1,
+  "game_development_locations_added": 10,
+  "decisions": {
+    "propose_add": 10,
+    "propose_update": 1,
+    "exclude": 4,
+    "defer": 2
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 160,
+    "approximate_coordinates": 141,
+    "legacy_unknown_evidence": 17,
+    "reviewed_possible_duplicate_pairs": 2
+  },
+  "tests": {
+    "python": 87,
+    "javascript": 20,
+    "http_browser": 16,
+    "performance": {
+      "synthetic_locations": 10000,
+      "unique_coordinate_groups": 10000,
+      "viewport_markers_at_zoom_4": 1617,
+      "list_page_size": 50,
+      "load_pan_paginate_filter_seconds": 1.769
+    }
+  },
+  "live_discovery": {
+    "run_id": 42152699759,
+    "collector_commit": "6b98cf7bfe4641d1c20c406a7a2a55139aa0eaaa",
+    "enabled_sources_succeeded": 5,
+    "cinesite_operator_links": 7,
+    "queue_candidates_retained": 133,
+    "history_snapshots": 2,
+    "ea_fetched": false
+  },
+  "publication": "Proposed development-branch data only; PR is not merged. No human approval is impersonated.",
+  "approved_bundle_workflow": "Deliberately blocked by pending reviews; not claimed as a successful approved publication run.",
+  "additional_unverified_followups": 3
+}

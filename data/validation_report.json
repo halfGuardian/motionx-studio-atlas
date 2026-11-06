@@ -1,6 +1,6 @@
 {
-  "records": 129,
-  "companies": 66,
+  "records": 141,
+  "companies": 77,
   "errors": [],
   "warnings": [
     "beyond-vancouver: approximate coordinates (city); not a verified street address",
@@ -29,8 +29,7 @@
     "metropolia: legacy/unreviewed evidence; source presence is not independent verification",
     "koawa: approximate coordinates (city); not a verified street address",
     "koawa: legacy/unreviewed evidence; source presence is not independent verification",
-    "audiomotion: approximate coordinates (unverified); not a verified street address",
-    "audiomotion: legacy/unreviewed evidence; source presence is not independent verification",
+    "audiomotion: approximate coordinates (city); not a verified street address",
     "versatile: approximate coordinates (city); not a verified street address",
     "versatile: legacy/unreviewed evidence; source presence is not independent verification",
     "lategra: approximate coordinates (unverified); not a verified street address",
@@ -149,7 +148,21 @@
     "cd-projekt-red-boston: approximate coordinates (city); not a verified street address",
     "remedy-espoo: approximate coordinates (city); not a verified street address",
     "remedy-stockholm: approximate coordinates (city); not a verified street address",
-    "metricminds-frankfurt: approximate coordinates (city); not a verified street address"
+    "metricminds-frankfurt: approximate coordinates (city); not a verified street address",
+    "blue-mammoth-alpharetta: approximate coordinates (city); not a verified street address",
+    "ubisoft-philippines-taguig: approximate coordinates (city); not a verified street address",
+    "ubisoft-barcelona-main: approximate coordinates (city); not a verified street address",
+    "ubisoft-barcelona-mobile-main: approximate coordinates (city); not a verified street address",
+    "ivory-tower-villeurbanne: approximate coordinates (city); not a verified street address",
+    "ubisoft-pune-main: approximate coordinates (city); not a verified street address",
+    "massive-malmo: approximate coordinates (city); not a verified street address",
+    "ubisoft-montpellier-main: approximate coordinates (region); not a verified street address",
+    "ubisoft-annecy-main: approximate coordinates (city); not a verified street address",
+    "ubisoft-milan-assago: approximate coordinates (city); not a verified street address",
+    "studiot3d-london-stage-1: approximate coordinates (city); not a verified street address",
+    "studiot3d-london-stage-2: approximate coordinates (city); not a verified street address",
+    "possible duplicate: ['ubisoft-barcelona-main', 'ubisoft-barcelona-mobile-main'] (website/city)",
+    "possible duplicate: ['studiot3d-london-stage-1', 'studiot3d-london-stage-2'] (company/city, website/city)"
   ],
   "accepted": true
 }
