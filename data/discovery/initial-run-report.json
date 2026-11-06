@@ -1,0 +1,56 @@
+{
+  "observed_on": "2026-11-06",
+  "events": [],
+  "sources": [
+    {
+      "id": "ubisoft-studios",
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    },
+    {
+      "id": "ea-studios",
+      "url": "https://www.ea.com/careers/teams/ea-studios",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    },
+    {
+      "id": "cinesite-group",
+      "url": "https://cinesite.com/our-studios/",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    },
+    {
+      "id": "dneg-studios",
+      "url": "https://www.dneg.com/contact",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    },
+    {
+      "id": "imaginarium-sites",
+      "url": "https://www.imaginariumstudios.co.uk/locations",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    },
+    {
+      "id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "attempted_on": "2026-11-06",
+      "status": "fetch_or_parse_error",
+      "error_type": "gaierror",
+      "note": "Source unavailable, blocked or unsupported; retain candidates and review access/adapter."
+    }
+  ],
+  "published_records": 0,
+  "pending_candidates": 41
+}

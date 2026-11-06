@@ -1,0 +1,55 @@
+name: Discover studio candidates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 7 * * 1'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: discovery-main
+  cancel-in-progress: false
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore latest successful run state, or use committed backlog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p previous
+          previous_run=$(gh run list --workflow discovery.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if [ -n "$previous_run" ]; then
+            if ! gh run download "$previous_run" --name studio-discovery --dir previous; then
+              echo '::warning::Previous artifact unavailable; starting from committed backlog. Historical disappearance detection is unavailable for this run.'
+            fi
+          fi
+          if [ ! -f previous/queue.json ]; then
+            echo '::warning::No prior queue artifact; starting from committed backlog. This run cannot detect historical disappearances.'
+            cp data/discovery/backlog.json previous/queue.json
+          fi
+      - name: Collect candidates without editing the public database
+        run: |
+          python tools/discovery.py scan --state previous/queue.json --output discovery-run
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = json.loads(Path('discovery-run/report.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as stream:
+              stream.write('## Unverified studio discovery\n\n')
+              stream.write(f"Pending candidates: {report['pending_candidates']}; changes: {len(report['events'])}; published: 0\n\n")
+              for source in report['sources']:
+                  stream.write(f"- {source['id']}: {source['status']}\n")
+                  if source['status'] != 'ok':
+                      print(f"::warning::Source {source['id']}: {source['status']}. No closure or verification inferred.")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: studio-discovery
+          path: discovery-run/
+          retention-days: 90

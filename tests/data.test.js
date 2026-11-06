@@ -123,3 +123,20 @@ test('10000 location grouping retains all records and exact original coordinates
   assert.ok(groups.some(g => g.length > 1));
   assert.equal(JSON.stringify(synthetic), before);
 });
+
+test('viewport grouping retains coincident studios and leaves source coordinates intact', () => {
+  const {coordinateGroups,visibleCoordinateGroups} = require('../data.js');
+  const fixtures = [{id:'a',lat:0,lng:0},{id:'b',lat:0,lng:0},{id:'c',lat:45,lng:140}];
+  const original = JSON.stringify(fixtures), groups = coordinateGroups(fixtures);
+  assert.deepEqual(visibleCoordinateGroups(groups,{west:-10,east:10,south:-10,north:10}).map(g=>g.map(r=>r.id)), [['a','b']]);
+  assert.equal(JSON.stringify(fixtures),original);
+  assert.equal(visibleCoordinateGroups(groups,{west:-180,east:180,south:-90,north:90}).length,2);
+});
+test('viewport grouping handles the antimeridian and repeated world copies', () => {
+  const {coordinateGroups,visibleCoordinateGroups} = require('../data.js');
+  const groups=coordinateGroups([{id:'east',lat:0,lng:179},{id:'west',lat:0,lng:-179},{id:'centre',lat:0,lng:0},{id:'north',lat:80,lng:179}]);
+  for (const [west,east] of [[170,190],[170,-170],[530,550],[-190,-170]]) {
+    assert.deepEqual(visibleCoordinateGroups(groups,{west,east,south:-10,north:10}).map(g=>g[0].id),['east','west']);
+  }
+  assert.deepEqual(visibleCoordinateGroups(groups,{west:-200,east:200,south:-10,north:10}).map(g=>g[0].id),['east','west','centre']);
+});
