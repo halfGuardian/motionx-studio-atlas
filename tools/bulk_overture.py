@@ -27,6 +27,18 @@ def run(output,release=RELEASE):
     import duckdb
     if not re.fullmatch(r'20\d\d-\d\d-\d\d\.\d+',release):raise ValueError('invalid release identity')
     output=Path(output);folder=output/'overture';folder.mkdir(parents=True,exist_ok=True)
+    previous=output/'overture-collection.json'
+    if previous.exists():
+        cached=read(previous)
+        if cached.get('complete') and cached.get('release')==release:
+            pages=sorted(folder.glob('places-*.meta.json'));count=0
+            for meta_path in pages:
+                meta=read(meta_path);values=read(meta_path.with_name(meta_path.name.replace('.meta.json','.json')))
+                if meta.get('query_pattern')!=CANDIDATE_PATTERN or meta.get('release')!=release or digest(values)!=meta.get('projection_hash'):raise ValueError('cached snapshot integrity/query conflict')
+                count+=len(values)
+            if len(pages)!=cached.get('pages') or count!=cached.get('raw_source_records'):raise ValueError('cached snapshot incomplete')
+            print('OVERTURE_COLLECTION '+json.dumps({**cached,'cache_reused':True,'freshness_note':'Immutable release snapshot reused; observation dates NOT advanced.'}),flush=True)
+            return cached
     report={'id':'overture','adapter':'documented_public_geoparquet','release':release,'observed_on':date.today().isoformat(),'complete':False,'errors':[], 'permission_basis':'Explicit official downloadable Places release under per-provider CDLA-Permissive-2.0 / Apache-2.0 / CC0 licences. No website crawling. OSM/WD API restrictions are not changed or bypassed.','policy_urls':['https://docs.overturemaps.org/getting-data/','https://docs.overturemaps.org/guides/places/','https://docs.overturemaps.org/attribution/'],'published_records':0}
     start=time.monotonic()
     try:
@@ -36,6 +48,7 @@ def run(output,release=RELEASE):
         keys=[e.text for e in root.findall('.//{*}Key') if e.text.endswith('.parquet')]
         if not keys:raise ValueError('documented release has no accessible Places parquet objects')
         report['listing_sha256']=hashlib.sha256(listing).hexdigest();report['objects']=keys
+        write(output/'overture-collection.json',report)
         con=duckdb.connect();con.execute("SET memory_limit='1500MB'; SET threads=2; SET temp_directory='/tmp/motionx-duckdb';")
         con.execute('INSTALL httpfs; LOAD httpfs;')
         con.execute("SET s3_region='us-west-2'; SET http_timeout=120000; SET http_retries=2;")
@@ -50,6 +63,7 @@ def run(output,release=RELEASE):
         inventory=[{'category':c,'count':n,'selected_for_research':bool(c and re.search(CANDIDATE_PATTERN,c,re.I))} for c,n in rows]
         write(folder/'category-inventory.json',inventory);report['global_places_scanned']=sum(r['count'] for r in inventory);report['selected_categories']=[r for r in inventory if r['selected_for_research']]
         print('OVERTURE_CATEGORY_INVENTORY '+json.dumps(report['selected_categories']),flush=True)
+        write(output/'overture-collection.json',report)
         # All qualifying category rows, all countries. No arbitrary LIMIT.
         select=f'''SELECT id AS source_record_id,names.primary AS name,{cat} AS category,
           bbox.xmin AS lng,bbox.ymin AS lat,bbox.xmax AS xmax,bbox.ymax AS ymax,

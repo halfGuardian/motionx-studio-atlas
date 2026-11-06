@@ -146,6 +146,7 @@
     const caps=[...new Set(filters.capabilities || [])], mode=filters.capabilityMode==='any'?'some':'every';
     return index.entries.filter(entry => {
       const r=entry.row;
+      if(filters.evidenceClass && r.evidence_class!==filters.evidenceClass)return false;
       if (filters.country && r.country!==filters.country || city && !entry.city.includes(city) ||
           filters.locationType && (r.location_type || 'uncertain')!==filters.locationType ||
           filters.company && r.company_id!==filters.company ||
@@ -178,7 +179,8 @@
     } catch { return {kind:'invalid',id:''}; }
   }
   const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
-    'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships'];
+    'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships',
+    'evidence_class','source_observed_on','website_kind','identity_status','source_provenance','license','attribution'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
       value && typeof value==='object'?JSON.stringify(value):String(value??'');
@@ -218,7 +220,7 @@
     }
     return [...cells.values()];
   }
-  const api = {validateDatabase, loadDatabase, filterRecords, coordinateGroups, visibleCoordinateGroups, sectors, httpsURL, fold, createDirectoryIndex, queryDirectory, relatedOrganisations, profileHash, parseProfileHash, csvCell, exportCSV, createSpatialIndex, clusterCoordinateGroups};
+  const api = {validateDatabase, loadDatabase, validDate, filterRecords, coordinateGroups, visibleCoordinateGroups, sectors, httpsURL, fold, createDirectoryIndex, queryDirectory, relatedOrganisations, profileHash, parseProfileHash, csvCell, exportCSV, createSpatialIndex, clusterCoordinateGroups};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.MotionXData = api;
 })(globalThis);

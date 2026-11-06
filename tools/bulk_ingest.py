@@ -29,6 +29,8 @@ def source_policy(config):
     for s in config['sources']:
         if not s.get('enabled'):continue
         if not s.get('license') or not url_valid(s.get('license_url')) or not s.get('review') or not s.get('policy_urls'):raise ValueError('source licence/access review required')
+        if s.get('id') in result or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',s.get('id','')):raise ValueError('invalid/duplicate source identity')
+        if s.get('adapter') not in ('wikidata_sparql','overpass','overture_geoparquet','licensed_batch'):raise ValueError('unreviewed source adapter')
         result[s['id']]=s
     return result
 
@@ -106,13 +108,13 @@ def wkb_point(value):
         return (lat,lng) if math.isfinite(lat) and math.isfinite(lng) and abs(lat)<=90 and abs(lng)<=180 else None
     except (ValueError,TypeError,IndexError,struct.error):return None
 
-PROVIDER_LICENSES={**{normalized(n):'CDLA-Permissive-2.0' for n in ('Meta','Microsoft','PinMeTo','Krick','RenderSEO','DAC','BrightQuery','Birdeye','Uberall','OpenTravel','Overture','Overture-signals')},'foursquare':'Apache-2.0','alltheplaces':'CC0-1.0'}
+PROVIDER_LICENSES={**{normalized(n):'CDLA-Permissive-2.0' for n in ('Meta','Microsoft','PinMeTo','Krick','RenderSEO','DAC','BrightQuery','Birdeye','Uberall','OpenTravel')},'foursquare':'Apache-2.0','alltheplaces':'CC0-1.0'}
 def normalize_overture(raw,observed,policy):
     rid=raw['source_record_id'];category=raw.get('category','');reasons=[]
     sector=policy.get('eligible_categories',{}).get(category)
     if not sector:reasons.append('category not yet reviewed as an eligible production business/facility; research only')
     if raw.get('operating_status') in ('permanently_closed','temporarily_closed'):reasons.append('directory has a closure signal; requires research, never closes an existing published location')
-    if not isinstance(raw.get('confidence'),(float,int)) or raw['confidence']<.9:reasons.append('provider existence confidence below 0.9 or unavailable; not an independent verification score')
+    if type(raw.get('confidence')) not in (float,int) or not math.isfinite(raw['confidence']) or not .9<=raw['confidence']<=1:reasons.append('provider existence confidence below 0.9 or unavailable; not an independent verification score')
     name=raw.get('name','');coords=wkb_point(raw.get('geometry_wkb'))
     if not coords:reasons.append('exact source Point geometry missing; bbox/city coordinates not substituted')
     addresses=raw.get('addresses') or []
@@ -129,7 +131,7 @@ def normalize_overture(raw,observed,policy):
     source=raw['filename']
     if not source.startswith('https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy['release']+'/theme=places/type=place/') or not source.endswith('.parquet'):raise ValueError('unapproved source object path')
     organisation='overture-org-'+digest([normalized(name),(urlsplit(website).hostname or '').removeprefix('www.')])[:24] if website else 'overture-org-'+digest(rid)[:24]
-    return {'candidate_id':'overture-'+re.sub('[^a-z0-9-]','-',rid.lower()),'source_record_id':rid,'source_id':'overture','organisation_key':organisation,
+    return {'candidate_id':'overture-'+re.sub('[^a-z0-9]+','-',rid.lower()).strip('-'),'source_record_id':rid,'source_id':'overture','organisation_key':organisation,
         'name':name,'city':city,'country':countries[0] if len(countries)==1 else '', 'lat':coords[0] if coords else None,'lng':coords[1] if coords else None,
         'website':website or source,'website_kind':'official' if website else 'source_listing','sectors':[sector] if sector else [],'facility_type':'uncertain',
         'place_basis':'Original Overture Point geometry, not a verified facility geocode. Municipality/country copied only from provider locality/country fields.',
@@ -137,6 +139,31 @@ def normalize_overture(raw,observed,policy):
         'provider_confidence':raw.get('confidence'),'source_operating_status':raw.get('operating_status'),'license':' AND '.join(licences),
         'license_url':policy['license_url'],'attribution':'Overture Maps Foundation; '+', '.join(sorted({s.get('dataset','') for s in providers}))+'. Foursquare data transformed to Overture schema; MotionX filters/normalizes fields. See data/bulk/LICENSES.',
         'class':'C' if reasons else 'B','reasons':reasons or ['Permissively licensed production-place directory listing; operating status, site type and capabilities remain uncorroborated'],
+        'capabilities':[],'capability_evidence':{},'is_location_reference':bool(coords)}
+
+def normalize_batch(raw,observed,policy):
+    """Only reviewed directory mappings can produce B. Input claims cannot produce A."""
+    sid=policy['id'];key=raw['source_record_id'];reasons=[]
+    name=raw.get('name','');city=raw.get('city') or 'Municipality not supplied';place=country(raw.get('country',''))
+    lat,lng=raw.get('lat'),raw.get('lng')
+    coords=all(type(v) in (int,float) and math.isfinite(v) for v in (lat,lng)) and abs(lat)<=90 and abs(lng)<=180
+    sectors=[s for s in raw.get('sectors',[]) if s in policy.get('eligible_sectors',[])]
+    if not policy.get('physical_place_directory'):reasons.append('company listing does not establish a physical production place')
+    if not sectors:reasons.append('sector mapping requires source review')
+    if not coords:reasons.append('valid original source coordinates unavailable')
+    if not place:reasons.append('country missing or unsupported')
+    if not name.strip():reasons.append('operating/facility name missing')
+    website=raw.get('website');url=raw.get('source_url')
+    if not url_valid(url):reasons.append('record-level source URL missing or invalid')
+    host=(urlsplit(website).hostname or '').removeprefix('www.') if url_valid(website) else ''
+    return {'candidate_id':sid+'-'+digest(key)[:28],'source_record_id':key,'source_id':sid,
+        'organisation_key':sid+'-org-'+digest([normalized(name),host] if host else key)[:24],
+        'name':name,'city':city,'country':place,'lat':lat if coords else None,'lng':lng if coords else None,
+        'website':website if url_valid(website) else url,'website_kind':'official' if url_valid(website) else 'source_listing',
+        'sectors':sectors,'facility_type':'uncertain','place_basis':'Directory point and locality as supplied; facility accuracy and current operation not independently corroborated.',
+        'parent_claims':raw.get('parent_claims',[]),'source_observed_on':observed,'evidence_urls':[url] if url_valid(url) else [],
+        'license':policy['license'],'license_url':policy['license_url'],'attribution':policy['attribution'],
+        'class':'C' if reasons else 'B','reasons':reasons or ['Permitted production-place directory listing; not independent verification'],
         'capabilities':[],'capability_evidence':{},'is_location_reference':bool(coords)}
 
 SCHEMA='''PRAGMA journal_mode=WAL;
@@ -161,13 +188,14 @@ def ingest(folder,output,config,base,ledger=None):
     output=Path(output)
     if output.exists():raise ValueError('fresh output directory required; reuse --ledger for incremental history')
     policies=source_policy(config);db=sqlite3.connect(ledger or ':memory:');db.executescript(SCHEMA)
-    grouped={};raw_count=0;source_counts=Counter();repeat=0;observed=date.today().isoformat();hashes=[]
+    grouped={};dates={};raw_count=0;source_counts=Counter();repeat=0;observed=date.today().isoformat();hashes=[]
     with db:
         for sid,r,meta in inputs(Path(folder),policies):
-            raw_count+=1;source_counts[sid]+=1;key=r['source_record_id'];h=digest(r);hashes.append(h);observed=meta['observed_on']
+            raw_count+=1;source_counts[sid]+=1;key=r['source_record_id'];h=digest(r);observed=meta['observed_on'];hashes.append(digest([sid,key,h,observed]))
             cursor=db.execute('INSERT OR IGNORE INTO observations VALUES(?,?,?,?,?,?)',(sid,key,h,observed,observed,json.dumps(r,ensure_ascii=False)))
             if not cursor.rowcount:repeat+=1
-            db.execute('UPDATE observations SET last_seen=? WHERE source=? AND source_key=? AND content_hash=?',(observed,sid,key,h))
+            db.execute('UPDATE observations SET first_seen=min(first_seen,?),last_seen=max(last_seen,?) WHERE source=? AND source_key=? AND content_hash=?',(observed,observed,sid,key,h))
+            dates[sid,key]=min(dates.get((sid,key),observed),observed)
             if (sid,key) not in grouped:grouped[sid,key]=r
             elif sid=='wikidata':
                 g=grouped[sid,key]
@@ -179,19 +207,26 @@ def ingest(folder,output,config,base,ledger=None):
         db.execute('INSERT OR IGNORE INTO runs VALUES(?,?,?,?,?)',(run,observed,digest(sorted(hashes)),digest(base),digest(config)))
         names,hosts=domains(base);index=DuplicateIndex(base);decisions=[];proposed=[];dupes=[]
         for (sid,key),raw in sorted(grouped.items()):
-            c={'wikidata':normalize_wikidata,'openstreetmap':normalize_osm,'overture':normalize_overture}[sid](raw,observed,policies[sid]);c['observation_hash']=digest(raw)
+            seen_on=dates[sid,key]
+            adapter=policies[sid]['adapter']
+            normalizer={'wikidata_sparql':normalize_wikidata,'overpass':normalize_osm,'overture_geoparquet':normalize_overture,'licensed_batch':normalize_batch}[adapter]
+            c=normalizer(raw,seen_on,policies[sid]);c['observation_hash']=digest(raw)
             company_matches=names.get(normalized(c['name']),set()) or hosts.get((urlsplit(c['website']).hostname or '').removeprefix('www.'),set())
             c['existing_organisation_matches']=sorted(company_matches)
             # Company matching is advisory; never merges distinct branches or inherits services.
             tentative={'id':c['candidate_id'],'company_id':next(iter(company_matches)) if len(company_matches)==1 else c['organisation_key'],'name':c['name'],'city':c['city'],'country':c['country'],'website':c['website']}
-            matches=index.matches(tentative) if c['city']!='Municipality not supplied' else []
+            match_row={**tentative,'website':c['website'] if c['website_kind']=='official' else ''}
+            matches=index.matches(match_row) if c['city']!='Municipality not supplied' else []
             if matches:
                 c['class']='C';c['reasons'].append('possible existing location: source/city/name match is insufficient to overwrite or auto-merge a reviewed facility');c['potential_duplicates']=matches;dupes.append(c['candidate_id'])
-            c['provenance']=[{'source_id':sid,'source_record_id':key,'url':u,'license':c['license'],'license_url':c['license_url'],'observed_on':observed,'observation_hash':c['observation_hash']} for u in c['evidence_urls']]
+            c['provenance']=[{'source_id':sid,'source_record_id':key,'url':u,'license':c['license'],'license_url':c['license_url'],'observed_on':seen_on,'observation_hash':c['observation_hash']} for u in c['evidence_urls']]
             c['publication_approved']=False;c['decision']='propose_source_listed' if c['class']=='B' else 'research_required'
             if c['class']=='B':
-                r={**tentative,'lat':c['lat'],'lng':c['lng'],'address':c['place_basis'],'categories':c['sectors'],'capabilities':[],'capability_evidence':{},'evidence_state':'unknown','evidence_class':'B','evidence':c['evidence_urls'][0],'verified_on':'','source_observed_on':observed,'coordinate_precision':'approximate','coordinate_source':c['evidence_urls'][0],'location_type':c['facility_type'],'relationships':[], 'status':'Source-listed directory record; current operation, physical precision and site capabilities have not been independently corroborated. '+c['place_basis'],'website_kind':c['website_kind'],'source_provenance':c['provenance'],'license':c['license'],'attribution':c['attribution']}
+                r={**tentative,'lat':c['lat'],'lng':c['lng'],'address':c['place_basis'],'categories':c['sectors'],'capabilities':[],'capability_evidence':{},'evidence_state':'unknown','evidence_class':'B','evidence':c['evidence_urls'][0],'verified_on':'','source_observed_on':seen_on,'coordinate_precision':'approximate','coordinate_source':c['evidence_urls'][0],'location_type':c['facility_type'],'relationships':[], 'status':'Source-listed directory record; current operation, physical precision and site capabilities have not been independently corroborated. '+c['place_basis'],'website_kind':c['website_kind'],'source_provenance':c['provenance'],'license':c['license'],'attribution':c['attribution'],'identity_status':'matched_existing' if len(company_matches)==1 else 'source_provisional'}
                 proposed.append(r)
+                # Later observations are reviewed as possible duplicates, never silently
+                # merged into this proposal. Same-owner, same-city facilities survive in C.
+                index.add(match_row)
             db.execute('INSERT OR IGNORE INTO decisions VALUES(?,?,?,?,?)',(run,c['candidate_id'],c['class'],c['decision'],json.dumps(c,ensure_ascii=False)));decisions.append(c)
     counts=Counter(c['class'] for c in decisions)
     report={'version':1,'run_id':run,'observed_on':observed,'raw_source_records':raw_count,'source_records':dict(source_counts),'unique_candidate_identities':len(decisions),'unique_location_references':sum(c['is_location_reference'] for c in decisions),'organisation_leads_without_physical_facility_evidence':sum(not c['is_location_reference'] for c in decisions),'duplicate_source_observations_coalesced':raw_count-len(decisions),'previously_seen_observation_versions':repeat,'potential_existing_duplicates':len(dupes),'candidate_classes':dict(counts),'proposed_public_additions':len(proposed),'baseline_locations_preserved':len(base),'baseline_hash':digest(base),'published_records':0,'approval':'human review of exact proposed files required; no source or classifier grants approval','sources':[{k:p.get(k) for k in ('id','license','license_url','attribution','endpoint','policy_urls','review')} for p in policies.values()],'reasons':dict(Counter(reason for c in decisions if c['class']=='C' for reason in c['reasons']))}
@@ -201,7 +236,10 @@ def ingest(folder,output,config,base,ledger=None):
         for c in decisions:f.write(json.dumps(c,ensure_ascii=False)+'\n')
     with (output/'candidates.csv').open('w',newline='') as f:
         w=csv.DictWriter(f,fieldnames=['candidate_id','name','city','country','class','decision','source_id','source_record_id','evidence_urls','reasons','license']);w.writeheader()
-        for c in decisions:w.writerow({k:json.dumps(c[k],ensure_ascii=False) if isinstance(c[k],list) else c[k] for k in w.fieldnames})
+        def safe(value):
+            text=json.dumps(value,ensure_ascii=False) if isinstance(value,list) else str(value)
+            return "'"+text if re.match(r'^[\s\u200b\u200c\u200d]*[=+@-]',text) else text
+        for c in decisions:w.writerow({k:safe(c[k]) for k in w.fieldnames})
     rows=''.join('<tr><td>'+html.escape(c['name'])+'</td><td>'+html.escape(c['country'])+'</td><td>'+c['class']+'</td><td>'+html.escape('; '.join(c['reasons']))+'</td></tr>' for c in decisions)
     (output/'coverage.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>MotionX bulk research</title><style>body{font:16px system-ui;background:#111824;color:#eef;padding:2rem}table{border-collapse:collapse}td,th{border:1px solid #789;padding:.5rem}pre{white-space:pre-wrap}</style><h1>Bulk acquisition review — no publication approved</h1><p>A: current site evidence. B: source-listed, not independently corroborated. C: research-only. Company leads are not physical studio counts.</p><pre>'+html.escape(json.dumps(report,indent=2))+'</pre><table><tr><th>Name</th><th>Country</th><th>Class</th><th>Reasons</th></tr>'+rows+'</table></html>')
     if ledger:db.execute('PRAGMA wal_checkpoint(TRUNCATE)')

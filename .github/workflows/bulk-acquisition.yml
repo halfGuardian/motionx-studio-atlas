@@ -9,7 +9,7 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     concurrency:
       group: licensed-bulk-${{ github.event.pull_request.number || 'manual' }}
       cancel-in-progress: false
@@ -21,8 +21,10 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: bulk-run
-          key: bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-${{ github.run_id }}
-          restore-keys: bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-
+          key: bulk-snapshots-overture-2026-10-21.0-${{ github.run_id }}
+          restore-keys: |
+            bulk-snapshots-overture-2026-10-21.0-
+            bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-
       - run: pip install duckdb==1.4.3
       - name: Collect approved API metadata, never canonical records
         run: |
@@ -30,7 +32,10 @@ jobs:
           python tools/bulk_overture.py --output bulk-run
       - name: Prepare research ledger and coverage report when available
         run: |
-          if [ -f tools/bulk_ingest.py ]; then python tools/bulk_ingest.py --input bulk-run --output bulk-review; fi
+          python tools/bulk_ingest.py --input bulk-run --output bulk-review --ledger bulk-run/research.sqlite
+      - name: Create immutable research archive (never public studio data)
+        if: always()
+        run: python tools/bulk_archive.py archive --snapshots bulk-run --review bulk-review --output bulk-archive --run-id "$GITHUB_RUN_ID"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -38,4 +43,5 @@ jobs:
           path: |
             bulk-run/
             bulk-review/
+            bulk-archive/
           retention-days: 90

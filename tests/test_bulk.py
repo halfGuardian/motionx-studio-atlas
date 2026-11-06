@@ -1,0 +1,135 @@
+"""Bulk research must preserve provenance and never manufacture verification."""
+import copy,csv,json,sqlite3,struct,sys,tempfile,unittest
+from pathlib import Path
+from unittest.mock import Mock,patch
+
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
+import bulk_collect as collect
+import bulk_ingest as bulk
+import bulk_batch as batch
+from discovery import read,write,digest
+
+def policy():
+    p=copy.deepcopy(next(s for s in read(ROOT/'data/bulk/sources.json')['sources'] if s['id']=='overture'))
+    p['eligible_categories']={'film_studio':'Film Production'};return p
+
+def place(key='one',name='Test Production',city='Test City',**values):
+    return {'source_record_id':key,'name':name,'category':'film_studio','geometry_wkb':(b'\x01'+struct.pack('<Idd',1,10.,20.)).hex(),
+        'websites':['https://example.test/'+key], 'addresses':[{'country':'NZ','locality':city}],
+        'sources':[{'dataset':'Meta','record_id':key,'property':''}], 'confidence':.99,'operating_status':'open',
+        'filename':'https://overturemaps-us-west-2.s3.amazonaws.com/release/'+policy()['release']+'/theme=places/type=place/a.parquet',**values}
+
+class BulkTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name)
+        self.config={'sources':[policy()]}
+    def snapshot(self,records,key='places-00000',observed='2026-11-06'):
+        folder=self.root/'input'/'overture';write(folder/(key+'.json'),records)
+        write(folder/(key+'.meta.json'),{'source':'overture','license':'per-provider','observed_on':observed,'projection_hash':digest(records)})
+    def run_ingest(self,suffix='1',base=None):
+        with patch('builtins.print'):
+            return bulk.ingest(self.root/'input',self.root/('out'+suffix),self.config,base or [],self.root/'ledger.sqlite')
+    def test_source_listed_never_verified_or_capture(self):
+        self.snapshot([place()]);r=self.run_ingest();self.assertEqual(r['candidate_classes'],{'B':1});self.assertEqual(r['published_records'],0)
+        row=read(self.root/'out1/proposed-b.json')[0]
+        self.assertEqual(row['evidence_class'],'B');self.assertEqual(row['capabilities'],[]);self.assertEqual(row['verified_on'],'')
+        self.assertEqual(row['source_provenance'][0]['observed_on'],'2026-11-06')
+    def test_geometry_is_original_not_bbox(self):
+        r=bulk.normalize_overture(place(lat=-55,lng=-120),'2026-11-06',policy())
+        self.assertEqual((r['lat'],r['lng']),(20,10))
+        r=bulk.normalize_overture(place(geometry_wkb=None,lat=20,lng=10),'2026-11-06',policy())
+        self.assertEqual(r['class'],'C');self.assertIsNone(r['lat'])
+    def test_ineligible_category_and_unknown_licence_deferred(self):
+        for values in ({'category':'photo_shop'},{'sources':[{'dataset':'Unreviewed provider'}]},{'operating_status':'permanently_closed'},{'confidence':.5},{'confidence':True},{'confidence':float('nan')},{'addresses':[]}):
+            self.assertEqual(bulk.normalize_overture(place(**values),'2026-11-06',policy())['class'],'C')
+    def test_existing_and_within_batch_duplicate_are_not_overwritten(self):
+        self.snapshot([place('one'),place('two')]);base=[{'id':'existing','company_id':'known','name':'Test Production','city':'Test City','country':'New Zealand','website':'https://example.test'}];before=copy.deepcopy(base)
+        r=self.run_ingest(base=base);self.assertEqual(r['candidate_classes'],{'C':2});self.assertEqual(base,before)
+        self.assertEqual(read(self.root/'out1/proposed-b.json'),[])
+    def test_two_facilities_same_city_remain_in_audit(self):
+        self.snapshot([place('one'),place('two')]);r=self.run_ingest()
+        self.assertEqual(r['unique_candidate_identities'],2);self.assertEqual(r['candidate_classes'],{'B':1,'C':1})
+        self.assertEqual(len((self.root/'out1/candidates.jsonl').read_text().splitlines()),2)
+    def test_repeat_import_and_incremental_history(self):
+        self.snapshot([place()]);first=self.run_ingest();second=self.run_ingest('2')
+        self.assertEqual(first['run_id'],second['run_id']);self.assertEqual(second['previously_seen_observation_versions'],1)
+        self.assertEqual(read(self.root/'out1/proposed-b.json'),read(self.root/'out2/proposed-b.json'))
+        self.snapshot([place(name='Changed source name')]);third=self.run_ingest('3')
+        self.assertNotEqual(first['run_id'],third['run_id'])
+        with sqlite3.connect(self.root/'ledger.sqlite') as db:
+            self.assertEqual(db.execute('select count(*) from observations').fetchone()[0],2)
+            self.assertEqual(db.execute('select count(*) from runs').fetchone()[0],2)
+    def test_dates_are_per_record_not_last_page_and_cache_not_freshened(self):
+        self.snapshot([place('one')],observed='2026-10-21');self.snapshot([place('two','Other Company','Other City',websites=[])],'places-00001')
+        self.run_ingest();rows=read(self.root/'out1/proposed-b.json')
+        self.assertEqual([r['source_observed_on'] for r in rows],['2026-10-21','2026-11-06'])
+    def test_corruption_stops_processing(self):
+        self.snapshot([place()]);write(self.root/'input/overture/places-00000.json',[])
+        with self.assertRaisesRegex(ValueError,'hash'):self.run_ingest()
+        self.assertFalse((self.root/'out1').exists())
+    def test_disabled_source_not_processed_and_policy_required(self):
+        self.snapshot([place()]);self.config['sources'][0]['enabled']=False
+        self.assertEqual(self.run_ingest()['raw_source_records'],0)
+        self.config['sources'][0]['enabled']=True;self.config['sources'][0].pop('review')
+        with self.assertRaisesRegex(ValueError,'review'):self.run_ingest('2')
+    def test_csv_formula_is_escaped_and_html_not_injected(self):
+        self.snapshot([place(name='=2+5<img src=x>')]);self.run_ingest()
+        with (self.root/'out1/candidates.csv').open() as f:row=list(csv.DictReader(f))[0]
+        self.assertTrue(row['name'].startswith("'="))
+        self.assertNotIn('<img src=x>',(self.root/'out1/coverage.html').read_text())
+    def test_country_aliases_and_invalid_coords(self):
+        self.assertEqual(bulk.country('NZ'),'New Zealand');self.assertEqual(bulk.country('UK'),'United Kingdom')
+        self.assertEqual(bulk.country('not a country'),'');self.assertIsNone(bulk.point('Point(181 12)'))
+        self.assertIsNone(bulk.wkb_point('garbage'))
+    def test_company_and_headquarters_are_not_physical_facilities(self):
+        p={'id':'wikidata','license':'CC0-1.0','license_url':'https://www.wikidata.org/wiki/Wikidata:Licensing','attribution':'Wikidata'}
+        r=bulk.normalize_wikidata({'source_record_id':'Q123','name':'Company','countries':[{'name':'Canada'}],'headquarters':[{'name':'Toronto','coordinate':'Point(1 2)'}]},'2026-11-06',p)
+        self.assertEqual(r['class'],'C');self.assertIsNone(r['lat'])
+    def test_no_official_source_claim_from_fallback_listing(self):
+        r=bulk.normalize_overture(place(websites=[]),'2026-11-06',policy())
+        self.assertEqual(r['website_kind'],'source_listing');self.assertEqual(r['website'],r['evidence_urls'][0])
+
+class NetworkTests(unittest.TestCase):
+    def test_robots_denial_stops_before_query_no_fallback(self):
+        client=Mock();client.robots.return_value=(False,{'allows':False})
+        config={'sources':[{'id':'wikidata','enabled':True,'adapter':'wikidata_sparql','license':'CC0-1.0','endpoint':'https://query.wikidata.org/sparql','query_classes':{'Q21550789':'Film Production'}}]}
+        with tempfile.TemporaryDirectory() as tmp,patch('builtins.print'):
+            r=collect.collect(config,tmp,client)
+        client.get.assert_not_called();self.assertFalse(r['sources'][0]['complete']);self.assertEqual(r['published_records'],0)
+    def test_network_failure_never_creates_closure_or_deletes_history(self):
+        client=Mock();client.robots.return_value=(True,{'allows':True});client.get.side_effect=OSError('network unavailable')
+        config={'sources':[{'id':'openstreetmap','enabled':True,'adapter':'overpass','license':'ODbL-1.0','endpoint':'https://overpass-api.de/api/interpreter'}]}
+        with tempfile.TemporaryDirectory() as tmp,patch('builtins.print'):
+            path=Path(tmp)/'older.json';write(path,{'history':['retained']});r=collect.collect(config,tmp,client)
+            self.assertEqual(read(path),{'history':['retained']})
+        self.assertFalse(r['sources'][0]['complete']);self.assertIn('network',r['sources'][0]['errors'][0]['reason']);self.assertNotIn('closed',json.dumps(r))
+    def test_private_dns_and_alternate_host_rejected(self):
+        c=collect.Client()
+        with self.assertRaisesRegex(ValueError,'origin'):c.get('https://other.example/api')
+        with patch('bulk_collect.socket.getaddrinfo',return_value=[(None,None,None,None,('127.0.0.1',443))]):
+            with self.assertRaisesRegex(ValueError,'DNS'):c.get('https://query.wikidata.org/sparql')
+        with self.assertRaisesRegex(ValueError,'redirect'):collect.SameOrigin('query.wikidata.org').redirect_request(None,None,302,'',{},'https://other.example')
+    def test_contacts_removed_from_osm_projection(self):
+        rows=collect.clean_osm([{'type':'node','id':1,'tags':{'name':'Studio','phone':'private','email':'private','addr:street':'street','man_made':'studio'}}])
+        self.assertEqual(set(rows[0]['tags']),{'name','man_made'})
+
+class BatchTests(unittest.TestCase):
+    def test_csv_json_bulk_and_approval_columns_rejected(self):
+        policy={'id':'test-directory','enabled':True,'adapter':'licensed_batch','license':'CC0-1.0','license_url':'https://example.test/licence','review':'permitted bulk directory','policy_urls':['https://example.test/terms'],'attribution':'Test directory','physical_place_directory':True,'eligible_sectors':['Animation']}
+        row={'source_record_id':'one','name':'Example Studio','city':'City','country':'NZ','lat':1,'lng':2,'website':'https://example.test','sectors':['Animation'],'source_url':'https://example.test/place/1'}
+        with tempfile.TemporaryDirectory() as tmp,patch('builtins.print'):
+            root=Path(tmp);write(root/'batch.json',[row,{**row,'source_record_id':'two','verified':True}]);r=batch.prepare(root/'batch.json',root/'input',policy['id'],{'sources':[policy]},'2026-11-06')
+            self.assertEqual(r['accepted_observations'],1);self.assertEqual(len(r['rejected']),1)
+            result=bulk.ingest(root/'input',root/'out',{'sources':[policy]},[])
+            self.assertEqual(result['candidate_classes'],{'B':1})
+            with (root/'batch.csv').open('w',newline='') as f:
+                w=csv.DictWriter(f,fieldnames=list(row));w.writeheader();w.writerow({**row,'sectors':'Animation'})
+            r=batch.prepare(root/'batch.csv',root/'csv',policy['id'],{'sources':[policy]},'2026-11-06')
+            self.assertEqual(r['accepted_observations'],1)
+    def test_conflicting_source_identity_rejected_not_overwritten(self):
+        with self.assertRaisesRegex(ValueError,'private'):batch.project({'source_record_id':'one','email':'no'})
+        with self.assertRaisesRegex(ValueError,'stable'):batch.project({'name':'studio'})
+        r=batch.project({'source_record_id':'one','name':'Test','lat':'not a number','lng':'2','sectors':'Animation|VFX'})
+        self.assertIsNone(r['lat']);self.assertEqual(r['sectors'],['Animation','VFX'])
+
+if __name__=='__main__':unittest.main()
