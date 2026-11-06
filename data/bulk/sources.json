@@ -77,7 +77,7 @@
       "id": "gamedev-studios-db",
       "enabled": false,
       "url": "https://github.com/EddieWing/gamedev-studios-db",
-      "reason": "Public README describes 1,116 companies, but no explicit data redistribution licence; LICENSE path returned 404. Do not collect its CSV pending permission; underlying directory-mining rights unresolved."
+      "reason": "Automatic licensed-data acquisition remains disabled: no explicit dataset redistribution licence is stated. The user-directed inclusive research view uses factual company references with Class C / unspecified-terms labels; authored descriptions and social/contact profiles are omitted. It is not an approved source of verified physical facilities."
     },
     {
       "id": "gamedevmap",

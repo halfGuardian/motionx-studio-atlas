@@ -3,7 +3,7 @@
 
 Validation is not human publication approval. No source fetch or database write.
 """
-import gzip,json,tempfile
+import contextlib,gzip,io,json,tempfile
 from pathlib import Path
 from bulk_archive import restore
 from bulk_catalog import build,sha,validate_b
@@ -20,7 +20,13 @@ def check(root=ROOT):
         tmp=Path(tmp);restore(root/archive,tmp/'restored');snapshots=tmp/'restored/snapshots'
         report=ingest(snapshots,tmp/'review',read(root/'data/bulk/sources.json'),read(root/'studios.json'))
         if not report['acquisition_complete']:raise ValueError('complete acquisition provenance required for this release')
-        expected=build(read(tmp/'review/proposed-b.json'),root/'studios.json',tmp/'public',release['source_policy_hash'],report['run_id'])
+        if release.get('mode')=='unified_research':
+            from unified_catalog import build as build_unified
+            companies=Path(release['company_references'])
+            if companies.is_absolute() or '..' in companies.parts or sha(root/companies)!=release['company_reference_sha256']:raise ValueError('company reference projection changed')
+            expected,_=build_unified(snapshots,root/companies,tmp/'public',root/'studios.json',root/'data/bulk/sources.json',observed=release['company_observed_on_utc'],company_source=release['company_source_url'])
+        else:expected=build(read(tmp/'review/proposed-b.json'),root/'studios.json',tmp/'public',release['source_policy_hash'],report['run_id'])
+        if expected['counts']!=release['expected_counts']:raise ValueError('release counts differ from reproduced catalogue')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')
@@ -30,4 +36,6 @@ def check(root=ROOT):
             if compressed.exists() and gzip.decompress(compressed.read_bytes())!=(root/'data/public'/name).read_bytes():raise ValueError('invalid gzip sidecar')
         return {'validation_errors':0,'counts':expected['counts'],'baseline_preserved':release['retained_baseline_sha256'],'raw_source_records':report['raw_source_records'],'research_candidates':report['candidate_classes'].get('C',0),'warnings':expected['warnings'],'approval':'Human review and authorised merge still required; tests are not approval.'}
 
-if __name__=='__main__':print(json.dumps(check(),indent=2))
+if __name__=='__main__':
+    with contextlib.redirect_stdout(io.StringIO()):result=check()
+    print(json.dumps(result,indent=2))

@@ -71,3 +71,25 @@ test('CSV supplies full licence copies and fails closed when required notices ar
   assert.match(D.exportCSV(bundle.rows,bundle),/Test CC0 licence text/);
   s.files.delete('./data/bulk/LICENSES/CC0-1.0.txt');await assert.rejects(catalog.exportBundle(catalog.rows),/notices unavailable/);
 });
+test('inclusive research validation accepts a company without a pin but never verified services',()=>{
+  const {row}=fixture();Object.assign(row,{record_kind:'company_reference',evidence_class:'C',city:'',lat:null,lng:null,coordinate_precision:'unverified',license:'UNSPECIFIED'});
+  C.checkResearch(D,row);assert.throws(()=>C.checkResearch(D,{...row,lat:51,lng:0}),/coordinates/);
+  assert.throws(()=>C.checkResearch(D,{...row,verified_on:'2026-11-06'}),/verification/);
+  const rows=[row,{...row,id:'source-location',record_kind:'source_location',lat:51,lng:0}],index=D.createDirectoryIndex(rows);
+  assert.equal(D.queryDirectory(index,{recordKind:'company_reference'}).length,1);
+  assert.equal(D.queryDirectory(index,{confirmedOnly:true}).length,0);
+});
+test('compressed unified catalogue keeps legacy and company references; corrupted gzip fails without fallback',async()=>{
+  const s=await server(),{gzipSync}=require('node:zlib'),{createHash}=require('node:crypto');
+  s.f.row.record_kind='source_location';const company={...s.f.row,id:'company-only',company_id:'company-only-org',name:'Company Without Pin',city:'',lat:null,lng:null,evidence_class:'C',record_kind:'company_reference',coordinate_precision:'unverified'};
+  const data=[s.f.row,company],packedIndex=[s.f.index[0].concat(['B','source_location']),[company.id,company.company_id,company.name,company.city,company.country,null,null,company.categories,s.f.key,company.source_observed_on,company.identity_status,'C','company_reference']];
+  s.manifest.mode='unified_research';s.manifest.baseline.active_ids=[s.f.a.id,s.f.held.id];s.manifest.baseline.research_only_ids=[];s.manifest.counts={records:4,class_a:1,class_b:1,class_c:2};
+  for(const [path,value,meta] of [['./data/public/index.json',packedIndex,s.manifest.index],['./data/public/'+s.f.key,data,s.manifest.shards[s.f.key]]]){
+    const text=JSON.stringify(value),packed=gzipSync(text);meta.sha256=await C.sha(text);meta.gzip_sha256=createHash('sha256').update(packed).digest('hex');meta.records=value.length;s.files.set(path,text);s.files.set(path+'.gz',packed);
+  }
+  s.files.set('./data/public/manifest.json',JSON.stringify(s.manifest));const catalog=await C.load(D,s.fetcher);
+  assert.equal(catalog.rows.length,4);assert.equal(catalog.rows.find(r=>r.id==='legacy').evidence_class,'C');assert.equal((await catalog.details('company-only')).lat,null);
+  assert.ok(s.calls.includes('./data/public/index.json.gz'));assert.ok(!s.calls.includes('./data/public/index.json'));
+  const bytes=Buffer.from(s.files.get('./data/public/index.json.gz'));bytes[bytes.length-2]^=1;s.files.set('./data/public/index.json.gz',bytes);
+  await assert.rejects(C.load(D,s.fetcher),/integrity/);
+});

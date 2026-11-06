@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "mode": "unified_research",
+  "snapshot_archive": "data/bulk/runs/42300014355",
+  "retained_baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+  "source_policy_hash": "f2c888e9706aaa70b9b0151660e1e7dbe7b64b35a5d5829664c51838e143f84b",
+  "company_references": "data/bulk/unified-input/game-company-references.csv",
+  "company_reference_sha256": "e947fa8bbbc232f4eafc4701a32a41915f26d1ecc939eefeba113b604dec0de5",
+  "company_observed_on_utc": "2026-11-06",
+  "company_source_url": "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+  "acquisition_run": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42287663742",
+  "cached_projection_run": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42300014355",
+  "approval_mode": "manual human PR review; inclusion of B/C research references is not verification; no merge or deployment performed",
+  "expected_counts": {
+    "records": 41735,
+    "public_records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 36879,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1116,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41234
+  }
+}

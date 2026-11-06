@@ -16,7 +16,8 @@ def safe_website(value):
     # Preserve a safe supplied HTTP string as research text; do not invent a
     # working HTTPS endpoint or display it as a verified official link.
     valid=url_valid(value) or isinstance(value,str) and value.startswith('http://') and url_valid('https://'+value[7:])
-    return bool(valid and (urlsplit(value).hostname or '').removeprefix('www.') not in SOCIAL_HOSTS)
+    h=(urlsplit(value).hostname or '').removeprefix('www.') if valid else ''
+    return bool(valid and not any(h==s or h.endswith('.'+s) for s in SOCIAL_HOSTS))
 
 def project(source,destination):
     source=Path(source);destination=Path(destination)

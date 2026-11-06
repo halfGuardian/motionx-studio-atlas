@@ -1,0 +1,82 @@
+{
+  "real_unified_catalogue": {
+    "initial_ready_seconds": 1.283,
+    "unthrottled_app_timings": {
+      "load_validate_ms": 587.7999999988824,
+      "index_ms": 147.30000000074506,
+      "search_ms": 5.900000000372529,
+      "viewport_groups": 0,
+      "rendered_markers": 0,
+      "marker_render_ms": 0.09999999962747097,
+      "ready_ms": 901.0999999996275,
+      "profile_open_ms": 8.599999999627471
+    },
+    "throttled_initial_ready_seconds": 45.085,
+    "throttled_app_timings": {
+      "load_validate_ms": 41572.199999999255,
+      "index_ms": 751.6000000014901,
+      "search_ms": 15.199999999254942,
+      "viewport_groups": 32588,
+      "rendered_markers": 38,
+      "marker_render_ms": 293.19999999925494,
+      "ready_ms": 43192.59999999963
+    },
+    "kind": "real_proposed_catalogue_not_deployed_production",
+    "records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "baseline_bytes": 358282,
+    "index_bytes": 11337757,
+    "index_gzip_bytes": 3296985,
+    "checks": 9,
+    "conditions": "Local HTTP subdirectory / installed headless Chromium. The app explicitly fetches gzip index/shards and checks compressed/decompressed hashes. Pages deployment performance is not measured. CPU/network emulation is not a physical low-memory mobile device."
+  },
+  "synthetic_sharded_fixture": {
+    "kind": "synthetic_only_not_acquisition",
+    "synthetic_locations": 50000,
+    "baseline_retained": 243,
+    "baseline_class_a_visible": 230,
+    "legacy_research_only": 13,
+    "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x950 and 390x844, no CPU/network throttling; not a physical low-memory phone.",
+    "compact_index_bytes": 10219542,
+    "compact_index_gzip_bytes": 546255,
+    "full_detail_bytes": 60064090,
+    "initial_ready_seconds": 1.353,
+    "search_ms": 6.099999999627471,
+    "profile_ms": 65.70000000111759,
+    "viewport_render_ms": 6.299999998882413,
+    "app_timings": {
+      "load_validate_ms": 506.2000000011176,
+      "index_ms": 147.5,
+      "search_ms": 13.199999999254942,
+      "viewport_groups": 1,
+      "rendered_markers": 1,
+      "marker_render_ms": 0.30000000074505806,
+      "ready_ms": 801.0999999996275,
+      "profile_open_ms": 2.099999999627471
+    },
+    "checks": 6
+  },
+  "compatibility_full_detail_fixture": {
+    "synthetic_locations": 50000,
+    "fixture_json_bytes": 50516860,
+    "initial_http_ready_seconds": 11.796,
+    "search_ms": 6.5,
+    "multi_filter_ms": 7.2,
+    "profile_open_ms": 12.5,
+    "complete_smoke_seconds": 13.186,
+    "list_page_size": 50,
+    "client_timings": {
+      "load_validate_ms": 11140.300000000745,
+      "index_ms": 258.79999999981374,
+      "search_ms": 6.5,
+      "viewport_groups": 1,
+      "rendered_markers": 1,
+      "marker_render_ms": 2.2999999998137355,
+      "ready_ms": 11557.600000000559,
+      "profile_open_ms": 2.6000000005587935
+    }
+  },
+  "browser": "Chromium 155.0.8059.79, headless on Debian GNU/Linux 13",
+  "comparison_limits": "Local HTTP delivery representations; not a controlled deployed-production speedup or physical low-memory phone test. Search/profile timings may be warm and are diagnostic snapshots. No synthetic entries enter data/public."
+}

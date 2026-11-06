@@ -1,5 +1,20 @@
 # Global bulk acquisition — v1.1
 
+## Active inclusive research catalogue
+
+The active site combines **243 retained locations + all 40,376 acquired place observations + all 1,116 game-company references = 41,735 records** in one searchable directory. All A/B/C classes are visible together by default. The 13 legacy unknown-evidence identities remain visible. Company-only references are searchable and exportable without invented map coordinates. Record counts are not verified unique facility counts; possible duplicates remain explicit research matches.
+
+The active entry point is `tools/unified_catalog.py`; its research schema permits missing geography only with explicit C/unverified labels. It never changes the strict canonical-location schema or the original `studios.json`. The older `bulk_catalog.py` remains available for a more restrictive B-only proposal, but its A/B-only visibility policy does not govern the active inclusive catalogue.
+
+Game-company references use factual identifiers, source classification/status claims, country and website from the author-provided CSV. All 1,116 identities remain, including 766 Studio, 235 Studio+Publisher and 115 Publisher records; these are 1,001 studio/hybrid and 350 publisher/hybrid entries with overlap. Source statuses are 1,092 Active, four Acquired and 20 Closed, all uncorroborated source labels. No authored descriptions or social/contact profiles are republished. The source README offers download/local use but no explicit dataset redistribution licence: these entries are labelled `UNSPECIFIED` and Class C rather than falsely licensed or verified.
+
+```sh
+python tools/unified_catalog.py --snapshots /path/to/verified-redistributable-snapshot --companies data/bulk/unified-input/game-company-references.csv --observed-on 2026-11-06 --output /tmp/motionx-combined
+python tools/check_bulk_release.py
+```
+
+Dates in source receipts are UTC observation dates from Actions; 2026-11-06 UTC corresponds to 7 November in New Zealand. Public hosting is public access regardless of promotion. The PR presents the exact combined data and code for human review, without merging or deployment.
+
 The acquisition layer processes whole relevant dataset slices, not company-by-company quotas. The reviewed October 2026 Overture Places category inventory scanned **88,418,121 place records / 2,132 categories** and identified **40,376 source listings**: 5,197 animation studios, 18,621 film/television studios and 16,558 film/video-production businesses. These are source taxonomy counts, **not verified MotionX facilities**. Actual retained, deferred and proposed-public counts are recorded in the release reports; synthetic benchmarks are never acquisition counts.
 
 ## Evidence and publication boundary
@@ -8,11 +23,11 @@ The acquisition layer processes whole relevant dataset slices, not company-by-co
 | --- | --- | --- |
 | A | Current recorded evidence supports a specific studio/facility location; capabilities have their own evidence states | Existing reviewed records / separately reviewed research corrections |
 | B | Credible, permitted production-place directory listing; current operation, facility type and services uncorroborated | Proposed on a human-reviewed PR, visibly source-listed |
-| C | Evidence, licensing, geography, operation or identity needs research | Research queue only |
+| C | Evidence, licensing, geography, operation or identity needs research | Visible as research references in the inclusive atlas; never presented as verified facilities |
 
 Source presence, an existence score, a successful test or an automated classifier **never verifies a business claim**. No new A claims or capture services are inferred from this dataset. The three allowed source sectors are kept separate from facility capabilities. The global provider confidence floor is 0.9, a conservative relative-quality filter, **not a calibrated verification probability**. It is not weakened to reach 20,000. Source-listed closures, missing/conflicting municipalities/countries, invalid geometry, unresolved licences and possible duplicates are deferred. A missing listing or failed network request cannot close, move or delete a published studio.
 
-All 243 original records remain unchanged in `studios.json`. Its 230 confirmed-evidence locations form the active Class A baseline. Thirteen legacy unknown-evidence identities are explicitly retained for research, outside the active A/B catalogue; their IDs, original source evidence and all historical releases remain intact. No confirmed capability is lost. The catalogue audit lists every retained and research-only ID.
+All 243 original records remain unchanged in `studios.json`. Its 230 confirmed-evidence locations form Class A; thirteen legacy unknown-evidence identities remain visible as C. Their IDs, original source evidence and all historical releases remain intact. No confirmed capability is lost. The catalogue audit lists every retained ID.
 
 ## Sources and rights reviewed on 6 November 2026
 
@@ -28,7 +43,8 @@ The [source registry](sources.json) records decisions and primary policy URLs. E
 | Overture-signals operating-status overlays | Per-field redistribution mapping not established in reviewed primary documentation. Affected candidates remain C. Redistributable snapshots withhold overlay payloads, preserve every source ID and original observation/page hashes, and retain a link to the complete original Actions artifact. No overlay licence is invented. |
 | Wikidata SPARQL | Structured data CC0, but the canonical endpoint's runtime robots check **denied** the collector in run 42282499526. Zero records collected. Disabled; no alternate host/user-agent/dump workaround. |
 | OSM / Overpass | ODbL obligations evaluated, but runtime robots denied the configured API in the same run. Zero records collected. Disabled. No bulk Nominatim geocoding or API-host workaround. OSM **map tile attribution remains**. |
-| gamedev-studios-db / gamedevmap | No explicit compatible database redistribution grant established. Do not collect CSV or scrape. Public access is insufficient permission. |
+| gamedev-studios-db | Automated feed disabled: no explicit dataset redistribution licence established. The inclusive catalogue contains all 1,116 factual company references from the author-provided CSV, pinned to its source commit, with `UNSPECIFIED` terms and Class C. Authored descriptions and social/contact profiles are omitted; no compatible licence is invented. |
+| gamedevmap | No explicit compatible bulk redistribution grant established. Disabled; no directory scrape. Public access alone is insufficient permission. |
 | Scottish Games Industry | CC BY-NC-SA; compatibility with a general public/commercially useful directory unresolved. Disabled. |
 | Texas / Michigan production directories | No bulk redistribution grant established; mixed personal crew data unsuitable. Disabled pending a licensed company/facility export. |
 | Singapore cultural statistics | Open licence, but aggregate counts rather than individual studio locations; excluded. |
@@ -48,14 +64,16 @@ python tools/bulk_collect.py --output /tmp/motionx-raw
 python tools/bulk_overture.py --output /tmp/motionx-raw
 python tools/bulk_snapshot.py /tmp/motionx-raw --output /tmp/motionx-redistributable
 python tools/bulk_ingest.py --input /tmp/motionx-redistributable --output /tmp/motionx-preview --ledger /tmp/motionx-ledger.sqlite
-python tools/bulk_catalog.py --input /tmp/motionx-redistributable --output /tmp/motionx-proposed-catalog
+python tools/unified_catalog.py --snapshots /tmp/motionx-redistributable --companies data/bulk/unified-input/game-company-references.csv --observed-on 2026-11-06 --company-source https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv --output /tmp/motionx-proposed-catalog
 ```
 
 `bulk_collect.py` honours runtime robots and stops on denied/failed canonical API endpoints. `bulk_overture.py` inventories the entire documented Places release and extracts all matching rows, without a record LIMIT. It preserves the **actual WKB Point**, never rounded bbox minima or guessed city coordinates. Source points are still labelled approximate/unverified facility geocodes. Full cached immutable snapshots are hash-checked and reused without advancing observation dates. Acquisition has bounded response sizes, memory, request timeouts and retries. A workflow success means reports were produced; inspect each source's `complete` / error fields before claiming collection success.
 
 The SQLite ledger keeps immutable observation versions, first/last observation dates, policy/baseline/processor-bound research runs and candidate decisions. The CSV/JSONL/HTML reports include every accepted, rejected/deferred and duplicate-review identity. Repeated source rows coalesce by stable source ID; possible physical duplicates are **held for review**, not automatically deleted or merged. Same-owner, same-city facilities are not assumed to be duplicates. Nearby same-organisation matches across metropolitan/municipality labels are deferred rather than creating an unreviewed second facility. Duplicate pair detail is bounded with explicit additional-group counts, avoiding quadratic report expansion; all input identities remain in the audit.
 
-The catalogue builder writes a **fresh proposal directory**, never `studios.json`, never approval. Existing Class B catalogues are retained automatically (or pass `--previous path`). Missing observations preserve old records; changed fields generate deferred before/proposed hashes rather than overwrites. Review the generated diff and audit, copy the exact proposed files onto a development branch, and request human PR review. Only an authorised merge changes the public site. The original A-record research/import/approval-bundle tools remain separate and unchanged.
+The inclusive builder writes a **fresh proposal directory**, never `studios.json`, never approval. It preserves every baseline ID and includes every observation from this complete snapshot plus the company references. Rebuilding the same inputs is deterministic. For future releases, compare and preserve prior research records explicitly: the inclusive builder does not yet reconcile records absent from a newer complete source release. A missing observation is never a deletion instruction. The immutable ledger and committed archives preserve historical inputs. Review the exact generated diff and audit before copying proposed files onto a development branch. Only an authorised merge changes the public site. The original A-record research/import/approval-bundle tools remain separate and unchanged.
+
+The optional older `bulk_catalog.py` implements a restrictive B-only view with previous-catalogue retention (`--previous path`) and deferred before/proposed hashes for changes. It is tested as an alternative policy, but is not the active site's visibility policy. In the active atlas, C means research is unresolved, not that the record is hidden.
 
 ### Licensed CSV / JSON datasets
 
@@ -87,9 +105,11 @@ An automated branch-write archive job was rejected by automatic approval review 
 
 ## Static delivery and scale
 
-`studios.json` remains the immutable reviewed baseline. `data/public/manifest.json` binds its exact bytes and eligible/research-only IDs to a compact search index and country-grouped detail shards of at most 1,000 records. Initial search/counts, organisation identities and spatial-map access use summaries; profiles lazily fetch and validate full evidence. Shard/index identity mismatches, missing data and licence-copy errors fail clearly. CSV loads all matching full records before downloading. Requests are bounded and shared per shard.
+`studios.json` remains the unchanged reviewed baseline. `data/public/manifest.json` binds its exact bytes and all 243 active IDs to a compact search index and 238 country-grouped detail shards of at most **500 records**. Initial search/counts, organisation identities and spatial-map access use summaries; profiles lazily fetch and validate full evidence. Shard/index identity mismatches, missing data and licence-copy errors fail clearly. CSV loads all matching full records before downloading, including companies without coordinates. Requests are bounded and shared per shard. A full export loads about 105 MB of uncompressed detail JSON; it is substantially heavier than searching or opening a single profile.
 
-The existing spatial buckets, viewport rendering, map grouping, keyboard-accessible coincident-coordinate chooser and original coordinates remain. No new framework, paid map API or backend is introduced. Gzip sidecars are supplied for mirrors/previews; **GitHub Pages must negotiate its own compression**. Sidecars alone do not configure Content-Encoding. Detail sharding is by supplied country, not a claim of independently geocoded boundaries. Country totals include ISO territories and should not be interpreted as sovereign-state counts.
+The existing spatial buckets, viewport rendering, map grouping, keyboard-accessible coincident-coordinate chooser and original coordinates remain. No new framework, paid map API or backend is introduced. The browser explicitly requests `.json.gz` assets and decompresses them with `DecompressionStream`, checking both compressed and uncompressed hashes. Browsers without that API use the hash-checked plain JSON instead. This does not depend on GitHub Pages negotiating Content-Encoding. Detail sharding is by supplied country, not a claim of independently geocoded boundaries. Country totals include ISO territories and should not be interpreted as sovereign-state counts.
+
+See [the release report](reports/summary.md), [coverage dashboard](reports/coverage.html), [coverage metrics](reports/coverage.json), [performance measurements](reports/performance.json) and the [complete source research dashboard](runs/42300014355/review/coverage.html.gz). The full source dashboard is a compressed, self-contained review artifact: download and decompress it before opening. The source decisions in that original dashboard precede the inclusive visibility policy; Class C remains unverified but is now visible in the atlas.
 
 Tests include real-source schema adaptation where acquisition succeeds, network/robots errors, malformed fields, hash corruption, duplicate conflicts, repeat import, state continuity, withheld-overlay safety, catalogue preservation, HTML/CSV safety, lazy profile links, licence-aware CSV and **50,000 synthetic locations**. Synthetic data lives only in temporary test directories. See the release performance report for actual conditions and limitations; browser timings are not business verification.
 

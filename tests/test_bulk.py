@@ -204,6 +204,10 @@ class CatalogueArchiveTests(unittest.TestCase):
         clean=read(self.root/'safe/overture/places-00000.json')[0];self.assertEqual(clean['source_record_id'],raw['source_record_id']);self.assertEqual(clean['original_observation_hash'],digest(raw))
         self.assertIsNone(clean['operating_status']);self.assertNotIn('Overture-signals',[s['dataset'] for s in clean['sources']])
         self.assertEqual(bulk.normalize_overture(clean,'2026-11-06',policy())['class'],'C')
+    def test_social_subdomains_are_not_republished_as_official_company_websites(self):
+        self.assertFalse(snapshot.safe_website('https://m.facebook.com/profile.php?id=123'))
+        self.assertFalse(snapshot.safe_website('https://m.youtube.com/channel/test'))
+        self.assertTrue(snapshot.safe_website('https://studio.example.test/'))
     def test_municipality_alias_near_existing_city_reference_is_deferred(self):
         self.snapshot([place(city='Neighbouring Municipality')]);base=[{'id':'existing','company_id':'existing-org','name':'Test Production','city':'Marketed Metro','country':'New Zealand','website':'https://example.test','lat':20.1,'lng':10.1}]
         r=self.run_ingest(base=base);self.assertEqual(r['candidate_classes'],{'C':1});self.assertEqual(r['potential_existing_duplicates'],1)

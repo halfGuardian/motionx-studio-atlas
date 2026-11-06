@@ -227,7 +227,7 @@ def ingest(folder,output,config,base,ledger=None,existing=()):
                 g['physical_facility']=g.get('physical_facility',False) or r.get('physical_facility',False)
             elif grouped[sid,key]!=r:
                 conflicts[sid,key].append({'observation_hash':h,'observed_on':observed})
-        processor_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+        processor_hash=digest({name:hashlib.sha256((Path(__file__).parent/name).read_bytes()).hexdigest() for name in ('bulk_ingest.py','bulk_snapshot.py','validate.py')})
         run=digest([sorted(hashes),digest(base),digest(config),digest(list(existing)),processor_hash])
         db.execute('INSERT OR IGNORE INTO runs VALUES(?,?,?,?,?)',(run,observed,digest(sorted(hashes)),digest(base),digest(config)))
         matching_base=base+list(existing);existing_by_id={r['id']:r for r in matching_base};names,hosts=domains(matching_base);index=DuplicateIndex(matching_base);decisions=[];proposed=[];dupes=[]

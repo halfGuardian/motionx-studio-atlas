@@ -146,6 +146,7 @@
     const caps=[...new Set(filters.capabilities || [])], mode=filters.capabilityMode==='any'?'some':'every';
     return index.entries.filter(entry => {
       const r=entry.row;
+      if(filters.recordKind && (r.record_kind||'retained_location')!==filters.recordKind)return false;
       if(filters.evidenceClass && r.evidence_class!==filters.evidenceClass)return false;
       if (filters.country && r.country!==filters.country || city && !entry.city.includes(city) ||
           filters.locationType && (r.location_type || 'uncertain')!==filters.locationType ||
@@ -180,7 +181,7 @@
   }
   const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
     'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships',
-    'evidence_class','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','export_licences','export_notices'];
+    'evidence_class','record_kind','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','research_reasons','source_status','source_type','potential_duplicates','export_licences','export_notices'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
       value && typeof value==='object'?JSON.stringify(value):String(value??'');

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-catalog="sharded">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Explore a source-reviewed global directory of visual effects, animation, games and performance capture studios. Browse organisations, compare facility capabilities and inspect the evidence.">
@@ -14,7 +14,7 @@
 <aside aria-label="Studio directory"><div id="public">
 <div class="eyebrow">FIND YOUR NEXT CREATIVE PARTNER</div>
 <div class="directory-title">A world of production talent.</div>
-<p class="intro">Explore studios, their individual facilities and the evidence behind their capabilities.</p>
+<p class="intro">One research atlas for retained studios, source location observations and company references. Evidence labels stay visible; record totals are not verified facility counts.</p>
 <div class="results-head"><div class="count" id="count" role="status" aria-live="polite">Loading locations…</div><button id="resetFilters" class="text-button">Reset filters</button></div>
 <div class="muted" id="companies">Loading organizations…</div>
 <div class="controls" id="filters">
@@ -24,7 +24,8 @@
 <label class="wide">Production sector<select id="category"><option value="">All sectors</option></select></label>
 <details class="capability-picker wide" id="capabilityPicker"><summary id="capabilitySummary">Capabilities · any</summary><fieldset><legend>Select specific facility capabilities</legend><div id="capabilityOptions"></div><label class="wide">Combine selected capabilities<select id="capabilityMode"><option value="all">Match all selected (AND)</option><option value="any">Match any selected (OR)</option></select></label></fieldset></details>
 <label class="wide">Location type<select id="locationType"><option value="">All location types</option><option value="production_studio">Production studio</option><option value="capture_facility">Capture facility</option><option value="mixed_campus">Mixed campus</option><option value="creative_hub">Creative hub</option><option value="production_office">Production office</option><option value="uncertain">Type not established</option></select></label>
-<label class="wide">Location evidence<select id="evidenceClass"><option value="">All evidence classes</option><option value="A">Class A — Source-reviewed location</option><option value="B">Class B — Directory-listed, uncorroborated</option></select></label>
+<label class="wide">Evidence class<select id="evidenceClass"><option value="">All evidence classes</option><option value="A">Class A — Source-reviewed location</option><option value="B">Class B — Directory-listed, uncorroborated</option><option value="C">Class C — Research required</option></select></label>
+<label class="wide">Record type<select id="recordKind"><option value="">All records together</option><option value="retained_location">Retained Atlas location</option><option value="source_location">Source location observation</option><option value="company_reference">Company reference — branches unverified</option></select></label>
 <label class="check-label wide"><input type="checkbox" id="confirmedOnly"> Confirmed capability evidence only</label>
 <p class="filter-help wide">Different filters combine with AND. City and search match text. Confirmed-only checks selected capabilities, the selected sector, or any confirmed capability when neither is selected. Parent services are never inherited.</p>
 </div>
@@ -32,7 +33,7 @@
 <div id="list" aria-label="Matching studios"></div>
 <div class="pagination"><button id="previousPage">← Previous</button><span id="pageInfo" class="muted"></span><button id="nextPage">Next →</button></div>
 <p class="notice">Confidence describes the cited capability claim, not independent verification. Legacy claims are unknown pending review. Capability confirmation does not prove registration or current operation. Some pins are city-level estimates. Do not treat a city pin as a street address. Research city references: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>), used as city pins, not facility geocodes. Iver Heath reference: © Crown copyright, Office for National Statistics via <a href="https://www.planning.data.gov.uk/entity/2504906" target="_blank" rel="noopener noreferrer">Planning Data</a>, <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener noreferrer">OGL v3.0</a>.</p>
-<p class="notice">Class B source-listed data: <a href="https://overturemaps.org/" target="_blank" rel="noopener noreferrer">Overture Maps Foundation</a> and the original providers recorded per location. © Foursquare Labs, Inc. where applicable; Foursquare data was transformed to Overture schema and filtered/normalised by MotionX. <a href="data/bulk/NOTICE.html">Data licences, attribution and transformation notices</a>. Class B listings do not confirm current operation, facility services or ownership. Class C candidates and legacy unknown-evidence locations remain in research, outside the active A/B catalogue.</p>
+<p class="notice">Source observations: <a href="https://overturemaps.org/" target="_blank" rel="noopener noreferrer">Overture Maps Foundation</a> and original providers recorded per entry. © Foursquare Labs, Inc. where applicable; Foursquare data was transformed to Overture schema and filtered/normalised by MotionX. <a href="data/bulk/NOTICE.html">Data licences, attribution and transformation notices</a>. All records share this research atlas. Class B/C entries do not confirm current operation, facility services or ownership. Company references have no invented map points. Their source's redistribution terms remain unspecified; authored descriptions are omitted.</p>
 </div></aside>
 <div id="map" aria-label="Studio locations map" aria-describedby="mapHelp"></div><p id="mapHelp" class="sr-only">Use the studio directory for keyboard access to every location. Numbered map groups open a selectable list; shared coordinates are preserved.</p>
 <div id="dataStatus" role="status" aria-live="polite">Loading studio database… <button id="retryLoad" hidden>Retry</button></div>
