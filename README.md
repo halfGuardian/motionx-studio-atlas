@@ -1,3 +1,9 @@
+# Visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
+
+The Atlas now makes **company references without map pins** visible as an explicit number on the map and offers a direct directory shortcut. **All 42 New Zealand Film Commission facilities-directory entries** are accessible through a [source-to-Atlas reconciliation page](data/boutique/reports/nzfc-coverage.html), including nine exclusions and the held Blockhead/Assembly identity. 27 new and three cross-source reconciled references, plus two previously existing identities, account for 32 represented records; **representation is not verified physical coverage**. The historical NZFC Wētā FX source is linked to Wellington in this new report, not an overseas branch.
+
+The [source coverage contract and outstanding discovery gaps](data/coverage/README.md) distinguish data acquisition, searchable identities, verified geography, rights and user-visible coverage. No new facilities, coordinates or capture-stage claims are created; the Annecy v1.3 human precision worksheet remains pending. The v1.2/v1.3 hash-bound research records and source policy remain unchanged.
+
 # MotionX Studio Atlas v1.3 — Annecy Boutique Studio Coverage
 
 **One unified atlas: 42,239 reference records.** This proposal adds **172 Class C company references** from Annecy research and preserves all **42,067 existing IDs**, the 243 retained locations, all original coordinates and all prior evidence shards. Totals are **A 230 / B 4,626 / C 37,383**, with **178 countries/territories** and **119 retained operating organisations**. Source observations and provisional company identities overlap; these are not 42,239 verified studio locations.
