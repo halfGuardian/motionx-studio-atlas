@@ -77,7 +77,7 @@ test('every NZFC listing is reconciled, including excluded and identity-held nam
   assert.equal(counts.irrelevant_or_insufficient_specialisation,9);
   assert.equal((report.match(/<tr data-outcome=/g)||[]).length,42);
   assert.match(report,/42 \/ 42/);
-  assert.match(report,/No.*verified facility pins/);
+  assert.match(report,/<b>0<\/b><small>New verified facility pins<\/small>/);
 });
 test('represented NZFC names are real Atlas records; no company-only map pins invented',()=>{
   const index=read(path.join(root,'data/public/index.json'));
