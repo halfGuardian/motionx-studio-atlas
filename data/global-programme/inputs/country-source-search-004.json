@@ -1,0 +1,4250 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-07",
+  "scope": "English source discovery only; permissions, enumeration, companies, facilities and local-language coverage remain unreviewed.",
+  "countries": [
+    {
+      "country": "Sierra Leone",
+      "region": "Africa",
+      "references": 3,
+      "query": "Sierra Leone animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Producers Guild Appoints New Leaders to Drive Film Industry Forward in Sierra Leone - Salone Messenger",
+          "url": "https://salonemessengers.com/producers-guild-appoints-new-leaders-to-drive-film-industry-forward-in-sierra-leone/",
+          "reference": "turn241720search1"
+        },
+        {
+          "title": "SIERRA LEONE",
+          "url": "https://www.unesco.org/creativity/sites/default/files/medias/fichiers/2023/01/379165eng.pdf?hNzFuf4=rDErTIXI",
+          "reference": "turn241720search12"
+        },
+        {
+          "title": "THE FILM INDUSTRY IN SIERRA LEONE",
+          "url": "https://documentaryafrica.org/wp-content/uploads/2023/01/ADFF_Report.pdf",
+          "reference": "turn241720search13"
+        },
+        {
+          "title": "Minim Global Services | Creative & Lifestyle Company, Sierra Leone",
+          "url": "https://www.minimglobal.com/businesses/studios/team",
+          "reference": "turn241720search2"
+        },
+        {
+          "title": "SL FILM GUILD – Uniting all workers in the Sierra Leone Film Industry",
+          "url": "https://slfilmguild.org/",
+          "reference": "turn241720search3"
+        },
+        {
+          "title": "Animation — African animation intelligence · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/animation",
+          "reference": "turn241720search4"
+        },
+        {
+          "title": "Director’s Guild Sierra Leone – SL FILM GUILD",
+          "url": "https://slfilmguild.org/directors-guild-sierra-leone/",
+          "reference": "turn241720search5"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn241720search6"
+        },
+        {
+          "title": "About us – SL FILM GUILD",
+          "url": "https://slfilmguild.org/about-us/",
+          "reference": "turn241720search7"
+        },
+        {
+          "title": "Home | Sierra Leone Film Foundation",
+          "url": "https://slfilmfoundation.org/",
+          "reference": "turn241720search8"
+        },
+        {
+          "title": "Membership - SLAAM",
+          "url": "https://slaam.org/membership/",
+          "reference": "turn241720search9"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn241720search10"
+        },
+        {
+          "title": "Apex.Studios  | home",
+          "url": "https://apexstudios.live/",
+          "reference": "turn241720search11"
+        },
+        {
+          "title": "BUSINESS DIRECTORY",
+          "url": "https://www.wesgro.co.za/uploads/files/Filmmakers-Guide-to-the-Western-Cape_Edition-2_2023.pdf",
+          "reference": "turn241720search14"
+        },
+        {
+          "title": "Production Companies & Animation Studios",
+          "url": "https://filmfund.lu/wp-content/uploads/2025/06/FFL-ANIMATED-25_web.pdf",
+          "reference": "turn241720search15"
+        },
+        {
+          "title": "Animation South Africa",
+          "url": "https://www.wesgro.co.za/uploads/files/Wesgro-Producers%E2%80%99-Booklet.pdf",
+          "reference": "turn241720search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn241720search17"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn241720search18"
+        }
+      ]
+    },
+    {
+      "country": "Singapore",
+      "region": "Asia",
+      "references": 61,
+      "query": "Singapore animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Companies in Animation Production Industry",
+          "url": "https://www.sgpbusiness.com/activities/industrial-classification/Publishing-Broadcasting-And-Content-Production-And-Distribution-Activities/Movie-Video-Television-And-Other-Programme-Production-Sound-Recording-And-Music-Publishing-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Animation-Production/principal/2",
+          "reference": "turn634477search0"
+        },
+        {
+          "title": "Companies in Animation Production Industry",
+          "url": "https://www.sgpbusiness.com/activities/industrial-classification/Publishing-Broadcasting-And-Content-Production-And-Distribution-Activities/Movie-Video-Television-And-Other-Programme-Production-Sound-Recording-And-Music-Publishing-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Animation-Production/principal/4",
+          "reference": "turn634477search1"
+        },
+        {
+          "title": "Companies in Animation Production Industry",
+          "url": "https://www.sgpbusiness.com/activities/industrial-classification/Publishing-Broadcasting-And-Content-Production-And-Distribution-Activities/Movie-Video-Television-And-Other-Programme-Production-Sound-Recording-And-Music-Publishing-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Animation-Production/principal/1",
+          "reference": "turn634477search2"
+        },
+        {
+          "title": "Companies in Animation Production Industry",
+          "url": "https://www.sgpbusiness.com/activities/industrial-classification/Publishing-Broadcasting-And-Content-Production-And-Distribution-Activities/Movie-Video-Television-And-Other-Programme-Production-Sound-Recording-And-Music-Publishing-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Movie-Video-Television-And-Other-Programme-Production-Activities/Animation-Production/secondary",
+          "reference": "turn634477search3"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn634477search4"
+        },
+        {
+          "title": "ANIMATION DEVELOPMENT PRODUCTION",
+          "url": "https://www.companies.sg/cat/59114/ANIMATION-DEVELOPMENT-PRODUCTION?sort=uen",
+          "reference": "turn634477search5"
+        },
+        {
+          "title": "Mastercopy_Refreshed Skills Framework for Media_v1.1",
+          "url": "https://www.skillsfuture.gov.sg/docs/default-source/skills-framework/skills-framework-for-media_2024_pdf.pdf",
+          "reference": "turn634477search12"
+        },
+        {
+          "title": "DEVELOPMENT AND PRODUCTION OF ANIMATED MEDIA CONTENT",
+          "url": "https://www.companies.sg/cat/59114/DEVELOPMENT-AND-PRODUCTION-OF-ANIMATED-MEDIA-CONTENT?sort=uen",
+          "reference": "turn634477search6"
+        },
+        {
+          "title": "Search for an ISCA Member",
+          "url": "https://isca.org.sg/membership/member-services/member-directory",
+          "reference": "turn634477search8"
+        },
+        {
+          "title": "About Us",
+          "url": "https://www.animation-nation.co/about-us",
+          "reference": "turn634477search9"
+        },
+        {
+          "title": "Supporting Organisations and Acknowledgements",
+          "url": "https://www.imda.gov.sg/-/media/imtalent-portal-revamp/5-programmes/sfwformedia/skills-framework-for-media-guide.pdf",
+          "reference": "turn634477search13"
+        },
+        {
+          "title": "Our Members | ANIMATIONCOUNCILPH",
+          "url": "https://www.animationcouncil.org/ourmembers",
+          "reference": "turn634477search10"
+        },
+        {
+          "title": "Animation Services",
+          "url": "https://www.imda.gov.sg/-/media/imda/files/about/resources/distribution--mediaservicesbrochurefinal.pdf",
+          "reference": "turn634477search14"
+        },
+        {
+          "title": "VFX, Animation & Design (1/2)",
+          "url": "https://www.skillsfuture.gov.sg/docs/default-source/skills-framework/skills-framework-for-media-2025.pdf",
+          "reference": "turn634477search15"
+        },
+        {
+          "title": "Our Industry Partners",
+          "url": "https://www.iedusg.com/ueditor/php/upload/file/20191021/1571635317254566.pdf",
+          "reference": "turn634477search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn634477search17"
+        },
+        {
+          "title": "Tiny Island Productions",
+          "url": "https://en.wikipedia.org/wiki/Tiny_Island_Productions",
+          "reference": "turn634477search18"
+        },
+        {
+          "title": "Sparky Animation",
+          "url": "https://en.wikipedia.org/wiki/Sparky_Animation",
+          "reference": "turn634477search19"
+        },
+        {
+          "title": "List of game companies in Singapore",
+          "url": "https://en.wikipedia.org/wiki/List_of_game_companies_in_Singapore",
+          "reference": "turn634477search20"
+        },
+        {
+          "title": "Odex",
+          "url": "https://en.wikipedia.org/wiki/Odex",
+          "reference": "turn634477search21"
+        },
+        {
+          "title": "Nickson Fong",
+          "url": "https://en.wikipedia.org/wiki/Nickson_Fong",
+          "reference": "turn634477search22"
+        }
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "region": "Europe",
+      "references": 66,
+      "query": "Slovakia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Professional and Special Interest Associations",
+          "url": "https://www.aic.sk/aic/en/industry-database/professional-and-special-interest-associations/",
+          "reference": "turn488300search0"
+        },
+        {
+          "title": "Directory | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/219-sk/directory/",
+          "reference": "turn488300search1"
+        },
+        {
+          "title": "Insitutions and organizations | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/221-en/insitutions-and-organizations/",
+          "reference": "turn488300search2"
+        },
+        {
+          "title": "Members - CEE",
+          "url": "https://ceeanimation.eu/members/",
+          "reference": "turn488300search3"
+        },
+        {
+          "title": "Insitutions and organizations | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/221-sk/insitutions-and-organizations/",
+          "reference": "turn488300search4"
+        },
+        {
+          "title": "All",
+          "url": "https://www.aic.sk/aic/en/industry-database/all.html",
+          "reference": "turn488300search5"
+        },
+        {
+          "title": "Directory | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/219-en/directory/?page=1",
+          "reference": "turn488300search6"
+        },
+        {
+          "title": "Animator | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/663-sk/animator/",
+          "reference": "turn488300search7"
+        },
+        {
+          "title": "Directory | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/219-sk/directory/?page=1",
+          "reference": "turn488300search8"
+        },
+        {
+          "title": "Directory | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/219-en/directory/",
+          "reference": "turn488300search9"
+        },
+        {
+          "title": "FNE Film Meets Games: Q&A with Executive Director of Slovak Game Developers Association Maroš Brojo - FilmNewEurope.com",
+          "url": "https://filmneweurope.com/news/slovakia-news/item/123613-fne-film-meets-games-q-a-with-executive-director-of-slovak-game-developers-association-maros-brojo",
+          "reference": "turn488300search10"
+        },
+        {
+          "title": "Asociácia nezávislých producentov",
+          "url": "https://www.asociaciaproducentov.sk/o-nas",
+          "reference": "turn488300search11"
+        },
+        {
+          "title": "SLOVAK GAME INDUSTRY2024",
+          "url": "https://sgda.sk/wp-content/uploads/2024/11/SGDA_Catalog-2024.pdf",
+          "reference": "turn488300search12"
+        },
+        {
+          "title": "Your contact with",
+          "url": "https://ceeanimation.eu/wp-content/uploads/2023/05/MIFA_brochure_CEE_Animation.pdf",
+          "reference": "turn488300search13"
+        },
+        {
+          "title": "POST-PRODUCTION STUDIOS",
+          "url": "https://www.filmcommission.sk/data/att/2134.pdf",
+          "reference": "turn488300search14"
+        },
+        {
+          "title": "Your contact with",
+          "url": "https://www.ceeanimation.eu/files/uploads/2019/06/CEE-animation-2019-MIFA-web.pdf",
+          "reference": "turn488300search15"
+        },
+        {
+          "title": "**Th",
+          "url": "https://ceeanimation.eu/wp-content/uploads/2023/05/CEEA_Practical_Guide_2023.pdf",
+          "reference": "turn488300search16"
+        },
+        {
+          "title": "Outsourcing",
+          "url": "https://sgda.sk/wp-content/uploads/2022/10/Slovak-Game-Industry-2022-catalog.pdf",
+          "reference": "turn488300search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn488300search18"
+        },
+        {
+          "title": "Digic Pictures",
+          "url": "https://en.wikipedia.org/wiki/Digic_Pictures",
+          "reference": "turn488300search19"
+        },
+        {
+          "title": "NoLabel",
+          "url": "https://en.wikipedia.org/wiki/NoLabel",
+          "reference": "turn488300search20"
+        },
+        {
+          "title": "Assemblage Entertainment",
+          "url": "https://en.wikipedia.org/wiki/Assemblage_Entertainment",
+          "reference": "turn488300search21"
+        },
+        {
+          "title": "Cinema of Slovakia",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Slovakia",
+          "reference": "turn488300search22"
+        },
+        {
+          "title": "List of video games developed in Slovakia",
+          "url": "https://en.wikipedia.org/wiki/List_of_video_games_developed_in_Slovakia",
+          "reference": "turn488300search23"
+        }
+      ]
+    },
+    {
+      "country": "Slovenia",
+      "region": "Europe",
+      "references": 35,
+      "query": "Slovenia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Country: Slovenia - CEE",
+          "url": "https://ceeanimation.eu/countries/slovenia/",
+          "reference": "turn790572search0"
+        },
+        {
+          "title": "NuFrame Studio - Culture of Slovenia",
+          "url": "https://culture.gov.si/en/NuFrame_Studio",
+          "reference": "turn790572search1"
+        },
+        {
+          "title": "Ulica Ilke Va",
+          "url": "https://www.filminslovenia.si/assets/catalog/filming-in-slovenia-2023-single.pdf",
+          "reference": "turn790572search12"
+        },
+        {
+          "title": "THE SLOVENIAN FEDERATION OF FILMMAKERS’ GU",
+          "url": "https://www.film-center.si/media/cms/attachments/2024/02/23/KATALOG_ilming_in_Slovenia_2023_REVISED_FINAL.pdf",
+          "reference": "turn790572search13"
+        },
+        {
+          "title": "Producers | Slovenian Film Centre",
+          "url": "https://www.sfc.si/en/about-the-industry/film-professionals/producers/",
+          "reference": "turn790572search2"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://filminslovenia.si/assets/catalog/filming-in-slovenia-2023-single.pdf",
+          "reference": "turn790572search14"
+        },
+        {
+          "title": "Members - CEE",
+          "url": "https://ceeanimation.eu/members/",
+          "reference": "turn790572search3"
+        },
+        {
+          "title": "English - ZDSFU",
+          "url": "https://zdsfu.si/english/",
+          "reference": "turn790572search4"
+        },
+        {
+          "title": "Professional Guilds | Slovenian Film Centre",
+          "url": "https://www.sfc.si/en/about-the-industry/film-professionals/professional-guilds/",
+          "reference": "turn790572search5"
+        },
+        {
+          "title": "Companies in Motion picture, video and television programme post-production activities | Overit.si",
+          "url": "https://overit.si/en/companies/industry/59-120/",
+          "reference": "turn790572search6"
+        },
+        {
+          "title": "Category:Animation - Culture of Slovenia",
+          "url": "https://culture.gov.si/en/Category%3AAnimation",
+          "reference": "turn790572search7"
+        },
+        {
+          "title": "Slovene Animated Film Association - Culture of Slovenia",
+          "url": "https://culture.gov.si/en/Slovene_Animated_Film_Association",
+          "reference": "turn790572search8"
+        },
+        {
+          "title": "Animator | Slovak Film Commission",
+          "url": "https://www.filmcommission.sk/663-sk/animator/",
+          "reference": "turn790572search9"
+        },
+        {
+          "title": "THE SLOVENIAN FEDERATION OF FILMMAKERS’ GU",
+          "url": "https://www.slovenia.info/uploads/publikacije/snemanje/filming_in_slovenia.pdf",
+          "reference": "turn790572search15"
+        },
+        {
+          "title": "O društvu — Društvo FPS",
+          "url": "https://www.fps.si/o-drustvu/",
+          "reference": "turn790572search10"
+        },
+        {
+          "title": "Our Members | CEPI",
+          "url": "https://www.cepi-producers.eu/our-members",
+          "reference": "turn790572search11"
+        },
+        {
+          "title": "www.film-center.",
+          "url": "https://www.film-center.si/media/cms/attachments/2025/08/13/sfg_short_2017_za_web_PRAVI.pdf",
+          "reference": "turn790572search16"
+        },
+        {
+          "title": "FRIENDLY PRODUCTION",
+          "url": "https://www.slovenia.info/uploads/publikacije/snemanje/filming-slovenia-en.pdf",
+          "reference": "turn790572search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn790572search18"
+        },
+        {
+          "title": "Directors Guild of Slovenia",
+          "url": "https://en.wikipedia.org/wiki/Directors_Guild_of_Slovenia",
+          "reference": "turn790572search19"
+        },
+        {
+          "title": "Digic Pictures",
+          "url": "https://en.wikipedia.org/wiki/Digic_Pictures",
+          "reference": "turn790572search20"
+        },
+        {
+          "title": "NoLabel",
+          "url": "https://en.wikipedia.org/wiki/NoLabel",
+          "reference": "turn790572search21"
+        },
+        {
+          "title": "Pixomondo",
+          "url": "https://de.wikipedia.org/wiki/Pixomondo",
+          "reference": "turn790572search22"
+        },
+        {
+          "title": "DNEG",
+          "url": "https://en.wikipedia.org/wiki/DNEG",
+          "reference": "turn790572search23"
+        }
+      ]
+    },
+    {
+      "country": "Somalia",
+      "region": "Africa",
+      "references": 3,
+      "query": "Somalia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "About",
+          "url": "https://masrax.so/about-us",
+          "reference": "turn706749search1"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn706749search2"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn706749search3"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn706749search4"
+        },
+        {
+          "title": "Animation - Industry Research and Live Data | SMBs.com",
+          "url": "https://www.smbs.com/research/industry/animation",
+          "reference": "turn706749search5"
+        },
+        {
+          "title": "Animation Ecosystem Directory - FAFA - Fédération Africaine du Film d'Animation",
+          "url": "https://www.fafanimation.com/en/organizations",
+          "reference": "turn706749search6"
+        },
+        {
+          "title": "CINICA Creators Council · Rise from Creator to Creative Entrepreneur",
+          "url": "https://www.cinica.org/",
+          "reference": "turn706749search7"
+        },
+        {
+          "title": "Infinity Somali – We are Multimedia & Production Company",
+          "url": "https://infinitysomali.com/",
+          "reference": "turn706749search8"
+        },
+        {
+          "title": "Business Liaisons - Association of Film Commissioners International",
+          "url": "https://afci.org/business-laisions/",
+          "reference": "turn706749search9"
+        },
+        {
+          "title": "Somscreen Studio",
+          "url": "https://somscreen.net/",
+          "reference": "turn706749search10"
+        },
+        {
+          "title": "Som Production - Services & Company Info",
+          "url": "https://clutch.co/profile/som-production",
+          "reference": "turn706749search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn706749search12"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn706749search13"
+        },
+        {
+          "title": "Cinema of Somalia",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Somalia",
+          "reference": "turn706749search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn706749search15"
+        }
+      ]
+    },
+    {
+      "country": "South Africa",
+      "region": "Africa",
+      "references": 143,
+      "query": "South Africa animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "CPASA | Members",
+          "url": "https://cpasa.tv/members/",
+          "reference": "turn473575search0"
+        },
+        {
+          "title": "Welcome to Animation SA",
+          "url": "https://animationsa.org/",
+          "reference": "turn473575search1"
+        },
+        {
+          "title": "About Us | South African Screen Sector Support Initiative",
+          "url": "https://www.sssi.co.za/about/",
+          "reference": "turn473575search2"
+        },
+        {
+          "title": "Directory | Creatives & studios | Pixelsmith Studios",
+          "url": "https://pixelsmithstudios.com/directory?kind=studio",
+          "reference": "turn473575search3"
+        },
+        {
+          "title": "About - Animation SA - Advocating Animation & VFX Pros",
+          "url": "https://animationsa.org/about/",
+          "reference": "turn473575search4"
+        },
+        {
+          "title": "Animation South Africa",
+          "url": "https://www.wesgro.co.za/uploads/files/Wesgro-Producers%E2%80%99-Booklet.pdf",
+          "reference": "turn473575search12"
+        },
+        {
+          "title": "Industry Organisations – The NFVF",
+          "url": "https://www.nfvf.co.za/industry-organisations/",
+          "reference": "turn473575search5"
+        },
+        {
+          "title": "BUSINESS DIRECTORY",
+          "url": "https://www.wesgro.co.za/uploads/files/Filmmakers-Guide-to-the-Western-Cape_Edition-2_2023.pdf",
+          "reference": "turn473575search13"
+        },
+        {
+          "title": "About Us - Animation SA",
+          "url": "https://staging.animationsa.org/about/",
+          "reference": "turn473575search6"
+        },
+        {
+          "title": "Animation Studios Cape Town | Film Cape Town",
+          "url": "https://filmcapetown.com/service-providers/animation-studios/",
+          "reference": "turn473575search7"
+        },
+        {
+          "title": "Animation Ecosystem Directory - FAFA - Fédération Africaine du Film d'Animation",
+          "url": "https://www.fafanimation.com/en/organizations",
+          "reference": "turn473575search8"
+        },
+        {
+          "title": "SAPAMA",
+          "url": "https://www.sapama.co.za/",
+          "reference": "turn473575search9"
+        },
+        {
+          "title": "South Africa’s Animation",
+          "url": "https://www.southafricanculturalobservatory.org.za/download/20a62bc4",
+          "reference": "turn473575search14"
+        },
+        {
+          "title": "Affiliates – SA Guild of Actors",
+          "url": "https://saguildofactors.co.za/affiliates/",
+          "reference": "turn473575search10"
+        },
+        {
+          "title": "Organisations in the industry",
+          "url": "https://gautengfilm.org.za/documents/downloads/Guide-to-getting-started-in-Film-and-TV.pdf",
+          "reference": "turn473575search15"
+        },
+        {
+          "title": "Animation South Africa: Studios and Producer’s Booklet – Film and media | Wesgro",
+          "url": "https://www.wesgro.co.za/film/resources/animation-south-africa-studios-and-producers-booklet-2",
+          "reference": "turn473575search11"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://www.westerncape.gov.za/edat/files/wcg-blob-files?file=2024-11%2Fscreentech_intelligence_report-march_2021.pdf&type=file",
+          "reference": "turn473575search16"
+        },
+        {
+          "title": "Animation industry in South Africa",
+          "url": "https://en.wikipedia.org/wiki/Animation_industry_in_South_Africa",
+          "reference": "turn473575search17"
+        },
+        {
+          "title": "Sunrise Productions",
+          "url": "https://en.wikipedia.org/wiki/Sunrise_Productions",
+          "reference": "turn473575search18"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn473575search19"
+        },
+        {
+          "title": "Triggerfish Animation Studios",
+          "url": "https://en.wikipedia.org/wiki/Triggerfish_Animation_Studios",
+          "reference": "turn473575search20"
+        },
+        {
+          "title": "Video games in South Africa",
+          "url": "https://en.wikipedia.org/wiki/Video_games_in_South_Africa",
+          "reference": "turn473575search21"
+        },
+        {
+          "title": "DNEG",
+          "url": "https://en.wikipedia.org/wiki/DNEG",
+          "reference": "turn473575search22"
+        }
+      ]
+    },
+    {
+      "country": "South Korea",
+      "region": "Asia",
+      "references": 164,
+      "query": "South Korea animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Korea Film Commissions & Industry Network",
+          "url": "https://engfilmkorea.or.kr/directory/studio.html",
+          "reference": "turn680830search0"
+        },
+        {
+          "title": "Korea Film Commissions & Industry Network",
+          "url": "https://engfilmkorea.or.kr/directory/directory.html",
+          "reference": "turn680830search1"
+        },
+        {
+          "title": "회원사 | 사단법인 한국시각효과협회 홈페이지입니다 | VESKOREA",
+          "url": "https://www.veskorea.com/member",
+          "reference": "turn680830search2"
+        },
+        {
+          "title": "회원정보 | KAIFD",
+          "url": "https://www.kaifd.org/member",
+          "reference": "turn680830search3"
+        },
+        {
+          "title": "Korea Film Commissions & Industry Network",
+          "url": "https://engfilmkorea.or.kr/directory/directory_talent.html",
+          "reference": "turn680830search4"
+        },
+        {
+          "title": "Animation film and video production industry Companies in South Korea – [KOBDi]",
+          "url": "https://kobdi.co.kr/industries/information-communication/film-tv-production/animation-film-and-video-production-industry/",
+          "reference": "turn680830search5"
+        },
+        {
+          "title": "(사)한국캐릭터문화산업협회",
+          "url": "https://kccia.kr/32",
+          "reference": "turn680830search6"
+        },
+        {
+          "title": "회원사 | BIVA",
+          "url": "https://www.biva.or.kr/members",
+          "reference": "turn680830search7"
+        },
+        {
+          "title": "::Seoul Film Commission::",
+          "url": "https://english.seoulfc.or.kr/pdaf/pd/",
+          "reference": "turn680830search8"
+        },
+        {
+          "title": "KOBIZ",
+          "url": "https://www.koreanfilm.or.kr/mobile3/coproduction/post.jsp",
+          "reference": "turn680830search9"
+        },
+        {
+          "title": "한국광고영상제작사협회",
+          "url": "https://www.koreacf.or.kr/bbs/board.php?bo_table=heonsa",
+          "reference": "turn680830search10"
+        },
+        {
+          "title": "Korea Film Commissions & Industry Network",
+          "url": "https://engfilmkorea.or.kr/kfcin/about.html",
+          "reference": "turn680830search11"
+        },
+        {
+          "title": "<30392D322E20B9AEC8ADC4DCC5D9C3F728BFB5292834292E687770>",
+          "url": "https://www.investkorea.org/file/ik-en/Cultural%20Content_2020_eng.pdf",
+          "reference": "turn680830search12"
+        },
+        {
+          "title": "KOTRA 20-151",
+          "url": "https://dl.kotra.or.kr/pyxis-api/1/digital-files/c16960f0-074a-018a-e053-b46464899664",
+          "reference": "turn680830search13"
+        },
+        {
+          "title": "INVESTMENT OPPORTUNITIES IN KOREA",
+          "url": "https://ombudsman.kotra.or.kr/file/ik-en/Cultural%20Content_ENG.pdf",
+          "reference": "turn680830search14"
+        },
+        {
+          "title": "KOTRA 20-151",
+          "url": "https://dl.kotra.or.kr/pyxis-api/2/digital-files/c16960f0-074a-018a-e053-b46464899664",
+          "reference": "turn680830search15"
+        },
+        {
+          "title": "Vertical sect",
+          "url": "https://www.acfm.kr/9904_DATA/File/2024_Final_Report_kor.pdf",
+          "reference": "turn680830search16"
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "region": "Europe",
+      "references": 1590,
+      "query": "Spain animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Associations and entities of the audiovisual sector - Spain Film Commission",
+          "url": "https://spainfilmcommission.com/en/shooting-in-spain/production-professionals-and-services/associations-and-entities-of-the-audiovisual-sector/",
+          "reference": "turn450479search0"
+        },
+        {
+          "title": "Asociaciones y entidades del sector audiovisual - Spain Film Commission",
+          "url": "https://spainfilmcommission.com/rodar-en-espana/profesionales-y-servicios-a-la-produccion/asociaciones-y-entidades-del-sector-audiovisual/",
+          "reference": "turn450479search1"
+        },
+        {
+          "title": "Directorio de la industria audiovisual",
+          "url": "https://spainaudiovisualhub.digital.gob.es/es/directorio/directorio1",
+          "reference": "turn450479search2"
+        },
+        {
+          "title": "Partner entities driving the audiovisual industry",
+          "url": "https://spainfilmcommission.com/en/association/collaborators/",
+          "reference": "turn450479search3"
+        },
+        {
+          "title": "Estudios - Spain Film Comission",
+          "url": "https://studios.spainfilmcommission.com/studio/",
+          "reference": "turn450479search4"
+        },
+        {
+          "title": "Estudios - Spain Film Comission",
+          "url": "https://studios.spainfilmcommission.com/",
+          "reference": "turn450479search5"
+        },
+        {
+          "title": "Entidades colaboradoras que impulsan la industria audiovisual",
+          "url": "https://spainfilmcommission.com/asociacion/colaboradores/",
+          "reference": "turn450479search6"
+        },
+        {
+          "title": "Conoce nuestros Estudios – Gran Canaria Film Commission",
+          "url": "https://www.grancanariafilm.com/animacion/conoce-nuestros-estudios/",
+          "reference": "turn450479search7"
+        },
+        {
+          "title": "PROFESSIONAL DIRECTORY MARCH 2026",
+          "url": "https://www.grancanariafilm.com/wp-content/uploads/2026/03/PROFESSIONAL-DIRECTORY-MARCH-2026.pdf",
+          "reference": "turn450479search12"
+        },
+        {
+          "title": "Catàleg Empreses de VFX i animació de Catalunya",
+          "url": "https://drac.cultura.gencat.cat/bitstream/handle/20.500.12368/36567/Cataleg_VFX_animacio_2025.pdf?isAllowed=y&sequence=1",
+          "reference": "turn450479search13"
+        },
+        {
+          "title": "Directorio de Estudios y Escuelas en - IndustriaAnimacion.com",
+          "url": "https://www.industriaanimacion.com/estudios-de-animacion/pais/espana/",
+          "reference": "turn450479search8"
+        },
+        {
+          "title": "We coordinate Spain’s audiovisual ecosystem | Spain Film Commission",
+          "url": "https://spainfilmcommission.com/en/association/",
+          "reference": "turn450479search9"
+        },
+        {
+          "title": "Directorio de Estudios y Escuelas en España - IndustriaAnimacion.com",
+          "url": "https://www.industriaanimacion.com/pais/espana/",
+          "reference": "turn450479search10"
+        },
+        {
+          "title": "Who is Who – Shooting in Spain 2025-2026",
+          "url": "https://pre.investinspain.org/en/publications/who-is-who-2025",
+          "reference": "turn450479search11"
+        },
+        {
+          "title": "PROFESSIONAL DIRECTORY 2025",
+          "url": "https://www.grancanariafilm.com/wp-content/uploads/2025/09/PROFESSIONAL-DIRECTORY-2025-2-2.pdf",
+          "reference": "turn450479search14"
+        },
+        {
+          "title": "Mifa 2024 - Exhibitors",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Exhibitors.pdf",
+          "reference": "turn450479search15"
+        },
+        {
+          "title": "ASSOCIATIONS",
+          "url": "https://madridfilmoffice.com/wp-content/uploads/2025/04/Madrid.Film_.Office_Locations-Finance.pdf",
+          "reference": "turn450479search16"
+        },
+        {
+          "title": "Let’s grow your productions in Spain!",
+          "url": "https://pre.spainaudiovisualhub.digital.gob.es/content/dam/seteleco-hub-audiovisual/resources/pdf/who-is-who-2022.pdf",
+          "reference": "turn450479search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn450479search18"
+        },
+        {
+          "title": "Asociación Española de Videojuegos",
+          "url": "https://es.wikipedia.org/wiki/Asociaci%C3%B3n_Espa%C3%B1ola_de_Videojuegos",
+          "reference": "turn450479search19"
+        },
+        {
+          "title": "3Doubles Producciones",
+          "url": "https://en.wikipedia.org/wiki/3Doubles_Producciones",
+          "reference": "turn450479search20"
+        },
+        {
+          "title": "Kandor Graphics",
+          "url": "https://en.wikipedia.org/wiki/Kandor_Graphics",
+          "reference": "turn450479search21"
+        },
+        {
+          "title": "Onírikal Studio",
+          "url": "https://es.wikipedia.org/wiki/On%C3%ADrikal_Studio",
+          "reference": "turn450479search22"
+        },
+        {
+          "title": "Skydance Animation Madrid",
+          "url": "https://en.wikipedia.org/wiki/Skydance_Animation_Madrid",
+          "reference": "turn450479search23"
+        },
+        {
+          "title": "Spain’s Animation Sector Presses for Bigger IP Ambitions, Faster Rules and a Stronger Global Drive",
+          "url": "https://www.reddit.com/r/IndoFilms/comments/1rry0l3/spains_animation_sector_presses_for_bigger_ip/",
+          "reference": "turn450479reddit24"
+        }
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "region": "Asia",
+      "references": 76,
+      "query": "Sri Lanka animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Member's Directory - Event Management Association Sri Lanka",
+          "url": "https://ema.lk/members-directory/",
+          "reference": "turn127616search0"
+        },
+        {
+          "title": "Member's Directory - Event Management Association Sri Lanka",
+          "url": "https://ema.lk/members-directory/?layout=grid",
+          "reference": "turn127616search2"
+        },
+        {
+          "title": "Company | FLY STUDIOS",
+          "url": "https://www.flystudios.lk/company",
+          "reference": "turn127616search3"
+        },
+        {
+          "title": "Creative & Production Companies Archives - Event Management Association Sri Lanka",
+          "url": "https://ema.lk/directory-categories/creative-production/",
+          "reference": "turn127616search4"
+        },
+        {
+          "title": "Home",
+          "url": "https://mantrafilmscolombo.com/",
+          "reference": "turn127616search5"
+        },
+        {
+          "title": "Animation.lk",
+          "url": "https://www.animation.lk/",
+          "reference": "turn127616search6"
+        },
+        {
+          "title": "Mogo Studios — Animation · jobvfx.com",
+          "url": "https://jobvfx.com/studios/mogo-studios-mtm6k9kd",
+          "reference": "turn127616search7"
+        },
+        {
+          "title": "Mogo Studios — Animation · jobvfx.com",
+          "url": "https://jobvfx.com/studios/mogo-studios-mtm6k9kd/",
+          "reference": "turn127616search8"
+        },
+        {
+          "title": "Levelstair Studios | Game Development Studio in Sri Lanka",
+          "url": "https://www.levelstair.com/",
+          "reference": "turn127616search9"
+        },
+        {
+          "title": "Home | Autumn Lane Studio",
+          "url": "https://www.autumnlanestudio.com/",
+          "reference": "turn127616search10"
+        },
+        {
+          "title": "Our Members | ANIMATIONCOUNCILPH",
+          "url": "https://www.animationcouncil.org/ourmembers",
+          "reference": "turn127616search11"
+        },
+        {
+          "title": "A Study of Sri Lankan Film Directors’ Knowledge and Awareness of the Use of Visual Effects and Computer-generated Imagery in Film Production",
+          "url": "https://conf.kln.ac.lk/ich/media/attachments/2023/09/07/ich2023_abstracts_online-final.pdf",
+          "reference": "turn127616search12"
+        },
+        {
+          "title": "TAMIL FILM ACTIVE PRODUCERS ASSOCIATION",
+          "url": "https://tfapa.com/wp-content/uploads/2025/02/trade_guide_march.pdf",
+          "reference": "turn127616search13"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://edex.lk/wp-content/uploads/2024/2024MYE/MarketingDocs/EDEX_MYE_2024_ECATALOGUE.pdf",
+          "reference": "turn127616search14"
+        },
+        {
+          "title": "1st Page",
+          "url": "https://nfc.gov.lk/wp-content/uploads/2025/12/Annual-Report-2015.pdf",
+          "reference": "turn127616search15"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn127616search16"
+        },
+        {
+          "title": "National Film Corporation of Sri Lanka",
+          "url": "https://www.parliament.lk/uploads/businessdocs/english/22894_english_2025-12-01.pdf",
+          "reference": "turn127616search17"
+        },
+        {
+          "title": "magam soli Media pack",
+          "url": "https://imagineindia.net/wp-content/uploads/2024/02/magam-soli-media-pack.pdf",
+          "reference": "turn127616search18"
+        },
+        {
+          "title": "Stein Studios",
+          "url": "https://en.wikipedia.org/wiki/Stein_Studios",
+          "reference": "turn127616search19"
+        },
+        {
+          "title": "List of Sri Lankan films of the 2020s",
+          "url": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_films_of_the_2020s",
+          "reference": "turn127616search20"
+        }
+      ]
+    },
+    {
+      "country": "St. Lucia",
+      "region": "Latin America & Caribbean",
+      "references": 1,
+      "query": "St. Lucia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Directory of the audiovisual industry",
+          "url": "https://spainaudiovisualhub.digital.gob.es/en/directorio/directorio1",
+          "reference": "turn645816search1"
+        },
+        {
+          "title": "Creative & Media Services - Export Saint Lucia",
+          "url": "https://exportsaintlucia.org/directories-category/creative-media-services/",
+          "reference": "turn645816search2"
+        },
+        {
+          "title": "St Lucia Film Commission | Film Commissions | Castries | Screen Global Production",
+          "url": "https://www.screenglobalproduction.com/country/st-lucia/profile/st-lucia-film-commission",
+          "reference": "turn645816search3"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn645816search4"
+        },
+        {
+          "title": "Members – St. Lucia Coalition of Service Industries",
+          "url": "https://www.slcsi.org.lc/membership/members/",
+          "reference": "turn645816search5"
+        },
+        {
+          "title": "Save Asociación Asociación Canaria de Empresas Profesionales del sector de la Animación, el Videojuego y los Efectos Visuales.",
+          "url": "https://saveasociacion.es/",
+          "reference": "turn645816search6"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn645816search7"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn645816search8"
+        },
+        {
+          "title": "Member Directory - Film Florida- Entertainment Production Association",
+          "url": "https://filmflorida.org/member-directory/",
+          "reference": "turn645816search9"
+        },
+        {
+          "title": "All Members - SLHTA",
+          "url": "https://slhta.com/all-members/",
+          "reference": "turn645816search10"
+        },
+        {
+          "title": "PROFESSIONAL DIRECTORY 2025",
+          "url": "https://www.grancanariafilm.com/wp-content/uploads/2025/09/PROFESSIONAL-DIRECTORY-2025-2-2.pdf",
+          "reference": "turn645816search12"
+        },
+        {
+          "title": "Malfinis Animation Studio - Contact Us | Malfinis Film & Animation Studios Inc.",
+          "url": "https://malfinisproductions.com/contact.html",
+          "reference": "turn645816search11"
+        },
+        {
+          "title": "PRFC_Film Industry Contacts_04-2025",
+          "url": "https://www.discoverpuertorico.com/sites/default/files/2025-04/PRFC_Film%20Industry%20Contacts_04-2025.pdf",
+          "reference": "turn645816search13"
+        },
+        {
+          "title": "Government of the Republic of Trinidad and Tobago",
+          "url": "https://niherst.gov.tt/files/Animation_SIM_Presentation.pdf",
+          "reference": "turn645816search14"
+        },
+        {
+          "title": "BUSINESS DIRECTORY",
+          "url": "https://www.wesgro.co.za/uploads/files/Filmmakers-Guide-to-the-Western-Cape_Edition-2_2023.pdf",
+          "reference": "turn645816search15"
+        },
+        {
+          "title": "05 VFX and Animation",
+          "url": "https://www.costaricafilmcommission.org/wp-content/uploads/2026/01/Film-Commision-Suppliers.pdf",
+          "reference": "turn645816search16"
+        },
+        {
+          "title": "PRFC_Film Industry Contacts_Rev-03-28-2022",
+          "url": "https://www.discoverpuertorico.com/sites/default/files/2024-06/PRFC%20Film%20Industry%20Contacts%20April%202024.pdf",
+          "reference": "turn645816search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn645816search18"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn645816search19"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn645816search20"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn645816search21"
+        }
+      ]
+    },
+    {
+      "country": "Sudan",
+      "region": "Africa",
+      "references": 4,
+      "query": "Sudan animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Studios – sudanim.fr",
+          "url": "https://www.sudanim.fr/membres/studios/",
+          "reference": "turn528884search1"
+        },
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn528884search2"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn528884search3"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn528884search4"
+        },
+        {
+          "title": "Blender Network",
+          "url": "https://network.blender.org/",
+          "reference": "turn528884search5"
+        },
+        {
+          "title": "Sudanese Filmmaking Association, Hope Radio, ContentPassport #",
+          "url": "https://sudafilms.wixsite.com/contentpassport",
+          "reference": "turn528884search6"
+        },
+        {
+          "title": "Sudanese Chambers of Industries Association",
+          "url": "https://scia-sudan.com/en/industrialdirectory",
+          "reference": "turn528884search7"
+        },
+        {
+          "title": "Wooblo — The Global Creative Talent Network",
+          "url": "https://www.wooblo.com/",
+          "reference": "turn528884search8"
+        },
+        {
+          "title": "CINICA Creators Council · Rise from Creator to Creative Entrepreneur",
+          "url": "https://www.cinica.org/",
+          "reference": "turn528884search9"
+        },
+        {
+          "title": "Sudanese Game Collective | LinkedIn",
+          "url": "https://www.linkedin.com/company/sudanesegamecollective",
+          "reference": "turn528884search10"
+        },
+        {
+          "title": "Directory | Creatives & studios | Pixelsmith Studios",
+          "url": "https://pixelsmithstudios.com/directory?kind=studio",
+          "reference": "turn528884search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn528884search12"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn528884search13"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://www.unesco.org/creativity/sites/default/files/medias/fichiers/2023/01/379165eng.pdf?hNzFuf4=rDErTIXI",
+          "reference": "turn528884search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn528884search15"
+        },
+        {
+          "title": "Cinema of Sudan",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Sudan",
+          "reference": "turn528884search16"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn528884search17"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn528884search18"
+        }
+      ]
+    },
+    {
+      "country": "Suriname",
+      "region": "Latin America & Caribbean",
+      "references": 8,
+      "query": "Suriname animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Animation NL Industry Guide 2022",
+          "url": "https://filmcommission.nl/documents/42/animation_nl_industry_guide_2024.pdf",
+          "reference": "turn942719search12"
+        },
+        {
+          "title": "Suriname Film Commission volgende stap professonalisering en groei film- en audiovisuele sector – de Ware Tijd",
+          "url": "https://dwtonline.com/suriname-film-commission-volgende-stap-professonalisering-en-groei-film-en-audiovisuele-sector/",
+          "reference": "turn942719search1"
+        },
+        {
+          "title": "Filmdelegatie ontvouwt plannen aan president Santokhi",
+          "url": "https://gov.sr/filmdelegatie-ontvouwt-plannen-aan-president-santokhi/",
+          "reference": "turn942719search2"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn942719search3"
+        },
+        {
+          "title": "Studio DAVE | LinkedIn",
+          "url": "https://sr.linkedin.com/company/studiodave",
+          "reference": "turn942719search4"
+        },
+        {
+          "title": "Shoeket | Suriname Film Commission moet schijnwerpers op lokale filmindustrie plaatsen",
+          "url": "https://www.shoeket.com/nieuwsbericht/129523/",
+          "reference": "turn942719search5"
+        },
+        {
+          "title": "Waves Films / TV Production in Suriname",
+          "url": "https://www.wavesfilms.org/",
+          "reference": "turn942719search6"
+        },
+        {
+          "title": "Animation - Industry Research and Live Data | SMBs.com",
+          "url": "https://www.smbs.com/research/industry/animation",
+          "reference": "turn942719search7"
+        },
+        {
+          "title": "Leden — DAFF",
+          "url": "https://www.daff.org/leden",
+          "reference": "turn942719search8"
+        },
+        {
+          "title": "Stichting Suriname Film Commission officieel opgericht",
+          "url": "https://www.gfcnieuws.com/stichting-suriname-film-commission-officieel-opgericht/",
+          "reference": "turn942719search9"
+        },
+        {
+          "title": "Nieuwe stap voor Surinaamse filmindustrie met oprichting van Film Commission - KEY NEWS SURINAME",
+          "url": "https://keynews.sr/nieuwe-stap-voor-surinaamse-filmindustrie-met-oprichting-van-film-commission/",
+          "reference": "turn942719search10"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn942719search11"
+        },
+        {
+          "title": "Animation NL Industry Guide 2022",
+          "url": "https://assets.filmfonds.nl/animation_NL_industry_guide-1.pdf",
+          "reference": "turn942719search13"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn942719search14"
+        }
+      ]
+    },
+    {
+      "country": "Sweden",
+      "region": "Europe",
+      "references": 686,
+      "query": "Sweden animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Members · Film & TV-Producenterna",
+          "url": "https://filmtvp.se/english/members/",
+          "reference": "turn254445search0"
+        },
+        {
+          "title": "Members · Film & TV-Producenterna",
+          "url": "https://filmtvp.se/member/",
+          "reference": "turn254445search1"
+        },
+        {
+          "title": "Våra medlemsbolag · Film & TV-Producenterna",
+          "url": "https://filmtvp.se/medlemmar/",
+          "reference": "turn254445search2"
+        },
+        {
+          "title": "Members · Film & TV-Producenterna",
+          "url": "https://filmtvp.se/english/members/?filter=film",
+          "reference": "turn254445search3"
+        },
+        {
+          "title": "Studios – Nordic Animation",
+          "url": "https://nordicanimation.com/studios-producers/",
+          "reference": "turn254445search4"
+        },
+        {
+          "title": "Members - Sweden Game Arena",
+          "url": "https://swedengamearena.com/en/us/members/",
+          "reference": "turn254445search5"
+        },
+        {
+          "title": "INDUSTRY CONTACTS IN SWEDEN · PRODUCTION COMPANIES",
+          "url": "https://www.filminstitutet.se/globalassets/2.-fa-kunskap-om-film/svensk-film-i-utlandet/swedish-film-magazine/swedish-film-1-2021.pdf",
+          "reference": "turn254445search12"
+        },
+        {
+          "title": "SSPA | Southern Sweden Producers Association",
+          "url": "https://www.producentforeningen.se/en/",
+          "reference": "turn254445search6"
+        },
+        {
+          "title": "Industry Contacts Sweden",
+          "url": "https://www.filminstitutet.se/globalassets/2.-fa-kunskap-om-film/svensk-film-i-utlandet/swedish-film-magazine/annecy-2017_pdf_spread.pdf",
+          "reference": "turn254445search13"
+        },
+        {
+          "title": "SweetSpot",
+          "url": "https://www.sweetspotcreatives.com/home",
+          "reference": "turn254445search7"
+        },
+        {
+          "title": "About - Film Commission Sweden",
+          "url": "https://filmcommissionsweden.se/about/",
+          "reference": "turn254445search8"
+        },
+        {
+          "title": "INDUSTRY CONTACTS IN SWEDEN · PRODUCTION COMPANIES",
+          "url": "https://www.filminstitutet.se/globalassets/2.-fa-kunskap-om-film/svensk-film-i-utlandet/swedish-film-magazine/swedish-film-2-2021.pdf",
+          "reference": "turn254445search14"
+        },
+        {
+          "title": "VFX & Animation Studios in Sweden | VFX Engine",
+          "url": "https://www.vfxengine.com/studios/country/sweden",
+          "reference": "turn254445search9"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn254445search15"
+        },
+        {
+          "title": "SSPA | Södra Sveriges Filmproducentförening",
+          "url": "https://www.producentforeningen.se/",
+          "reference": "turn254445search10"
+        },
+        {
+          "title": "Våra medlemsbolag · Film & TV-Producenterna",
+          "url": "https://filmtvp.se/medlemmar/?filter=film",
+          "reference": "turn254445search11"
+        },
+        {
+          "title": "Mifa 2024 - Exhibitors",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Exhibitors.pdf",
+          "reference": "turn254445search16"
+        },
+        {
+          "title": "Rättighetsalliansen",
+          "url": "https://en.wikipedia.org/wiki/R%C3%A4ttighetsalliansen",
+          "reference": "turn254445search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn254445search18"
+        },
+        {
+          "title": "List of video game companies of Sweden",
+          "url": "https://en.wikipedia.org/wiki/List_of_video_game_companies_of_Sweden",
+          "reference": "turn254445search19"
+        },
+        {
+          "title": "Video games in Sweden",
+          "url": "https://en.wikipedia.org/wiki/Video_games_in_Sweden",
+          "reference": "turn254445search20"
+        },
+        {
+          "title": "Sweden & VFX",
+          "url": "https://www.reddit.com/r/vfx/comments/1j8gmkt/sweden_vfx/",
+          "reference": "turn254445reddit21"
+        },
+        {
+          "title": "Magnus Jansson",
+          "url": "https://en.wikipedia.org/wiki/Magnus_Jansson",
+          "reference": "turn254445search22"
+        },
+        {
+          "title": "FIAPF",
+          "url": "https://en.wikipedia.org/wiki/FIAPF",
+          "reference": "turn254445search23"
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "region": "Europe",
+      "references": 600,
+      "query": "Switzerland animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Swissanimation | Mitgliederverzeichnis",
+          "url": "https://swissanimation.ch/de/mitglieder/mitgliederverzeichnis/",
+          "reference": "turn536121search0"
+        },
+        {
+          "title": "Mitglieder – Swiss Film Producers' Association",
+          "url": "https://www.swissfilmproducers.ch/mitglieder/",
+          "reference": "turn536121search1"
+        },
+        {
+          "title": "Members – Swiss Film Producers' Association",
+          "url": "https://www.swissfilmproducers.ch/en/mitglieder/",
+          "reference": "turn536121search2"
+        },
+        {
+          "title": "Studios – Switzerland Film Commission",
+          "url": "https://switzerlandfilmcommission.ch/studios/",
+          "reference": "turn536121search3"
+        },
+        {
+          "title": "Mitglieder",
+          "url": "https://www.swissfilm.org/mitglieder/",
+          "reference": "turn536121search4"
+        },
+        {
+          "title": "Switzerland Film Commission",
+          "url": "https://switzerlandfilmcommission.ch/",
+          "reference": "turn536121search5"
+        },
+        {
+          "title": "Production Guide | Geneva Film Commission",
+          "url": "https://www.genevafilmcommission.ch/en/production-guide",
+          "reference": "turn536121search7"
+        },
+        {
+          "title": "Resources - Helvetia Motion Arts",
+          "url": "https://www.helvetiamotionarts.com/resources/",
+          "reference": "turn536121search9"
+        },
+        {
+          "title": "Producers – Switzerland Film Commission",
+          "url": "https://switzerlandfilmcommission.ch/producers/",
+          "reference": "turn536121search10"
+        },
+        {
+          "title": "Our members - Swiss Game Developers Association SGDA",
+          "url": "https://www.sgda.ch/members/",
+          "reference": "turn536121search11"
+        },
+        {
+          "title": "Mifa 2024 - Exhibitors",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Exhibitors.pdf",
+          "reference": "turn536121search12"
+        },
+        {
+          "title": "#",
+          "url": "https://www.zhdk.ch/file/live/4d/4d6f8b7bbf11fdb57c3947e49b170ebcb78942f8/swiss_creative_tech_startups_report_2024.pdf",
+          "reference": "turn536121search13"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn536121search14"
+        },
+        {
+          "title": "IT’S SO ON",
+          "url": "https://www.aoassocies.com/wp-content/uploads/ACM/AC_2021_08.pdf",
+          "reference": "turn536121search15"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn536121search16"
+        },
+        {
+          "title": "Association internationale du film d’animation",
+          "url": "https://de.wikipedia.org/wiki/Association_internationale_du_film_d%E2%80%99animation",
+          "reference": "turn536121search17"
+        },
+        {
+          "title": "Assemblage Entertainment",
+          "url": "https://en.wikipedia.org/wiki/Assemblage_Entertainment",
+          "reference": "turn536121search18"
+        },
+        {
+          "title": "Where would a 3D artist find work in Switzerland, if at all?",
+          "url": "https://www.reddit.com/r/askswitzerland/comments/1vde1fn/where_would_a_3d_artist_find_work_in_switzerland/",
+          "reference": "turn536121reddit19"
+        },
+        {
+          "title": "FIAPF",
+          "url": "https://en.wikipedia.org/wiki/FIAPF",
+          "reference": "turn536121search20"
+        },
+        {
+          "title": "Nexus Studios",
+          "url": "https://en.wikipedia.org/wiki/Nexus_Studios",
+          "reference": "turn536121search21"
+        },
+        {
+          "title": "Mikros Animation",
+          "url": "https://en.wikipedia.org/wiki/Mikros_Animation",
+          "reference": "turn536121search22"
+        }
+      ]
+    },
+    {
+      "country": "Syria",
+      "region": "Middle East",
+      "references": 5,
+      "query": "Syria animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Lighthouse Studio | Lighthouse Studio",
+          "url": "https://lighthouse-sy.com/",
+          "reference": "turn164763search1"
+        },
+        {
+          "title": "Members – Ассоциация анимационного кино России",
+          "url": "https://aakr.ru/en/members/",
+          "reference": "turn164763search2"
+        },
+        {
+          "title": "Star Animation | LinkedIn",
+          "url": "https://www.linkedin.com/company/star-animation",
+          "reference": "turn164763search3"
+        },
+        {
+          "title": "‏Star Animation‏ | LinkedIn",
+          "url": "https://sy.linkedin.com/company/star-animation",
+          "reference": "turn164763search4"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn164763search5"
+        },
+        {
+          "title": "الهيكل الاداري – نقابة الفنانين السوريين",
+          "url": "https://artists-syndicate.sy/?page_id=210",
+          "reference": "turn164763search6"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn164763search7"
+        },
+        {
+          "title": "Syria's TV and film industry targets $200 million in investment amid revival push",
+          "url": "https://sana.sy/en/culture-and-arts/2354590/",
+          "reference": "turn164763search8"
+        },
+        {
+          "title": "Sellers - E-RCM",
+          "url": "https://ramadancontentmarket.com/sellers-2023/",
+          "reference": "turn164763search9"
+        },
+        {
+          "title": "‏Three Dimensions‏ | LinkedIn",
+          "url": "https://sy.linkedin.com/company/three-dimension",
+          "reference": "turn164763search10"
+        },
+        {
+          "title": "About - Cinémaya Art Production",
+          "url": "https://cinemaya.pro/about/",
+          "reference": "turn164763search11"
+        },
+        {
+          "title": "Guest Of Honor Program In Partnership With",
+          "url": "https://www.maffswe.com/wp-content/uploads/2022/04/MID-Katalog-compressed.pdf",
+          "reference": "turn164763search12"
+        },
+        {
+          "title": "2 -Animation production companies (there were only two such companies in Syria but they are merely executive services companies for often Gulf TV stations). With the closing down of one of these companies, a new company (Ox Animation) appeared in 2010.",
+          "url": "https://www.culturalpolicies.net/wp-content/uploads/2019/10/syria_full_profile_2014.pdf",
+          "reference": "turn164763search13"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn164763search14"
+        },
+        {
+          "title": "Venus Centre",
+          "url": "https://en.wikipedia.org/wiki/Venus_Centre",
+          "reference": "turn164763search15"
+        },
+        {
+          "title": "Cinema of Syria",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Syria",
+          "reference": "turn164763search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn164763search17"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn164763search18"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn164763search19"
+        },
+        {
+          "title": "FIAPF",
+          "url": "https://en.wikipedia.org/wiki/FIAPF",
+          "reference": "turn164763search20"
+        }
+      ]
+    },
+    {
+      "country": "Taiwan",
+      "region": "Asia",
+      "references": 216,
+      "query": "Taiwan animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "會員MEMBER | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1member",
+          "reference": "turn458297search0"
+        },
+        {
+          "title": "會員名冊 — 社團法人台灣線上影視產業協會",
+          "url": "https://www.taiwanott.org/member-list",
+          "reference": "turn458297search1"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn458297search2"
+        },
+        {
+          "title": "FINDIT",
+          "url": "https://findit.sme.gov.tw/en/Startup?SubCatIDs=40",
+          "reference": "turn458297search3"
+        },
+        {
+          "title": "FINDIT",
+          "url": "https://findit.sme.gov.tw/en/Startup?SubCatIDs=315",
+          "reference": "turn458297search4"
+        },
+        {
+          "title": "台北市電影委員會 TAIPEI FILM COMMISSION - 影視人才媒合平台 Television Talent Matching Platform",
+          "url": "https://www.filmcommission.taipei/talent/company_list.aspx?type=%E5%BE%8C%E6%9C%9F%E8%A3%BD%E4%BD%9C",
+          "reference": "turn458297search5"
+        },
+        {
+          "title": "Location　附錄：拍片相關資訊　APPENDIX: FILMING IN TAIPEI",
+          "url": "https://www.filmcommission.taipei/retrieve/20230428134935.pdf",
+          "reference": "turn458297search12"
+        },
+        {
+          "title": "台北市電影委員會 TAIPEI FILM COMMISSION - 影視人才媒合平台 Television Talent Matching Platform",
+          "url": "https://www.filmcommission.taipei/talent/company_list.aspx",
+          "reference": "turn458297search6"
+        },
+        {
+          "title": "首頁 | 社團法人動畫特效協會",
+          "url": "https://www.avataiwan.org/",
+          "reference": "turn458297search7"
+        },
+        {
+          "title": "FINDIT",
+          "url": "https://findit.sme.gov.tw/en/Startup?MainCatIDs=29",
+          "reference": "turn458297search8"
+        },
+        {
+          "title": "動畫特效協會，立足動畫創作者基地，加速起飛 - 映CG 媒體 | InCG Media - 映CG 數位影像繪圖媒體",
+          "url": "https://www.incgmedia.com/spotlight/ava-launches-the-creative-base-for-animators",
+          "reference": "turn458297search9"
+        },
+        {
+          "title": "FINDIT",
+          "url": "https://findit.sme.gov.tw/en/Startup?SubCatIDs=234",
+          "reference": "turn458297search10"
+        },
+        {
+          "title": "FINDIT",
+          "url": "https://findit.sme.gov.tw/en/Startup?MainCatIDs=29&PageNumber=5&PageSize=50",
+          "reference": "turn458297search11"
+        },
+        {
+          "title": "3-2. 台灣動畫公司 Animation Industry in Taiwan",
+          "url": "https://www.filmcommission.taipei/retrieve/%E6%8B%8D%E5%8F%B0%E5%8C%972011_compressed.pdf",
+          "reference": "turn458297search13"
+        },
+        {
+          "title": "社團法人動畫特效協會 Animation & Visual Effects",
+          "url": "https://www.tisdc.org/wp-content/uploads/2025-Diversity.pdf",
+          "reference": "turn458297search14"
+        },
+        {
+          "title": "LIST OF EXHIBITORS",
+          "url": "https://taiwancinema.bamid.gov.tw/ImageData/320/2022/88947/10452.pdf",
+          "reference": "turn458297search15"
+        },
+        {
+          "title": "2022 Taiwan Cultural Content Industries Survey Report",
+          "url": "https://en.taicca.tw/uploads/userfiles/research/20230710/2022%20Taiwan%20Cultural%20Content%20Industries%20Survey%20Report%20Vol.%20II%20Television%20%E2%80%A2%20Motion%20Picture%20%E2%80%A2%20Animation%20Industries.pdf",
+          "reference": "turn458297search16"
+        },
+        {
+          "title": "臺灣動畫",
+          "url": "https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E5%8B%95%E7%95%AB",
+          "reference": "turn458297search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn458297search18"
+        },
+        {
+          "title": "Brilliant Animation Studios",
+          "url": "https://en.wikipedia.org/wiki/Brilliant_Animation_Studios",
+          "reference": "turn458297search19"
+        },
+        {
+          "title": "好動動畫",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A5%BD%E5%8B%95%E5%8B%95%E7%95%AB",
+          "reference": "turn458297search20"
+        },
+        {
+          "title": "Taipei Film Commission",
+          "url": "https://en.wikipedia.org/wiki/Taipei_Film_Commission",
+          "reference": "turn458297search21"
+        },
+        {
+          "title": "Taiwan Creative Content Agency",
+          "url": "https://en.wikipedia.org/wiki/Taiwan_Creative_Content_Agency",
+          "reference": "turn458297search22"
+        }
+      ]
+    },
+    {
+      "country": "Tajikistan",
+      "region": "Asia",
+      "references": 2,
+      "query": "Tajikistan animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Tasvirnigor — Film & Animation Studio | Dushanbe, Tajikistan",
+          "url": "https://www.tasvirnigor.com/",
+          "reference": "turn823519search0"
+        },
+        {
+          "title": "Management – Tajikfilm",
+          "url": "https://tojikfilm.tj/en/management/",
+          "reference": "turn823519search2"
+        },
+        {
+          "title": "ArtVision Studio – Продакшн-студии Art-Vision",
+          "url": "https://avstudio.tj/en/",
+          "reference": "turn823519search3"
+        },
+        {
+          "title": "FILM INDUSTRIES IN CENTRAL ASIA – A VIEW TODAY AND TOWARDS THE FUTURE",
+          "url": "https://www.unesco.org/creativity/sites/default/files/medias/fichiers/2023/01/380026eng.pdf",
+          "reference": "turn823519search12"
+        },
+        {
+          "title": "ArtVision Studio — Продакшн-студии Art-Vision",
+          "url": "https://avstudio.tj/",
+          "reference": "turn823519search4"
+        },
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn823519search5"
+        },
+        {
+          "title": "Services – ArtVision Studio",
+          "url": "https://avstudio.tj/en/services-2/",
+          "reference": "turn823519search6"
+        },
+        {
+          "title": "contact us – ArtVision Studio",
+          "url": "https://avstudio.tj/en/contact-us/",
+          "reference": "turn823519search7"
+        },
+        {
+          "title": "Tajikfilm – State unitary enterprise Tajikfilm",
+          "url": "https://tojikfilm.tj/en/main/",
+          "reference": "turn823519search8"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn823519search9"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn823519search10"
+        },
+        {
+          "title": "Members Directory - AIPRO",
+          "url": "https://aipro.tv/members-directory/",
+          "reference": "turn823519search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn823519search13"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn823519search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn823519search15"
+        },
+        {
+          "title": "Tajikfilm",
+          "url": "https://en.wikipedia.org/wiki/Tajikfilm",
+          "reference": "turn823519search16"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn823519search17"
+        }
+      ]
+    },
+    {
+      "country": "Tanzania",
+      "region": "Africa",
+      "references": 19,
+      "query": "Tanzania animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "About us | Tai Studios",
+          "url": "https://www.taistudios.co.tz/company",
+          "reference": "turn221327search1"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn221327search2"
+        },
+        {
+          "title": "Majhala Animation Studios | LinkedIn",
+          "url": "https://tz.linkedin.com/company/majhala-animation-studios",
+          "reference": "turn221327search3"
+        },
+        {
+          "title": "ROGECH ANIMATION & VISUAL EFFECTS | Dar es Salaam, Tanzania Startup",
+          "url": "https://gust.com/companies/rogech-animation-visual-effects-2",
+          "reference": "turn221327search4"
+        },
+        {
+          "title": "Search for film video productions in Tanzania | Yellow Tanzania",
+          "url": "https://www.yellow.co.tz/search-results/film%20video%20productions",
+          "reference": "turn221327search5"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn221327search6"
+        },
+        {
+          "title": "會員MEMBER | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1member",
+          "reference": "turn221327search7"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn221327search8"
+        },
+        {
+          "title": "About | Swahiba Studios",
+          "url": "https://www.swahibastudios.com/about.html",
+          "reference": "turn221327search9"
+        },
+        {
+          "title": "Home | Tai Studios",
+          "url": "https://www.taistudios.co.tz/",
+          "reference": "turn221327search10"
+        },
+        {
+          "title": "TFB | Mwanzo",
+          "url": "https://filmboard.go.tz/",
+          "reference": "turn221327search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn221327search12"
+        },
+        {
+          "title": "United Republic of Tanzania",
+          "url": "https://www.unesco.org/creativity/sites/default/files/medias/fichiers/2023/01/379165eng.pdf?hNzFuf4=rDErTIXI",
+          "reference": "turn221327search13"
+        },
+        {
+          "title": "CREATIVE INDUSTRIES, SPORTS AND INNOVATION",
+          "url": "https://tiseza.go.tz/uploads/documents/en-1779103707-SPORTS%20%26%20CREATIVE%20INDUSTRIES..pdf",
+          "reference": "turn221327search14"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn221327search15"
+        },
+        {
+          "title": "The Political Economy of the Film Industry in Tanzania: From Socialism to an",
+          "url": "https://files01.core.ac.uk/download/pdf/213393318.pdf",
+          "reference": "turn221327search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn221327search17"
+        }
+      ]
+    },
+    {
+      "country": "Thailand",
+      "region": "Asia",
+      "references": 470,
+      "query": "Thailand animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Members - Thai Film Companies | National Federation of Motion Pictures and Contents Associations (MPC)",
+          "url": "https://www.mpc.or.th/en/member-film-companies",
+          "reference": "turn907282search0"
+        },
+        {
+          "title": "About TACGA – TACGA",
+          "url": "https://www.tacga.or.th/about-tacga/",
+          "reference": "turn907282search1"
+        },
+        {
+          "title": "Exhibitor List – Thailand Content Market",
+          "url": "https://thailandcontentmarket.com/exhibitor-list/",
+          "reference": "turn907282search2"
+        },
+        {
+          "title": "สตูดิโอที่มีผลงานต่างประเทศมากมาย โดยเฉพาะผลงา",
+          "url": "https://arch.rmutp.ac.th/wp-content/uploads/2024/03/%E0%B8%9B%E0%B8%B4%E0%B8%A2%E0%B8%A7%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C-%E0%B8%9E%E0%B8%A3%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93-66.pdf",
+          "reference": "turn907282search12"
+        },
+        {
+          "title": "Member | TGA",
+          "url": "https://www.tga.in.th/down-for-maintenance",
+          "reference": "turn907282search3"
+        },
+        {
+          "title": "ประวัติสมาพันธ์",
+          "url": "https://www.mpc.or.th/en/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C",
+          "reference": "turn907282search4"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn907282search5"
+        },
+        {
+          "title": "สถานที่ฝึกงาน",
+          "url": "https://animation.bsru.ac.th/am/training.html",
+          "reference": "turn907282search6"
+        },
+        {
+          "title": "depa Digital Content — ศูนย์รวมอุตสาหกรรมดิจิทัลคอนเทนต์ไทย",
+          "url": "https://digitalcontent.depa.or.th/",
+          "reference": "turn907282search7"
+        },
+        {
+          "title": "Thai Delegates – BIDC",
+          "url": "https://www.bidcfestival.com/?page_id=370",
+          "reference": "turn907282search8"
+        },
+        {
+          "title": "depa Digital Content — ศูนย์รวมอุตสาหกรรมดิจิทัลคอนเทนต์ไทย",
+          "url": "https://digitalcontent.depa.or.th/th",
+          "reference": "turn907282search9"
+        },
+        {
+          "title": "VFX & Animation Studios in Thailand | VFX Engine",
+          "url": "https://www.vfxengine.com/studios/country/thailand",
+          "reference": "turn907282search10"
+        },
+        {
+          "title": "คณะอนุกรรมการขับเคลื่อนอุตสาหกรรม ด้านภาพยนตร์ สารคดี และแอนิเมชัน",
+          "url": "https://thacca.go.th/committee/film-subcommittee/",
+          "reference": "turn907282search11"
+        },
+        {
+          "title": "TH-ENG_A4_Booklet_Depa2024-2025",
+          "url": "https://www.depa.or.th/storage/app/media/file/04-Digital%20Content%202024.pdf",
+          "reference": "turn907282search13"
+        },
+        {
+          "title": "D",
+          "url": "https://contentthailand.com/wp-content/uploads/2021/12/Thai-Film-Directory2018-2019.pdf",
+          "reference": "turn907282search14"
+        },
+        {
+          "title": "PowerPoint Presentation",
+          "url": "https://www.depa.or.th/storage/app/media/file/depadc24press-conerence-digital-content-2023rev5240903-final.pdf",
+          "reference": "turn907282search15"
+        },
+        {
+          "title": "Thai animation",
+          "url": "https://en.wikipedia.org/wiki/Thai_animation",
+          "reference": "turn907282search16"
+        },
+        {
+          "title": "Video games in Thailand",
+          "url": "https://en.wikipedia.org/wiki/Video_games_in_Thailand",
+          "reference": "turn907282search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn907282search18"
+        },
+        {
+          "title": "Igloo Studio",
+          "url": "https://en.wikipedia.org/wiki/Igloo_Studio",
+          "reference": "turn907282search19"
+        },
+        {
+          "title": "Thailand Film Office",
+          "url": "https://en.wikipedia.org/wiki/Thailand_Film_Office",
+          "reference": "turn907282search20"
+        },
+        {
+          "title": "Yggdrazil Group",
+          "url": "https://en.wikipedia.org/wiki/Yggdrazil_Group",
+          "reference": "turn907282search21"
+        },
+        {
+          "title": "VFX in Thailand?",
+          "url": "https://www.reddit.com/r/vfx/comments/1cus74w",
+          "reference": "turn907282reddit22"
+        }
+      ]
+    },
+    {
+      "country": "Timor-Leste",
+      "region": "Asia",
+      "references": 3,
+      "query": "Timor-Leste animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Artists Directory | Timor Creative Hub",
+          "url": "https://timorcreativehub.org/artists",
+          "reference": "turn609824search1"
+        },
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn609824search2"
+        },
+        {
+          "title": "05 ANIMAIS AVPL",
+          "url": "https://portugalfilmcommission.com/wp-content/uploads/2025/11/Portuguese-Animation_final_V2.pdf",
+          "reference": "turn609824search12"
+        },
+        {
+          "title": "Home | Timor Creative Hub",
+          "url": "https://timorcreativehub.org/",
+          "reference": "turn609824search3"
+        },
+        {
+          "title": "ASOCIACIONES - Premios Quirino",
+          "url": "https://premiosquirino.org/asociaciones/",
+          "reference": "turn609824search4"
+        },
+        {
+          "title": "Forum Animation Market",
+          "url": "https://asean-anima.org/forum/en",
+          "reference": "turn609824search5"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn609824search6"
+        },
+        {
+          "title": "Members Directory - AIPRO",
+          "url": "https://aipro.tv/members-directory/",
+          "reference": "turn609824search7"
+        },
+        {
+          "title": "CINICA Creators Council · Rise from Creator to Creative Entrepreneur",
+          "url": "https://www.cinica.org/",
+          "reference": "turn609824search8"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn609824search9"
+        },
+        {
+          "title": "Leden — DAFF",
+          "url": "https://www.daff.org/leden",
+          "reference": "turn609824search10"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn609824search11"
+        },
+        {
+          "title": "CONTACTS",
+          "url": "https://portugalfilmcommission.com/wp-content/uploads/2025/05/Portuguese-Animation_final-1-1.pdf",
+          "reference": "turn609824search13"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn609824search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn609824search15"
+        },
+        {
+          "title": "Thai animation",
+          "url": "https://en.wikipedia.org/wiki/Thai_animation",
+          "reference": "turn609824search16"
+        }
+      ]
+    },
+    {
+      "country": "Togo",
+      "region": "Africa",
+      "references": 6,
+      "query": "Togo animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Notre Equipe - Mess Pictures",
+          "url": "https://messpictures.com/notre-equipe/",
+          "reference": "turn714696search1"
+        },
+        {
+          "title": "Annuaires Togo",
+          "url": "https://annuairestogocom.showroomafrica.com/communication-publicite/audiovisuel/entreprises",
+          "reference": "turn714696search2"
+        },
+        {
+          "title": "OuiCoprod",
+          "url": "https://ouicoprod.org/structure/?id=1076&lang=en",
+          "reference": "turn714696search3"
+        },
+        {
+          "title": "Production audiovisuelle et agences vidéo du Togo",
+          "url": "https://www.goafricaonline.com/tg/annuaire/societes-audiovisuel",
+          "reference": "turn714696search4"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn714696search5"
+        },
+        {
+          "title": "About TACGA – TACGA",
+          "url": "https://www.tacga.or.th/about-tacga/",
+          "reference": "turn714696search6"
+        },
+        {
+          "title": "會員MEMBER | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1member",
+          "reference": "turn714696search7"
+        },
+        {
+          "title": "Les studios de production du Togo",
+          "url": "https://www.goafricaonline.com/tg/annuaire/studio-production",
+          "reference": "turn714696search8"
+        },
+        {
+          "title": "À propos de YOBO Studios - Yobo Studios",
+          "url": "https://yobostudios.com/a-propos-de-yobo-studios/",
+          "reference": "turn714696search9"
+        },
+        {
+          "title": "Annuaire des entreprises",
+          "url": "https://showroomafrica.com/public/annuaire/rechercher-entreprise",
+          "reference": "turn714696search10"
+        },
+        {
+          "title": "Annuaires Togo",
+          "url": "https://annuairestogo.com/communication-publicite/audiovisuel/entreprises",
+          "reference": "turn714696search11"
+        },
+        {
+          "title": "Mifa 2024 - Companies",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Companies.pdf",
+          "reference": "turn714696search12"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn714696search13"
+        },
+        {
+          "title": "Mifa 2024 - Exhibitors",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Exhibitors.pdf",
+          "reference": "turn714696search14"
+        },
+        {
+          "title": "Animation South Africa",
+          "url": "https://www.wesgro.co.za/uploads/files/Wesgro-Producers%E2%80%99-Booklet.pdf",
+          "reference": "turn714696search15"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn714696search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn714696search17"
+        },
+        {
+          "title": "Cinema of Togo",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Togo",
+          "reference": "turn714696search18"
+        },
+        {
+          "title": "Universal Grâce Production",
+          "url": "https://fr.wikipedia.org/wiki/Universal_Gr%C3%A2ce_Production",
+          "reference": "turn714696search19"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn714696search20"
+        },
+        {
+          "title": "Yowza! Animation",
+          "url": "https://en.wikipedia.org/wiki/Yowza%21_Animation",
+          "reference": "turn714696search21"
+        },
+        {
+          "title": "Sparx* Studios",
+          "url": "https://en.wikipedia.org/wiki/Sparx%2A_Studios",
+          "reference": "turn714696search22"
+        }
+      ]
+    },
+    {
+      "country": "Trinidad & Tobago",
+      "region": "Latin America & Caribbean",
+      "references": 5,
+      "query": "Trinidad & Tobago animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Services Go Global Certified Exporters: CARIFORUM Region 2019-2021",
+          "url": "https://ttcsi.org/wp-content/uploads/2022/03/SGG_Directory_FINAL_NOV25-1.pdf",
+          "reference": "turn990275search12"
+        },
+        {
+          "title": "Members Directory – TTCSI",
+          "url": "https://ttcsi.org/members-directory/",
+          "reference": "turn990275search0"
+        },
+        {
+          "title": "Film Commission Services - FilmTT",
+          "url": "https://filmtt.co.tt/film-commission-services/",
+          "reference": "turn990275search1"
+        },
+        {
+          "title": "Production Directory - FilmTT",
+          "url": "https://filmtt.co.tt/film-commission-services/production-directory/",
+          "reference": "turn990275search2"
+        },
+        {
+          "title": "Stage and Studio Spaces - FilmTT",
+          "url": "https://filmtt.co.tt/stage-and-studio-spaces/",
+          "reference": "turn990275search4"
+        },
+        {
+          "title": "Government of the Republic of Trinidad and Tobago",
+          "url": "https://www.niherst.gov.tt/research/publications/sim-animation-2018.pdf",
+          "reference": "turn990275search13"
+        },
+        {
+          "title": "FilmTT - FilmTT",
+          "url": "https://filmtt.co.tt/",
+          "reference": "turn990275search5"
+        },
+        {
+          "title": "Arts, Entertainment and Recreation - National Services Exporters Portal",
+          "url": "https://nsep.ttcsi.org/places/category/arts-entertainment-and-recreation/",
+          "reference": "turn990275search6"
+        },
+        {
+          "title": "Trinidad and Tobago",
+          "url": "https://premiosquirino.org/download/EN/WhitePaper_AnnexV.pdf",
+          "reference": "turn990275search14"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn990275search15"
+        },
+        {
+          "title": "TTCO members listing",
+          "url": "https://ttco.org.tt/members-listing/",
+          "reference": "turn990275search7"
+        },
+        {
+          "title": "Film Category | Trinidad and Tobago Chamber of Industry & Commerce",
+          "url": "https://membership.chamber.org.tt/list/category/film-3644",
+          "reference": "turn990275search8"
+        },
+        {
+          "title": "Coded Arts Limited | ICT",
+          "url": "https://membership.chamber.org.tt/list/member/coded-arts-limited-2847",
+          "reference": "turn990275search9"
+        },
+        {
+          "title": "Government of the Republic of Trinidad and Tobago",
+          "url": "https://niherst.gov.tt/research/publications/sim-animation-2018.pdf",
+          "reference": "turn990275search16"
+        },
+        {
+          "title": "About Us - Phastraq VFX",
+          "url": "https://phastraq.com/about-us/",
+          "reference": "turn990275search10"
+        },
+        {
+          "title": "STAR GLOBAL PRODUCTION STUDIOS | Film | Film & Photography",
+          "url": "https://membership.chamber.org.tt/list/member/star-global-production-studios-2817",
+          "reference": "turn990275search11"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn990275search17"
+        },
+        {
+          "title": "Trinidad and Tobago Creative Industries Company",
+          "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Creative_Industries_Company",
+          "reference": "turn990275search18"
+        },
+        {
+          "title": "Trinidad and Tobago Film Company",
+          "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Film_Company",
+          "reference": "turn990275search19"
+        },
+        {
+          "title": "Christopher Guinness",
+          "url": "https://en.wikipedia.org/wiki/Christopher_Guinness",
+          "reference": "turn990275search20"
+        }
+      ]
+    },
+    {
+      "country": "Tunisia",
+      "region": "Africa",
+      "references": 19,
+      "query": "Tunisia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Sociétés de production - Cinema Tunisien",
+          "url": "https://cinematunisien.com/societes-de-production/",
+          "reference": "turn713878search0"
+        },
+        {
+          "title": "Associations · TUNISIAN CINEMA",
+          "url": "https://www.tunisiancinema.com/associations/",
+          "reference": "turn713878search1"
+        },
+        {
+          "title": "Production audiovisuelle à Tunis : 24 entreprises | Tunibusiness",
+          "url": "https://tunibusiness.com.tn/prestataires/production-audiovisuelle/tunis",
+          "reference": "turn713878search2"
+        },
+        {
+          "title": "VFX Studios in Tunisia | Studio Hog",
+          "url": "https://studiohog.com/vfx-studios/Tunisia/",
+          "reference": "turn713878search4"
+        },
+        {
+          "title": "Motion design et animation à Tunis : 12 entreprises | Tunibusiness",
+          "url": "https://tunibusiness.com.tn/prestataires/motion-design/tunis",
+          "reference": "turn713878search6"
+        },
+        {
+          "title": "Motion design et animation en Tunisie : entreprises et devis | Tunibusiness",
+          "url": "https://tunibusiness.com.tn/prestataires/motion-design",
+          "reference": "turn713878search7"
+        },
+        {
+          "title": "List of Animation in Tunisia",
+          "url": "https://www.fastbase.com/countryindex/Tunisia/A/Animation",
+          "reference": "turn713878search8"
+        },
+        {
+          "title": "Members | AFI",
+          "url": "https://arabfilm-institute.org/members/",
+          "reference": "turn713878search9"
+        },
+        {
+          "title": "VFX Studios - vfxdent",
+          "url": "https://vfxdent.com/vfx-studios-directory/",
+          "reference": "turn713878search10"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://gabescinemafen.com/pdf/Edition/Catalogue-GCFEN2022.pdf",
+          "reference": "turn713878search12"
+        },
+        {
+          "title": "INDUSTRY DELEGATES",
+          "url": "https://gff-v2-prod.s3.amazonaws.com/4065/CGP-Guide.pdf",
+          "reference": "turn713878search13"
+        },
+        {
+          "title": "INDUSTRY DELEGATES",
+          "url": "https://elgounafilmfestival.com/wp-content/uploads/2025/11/CineGouna-Guide-GFF25.pdf",
+          "reference": "turn713878search14"
+        },
+        {
+          "title": "PRODUCTION SERVICES",
+          "url": "https://www.tunis.film/wp-content/uploads/Tunisian-International-Studios-Catalogue-2021-min.pdf",
+          "reference": "turn713878search15"
+        },
+        {
+          "title": "Mifa 2024 - Companies",
+          "url": "https://www.annecyfestival.com/sites/default/files/2024-07/Mifa%202024%20-%20Companies.pdf",
+          "reference": "turn713878search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn713878search17"
+        },
+        {
+          "title": "Société Anonyme Tunisienne de Production et d'Expansion Cinématographique",
+          "url": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Anonyme_Tunisienne_de_Production_et_d%27Expansion_Cin%C3%A9matographique",
+          "reference": "turn713878search18"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn713878search19"
+        },
+        {
+          "title": "Sparx* Studios",
+          "url": "https://en.wikipedia.org/wiki/Sparx%2A_Studios",
+          "reference": "turn713878search20"
+        },
+        {
+          "title": "Thai animation",
+          "url": "https://en.wikipedia.org/wiki/Thai_animation",
+          "reference": "turn713878search21"
+        }
+      ]
+    },
+    {
+      "country": "Türkiye",
+      "region": "Middle East",
+      "references": 374,
+      "query": "Türkiye animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Members – Reklam Yapımcıları Derneği",
+          "url": "https://ry-tr.org/en/member/",
+          "reference": "turn497964search0"
+        },
+        {
+          "title": "Üyeler – Reklam Yapımcıları Derneği",
+          "url": "https://ry-tr.org/uyeler/",
+          "reference": "turn497964search1"
+        },
+        {
+          "title": "Home - Türkçe - Turkish Film Commission",
+          "url": "https://turkishfilmcommission.org/home-turkce/",
+          "reference": "turn497964search2"
+        },
+        {
+          "title": "Türkiye Oyun Geliştiriciler Derneği",
+          "url": "https://toged.org/uyeler",
+          "reference": "turn497964search3"
+        },
+        {
+          "title": "VFX Studios in Turkey | Studio Hog",
+          "url": "https://studiohog.com/vfx-studios/Turkey/",
+          "reference": "turn497964search4"
+        },
+        {
+          "title": "FİYAB | Film Yapımcıları Meslek Birliği",
+          "url": "https://www.fiyab.org.tr/uyeler.aspx",
+          "reference": "turn497964search5"
+        },
+        {
+          "title": "Top 25 Vfx and animation studios based in Türkiye",
+          "url": "https://revenuebase.ai/companies/vfx-and-animation-studios/turkiye",
+          "reference": "turn497964search6"
+        },
+        {
+          "title": "Members – Page 2 – Reklam Yapımcıları Derneği",
+          "url": "https://ry-tr.org/en/member/page/2/",
+          "reference": "turn497964search7"
+        },
+        {
+          "title": "TURKISH CINEMA",
+          "url": "https://bksv.org.tr/wp-content/uploads/2022/05/CannesFilmCompanies_Catalog_2022-digital.pdf",
+          "reference": "turn497964search12"
+        },
+        {
+          "title": "ORGANISATION",
+          "url": "https://bilisimvadisi.com.tr/wp-content/uploads/2026/02/Creative_and_Cultural_Industries_Technology_and_Scaling_Meetings_Final_Report.pdf",
+          "reference": "turn497964search13"
+        },
+        {
+          "title": "Üyeler – Filmyap",
+          "url": "https://www.filmyap.org/uyeler/",
+          "reference": "turn497964search8"
+        },
+        {
+          "title": "Animation & Motion Design Studios in Türkiye | Top100",
+          "url": "https://top100agencies.com/en/turkey/animation-studios",
+          "reference": "turn497964search9"
+        },
+        {
+          "title": "Members – Page 3 – Reklam Yapımcıları Derneği",
+          "url": "https://ry-tr.org/en/member/page/3/",
+          "reference": "turn497964search10"
+        },
+        {
+          "title": "Türkiye'deki Oyun Şirketleri | Türkiye Oyun Sektörü",
+          "url": "https://turkiyeoyunsektoru.com/sirketler",
+          "reference": "turn497964search11"
+        },
+        {
+          "title": "2024",
+          "url": "https://bksv.org.tr/wp-content/uploads/2024/05/TurkishCinema2024-Cannes24_Catalog-WEB.pdf",
+          "reference": "turn497964search14"
+        },
+        {
+          "title": "ANIMATION SECTOR REPORT ESKİŞEHİR, TURKEY 2018",
+          "url": "https://www.investineskisehir.gov.tr/wp-content/uploads/2020/04/2018-Animation-Sector-Report.pdf",
+          "reference": "turn497964search15"
+        },
+        {
+          "title": "MIPCOM 2024 PARTICIPANTS LIST REGISTERED AS OF OCTOBER 11",
+          "url": "https://www.mipcom.com/content/dam/sitebuilder/rm/mipcom/2024/pdf/mipcom24_participant-list.pdf.coredownload.288945754.pdf",
+          "reference": "turn497964search16"
+        },
+        {
+          "title": "Video games in Turkey",
+          "url": "https://en.wikipedia.org/wiki/Video_games_in_Turkey",
+          "reference": "turn497964search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn497964search18"
+        }
+      ]
+    },
+    {
+      "country": "Uganda",
+      "region": "Africa",
+      "references": 38,
+      "query": "Uganda animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Industry Network — Connecting Filmmakers in Northern Uganda | NUFA",
+          "url": "https://nufawards.com/network.php",
+          "reference": "turn677948search0"
+        },
+        {
+          "title": "Industry Network — Connecting Filmmakers in Northern Uganda | NUFA",
+          "url": "https://northenugandafilmsawards.com/network.php",
+          "reference": "turn677948search1"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn677948search3"
+        },
+        {
+          "title": "Membership – Producers guild Uganda",
+          "url": "https://producersguilduganda.com/membership/",
+          "reference": "turn677948search4"
+        },
+        {
+          "title": "Animation Ecosystem Directory - FAFA - Fédération Africaine du Film d'Animation",
+          "url": "https://www.fafanimation.com/en/organizations",
+          "reference": "turn677948search5"
+        },
+        {
+          "title": "Pearlwood || Home",
+          "url": "https://pearlwood.go.ug/",
+          "reference": "turn677948search6"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn677948search7"
+        },
+        {
+          "title": "Production Studios - Uganda Revenue Authority",
+          "url": "https://ura.go.ug/en/performers-and-artistsal/",
+          "reference": "turn677948search8"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn677948search9"
+        },
+        {
+          "title": "UFMI: Membership",
+          "url": "https://ufmi.blogspot.com/p/membership.html",
+          "reference": "turn677948search10"
+        },
+        {
+          "title": "Uganda Local Content Strategy 2020-2025 | PDF | Mobile Game | Uganda",
+          "url": "https://www.scribd.com/document/487056729/Uganda-Audio-Visual-Content-Strategy-2020-2025",
+          "reference": "turn677948search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn677948search12"
+        },
+        {
+          "title": "# Infrastructure",
+          "url": "https://www.ucc.co.ug/wp-content/uploads/2024/11/UCC-Annual-Communications-Sector-Report-2023_Online-Version.pdf",
+          "reference": "turn677948search13"
+        },
+        {
+          "title": "UCC 4Q22 - Market Performance Report",
+          "url": "https://ucc.co.ug/wp-content/uploads/2023/09/UCC-4Q22-Market-Performance-Report-compressed.pdf",
+          "reference": "turn677948search14"
+        },
+        {
+          "title": "UNDPCREATIVE",
+          "url": "https://www.undp.org/sites/g/files/zskgke326/files/2024-07/creatives_brochure_1.pdf",
+          "reference": "turn677948search15"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn677948search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn677948search17"
+        },
+        {
+          "title": "Savannah MOON",
+          "url": "https://en.wikipedia.org/wiki/Savannah_MOON",
+          "reference": "turn677948search18"
+        },
+        {
+          "title": "Cinema of Uganda",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Uganda",
+          "reference": "turn677948search19"
+        },
+        {
+          "title": "DNEG",
+          "url": "https://en.wikipedia.org/wiki/DNEG",
+          "reference": "turn677948search20"
+        }
+      ]
+    },
+    {
+      "country": "Ukraine",
+      "region": "Europe",
+      "references": 174,
+      "query": "Ukraine animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Country: Ukraine - CEE",
+          "url": "https://ceeanimation.eu/countries/ukraine/",
+          "reference": "turn857514search0"
+        },
+        {
+          "title": "Archives: Studios and Producers - CEE",
+          "url": "https://ceeanimation.eu/studios-and-producers/",
+          "reference": "turn857514search1"
+        },
+        {
+          "title": "Directory | Animation UK",
+          "url": "https://www.animationuk.org/directory/",
+          "reference": "turn857514search2"
+        },
+        {
+          "title": "Industry guide :: Ukrainian Cinema 2020-2021",
+          "url": "https://ukrainiancinema.org/industry-guide/production_film_companies",
+          "reference": "turn857514search3"
+        },
+        {
+          "title": "Industry guide :: Ukrainian Cinema 2020-2021",
+          "url": "https://ukrainiancinema.org/industry-guide",
+          "reference": "turn857514search4"
+        },
+        {
+          "title": "Directory | UK Screen Alliance",
+          "url": "https://www.ukscreenalliance.co.uk/directory/",
+          "reference": "turn857514search5"
+        },
+        {
+          "title": "Animation | Advertising Producers Association | Advertising Producers Association",
+          "url": "https://www.a-p-a.net/?speciality=animation",
+          "reference": "turn857514search6"
+        },
+        {
+          "title": "VFX | Advertising Producers Association | Advertising Producers Association",
+          "url": "https://www.a-p-a.net/?speciality=vfx",
+          "reference": "turn857514search7"
+        },
+        {
+          "title": "Overview :: Ukrainian Cinema 2020-2021",
+          "url": "https://ukrainiancinema.org/overview",
+          "reference": "turn857514search8"
+        },
+        {
+          "title": "National Cinema Platform — USFA",
+          "url": "https://platform.usfa.gov.ua/en",
+          "reference": "turn857514search9"
+        },
+        {
+          "title": "Animation studios | Czech Film Commission",
+          "url": "https://filmcommission.gov.cz/en/animation-studios/",
+          "reference": "turn857514search10"
+        },
+        {
+          "title": "Členové Asociace producentů v audiovizi | Czech Film Commission",
+          "url": "https://filmcommission.gov.cz/clenove-asociace-producentu-v-audiovizi/",
+          "reference": "turn857514search11"
+        },
+        {
+          "title": "2018",
+          "url": "https://yummymovie.org/en/wp-content/uploads/2020/03/ukrainian-film-industry-2018.pdf",
+          "reference": "turn857514search12"
+        },
+        {
+          "title": "DG NEAR — Directorate-",
+          "url": "https://hiqstep.eu/sites/default/files/hiqstep_av_report_final_approved_-_reformatted.pdf",
+          "reference": "turn857514search13"
+        },
+        {
+          "title": "MIPCOM 2024 PARTICIPANTS LIST REGISTERED AS OF OCTOBER 11",
+          "url": "https://www.mipcom.com/content/dam/sitebuilder/rm/mipcom/2024/pdf/mipcom24_participant-list.pdf.coredownload.288945754.pdf",
+          "reference": "turn857514search14"
+        },
+        {
+          "title": "<visual_element id=\"e1\">",
+          "url": "https://usfa.gov.ua/upload/media/2022/06/17/62ac7296c154e-catalogue_ukraine_2022.pdf",
+          "reference": "turn857514search15"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn857514search16"
+        },
+        {
+          "title": "Video games in Ukraine",
+          "url": "https://en.wikipedia.org/wiki/Video_games_in_Ukraine",
+          "reference": "turn857514search17"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn857514search18"
+        },
+        {
+          "title": "Cinema of Ukraine",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Ukraine",
+          "reference": "turn857514search19"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn857514search20"
+        },
+        {
+          "title": "Ukrainian Association of Cinematographers",
+          "url": "https://en.wikipedia.org/wiki/Ukrainian_Association_of_Cinematographers",
+          "reference": "turn857514search21"
+        }
+      ]
+    },
+    {
+      "country": "United Arab Emirates",
+      "region": "Middle East",
+      "references": 41,
+      "query": "United Arab Emirates animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "VFX & Animation Studios in United Arab Emirates | VFX Engine",
+          "url": "https://www.vfxengine.com/studios/country/united-arab-emirates",
+          "reference": "turn173975search0"
+        },
+        {
+          "title": "United Arab Emirates Audiovisual Directory: Producers & Broadcasters",
+          "url": "https://worldmediamatch.com/directories/united-arab-emirates/",
+          "reference": "turn173975search2"
+        },
+        {
+          "title": "SACC connects animation projects with producers and global markets | Emirates News Agency",
+          "url": "https://www.wam.ae/en/article/c2szuin-sacc-connects-animation-projects-with-producers",
+          "reference": "turn173975search4"
+        },
+        {
+          "title": "Creative Media Authority Abu Dhabi | Driving the Creative Industry - Partners",
+          "url": "https://www.cma.gov.ae/partners",
+          "reference": "turn173975search5"
+        },
+        {
+          "title": "Top 25 Vfx and animation studios based in the United Arab Emirates",
+          "url": "https://revenuebase.ai/companies/vfx-and-animation-studios/united-arab-emirates",
+          "reference": "turn173975search6"
+        },
+        {
+          "title": "Creative Media Authority Abu Dhabi | Driving the Creative Industry - Partners",
+          "url": "https://www.cma.gov.ae/partners?page=21",
+          "reference": "turn173975search7"
+        },
+        {
+          "title": "Production Companies",
+          "url": "https://www.filmdubai.gov.ae/s/site/how-to-film-in-dubai/production-companies",
+          "reference": "turn173975search8"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn173975search12"
+        },
+        {
+          "title": "Directory Login",
+          "url": "https://adfc.reel-scout.com/crew_login_content.aspx?display=&g=&sector=&subcat=25&type=C",
+          "reference": "turn173975search9"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn173975search10"
+        },
+        {
+          "title": "Exhibitors & Sponsors 2025 - DICM",
+          "url": "https://dicm.ae/exhibitors-sponsors-2025/",
+          "reference": "turn173975search11"
+        },
+        {
+          "title": "Last Update: 9 September 2024",
+          "url": "https://www.mipcom.com/content/dam/sitebuilder/rm/mipcom/2024/pdf/mipcom-2024-confirmed-buyers.pdf.coredownload.260643157.pdf",
+          "reference": "turn173975search13"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn173975search14"
+        },
+        {
+          "title": "campaign September 25, 2023 — PRODUCTION HOUSE GUIDE — PRODUCTION HOUSE GUIDE — September 25, 2023 campaign",
+          "url": "https://campaignme.com/wp-content/uploads/2024/08/Listings-Format.pdf",
+          "reference": "turn173975search15"
+        },
+        {
+          "title": "Last Update: 1 October 2024",
+          "url": "https://www.mipcom.com/content/dam/sitebuilder/rm/mipcom/2024/pdf/mipcom-2024-confirmed-buyers.pdf.coredownload.278770906.pdf",
+          "reference": "turn173975search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn173975search17"
+        },
+        {
+          "title": "Dubai Film and TV Commission",
+          "url": "https://en.wikipedia.org/wiki/Dubai_Film_and_TV_Commission",
+          "reference": "turn173975search18"
+        },
+        {
+          "title": "Xpanse CGI",
+          "url": "https://en.wikipedia.org/wiki/Xpanse_CGI",
+          "reference": "turn173975search19"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn173975search20"
+        },
+        {
+          "title": "Image Nation Studios",
+          "url": "https://en.wikipedia.org/wiki/Image_Nation_Studios",
+          "reference": "turn173975search21"
+        },
+        {
+          "title": "Abu Dhabi Film Commission",
+          "url": "https://en.wikipedia.org/wiki/Abu_Dhabi_Film_Commission",
+          "reference": "turn173975search22"
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "region": "Europe",
+      "references": 4379,
+      "query": "United Kingdom animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "UK Screen Alliance/Animation UK Member Companies:",
+          "url": "https://committees.parliament.uk/writtenevidence/2080/default/",
+          "reference": "turn323760search12"
+        },
+        {
+          "title": "Directory of UK Post and VFX Companies | ScreenUK Industry",
+          "url": "https://www.screenuk.org/industry/article/directory-of-uk-post-and-vfx-companies/",
+          "reference": "turn323760search0"
+        },
+        {
+          "title": "Directory | Animation UK",
+          "url": "https://www.animationuk.org/directory/",
+          "reference": "turn323760search1"
+        },
+        {
+          "title": "Find a job in Animation or VFX | Animation UK",
+          "url": "https://www.animationuk.org/subpages/find-a-job-in-animation-or-vfx/",
+          "reference": "turn323760search2"
+        },
+        {
+          "title": "Find a job in Animation, VFX, Post Production, Film & TV Studios, or SFX | UK Screen Alliance",
+          "url": "https://www.ukscreenalliance.co.uk/subpages/find-a-job-in-animation-vfx-post-production-film-tv-studios-or-sfx/",
+          "reference": "turn323760search3"
+        },
+        {
+          "title": "Directory | UK Screen Alliance",
+          "url": "https://www.ukscreenalliance.co.uk/directory/",
+          "reference": "turn323760search4"
+        },
+        {
+          "title": "Post Production & VFX | Film London",
+          "url": "https://filmlondon.org.uk/resource/lfp--post-production-vfx",
+          "reference": "turn323760search5"
+        },
+        {
+          "title": "Directory | UK Screen Alliance",
+          "url": "https://www.ukscreenalliance.co.uk/directory/?q=A+C+Studios",
+          "reference": "turn323760search6"
+        },
+        {
+          "title": "Wriiten evidence submitted by UK Screen Al",
+          "url": "https://committees.parliament.uk/writtenevidence/138870/pdf/",
+          "reference": "turn323760search13"
+        },
+        {
+          "title": "Member Companies",
+          "url": "https://lbbonline.com/companies?edition=uk",
+          "reference": "turn323760search7"
+        },
+        {
+          "title": "VFX & Animation Studios in United Kingdom | VFX Engine",
+          "url": "https://www.vfxengine.com/studios/country/united-kingdom",
+          "reference": "turn323760search8"
+        },
+        {
+          "title": "Directory | Animation UK",
+          "url": "https://www.animationuk.org/directory/?q=A+C+Studios",
+          "reference": "turn323760search9"
+        },
+        {
+          "title": "Animation Companies - LFP | Film London",
+          "url": "https://filmlondon.org.uk/resource/lfp-animation-companies",
+          "reference": "turn323760search10"
+        },
+        {
+          "title": "Animation | Advertising Producers Association | Advertising Producers Association",
+          "url": "https://www.a-p-a.net/?speciality=animation",
+          "reference": "turn323760search11"
+        },
+        {
+          "title": "UK Screen Alliance and Animation UK",
+          "url": "https://www.boltonfilmfestival.com/_files/ugd/3b043d_cb79754d8d23477f9af3debce55cc305.pdf",
+          "reference": "turn323760search14"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn323760search15"
+        },
+        {
+          "title": "Acknowledgements",
+          "url": "https://assets.publishing.service.gov.uk/media/5d4d966ded915d7186c56eff/SOL_submissions_FINAL.pdf",
+          "reference": "turn323760search16"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn323760search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn323760search18"
+        },
+        {
+          "title": "Jellyfish Pictures",
+          "url": "https://en.wikipedia.org/wiki/Jellyfish_Pictures",
+          "reference": "turn323760search19"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn323760search20"
+        },
+        {
+          "title": "Blink (company)",
+          "url": "https://en.wikipedia.org/wiki/Blink_%28company%29",
+          "reference": "turn323760search21"
+        },
+        {
+          "title": "Nexus Studios",
+          "url": "https://en.wikipedia.org/wiki/Nexus_Studios",
+          "reference": "turn323760search22"
+        }
+      ]
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "references": 8802,
+      "query": "United States animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Studios & Production Companies | Animation Guild",
+          "url": "https://animationguild.org/about-the-guild/studios/",
+          "reference": "turn166551search0"
+        },
+        {
+          "title": "Member Directory | FilmUSA",
+          "url": "https://www.filmusa.org/members",
+          "reference": "turn166551search1"
+        },
+        {
+          "title": "VFX & Animation Studios in United States | VFX Engine",
+          "url": "https://www.vfxengine.com/studios/country/united-states",
+          "reference": "turn166551search2"
+        },
+        {
+          "title": "Member Companies",
+          "url": "https://lbbonline.com/companies?edition=usa",
+          "reference": "turn166551search4"
+        },
+        {
+          "title": "AICP - General Member Directory",
+          "url": "https://aicp.com/membership-information/member-directory/general-member-directory",
+          "reference": "turn166551search5"
+        },
+        {
+          "title": "AICP - General Member Directory",
+          "url": "https://aicp.com/membership-information/member-directory/general-member-directory/",
+          "reference": "turn166551search6"
+        },
+        {
+          "title": "Member Companies",
+          "url": "https://lbbonline.com/companies?edition=usa&sort=latest",
+          "reference": "turn166551search7"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn166551search12"
+        },
+        {
+          "title": "Search the Texas Production Directory",
+          "url": "https://gov.texas.gov/film/page/texas-production-directory",
+          "reference": "turn166551search9"
+        },
+        {
+          "title": "PRFC_Film Industry Contacts_04-2025",
+          "url": "https://www.discoverpuertorico.com/sites/default/files/2025-04/PRFC_Film%20Industry%20Contacts_04-2025.pdf",
+          "reference": "turn166551search13"
+        },
+        {
+          "title": "Studio Hog | Animation, VFX and Game Studio Directories",
+          "url": "https://studiohog.com/",
+          "reference": "turn166551search10"
+        },
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn166551search11"
+        },
+        {
+          "title": "<table id=\"e1\">",
+          "url": "https://www.vesglobal.org/wp-content/uploads/2021/10/Studio-List3-4.pdf",
+          "reference": "turn166551search14"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn166551search15"
+        },
+        {
+          "title": "CDM_Animation_Resources",
+          "url": "https://resources.depaul.edu/career-center/career-advising/advisors/Documents/CDM_Animation_Resources.pdf",
+          "reference": "turn166551search16"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn166551search17"
+        },
+        {
+          "title": "List of visual effects companies",
+          "url": "https://en.wikipedia.org/wiki/List_of_visual_effects_companies",
+          "reference": "turn166551search18"
+        },
+        {
+          "title": "Reel FX Animation",
+          "url": "https://en.wikipedia.org/wiki/Reel_FX_Animation",
+          "reference": "turn166551search19"
+        },
+        {
+          "title": "Vanguard Animation",
+          "url": "https://en.wikipedia.org/wiki/Vanguard_Animation",
+          "reference": "turn166551search20"
+        },
+        {
+          "title": "Zoic Studios",
+          "url": "https://en.wikipedia.org/wiki/Zoic_Studios",
+          "reference": "turn166551search21"
+        },
+        {
+          "title": "Spiderwood Studios",
+          "url": "https://en.wikipedia.org/wiki/Spiderwood_Studios",
+          "reference": "turn166551search22"
+        }
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "region": "Latin America & Caribbean",
+      "references": 27,
+      "query": "Uruguay animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Lista de Estudios de Animación, Videojuegos y VFX",
+          "url": "https://www.industriaanimacion.com/estudios-de-animacion/",
+          "reference": "turn866477search0"
+        },
+        {
+          "title": "URUGUAY Film Commission",
+          "url": "https://icau.mec.gub.uy/innovaportal/file/10526/1/ufm_locations_guide.pdf",
+          "reference": "turn866477search12"
+        },
+        {
+          "title": "Directory of companies and institutions - Uruguay Audiovisual",
+          "url": "https://uruguayaudiovisual.com/en/directory-of-companies-and-institutions/",
+          "reference": "turn866477search1"
+        },
+        {
+          "title": "Uruguay — Production Companies",
+          "url": "https://premiosquirino.org/download/EN/WhitePaper.pdf",
+          "reference": "turn866477search13"
+        },
+        {
+          "title": "Uruguay — Production Companies",
+          "url": "https://premiosquirino.org/download/WhitePape_DataBase.pdf",
+          "reference": "turn866477search14"
+        },
+        {
+          "title": "Cámara Uruguaya de Desarrolladores de Videojuegos",
+          "url": "https://cavi.uy/",
+          "reference": "turn866477search2"
+        },
+        {
+          "title": "Directorio de empresas e instituciones - Uruguay Audiovisual",
+          "url": "https://uruguayaudiovisual.com/directorio-empresas-instituciones/",
+          "reference": "turn866477search3"
+        },
+        {
+          "title": "Núcleo Productivo Audiovisual | MIEM",
+          "url": "https://www.gub.uy/ministerio-industria-energia-mineria/politicas-y-gestion/nucleo-productivo-audiovisual",
+          "reference": "turn866477search5"
+        },
+        {
+          "title": "Átomo Animación",
+          "url": "https://atomoanimacion.com/",
+          "reference": "turn866477search6"
+        },
+        {
+          "title": "Uruguay is taking it seriously: the country is establishing itself as a global video game exporter - News",
+          "url": "https://www.uruguayxxi.gub.uy/en/news/article/uruguay-is-taking-it-seriously-the-country-is-establishing-itself-as-a-global-video-game-exporter/",
+          "reference": "turn866477search7"
+        },
+        {
+          "title": "URUGUAY Film Commission",
+          "url": "https://studylib.es/doc/4936998/uruguay-film-commission",
+          "reference": "turn866477search8"
+        },
+        {
+          "title": "Uruguay Audiovisual - Uruguay Audiovisual",
+          "url": "https://uruguayaudiovisual.com/",
+          "reference": "turn866477search9"
+        },
+        {
+          "title": "The FIA celebrated two decades of excitement, creativity, and coming together - Universidad ORT Uruguay",
+          "url": "https://www.ort.edu.uy/en/news/el-fia-celebro-dos-decadas-de-animacion-creatividad-y-encuentro",
+          "reference": "turn866477search10"
+        },
+        {
+          "title": "Videogames - The Investor Service Directory",
+          "url": "https://www.uruguayxxi.gub.uy/en/services-directory/videogames/",
+          "reference": "turn866477search11"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn866477search15"
+        },
+        {
+          "title": "Eduardo Darino",
+          "url": "https://en.wikipedia.org/wiki/Eduardo_Darino",
+          "reference": "turn866477search16"
+        },
+        {
+          "title": "Animación mexicana",
+          "url": "https://es.wikipedia.org/wiki/Animaci%C3%B3n_mexicana",
+          "reference": "turn866477search17"
+        },
+        {
+          "title": "Agencia del Cine y el Audiovisual del Uruguay",
+          "url": "https://es.wikipedia.org/wiki/Agencia_del_Cine_y_el_Audiovisual_del_Uruguay",
+          "reference": "turn866477search18"
+        },
+        {
+          "title": "Uruguayan Film Commission",
+          "url": "https://en.wikipedia.org/wiki/Uruguayan_Film_Commission",
+          "reference": "turn866477search19"
+        }
+      ]
+    },
+    {
+      "country": "Uzbekistan",
+      "region": "Asia",
+      "references": 11,
+      "query": "Uzbekistan animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "\"O'ZBEKISTON ANIMATSIYA STUDIYALARI… — ИНН 207315253 | Orginfo.uz",
+          "url": "https://orginfo.uz/ru/organization/e886371d5733/",
+          "reference": "turn395913search0"
+        },
+        {
+          "title": "Uzbekistan Creative Association | LinkedIn",
+          "url": "https://uz.linkedin.com/company/uzbekistan-creative-association",
+          "reference": "turn395913search1"
+        },
+        {
+          "title": "About the organization - \"O'ZBEKISTON ANIMATSIYA STUDIYALARI ASSOTSIATSIYASI\", TIN-207315253 - Orginfo.uz",
+          "url": "https://orginfo.uz/en/organization/e886371d5733/",
+          "reference": "turn395913search2"
+        },
+        {
+          "title": "🎮 GameFest 2024: Uzbekistan Strengthens Its Position on the Global Creative Stage - Game and Animation Forum Highlights In 2024, Tashkent hosted the region’s first-ever International Game &… | GameFest Uzbekistan",
+          "url": "https://www.linkedin.com/posts/gamefest-uzbekistan_gamefest-2024-uzbekistan-strengthens-activity-7320437444665851905-tl9m",
+          "reference": "turn395913search3"
+        },
+        {
+          "title": "Uzbeki",
+          "url": "https://wcce.uz/wcce/files/BAT_WCCE_2024_report.pdf",
+          "reference": "turn395913search12"
+        },
+        {
+          "title": "FILM INDUSTRIES IN CENTRAL ASIA – A VIEW TODAY AND TOWARDS THE FUTURE",
+          "url": "https://www.unesco.org/creativity/sites/default/files/medias/fichiers/2023/01/380026eng.pdf",
+          "reference": "turn395913search13"
+        },
+        {
+          "title": "\"O'ZBEKISTON ANIMATSIYA STUDIYALARI ASSOTSIATSIYASI\" - Orginfo Jobs",
+          "url": "https://jobs.orginfo.uz/en/company-details/e886371d5733",
+          "reference": "turn395913search5"
+        },
+        {
+          "title": "GameFest.Uz – Telegram",
+          "url": "https://t.me/s/GAMEFESTUZ?before=244",
+          "reference": "turn395913search6"
+        },
+        {
+          "title": "Home",
+          "url": "https://uzasa.uz/",
+          "reference": "turn395913search7"
+        },
+        {
+          "title": "Russian companies establish offices and launch projects in collaboration with IT Park…",
+          "url": "https://www.outsource.gov.uz/tr/media/russian-companies-establish-offices-and-launch-projects-in-collaboration-with-it-park-uzbekistan",
+          "reference": "turn395913search8"
+        },
+        {
+          "title": "Canadian Center for Entertainment Arts Opens Office in Uzbekistan",
+          "url": "https://digital.gov.uz/en/digital/news/view/133392",
+          "reference": "turn395913search9"
+        },
+        {
+          "title": "Tashkent to host International Animation Forum",
+          "url": "https://uza.uz/ru/posts/tashkent-to-host-international-animation-forum_364208",
+          "reference": "turn395913search10"
+        },
+        {
+          "title": "Subordinate organization",
+          "url": "https://gov.uz/en/uzbekkino/departments/subordinate",
+          "reference": "turn395913search11"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn395913search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn395913search15"
+        },
+        {
+          "title": "Uzbekfilm",
+          "url": "https://en.wikipedia.org/wiki/Uzbekfilm",
+          "reference": "turn395913search16"
+        },
+        {
+          "title": "Center for the Development of National Cinematography of Uzbekistan",
+          "url": "https://en.wikipedia.org/wiki/Center_for_the_Development_of_National_Cinematography_of_Uzbekistan",
+          "reference": "turn395913search17"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn395913search18"
+        }
+      ]
+    },
+    {
+      "country": "Vanuatu",
+      "region": "Oceania",
+      "references": 2,
+      "query": "Vanuatu animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "New Zealand Film Commission | New Zealand Film Facilities",
+          "url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reference": "turn991753search0"
+        },
+        {
+          "title": "MOTION PICTURE PRODUCTION INDUSTRY ASSOCIATION OF BC",
+          "url": "https://mppia.com/",
+          "reference": "turn991753search1"
+        },
+        {
+          "title": "Business Directory — Visual Effects Professionals Guild New Zealand",
+          "url": "https://www.vfxg.nz/business-directory",
+          "reference": "turn991753search2"
+        },
+        {
+          "title": "New Zealand Film Commission | Production-Ready Talent. Trusted…",
+          "url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/talent",
+          "reference": "turn991753search3"
+        },
+        {
+          "title": "Factsheets & Resources - Ausfilm",
+          "url": "https://www.ausfilm.com.au/factsheets/",
+          "reference": "turn991753search4"
+        },
+        {
+          "title": "Members — New Zealand Studio Infrastructure Group",
+          "url": "https://www.nzsig.co.nz/members",
+          "reference": "turn991753search5"
+        },
+        {
+          "title": "Ausfilm Members - Ausfilm",
+          "url": "https://www.ausfilm.com.au/membership/ausfilm-members/",
+          "reference": "turn991753search7"
+        },
+        {
+          "title": "CONNECTING WITH MEMBERS",
+          "url": "https://www.ausfilm.com.au/wp-content/uploads/2025/10/Annual-Report-24-25.pdf",
+          "reference": "turn991753search12"
+        },
+        {
+          "title": "Member Directory - Academy Membership",
+          "url": "https://membership.filmacademy.gov.ph/directory",
+          "reference": "turn991753search8"
+        },
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn991753search9"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn991753search10"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn991753search11"
+        },
+        {
+          "title": "05 VFX and Animation",
+          "url": "https://www.costaricafilmcommission.org/wp-content/uploads/2026/01/Film-Commision-Suppliers.pdf",
+          "reference": "turn991753search13"
+        },
+        {
+          "title": "AUSTRALIAN SCREEN",
+          "url": "https://www.ausfilm.com.au/factsheets/vfx-animation-vp-roles/",
+          "reference": "turn991753search14"
+        },
+        {
+          "title": "BUSINESS DIRECTORY",
+          "url": "https://www.wesgro.co.za/uploads/files/Filmmakers-Guide-to-the-Western-Cape_Edition-2_2023.pdf",
+          "reference": "turn991753search15"
+        },
+        {
+          "title": "Animation South Africa",
+          "url": "https://www.wesgro.co.za/uploads/files/Wesgro-Producers%E2%80%99-Booklet.pdf",
+          "reference": "turn991753search16"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn991753search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn991753search18"
+        },
+        {
+          "title": "Wētā FX",
+          "url": "https://en.wikipedia.org/wiki/W%C4%93t%C4%81_FX",
+          "reference": "turn991753search19"
+        },
+        {
+          "title": "Cinesite",
+          "url": "https://en.wikipedia.org/wiki/Cinesite",
+          "reference": "turn991753search20"
+        },
+        {
+          "title": "Cinesite Vancouver",
+          "url": "https://en.wikipedia.org/wiki/Cinesite_Vancouver",
+          "reference": "turn991753search21"
+        },
+        {
+          "title": "Vanguard Animation",
+          "url": "https://en.wikipedia.org/wiki/Vanguard_Animation",
+          "reference": "turn991753search22"
+        },
+        {
+          "title": "Act3animation",
+          "url": "https://en.wikipedia.org/wiki/Act3animation",
+          "reference": "turn991753search23"
+        }
+      ]
+    },
+    {
+      "country": "Vatican City",
+      "region": "Europe",
+      "references": 1,
+      "query": "Vatican City animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn846608search1"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn846608search2"
+        },
+        {
+          "title": "Roma Lazio Film Commission",
+          "url": "https://www.rlfcindustry.it/it/public/crew_profiles",
+          "reference": "turn846608search3"
+        },
+        {
+          "title": "Členové Asociace producentů v audiovizi | Czech Film Commission",
+          "url": "https://filmcommission.gov.cz/clenove-asociace-producentu-v-audiovizi/",
+          "reference": "turn846608search4"
+        },
+        {
+          "title": "Roma Lazio Film Commission",
+          "url": "https://www.rlfcindustry.it/en/public/companies",
+          "reference": "turn846608search5"
+        },
+        {
+          "title": "Roma Lazio Film Commission",
+          "url": "https://www.rlfcindustry.it/public/companies",
+          "reference": "turn846608search6"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn846608search7"
+        },
+        {
+          "title": "Società di produzione | FCTP",
+          "url": "https://www.fctp.it/societa.php?t=1",
+          "reference": "turn846608search8"
+        },
+        {
+          "title": "Počítačová animace / VFX | Czech Film Commission",
+          "url": "https://filmcommission.gov.cz/pocitacova-animace-vfx/",
+          "reference": "turn846608search9"
+        },
+        {
+          "title": "Roma Lazio Film Commission",
+          "url": "https://www.rlfcindustry.it/",
+          "reference": "turn846608search10"
+        },
+        {
+          "title": "CINICA Creators Council · Rise from Creator to Creative Entrepreneur",
+          "url": "https://www.cinica.org/",
+          "reference": "turn846608search11"
+        },
+        {
+          "title": "Animation NL Industry Guide 2022",
+          "url": "https://filmcommission.nl/documents/42/animation_nl_industry_guide_2024.pdf",
+          "reference": "turn846608search12"
+        },
+        {
+          "title": "ANIMATION & AR/VR STUDIOS",
+          "url": "https://filmfund.lu/wp-content/uploads/2025/06/FFL-ANIMATED-25_web.pdf",
+          "reference": "turn846608search13"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn846608search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn846608search15"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn846608search16"
+        }
+      ]
+    },
+    {
+      "country": "Venezuela",
+      "region": "Latin America & Caribbean",
+      "references": 18,
+      "query": "Venezuela animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Visor – Guía profesional de medios audiovisuales de Venezuela at Fundación VIsor",
+          "url": "https://visor.com.ve/",
+          "reference": "turn843500search0"
+        },
+        {
+          "title": "About Us | FIPCA",
+          "url": "https://www.fipca.org/nosotros?lang=en",
+          "reference": "turn843500search2"
+        },
+        {
+          "title": "Venezuela — Production Companies",
+          "url": "https://premiosquirino.org/download/WhitePape_DataBase.pdf",
+          "reference": "turn843500search12"
+        },
+        {
+          "title": "Membership - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/",
+          "reference": "turn843500search3"
+        },
+        {
+          "title": "SMART ANIMATION STUDIOS, C.A",
+          "url": "https://pymesvenezuela.com/ficha/smart-animation-studios-ca-134321",
+          "reference": "turn843500search4"
+        },
+        {
+          "title": "MIEMBROS | Academia Venezolana de Cine",
+          "url": "https://academiavenezolanadecine.com/miembros/",
+          "reference": "turn843500search5"
+        },
+        {
+          "title": "Lista de Estudios de Animación, Videojuegos y VFX",
+          "url": "https://www.industriaanimacion.com/estudios-de-animacion/",
+          "reference": "turn843500search6"
+        },
+        {
+          "title": "Estudios y Empresas de Videojuegos en Venezuela | DeVuego LATAM",
+          "url": "https://devuego.lat/mapa-estudios/?orden=miembros&pais=VE",
+          "reference": "turn843500search7"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn843500search13"
+        },
+        {
+          "title": "Nosotros | FIPCA",
+          "url": "https://www.fipca.org/nosotros",
+          "reference": "turn843500search8"
+        },
+        {
+          "title": "Latin American Video Game Studios and Companies | DeVuego LATAM",
+          "url": "https://devuego.lat/bd/en/studios/?place=Venezuela",
+          "reference": "turn843500search9"
+        },
+        {
+          "title": "Member Directory - Visual Effects Society",
+          "url": "https://vesglobal.org/membership/member-directory/",
+          "reference": "turn843500search10"
+        },
+        {
+          "title": "SMART ANIMATION STUDIOS | LinkedIn",
+          "url": "https://ve.linkedin.com/company/smart-animation-studios-c-a-",
+          "reference": "turn843500search11"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn843500search14"
+        },
+        {
+          "title": "Cinema of Venezuela",
+          "url": "https://en.wikipedia.org/wiki/Cinema_of_Venezuela",
+          "reference": "turn843500search15"
+        },
+        {
+          "title": "Dancing Diablo",
+          "url": "https://en.wikipedia.org/wiki/Dancing_Diablo",
+          "reference": "turn843500search16"
+        },
+        {
+          "title": "Animación mexicana",
+          "url": "https://es.wikipedia.org/wiki/Animaci%C3%B3n_mexicana",
+          "reference": "turn843500search17"
+        },
+        {
+          "title": "Cine de Venezuela",
+          "url": "https://es.wikipedia.org/wiki/Cine_de_Venezuela",
+          "reference": "turn843500search18"
+        }
+      ]
+    },
+    {
+      "country": "Vietnam",
+      "region": "Asia",
+      "references": 230,
+      "query": "Vietnam animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Ra mắt Hiệp hội kỹ xảo điện ảnh và hoạt hình Việt Nam",
+          "url": "https://tuoitre.vn/plo/ra-mat-hiep-hoi-ky-xao-dien-anh-va-hoat-hinh-viet-nam-109834939.htm",
+          "reference": "turn643826search0"
+        },
+        {
+          "title": "Thủ lĩnh mới cho ngành kỹ xảo và hoạt hình Việt Nam | BÁO SÀI GÒN GIẢI PHÓNG",
+          "url": "https://www.sggp.org.vn/thu-linh-moi-cho-nganh-ky-xao-va-hoat-hinh-viet-nam-post782433.html",
+          "reference": "turn643826search1"
+        },
+        {
+          "title": "Members | 動畫特效協會",
+          "url": "https://www.avataiwan.org/%E6%9C%83%E5%93%A1%E5%B0%88%E5%8D%80?lang=en",
+          "reference": "turn643826search2"
+        },
+        {
+          "title": "Hoạt hình Việt với động lực nâng tầm kỹ xảo, vươn ra nước ngoài",
+          "url": "https://tuoitre.vn/saigontimes/hoat-hinh-viet-voi-dong-luc-nang-tam-ky-xao-vuon-ra-nuoc-ngoai-1061052603.htm",
+          "reference": "turn643826search3"
+        },
+        {
+          "title": "Studios - VFX-Animation",
+          "url": "https://www.vfx-animation.vn/studios",
+          "reference": "turn643826search4"
+        },
+        {
+          "title": "Studios - VFX-Animation",
+          "url": "https://www.vfx-animation.vn/studios/",
+          "reference": "turn643826search5"
+        },
+        {
+          "title": "L'Institut français du Vietnam accompagne cette semaine la présence vietnamienne au MIFA et Festival international du film d'animation d'Annecy. Emmenée par VAVA – Vietnam Animation & VFX… | Paul ABELA",
+          "url": "https://fr.linkedin.com/posts/paul-abela_linstitut-fran%C3%A7ais-du-vietnam-accompagne-activity-7475556719339925506-u5Nf",
+          "reference": "turn643826search6"
+        },
+        {
+          "title": "VAVA | LinkedIn",
+          "url": "https://www.linkedin.com/company/vietnam-association-of-vfx-animation",
+          "reference": "turn643826search7"
+        },
+        {
+          "title": "Những góc nhìn cận cảnh về nguồn nhân lực của ngành Kỹ xảo điện ảnh & Hoạt hình tại Việt Nam - VFX-Animation",
+          "url": "https://vfx-animation.vn/tin-su-kien/roundtable-nhung-goc-nhin-can-canh-ve-nguon-nhan-luc-cua-nganh-ky-xao-dien-anh-hoat-hinh-tai-viet-nam/",
+          "reference": "turn643826search8"
+        },
+        {
+          "title": "Cộng Đồng VFX Animation Việt Nam",
+          "url": "https://www.vfx-animation.vn/",
+          "reference": "turn643826search9"
+        },
+        {
+          "title": "Ra mắt Hiệp hội kỹ xảo điện ảnh và hoạt hình Việt Nam – Dau Tu Hoi Nhap",
+          "url": "https://dautuhoinhap.net/2025/02/19/ra-mat-hiep-hoi-ky-xao-dien-anh-va-hoat-hinh-viet-nam/",
+          "reference": "turn643826search10"
+        },
+        {
+          "title": "GIỚI THIỆU STUDIO GAMES THÀNH VIÊN",
+          "url": "https://www.vgda.vn/gioi-thieu-studio-games-thanh-vien",
+          "reference": "turn643826search11"
+        },
+        {
+          "title": "INSIGHTS & OBSERVATION",
+          "url": "https://www.mdec.my/static/pdf/digitalcontent/SEA-digital-content-industry-report-2022.pdf",
+          "reference": "turn643826search12"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn643826search13"
+        },
+        {
+          "title": "ARENA MULTIMEDIA                                                                 BEYOND THE MULTIVERSE",
+          "url": "https://www.arena-multimedia.vn/wp-content/uploads/2025/03/Arena-Year-Book-2024.pdf",
+          "reference": "turn643826search14"
+        },
+        {
+          "title": "Vietnamese animation",
+          "url": "https://en.wikipedia.org/wiki/Vietnamese_animation",
+          "reference": "turn643826search15"
+        },
+        {
+          "title": "Vertical sect",
+          "url": "https://www.acfm.kr/9904_DATA/File/2024_Final_Report_kor.pdf",
+          "reference": "turn643826search16"
+        },
+        {
+          "title": "Sparx* Studios",
+          "url": "https://en.wikipedia.org/wiki/Sparx%2A_Studios",
+          "reference": "turn643826search17"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn643826search18"
+        },
+        {
+          "title": "Studio Hibari",
+          "url": "https://en.wikipedia.org/wiki/Studio_Hibari",
+          "reference": "turn643826search19"
+        },
+        {
+          "title": "Thai animation",
+          "url": "https://en.wikipedia.org/wiki/Thai_animation",
+          "reference": "turn643826search20"
+        },
+        {
+          "title": "Base FX",
+          "url": "https://en.wikipedia.org/wiki/Base_FX",
+          "reference": "turn643826search21"
+        }
+      ]
+    },
+    {
+      "country": "Yemen",
+      "region": "Middle East",
+      "references": 6,
+      "query": "Yemen animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Film Commissions - Association of Film Commissioners International",
+          "url": "https://afci.org/film-commisssions/",
+          "reference": "turn187654search1"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn187654search2"
+        },
+        {
+          "title": "AICP - General Member Directory",
+          "url": "https://aicp.com/membership-information/member-directory/general-member-directory",
+          "reference": "turn187654search3"
+        },
+        {
+          "title": "Animation_For_Web",
+          "url": "https://techdestination.com/wp-content/uploads/2025/02/Animation_For_Web.pdf",
+          "reference": "turn187654search12"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn187654search4"
+        },
+        {
+          "title": "CINICA Creators Council · Rise from Creator to Creative Entrepreneur",
+          "url": "https://www.cinica.org/",
+          "reference": "turn187654search5"
+        },
+        {
+          "title": "Studio Hog | Animation, VFX and Game Studio Directories",
+          "url": "https://studiohog.com/",
+          "reference": "turn187654search6"
+        },
+        {
+          "title": "Company Associated – MIDCCA",
+          "url": "https://midcca.com/comp.html",
+          "reference": "turn187654search7"
+        },
+        {
+          "title": "Member Directory",
+          "url": "https://cpawc.com/listings/?category=7",
+          "reference": "turn187654search8"
+        },
+        {
+          "title": "all-terms - صوت اليمن",
+          "url": "https://yemensound.net/all-terms/",
+          "reference": "turn187654search9"
+        },
+        {
+          "title": "MIDCCA WEBSITE",
+          "url": "https://midcca.com/members.html",
+          "reference": "turn187654search10"
+        },
+        {
+          "title": "Directory · Hada News",
+          "url": "https://hada.news/directory/",
+          "reference": "turn187654search11"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn187654search13"
+        },
+        {
+          "title": "3RD EDITION OF THE",
+          "url": "https://redseafilmfest.com/wp-content/uploads/2023/11/REDSEA_BOP_23-EN-Print-Version.pdf",
+          "reference": "turn187654search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn187654search15"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn187654search16"
+        },
+        {
+          "title": "FIAPF",
+          "url": "https://en.wikipedia.org/wiki/FIAPF",
+          "reference": "turn187654search17"
+        },
+        {
+          "title": "Thai animation",
+          "url": "https://en.wikipedia.org/wiki/Thai_animation",
+          "reference": "turn187654search18"
+        },
+        {
+          "title": "UK Screen Alliance",
+          "url": "https://en.wikipedia.org/wiki/UK_Screen_Alliance",
+          "reference": "turn187654search19"
+        },
+        {
+          "title": "Nexus Studios",
+          "url": "https://en.wikipedia.org/wiki/Nexus_Studios",
+          "reference": "turn187654search20"
+        }
+      ]
+    },
+    {
+      "country": "Zambia",
+      "region": "Africa",
+      "references": 12,
+      "query": "Zambia animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Downloads | NAMA Zambia",
+          "url": "https://www.namazambia.org/sw/downloads",
+          "reference": "turn599501search0"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn599501search1"
+        },
+        {
+          "title": "Animation Ecosystem Directory - FAFA - Fédération Africaine du Film d'Animation",
+          "url": "https://www.fafanimation.com/en/organizations",
+          "reference": "turn599501search3"
+        },
+        {
+          "title": "Tabproduction Studios | LinkedIn",
+          "url": "https://zm.linkedin.com/company/tabproduction-studios",
+          "reference": "turn599501search4"
+        },
+        {
+          "title": "Animation — African animation intelligence · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/animation",
+          "reference": "turn599501search5"
+        },
+        {
+          "title": "Tabproduction Studios | LinkedIn",
+          "url": "https://www.linkedin.com/company/tabproduction-studios/?originalSubdomain=zm",
+          "reference": "turn599501search6"
+        },
+        {
+          "title": "Film Five Studios – Life in Pictures",
+          "url": "https://filmfivestudios.wordpress.com/",
+          "reference": "turn599501search7"
+        },
+        {
+          "title": "About | NAMA Zambia",
+          "url": "https://www.namazambia.org/sw/about",
+          "reference": "turn599501search8"
+        },
+        {
+          "title": "Empowering Women in Film and TV Zambia | Women in Film and TV Zambia",
+          "url": "https://wiftzambia.org/members",
+          "reference": "turn599501search9"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn599501search10"
+        },
+        {
+          "title": "National Media Arts Association (NAMA) Zambia | film producers | P.O. Box 50812 Lusaka, Zambia.",
+          "url": "https://www.namazambia.org/",
+          "reference": "turn599501search11"
+        },
+        {
+          "title": "Zambian Business Times",
+          "url": "https://www.zica.co.zm/wp-content/uploads/2023/10/ZBT_OCTOBER_2023_Edition.pdf",
+          "reference": "turn599501search12"
+        },
+        {
+          "title": "<table id=\"e1\">",
+          "url": "https://africagamesreport.com/wp-content/uploads/2025/01/2025-Africa-Games-Industry-Report-New.pdf",
+          "reference": "turn599501search13"
+        },
+        {
+          "title": "Animation Approvals:",
+          "url": "https://www.nfvf.co.za/wp-content/uploads/2025/12/NFVF-AR-2024-25-Annual-Report-FINAL-1.pdf",
+          "reference": "turn599501search14"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn599501search15"
+        },
+        {
+          "title": "f",
+          "url": "https://www.fameweekafrica.com/content/dam/sitebuilder/rxsa/fame/documents/FAME_2022_Guide_to_FWA.pdf.coredownload.534656770.pdf",
+          "reference": "turn599501search16"
+        },
+        {
+          "title": "Discussion: Low Awareness of CGI and VFX Is Holding Back Brand Content in Zambia",
+          "url": "https://www.reddit.com/r/Zambia/comments/1vbwdg5/discussion_low_awareness_of_cgi_and_vfx_is/",
+          "reference": "turn599501reddit17"
+        },
+        {
+          "title": "National Arts Council of Zambia",
+          "url": "https://en.wikipedia.org/wiki/National_Arts_Council_of_Zambia",
+          "reference": "turn599501search18"
+        },
+        {
+          "title": "Onechi Lwenje",
+          "url": "https://en.wikipedia.org/wiki/Onechi_Lwenje",
+          "reference": "turn599501search19"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn599501search20"
+        }
+      ]
+    },
+    {
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "references": 8,
+      "query": "Zimbabwe animation VFX game studios industry association film commission directory members",
+      "searched_on": "2026-11-07",
+      "method": "English-language source-discovery query only; not enumeration or a permission grant",
+      "status": "source_leads_unreviewed",
+      "hits": [
+        {
+          "title": "Vfx in Zimbabwe — Companies, Products, Services & More | The Directory",
+          "url": "https://thedirectory.co.zw/listings.cfm?query=vfx",
+          "reference": "turn734319search0"
+        },
+        {
+          "title": "Animation in Zimbabwe — Companies, Products, Services & More | The Directory",
+          "url": "https://thedirectory.co.zw/listings.cfm?query=animation",
+          "reference": "turn734319search1"
+        },
+        {
+          "title": "Visualeffects in Zimbabwe — Companies, Products, Services & More | The Directory",
+          "url": "https://thedirectory.co.zw/listings.cfm?query=visualeffects",
+          "reference": "turn734319search2"
+        },
+        {
+          "title": "Studios — African game studio directory · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/studios",
+          "reference": "turn734319search4"
+        },
+        {
+          "title": "Bako Animation Studio - ZimPlaza Business Directory",
+          "url": "https://www.zimplaza.co.zw/listing/bako-animation-studio/",
+          "reference": "turn734319search5"
+        },
+        {
+          "title": "Proceedings of the International Conference on Industrial Engineering and Operations Management",
+          "url": "https://ieomsociety.org/dc2018/papers/202.pdf",
+          "reference": "turn734319search12"
+        },
+        {
+          "title": "About Us – Alula Animation",
+          "url": "https://alula.africa/about-us/",
+          "reference": "turn734319search6"
+        },
+        {
+          "title": "GAZ 15-07-2022 Approved List joined.indd",
+          "url": "https://www.veritaszim.net/sites/veritas_d/files/GN%202022-1508%20Registered%20Suppliers%20of%20Goods.pdf",
+          "reference": "turn734319search13"
+        },
+        {
+          "title": "Animation — African animation intelligence · Africa CII",
+          "url": "https://www.africangamingandanimationintelligence.com/animation",
+          "reference": "turn734319search7"
+        },
+        {
+          "title": "Studios · Bahari Blue",
+          "url": "https://database.squidmag.ink/studios/",
+          "reference": "turn734319search8"
+        },
+        {
+          "title": "About Dream Box Animation Studio | Zimbabwe Business Directory | The Directory",
+          "url": "https://thedirectory.co.zw/company-about.cfm?companyid=12877",
+          "reference": "turn734319search9"
+        },
+        {
+          "title": "About — VFX Studios Directory",
+          "url": "https://vfxstudios.net/about",
+          "reference": "turn734319search10"
+        },
+        {
+          "title": "Animation Studios Directory | AnimStudios",
+          "url": "https://animstudios.org/",
+          "reference": "turn734319search11"
+        },
+        {
+          "title": "Animation Industry Database",
+          "url": "https://www.aidb.com/dir/AIDB_Production_Directory.pdf",
+          "reference": "turn734319search14"
+        },
+        {
+          "title": "List of animation studios",
+          "url": "https://en.wikipedia.org/wiki/List_of_animation_studios",
+          "reference": "turn734319search15"
+        },
+        {
+          "title": "untitled",
+          "url": "https://durbanfilmmart.co.za/wp-content/uploads/2024/12/2017-DFM-ANNUAL-REPORT.pdf",
+          "reference": "turn734319search16"
+        },
+        {
+          "title": "Animation South Africa",
+          "url": "https://www.wesgro.co.za/uploads/files/Wesgro-Producers%E2%80%99-Booklet.pdf",
+          "reference": "turn734319search17"
+        },
+        {
+          "title": "Invision Studios",
+          "url": "https://en.wikipedia.org/wiki/Invision_Studios",
+          "reference": "turn734319search18"
+        },
+        {
+          "title": "Sunrise Productions",
+          "url": "https://en.wikipedia.org/wiki/Sunrise_Productions",
+          "reference": "turn734319search19"
+        },
+        {
+          "title": "Association of Film Commissioners International",
+          "url": "https://en.wikipedia.org/wiki/Association_of_Film_Commissioners_International",
+          "reference": "turn734319search20"
+        },
+        {
+          "title": "Emma Kaye",
+          "url": "https://en.wikipedia.org/wiki/Emma_Kaye",
+          "reference": "turn734319search21"
+        }
+      ]
+    }
+  ]
+}

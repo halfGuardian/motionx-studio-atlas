@@ -34,7 +34,7 @@ def main():
         nonlocal checks;checks+=1;print('PASS '+s,flush=True)
     with tempfile.TemporaryDirectory() as tmp:
         root=Path(tmp);site=root/'atlas';site.mkdir()
-        for name in ('index.html','app.js','atlas.css','data.js','catalog.js','studios.json'):shutil.copyfile(ROOT/name,site/name)
+        for name in ('index.html','app.js','atlas.css','data.js','catalog.js','geography.js','studios.json'):shutil.copyfile(ROOT/name,site/name)
         (site/'index.html').write_text((site/'index.html').read_text().replace('<html lang="en">','<html lang="en" data-catalog="sharded">'))
         rows=[fixture(i) for i in range(50000)]
         (site/'data').mkdir();manifest=build(rows,site/'studios.json',site/'data/public','a'*64,'synthetic-benchmark')
