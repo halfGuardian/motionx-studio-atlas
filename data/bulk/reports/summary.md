@@ -1,5 +1,7 @@
 # v1.1 — One combined global research atlas
 
+This is the preserved acquisition-stage report. The [current optimisation and launch-readiness report](optimisation.md), [licensing dashboard](licensing.html) and updated [validation](validation.json) describe the subsequent work on the same PR. Acquisition counts and evidence classes below are unchanged; the original 3.30 MB transport and 167/43/34 test counts are historical comparison points.
+
 This draft release puts every acquired reference in the same public atlas: **41,735 records = 243 existing locations + 40,376 Overture place observations + 1,116 game-company references**. All classes are visible together by default. Search, filters, profiles, organisation navigation and CSV export use the combined catalogue. Company references have no invented city, physical branch or map point.
 
 ## Actual coverage

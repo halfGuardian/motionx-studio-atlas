@@ -2,7 +2,7 @@
 <html lang="en" data-catalog="sharded">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Explore a source-reviewed global directory of visual effects, animation, games and performance capture studios. Browse organisations, compare facility capabilities and inspect the evidence.">
+<meta name="description" content="Search 41,735 studio locations, source observations and company references in one global research atlas. Evidence classes and source licensing remain explicit.">
 <title>MotionX | Studio Atlas — Global Production Directory</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="atlas.css">
@@ -12,34 +12,45 @@
 <header><a class="brand" href="#/" aria-label="MotionX Studio Atlas home"><h1>MOTION<span>X</span> <small>/ STUDIO ATLAS</small></h1><div class="sub">THE GLOBAL PRODUCTION DIRECTORY</div></a><span class="public-tag">GLOBAL ATLAS <b>1.1</b></span></header>
 <main>
 <aside aria-label="Studio directory"><div id="public">
-<div class="eyebrow">FIND YOUR NEXT CREATIVE PARTNER</div>
-<div class="directory-title">A world of production talent.</div>
-<p class="intro">One research atlas for retained studios, source location observations and company references. Evidence labels stay visible; record totals are not verified facility counts.</p>
+<div class="eyebrow">GLOBAL RESEARCH · EVIDENCE FIRST</div>
+<div class="directory-title">Global studio research.</div>
+<p class="intro">All references together. Evidence labels distinguish reviewed locations from directory listings and research leads. Record totals are not verified facility counts.</p>
+<dl id="catalogSummary" class="catalog-summary" aria-label="Complete catalogue metrics"></dl>
+<div id="quickFilters" class="quick-filters" role="group" aria-label="Quick research filters"><button data-quick="all" aria-pressed="true">All records</button><button data-quick="A" class="evidence-A" aria-pressed="false">■ Reviewed studios · A</button><button data-quick="B" class="evidence-B" aria-pressed="false">● Source-listed · B</button><button data-quick="C" class="evidence-C" aria-pressed="false">▲ Research leads · C</button><button data-quick="companies" aria-pressed="false">Company references</button><button data-quick="capture" aria-pressed="false">Confirmed capture</button></div>
+<p class="filter-help">Quick views combine with the filters below. Confirmed capture checks site-specific Motion, Body or Performance Capture evidence.</p>
+<div class="directory-legend" aria-label="Permanent evidence legend in list view"><span class="evidence-A"><b aria-hidden="true">■</b> A · Reviewed</span><span class="evidence-B"><b aria-hidden="true">●</b> B · Listed</span><span class="evidence-C"><b aria-hidden="true">▲</b> C · Research</span></div>
 <div class="results-head"><div class="count" id="count" role="status" aria-live="polite">Loading locations…</div><button id="resetFilters" class="text-button">Reset filters</button></div>
 <div class="muted" id="companies">Loading organizations…</div>
 <div class="controls" id="filters">
 <label class="wide">Search the atlas<input id="search" type="search" placeholder="Studio, organisation, city or capability…" autocomplete="off"></label>
+<details id="advancedFilters" class="advanced-filters wide"><summary>Advanced filters & research priorities</summary><div class="advanced-controls">
 <label>Country<select id="country"><option value="">All countries</option></select></label>
 <label>City<input id="city" type="search" placeholder="Any city" autocomplete="off"></label>
+<label class="wide">Organisation or source identity<input id="organisation" type="search" placeholder="Operating name or stable identity" autocomplete="off"></label>
 <label class="wide">Production sector<select id="category"><option value="">All sectors</option></select></label>
 <details class="capability-picker wide" id="capabilityPicker"><summary id="capabilitySummary">Capabilities · any</summary><fieldset><legend>Select specific facility capabilities</legend><div id="capabilityOptions"></div><label class="wide">Combine selected capabilities<select id="capabilityMode"><option value="all">Match all selected (AND)</option><option value="any">Match any selected (OR)</option></select></label></fieldset></details>
 <label class="wide">Location type<select id="locationType"><option value="">All location types</option><option value="production_studio">Production studio</option><option value="capture_facility">Capture facility</option><option value="mixed_campus">Mixed campus</option><option value="creative_hub">Creative hub</option><option value="production_office">Production office</option><option value="uncertain">Type not established</option></select></label>
 <label class="wide">Evidence class<select id="evidenceClass"><option value="">All evidence classes</option><option value="A">Class A — Source-reviewed location</option><option value="B">Class B — Directory-listed, uncorroborated</option><option value="C">Class C — Research required</option></select></label>
 <label class="wide">Record type<select id="recordKind"><option value="">All records together</option><option value="retained_location">Retained Atlas location</option><option value="source_location">Source location observation</option><option value="company_reference">Company reference — branches unverified</option></select></label>
 <label class="check-label wide"><input type="checkbox" id="confirmedOnly"> Confirmed capability evidence only</label>
+<label class="wide">Research focus<select id="researchFocus"><option value="">All research signals</option><option value="duplicates">Possible existing-location duplicates</option><option value="permission">Source permission needs review</option><option value="geography">Missing geography or physical branch</option><option value="capabilities">No confirmed capability evidence</option><option value="stale">Older than 180 days or missing date</option><option value="historical">Historical / status assertions</option><option value="gaps">Countries with fewer than two reviewed records</option></select></label>
 <p class="filter-help wide">Different filters combine with AND. City and search match text. Confirmed-only checks selected capabilities, the selected sector, or any confirmed capability when neither is selected. Parent services are never inherited.</p>
+</div></details>
 </div>
-<div class="list-toolbar"><div class="view-switch" role="group" aria-label="Directory view"><button id="locationsView" aria-pressed="true">Locations</button><button id="organisationsView" aria-pressed="false">Organisations</button></div><button id="exportCsv" title="Download every filtered location, across all pages">↓ CSV</button></div>
+<label class="sort-label">Order results<select id="sortResults"><option value="relevance">Best match, then evidence quality</option><option value="research">Research attention first</option><option value="oldest">Oldest / missing source dates first</option></select></label>
+<div class="list-toolbar"><div class="view-switch" role="group" aria-label="Directory view"><button id="locationsView" aria-pressed="true">Records</button><button id="organisationsView" aria-pressed="false">Identities</button></div><button id="exportCsv" title="Download every filtered record, across all pages">↓ CSV</button></div>
 <div id="list" aria-label="Matching studios"></div>
+<p id="comparisonStatus" class="sr-only" role="status" aria-live="polite"></p>
 <div class="pagination"><button id="previousPage">← Previous</button><span id="pageInfo" class="muted"></span><button id="nextPage">Next →</button></div>
 <p class="notice">Confidence describes the cited capability claim, not independent verification. Legacy claims are unknown pending review. Capability confirmation does not prove registration or current operation. Some pins are city-level estimates. Do not treat a city pin as a street address. Research city references: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>), used as city pins, not facility geocodes. Iver Heath reference: © Crown copyright, Office for National Statistics via <a href="https://www.planning.data.gov.uk/entity/2504906" target="_blank" rel="noopener noreferrer">Planning Data</a>, <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener noreferrer">OGL v3.0</a>.</p>
 <p class="notice">Source observations: <a href="https://overturemaps.org/" target="_blank" rel="noopener noreferrer">Overture Maps Foundation</a> and original providers recorded per entry. © Foursquare Labs, Inc. where applicable; Foursquare data was transformed to Overture schema and filtered/normalised by MotionX. <a href="data/bulk/NOTICE.html">Data licences, attribution and transformation notices</a>. All records share this research atlas. Class B/C entries do not confirm current operation, facility services or ownership. Company references have no invented map points. Their source's redistribution terms remain unspecified; authored descriptions are omitted.</p>
+<p class="notice"><a href="data/bulk/reports/licensing.html">Licensing & future-launch readiness</a> · <a href="data/bulk/reports/coverage.html">Coverage and research audit</a>. A public repository remains publicly accessible. Research priorities and test results never grant human approval.</p>
 </div></aside>
-<div id="map" aria-label="Studio locations map" aria-describedby="mapHelp"></div><p id="mapHelp" class="sr-only">Use the studio directory for keyboard access to every location. Numbered map groups open a selectable list; shared coordinates are preserved.</p>
+<div id="map" aria-label="Studio locations map" aria-describedby="mapHelp"><section id="evidenceLegend" class="map-legend" aria-label="Permanent evidence legend"><strong>Map evidence · geolocated results</strong><div class="evidence-A"><span aria-hidden="true">■</span> A · Source-reviewed <b id="legendA">—</b></div><div class="evidence-B"><span aria-hidden="true">●</span> B · Directory-listed <b id="legendB">—</b></div><div class="evidence-C"><span aria-hidden="true">▲</span> C · Research required <b id="legendC">—</b></div><small>Mixed rings show each class. Company references have no pins.</small></section></div><p id="mapHelp" class="sr-only">Use the studio directory or Tab between map markers. Enter or Space selects a marker. Groups show A/B/C counts and open a selectable list. All original coordinates are preserved.</p>
 <div id="dataStatus" role="status" aria-live="polite">Loading studio database… <button id="retryLoad" hidden>Retry</button></div>
 <div class="map-actions"><button id="fitResults" title="Zoom to every matching studio">⌖ Fit results</button></div>
 </main>
-<nav class="mobile-nav" aria-label="Mobile navigation"><button id="mapTab" class="active" aria-pressed="true">◉ Map</button><button id="listTab" aria-pressed="false">☷ Studios</button></nav>
+<nav class="mobile-nav" aria-label="Mobile navigation"><button id="mapTab" class="active" aria-pressed="true">◉ Map</button><button id="listTab" aria-pressed="false">☷ Directory</button></nav>
 <section class="detail" id="detail" hidden role="region" aria-label="Studio or organisation profile"><button class="close" id="close" aria-label="Close profile">✕</button><div id="detailContent"></div></section>
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script defer src="data.js"></script><script defer src="catalog.js"></script><script defer src="app.js"></script>
 </body></html>

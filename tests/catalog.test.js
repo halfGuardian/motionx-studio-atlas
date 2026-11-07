@@ -93,3 +93,29 @@ test('compressed unified catalogue keeps legacy and company references; corrupte
   const bytes=Buffer.from(s.files.get('./data/public/index.json.gz'));bytes[bytes.length-2]^=1;s.files.set('./data/public/index.json.gz',bytes);
   await assert.rejects(C.load(D,s.fetcher),/integrity/);
 });
+test('real compact transport preserves every identity, category and original coordinate',()=>{
+  const fs=require('node:fs'),path=require('node:path'),folder=path.join(__dirname,'../data/public');
+  const original=JSON.parse(fs.readFileSync(path.join(folder,'index.json'),'utf8')),packed=JSON.parse(fs.readFileSync(path.join(folder,'index.compact.json'),'utf8'));
+  const rows=C.decodeIndex(packed,original.length).map(r=>r.slice(0,13)).sort((a,b)=>a[0]<b[0]?-1:1);
+  assert.deepEqual(rows,original);assert.equal(rows.filter(r=>r[12]==='company_reference').length,1116);
+});
+test('malformed column lengths, dictionary references and identity encodings fail closed',()=>{
+  const fs=require('node:fs'),packed=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'../data/public/index.compact.json'),'utf8'));
+  for(const mutate of [v=>v.columns[0].pop(),v=>v.columns[3][0]=-1,v=>v.columns[0][0]='~uINVALID',v=>v.columns[13][0]=32]){
+    const changed=structuredClone(packed);mutate(changed);assert.throws(()=>C.decodeIndex(changed,packed.rows));
+  }
+});
+test('compact index reports progress, uses versioned cache keys and never falls back after corruption',async()=>{
+  const s=await server(),entry=s.f.index[0].concat(['B','source_location',17]),tables={},columns=entry.map(v=>[v]);
+  for(const k of [3,4,7,8,9,10,11,12]){tables[k]=[entry[k]];columns[k]=[0];}
+  const text=JSON.stringify({encoding:'motionx-columnar-v1',rows:1,tables,columns}),gzip=require('node:zlib').gzipSync(text),hash=await C.sha(text),ghash=require('node:crypto').createHash('sha256').update(gzip).digest('hex');
+  s.manifest.mode='unified_research';s.manifest.baseline.active_ids=['original','legacy'];s.manifest.baseline.research_only_ids=[];s.manifest.counts={records:3,class_a:1,class_b:1,class_c:1};
+  s.manifest.index.compact={path:'index.compact.json',encoding:'motionx-columnar-v1',sha256:hash,gzip_sha256:ghash,records:1,content_addressed:true};
+  const key='./data/public/index.compact.json.gz?sha256='+hash;s.files.set(key,gzip);s.files.set('./data/public/manifest.json',JSON.stringify(s.manifest));
+  const progress=[],cache=[];let release,complete=false;const gate=new Promise(resolve=>release=resolve);
+  const fetcher=async(path,options)=>{cache.push([path,options.cache]);if(path===key)await gate;return s.fetcher(path,options);};
+  const loading=C.load(D,fetcher,undefined,{onProgress:info=>progress.push(info)}).then(v=>{complete=true;return v;});
+  await new Promise(resolve=>setImmediate(resolve));assert.equal(complete,false);release();const catalog=await loading;
+  assert.equal(catalog.rows.length,3);assert.ok(progress.some(p=>p.received>0));assert.ok(cache.some(([p,c])=>p===key&&c==='force-cache'));assert.ok(!s.calls.includes('./data/public/index.json'));
+  const broken=Buffer.from(gzip);broken[12]^=1;s.files.set(key,broken);await assert.rejects(C.load(D,s.fetcher),/integrity/);assert.ok(!s.calls.includes('./data/public/index.json'));
+});

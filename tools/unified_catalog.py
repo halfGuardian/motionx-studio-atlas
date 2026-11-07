@@ -14,6 +14,7 @@ from bulk_catalog import compact,sha
 from bulk_ingest import ingest,country,domains,SHARED_HOSTS
 from discovery import ROOT,read,write,digest
 from validate import ID,url_valid,validate,normalized
+from compact_index import add_transport
 
 KINDS={'source_location','company_reference'}
 FIELDS={'id','company_id','name','city','country','lat','lng','website','website_kind','categories','capabilities','capability_evidence','evidence_state','evidence_class','evidence','verified_on','source_observed_on','coordinate_precision','coordinate_source','location_type','relationships','status','identity_status','record_kind','source_provenance','license','attribution','research_reasons','potential_duplicates','source_status','source_category','source_type','provider_confidence','source_release','organisation_matching_reasons'}
@@ -126,6 +127,7 @@ def build(snapshot,company_csv,output,base_path=ROOT/'studios.json',config_path=
         'counts':{'records':len(active),'public_records':len(active),'class_a':classes['A'],'class_b':classes['B'],'class_c':classes['C'],'retained_locations':len(base),'source_location_observations':len(new)-len(game),'company_references':len(game),'records_with_coordinates':sum(type(r.get('lat')) in (float,int) and type(r.get('lng')) in (float,int) for r in active),'countries':len(countries),'retained_operating_organisations':len({r['company_id'] for r in base}),'source_identities':len({r['company_id'] for r in new})},
         'warning_meaning':'All source records are accessible in one research directory. Record totals are not verified unique studio/facility counts. Source status/type/sector are claims; company references have no invented coordinates. Existing curated evidence is preserved.'}
     manifest['warnings']={'canonical_baseline':len(warnings),'unreviewed_new_references':len(new),'source_point_precision_unverified':sum(r['record_kind']=='source_location' for r in new),'company_references_without_coordinates':len(game),'unspecified_company_source_terms':len(game),'source_records_missing_city':sum(r['record_kind']=='source_location' and not r['city'] for r in new),'source_records_missing_country':sum(r['record_kind']=='source_location' and not r['country'] for r in new),'possible_duplicate_candidates':report['potential_existing_duplicates']}
+    add_transport(output,base_path,manifest,index,new)
     write(output/'manifest.json',manifest)
     write(output/'audit.json',{'retained_baseline_sha256':sha(base_path),'retained_ids':[r['id'] for r in base],'source_observations':report['raw_source_records'],'company_csv_sha256':sha(company_csv),'company_reference_ids':[r['id'] for r in game],'record_classes':dict(classes),'source_research_report':report,'validation_errors':0,'baseline_warnings':warnings,'new_verified_capability_claims':0,'policy':'User-directed inclusive research view; no candidate is silently promoted to verified, no source closure is applied to a reviewed record, no company is given fabricated coordinates.'})
     return manifest,new

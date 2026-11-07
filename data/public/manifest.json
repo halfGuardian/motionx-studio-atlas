@@ -484,7 +484,15 @@
       "portsmouth-eldon-mocap",
       "uca-farnham-mocap"
     ],
-    "research_only_ids": []
+    "research_only_ids": [],
+    "compressed": {
+      "path": "baseline.json",
+      "sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+      "gzip_sha256": "bd742ebdc9bdf28dc3c01957bad389a957a01494ef3a8cfff6717d765849789e",
+      "bytes": 358282,
+      "gzip_bytes": 25977,
+      "content_addressed": true
+    }
   },
   "index": {
     "path": "index.json",
@@ -492,7 +500,17 @@
     "gzip_sha256": "7d2826af563b2d78ba66668c66746375981694956d28336d1fdc0abcf8840226",
     "gzip_bytes": 3296985,
     "records": 41492,
-    "bytes": 11337757
+    "bytes": 11337757,
+    "compact": {
+      "path": "index.compact.json",
+      "encoding": "motionx-columnar-v1",
+      "records": 41492,
+      "sha256": "5e5e5f0bb9996fbdc92fea8198473d9d5ed9dae5678dcb86b2c944400964cddf",
+      "gzip_sha256": "42a39e28d654181ceead4520d5759d550bb50b662e526237fb2d5ad7c9c939f0",
+      "bytes": 5027081,
+      "gzip_bytes": 2179773,
+      "content_addressed": true
+    }
   },
   "shards": {
     "shards/12ae32cb1ec0-000.json": {

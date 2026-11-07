@@ -273,25 +273,27 @@
     "accepted": true
   },
   "python": {
-    "passed": 167,
+    "passed": 175,
     "failed": 0,
     "command": "python -m unittest discover -s tests -p 'test_*.py'"
   },
   "javascript": {
-    "passed": 43,
+    "passed": 55,
     "failed": 0,
     "command": "node --test tests/*.test.js"
   },
   "http_browser": {
-    "passed": 34,
+    "passed": 43,
     "failed": 0,
     "compatibility_baseline": 19,
     "synthetic_sharded": 6,
     "actual_unified_catalogue": 9,
+    "unified_evidence_and_research_ux": 9,
     "commands": [
       "python tests/browser_smoke.py",
       "python tests/bulk_browser.py",
-      "python tests/public_catalog_smoke.py"
+      "python tests/public_catalog_smoke.py",
+      "python tests/unified_ux.py"
     ]
   },
   "public_data": {
@@ -309,7 +311,6 @@
       "possible_duplicate_candidates": 117
     }
   },
-  "approval": "Tests do not approve research claims or enforce human review. This proposal is not merged/deployed.",
   "source_archive_reproduction": {
     "validation_errors": 0,
     "counts": {
@@ -340,5 +341,12 @@
       "possible_duplicate_candidates": 117
     },
     "approval": "Human review and authorised merge still required; tests are not approval."
-  }
+  },
+  "readiness_report_reproduction": {
+    "datasets": 49,
+    "review_queue": 41505,
+    "approval_granted": false,
+    "report_integrity": "passed"
+  },
+  "approval": "Tests do not verify business claims or enforce human review. PR remains draft; no merge/deployment/Pages-setting change."
 }

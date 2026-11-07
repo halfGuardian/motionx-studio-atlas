@@ -719,5 +719,26 @@
   "source_policy_hash": "f2c888e9706aaa70b9b0151660e1e7dbe7b64b35a5d5829664c51838e143f84b",
   "research_run_id": "1fdcde733327ed15dc9dac9cfad28e76a85073cf1d8f75945e8362991552558e",
   "human_review_required": true,
-  "merged_or_deployed": false
+  "merged_or_deployed": false,
+  "transport": {
+    "path": "index.compact.json",
+    "encoding": "motionx-columnar-v1",
+    "records": 41492,
+    "sha256": "5e5e5f0bb9996fbdc92fea8198473d9d5ed9dae5678dcb86b2c944400964cddf",
+    "gzip_sha256": "42a39e28d654181ceead4520d5759d550bb50b662e526237fb2d5ad7c9c939f0",
+    "bytes": 5027081,
+    "gzip_bytes": 2179773,
+    "content_addressed": true
+  },
+  "baseline_transport": {
+    "path": "baseline.json",
+    "sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+    "gzip_sha256": "bd742ebdc9bdf28dc3c01957bad389a957a01494ef3a8cfff6717d765849789e",
+    "bytes": 358282,
+    "gzip_bytes": 25977,
+    "content_addressed": true
+  },
+  "provisional_identities": 41197,
+  "advisory_review_queue": 41505,
+  "licensing_policy_entries": 49
 }
