@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "report_sha256": "6bf48ef1a5ca482d992228c895c0f98cfac1961e788093f7ea971f1a7f79aaa6",
+  "human_approved": false,
+  "decisions": [],
+  "purpose": "Working review notes are not authenticated approval and cannot update the public database."
+}

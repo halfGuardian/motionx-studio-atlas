@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-07",
+  "method": "Bounded agent review of official pages; no prose, media, contacts or geocodes copied. Evaluation observations remain excluded from ingestion. Not human ground truth or source-wide reuse permission.",
+  "samples": [
+    {
+      "sample_id": "south-america-pajaro",
+      "source_url": "https://www.pajaro.cl/the-studio.html",
+      "access_status": "source_self_report",
+      "review_note": "Official page self-describes animation and Santiago; no independent operation or facility review.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "south-america-lado",
+      "source_url": "https://ladostudios.com/",
+      "access_status": "unrendered",
+      "review_note": "No readable lines on official home page. Indexed snippets are not substituted for current evidence.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "africa-triggerfish",
+      "source_url": "https://www.triggerfish.com/faq/",
+      "access_status": "source_self_report",
+      "review_note": "Official FAQ names Cape Town and Galway and distinguishes remote crew; remote crew locations are not branches.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "africa-kugali",
+      "source_url": "https://kugali.com/pages/working-with-us",
+      "access_status": "partial_page",
+      "review_note": "Shop/navigation dominates the accessible page; Nigeria facility geography not established.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "asia-anima-point",
+      "source_url": "https://anima.fi/contact/",
+      "access_status": "source_self_report",
+      "review_note": "Official contact page names Anima Vitae Point in Petaling Jaya, Selangor despite Kuala Lumpur marketing heading. No geocode or confirmed capability assigned.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "asia-mikros",
+      "source_url": "https://www.mikrosanimation.com/en/contact/bangalore/",
+      "access_status": "source_self_report",
+      "review_note": "Official Bangalore contact page names Mikros Animation / Rodeo FX. Ownership, previous-address and relocation history require review.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "oceania-robotface",
+      "source_url": "https://www.robotface.com.au/studios/",
+      "access_status": "source_self_report",
+      "review_note": "Official studios page lists two studio spaces. Camera motion control/slow-motion capture must not become body or performance capture.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "oceania-flying-bark",
+      "source_url": "https://www.flyingbark.com.au/",
+      "access_status": "partial_page",
+      "review_note": "Official site and careers links observed; careers locations alone are not proof of distinct operating production facilities.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "europe-blue-zoo",
+      "source_url": "https://www.blue-zoo.co.uk/",
+      "access_status": "source_self_report",
+      "review_note": "Official home page self-describes animation and company services; no branch-specific capability inference.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "europe-woodblock",
+      "source_url": "https://woodblock.tv/",
+      "access_status": "source_self_report",
+      "review_note": "Official site names Berlin, Ludwigsburg and Los Angeles presence; physical facility type requires separate review.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "north-america-titmouse",
+      "source_url": "https://titmouse.net/",
+      "access_status": "partial_page",
+      "review_note": "Official portfolio page readable; current facility geography not established on this page.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "north-america-bent",
+      "source_url": "https://www.bentimagelab.com/",
+      "access_status": "partial_page",
+      "review_note": "Official portfolio page shows animation work; location and current operation need separate corroboration.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "middle-east-barajoun",
+      "source_url": "https://www.barajoun.com/",
+      "access_status": "partial_page",
+      "review_note": "Official animation/VFX portfolio readable; operating municipality and current facility status require review.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    },
+    {
+      "sample_id": "middle-east-manga",
+      "source_url": "https://manga.com.sa/",
+      "access_status": "source_self_report",
+      "review_note": "Official company page self-describes animation/games/comics and a foundation relationship; no independently verified branch or capability inferred.",
+      "observed_on": "2026-11-07",
+      "independent_verification": false,
+      "human_approved": false,
+      "automatic_collection": false
+    }
+  ]
+}
