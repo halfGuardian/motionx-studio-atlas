@@ -1,6 +1,6 @@
 {
   "tested_on": "2026-11-07",
-  "environment": "Managed cloud, Python 3.12, Node.js v22, installed headless Chromium, localhost HTTP subdirectory; not a deployed Pages verification or physical low-memory handset. Real and sharded synthetic benchmark runs overlapped read-only validation work; raw conditions/results retained.",
+  "environment": "Managed cloud, Python 3.12.14, Node.js v24.22.1, Chromium 155.0.8059.79, localhost HTTP subdirectory; not a deployed Pages verification or physical low-memory handset. Real and sharded synthetic benchmark runs overlapped read-only validation work; raw conditions/results retained.",
   "python": {
     "tests": 283,
     "passed": 283,
