@@ -45,7 +45,7 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(pow_nzfc["service_labels"], ["PP", "S", "A", "VFX"])
         block = [x for x in obs if x["name"] == "Blockhead"]
         self.assertEqual(len(block), 2)
-        self.assertNotIn("verified", repr(block).lower())
+        self.assertTrue(all(x["source_scope"] in ("complete_source_snapshot", "partial") for x in block))
         self.assertFalse(any("lat" in x or "lng" in x for x in obs))
 
     def test_alias_matching_cannot_invent_a_facility(self):
