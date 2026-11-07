@@ -293,6 +293,7 @@ def reconcile(rows,obs,as_of):
         output[-1]['observation_age_days']=output[-1].pop('evidence_age_days')
         updated=o.get('source_updated_on');output[-1]['source_assertion_age_days']=(date.fromisoformat(as_of)-date.fromisoformat(updated)).days if updated else None
         output[-1]['freshness_state']='historical_event_current_operation_unknown' if o['origin']=='user_supplied_historical_event' else 'source_snapshot_stale_review' if updated and output[-1]['source_assertion_age_days']>FRESHNESS['company_service_claim_days'] else 'source_assertion_date_not_established' if not updated else 'dated_source_assertion_not_current_operation_verification'
+        if updated and updated>o['observed_on']:output[-1]['freshness_state']='source_date_after_observation_review_required'
     return output
 
 
@@ -325,6 +326,7 @@ def build(home=HOME):
         path=Path(name)
         if path.is_absolute() or '..' in path.parts or sha(ROOT/path)!=expected:raise ValueError('Historical research changed: '+name)
     m,rows=records(ROOT/'data/public',ROOT/'studios.json');obs,ledgers=observations(rows,home);as_of=read(home/'inputs/source-assessments.json')['reviewed_on'];iso(as_of)
+    as_of=max([as_of]+[iso(o['observed_on']) for o in obs])
     results=reconcile(rows,obs,as_of);search=[]
     for p in sorted((home/'inputs').glob('country-source-search*.json')):search+=read(p)['countries']
     counts=Counter(r['country'] for r in rows if r['country']);searched={r['country']:r for r in search}

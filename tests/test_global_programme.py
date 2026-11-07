@@ -66,6 +66,7 @@ class GlobalProgrammeTests(unittest.TestCase):
         for patch in ({'expected_records':2},{'records':[self.row,self.row]},{'records':[self.row|{'website':'javascript:alert(1)'}]}):
             with self.subTest(patch=patch),self.assertRaises(ValueError):self.load(self.value|patch)
         stale=copy.deepcopy(self.value);stale['records'][0]['source_updated_on']='2020-01-01';_,signals=advance(empty_state(),self.load(stale));self.assertIn('stale_source_assertion',[s['kind'] for s in signals])
+        contradictory=self.row|{'source_id':'test','origin':'test','origin_hash':digest(self.row),'observed_on':'2026-11-06','source_updated_on':'2026-11-07'};result=reconcile([],[contradictory],'2026-11-07');self.assertEqual(result[0]['freshness_state'],'source_date_after_observation_review_required');self.assertIsNone(result[0]['canonical_update'])
 
     def test_identity_does_not_merge_foreign_branches_shared_domains_or_capabilities(self):
         row={'id':'existing','company_id':'org','name':'Test Boutique','country':'Canada','city':'Toronto','website':'https://boutique.example.org/','record_kind':'company_reference','source_provenance':[]}
