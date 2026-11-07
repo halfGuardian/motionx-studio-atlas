@@ -34,6 +34,7 @@ ALIASES = {
     "floatingrock": ("Floating Rock Studio",),
     "causeandfx": ("Cause + FX", "Cause & FX"),
     "mukpuddy": ("Mukpuddy Animation Ltd",),
+    "mukpuddyanimationltd": ("Mukpuddy",),
 }
 HELD_IDENTITIES = {
     "blockhead": "NZFC Blockhead entry points at Assembly, while Screen Auckland identifies distinct Blockhead; official site currently documents Sydney, not a verified active NZ facility."
@@ -206,7 +207,7 @@ def summarise(manifest, sources, observations, reconciled):
             )]
         }
     return {
-        "atlas_records_scanned": len(observations),
+        "atlas_records_scanned": manifest["counts"]["records"],
         "complete_index_records_examined": manifest["counts"]["records"],
         "source_observations": len(reconciled),
         "distinct_normalised_source_names": len({fold(o["name"]) for o in observations}),
@@ -311,6 +312,8 @@ def run(output=None):
                           "outcomes": v["outcomes"], "no_name_match": v["not_name_matched"],
                           "needs_identity_review": v["identity_review"]}
                       for k, v in summary["source_outcomes"].items()},
+        "foreign_only_details": [{"name": r["name"], "source": r["source_id"], "record_ids": r["foreign_record_ids"]}
+                                 for r in reconciled if r["status"] == "foreign_only_name_collision"],
         "new_atlas_records_created": 0, "publication_approved": False
     }, ensure_ascii=False, indent=2))
     return summary
