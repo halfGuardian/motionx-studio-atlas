@@ -41,6 +41,12 @@ jobs:
         run: python tools/global_programme.py maintenance-check
       - name: Reproduce NZ final relevance, rights, staging and pending maintainer review
         run: python tools/nz_quality_gate.py check
+      - name: Package the global review with working relative paths
+        run: python tools/package_global_review.py --output "$RUNNER_TEMP/global-programme-bundle"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: global-programme-pending-human-review
+          path: ${{ runner.temp }}/global-programme-bundle/
       - uses: actions/upload-artifact@v4
         if: always()
         with:

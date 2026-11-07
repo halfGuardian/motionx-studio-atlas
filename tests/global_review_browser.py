@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
 def main():
-    server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)));threading.Thread(target=server.serve_forever,daemon=True).start();url=f'http://127.0.0.1:{server.server_port}/data/global-programme/reports/dashboard.html';checks=0;total=json.loads((ROOT/'data/global-programme/reports/summary.json').read_text())['replayed_observations']
+    root=Path(os.environ.get('MOTIONX_REVIEW_ROOT',str(ROOT)));server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(root)));threading.Thread(target=server.serve_forever,daemon=True).start();url=f'http://127.0.0.1:{server.server_port}/data/global-programme/reports/dashboard.html';checks=0;total=json.loads((root/'data/global-programme/reports/summary.json').read_text())['replayed_observations']
     def passed(message):
         nonlocal checks;checks+=1;print('PASS '+message,flush=True)
     try:

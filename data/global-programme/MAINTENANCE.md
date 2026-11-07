@@ -38,7 +38,13 @@ The dashboard filters every replayed observation by country, research region, so
 
 `inputs/history-checkpoint.json` binds all 209 retained parent research files. Historical discovery/backlog queues, including the original 41 entries and later 200-candidate checkpoint, are replayed additively with their original hashes/dates/review states. The committed discovery archive explicitly lacks complete raw history; this programme does not invent expired artifacts or closure signals. Existing `restore_discovery.py`, `checkpoints.py` and archive workflows stay unchanged. The global workflow can replay committed state even when an Actions artifact expires. Recovery tests cover partial/failing/corrupt states locally; no new claim of a live archive round trip is made.
 
-`.github/workflows/global-programme.yml` is a read-only manually dispatched replay with downloadable artifacts. It grants no write/PR/merge permissions. Its PR counterpart runs in `test.yml` against main or the protected parent branch. New workflow dispatch is unavailable until GitHub recognises the workflow on the default branch; maintainer dispatch after authorised merge is a remaining manual step, not a test result. No schedule has been enabled.
+`.github/workflows/global-programme.yml` is a read-only manually dispatched replay with downloadable artifacts. It grants no write/PR/merge permissions. Its PR counterpart runs in `test.yml` against main or the protected parent branch and uploads the same self-contained review bundle now. `package_global_review.py` preserves `data/global-programme/reports/` and the relative root scripts; serving the downloaded bundle opens a working review dashboard. Its landing page explains that public Atlas profiles require the matching checkout. New manual workflow dispatch is unavailable until GitHub recognises that workflow on the default branch; maintainer dispatch after authorised merge is a remaining manual step, not a test result. No schedule has been enabled.
+
+```sh
+python tools/package_global_review.py --output /tmp/motionx-global-review-bundle
+MOTIONX_REVIEW_ROOT=/tmp/motionx-global-review-bundle python tests/global_review_browser.py
+python -m http.server 8000 --directory /tmp/motionx-global-review-bundle
+```
 
 ## Exact unfinished work
 
