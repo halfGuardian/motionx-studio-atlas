@@ -55,8 +55,10 @@ def fold(value):
 
 def load_atlas():
     manifest = read(MANIFEST)
-    if manifest["counts"]["records"] != 42239:
-        raise ValueError("This checkpoint targets the v1.3/v1.4 42,239-record catalogue; update scope explicitly.")
+    if hashlib.sha256(INDEX.read_bytes()).hexdigest() != manifest['index']['sha256']:
+        raise ValueError('Public index integrity mismatch')
+    if hashlib.sha256(BASELINE.read_bytes()).hexdigest() != manifest['baseline']['sha256']:
+        raise ValueError('Retained baseline integrity mismatch')
     cols = manifest["index_columns"]
     if cols[:5] != ["id", "company_id", "name", "city", "country"]:
         raise ValueError("Unrecognised index schema")
@@ -88,6 +90,12 @@ def load_atlas():
     ids = [r["id"] for r in records]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate ID in source/retained index")
+    # Wave 1 is a frozen baseline audit. The continuation separately verifies
+    # every retained shard and all appended references against its checkpoint.
+    records = [r for r in records if not r['id'].startswith('nzcensus-')]
+    if len(records) != 42239:
+        raise ValueError('Historical 42,239-record cohort changed')
+    manifest = dict(manifest, counts={**manifest['counts'], 'records':42239, 'company_references':1620})
     return manifest, records
 
 

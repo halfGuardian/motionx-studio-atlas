@@ -62,7 +62,7 @@ class IdentityTests(unittest.TestCase):
 class CoverageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.manifest,cls.all=records(ROOT/'data/public',ROOT/'studios.json');cls.base=[r for r in cls.all if not r['id'].startswith('annecy-')];cls.report=read(HOME/'reports/reconciliation.json');cls.proposed=read(HOME/'reports/proposals.json')['company_references'];cls.by_event={r['exhibitor_id']:r for r in cls.report['reconciliation']}
+        cls.manifest,current=records(ROOT/'data/public',ROOT/'studios.json');cls.all=[r for r in current if not r['id'].startswith('nzcensus-')];cls.base=[r for r in cls.all if not r['id'].startswith('annecy-')];cls.report=read(HOME/'reports/reconciliation.json');cls.proposed=read(HOME/'reports/proposals.json')['company_references'];cls.by_event={r['exhibitor_id']:r for r in cls.report['reconciliation']}
     def test_all_566_targets_have_real_attempt_receipts_and_full_1074_reconciliation(self):
         _,studies,_=inputs();self.assertEqual(len(studies),566);self.assertEqual(len(self.report['reconciliation']),1074);self.assertEqual(sum(len(r['search_attempts']) for r in studies.values()),864)
         for r in studies.values():self.assertTrue(r['search_attempts']);self.assertTrue(r['reason']);self.assertFalse(r['human_approved'])

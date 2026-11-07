@@ -1,14 +1,18 @@
-# New Zealand census Wave 1 — source-by-source coverage (draft v1.5)
+# MotionX Studio Atlas v1.5 — New Zealand census continuation (draft)
 
-[Source scope, audit method and outstanding gaps](data/nz-census/README.md). Adds **56 newly documented regional source observations** alongside the existing 42-row NZFC snapshot: 24 visible Screen Auckland digital/post-production vendor rows (pages 2/4/5 remain unavailable), nine Screen Wellington showcase entries, 21 Wellington creative-showreel names, and two selected Otago/Southland production-tech entries. The CI audit matches all **98 source observations** against every existing **42,239** Atlas record and uploads the complete reconciliation. No new public company records, map pins or confirmed facility claims are added.
+**42,298 unified reference records**, preserving all 42,239 previous IDs and evidence. This proposal adds **59 Class C company references**, **zero map pins** and **zero verified capability claims**. The retained database remains 243 locations / 119 operating organisations; the combined catalogue includes overlapping source observations and 1,679 company-only references. It is not 42,298 verified operating studios.
 
-# Visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
+The [NZ coverage dashboard](data/nz-census/reports/coverage.html) reconciles **217 observations**, including all 98 frozen Wave 1 rows and 116 permitted NZ On Air programme-year observations, against the entire previous catalogue. It identifies **41 existing company identities**, 59 proposed references and **27 unresolved source-name identities**. One reported NZ office closure identity is a review alert, not an automatic deletion. Four facility-evidence proposals remain separate and unapproved. The census is **incomplete**: Auckland and Wellington rosters are partial; Otago/Southland and Waikato have reuse restrictions; NZGDA enumeration and the VFXG 45-business list remain unavailable/pending.
+
+[Source-by-source scope, research decisions and permission limits](data/nz-census/README.md) · [Complete reconciliation CSV](data/nz-census/reports/reconciliation.csv) · [Pending human review](data/nz-census/reports/human-review.json) · [Validation results](data/nz-census/validation.md). Run `python tools/nz_research.py check` for deterministic reconciliation, proposal, checkpoint and immutable-history checks. Actions uploads the complete review artifact. No restricted collector is enabled; human review of this draft PR and source rights is required before merge. Tests do not authorise publication.
+
+# Historical visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
 
 The Atlas now makes **company references without map pins** visible as an explicit number on the map and offers a direct directory shortcut. **All 42 New Zealand Film Commission facilities-directory entries** are accessible through a [source-to-Atlas reconciliation page](data/boutique/reports/nzfc-coverage.html), including nine exclusions and the held Blockhead/Assembly identity. 27 new and three cross-source reconciled references, plus two previously existing identities, account for 32 represented records; **representation is not verified physical coverage**. The historical NZFC Wētā FX source is linked to Wellington in this new report, not an overseas branch.
 
 The [source coverage contract and outstanding discovery gaps](data/coverage/README.md) distinguish data acquisition, searchable identities, verified geography, rights and user-visible coverage. No new facilities, coordinates or capture-stage claims are created; the Annecy v1.3 human precision worksheet remains pending. The v1.2/v1.3 hash-bound research records and source policy remain unchanged.
 
-# MotionX Studio Atlas v1.3 — Annecy Boutique Studio Coverage
+# Historical v1.3 — Annecy Boutique Studio Coverage
 
 **One unified atlas: 42,239 reference records.** This proposal adds **172 Class C company references** from Annecy research and preserves all **42,067 existing IDs**, the 243 retained locations, all original coordinates and all prior evidence shards. Totals are **A 230 / B 4,626 / C 37,383**, with **178 countries/territories** and **119 retained operating organisations**. Source observations and provisional company identities overlap; these are not 42,239 verified studio locations.
 

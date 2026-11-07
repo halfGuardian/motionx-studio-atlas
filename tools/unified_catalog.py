@@ -42,6 +42,16 @@ def validate_research(rows):
             if row.get(k) and not url_valid(row[k]):error('unsafe '+k)
         if not isinstance(row.get('categories'),list) or any(not isinstance(c,str) or not c.strip() for c in row['categories']):error('invalid source sectors')
         if not row.get('license') or not row.get('attribution'):error('source terms/attribution required')
+        duplicates=row.get('potential_duplicates',[])
+        if not isinstance(duplicates,list):error('invalid duplicate review metadata')
+        else:
+            for match in duplicates:
+                if (not isinstance(match,dict) or set(match)!={'ids','reasons'}
+                    or not isinstance(match.get('ids'),list) or not match['ids']
+                    or any(not isinstance(i,str) or not ID.fullmatch(i) for i in match['ids'])
+                    or not isinstance(match.get('reasons'),list) or not match['reasons']
+                    or any(not isinstance(reason,str) or not reason.strip() for reason in match['reasons'])):
+                    error('invalid duplicate review metadata')
         try:
             if date.fromisoformat(row['source_observed_on']).isoformat()!=row['source_observed_on'] or row['source_observed_on']>date.today().isoformat():raise ValueError()
         except (ValueError,KeyError,TypeError):error('invalid observation date')

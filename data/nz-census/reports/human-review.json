@@ -1,0 +1,241 @@
+{
+  "reviewed": 0,
+  "precision": null,
+  "publication_approved": false,
+  "content_sha256": "1f8db80243cf4891b665898903ddd25fd63ec216e4602c76d6c88aa8dfa56a18",
+  "method": "Deterministic stratified pending worksheet. Agent source assessments and automated tests are not human approval. Historical Annecy worksheet remains separate and pending.",
+  "rows": [
+    {
+      "observation_id": "screen-wellington-showreel:wwh-019",
+      "name": "Wētā Workshop",
+      "content_hash": "424fc8266db5af2672d3ee5b9a4549a67249e6d81c0d156cb9eb35d6c2778dca",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2025-29e97f02c3b5e88f",
+      "name": "Ninja Kiwi",
+      "content_hash": "6c7c407e2f0972e98bedb0f1cd11a34a8712878ffb8bb3706e32d70c23efdc9c",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-9cc81e3180677cba",
+      "name": "Splitting Point",
+      "content_hash": "04190216ac9985cb2c7a3bc2ac39f44de2f83415222da86e68a84d75ec6bf0f1",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2025-0873b6784c596cc0",
+      "name": "Digital Confectioners",
+      "content_hash": "db16c1e829744b44af6b1b810a948d2236d493cee2d7f21cb375e7d41a932636",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-auckland-digital:akl-004",
+      "name": "Blockhead",
+      "content_hash": "9e0d6b8bbc21839a6790a762ef1f7a8ad8762c52844b76cab53bfd4b623ab8a9",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-auckland-digital:akl-005",
+      "name": "Cause and FX",
+      "content_hash": "2a2287c947f8587ca512285273c4571f29f8cb9fea430af6645b3f2b7769114c",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzfc-facilities:nzfc-88f4c0cccbf38a4c962d",
+      "name": "Bespoke Post",
+      "content_hash": "6bc2c790ec0ffd4a617a607437be6f4d3b4d567d129ca6ddcbca54a181454cb5",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showreel:wwh-009",
+      "name": "Lost Cosmonauts",
+      "content_hash": "83c0e5c7a433e32ffa7eb262a09490bacbd70cd6898b5d44d8833965bca61a1e",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showcase:wds-003",
+      "name": "Avalon Studios",
+      "content_hash": "69d3e817fa6ce8d0210a390035aa77123b2398d6d21a5b6f9ff9bc45b0cb4358",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzfc-facilities:nzfc-305b4d4639ef5afbf5c5",
+      "name": "The Inside Track",
+      "content_hash": "57de7337d13e134b747e1eb840586997052f16ea9fbe41cbf642725482ccf678",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2026-3ea5a1d1e2236713",
+      "name": "Astronaut Diaries",
+      "content_hash": "c44b7a74cc18dd840e2ef1a6d26a30ef5133e05edb32334b4bcf1bd0e5e33efd",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzfc-facilities:nzfc-dcafaccd38a9cd2384f1",
+      "name": "Pinnacle Post",
+      "content_hash": "ad04fc22ff7c741ecdd78d71e425c2898b13fa65655299ace2a1e0b94a7d85ad",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showcase:wds-006",
+      "name": "Portsmouth Film Equipment Rental",
+      "content_hash": "bece142e24da483ff27cce6f1926ba2aff3e62a827cc95592b87535d6776f91a",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-ce08e36b1f53eab0",
+      "name": "Niantic Aotearoa New Zealand",
+      "content_hash": "b6745b32e4c09a265ad71a6751679032089b5b305441124e64fc9f7d5766c049",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2025-2878fb5a3a764f53",
+      "name": "Niantic Aotearoa",
+      "content_hash": "4f060ff2a8497dc82b32fea7444b7de5eb70850c85d71a2586c744cd1fcbfbc0",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2026-2878fb5a3a764f53",
+      "name": "Niantic Aotearoa",
+      "content_hash": "09b8bd61a73cc0fa0e847c05c2124008ce51431878e86ffe6bd58f362953bdf0",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showreel:wwh-011",
+      "name": "Niantic Aotearoa NZ",
+      "content_hash": "0719b922b4e71b38f5be277b895db31d2819a54608b2cf6b3ee01a68042ae475",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showcase:wds-005",
+      "name": "Park Road Post Production",
+      "content_hash": "b925c2f5dd80354d72be83ff2fcf449d274b630b44dab6a4c6ba5aa231eb2a96",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2026-f5477f80ccfc0db1",
+      "name": "Deep Field Games",
+      "content_hash": "b1f6180e408f00ae54450d424d747bf2f0c8929bb9bf043ae3fe558c669aeb42",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2025-5cc9c6460fc2d9f8",
+      "name": "RocketWerkz",
+      "content_hash": "6f8d2312ecaad412b52ef2675b7bfe8f1dc196b524a432b6560c28ddfd7c5df1",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-5892680c4b87fe6b",
+      "name": "PikPok",
+      "content_hash": "7b11d3c192d768a168eb0d5e09e5910b826fdc35ab3550c985d1c7b9c4873923",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2025-602db0f962bad7d8",
+      "name": "A44",
+      "content_hash": "d59cb10c495f6abde455ad1a5462c85aa5fc7300289a1959fff96c9984901174",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzfc-facilities:nzfc-cfda1d52625143ff4c85",
+      "name": "Floating Rock",
+      "content_hash": "f135e6fb300ba0cc3cb1e03faaf1571f8d1a7c0b7eb4c4f1fa95ba5a17ddb251",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "screen-wellington-showreel:wwh-008",
+      "name": "Fox & Co",
+      "content_hash": "c631a166eb78596621420c4a39020b8d12f6a5e9e4d210b828429212ff19b827",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-602db0f962bad7d8",
+      "name": "A44",
+      "content_hash": "2bae386e34d05fc1204d9d6e8c2e60bc7d78b637dedcae1ab4c7e9cd75e81a87",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-1855e09efceac500",
+      "name": "Blind Squirrel Entertainment",
+      "content_hash": "a0b374511796c3d0b6c7271c98bf5234ba9c08b83e7d4d9b56eae5529f2d67e4",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-0f01c9d1ed258242",
+      "name": "Staples Productions",
+      "content_hash": "8539ab29193ad760142a033be6936c6d846454c984d9b6607e95dae8105cf5ab",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "nzonair-gdsr:gdsr-2024-68d5746f29db70cb",
+      "name": "Beyond Studio",
+      "content_hash": "d0d77f00b58c785e39e8aa4e516c9e85cafe030cbb6189f4614fad8cc69c6997",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    },
+    {
+      "observation_id": "film-bay-of-plenty:te-whare-piringa",
+      "name": "Te Whare Piringa Film Studio",
+      "content_hash": "189cdbc88e4750875666059f78ab502fd42c7362c04b9c54dacd865005014ae0",
+      "decision": null,
+      "reviewer": null,
+      "status": "pending_human_review"
+    }
+  ]
+}

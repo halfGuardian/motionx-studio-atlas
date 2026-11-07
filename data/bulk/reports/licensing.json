@@ -187,6 +187,20 @@
       "records": 4
     },
     {
+      "source": "NZ census research: nz-company-primary-review",
+      "url": "https://insidetrack.co.nz/",
+      "dataset_version": "114153db1411488e30445eda9ad0559ccf5dbb32813768400f2513c4684cb852",
+      "retrieval_or_recorded_review": "2026-11-07",
+      "applicable_licence": "UNSPECIFIED",
+      "redistribution_status": "Permission not established",
+      "attribution_requirements": "MotionX company research: minimal factual reference to the linked company/official source, reviewed 2026-11-07. Source-wide reuse terms not established; no authored prose, media or contacts reproduced.",
+      "commercial_use_restrictions": "Subject to the source-specific grant; no blanket source-wide clearance.",
+      "required_notices": "Retain original source links, dates, attribution and applicable full licence.",
+      "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
+      "broader_promotion_or_reuse": "Further permission review before automated bulk reuse.",
+      "records": 27
+    },
+    {
       "source": "Boutique discovery: nzfc-annecy",
       "url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
       "dataset_version": "2272a3535fb59752ffe3ea363a865efbba660d2e320c61471906464bb761695b",
@@ -213,6 +227,20 @@
       "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
       "broader_promotion_or_reuse": "Further permission review before automated bulk reuse.",
       "records": 27
+    },
+    {
+      "source": "NZ census research: nzonair-gdsr",
+      "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "dataset_version": "52fd607b6fce9516c60af0f5e59476ea8226de5d37f88469f897b01a8fda1241",
+      "retrieval_or_recorded_review": "2026-11-07",
+      "applicable_licence": "NZ-On-Air-Permission",
+      "redistribution_status": "Reuse documented",
+      "attribution_requirements": "Copyright © NZ On Air. Accurate factual company-name/programme-year projection, source acknowledged; no endorsement. Permission applies to this scoped agency projection, not third-party websites or detailed service claims.",
+      "commercial_use_restrictions": "Subject to the source-specific grant; no blanket source-wide clearance.",
+      "required_notices": "Retain original source links, dates, attribution and applicable full licence.",
+      "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
+      "broader_promotion_or_reuse": "Accurate attributed agency projection; retain copyright and controlling terms. No third-party media or independent verification.",
+      "records": 35
     },
     {
       "source": "Boutique discovery: primary-indexed",
@@ -800,5 +828,5 @@
     "Inspect required-review rules and bypass rights; current enforcement is unconfirmed.",
     "Re-test deployed Pages after any authorised merge; this draft does not deploy."
   ],
-  "catalogue_sha256": "c5344dd1c32514d97b6d3932a048fee49363efa91fdf856a7974977d4512aa98"
+  "catalogue_sha256": "99e927875c5147e24487e54b04cc8fa1f914a4ad122a45d2ecab0ea0b507e939"
 }

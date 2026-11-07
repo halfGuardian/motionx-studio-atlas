@@ -1,0 +1,1059 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "method": "Agent evidence assessments, not completed human review. Company-service claims remain separate from verified facility capabilities. Explicit aliases require cited operating-name evidence.",
+  "records": [
+    {
+      "source_name": "A44",
+      "operating_name": "A44 Games",
+      "aliases": [
+        "A44 Games",
+        "Aurora44"
+      ],
+      "identity_evidence_urls": [
+        "https://www.a44games.com/about"
+      ],
+      "official_url": "https://www.a44games.com/about",
+      "evidence_urls": [
+        "https://www.a44games.com/about"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "existing",
+      "reason": "Official A44 page and recorded A44 Games identity agree; no new NZ branch inferred.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Assembly",
+      "operating_name": "Assembly",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.assemblyltd.com/info"
+      ],
+      "official_url": "https://www.assemblyltd.com/info",
+      "evidence_urls": [
+        "https://www.assemblyltd.com/info"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "NZ Assembly uses assemblyltd.com; the retained US Assembly uses assembly.tv. Distinct operating websites and geography; do not reuse the US identity or coordinates.",
+      "sectors": [
+        "Animation",
+        "VFX"
+      ],
+      "company_service_claims": [
+        "Animation",
+        "VFX"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Big Picture",
+      "operating_name": "Big Picture / Creative Technology NZ",
+      "aliases": [
+        "Creative Technology New Zealand"
+      ],
+      "identity_evidence_urls": [
+        "https://ct-group.com/aus/about/"
+      ],
+      "official_url": "https://ct-group.com/aus/about/",
+      "evidence_urls": [
+        "https://ct-group.com/aus/about/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Current official Australia/NZ company page describes Auckland facilities and Big Picture heritage. US Big Picture record has no substantiated official domain. This provisional NZ operator reference does not reassign that US record or assert a geocoded VP stage.",
+      "sectors": [
+        "Production Technology"
+      ],
+      "company_service_claims": [
+        "Technical production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Blockhead",
+      "operating_name": "Blockhead",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.blockheadvfx.com/about/"
+      ],
+      "official_url": "https://www.blockheadvfx.com/about/",
+      "evidence_urls": [
+        "https://www.blockheadvfx.com/about/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Current official page describes Sydney. NZ regional listing and NZFC Assembly-domain conflict do not establish a current NZ branch. Keep distinct from Assembly; no closure inference.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Creature Post",
+      "operating_name": "Creature Post",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.creaturepost.co.nz/team"
+      ],
+      "official_url": "https://www.creaturepost.co.nz/team",
+      "evidence_urls": [
+        "https://www.creaturepost.co.nz/team"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official team/service context and current regional listing support the company identity; no specific capture stage established.",
+      "sectors": [
+        "Animation",
+        "VFX",
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "Motion design",
+        "VFX"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Eleven FX",
+      "operating_name": "Eleven FX",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.elevenfx.com/"
+      ],
+      "official_url": "https://www.elevenfx.com/",
+      "evidence_urls": [
+        "https://www.elevenfx.com/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Auckland company/service page supports a distinct CGI/VFX and post-production provider.",
+      "sectors": [
+        "VFX",
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "CGI integration",
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Envy Studios",
+      "operating_name": "Envy Studios",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://envystudios.co.nz/"
+      ],
+      "official_url": "https://envystudios.co.nz/",
+      "evidence_urls": [
+        "https://envystudios.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official site describes Auckland sound/vision post-production. Earlier boutique-scope exclusion is historical, not proof the company is irrelevant to this broader census.",
+      "sectors": [
+        "Post-production",
+        "Audio Post-production"
+      ],
+      "company_service_claims": [
+        "Audio post-production",
+        "ADR"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Inside Track",
+      "operating_name": "The Inside Track",
+      "aliases": [
+        "Inside Track",
+        "The Inside Track Ltd"
+      ],
+      "identity_evidence_urls": [
+        "https://insidetrack.co.nz/"
+      ],
+      "official_url": "https://insidetrack.co.nz/",
+      "evidence_urls": [
+        "https://insidetrack.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official site identifies The Inside Track Ltd in Auckland. Sound-production scope is relevant specialist post, not animation or capture evidence.",
+      "sectors": [
+        "Audio Post-production"
+      ],
+      "company_service_claims": [
+        "Sound post-production",
+        "ADR"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "The Inside Track",
+      "operating_name": "The Inside Track",
+      "aliases": [
+        "Inside Track",
+        "The Inside Track Ltd"
+      ],
+      "identity_evidence_urls": [
+        "https://insidetrack.co.nz/"
+      ],
+      "official_url": "https://insidetrack.co.nz/",
+      "evidence_urls": [
+        "https://insidetrack.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Same official business identity as Inside Track; preserve both original source rows.",
+      "sectors": [
+        "Audio Post-production"
+      ],
+      "company_service_claims": [
+        "Sound post-production",
+        "ADR"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Mandy VFX",
+      "operating_name": "Mandy VFX",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.mandyvfx.co.nz/about"
+      ],
+      "official_url": "https://www.mandyvfx.co.nz/about",
+      "evidence_urls": [
+        "https://www.mandyvfx.co.nz/about"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official page explicitly describes a boutique VFX/post-production facility. No street geocode or capture capability is inferred.",
+      "sectors": [
+        "VFX",
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "VFX",
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Native Audio",
+      "operating_name": "Native Audio",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.nativeaudio.co.nz/"
+      ],
+      "official_url": "https://www.nativeaudio.co.nz/",
+      "evidence_urls": [
+        "https://www.nativeaudio.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Auckland/NZ site offers audio post for film, television, games and interactive projects.",
+      "sectors": [
+        "Audio Post-production"
+      ],
+      "company_service_claims": [
+        "Audio post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Pinnacle Post",
+      "operating_name": "Pinnacle Post",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.pinnaclepost.co.nz/about"
+      ],
+      "official_url": "https://www.pinnaclepost.co.nz/about",
+      "evidence_urls": [
+        "https://www.pinnaclepost.co.nz/about"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official page identifies an Auckland post-production company. No capture/animation assumption.",
+      "sectors": [
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "The Sound Room",
+      "operating_name": "The Sound Room",
+      "aliases": [
+        "The Soundroom"
+      ],
+      "identity_evidence_urls": [
+        "https://thesoundroom.co.nz/whatwedo"
+      ],
+      "official_url": "https://thesoundroom.co.nz/whatwedo",
+      "evidence_urls": [
+        "https://thesoundroom.co.nz/whatwedo"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official service page supports sound-production identity and services; no animation-stage inference.",
+      "sectors": [
+        "Audio Post-production"
+      ],
+      "company_service_claims": [
+        "Audio post-production",
+        "ADR"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "The Rebel Fleet",
+      "operating_name": "The Rebel Fleet",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.rebelfleet.co.nz/our-work/"
+      ],
+      "official_url": "https://www.rebelfleet.co.nz/our-work/",
+      "evidence_urls": [
+        "https://www.rebelfleet.co.nz/our-work/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official production-work page and NZFC/Auckland source labels support the technical/post provider. Film credits do not imply capture services.",
+      "sectors": [
+        "Post-production",
+        "Production Technology"
+      ],
+      "company_service_claims": [
+        "DIT",
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "The Rig",
+      "operating_name": "The Rig",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://therig.co.nz/about"
+      ],
+      "official_url": "https://therig.co.nz/about",
+      "evidence_urls": [
+        "https://therig.co.nz/about"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official site explicitly describes a central Auckland design/animation/colour/VFX studio; source VP/AR/VR labels remain unverified source claims.",
+      "sectors": [
+        "Animation",
+        "VFX",
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "Animation",
+        "VFX",
+        "Colour grading"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Wētā Workshop",
+      "operating_name": "Wētā Workshop",
+      "aliases": [
+        "Weta Workshop"
+      ],
+      "identity_evidence_urls": [
+        "https://www.wetaworkshop.com/about-us"
+      ],
+      "official_url": "https://www.wetaworkshop.com/about-us",
+      "evidence_urls": [
+        "https://www.wetaworkshop.com/about-us"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Wellington creative-services company and programme listings identify Workshop. It is distinct from Wētā FX; no capture or digital VFX services inherited.",
+      "sectors": [
+        "Game Development",
+        "Special Effects"
+      ],
+      "company_service_claims": [
+        "Creative production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Fox & Co",
+      "operating_name": "Fox & Co Animation",
+      "aliases": [
+        "Fox & Co",
+        "Fox and Co Animation"
+      ],
+      "identity_evidence_urls": [
+        "https://www.foxandcoanimation.com/3d-animation/"
+      ],
+      "official_url": "https://www.foxandcoanimation.com/3d-animation/",
+      "evidence_urls": [
+        "https://www.foxandcoanimation.com/3d-animation/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "existing",
+      "reason": "Current Fox & Co Animation service branding supports the source-name variant. Retain original NZ Fox & Co Animation ID; do not create a second company.",
+      "sectors": [
+        "Animation"
+      ],
+      "company_service_claims": [
+        "3D animation"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Avalon Studios",
+      "operating_name": "Avalon Studios",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://avalonstudios.co.nz/"
+      ],
+      "official_url": "https://avalonstudios.co.nz/",
+      "evidence_urls": [
+        "https://avalonstudios.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Avalon film/television facility identity and regional source agree. Lower Hutt location belongs in a separate evidence proposal, not an invented map pin.",
+      "sectors": [
+        "Production Facilities"
+      ],
+      "company_service_claims": [
+        "Production studios"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Lane Street Studios",
+      "operating_name": "Lane Street Studios",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official regional listing supports a distinct Upper Hutt production-facility business. Source evidence remains unverified at facility level.",
+      "sectors": [
+        "Production Facilities"
+      ],
+      "company_service_claims": [
+        "Production studios"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Stone Street Studios",
+      "operating_name": "Stone Street Studios",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.stonestreetstudios.co.nz/"
+      ],
+      "official_url": "https://www.stonestreetstudios.co.nz/",
+      "evidence_urls": [
+        "https://www.stonestreetstudios.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Wellington production-stage website differs from the US Stonestreet record and its NYWIFT link. Do not move or reassign the US record.",
+      "sectors": [
+        "Production Facilities"
+      ],
+      "company_service_claims": [
+        "Sound stages"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Graphic Monk Ltd",
+      "operating_name": "Graphic Monk Ltd",
+      "aliases": [
+        "Graphic Monk Ltd",
+        "Graphic Monk Limited"
+      ],
+      "identity_evidence_urls": [
+        "https://graphicmonk.com/film-tv/"
+      ],
+      "official_url": "https://graphicmonk.com/film-tv/",
+      "evidence_urls": [
+        "https://graphicmonk.com/film-tv/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "User-prioritised company independently has an official film/post-production page. Restricted Otago roster is not a new acquisition source; old capture/VP labels remain historical unverified claims, not proof of a permanent stage.",
+      "sectors": [
+        "Post-production"
+      ],
+      "company_service_claims": [
+        "Editing",
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Portsmouth Film Equipment Rental",
+      "operating_name": "Portsmouth Rentals",
+      "aliases": [
+        "Portsmouth Film Equipment Rental"
+      ],
+      "identity_evidence_urls": [
+        "https://portsmouth.co.nz/"
+      ],
+      "official_url": "https://portsmouth.co.nz/",
+      "evidence_urls": [
+        "https://portsmouth.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "out_of_scope",
+      "reason": "Source describes camera/equipment rental. Existing Portsmouth Rentals reference is retained and linked; no additional animation/capture/production-stage business is established.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Niantic Aotearoa NZ",
+      "operating_name": "Niantic Aotearoa",
+      "aliases": [
+        "Niantic Aotearoa NZ",
+        "Niantic Aotearoa New Zealand"
+      ],
+      "identity_evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "reported_nz_closure",
+      "reason": "Recent reporting describes the New Zealand office closing. Programme/showreel listings do not override that signal. Keep global Niantic identities unchanged and require human review of NZ operation.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Niantic Aotearoa",
+      "operating_name": "Niantic Aotearoa",
+      "aliases": [
+        "Niantic Aotearoa NZ",
+        "Niantic Aotearoa New Zealand"
+      ],
+      "identity_evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "reported_nz_closure",
+      "reason": "Reported NZ office closure is a human review alert, not a global-company closure or automatic deletion.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Niantic Aotearoa New Zealand",
+      "operating_name": "Niantic Aotearoa",
+      "aliases": [
+        "Niantic Aotearoa NZ",
+        "Niantic Aotearoa"
+      ],
+      "identity_evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "reported_nz_closure",
+      "reason": "NZ office closure reporting requires current review; historical programme presence is not proof of an operating facility.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Big Adventure",
+      "operating_name": "Big Adventure",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.bigadventure.games/press"
+      ],
+      "official_url": "https://www.bigadventure.games/press",
+      "evidence_urls": [
+        "https://www.bigadventure.games/press"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official press page identifies a Wellington game-development business; programme-year mentions are retained separately.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Wildboy Studios",
+      "operating_name": "Wildboy Studios",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.wildboystudios.com/"
+      ],
+      "official_url": "https://www.wildboystudios.com/",
+      "evidence_urls": [
+        "https://www.wildboystudios.com/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official site describes the NZ game studio and current game work. No capture capabilities inferred.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Stormcloak Games",
+      "operating_name": "Stormcloak Games",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://stormcloak.games/about"
+      ],
+      "official_url": "https://stormcloak.games/about",
+      "evidence_urls": [
+        "https://stormcloak.games/about"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official site identifies Wellington game development; its planned 2025 milestone is stale relative to review date and requires operation/project-status follow-up.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "RiffRaff Games",
+      "operating_name": "RiffRaff Games",
+      "aliases": [
+        "Studio Mayday",
+        "Studio MayDay"
+      ],
+      "identity_evidence_urls": [
+        "https://www.levelinfinite.com/news/studio-mayday-riffraff-games-tencent-investment/"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "https://www.levelinfinite.com/news/studio-mayday-riffraff-games-tencent-investment/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Publisher announcement documents the Studio MayDay rename; current programme listings corroborate the source identity, not a geocoded studio or current ownership chain.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_self_report_not_independent_verification",
+      "human_approved": false
+    },
+    {
+      "source_name": "Bespoke Post",
+      "operating_name": "Bespoke Post",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Bespoke Post identity is listed by NZFC; current official website and operating scope remain unresolved. Do not infer closure from missing primary results.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Evoke Audio",
+      "operating_name": "Evoke Audio",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1"
+      ],
+      "official_url": "",
+      "evidence_urls": [
+        "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Current official Screen Auckland Sound Post listing supports a provisional source-listed company reference despite inaccessible company-page text. No active facility, ADR stage or other detailed service is verified.",
+      "sectors": [
+        "Audio Post-production"
+      ],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    },
+    {
+      "source_name": "Franklin Rd Music & Sound",
+      "operating_name": "Franklin Rd Music & Sound",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Historical production credits and directory entry support a lead; current company/brand operation needs primary review.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Jon Online",
+      "operating_name": "Jon Online",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "No sufficiently clear current company identity found. Unrelated Jon film-person results are not this business.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Lets Play.Live",
+      "operating_name": "Lets Play.Live",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Source is a gaming/esports-related lead; exact punctuation/domain identity and production-service scope remain unresolved. Unrelated play.live search results rejected.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Metia",
+      "operating_name": "Metia Interactive",
+      "aliases": [
+        "Metia"
+      ],
+      "identity_evidence_urls": [
+        "https://www.metia.co.nz/"
+      ],
+      "official_url": "https://www.metia.co.nz/",
+      "evidence_urls": [
+        "https://www.metia.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official Metia Interactive site explicitly identifies an Auckland/NZ game design and development studio. It is distinct from metia.com marketing; no capture capability inferred.",
+      "sectors": [
+        "Game Development"
+      ],
+      "company_service_claims": [
+        "Game development"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    },
+    {
+      "source_name": "The Machine Room",
+      "operating_name": "The Machine Room",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://themachineroom.co/"
+      ],
+      "official_url": "https://themachineroom.co/",
+      "evidence_urls": [
+        "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+        "https://thework.awardsplatform.com/gallery/MqOBokER/QZBbXNKM"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Current Auckland regional listing and The Work 2026 post-production company credit support a provisional reference despite a sparse official site. Current independent operation and physical studio remain unverified.",
+      "sectors": [
+        "Post-production",
+        "VFX"
+      ],
+      "company_service_claims": [
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    },
+    {
+      "source_name": "Beyond Fun",
+      "operating_name": "Beyond Fun",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Wellington showreel identity remains unresolved; Canadian Beyond Fun Studio is not proof of the NZ business. Do not infer an alias to Beyond Studio without evidence.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Lost Cosmonauts",
+      "operating_name": "Lost Cosmonauts",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "NZ animation job evidence and showreel support a relevant lead, but do not establish a current separate company/branch. Historical employer/job pages are not current operation proof.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Mohawk Media",
+      "operating_name": "Mohawk Media",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Showreel/social/news references need current company-service and identity corroboration; no capability inherited from past credits.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Rascal Kids",
+      "operating_name": "Rascal Kids",
+      "aliases": [],
+      "identity_evidence_urls": [],
+      "official_url": "",
+      "evidence_urls": [],
+      "observed_on": "2026-11-07",
+      "decision": "hold",
+      "reason": "Unresolved Wellington creative-company identity. A similarly named parenting website is unrelated; no invented studio or address.",
+      "sectors": [],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "unknown",
+      "current_operation": "unresolved",
+      "human_approved": false
+    },
+    {
+      "source_name": "Resn",
+      "operating_name": "Resn",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://resn.co.nz/"
+      ],
+      "official_url": "https://resn.co.nz/",
+      "evidence_urls": [
+        "https://resn.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Current official creative-digital-agency title plus Wellington’s named industry showcase support a company reference with unspecified detailed services. Sparse page text is not a closure signal; current operation/physical facilities still require review.",
+      "sectors": [
+        "Digital / Interactive Production"
+      ],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    },
+    {
+      "source_name": "Storybox",
+      "operating_name": "Storybox",
+      "aliases": [],
+      "identity_evidence_urls": [
+        "https://www.storybox.co.nz/"
+      ],
+      "official_url": "https://www.storybox.co.nz/",
+      "evidence_urls": [
+        "https://www.storybox.co.nz/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Official company project page and Wellington’s named creative showcase support a provisional company identity. No animation, game-development or capture service is inferred from a showreel or Xbox project alone.",
+      "sectors": [
+        "Creative Production"
+      ],
+      "company_service_claims": [],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    },
+    {
+      "source_name": "Shotover Media Ltd",
+      "operating_name": "Shotover Creative / Shotover Media",
+      "aliases": [
+        "Shotover Media",
+        "Shotover Creative"
+      ],
+      "identity_evidence_urls": [
+        "https://shotovercreative.co.nz/"
+      ],
+      "official_url": "https://shotovercreative.co.nz/",
+      "evidence_urls": [
+        "https://shotovercreative.co.nz/",
+        "https://shotovercreative.co.nz/news/insights/the-rare-combination-of-creative-agency-and-video-production-company-why-it-matters/"
+      ],
+      "observed_on": "2026-11-07",
+      "decision": "qualified",
+      "reason": "Current official Shotover Creative production site and its own article using Shotover Media support the trading-name continuity. No link to SHOTOVER camera systems or to a former founder’s new company is inferred.",
+      "sectors": [
+        "Post-production",
+        "Film / Television Production"
+      ],
+      "company_service_claims": [
+        "Post-production"
+      ],
+      "claim_scope": "company_only",
+      "claims_state": "source_supported_unverified",
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "human_approved": false
+    }
+  ]
+}

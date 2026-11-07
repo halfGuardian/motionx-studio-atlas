@@ -75,7 +75,7 @@
     return rows;
   }
   async function licence(fetcher,name,hash){
-    if(!/^(CDLA-Permissive-2\.0|Apache-2\.0|CC0-1\.0|CC-BY-4\.0|Foursquare-NOTICE)\.txt$/.test(name)||!/^[a-f0-9]{64}$/.test(hash||''))throw new Error('Unreviewed redistribution licence.');
+    if(!/^(CDLA-Permissive-2\.0|Apache-2\.0|CC0-1\.0|CC-BY-4\.0|Foursquare-NOTICE|NZ-On-Air-Permission)\.txt$/.test(name)||!/^[a-f0-9]{64}$/.test(hash||''))throw new Error('Unreviewed redistribution licence.');
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);
     try{const response=await fetcher('./data/bulk/LICENSES/'+name,{signal:controller.signal});
       if(!response.ok)throw new Error('Redistribution notices unavailable.');
@@ -92,6 +92,7 @@
     const hasPoint=row.lat!==null||row.lng!==null;
     if(hasPoint&&(!Number.isFinite(row.lat)||Math.abs(row.lat)>90||!Number.isFinite(row.lng)||Math.abs(row.lng)>180)||row.record_kind==='company_reference'&&hasPoint)throw new Error('Invalid research coordinates.');
     if(row.evidence_state!=='unknown'||row.verified_on||!Array.isArray(row.capabilities)||row.capabilities.length||!row.capability_evidence||Object.keys(row.capability_evidence).length||row.relationships?.length||row.coordinate_precision==='exact'||!Array.isArray(row.categories)||row.categories.some(c=>typeof c!=='string'||!c.trim())||!D.httpsURL(row.website)||!D.httpsURL(row.evidence)||!D.validDate(row.source_observed_on)||!row.license||!row.attribution||!Array.isArray(row.source_provenance)||!row.source_provenance.length)throw new Error('Research records cannot claim verification.');
+    if(!Array.isArray(row.potential_duplicates||[])||(row.potential_duplicates||[]).some(p=>!p||!Array.isArray(p.ids)||!p.ids.length||p.ids.some(id=>typeof id!=='string'||!identifier.test(id))||!Array.isArray(p.reasons)||!p.reasons.length||p.reasons.some(reason=>typeof reason!=='string'||!reason.trim())))throw new Error('Invalid duplicate review metadata.');
     if(row.evidence_class==='B'&&(!hasPoint||!row.city||!row.country||row.license==='UNSPECIFIED'))throw new Error('Incomplete Class B source location.');
     for(const p of row.source_provenance)if(!D.httpsURL(p.url)||!D.httpsURL(p.license_url)||!p.source_record_id||p.observed_on!==row.source_observed_on||!/^[a-f0-9]{64}$/.test(p.observation_hash))throw new Error('Invalid research provenance.');
   }

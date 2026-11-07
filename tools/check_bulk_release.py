@@ -47,6 +47,14 @@ def check(root=ROOT):
             proposal=extend_annecy(tmp/'public',root/'studios.json',root/'data/annecy')
             expected=read(tmp/'public/manifest.json')
             if expected['counts']!=config['after_counts']:raise ValueError('Annecy release counts differ')
+        nz=root/'data/nz-census/release.json'
+        if nz.exists():
+            from nz_research import checkpoint,extend as extend_nz
+            config=checkpoint(root/'data/nz-census')
+            if expected['counts']!=config['before_counts']:raise ValueError('NZ census baseline mismatch')
+            extend_nz(tmp/'public',root/'studios.json',root/'data/nz-census')
+            expected=read(tmp/'public/manifest.json')
+            if expected['counts']!=config['after_counts']:raise ValueError('NZ census release counts differ')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')
