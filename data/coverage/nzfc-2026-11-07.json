@@ -1,0 +1,343 @@
+{
+  "source_id": "nzfc-facilities-service-crosscheck",
+  "observed_on": "2026-11-07",
+  "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+  "basis": "Public NZFC facilities directory service labels. Historical factual snapshot, not a new collector, source-wide reuse clearance, current-operation verification, or physical-facility capability validation.",
+  "labels": {
+    "A": "Animation",
+    "VFX": "Visual Effects",
+    "PP": "Full Post Production",
+    "S": "Sound",
+    "DIT": "Digital Image Technicians / Dailies"
+  },
+  "records": [
+    {
+      "source_record_id": "6836b6b339782065c25f",
+      "name": "37Degrees Studio",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "571fd425bd793130145e",
+      "name": "808 Ltd",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "fe68a769a2b4053df0e6",
+      "name": "Albedo",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "8384b56c865023e7da6f",
+      "name": "Animation Research Ltd",
+      "nzfc_service_codes": [
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "88f4c0cccbf38a4c962d",
+      "name": "Bespoke Post",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "4d3e07117dec380c67df",
+      "name": "Blockhead",
+      "nzfc_service_codes": [
+        "PP",
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "ac5d7cec171859de7283",
+      "name": "Cause and FX",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "18afaa20df0c4724b436",
+      "name": "Cirkus",
+      "nzfc_service_codes": [
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "99a78a2a259e9e9d3090",
+      "name": "Deep Animation",
+      "nzfc_service_codes": [
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "f443e65cb27b492c8719",
+      "name": "Department of Post",
+      "nzfc_service_codes": [
+        "PP",
+        "S",
+        "VFX",
+        "DIT"
+      ]
+    },
+    {
+      "source_record_id": "b5e1ffac2c78154bbeba",
+      "name": "Envy Studios",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "7542d21d905e78046cf2",
+      "name": "Fathom",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "4932ab6f22683050c3bd",
+      "name": "Final Boss VFX",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "cfda1d52625143ff4c85",
+      "name": "Floating Rock",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "c96f2ae082da3fa71a0c",
+      "name": "Flux Animation",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "ae327f2ec4a75067fb48",
+      "name": "Franklin Rd Music & Sound",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "aac4a123ba19bb863d9f",
+      "name": "Images & Sound",
+      "nzfc_service_codes": [
+        "PP",
+        "S",
+        "VFX",
+        "DIT"
+      ]
+    },
+    {
+      "source_record_id": "20c91f60b5d1dfaa5edf",
+      "name": "Jon Online",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "41f8cc75e6815ee7b368",
+      "name": "Masters of Reality",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "ed0a6d2f76883ca7729e",
+      "name": "Mechanic Animation",
+      "nzfc_service_codes": [
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "674ef30715982b7f484d",
+      "name": "Method",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "d6886370702196c34241",
+      "name": "Mukpuddy Animation Ltd",
+      "nzfc_service_codes": [
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "8b771913c53d095cedf8",
+      "name": "Native Audio",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "591ef074b5c19351559f",
+      "name": "Natural History New Zealand",
+      "nzfc_service_codes": [
+        "PP",
+        "A"
+      ]
+    },
+    {
+      "source_record_id": "ebc9c4fc305830887fc6",
+      "name": "OHUfx",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "967b974e1eabaca2f319",
+      "name": "Park Road Post Production",
+      "nzfc_service_codes": [
+        "PP",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "bb12cdaf0291de73fe28",
+      "name": "Perceptual Engineering",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "dcafaccd38a9cd2384f1",
+      "name": "Pinnacle Post",
+      "nzfc_service_codes": [
+        "PP",
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "7790960de493b1fc5b36",
+      "name": "Pixie Post",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "650fee35a6c1f7e04218",
+      "name": "POW Studios",
+      "nzfc_service_codes": [
+        "PP",
+        "S",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "65341ae0392156177625",
+      "name": "PRPVFX",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "4697ec2283468feb46f5",
+      "name": "Sauce FX Studios",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "5ecc98a6da9f66865e29",
+      "name": "Studio Local",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "65409a4e36747dd74b33",
+      "name": "Teaspoon Films",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "305b4d4639ef5afbf5c5",
+      "name": "The Inside Track",
+      "nzfc_service_codes": [
+        "S"
+      ]
+    },
+    {
+      "source_record_id": "611cc68425ce1a3f8ef8",
+      "name": "The Rebel Fleet",
+      "nzfc_service_codes": [
+        "DIT",
+        "PP"
+      ]
+    },
+    {
+      "source_record_id": "9dd85dd41a911da2111f",
+      "name": "The Soundroom",
+      "nzfc_service_codes": [
+        "PP"
+      ]
+    },
+    {
+      "source_record_id": "c090022b5196ce532f7a",
+      "name": "Toybox",
+      "nzfc_service_codes": [
+        "PP",
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "f6142b63a92df961d88c",
+      "name": "Undercover Media",
+      "nzfc_service_codes": [
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "8bfba4b444fef73d6770",
+      "name": "Vinewood Animation",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "ee7a9fa2ddf01602acf9",
+      "name": "Wētā FX",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    },
+    {
+      "source_record_id": "42f697b6a7ea12e55459",
+      "name": "Yukfoo",
+      "nzfc_service_codes": [
+        "A",
+        "VFX"
+      ]
+    }
+  ]
+}

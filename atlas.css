@@ -16,3 +16,8 @@
 
 /* Boutique discovery extends the existing research controls, not the map coordinates. */
 .boutique-filters{border:1px solid #52667e;border-radius:10px;padding:14px;background:#101d2d;display:grid;gap:12px;grid-template-columns:1fr 1fr;min-width:0}.boutique-filters[hidden]{display:none}.boutique-filters legend{font-weight:700;padding:0 6px}.boutique-filters label{min-width:0}.boutique-filters .filter-help{grid-column:1/-1}.fit-badge{display:inline-block;color:#c5e3ff;background:#18304b;border:1px solid #6387ad;border-radius:5px;padding:4px 7px;font-size:11px;margin:4px 0}.boutique-profile{border:1px solid #52667e;border-radius:8px;padding:12px;margin:16px 0}.boutique-profile li{overflow-wrap:anywhere}@media(max-width:450px){.boutique-filters{grid-template-columns:1fr}}
+
+/* Source-directory visibility: unpinned records stay in the list, never become invented map points. */
+.source-coverage-note{border-left:3px solid #bb7885;padding:5px 0 5px 9px;margin:12px 0}
+.map-legend .map-unpinned-action{display:block;width:100%;margin-top:7px;min-height:34px;padding:5px 7px;font-size:10px;line-height:1.3;text-align:left}
+.map-legend .map-unpinned-action[hidden]{display:none}
