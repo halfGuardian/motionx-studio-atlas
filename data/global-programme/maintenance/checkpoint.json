@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "files": {
+    "first-run/incremental-signals.json": "24f06bdadc57c75c56bd26a3fbf6f22ea0e88c0f030c233d56b5ddee46984334",
+    "freshness-policy.json": "1984b546f2043f3442b73cf167be26fccfccba721d14b1af9570b1fbb07dd31b",
+    "policy.json": "63f78c60408115e18ce25fc13fe01df6f943e5ade5d06b224bcf707c26ef27b7",
+    "repeat-run/incremental-signals.json": "907878c8389ea1b6b950f74029cbf20aceaac886ca55089fd60d7d372c5a8807",
+    "snapshot.json": "b2057bb553111e532266a24cda500a1e9b47516d56418f8a3f5af86269cf553a",
+    "state.json": "58e695629f6bc4d8c13b5d73b3912dbf7c32938915062faa78c8c22460e397fa"
+  },
+  "canonical_updates": [],
+  "human_approved": false,
+  "integrity_scope": "Deterministic review checkpoint, not a signature or proof of independent operation."
+}

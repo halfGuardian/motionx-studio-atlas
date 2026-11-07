@@ -1,0 +1,7 @@
+{
+  "company_identity_days": 365,
+  "geographic_evidence_days": 365,
+  "company_service_claim_days": 180,
+  "facility_capability_days": 180,
+  "source_policy_days": 90
+}

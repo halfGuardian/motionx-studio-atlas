@@ -35,6 +35,10 @@ jobs:
         run: python tools/nz_research.py check
       - name: Audit every company-only geography without changing parent records
         run: python tools/global_visibility.py check
+      - name: Reproduce global source coverage, full identity outcomes and pending review
+        run: python tools/global_programme.py check
+      - name: Check actual permitted snapshot continuity and repeat-import idempotency
+        run: python tools/global_programme.py maintenance-check
       - name: Reproduce NZ final relevance, rights, staging and pending maintainer review
         run: python tools/nz_quality_gate.py check
       - uses: actions/upload-artifact@v4
@@ -88,6 +92,8 @@ jobs:
         run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
       - name: Actual company-reference geography, filters and coincident selection
         run: python tests/global_visibility_browser.py
+      - name: Global coverage dashboard, safe review export and missing-report handling
+        run: python tests/global_review_browser.py
       - name: Evidence colours, mixed clusters, research review and launch readiness
         run: python tests/unified_ux.py
       - name: Actual boutique view, seed identities and safe research exports

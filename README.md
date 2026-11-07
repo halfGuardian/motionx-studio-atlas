@@ -1,3 +1,13 @@
+# MotionX global programme — stacked draft PR #18
+
+The [global coverage and research dashboard](data/global-programme/reports/dashboard.html) brings source scope, country gaps, complete-catalogue matching, geographic evidence and pending decisions together. It preserves all **42,296** parent references and all **1,677** original unpinned company identities. Floating Rock has a separate, licensed Wellington city reference while its original coordinates stay null; Frame Machine retains its existing Class C source point. Neither becomes a verified facility through map display.
+
+First-pass source-discovery receipts cover all **178** represented countries/territories, with **15** additional directory access/policy assessments. These are not complete national censuses or new collection permissions. Whole existing licensed snapshots and historical discovery/research queues are reconciled offline; every repeated, matched, conflicting and unresolved observation remains auditable. Source classes, observation dates, assertion freshness and facility capabilities remain distinct. No new canonical studio or capability is automatically published.
+
+[Programme and protected dependency](data/global-programme/PROGRAMME.md) · [Worldwide scope and access limits](data/global-programme/SOURCE-COVERAGE.md) · [Evidence rules](data/global-programme/EVIDENCE-RULES.md) · [Maintenance, exact resumption commands and unfinished research](data/global-programme/MAINTENANCE.md).
+
+The new draft PR depends on PR #15's exact reviewed head; its parent branch is unchanged. Human source/identity/facility review and publication approval remain pending. The global programme is **in progress**, not a claim of worldwide completeness. Do not merge or deploy automatically.
+
 # MotionX Studio Atlas v1.5 — Final quality gate (draft PR #15)
 
 **READY FOR HUMAN REVIEW.** The [final maintainer dashboard](data/nz-census/final-review/reports/dashboard.html) reviews every one of the 59 original proposals, all 27 identity keys, a separate Niantic NZ-office alert and four facility dossiers. It offers 91 evidence-backed working items with blank decisions and no automatic approval. [Publication scope, source rights and remaining questions](data/nz-census/final-review/README.md).

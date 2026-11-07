@@ -11,12 +11,12 @@ The parent contains 42,296 references: 243 retained locations, 40,376 source-loc
 ## Internal checkpoints
 
 1. **Visibility implemented; review pending.** All 1,677 company references have a reproducible geographic disposition. Floating Rock has one separate, licensed Wellington city reference, supported by its official contact page and GeoNames. It retains null original coordinates, Class C and no verified facility capability. Frame Machine retains its existing Class C source-location point. Five actual-catalogue HTTP browser checks passed, including filters, keyboard, mobile, CSV and coincident-coordinate selection.
-2. **Worldwide source assessment in progress.** Track every existing catalogue country/territory. Search results identify source leads only; page access, reuse policy and demonstrable enumeration are separate assessments. Reuse complete permissible snapshots and retain partial/blocked source scopes.
-3. **Global identity reconciliation pending.** Compare every admitted source observation with the complete catalogue. Name/domain matches never independently establish a branch, parent relationship or current operation.
-4. **Evidence rules and proposals in progress.** Identity, geography, company service assertions and independently reviewed facility capabilities remain distinct. No automatic evidence promotion or inherited foreign geography.
-5. **Consolidated dashboard pending.** Country, region, source scope, dispositions, rights, geography and review decisions must have explicit denominators.
-6. **Incremental maintenance pending.** Durable snapshots, integrity checks, freshness and investigation signals; no automatic closures or canonical publishing. Future scheduling requires a reviewed policy decision.
-7. **Global QA pending.** Full existing suites, actual-data browser/performance checks, deterministic replay and a source-separated held-out worksheet. Human precision/recall remain null until independent labels exist.
+2. **Worldwide assessment checkpoint implemented; enumeration incomplete.** All 178 represented countries/territories have saved English source-search receipts (3,562 references / 2,329 distinct result URLs). Fifteen sources have additional page/access assessments across seven regions. Search leads are not directory enumeration or reuse permission. Native-language/subnational research and most source rights remain pending.
+3. **Global reconciliation checkpoint implemented; identities pending review.** Every 44,394 replayed observation is compared with the complete catalogue, including whole retained datasets and historical discovery queues. Stable IDs, duplicate observations, aliases, operating-name conflicts, branch-shaped links and foreign-geography cases remain separate. Navigation links and generic production entries are not new companies by default. No automatic merges or company additions.
+4. **Evidence rules and geographic audit implemented; facility review pending.** Identity, geography, company service assertions and facility capabilities have independent claim states. Every unpinned company is accounted for. The four retained facility dossiers still need independent review; no new confirmed capability or facility is created.
+5. **Consolidated dashboard implemented.** All country gaps, source scopes, outcomes, rights, company geography and human gates are readable in one dashboard. Region/country/source/rights/outcome/text filters and content-bound working-decision exports are tested. Downloads are not authenticated approval.
+6. **Offline maintenance implemented and actually replayed.** Full 424-row licensed snapshot, durable embedded history, integrity checks and repeat replay with zero new signals. Failure/partial-history tests suppress closure inference. Manual Actions replay is defined with read-only permissions; no new continuous monitor or schedule is enabled.
+7. **QA checkpoint in progress.** Full suites, real 42,296-reference and 50,000 synthetic-location browser benchmarks are run locally. Fourteen purposive evaluation candidates were frozen before matching, across seven regions; 0 exact-source overlaps / 2 source-domain overlaps with replay are disclosed. Nine have candidate matches, five are unmatched. All lack independent human labels; precision/recall remain null. This is not a blind global business-verification benchmark.
 
 ## Resume and validate
 
@@ -26,9 +26,12 @@ Run from the repository root:
 git status --short
 git branch --show-current
 python tools/global_visibility.py check
+python tools/global_programme.py check
+python tools/global_programme.py maintenance-check
 python -m unittest discover -s tests -p 'test_*.py' -v
 node --test tests/*.test.js
 python tests/global_visibility_browser.py
+python tests/global_review_browser.py
 python tools/check_bulk_release.py
 python tools/launch_readiness.py check --output data/global-programme/reports/readiness
 ```

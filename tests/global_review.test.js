@@ -7,7 +7,7 @@ test('working notes bind exact content and never become human approval',()=>{
 });
 test('formula-safe CSV and evidence links reject executable or credential URLs',()=>{
  for(const v of ['=1','\u200b+SUM(1)','  @cmd','-2'])assert.ok(G.cell(v).startsWith("'"));assert.ok(G.csv([{name:'"line\nnext',notes:'=cmd'}],['name','notes']).includes("'=cmd"));
- for(const v of ['javascript:alert(1)','https://user:pass@example.org/','http://example.org/','https://example.org:444/'])assert.equal(G.safeURL(v),null);assert.equal(G.safeURL('https://example.org/'),'https://example.org/');
+ for(const v of ['javascript:alert(1)','https://user:pass@example.org/','http://example.org/','https://example.org:444/','https://localhost/','https://127.0.0.1/','https://2130706433/','https://private.internal/','https://example.org/?token=secret'])assert.equal(G.safeURL(v),null);assert.equal(G.safeURL('https://example.org/'),'https://example.org/');
 });
 test('actual global index filters all observations without treating names as verified facilities',()=>{
  const data=JSON.parse(zlib.gunzipSync(fs.readFileSync('data/global-programme/reports/review-index.json.gz'))),rows=data.rows.map(values=>Object.fromEntries(data.fields.map((k,i)=>[k,values[i]])));

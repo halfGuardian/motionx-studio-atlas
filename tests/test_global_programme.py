@@ -72,4 +72,7 @@ class GlobalProgrammeTests(unittest.TestCase):
     def test_heldout_sample_retains_unmatched_denominator_and_no_ai_ground_truth(self):
         report=json.loads((HOME/'reports/heldout-review.json').read_text());self.assertEqual(report['denominator'],14);self.assertEqual(report['model_match_candidates']+report['model_unmatched'],14);self.assertIsNone(report['human_precision']);self.assertIsNone(report['human_recall']);self.assertEqual(report['independent_labels'],0);self.assertFalse(report['blind_independent_business_benchmark']);self.assertTrue(all(s['independent_company_label'] is None and not s['human_approved'] for s in report['samples']))
 
+    def test_historical_discovery_navigation_and_topics_do_not_become_new_companies(self):
+        report=json.load(gzip.open(HOME/'reports/global-report.json.gz','rt'));history=[o for o in report['observations'] if o['origin']=='retained_discovery_checkpoint'];self.assertEqual(len(history),430);self.assertTrue(all(o['disposition']!='potential_new_company' for o in history));self.assertTrue(any(o['disposition']=='out_of_scope' for o in history));self.assertTrue(all(o['original_candidate_sha256'] and not o['closure_inference'] for o in history));self.assertEqual(report['summary']['historical_files_retained'],209)
+
 if __name__=='__main__':unittest.main()

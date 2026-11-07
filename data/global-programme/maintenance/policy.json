@@ -1,0 +1,12 @@
+{
+  "source_id": "animstudios-github",
+  "mode": "reviewed_dataset_replay",
+  "reuse_decision": "scoped_dataset_permission",
+  "license": "CC-BY-4.0",
+  "license_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/LICENSE",
+  "attribution": "Tommy Lahitte and European Animation Studios Directory contributors",
+  "reviewed_on": "2026-11-07",
+  "human_approved": false,
+  "automatic_collection": false,
+  "collection_scope": "Previously acquired explicit raw-data export at fixed source commit only; no website crawling or claim of complete European industry coverage."
+}

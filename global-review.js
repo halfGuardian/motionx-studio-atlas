@@ -1,7 +1,7 @@
 /* Offline review worksheet. Draft decisions are never publication approval. */
 (function(root){'use strict';
   const choices=['needs_evidence','existing_company','possible_alias','additional_branch_review','identity_conflict','historical_review','out_of_scope','rights_review'];
-  function safeURL(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&!/[\u0000-\u0020\u007f]/.test(value)?u.href:null;}catch{return null;}}
+  function safeURL(value){try{const u=new URL(value),h=u.hostname.toLowerCase().replace(/\.$/,'');return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&h.includes('.')&&!h.endsWith('.local')&&!h.endsWith('.localhost')&&!h.endsWith('.internal')&&!/^[\d.]+$/.test(h)&&!/[\\\u0000-\u0020\u007f]/.test(value)&&!/[?&](?:access_token|api[_-]?key|auth|password|token)=/i.test(value)?u.href:null;}catch{return null;}}
   const cell=v=>{const s=typeof v==='object'?JSON.stringify(v):String(v??'');return /^[\s\u200b\u200c\u200d]*[=+@-]/u.test(s)?"'"+s:s;};
   function csv(rows,fields){return '\uFEFF'+[fields,...rows.map(r=>fields.map(k=>cell(r[k])))].map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n');}
   function filter(rows,options){const q=String(options.q||'').toLocaleLowerCase();return rows.filter(r=>(!options.country||r.country===options.country)&&(!options.region||r.research_region===options.region)&&(!options.rights||r.historical_rights===options.rights)&&(!options.source||r.source_id===options.source)&&(!options.outcome||r.disposition===options.outcome)&&(!q||[r.name,r.country,r.city,r.source_id,r.disposition,r.matching_reason,...r.service_claims].join(' ').toLocaleLowerCase().includes(q)));}

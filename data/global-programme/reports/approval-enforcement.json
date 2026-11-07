@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-11-07",
+  "repository": "halfGuardian/motionx-studio-atlas",
+  "main_branch_protection": {
+    "endpoint": "https://api.github.com/repos/halfGuardian/motionx-studio-atlas/branches/main/protection",
+    "http_status": 403,
+    "message": "Resource not accessible by integration",
+    "required_human_reviews_verified": false,
+    "configuration_known": false
+  },
+  "repository_rulesets": {
+    "endpoint": "https://api.github.com/repos/halfGuardian/motionx-studio-atlas/rulesets",
+    "observed_rulesets": []
+  },
+  "conclusion": "No rulesets returned; classic branch protection could not be inspected. Required human review enforcement is not established. Draft state, worksheet exports and CI do not enforce approval by themselves. No repository settings were changed.",
+  "human_approved": false,
+  "automatic_merge": false,
+  "automatic_publication": false
+}

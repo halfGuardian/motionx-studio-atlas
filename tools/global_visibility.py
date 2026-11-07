@@ -5,6 +5,7 @@ No original record, coordinate, evidence class, capability or approval is change
 """
 import argparse,csv,json,math,tempfile
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from discovery import ROOT,read,write,digest
 from launch_readiness import records
@@ -15,7 +16,9 @@ DISPOSITIONS={'company_identity_no_verified_location','source_supported_city_reg
 
 def build(rows,home=HOME):
     original={r['id']:r for r in rows};reviews=read(home/'inputs/location-reviews.json');byid={};references={}
+    if reviews.get('version')!=1 or date.fromisoformat(reviews['reviewed_on']).isoformat()!=reviews['reviewed_on'] or reviews['reviewed_on']>date.today().isoformat():raise ValueError('Invalid actual geographic review date')
     for review in reviews['records']:
+        if review['record_id'] in byid:raise ValueError('Duplicate geographic review identity')
         row=original.get(review['record_id'])
         if not row or review['human_approved'] is not False or review['facility_capabilities_verified'] is not False or row['name']!=review['name'] or row['record_kind']!=review['record_kind'] or row['country']!=review['country'] or row['city']!=review['city']:raise ValueError('Identity, geography or verification conflict in location review')
         if not url_valid(review['company_evidence']) or not url_valid(review['service_evidence']):raise ValueError('Unsafe company evidence')

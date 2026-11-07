@@ -83,6 +83,7 @@ def load_snapshot(path,policy,metadata=None):
         data={**metadata,'records':source}
     else:data=bounded(path)
     if set(data)-{'version','source_id','snapshot_id','observed_on','status','complete','expected_records','source_url','license','records','failure','enumeration_scope'}:raise ValueError('Unsupported snapshot fields')
+    if data.get('version')!=1 or not isinstance(data.get('source_id'),str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',data['source_id']) or len(data['source_id'])>100:raise ValueError('Invalid snapshot schema/source identity')
     if data.get('source_id')!=policy['source_id'] or data.get('license')!=policy['license'] or not data.get('snapshot_id') or len(str(data['snapshot_id']))>150:raise ValueError('Source/snapshot licence conflict')
     iso(data['observed_on'])
     if not url_valid(data.get('source_url','')) or data.get('status') not in ('success','partial','failed') or type(data.get('complete')) is not bool:raise ValueError('Invalid access/completeness receipt')
