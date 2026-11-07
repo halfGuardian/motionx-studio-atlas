@@ -29,6 +29,16 @@ jobs:
         run: python tools/boutique.py check --output data/boutique/reports
       - name: Reproduce complete Annecy reconciliation and pending human review
         run: python tools/annecy.py check
+      - name: Reconcile all five NZ source snapshots against full 42,239-record Atlas
+        run: python tools/nz_census.py prepare --output data/nz-census/reports
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nz-source-census-wave1-full-catalogue
+          path: |
+            data/nz-census/inputs/wave1.json
+            data/nz-census/reports
+            data/nz-census/README.md
       - uses: actions/upload-artifact@v4
         with:
           name: annecy-2024-coverage-and-human-review
