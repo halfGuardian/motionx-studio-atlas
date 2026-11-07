@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "actions_run_id": "42300014355",
+  "files": [
+    {
+      "path": "snapshots/overture/category-inventory.json.gz",
+      "sha256": "6f86f7a110293bbf5fc6438696ce62a50848b11379fd08679fb711aa9156e75e",
+      "uncompressed_sha256": "97445561ef9a40474b99d438e5a7d01ba15d8537a79319438a12fdb50062dd2e",
+      "bytes": 212963,
+      "compressed_bytes": 23340
+    },
+    {
+      "path": "snapshots/overture/places-00000.json.gz",
+      "sha256": "3f7179f870cf442d72ee93fe78cb5d8ab882b2f28cf702ecbdb61d5aa1cea435",
+      "uncompressed_sha256": "6272c2060e071fdc9ebff1d57028b5315d3afc5cc1edadac6a106c988bec4308",
+      "bytes": 2623527,
+      "compressed_bytes": 323125
+    },
+    {
+      "path": "snapshots/overture/places-00000.meta.json.gz",
+      "sha256": "6ebd4933be40d0388eb44579f92b954ca67006209cdda706376a75afe2760e19",
+      "uncompressed_sha256": "03b2fb75dd16c1f506f55ef64c40809a4161830ce873c9f8d83fc5fbbbe699e5",
+      "bytes": 2588,
+      "compressed_bytes": 941
+    },
+    {
+      "path": "snapshots/overture/places-00001.json.gz",
+      "sha256": "48ed642432998626bd5166f6f3a4b3fdaa2aad192970974bd77ef297c73198ae",
+      "uncompressed_sha256": "a7d5b52defa312b8c22321d8c397f8836af9b1ecf863985e8e0062cf2e5056ad",
+      "bytes": 2745725,
+      "compressed_bytes": 306171
+    },
+    {
+      "path": "snapshots/overture/places-00001.meta.json.gz",
+      "sha256": "1bd4a9e5db052b58d8da38303dbb1304fb4797e1189ec8b732494b0e5b976d0c",
+      "uncompressed_sha256": "7e8f0da477e3c06df2cc9c41639835b0edcb8c7a0018aefba2bba8607894e151",
+      "bytes": 2588,
+      "compressed_bytes": 939
+    },
+    {
+      "path": "snapshots/overture/places-00002.json.gz",
+      "sha256": "75f955a740455aba5e6e993aa5cc2b1c512ba86fb8b0aa80d04121bc47844dfa",
+      "uncompressed_sha256": "471cf364964e1bdd27bef84886c95fb257d7ae3d9a45de07d980b82ec09bb2bb",
+      "bytes": 2713182,
+      "compressed_bytes": 324727
+    },
+    {
+      "path": "snapshots/overture/places-00002.meta.json.gz",
+      "sha256": "f3d619ce05b7a91a119a4009d821b5c9c93d42becb9d6b399069094808ae791e",
+      "uncompressed_sha256": "239e0012011a6f4c8b509c617e410ab847cbb7bff5c8388d502d00124bbd190d",
+      "bytes": 2588,
+      "compressed_bytes": 936
+    },
+    {
+      "path": "snapshots/overture/places-00003.json.gz",
+      "sha256": "a35e8d35cbd7fa88ae13705fefacd4516353f36a7abca13378629cf0670a15f5",
+      "uncompressed_sha256": "7551caea3181be0ff65ba9297dc9642cded9f1f840b9106b7bf8697420aa7426",
+      "bytes": 2724330,
+      "compressed_bytes": 331546
+    },
+    {
+      "path": "snapshots/overture/places-00003.meta.json.gz",
+      "sha256": "d60de9e6e10454e81b6cfbb0c58ba2cfa071e55489b7a5dc51b1aabb8078de14",
+      "uncompressed_sha256": "f2a104e510ba590f1c6e132fc07a676a404b98a1ad63f9a8c62175ca61a9445a",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00004.json.gz",
+      "sha256": "bbf1f44572ea36f50c55d8052cc15d1890404a7cf269be2e84b2cd763fe972c3",
+      "uncompressed_sha256": "4fc92c41cff538511b6181ba0610b2d4a07924f7439501dc8b2643ba553e720b",
+      "bytes": 2469141,
+      "compressed_bytes": 319779
+    },
+    {
+      "path": "snapshots/overture/places-00004.meta.json.gz",
+      "sha256": "9b36e1eb77cc8601766aa1d3b83c538baf8b9e89b7a02919bbed8021ce4cef19",
+      "uncompressed_sha256": "6eaf5682de3364c5330152972971704d0e9152df0e0b04818bcc8b5c1ae81521",
+      "bytes": 2588,
+      "compressed_bytes": 939
+    },
+    {
+      "path": "snapshots/overture/places-00005.json.gz",
+      "sha256": "007bcc9f98f7b8f4b4161a4486cd8b950e0453c07fde2b0d45f62a59bb71f6b0",
+      "uncompressed_sha256": "5b329c8b7b64e6bda3da2ea20d4be22b7aa05fead1493620b8ef4fc46d40cde7",
+      "bytes": 2668946,
+      "compressed_bytes": 307145
+    },
+    {
+      "path": "snapshots/overture/places-00005.meta.json.gz",
+      "sha256": "1c0f37bdae429cb4f240c2e9adbd6b1348106e0fa2a2ba67294612b539163dfc",
+      "uncompressed_sha256": "1903536a8d66225f77ece74e35afc3b35a313d260214585a778a257fcd8c8e36",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00006.json.gz",
+      "sha256": "668d0ae05d04ae7e837973a8f72e08d78ec8a80ee7b6f0a572aa9f80ce57b34c",
+      "uncompressed_sha256": "385aa9fe810d3e1568f9d81e4f2e167059db4ddc5d5f3d63ce669210718b6778",
+      "bytes": 2639884,
+      "compressed_bytes": 315539
+    },
+    {
+      "path": "snapshots/overture/places-00006.meta.json.gz",
+      "sha256": "d7992d237e2356a130d0a39cc45ad2e1183d31f2f17aa1bd3d5e0cfbbb9c50f9",
+      "uncompressed_sha256": "8b5d25048997a9522f002959315cfc79208be548d439f69fc9a9dc10d909ac82",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00007.json.gz",
+      "sha256": "7e7432a7035cc2512c210531a4a52b12f2f2c5af989d0ca740570d9d32662962",
+      "uncompressed_sha256": "399a86797a855fbd6f44d61b1c4f02f8e722151c7abcc67dc672247be04dbc12",
+      "bytes": 2675226,
+      "compressed_bytes": 303155
+    },
+    {
+      "path": "snapshots/overture/places-00007.meta.json.gz",
+      "sha256": "feda55ac132ce3dd9f6ac4df8b134910bd2de40d01a57b21400102653b2ab2bc",
+      "uncompressed_sha256": "da70c1210442ab45cf67473ec3ce42bd8ae6d82dfb25b55935f3902cc811e095",
+      "bytes": 2588,
+      "compressed_bytes": 936
+    },
+    {
+      "path": "snapshots/overture/places-00008.json.gz",
+      "sha256": "6074d19131546ed298d08256317da6bcc79f7c1e2faa5de55509b0e3082f9d2a",
+      "uncompressed_sha256": "8dedb8a8b20f8ca87e4ea21527a819f57fa1e8314d88cb4b53a053abdfa73d8b",
+      "bytes": 2717657,
+      "compressed_bytes": 284661
+    },
+    {
+      "path": "snapshots/overture/places-00008.meta.json.gz",
+      "sha256": "0fdfa9dbaf6ccece610b82463e134f6489a9a8f559d6f8bd71bfec02bb84e3c7",
+      "uncompressed_sha256": "9aca41cb1d34ddd5330b658bebc6ce395650894d3a3d2a0a268135b3183aaff3",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00009.json.gz",
+      "sha256": "a7843336b327b425a445b4ba46a2dda08f68054dfb5d52bfa83754ea97ad6d18",
+      "uncompressed_sha256": "1ec94a23d226c678226acc92c9d838d930375234de7cb802702cb6dd87ee603a",
+      "bytes": 2727921,
+      "compressed_bytes": 299763
+    },
+    {
+      "path": "snapshots/overture/places-00009.meta.json.gz",
+      "sha256": "798ba78976e5ec99457cd03a319e85792531aae7f5855adc8566de37f996fe20",
+      "uncompressed_sha256": "3e51a653019d322223869c94e35b5d32189bccd07fbc1a2d9f26abccfd2d08a9",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00010.json.gz",
+      "sha256": "7df992b2438ba54d2e1cb0d5f2ec10e49dc59a1cda730df570dfc351ab3c77c9",
+      "uncompressed_sha256": "61cabbaa27238bacc98b823e7d9acf01966e4cd878e700265d7343b344d34653",
+      "bytes": 2590821,
+      "compressed_bytes": 317048
+    },
+    {
+      "path": "snapshots/overture/places-00010.meta.json.gz",
+      "sha256": "4cf0fda2a6e568783ad44268f14d913f6e65076c9e9953733cd39143c33a736d",
+      "uncompressed_sha256": "40d975d95ad38a8a8ceedefe1d4ac2700ba6b9ae86359a0923520be22f8e00dd",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00011.json.gz",
+      "sha256": "ebda7695366d86ee54b5a53fbd95d2ea7a2b73a32a91e01a6f031906ab2eedec",
+      "uncompressed_sha256": "46b765f13b44816ae44780da2e1f9c9374b854e2d70c94fc776c8e836fb7b10a",
+      "bytes": 2710296,
+      "compressed_bytes": 306720
+    },
+    {
+      "path": "snapshots/overture/places-00011.meta.json.gz",
+      "sha256": "2690150ad4dfb54726ba35956f4e4eac34d37785678dae29861fde804e0761de",
+      "uncompressed_sha256": "00bce8ef2cbe2268581f3e9df54a1acd0aa15e703340d2abdebd9547e065890b",
+      "bytes": 2588,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "snapshots/overture/places-00012.json.gz",
+      "sha256": "d1407ec5da8806cdfd16bda660302b91b3f5c0b19bcb18a6eb3c209f3d50c2c8",
+      "uncompressed_sha256": "13fbad0fcdf89773a43825f5391bec7f08cd330b136bb46c679387c8f14babb2",
+      "bytes": 2701533,
+      "compressed_bytes": 300927
+    },
+    {
+      "path": "snapshots/overture/places-00012.meta.json.gz",
+      "sha256": "ad9a7ef49539a9a2cf483e07edf1b8334748990dead3165c838a7c9d06918b57",
+      "uncompressed_sha256": "a7844087a8df4165d7fc00cf8e5ce63ae17decaf0a8e800ded7a191f218c4fac",
+      "bytes": 2588,
+      "compressed_bytes": 936
+    },
+    {
+      "path": "snapshots/overture/places-00013.json.gz",
+      "sha256": "25923ea3d2dc7bea4cde0191744f0c862978027138bc422a19a3f73f7031693c",
+      "uncompressed_sha256": "68986dfa8052c0005c6300d68a0dd47d4842ea220f613b4b4fe6cfb004ff32ff",
+      "bytes": 2712757,
+      "compressed_bytes": 293054
+    },
+    {
+      "path": "snapshots/overture/places-00013.meta.json.gz",
+      "sha256": "cd0a67dbb5128b6c60b99310383c6f174e0e35bdc0c498accd4817cc0e3c3ea9",
+      "uncompressed_sha256": "f6d67afb702ee5b1d697dc48b3a630fabb817c0b23f648211748d2dbce511f82",
+      "bytes": 2588,
+      "compressed_bytes": 939
+    },
+    {
+      "path": "snapshots/overture/places-00014.json.gz",
+      "sha256": "d8397d689d941a445c949f246fffb6dc07a1b4ee44e7fee007fc2c2787e7ac4b",
+      "uncompressed_sha256": "3b966417c332c55985bc73c25503ac635a77cd7eae60def0d9305edb22098cc7",
+      "bytes": 2704957,
+      "compressed_bytes": 289108
+    },
+    {
+      "path": "snapshots/overture/places-00014.meta.json.gz",
+      "sha256": "3c8b5f9f529b5ac9899d65fd5c368f46829f300a075785adf982a646c0331d23",
+      "uncompressed_sha256": "3385c0d66cb2d92304fd2d483b9d49204de5e4e6c88922663450d66ac5f1d451",
+      "bytes": 2588,
+      "compressed_bytes": 935
+    },
+    {
+      "path": "snapshots/overture/places-00015.json.gz",
+      "sha256": "8766842df82dfe0f4a4a85cdd05180a9fb2b37589f75f712ac50a1ac538d830e",
+      "uncompressed_sha256": "29a29bd0b4c9c630317b6630d4b9cdca1da16ef8f077aaba8c3915136cfe9a09",
+      "bytes": 2757159,
+      "compressed_bytes": 291736
+    },
+    {
+      "path": "snapshots/overture/places-00015.meta.json.gz",
+      "sha256": "11bbf8734dc10895636f244cf6a41cb908af63ba297589ffbcc7bc31a8131e58",
+      "uncompressed_sha256": "1da22433af9dbdbc81a92f9d97b3f5b3e09c75b0edd3e820db2bcc1e27612bee",
+      "bytes": 2588,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "snapshots/overture/places-00016.json.gz",
+      "sha256": "dff75b100c6f4b13421e5b1f3655cf269c82513e6e7bf0945e7e20b0bf2f173a",
+      "uncompressed_sha256": "d00c22eefecb8a572b087df752d82b4ef07230088e34c29a42e1a8fa2d9831eb",
+      "bytes": 2657420,
+      "compressed_bytes": 297120
+    },
+    {
+      "path": "snapshots/overture/places-00016.meta.json.gz",
+      "sha256": "83a4cfb51e89ffb48da549c6fe53b4489aa70f613e7597bd33b7634db4e4eabb",
+      "uncompressed_sha256": "fc2b9794d09e51ba31475f92d9f349be50344d19f4c6541ac93d7e959d096e7c",
+      "bytes": 2588,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "snapshots/overture/places-00017.json.gz",
+      "sha256": "3a4c40e9bb3484efc5c36edc70855e993a49fba8f77d880d4f8be72499cf0254",
+      "uncompressed_sha256": "a165ddf0c9df1af5067615ce81811ea245abf0a28ad4293fb54eeb77cfdda41e",
+      "bytes": 2453073,
+      "compressed_bytes": 328617
+    },
+    {
+      "path": "snapshots/overture/places-00017.meta.json.gz",
+      "sha256": "c1349819a7bedd0d2e30b378c9851a317e4743740876c1b425fb551428896aaf",
+      "uncompressed_sha256": "ea7d0448ff13d7d87ab35489a4fa4c0addbbba14feb50920c5e20378053d11ce",
+      "bytes": 2588,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "snapshots/overture/places-00018.json.gz",
+      "sha256": "ba497aedd83f9e4b9e77256a9de5044e65eb2bf8d29a5dd4dedde925a1b665dc",
+      "uncompressed_sha256": "120827bb488b685a4f7641dd556b449c2cf979024bb79a733ca1dca4b8ce95c0",
+      "bytes": 2412555,
+      "compressed_bytes": 312745
+    },
+    {
+      "path": "snapshots/overture/places-00018.meta.json.gz",
+      "sha256": "a31e7e1209968351b6ee0e9a2a1ca4b921a46a3e71b74f98b1fa1d43de7d2384",
+      "uncompressed_sha256": "6d0aac6dd1b8ba8a7e16227983b6c7aa20e567c58c020c225e07fb8ce7a26622",
+      "bytes": 2588,
+      "compressed_bytes": 939
+    },
+    {
+      "path": "snapshots/overture/places-00019.json.gz",
+      "sha256": "211c3ea179662f7138ea9868ed6a85fcefbade88d167c022a50443079cab737e",
+      "uncompressed_sha256": "dcc642279b432002f179f58df1b08dbde9169621acc0a523b2b0949da69b85d5",
+      "bytes": 2431226,
+      "compressed_bytes": 327011
+    },
+    {
+      "path": "snapshots/overture/places-00019.meta.json.gz",
+      "sha256": "634f971a0ea9d907e39ebeb2d6a9abff40b8e65896544d076dbe90c652c2065b",
+      "uncompressed_sha256": "eb4f19acd39fc46c0ee906b95b0d4aed10b1c706472d2ca68edbff3ce45db5df",
+      "bytes": 2588,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "snapshots/overture/places-00020.json.gz",
+      "sha256": "c08da76d6ba26d7829246f54d00b3a5e6c3e4a1c2fd4b1fe3e8c3879873474a5",
+      "uncompressed_sha256": "005d0efe4242ea57882f4b77cc5e168da9897ba47b1437a5d71eeecc0d552447",
+      "bytes": 453779,
+      "compressed_bytes": 61293
+    },
+    {
+      "path": "snapshots/overture/places-00020.meta.json.gz",
+      "sha256": "e4a6d9b974a5ddcf9c68dfc02a5f52cbd770ef03645ce8c2fda39636cf2f8758",
+      "uncompressed_sha256": "dbebe5b5c58f02e8609b70982b4b377bcd7c3f428b088256546feb785c389d0b",
+      "bytes": 2587,
+      "compressed_bytes": 936
+    },
+    {
+      "path": "snapshots/overture/schema.json.gz",
+      "sha256": "0dccea8b1777240c0d2bec3d0a4ddd1c805ce517f9ae50a347c30e31100204d5",
+      "uncompressed_sha256": "0ea649b6fcff6f61f955764f1315654e3f4ca5e29f788ed705dc445545ace33b",
+      "bytes": 2383,
+      "compressed_bytes": 504
+    },
+    {
+      "path": "snapshots/overture-collection.json.gz",
+      "sha256": "39a60f43bbf71b65b46360998c0a6a9f78450daf69a7392a5fc136c6b0c03ac1",
+      "uncompressed_sha256": "06d657ccce4b92433448245ceb856fa05294ecd926d77566859624e79256eb2b",
+      "bytes": 3367,
+      "compressed_bytes": 1189
+    },
+    {
+      "path": "snapshots/redistribution.json.gz",
+      "sha256": "7da00628c26e4572a3a4eca316120fa53c2dedd3128935bd77e70e70606f2025",
+      "uncompressed_sha256": "82cd0a7ab4690a414e02fef5aba6116b64abaf9d4c5330e9d2660c9843acbee7",
+      "bytes": 6547,
+      "compressed_bytes": 2206
+    },
+    {
+      "path": "review/candidates.csv.gz",
+      "sha256": "caded195cdf8a4f67ce1b7d1a0b304f16b0e12b5fabad6af29f8a96a40c8a977",
+      "uncompressed_sha256": "14846461fd24819154416ae63a16d9fcbf5787bd12c46343118697cd1e71c4a0",
+      "bytes": 18350907,
+      "compressed_bytes": 2226548
+    },
+    {
+      "path": "review/candidates.jsonl.gz",
+      "sha256": "dd5aebe77eb18aa2314374b3f8b66da4e46d33b00bc3a3f10b5e17c18024be45",
+      "uncompressed_sha256": "9e0e03628c771ff8c477f7ffca367bbc0d23c3db8c576e0f13c975f87c538d55",
+      "bytes": 117022352,
+      "compressed_bytes": 9116047
+    },
+    {
+      "path": "review/coverage.html.gz",
+      "sha256": "a94928e3d3e24a56ccdf79016d6365ba53e7515cdccbd8d27338ce05488c51ba",
+      "uncompressed_sha256": "ebc5bc9bf63e453a39650a3774bf38a0be76fb51b3fa2c8355f69620e2bc8838",
+      "bytes": 37162400,
+      "compressed_bytes": 2634686
+    },
+    {
+      "path": "review/coverage.json.gz",
+      "sha256": "b4e2dd3383d2a82ee3b349ce5e184de7cd451b711ab093fc19c22ddd0a418e1f",
+      "uncompressed_sha256": "0ca0b47b3d6f3e1e7163362d3eb99e945c389485fc164caef10841017cc54256",
+      "bytes": 11209,
+      "compressed_bytes": 3212
+    },
+    {
+      "path": "review/proposed-b.json.gz",
+      "sha256": "fb1e0a2141e936ebea6d8a7251ce7b303b75262e1711456377f7ab133cf93237",
+      "uncompressed_sha256": "606cce6cf192551bbd48784ec133a7c8c3d6f33e3a21a47350bb6d550b57c521",
+      "bytes": 11228784,
+      "compressed_bytes": 775816
+    },
+    {
+      "path": "licences/Apache-2.0.txt.gz",
+      "sha256": "51e82ff7f0582e5d7637c9738d61c602ee629e8734e642f014bc2b0a0457f2bd",
+      "uncompressed_sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "bytes": 10280,
+      "compressed_bytes": 3707
+    },
+    {
+      "path": "licences/CC0-1.0.txt.gz",
+      "sha256": "6a381d59f13d60a76ab906f62d67380cbc88d9cd6f167c954a76e603de3aad1e",
+      "uncompressed_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "compressed_bytes": 2826
+    },
+    {
+      "path": "licences/CDLA-Permissive-2.0.txt.gz",
+      "sha256": "f62ba87cb0ac611f8ee586af4b4401cd4ea7843c91e15da4148004ea5b1a17ec",
+      "uncompressed_sha256": "4531a67d443284d93ffed0803df5b10634aff21c3d77e381f2d48af01d875868",
+      "bytes": 2354,
+      "compressed_bytes": 1082
+    },
+    {
+      "path": "licences/Foursquare-NOTICE.txt.gz",
+      "sha256": "1560f47268bb65b4d6ab4070fce8357c28150d3bcbd5afebac4f3c7764fb3ab3",
+      "uncompressed_sha256": "fe3a07c5e76c7de3f05f6bddff0d1e1b1481d16533491e7131e4f407dd6cdbd2",
+      "bytes": 2354,
+      "compressed_bytes": 1119
+    },
+    {
+      "path": "licences/Unicode-3.0.txt.gz",
+      "sha256": "b070f45be3f17de20a8fe9bd9279fb83e2e1d316359b2caaccc1bbc5133c717c",
+      "uncompressed_sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "bytes": 1995,
+      "compressed_bytes": 1062
+    }
+  ],
+  "snapshot_hash": "71bdaaf599b96c4b4e113e361283e886b596e60717cd7094a5956d076c4abf3e",
+  "publication_approved": false,
+  "restore_note": "Verify every object and projection hash. Missing/incomplete source history cannot create closure or deletion signals."
+}

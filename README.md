@@ -1,8 +1,26 @@
-# MotionX Studio Atlas v1.0 — Public Launch & Global Scale
+# MotionX Studio Atlas v1.1 — Global Bulk Data Acquisition
 
-A public, static directory of VFX, animation, game development and performance-production facilities. The canonical database is **`studios.json`**. This draft proposes **243 locations / 119 operating organisations / 38 countries**, including **61 additions and three explicit evidence corrections**. All 182 previous location IDs and coordinates remain. Human review and manual merge are required before publication.
+**One unified research atlas: 41,735 records.** Browse the existing **243 locations**, all **40,376 Overture source observations**, and all **1,116 game-company references** together. Nothing is excluded from the directory merely because it requires research. The full dataset, map, search, filters, profiles and CSV export use one catalogue. Record totals include overlapping references and company-only entries; they are not counts of independently verified physical studios.
 
-The dark, responsive Leaflet / OpenStreetMap atlas loads **`./studios.json`** asynchronously on GitHub Pages. It has no embedded fallback, mandatory backend or paid mapping API. Loading, retry, empty-result, missing-profile and map/tile failures have explicit states. OSM attribution is retained.
+All 243 original IDs, coordinates, evidence and company relationships remain byte-for-byte in `studios.json`. The [combined catalogue](data/public/manifest.json) adds hash-bound, country-grouped research shards and a compressed search index. All 13 legacy unknown-evidence records remain visible with research labels. Company references have no invented cities, branches, facilities or map pins.
+
+- **A — Source-reviewed location:** 230 retained records. Capability evidence stays specific to each claim; source review is not an independent business audit.
+- **B — Source-listed location observation:** 4,626 records. The permitted directory supports the listing; current operation, physical facility type and services remain uncorroborated.
+- **C — Research required:** 36,879 records, including company references, uncertain observations and legacy unknowns. They remain searchable alongside A/B with explicit warnings. Inclusion does not approve their claims.
+
+No new confirmed capture or other facility-capability claims are created. Source closure/status labels are displayed as assertions and never silently overwrite reviewed records. Possible duplicates are linked for research rather than automatically merged or deleted. All original geographical points and the shared-coordinate selection popup remain intact.
+
+The [bulk report and workflow](data/bulk/README.md), [combined audit](data/public/audit.json) and [source receipts](data/bulk/unified-input/source-receipt.json) retain provenance and limitations. Overture records carry their provider licences and notices. Game-company entries are factual references: the source README offers download/local use but does not state an explicit dataset redistribution licence; that limitation is labelled and authored descriptions are omitted. No source is described as permissively licensed without evidence.
+
+This remains a **public GitHub Pages site**, even if its URL is not promoted. No private CRM data, personal contacts, credentials or confidential business intelligence are added. Loading/error states, secure links, CSV formula protection, Leaflet and OpenStreetMap attribution are preserved. Gzip assets are explicitly fetched and decompressed where supported, with uncompressed equivalents for other browsers; all representations are hash-checked.
+
+The release is a **draft PR requiring human review and an authorised merge**. Nothing automatically merges, deploys or changes Pages settings. Source collection produces research artifacts only. The existing content-bound approval-bundle workflow remains separate; no historical approval is invented or reused. The [read-only GitHub rule audit](data/bulk/review-rules-run42287663788.json) returned no effective rules and could not expose classic protection, so required-review enforcement remains unconfirmed.
+
+The unified atlas now uses **green squares (A), blue circles (B) and amber triangles (C)**, with text labels and permanent map/list legends. Mixed clusters show evidence composition and open a keyboard-accessible record chooser. Quick views cover all records, each class, company-only references and facilities with confirmed Motion/Body/Performance Capture evidence. Advanced filters include organisation identity and advisory research signals. Results prefer relevant names and reviewed evidence; B/C references remain accessible. Record comparisons preserve each source's evidence and never merge identities.
+
+The lossless columnar search transport is **2.18 MB gzip**, compared with the original 3.30 MB. IDs and original coordinates reconstruct exactly; the original readable index and every evidence shard remain unchanged. A compressed, hash-bound copy of the unchanged baseline and versioned index cache reduce repeat downloads. Progress is explicit, and complete global results are exposed only after all data and integrity checks finish. Profiles still load full evidence on demand. See the [optimisation report](data/bulk/reports/optimisation.md) for measured desktop/mobile results and limitations.
+
+The [licensing and launch-readiness dashboard](data/bulk/reports/licensing.html) covers datasets, coordinate references and every registered source policy. **The 1,116 company references remain permission-unresolved**, not licence-cleared. The [advisory review queue](data/bulk/reports/review-queue.json) binds all 41,505 B/C records to their exact content and baseline. `tools/launch_readiness.py` generates pending research templates; no score, report or template grants publication approval. Source review, canonical reconciliation and a human-authorised PR remain required.
 
 ## Public atlas
 
@@ -13,7 +31,7 @@ The dark, responsive Leaflet / OpenStreetMap atlas loads **`./studios.json`** as
 - Reset filters, inspect visible result totals and export **all filtered locations across pages**. CSV preserves IDs, relationships and evidence, omits contact fields and neutralises spreadsheet-formula prefixes. Capability evidence states are retained; “confirmed” describes a reviewed source claim, not an independent audit of business operation.
 - Individual access to coincident coordinates is preserved through paginated selection. Above 2,000 coordinate groups, spatial buckets select the viewport and pixel-grid map groups reduce marker overhead. A group uses one actual member coordinate; original coordinates are never offset. The full directory and CSV remain available outside the viewport.
 
-## v1.0 research, safety and review
+## Historical v1.0 research, safety and review
 
 The [release audit](data/research/v1.0-launch/README.md), [readable review dashboard](data/research/v1.0-launch/review.html), [evidence manifest](data/research/v1.0-launch/evidence.json), [CSV](data/research/v1.0-launch/batch.csv), [import audit](data/research/v1.0-launch/import-audit.json) and [deferred queue](data/research/v1.0-launch/review-queue.json) present exact additions and before/after corrections. The dashboard is a research file/downloadable Actions artifact; the public app never loads it or the discovery queue. Seven new capture locations have individual site evidence. Thirteen legacy unknown-evidence records remain. Canonical validation: **0 errors / 265 warnings**, all listed in the release bundle.
 

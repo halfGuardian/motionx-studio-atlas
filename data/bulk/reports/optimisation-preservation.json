@@ -1,0 +1,41 @@
+{
+  "comparison_commit": "6314d30da4487b5e23b6656be945a95ca98fe576",
+  "counts_before": {
+    "records": 41735,
+    "public_records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 36879,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1116,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41234
+  },
+  "counts_after": {
+    "records": 41735,
+    "public_records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 36879,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1116,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41234
+  },
+  "canonical_sha256_before": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+  "canonical_sha256_after": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+  "original_readable_index_sha256_before_and_after": "df34c8cb5e622510284ffd48acbe004a21dc2b7def13dbe4430c7823bed928b6",
+  "detail_shards_byte_identical": 238,
+  "changed_detail_shards": 0,
+  "original_record_field_changes": 0,
+  "new_confirmed_capability_claims": 0,
+  "company_reference_projection_sha256": "e947fa8bbbc232f4eafc4701a32a41915f26d1ecc939eefeba113b604dec0de5",
+  "source_history_modified": false,
+  "lossless_compact_round_trip": "All 41,492 source/reference entries compared field-for-field with the original index in Python and JavaScript."
+}

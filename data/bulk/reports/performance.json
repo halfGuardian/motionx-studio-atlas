@@ -1,0 +1,144 @@
+{
+  "comparison_base_commit": "6314d30da4487b5e23b6656be945a95ca98fe576",
+  "before": {
+    "initial_ready_seconds": 1.283,
+    "unthrottled_app_timings": {
+      "load_validate_ms": 587.7999999988824,
+      "index_ms": 147.30000000074506,
+      "search_ms": 5.900000000372529,
+      "viewport_groups": 0,
+      "rendered_markers": 0,
+      "marker_render_ms": 0.09999999962747097,
+      "ready_ms": 901.0999999996275,
+      "profile_open_ms": 8.599999999627471
+    },
+    "throttled_initial_ready_seconds": 45.085,
+    "throttled_app_timings": {
+      "load_validate_ms": 41572.199999999255,
+      "index_ms": 751.6000000014901,
+      "search_ms": 15.199999999254942,
+      "viewport_groups": 32588,
+      "rendered_markers": 38,
+      "marker_render_ms": 293.19999999925494,
+      "ready_ms": 43192.59999999963
+    },
+    "kind": "real_proposed_catalogue_not_deployed_production",
+    "records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "baseline_bytes": 358282,
+    "index_bytes": 11337757,
+    "index_gzip_bytes": 3296985,
+    "checks": 9,
+    "conditions": "Local HTTP subdirectory / installed headless Chromium. The app explicitly fetches gzip index/shards and checks compressed/decompressed hashes. Pages deployment performance is not measured. CPU/network emulation is not a physical low-memory mobile device."
+  },
+  "actual_unified_catalogue": {
+    "initial_ready_seconds": 1.682,
+    "initial_app_timings": {
+      "load_validate_ms": 630.5,
+      "index_ms": 320.30000000074506,
+      "search_ms": 6.900000002235174,
+      "viewport_groups": 39171,
+      "rendered_markers": 44,
+      "marker_render_ms": 68.69999999925494,
+      "ready_ms": 1148.6000000014901
+    },
+    "complete_query": {
+      "records": 41735,
+      "milliseconds": 17.699999999254942
+    },
+    "search_end_to_end_ms": 251.33,
+    "search_compute_ms": 13.900000002235174,
+    "map_navigation": {
+      "elapsed_ms": 43.80000000074506,
+      "marker_render_ms": 33.69999999925494,
+      "markers": 140
+    },
+    "uncached_profile_detail_ms": 164.60000000149012,
+    "unthrottled_app_timings": {
+      "load_validate_ms": 630.5,
+      "index_ms": 320.30000000074506,
+      "search_ms": 6.399999998509884,
+      "viewport_groups": 0,
+      "rendered_markers": 0,
+      "marker_render_ms": 0.09999999776482582,
+      "ready_ms": 1148.6000000014901,
+      "profile_open_ms": 12
+    },
+    "throttled_initial_ready_seconds": 30.945,
+    "throttled_app_timings": {
+      "load_validate_ms": 26886.89999999851,
+      "index_ms": 1026.4000000022352,
+      "search_ms": 32,
+      "viewport_groups": 32588,
+      "rendered_markers": 29,
+      "marker_render_ms": 255.5,
+      "ready_ms": 28722.099999997765
+    },
+    "kind": "real_proposed_catalogue_not_deployed_production",
+    "records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "baseline_bytes": 358282,
+    "index_bytes": 5027081,
+    "index_gzip_bytes": 2179773,
+    "checks": 9,
+    "conditions": "Local HTTP subdirectory / installed headless Chromium. The app explicitly fetches lossless columnar gzip index/compressed baseline and checks compressed/decompressed hashes. Pages deployment performance is not measured. CPU/network emulation is not a physical low-memory mobile device."
+  },
+  "synthetic_50000_locations": {
+    "kind": "synthetic_only_not_acquisition",
+    "synthetic_locations": 50000,
+    "baseline_retained": 243,
+    "baseline_class_a_visible": 230,
+    "legacy_class_c_visible": 13,
+    "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x950 and 390x844, lossless columnar transport, no CPU/network throttling; not a physical low-memory phone.",
+    "compact_index_bytes": 5831708,
+    "compact_index_gzip_bytes": 375352,
+    "full_detail_bytes": 61664090,
+    "initial_ready_seconds": 1.173,
+    "search_ms": 6.800000000745058,
+    "profile_ms": 45.79999999701977,
+    "viewport_render_ms": 3.300000000745058,
+    "app_timings": {
+      "load_validate_ms": 345.8999999985099,
+      "index_ms": 181.60000000149012,
+      "search_ms": 17.900000002235174,
+      "viewport_groups": 1,
+      "rendered_markers": 1,
+      "marker_render_ms": 2.5,
+      "ready_ms": 706.1999999992549,
+      "profile_open_ms": 6.5
+    },
+    "checks": 6
+  },
+  "unified_ux": {
+    "confirmed_capture_quick_filter": 22,
+    "warm_cache_ready_seconds": 0.924,
+    "checks": 9,
+    "kind": "actual_41735_record_ux_not_deployed_pages",
+    "conditions": "Local HTTP subdirectory / installed headless Chromium, 1440x950 and 390x844, no CPU/network throttle; warm reload explicitly identified. Screenshots are proposed UI, not production."
+  },
+  "canonical_compatibility_fixture": {
+    "synthetic_locations": 50000,
+    "fixture_json_bytes": 50516860,
+    "initial_http_ready_seconds": 12.11,
+    "search_ms": 6,
+    "multi_filter_ms": 5.4,
+    "profile_open_ms": 12.6,
+    "complete_smoke_seconds": 13.715,
+    "list_page_size": 50,
+    "client_timings": {
+      "load_validate_ms": 11418.10000000149,
+      "index_ms": 242.80000000074506,
+      "search_ms": 6,
+      "viewport_groups": 1,
+      "rendered_markers": 1,
+      "marker_render_ms": 3.699999999254942,
+      "ready_ms": 11877.800000000745,
+      "profile_open_ms": 2.5
+    }
+  },
+  "mobile_initial_load_reduction_percent": 31.36,
+  "index_gzip_reduction_percent": 33.89,
+  "conditions": "Sequential local HTTP tests, headless Chromium 155.0.8059.79 on Debian GNU/Linux 13; desktop 1440x950, mobile 390x844. Slow mobile: 96000 bytes/sec, 150 ms latency, 4x CPU slowdown. Individual runs, not statistical guarantees; no physical low-memory phone or deployed Pages measurement. Repetitive synthetic IDs compress better than real IDs. Warm reload reported separately."
+}

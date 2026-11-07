@@ -71,16 +71,18 @@ class DuplicateIndex:
         place = (normalized(str(row.get('city', ''))), normalized(str(row.get('country', ''))))
         values = [('company/city', str(row.get('company_id', ''))),
                   ('name/city', normalized(str(row.get('name', '')))),
-                  ('website/city', host(row.get('website')))]
+                  ('website/city', host(row.get('website')) if row.get('website_kind')!='source_listing' else '')]
         return [(kind, *place, value) for kind, value in values if value]
 
-    def matches(self, row):
+    def matches(self, row, limit=20):
         found = {}
         for key in self.keys(row):
-            for other in self.index.get(key, []):
+            bucket=self.index.get(key, [])
+            for other in bucket[:limit]:
                 token = id(other)
                 pair = found.setdefault(token, {'ids': [other.get('id'), row.get('id')], 'reasons': []})
                 pair['reasons'].append(key[0])
+                if len(bucket)>limit:pair.setdefault('additional_group_matches',{})[key[0]]=len(bucket)-limit
         return list(found.values())
 
     def add(self, row):
@@ -224,7 +226,8 @@ def validate(rows):
         if r.get('evidence_state') == 'unknown':
             warnings.append(f'{ref}: legacy/unreviewed evidence; source presence is not independent verification')
     for pair in possible_duplicates(rows):
-        warnings.append(f'possible duplicate: {pair["ids"]} ({", ".join(pair["reasons"])})')
+        extra=f'; further matches in group: {pair["additional_group_matches"]}' if pair.get('additional_group_matches') else ''
+        warnings.append(f'possible duplicate: {pair["ids"]} ({", ".join(pair["reasons"])}){extra}')
     return errors, warnings
 
 

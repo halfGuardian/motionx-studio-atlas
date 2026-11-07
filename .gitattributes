@@ -1,0 +1,2 @@
+# Preserve the exact RFC 4180 CSV bytes bound by the source receipt and catalogue.
+data/bulk/unified-input/game-company-references.csv -text whitespace=cr-at-eol

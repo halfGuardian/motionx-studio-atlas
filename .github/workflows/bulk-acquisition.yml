@@ -1,0 +1,74 @@
+name: Licensed global bulk acquisition
+on:
+  pull_request:
+    branches: [main]
+    paths: ['tools/bulk*.py', 'data/bulk/**', '.github/workflows/bulk-acquisition.yml', 'tests/test_bulk*.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency:
+      group: licensed-bulk-${{ github.event.pull_request.number || 'manual' }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: bulk-run
+          key: bulk-snapshots-overture-2026-10-21.0-${{ github.run_id }}
+          restore-keys: |
+            bulk-snapshots-overture-2026-10-21.0-
+            bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-
+      - run: pip install duckdb==1.4.3
+      - name: Collect approved API metadata, never canonical records
+        run: |
+          python tools/bulk_collect.py --output bulk-run
+          python tools/bulk_overture.py --output bulk-run
+      - name: Prepare research ledger and coverage report when available
+        run: |
+          python tools/bulk_snapshot.py bulk-run --output bulk-redistributable
+          python tools/bulk_ingest.py --input bulk-redistributable --output bulk-review --ledger bulk-run/research-public.sqlite
+      - name: Create immutable research archive (never public studio data)
+        if: always()
+        run: python tools/bulk_archive.py archive --snapshots bulk-redistributable --review bulk-review --output bulk-archive --run-id "$GITHUB_RUN_ID"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: licensed-bulk-research
+          path: |
+            bulk-review/
+            data/bulk/LICENSES/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: licensed-bulk-snapshots
+          path: |
+            bulk-run/**
+            !bulk-run/research.sqlite
+            !bulk-run/research-public.sqlite
+            bulk-redistributable/**
+            data/bulk/LICENSES/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: licensed-bulk-durable-archive
+          path: |
+            bulk-archive/
+            data/bulk/LICENSES/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: licensed-bulk-public-ledger
+          path: |
+            bulk-run/research-public.sqlite
+            data/bulk/LICENSES/
+          retention-days: 90

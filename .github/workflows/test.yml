@@ -19,8 +19,12 @@ jobs:
         with:
           node-version: '22'
       - run: python -m unittest discover -s tests -p 'test_*.py' -v
-      - run: node tests/data.test.js
+      - run: node --test tests/*.test.js
       - run: python tools/validate.py studios.json
+      - name: Reproduce source-listed catalogue and preserve reviewed baseline
+        run: if [ -f data/bulk/release.json ]; then python tools/check_bulk_release.py; fi
+      - name: Reproduce advisory queue and licensing audit without granting approval
+        run: if [ -f data/bulk/reports/licensing.json ]; then python tools/launch_readiness.py check --output data/bulk/reports; fi
   browser:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -39,11 +43,23 @@ jobs:
             python -m playwright install --with-deps chromium
           fi
       - run: python tests/browser_smoke.py
+      - run: python tests/bulk_browser.py
+      - name: Actual source-listed public catalogue over HTTP
+        run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
+      - name: Evidence colours, mixed clusters, research review and launch readiness
+        run: python tests/unified_ux.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: http-browser-and-50000-location-performance
           path: |
             /tmp/motionx-v10-performance.json
+            /tmp/motionx-v11-bulk-performance.json
+            /tmp/motionx-v11-real-performance.json
+            /tmp/motionx-v11-ux-performance.json
+            /tmp/motionx-v11-*.png
+            data/bulk/reports/licensing.html
+            data/bulk/reports/licensing.json
+            data/bulk/reports/review-queue.json
             /tmp/motionx-v08-desktop.png
             /tmp/motionx-v08-mobile.png

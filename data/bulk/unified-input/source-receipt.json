@@ -1,0 +1,19 @@
+{
+  "source_url": "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+  "observed_on_utc": "2026-11-06",
+  "source_sha256": "15f456763032d1c3a6e048d7ab7e30a539830ff26cd0666b092bff3f145367c7",
+  "reference_projection_sha256": "e947fa8bbbc232f4eafc4701a32a41915f26d1ecc939eefeba113b604dec0de5",
+  "company_records": 1116,
+  "fields": [
+    "Name",
+    "Type",
+    "Country",
+    "Website",
+    "Status"
+  ],
+  "permission_note": "Source README offers download/local use; no explicit dataset redistribution licence is stated. This reference projection retains factual identifiers/classification claims, omits authored descriptions, social profiles and personal contacts, and is labelled Class C with unresolved source terms.",
+  "verified_locations": 0,
+  "source_commit": "2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d",
+  "source_changed_at_utc": "2026-09-14T15:40:31Z",
+  "freshness_note": "Observation date is access to the dataset, not individual business verification. Source CSV last changed 14 September 2026."
+}

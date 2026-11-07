@@ -1,0 +1,744 @@
+{
+  "version": 1,
+  "mode": "unified_research",
+  "counts": {
+    "records": 41735,
+    "public_records": 41735,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 36879,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1116,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41234
+  },
+  "raw_source_records_collected": 41492,
+  "raw_records_by_source": {
+    "overture": 40376,
+    "game_company_factual_references": 1116
+  },
+  "unique_overture_source_identities": 40376,
+  "exact_source_duplicates_removed": 0,
+  "possible_existing_location_duplicate_candidates": 117,
+  "verified_unique_physical_location_count": null,
+  "warning": "Counts are combined references, not independently verified unique studio facilities. All A/B/C classes are visible by default; inclusion is not approval.",
+  "rejected_malformed_source_records": 0,
+  "new_confirmed_capability_claims": 0,
+  "retained_source_confirmed_capture_locations": 22,
+  "warnings": {
+    "canonical_baseline": 265,
+    "unreviewed_new_references": 41492,
+    "source_point_precision_unverified": 40376,
+    "company_references_without_coordinates": 1116,
+    "unspecified_company_source_terms": 1116,
+    "source_records_missing_city": 170,
+    "source_records_missing_country": 14,
+    "possible_duplicate_candidates": 117
+  },
+  "overlapping_overture_research_reasons": {
+    "provider existence confidence below 0.9 or unavailable; not an independent verification score": 32164,
+    "source-provider status-overlay redistribution mapping unresolved; payload withheld and candidate remains research-only": 3722,
+    "directory has a closure signal; requires research, never closes an existing published location": 2078,
+    "source municipality absent or conflicting; no invented city or bulk reverse-geocoding": 170,
+    "possible existing location: source/city/name match is insufficient to overwrite or auto-merge a reviewed facility": 117,
+    "country absent or conflicting in the source": 14
+  },
+  "country_classes": {
+    "": {
+      "C": 16
+    },
+    "Afghanistan": {
+      "C": 3
+    },
+    "Albania": {
+      "C": 22,
+      "B": 1
+    },
+    "Algeria": {
+      "C": 17
+    },
+    "Angola": {
+      "C": 14
+    },
+    "Antigua & Barbuda": {
+      "C": 2
+    },
+    "Argentina": {
+      "C": 178,
+      "B": 10
+    },
+    "Armenia": {
+      "A": 1,
+      "C": 22
+    },
+    "Aruba": {
+      "C": 2
+    },
+    "Australia": {
+      "A": 11,
+      "C": 369,
+      "B": 98
+    },
+    "Austria": {
+      "C": 656,
+      "B": 93
+    },
+    "Azerbaijan": {
+      "C": 26,
+      "B": 1
+    },
+    "Bahamas": {
+      "C": 2
+    },
+    "Bahrain": {
+      "C": 5
+    },
+    "Bangladesh": {
+      "C": 138,
+      "B": 6
+    },
+    "Belarus": {
+      "C": 20,
+      "B": 1
+    },
+    "Belgium": {
+      "A": 2,
+      "C": 381,
+      "B": 71
+    },
+    "Belize": {
+      "C": 3
+    },
+    "Benin": {
+      "C": 3
+    },
+    "Bhutan": {
+      "C": 5
+    },
+    "Bolivia": {
+      "C": 48,
+      "B": 2
+    },
+    "Bosnia & Herzegovina": {
+      "C": 22,
+      "B": 1
+    },
+    "Botswana": {
+      "C": 4
+    },
+    "Brazil": {
+      "A": 3,
+      "C": 837,
+      "B": 136
+    },
+    "Brunei": {
+      "C": 2
+    },
+    "Bulgaria": {
+      "A": 3,
+      "C": 65,
+      "B": 3
+    },
+    "Burkina Faso": {
+      "C": 8
+    },
+    "Burundi": {
+      "C": 1
+    },
+    "Cambodia": {
+      "C": 58
+    },
+    "Cameroon": {
+      "C": 15
+    },
+    "Canada": {
+      "A": 38,
+      "C": 635,
+      "B": 202
+    },
+    "Cape Verde": {
+      "C": 1
+    },
+    "Caribbean Netherlands": {
+      "C": 1
+    },
+    "Chile": {
+      "C": 91,
+      "B": 5
+    },
+    "China": {
+      "A": 7,
+      "C": 43
+    },
+    "Colombia": {
+      "A": 1,
+      "C": 148,
+      "B": 4
+    },
+    "Congo - Brazzaville": {
+      "C": 1
+    },
+    "Congo - Kinshasa": {
+      "C": 9
+    },
+    "Costa Rica": {
+      "C": 30
+    },
+    "Croatia": {
+      "C": 41,
+      "B": 6
+    },
+    "Cuba": {
+      "C": 13
+    },
+    "Curaçao": {
+      "C": 3
+    },
+    "Cyprus": {
+      "C": 22,
+      "B": 2
+    },
+    "Czechia": {
+      "A": 2,
+      "C": 114,
+      "B": 21
+    },
+    "Côte d’Ivoire": {
+      "C": 12
+    },
+    "Denmark": {
+      "C": 394,
+      "B": 61
+    },
+    "Dominican Republic": {
+      "C": 53,
+      "B": 5
+    },
+    "Ecuador": {
+      "B": 2,
+      "C": 68
+    },
+    "Egypt": {
+      "C": 82,
+      "B": 2
+    },
+    "El Salvador": {
+      "C": 16
+    },
+    "Estonia": {
+      "C": 27,
+      "B": 3
+    },
+    "Ethiopia": {
+      "C": 6
+    },
+    "Faroe Islands": {
+      "C": 1
+    },
+    "Finland": {
+      "C": 130,
+      "A": 2,
+      "B": 33
+    },
+    "France": {
+      "C": 1873,
+      "A": 9,
+      "B": 239
+    },
+    "French Polynesia": {
+      "C": 1
+    },
+    "Gabon": {
+      "C": 3
+    },
+    "Gambia": {
+      "C": 1
+    },
+    "Georgia": {
+      "C": 41,
+      "B": 1
+    },
+    "Germany": {
+      "A": 11,
+      "C": 3428,
+      "B": 726
+    },
+    "Ghana": {
+      "C": 24
+    },
+    "Greece": {
+      "C": 110,
+      "B": 19
+    },
+    "Greenland": {
+      "C": 3
+    },
+    "Guadeloupe": {
+      "C": 3
+    },
+    "Guatemala": {
+      "C": 30,
+      "B": 1
+    },
+    "Guernsey": {
+      "C": 2
+    },
+    "Guinea": {
+      "C": 5
+    },
+    "Guyana": {
+      "C": 3
+    },
+    "Haiti": {
+      "C": 3
+    },
+    "Honduras": {
+      "C": 20,
+      "B": 1
+    },
+    "Hong Kong SAR China": {
+      "C": 50,
+      "B": 4
+    },
+    "Hungary": {
+      "A": 1,
+      "C": 114,
+      "B": 8
+    },
+    "Iceland": {
+      "C": 11
+    },
+    "India": {
+      "A": 24,
+      "C": 2566,
+      "B": 151
+    },
+    "Indonesia": {
+      "A": 1,
+      "C": 407,
+      "B": 32
+    },
+    "Iran": {
+      "C": 15
+    },
+    "Iraq": {
+      "C": 17
+    },
+    "Ireland": {
+      "A": 3,
+      "C": 75,
+      "B": 5
+    },
+    "Isle of Man": {
+      "C": 1
+    },
+    "Israel": {
+      "C": 64,
+      "B": 5
+    },
+    "Italy": {
+      "A": 1,
+      "C": 1632,
+      "B": 378
+    },
+    "Jamaica": {
+      "C": 2
+    },
+    "Japan": {
+      "C": 279,
+      "B": 143
+    },
+    "Jordan": {
+      "C": 17
+    },
+    "Kazakhstan": {
+      "C": 22
+    },
+    "Kenya": {
+      "C": 33,
+      "B": 1
+    },
+    "Kiribati": {
+      "C": 1
+    },
+    "Kuwait": {
+      "C": 7
+    },
+    "Kyrgyzstan": {
+      "C": 6
+    },
+    "Laos": {
+      "C": 12
+    },
+    "Latvia": {
+      "C": 22,
+      "B": 3
+    },
+    "Lebanon": {
+      "C": 23
+    },
+    "Libya": {
+      "C": 4
+    },
+    "Liechtenstein": {
+      "B": 2,
+      "C": 2
+    },
+    "Lithuania": {
+      "C": 35,
+      "B": 3
+    },
+    "Luxembourg": {
+      "C": 8
+    },
+    "Macao SAR China": {
+      "C": 2
+    },
+    "Madagascar": {
+      "C": 1
+    },
+    "Malawi": {
+      "C": 4
+    },
+    "Malaysia": {
+      "A": 5,
+      "C": 141,
+      "B": 6
+    },
+    "Maldives": {
+      "C": 1
+    },
+    "Malta": {
+      "C": 6,
+      "B": 1
+    },
+    "Martinique": {
+      "C": 2
+    },
+    "Mauritania": {
+      "C": 1
+    },
+    "Mauritius": {
+      "C": 4
+    },
+    "Mexico": {
+      "A": 1,
+      "C": 371,
+      "B": 43
+    },
+    "Moldova": {
+      "C": 13,
+      "B": 3
+    },
+    "Monaco": {
+      "C": 2
+    },
+    "Mongolia": {
+      "C": 31,
+      "B": 1
+    },
+    "Montenegro": {
+      "C": 8,
+      "B": 1
+    },
+    "Morocco": {
+      "C": 26,
+      "B": 1
+    },
+    "Mozambique": {
+      "C": 9
+    },
+    "Myanmar (Burma)": {
+      "C": 15
+    },
+    "Namibia": {
+      "C": 6
+    },
+    "Nepal": {
+      "C": 57,
+      "B": 2
+    },
+    "Netherlands": {
+      "A": 1,
+      "C": 1638,
+      "B": 222
+    },
+    "New Caledonia": {
+      "C": 2
+    },
+    "New Zealand": {
+      "C": 49,
+      "A": 1,
+      "B": 7
+    },
+    "Nicaragua": {
+      "C": 11
+    },
+    "Nigeria": {
+      "C": 155
+    },
+    "North Macedonia": {
+      "A": 1,
+      "C": 22,
+      "B": 1
+    },
+    "Norway": {
+      "C": 563,
+      "B": 66
+    },
+    "Oman": {
+      "C": 3
+    },
+    "Pakistan": {
+      "C": 88,
+      "B": 4
+    },
+    "Palestinian Territories": {
+      "C": 13
+    },
+    "Panama": {
+      "C": 8
+    },
+    "Paraguay": {
+      "C": 23,
+      "B": 2
+    },
+    "Peru": {
+      "C": 106,
+      "B": 1
+    },
+    "Philippines": {
+      "A": 1,
+      "C": 89,
+      "B": 4
+    },
+    "Poland": {
+      "A": 9,
+      "C": 493,
+      "B": 24
+    },
+    "Portugal": {
+      "C": 70,
+      "B": 4
+    },
+    "Puerto Rico": {
+      "C": 7,
+      "B": 3
+    },
+    "Qatar": {
+      "C": 9,
+      "B": 1
+    },
+    "Romania": {
+      "A": 4,
+      "C": 166,
+      "B": 13
+    },
+    "Russia": {
+      "C": 249,
+      "B": 27
+    },
+    "Rwanda": {
+      "C": 2
+    },
+    "Réunion": {
+      "C": 5
+    },
+    "San Marino": {
+      "C": 1
+    },
+    "Saudi Arabia": {
+      "C": 43,
+      "B": 3
+    },
+    "Senegal": {
+      "C": 8
+    },
+    "Serbia": {
+      "A": 2,
+      "C": 61,
+      "B": 6
+    },
+    "Sierra Leone": {
+      "C": 3
+    },
+    "Singapore": {
+      "A": 1,
+      "C": 52,
+      "B": 4
+    },
+    "Slovakia": {
+      "C": 61,
+      "B": 3
+    },
+    "Slovenia": {
+      "C": 32,
+      "B": 2
+    },
+    "Somalia": {
+      "C": 3
+    },
+    "South Africa": {
+      "A": 5,
+      "C": 124,
+      "B": 9
+    },
+    "South Korea": {
+      "A": 2,
+      "C": 137,
+      "B": 17
+    },
+    "Spain": {
+      "A": 9,
+      "C": 1360,
+      "B": 196
+    },
+    "Sri Lanka": {
+      "C": 74,
+      "B": 2
+    },
+    "St. Lucia": {
+      "C": 1
+    },
+    "Sudan": {
+      "C": 4
+    },
+    "Suriname": {
+      "C": 8
+    },
+    "Sweden": {
+      "A": 4,
+      "C": 568,
+      "B": 108
+    },
+    "Switzerland": {
+      "C": 538,
+      "B": 58
+    },
+    "Syria": {
+      "C": 5
+    },
+    "Taiwan": {
+      "C": 200,
+      "B": 15
+    },
+    "Tajikistan": {
+      "C": 2
+    },
+    "Tanzania": {
+      "C": 19
+    },
+    "Thailand": {
+      "A": 1,
+      "C": 421,
+      "B": 46
+    },
+    "Timor-Leste": {
+      "C": 3
+    },
+    "Togo": {
+      "C": 6
+    },
+    "Trinidad & Tobago": {
+      "C": 5
+    },
+    "Tunisia": {
+      "C": 19
+    },
+    "Türkiye": {
+      "C": 329,
+      "B": 45
+    },
+    "Uganda": {
+      "C": 36,
+      "B": 2
+    },
+    "Ukraine": {
+      "A": 2,
+      "C": 167,
+      "B": 3
+    },
+    "United Arab Emirates": {
+      "A": 3,
+      "C": 35,
+      "B": 2
+    },
+    "United Kingdom": {
+      "A": 30,
+      "C": 3338,
+      "B": 980
+    },
+    "United States": {
+      "C": 8590,
+      "A": 22,
+      "B": 184
+    },
+    "Uruguay": {
+      "C": 25,
+      "B": 2
+    },
+    "Uzbekistan": {
+      "C": 11
+    },
+    "Vanuatu": {
+      "C": 2
+    },
+    "Vatican City": {
+      "C": 1
+    },
+    "Venezuela": {
+      "C": 16,
+      "B": 2
+    },
+    "Vietnam": {
+      "A": 6,
+      "C": 214,
+      "B": 9
+    },
+    "Yemen": {
+      "C": 6
+    },
+    "Zambia": {
+      "C": 12
+    },
+    "Zimbabwe": {
+      "C": 8
+    }
+  },
+  "source_terms": {
+    "CDLA-Permissive-2.0": 39669,
+    "Apache-2.0": 707,
+    "UNSPECIFIED_company_factual_references": 1116
+  },
+  "sources_evaluated": 15,
+  "enabled_bulk_collectors": 1,
+  "baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+  "source_policy_hash": "f2c888e9706aaa70b9b0151660e1e7dbe7b64b35a5d5829664c51838e143f84b",
+  "research_run_id": "1fdcde733327ed15dc9dac9cfad28e76a85073cf1d8f75945e8362991552558e",
+  "human_review_required": true,
+  "merged_or_deployed": false,
+  "transport": {
+    "path": "index.compact.json",
+    "encoding": "motionx-columnar-v1",
+    "records": 41492,
+    "sha256": "5e5e5f0bb9996fbdc92fea8198473d9d5ed9dae5678dcb86b2c944400964cddf",
+    "gzip_sha256": "42a39e28d654181ceead4520d5759d550bb50b662e526237fb2d5ad7c9c939f0",
+    "bytes": 5027081,
+    "gzip_bytes": 2179773,
+    "content_addressed": true
+  },
+  "baseline_transport": {
+    "path": "baseline.json",
+    "sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+    "gzip_sha256": "bd742ebdc9bdf28dc3c01957bad389a957a01494ef3a8cfff6717d765849789e",
+    "bytes": 358282,
+    "gzip_bytes": 25977,
+    "content_addressed": true
+  },
+  "provisional_identities": 41197,
+  "advisory_review_queue": 41505,
+  "licensing_policy_entries": 49
+}

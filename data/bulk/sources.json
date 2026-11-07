@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-06",
+  "sources": [
+    {
+      "id": "overture",
+      "enabled": true,
+      "adapter": "overture_geoparquet",
+      "endpoint": "https://overturemaps-us-west-2.s3.amazonaws.com/",
+      "release": "2026-10-21.0",
+      "license": "per-provider",
+      "license_url": "https://docs.overturemaps.org/attribution/",
+      "publication_license": "per-provider",
+      "policy_urls": [
+        "https://docs.overturemaps.org/getting-data/",
+        "https://docs.overturemaps.org/guides/places/",
+        "https://docs.overturemaps.org/attribution/"
+      ],
+      "review": "Official public bulk Places GeoParquet. Provider CDLA-Permissive-2.0/Apache-2.0/CC0 obligations preserved; complete projected category slices, no web scraping or source-API workaround. Places explicitly contains no OpenStreetMap data. Exclude unknown provider licences; include agreement texts and Foursquare NOTICE with derivative extracts. Only documented release objects; no personal contacts or street addresses.",
+      "attribution": "Overture Maps Foundation and original per-record providers; see data/bulk/LICENSES.",
+      "eligible_categories": {
+        "animation_studio": "Animation",
+        "movie_television_studio": "Film / Television Production",
+        "video_film_production": "Film / Video Production"
+      },
+      "category_review": {
+        "reviewed_on": "2026-11-06",
+        "evidence": "https://docs.overturemaps.org/guides/places/taxonomy/",
+        "actual_release_inventory_run": 42283891204,
+        "note": "Complete 88,418,121-place category inventory: 5,197 animation_studio; 18,621 movie_television_studio; 16,558 video_film_production. These source sectors do not imply VFX/game/capture services or a verified facility type. Broad game_publisher and broadcasting categories do not establish development/capture studios and are not published."
+      },
+      "derived_metadata_license_review": "Official October 2026 Places guide pairs original provider and Overture under the same licence. Confidence-only Overture transformation metadata inherits that listed provider licence. Overture-signals status overlays are not mapped to a licence and remain research-only pending clarification.",
+      "minimum_provider_confidence": 0.9,
+      "access_mode": "Officially documented public S3 dataset download/query; not website crawling. Do not interpret unrelated API robots denials as permission for those APIs."
+    },
+    {
+      "id": "wikidata",
+      "enabled": false,
+      "adapter": "wikidata_sparql",
+      "endpoint": "https://query.wikidata.org/sparql",
+      "license": "CC0-1.0",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "policy_urls": [
+        "https://www.wikidata.org/wiki/Wikidata:Data_access",
+        "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "review": "Structured entity data only under CC0. Explicit SPARQL API, descriptive User-Agent, serial pagination, cache, bounded response sizes and stop/backoff on rate limits. Runtime endpoint robots check required; no website/API workaround when denied.",
+      "publication_license": "CC0-1.0",
+      "attribution": "Wikidata contributors (CC0); source statement is not independent operational verification.",
+      "query_classes": {
+        "Q210167": "Game Development",
+        "Q1107679": "Animation",
+        "Q1762059": "Film Production",
+        "Q375336": "Film Production",
+        "Q21550789": "Film Production"
+      },
+      "disabled_reason": "Runtime robots disallowed canonical API endpoint in Actions run 42282499526. No records collected; no alternative host or user-agent workaround."
+    },
+    {
+      "id": "openstreetmap",
+      "enabled": false,
+      "adapter": "overpass",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "license": "ODbL-1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "policy_urls": [
+        "https://www.openstreetmap.org/copyright",
+        "https://dev.overpass-api.de/overpass-doc/en/preface/commons.html"
+      ],
+      "review": "One selective global tag query, not world-dump bounding-box stitching or per-element harvesting. Cache snapshot; no scheduled refresh by default. Stop at 429/denial and retain partial results. Runtime robots required. Derived source shards and their modification history stay separately distributed under ODbL, with visible attribution and license fields in export. No Nominatim bulk geocoding.",
+      "publication_license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors; data under ODbL 1.0 (https://www.openstreetmap.org/copyright).",
+      "disabled_reason": "Runtime robots disallowed canonical API endpoint in Actions run 42282499526. No records collected; no alternative host or user-agent workaround."
+    },
+    {
+      "id": "gamedev-studios-db",
+      "enabled": false,
+      "url": "https://github.com/EddieWing/gamedev-studios-db",
+      "reason": "Automatic licensed-data acquisition remains disabled: no explicit dataset redistribution licence is stated. The user-directed inclusive research view uses factual company references with Class C / unspecified-terms labels; authored descriptions and social/contact profiles are omitted. It is not an approved source of verified physical facilities."
+    },
+    {
+      "id": "gamedevmap",
+      "enabled": false,
+      "url": "https://gamedevmap.com/",
+      "reason": "No compatible bulk redistribution/access grant established; do not scrape."
+    },
+    {
+      "id": "scottish-games",
+      "enabled": false,
+      "url": "https://gamesindustry.scot/about/",
+      "reason": "CC BY-NC-SA terms; commercial-use compatibility unresolved. No bulk ingestion enabled."
+    },
+    {
+      "id": "texas-production-directory",
+      "enabled": false,
+      "url": "https://gov.texas.gov/film/page/texas-production-directory",
+      "reason": "Public agency directory does not establish database redistribution rights; mixed personal crew listings excluded. Request explicit dataset licence/API access before collection."
+    },
+    {
+      "id": "michigan-production-directory",
+      "enabled": false,
+      "url": "https://www.michiganbusiness.org/industries/mfdmo/film/",
+      "reason": "Reel-Scout directory with mixed individuals/businesses; no bulk redistribution permission established."
+    },
+    {
+      "id": "singapore-cultural-statistics",
+      "enabled": false,
+      "url": "https://data.gov.sg/datasets/d_5d6d714a58d9ff3911135b31e57deb33/view",
+      "reason": "Open-data licence, but aggregate company counts, not individual physical studio locations. Irrelevant to facility import."
+    },
+    {
+      "id": "ea",
+      "enabled": false,
+      "url": "https://www.ea.com/",
+      "reason": "Previously prohibited automated collection; no permission obtained. No screenshots/OCR/alternate hosts."
+    },
+    {
+      "enabled": false,
+      "id": "prh-finland",
+      "url": "https://avoindata.prh.fi/en/info/swagger-ui",
+      "license": "CC-BY-4.0",
+      "reason": "Official open data grants CC BY 4.0 and programmatic use; registered companies/municipalities do not prove physical production studios. API parameters/current industry-code migration, runtime robots and field projection still require review. Disabled; no collection claimed."
+    },
+    {
+      "enabled": false,
+      "id": "animstudios",
+      "url": "https://animstudios.org/",
+      "reason": "Search index advertises CC BY 4.0 but live homepage returned HTTP 530 and robots could not be accessed during review. No live dataset/schema or rights chain confirmed; do not collect or claim its cached studio count."
+    },
+    {
+      "enabled": false,
+      "id": "korea-video-permits",
+      "url": "https://www.data.go.kr/data/15094974/fileData.do",
+      "license": "KOGL-Type-1",
+      "reason": "Official Yeongdeungpo video-production permit CSV lists attribution-only reuse. Bulk file endpoint, current operation, coordinate conversion EPSG:2097 and robots not fully validated. Mixed permit scope may include duplication businesses rather than studios; disabled pending adapter/review."
+    },
+    {
+      "enabled": false,
+      "id": "nyc-production-office-space",
+      "url": "https://catalog.data.gov/dataset/production-office-space",
+      "reason": "Official NYC dataset is last updated in 2018 and describes recording/sound space; current studio operation, screen-production eligibility and reuse terms require review. Disabled; historical directory not current verification."
+    },
+    {
+      "enabled": false,
+      "id": "game-dev-outsourcing",
+      "url": "https://www.gamedevoutsourcing.com/mcp",
+      "reason": "Provider explicitly offers CC BY 4.0 aggregates only and says per-company rows are not available as a bulk dataset. Do not treat aggregate licence as permission to scrape/repackage studio records."
+    }
+  ]
+}

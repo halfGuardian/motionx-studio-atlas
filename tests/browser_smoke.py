@@ -1,7 +1,9 @@
 """HTTP browser checks. Optional QA dependency: pip install playwright.
 
 Uses installed Chromium (CHROMIUM env override) or Playwright's browser.
-Real Leaflet CDN and OpenStreetMap tile requests are not stubbed.
+Real Leaflet CDN and OpenStreetMap tile requests are not stubbed. This is the
+retained 243-record compatibility fixture; public_catalog_smoke.py separately
+tests the actual full sharded public catalogue and its Class C exclusion.
 """
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -19,6 +21,15 @@ ROOT = Path(__file__).resolve().parents[1]
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *_):
         pass
+
+    def do_GET(self):
+        from urllib.parse import urlsplit
+        if urlsplit(self.path).path in (f'/{ROOT.name}/',f'/{ROOT.name}/index.html'):
+            # Compatibility fixture exposes advanced controls; production tests
+            # separately exercise the real collapsed/filter keyboard workflow.
+            body=(ROOT/'index.html').read_text().replace(' data-catalog="sharded"','').replace('id="advancedFilters"','id="advancedFilters" open').encode()
+            self.send_response(200);self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
+        else:super().do_GET()
 
 
 def main():
@@ -59,18 +70,17 @@ def main():
             expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap contributors')
             page.wait_for_function('document.querySelector(".leaflet-tile-loaded") !== null', timeout=20000)
             assert 200 in tile_responses
-            assert page.evaluate('layer.getLayers().length') == len({(r['lat'], r['lng']) for r in database})
+            assert page.evaluate('layer.getLayers().length') <= len({(r['lat'], r['lng']) for r in database})
+            assert page.evaluate('layer.getLayers().flatMap(m=>m.motionxLocations).sort()') == sorted(r['id'] for r in database)
             passed('real Leaflet map, live OpenStreetMap tiles and attribution')
-            page.evaluate("() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }")
-            buttons = page.locator('.leaflet-popup-content button')
-            labels = buttons.all_text_contents()
-            assert len(labels) >= 2
-            for label in labels:
-                page.evaluate("() => { layer.getLayers().find(m => m.getPopup()).openPopup(); }")
-                button = page.locator('.leaflet-popup-content button').filter(has_text=label)
+            shared=page.evaluate("() => {const group=D.coordinateGroups(studios).find(g=>g.length>1);map.setView([group[0].lat,group[0].lng],16,{animate:false});layer.getLayers().find(m=>m.motionxLocations.includes(group[0].id)).openPopup();return group.map(r=>r.id);}")
+            assert len(shared)>=2
+            for record_id in shared:
+                page.evaluate("id => { layer.getLayers().find(m => m.motionxLocations.includes(id)).openPopup(); }",record_id)
+                button = page.locator('.leaflet-popup-content li button[data-record-id="'+record_id+'"]')
                 button.focus()
                 button.press('Enter')
-                expect(page.locator('#detailContent h2')).to_have_text(label.split(' — ')[0])
+                expect(page.locator('#detailContent h2')).to_have_text(next(r['name'] for r in database if r['id']==record_id))
                 page.locator('#close').click()
             passed('coincident marker popup lists all studios and keyboard selection opens each profile')
             page.locator('#country').select_option('Canada')
@@ -86,7 +96,7 @@ def main():
             with page.expect_download() as download_info:
                 page.locator('#exportCsv').click()
             download = download_info.value
-            assert download.suggested_filename == 'motionx_studios_filtered_v1.0.csv'
+            assert download.suggested_filename == 'motionx_atlas_filtered_v1.1.csv'
             content = Path(download.path()).read_text(encoding='utf-8-sig')
             assert content.count('\n') == 2 and 'beyond-vancouver' in content and 'beyond-montreal' in content
             passed('filtered CSV download with location and company identities')
@@ -254,7 +264,10 @@ def main():
             page.locator('.leaflet-popup-content button').filter(has_text='Next').press('Enter')
             page.locator('.leaflet-popup-content button').filter(has_text='Next').press('Enter')
             expect(page.locator('.leaflet-popup-content li button')).to_have_count(5)
+            last_id=page.locator('.leaflet-popup-content li button').last.get_attribute('data-record-id')
             page.locator('.leaflet-popup-content li button').last.press('Enter')
+            expect(page.locator('#profileTitle')).to_have_text(next(r['name'] for r in fixture if r['id']==last_id))
+            page.keyboard.press('Escape');page.locator('#listTab').click();page.locator('[data-id="coincident-64"]').click()
             expect(page.locator('#profileTitle')).to_contain_text('<img src=x')
             assert not page.locator('#detailContent img').count()
             assert not page.evaluate('!!window.injected')
