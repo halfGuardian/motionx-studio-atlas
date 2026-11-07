@@ -57,6 +57,10 @@ class SourceTests(unittest.TestCase):
         self.assertEqual([x["status"] for x in data], ["represented_name_match"] * 3)
         self.assertEqual([x["nz_geolocated_record_count"] for x in data], [0, 0, 0])
         self.assertEqual(data[0]["nz_record_ids"], ["albedo"])
+        legal = census.match([row("muk", "Mukpuddy", "New Zealand")],
+                             [observation("Mukpuddy Animation Ltd")])[0]
+        self.assertEqual(legal["status"], "represented_name_match")
+        self.assertEqual(legal["nz_record_ids"], ["muk"])
 
     def test_foreign_branch_is_not_misrepresented_as_nz(self):
         m = census.match([row("melbourne", "Wētā FX", "Australia"),
