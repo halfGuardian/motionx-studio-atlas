@@ -1,7 +1,7 @@
 import copy,csv,gzip,json,sys,tempfile,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from global_programme import load_snapshot,advance,empty_state,check_state,GlobalIndex,reconcile,validate_assessments,HOME,OUTCOMES
+from global_programme import load_snapshot,advance,empty_state,check_state,GlobalIndex,reconcile,registered_snapshots,validate_assessments,HOME,OUTCOMES
 from discovery import digest
 
 class GlobalProgrammeTests(unittest.TestCase):
@@ -24,6 +24,21 @@ class GlobalProgrammeTests(unittest.TestCase):
         with csv_path.open('w',newline='') as f:
             row=self.row|{'service_claims':json.dumps(self.row['service_claims'])};writer=csv.DictWriter(f,fieldnames=list(row));writer.writeheader();writer.writerow(row)
         self.assertEqual(load_snapshot(csv_path,self.policy,{k:v for k,v in self.value.items() if k!='records'})['records'][0],self.load()['records'][0])
+
+    def test_registered_json_csv_and_failures_feed_review_without_publication(self):
+        root=Path(self.tmp.name);home=root/'data/programme';(home/'inputs').mkdir(parents=True);policy=root/'data/policy.json';snapshot=root/'data/snapshot.json';state_path=root/'data/state.json';registry=home/'inputs/snapshot-registry.json';policy.write_text(json.dumps(self.policy));snapshot.write_text(json.dumps(self.value));entry={'source_id':'test','policy':'data/policy.json','snapshot':'data/snapshot.json','state':'data/state.json'};registry.write_text(json.dumps({'version':1,'sources':[entry]}));state,_=advance(empty_state(),load_snapshot(snapshot,self.policy));state_path.write_text(json.dumps(state))
+        obs,ledger=registered_snapshots(home,root);self.assertEqual(len(obs),1);self.assertEqual(obs[0]['service_claims'],self.row['service_claims']);self.assertEqual(ledger[0]['records'],1);self.assertFalse(ledger[0]['current_operation_independently_verified']);self.assertEqual((obs,ledger),registered_snapshots(home,root))
+        csv_path=root/'data/snapshot.csv';metadata=root/'data/metadata.json';metadata.write_text(json.dumps({k:v for k,v in self.value.items() if k!='records'}))
+        with csv_path.open('w',newline='') as f:
+            row=self.row|{'service_claims':json.dumps(self.row['service_claims'])};writer=csv.DictWriter(f,fieldnames=list(row));writer.writeheader();writer.writerow(row)
+        registry.write_text(json.dumps({'version':1,'sources':[entry|{'snapshot':'data/snapshot.csv','metadata':'data/metadata.json'}]}));csv_state,_=advance(empty_state(),load_snapshot(csv_path,self.policy,json.loads(metadata.read_text())));state_path.write_text(json.dumps(csv_state));csv_obs,csv_ledger=registered_snapshots(home,root);self.assertEqual(csv_obs,obs);self.assertEqual(csv_ledger[0]['expected_records'],1)
+        registry.write_text(json.dumps({'version':1,'sources':[entry]}))
+        snapshot.write_text(json.dumps(self.value|{'snapshot_id':'failure','status':'failed','complete':False,'records':[],'failure':'permitted download unavailable'}));failed,_=advance(state,load_snapshot(snapshot,self.policy));state_path.write_text(json.dumps(failed));preserved,ledger=registered_snapshots(home,root);self.assertEqual(preserved,obs);self.assertEqual(ledger[0]['access_status'],'failed');self.assertEqual(ledger[0]['current_snapshot_records'],0);self.assertEqual(ledger[0]['historical_snapshots'],2);self.assertFalse(ledger[0]['complete_declared_snapshot'])
+        changed=self.value|{'snapshot_id':'recovered','records':[self.row|{'name':'Renamed Boutique'}]};snapshot.write_text(json.dumps(changed));recovered,signals=advance(failed,load_snapshot(snapshot,self.policy));self.assertEqual(signals[0]['kind'],'possible_identity_geography_service_change');state_path.write_text(json.dumps(recovered));revisions,ledger=registered_snapshots(home,root);self.assertEqual(len(revisions),2);result=reconcile([],revisions,'2026-11-07');self.assertEqual(result[1]['disposition'],'research_required');self.assertEqual(result[1]['source_change_signals'][0]['before']['name'],'Test Boutique');self.assertTrue(all(r['canonical_update'] is None for r in result))
+        registry.write_text(json.dumps({'version':1,'sources':[entry|{'snapshot':'../private.json'}]}))
+        with self.assertRaises(ValueError):registered_snapshots(home,root)
+        registry.write_text(json.dumps({'version':1,'sources':[entry,entry]}))
+        with self.assertRaises(ValueError):registered_snapshots(home,root)
 
     def test_failed_fetch_and_incomplete_history_never_infer_closure(self):
         state,_=advance(empty_state(),self.load());before=copy.deepcopy(state)

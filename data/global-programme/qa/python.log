@@ -123,6 +123,7 @@ test_historical_discovery_navigation_and_topics_do_not_become_new_companies (tes
 test_identity_does_not_merge_foreign_branches_shared_domains_or_capabilities (test_global_programme.GlobalProgrammeTests.test_identity_does_not_merge_foreign_branches_shared_domains_or_capabilities) ... ok
 test_partial_counts_duplicate_ids_unsafe_urls_and_stale_claims (test_global_programme.GlobalProgrammeTests.test_partial_counts_duplicate_ids_unsafe_urls_and_stale_claims) ... ok
 test_permission_gated_csv_json_and_private_fields (test_global_programme.GlobalProgrammeTests.test_permission_gated_csv_json_and_private_fields) ... ok
+test_registered_json_csv_and_failures_feed_review_without_publication (test_global_programme.GlobalProgrammeTests.test_registered_json_csv_and_failures_feed_review_without_publication) ... ok
 test_repeat_import_changes_and_complete_absence_are_review_signals_only (test_global_programme.GlobalProgrammeTests.test_repeat_import_changes_and_complete_absence_are_review_signals_only) ... ok
 test_source_key_collision_cannot_silently_rebrand_an_existing_company (test_global_programme.GlobalProgrammeTests.test_source_key_collision_cannot_silently_rebrand_an_existing_company) ... ok
 test_complete_parent_records_and_historical_files_are_unchanged (test_global_visibility.GlobalVisibilityTests.test_complete_parent_records_and_historical_files_are_unchanged) ... ok
@@ -284,6 +285,6 @@ test_rules_audit_reports_unavailable_and_empty_rules_honestly (test_v10.LaunchTe
 test_same_city_named_facilities_need_identity_review (test_v10.LaunchTests.test_same_city_named_facilities_need_identity_review) ... ok
 
 ----------------------------------------------------------------------
-Ran 284 tests in 62.620s
+Ran 285 tests in 64.784s
 
 OK

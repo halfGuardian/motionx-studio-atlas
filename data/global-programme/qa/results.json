@@ -2,8 +2,8 @@
   "tested_on": "2026-11-07",
   "environment": "Managed cloud, Python 3.12.14, Node.js v24.22.1, Chromium 155.0.8059.79, localhost HTTP subdirectory; not a deployed Pages verification or physical low-memory handset. Real and sharded synthetic benchmark runs overlapped read-only validation work; raw conditions/results retained.",
   "python": {
-    "tests": 284,
-    "passed": 284,
+    "tests": 285,
+    "passed": 285,
     "failed": 0
   },
   "javascript": {
@@ -115,7 +115,7 @@
     "full_warning_report": "canonical-validation.json"
   },
   "catalogue_reproduction": "passed: complete layered release replay; original record/file hashes and historical reports retained",
-  "global_reproduction": "passed: 44,394 accountable observations, 178 country receipts, 209 preserved parent research files",
+  "global_reproduction": "passed: 44,818 accountable observations, including 424 configured snapshot-history rows, 178 country receipts and 209 preserved parent research files",
   "actual_licensed_snapshot": {
     "records": 424,
     "first_signals": 424,
@@ -126,7 +126,7 @@
   "historical_failures_and_resolutions": [
     "Two older browser fixtures were updated to include the new geography module and separate-reference fit behaviour, then passed.",
     "One concurrent legacy 50,000-location baseline fixture timed out; its isolated complete rerun passed all 19 checks. The source-sharded 50,000-location benchmark passed independently.",
-    "A new geographic schema guard initially rejected the original unversioned input. Backward compatibility was restored and all 284 Python checks passed."
+    "A new geographic schema guard initially rejected the original unversioned input. Backward compatibility was restored and all 285 Python checks passed."
   ],
   "independent_quality": {
     "sample_candidates": 14,
@@ -147,5 +147,14 @@
     "checks": 4,
     "passed": 4,
     "note": "Same four dashboard cases rerun against an independently packaged HTTP directory; not added again to the 78 unique HTTP checks. Relative scripts, safe exports, mobile and missing-report behaviour pass."
+  },
+  "registered_snapshot_bridge": {
+    "actual_source_rows": 424,
+    "additional_canonical_records": 0,
+    "source_identity_keys_already_represented": 424,
+    "failed_latest_snapshot_preserves_prior_candidates": true,
+    "recovered_changes_compared_to_last_known_facts": true,
+    "configured_source_count": 1,
+    "policy_revisions_require_review": true
   }
 }
