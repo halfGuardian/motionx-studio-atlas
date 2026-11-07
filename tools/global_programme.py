@@ -38,6 +38,18 @@ def bounded(path):
     return read(path)
 
 
+def validate_assessments(value):
+    if value.get('version')!=1 or not isinstance(value.get('sources'),list):raise ValueError('Invalid source-assessment schema')
+    iso(value['reviewed_on']);seen=set()
+    for row in value['sources']:
+        if row['id'] in seen or row.get('automatic_collection') is not False or row.get('fully_enumerated') is not False or row.get('human_approved') is not False or row.get('records_admitted')!=0:raise ValueError('Assessment cannot grant collection, completeness or approval')
+        seen.add(row['id']);iso(row['observed_on'])
+        for field in ('url','robots_url','terms_url'):
+            if (field!='terms_url' or row.get(field)) and not url_valid(row.get(field,'')):raise ValueError('Unsafe source-assessment URL')
+        if type(row.get('accessible_pages')) is not int or row['accessible_pages']<0:raise ValueError('Invalid page enumeration count')
+    return value['sources']
+
+
 def normalise(row):
     if not isinstance(row,dict) or set(row)-FIELDS:raise ValueError('Unsupported/private observation fields')
     result={'website':'','city':'','country':'','aliases':[],'service_claims':[],'relationship_claims':[],'location_claim':'','status_claim':'',**copy.deepcopy(row)}
@@ -269,7 +281,7 @@ def build(home=HOME):
     for p in sorted((home/'inputs').glob('country-source-search*.json')):search+=read(p)['countries']
     counts=Counter(r['country'] for r in rows if r['country']);searched={r['country']:r for r in search}
     if len(searched)!=len(search) or set(searched)!=set(counts):raise ValueError('Every represented country/territory needs exactly one search receipt')
-    assessments=read(home/'inputs/source-assessments.json')['sources'];country_rows=[]
+    assessments=validate_assessments(bounded(home/'inputs/source-assessments.json'));country_rows=[]
     for c,n in sorted(counts.items()):
         hits=searched[c]['hits'];reviews=[s for s in assessments if s['country']==c]
         country_rows.append({'country':c,'region':region(c),'catalogue_references':n,'retained_locations':sum(r['country']==c and r['record_kind']=='retained_location' for r in rows),'company_references':sum(r['country']==c and r['record_kind']=='company_reference' for r in rows),'source_discovery':searched[c],'source_leads':len(hits),'page_assessments':len(reviews),'fully_enumerated_new_sources':0,'local_language_coverage':'not_systematically_assessed','current_industry_completeness':'not_established','human_approved':False})

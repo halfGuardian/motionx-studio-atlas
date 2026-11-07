@@ -11,6 +11,7 @@ from discovery import ROOT,read,write,digest
 from launch_readiness import records
 from bulk_catalog import compact,sha
 from validate import url_valid
+from nz_quality_gate import csv_safe
 HOME=ROOT/'data/global-programme'
 DISPOSITIONS={'company_identity_no_verified_location','source_supported_city_region','reviewed_city_reference','independently_supported_facility','identity_geography_conflict','historical_operation_review','insufficient_evidence'}
 
@@ -54,7 +55,7 @@ def save(value,audit,out):
     out=Path(out);write(out/'unpinned-companies.json',audit);write(out/'visibility-summary.json',value['summary'])
     with (out/'unpinned-companies.csv').open('w',newline='',encoding='utf-8') as f:
         fields=['record_id','name','country','city','disposition','reason','evidence','source_observed_on','license'];w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader()
-        for row in audit:w.writerow({k:("'"+str(row[k]) if str(row[k]).lstrip().startswith(('=','+','-','@')) else row[k]) for k in fields})
+        for row in audit:w.writerow({k:csv_safe(row[k]) for k in fields})
 
 def check(home=HOME):
     baseline=read(home/'inputs/baseline.json');m,rows=records(ROOT/'data/public',ROOT/'studios.json')

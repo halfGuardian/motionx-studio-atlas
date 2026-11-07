@@ -1,7 +1,7 @@
 import copy,csv,gzip,json,sys,tempfile,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from global_programme import load_snapshot,advance,empty_state,check_state,GlobalIndex,reconcile,HOME,OUTCOMES
+from global_programme import load_snapshot,advance,empty_state,check_state,GlobalIndex,reconcile,validate_assessments,HOME,OUTCOMES
 from discovery import digest
 
 class GlobalProgrammeTests(unittest.TestCase):
@@ -64,6 +64,10 @@ class GlobalProgrammeTests(unittest.TestCase):
         with gzip.open(HOME/'reports/global-report.json.gz','rt') as f:report=json.load(f)
         self.assertEqual(len(report['countries']),178);self.assertEqual(report['summary']['catalogue_records'],42296);self.assertEqual(sum(report['summary']['outcomes'].values()),len(report['observations']));self.assertEqual(len({o['observation_id'] for o in report['observations']}),len(report['observations']));self.assertTrue(all(o['disposition'] in OUTCOMES and not o['human_approved'] and o['canonical_update'] is None for o in report['observations']));self.assertEqual(report['summary']['company_geography']['company_only_records'],1677)
         self.assertTrue(all(not s['automatic_collection'] and not s['fully_enumerated'] for s in report['source_assessments']));self.assertIsNone(report['summary']['human_recall']);self.assertFalse(report['summary']['global_complete'])
+        source=json.loads((HOME/'inputs/source-assessments.json').read_text());validate_assessments(source)
+        for change in ({'url':'javascript:alert(1)'},{'terms_url':'https://localhost/'},{'automatic_collection':True},{'human_approved':True},{'fully_enumerated':True}):
+            invalid=copy.deepcopy(source);invalid['sources'][0].update(change)
+            with self.subTest(change=change),self.assertRaises(ValueError):validate_assessments(invalid)
 
     def test_source_key_collision_cannot_silently_rebrand_an_existing_company(self):
         row={'id':'old','company_id':'old-org','name':'Original Studio','website':'https://old.example.org/','country':'Canada','source_provenance':[{'source_id':'test','source_record_id':'a'}]}
