@@ -10,7 +10,12 @@ const pageSize=50;
 const hasPoint=s=>Number.isFinite(s.lat)&&Number.isFinite(s.lng),unified=()=>catalog?.manifest.mode==='unified_research';
 let studios=[],directory=null,matches=[],selected=null,page=0,loaded=false,viewMode='locations',opener=null,openerHash=null;
 let markerGroups=[],spatial=null,searchTimer;
-let catalog=null,routeVersion=0,captureQuick=false,comparison=[];
+let catalog=null,routeVersion=0,captureQuick=false,comparison=[],boutiqueMode=false,boutiqueData=null,boutiqueSearch=new Map();
+function boutiqueOptions(){return {region:$('boutiqueRegion').value,specialisation:$('boutiqueSpecialisation').value,cinematics:$('boutiqueCinematics').checked,realtime:$('boutiqueRealtime').checked,performance:$('boutiquePerformance').checked,size:$('boutiqueSize').value,minimum:$('boutiqueScore').value,status:$('boutiqueStatus').value};}
+function fitBadge(s){const p=boutiqueData?.profiles[s.id];return p?'<span class="fit-badge">'+(p.research_status==='taxonomy_lead'?'Taxonomy lead':p.research_status==='primary_claims_reviewed'?'Primary company claims':'Directory / association evidence')+' · Service alignment '+p.score+'/100 · advisory</span>':'';}
+function boutiqueProfile(s){const p=boutiqueData?.profiles[s.id];if(!p)return '';
+  return '<section class="boutique-profile"><h3>MotionX Commercial Fit · advisory research</h3>'+fitBadge(s)+'<p>Service alignment is a research priority, separate from Class '+D.evidenceClass(s)+'. It establishes no buying intent, budget, technical problem or need for external support.</p><dl><dt>Service signals</dt><dd>'+esc(Object.keys(p.signals).join(', '))+'</dd><dt>Size</dt><dd>'+esc(p.size_claim)+(p.size_claim!=='Unknown'?' · directory estimate dated '+esc(p.size_reviewed_on)+'; not current verified headcount':'')+'</dd><dt>Independence</dt><dd>Not established by this classification</dd><dt>External support need</dt><dd>Unknown</dd><dt>Research status</dt><dd>'+esc(p.research_status.replaceAll('_',' '))+'</dd></dl><p>Company-level claims below do not verify services at every facility. No capture stage is inferred.</p><ul>'+p.sources.filter(x=>x.url).map(x=>'<li>'+external(x.url,'Research source')+' · '+esc(x.basis.replaceAll('_',' '))+' · observed '+esc(x.observed_on||'date unavailable')+(x.source_updated_on?' · source snapshot '+esc(x.source_updated_on):'')+'</li>').join('')+'</ul></section>';
+}
 const timings=globalThis.MotionXPerformance={};
 const map=globalThis.L?L.map('map',{worldCopyJump:true,preferCanvas:true,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false}).setView([28,-25],2):null;
 const layer=map?L.layerGroup().addTo(map):null;
@@ -28,7 +33,7 @@ function filtered(){return matches;}
 function locationCard(s){
   const org=directory.organisations.get(s.company_id);
   return `<article class="entry evidence-entry-${D.evidenceClass(s)} ${selected===s.id?'selected':''}">
-    ${badge(s,true)}
+    ${badge(s,true)} ${boutiqueMode?fitBadge(s):''}
     ${profileLink('organisation',org.id,org.name,'class="org-link"')}
     <h3>${profileLink('location',s.id,s.name,`class="profile-link" data-id="${esc(s.id)}"`)}</h3>
     <div class="muted">${esc(s.city||'City not supplied')}, ${esc(s.country||'Country not supplied')}</div>
@@ -54,7 +59,9 @@ function renderList(){
 }
 function render(){
   if(!loaded)return;
-  const start=performance.now();matches=D.queryDirectory(directory,controls());timings.search_ms=performance.now()-start;
+  const start=performance.now(),filters=controls();matches=D.queryDirectory(directory,boutiqueMode?{...filters,query:''}:filters);
+  if(boutiqueMode&&boutiqueData){matches=MotionXBoutique.filter(matches,boutiqueData.profiles,{...boutiqueOptions(),query:filters.query,texts:boutiqueSearch});if($('sortResults').value==='relevance')matches.sort((a,b)=>boutiqueData.profiles[b.id].score-boutiqueData.profiles[a.id].score||a.name.localeCompare(b.name));}
+  $('boutiqueFilters').hidden=!boutiqueMode;timings.search_ms=performance.now()-start;
   const selectedCaps=controls().capabilities.length;$('capabilitySummary').textContent=`Capabilities · ${selectedCaps?selectedCaps+' selected':'any'}`;
   renderList();const points=matches.filter(hasPoint);markerGroups=D.coordinateGroups(points);spatial=D.createSpatialIndex(markerGroups);renderMarkers();$('fitResults').disabled=!map||!markerGroups.length;
   const counts=D.evidenceCounts(points);for(const c of ['A','B','C'])$('legend'+c).textContent=counts[c].toLocaleString();
@@ -124,6 +131,7 @@ function locationProfile(s){
     <h3>Specialisations & location</h3><p>${s.categories.map(c=>`<span class="tag">${esc(c)}</span>`).join('')}</p>
     <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.source_provenance?'Original source reference':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':s.source_provenance?'Website listed by source':'Official website')}</dd></dl>
     <h3>Evidence & review</h3><p>${external(s.evidence,s.source_provenance?'Source dataset':'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
+    ${boutiqueProfile(s)}
     <h3>Organisation relationships</h3>${relationshipList([s])}
     ${s.source_provenance?'<h3>Directory provenance & reuse</h3><p class="source-note">Current operation, physical facility type and services have not been independently corroborated. The source category is not a verified capability. Observed: '+esc(s.source_observed_on)+'. Identity: '+esc(s.identity_status.replaceAll('_',' '))+(s.identity_status==='matched_existing'?'. This is a candidate match to a retained operating identity; it does not confirm a physical branch or ownership.':'')+'</p><ul>'+s.source_provenance.map(p=>'<li>'+esc(p.source_id+' / '+p.source_record_id)+' · '+external(p.url,'Source object')+' · '+external(p.license_url,p.license==='UNSPECIFIED'?'Source reuse terms not specified':p.license)+' · '+esc(p.observed_on)+'</li>').join('')+'</ul><p class="muted">'+esc(s.attribution)+'</p>':''}
     ${s.research_reasons?.length?'<h3>Research notes</h3><ul>'+s.research_reasons.map(r=>'<li>'+esc(r)+'</li>').join('')+'</ul><p>Source status: '+esc(s.source_status||'Not supplied')+' — source assertion, not a MotionX closure or current-operation decision.</p>':''}
@@ -152,8 +160,9 @@ function organisationProfile(id){
     <p class="muted">Grouping is based on cited relationships; related brands do not inherit each other’s services.</p>
     ${!org?relationshipList(rows):''}<p><a href="${D.profileHash('organisation',id)}">Permanent link to this ${org?'organisation':'group'}</a></p>`;
 }
-function navigate(kind,id,element){if(element){opener=element;openerHash=element.getAttribute('href');}const hash=D.profileHash(kind,id);if(location.hash!==hash)history.pushState(null,'',hash);applyRoute();}
+function navigate(kind,id,element){clearTimeout(searchTimer);if(element){opener=element;openerHash=element.getAttribute('href');}const hash=D.profileHash(kind,id);if(location.hash!==hash)history.pushState(null,'',hash);applyRoute();}
 async function compareRecords(ids){
+  clearTimeout(searchTimer);
   if(ids.length!==2||ids[0]===ids[1]||ids.some(id=>!directory.byId.has(id)))return;
   const version=++routeVersion;$('detail').hidden=false;$('detailContent').textContent='Loading both source records…';
   try{const rows=await Promise.all(ids.map(id=>catalog?catalog.details(id):directory.byId.get(id)));if(version!==routeVersion)return;
@@ -195,21 +204,25 @@ document.addEventListener('click',e=>{
   const anchor=e.target.closest('a[href^="#/"]');if(!anchor||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
   const route=D.parseProfileHash(anchor.getAttribute('href'));e.preventDefault();if(route.kind==='directory')closeProfile();else if(route.kind!=='invalid')navigate(route.kind,route.id,anchor);
 });
-function syncQuickFilters(){const current=captureQuick?'capture':$('recordKind').value==='company_reference'?'companies':$('evidenceClass').value||'all';$('evidenceClass').dataset.selected=$('evidenceClass').value;for(const button of document.querySelectorAll('[data-quick]'))button.setAttribute('aria-pressed',String(button.dataset.quick===current));}
-function resetFilters(){for(const id of ['search','country','city','category','locationType','evidenceClass','recordKind','organisation','researchFocus'])$(id).value='';captureQuick=false;$('sortResults').value='relevance';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile(false);render();}
-for(const button of document.querySelectorAll('[data-quick]'))button.onclick=()=>{const value=button.dataset.quick;if(value==='all'){resetFilters();return;}captureQuick=value==='capture';$('evidenceClass').value=['A','B','C'].includes(value)?value:'';$('recordKind').value=value==='companies'?'company_reference':'';page=0;closeProfile(false);render();};
+function syncQuickFilters(){const current=boutiqueMode?'boutique':captureQuick?'capture':$('recordKind').value==='company_reference'?'companies':$('evidenceClass').value||'all';$('evidenceClass').dataset.selected=$('evidenceClass').value;for(const button of document.querySelectorAll('[data-quick]'))button.setAttribute('aria-pressed',String(button.dataset.quick===current));}
+function resetFilters(){clearTimeout(searchTimer);for(const id of ['search','country','city','category','locationType','evidenceClass','recordKind','organisation','researchFocus','boutiqueRegion','boutiqueSpecialisation','boutiqueSize','boutiqueStatus'])$(id).value='';captureQuick=false;boutiqueMode=false;$('boutiqueScore').value='0';for(const id of ['boutiqueCinematics','boutiqueRealtime','boutiquePerformance'])$(id).checked=false;$('sortResults').value='relevance';$('confirmedOnly').checked=false;$('capabilityMode').value='all';document.querySelectorAll('#capabilityOptions input').forEach(i=>{i.checked=false;});page=0;closeProfile(false);render();}
+for(const button of document.querySelectorAll('[data-quick]'))button.onclick=async()=>{const value=button.dataset.quick;if(value==='all'){resetFilters();return;}
+  if(value==='boutique'&&!boutiqueData){button.disabled=true;button.textContent='Loading boutique evidence…';try{boutiqueData=catalog?await catalog.boutique():{profiles:{}};boutiqueSearch=new Map(directory.entries.filter(e=>boutiqueData.profiles[e.row.id]).map(e=>[e.row.id,e.text]));const regions=[...new Set(Object.values(boutiqueData.profiles).map(p=>p.region))].sort();$('boutiqueRegion').replaceChildren(new Option('All regions',''),...regions.map(r=>new Option(r,r)));}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='Boutique evidence unavailable. '+error.message+' Select Boutique Studios to retry. ';return;}finally{button.disabled=false;button.textContent='Boutique Studios';}}
+  boutiqueMode=value==='boutique';captureQuick=value==='capture';$('evidenceClass').value=['A','B','C'].includes(value)?value:'';$('recordKind').value=value==='companies'?'company_reference':'';page=0;closeProfile(false);render();if(boutiqueMode)$('dataStatus').hidden=true;};
 $('resetFilters').onclick=resetFilters;
 for(const id of ['search','country','city','category','locationType','evidenceClass','recordKind','organisation','researchFocus','sortResults','confirmedOnly','capabilityMode','capabilityOptions'])$(id).addEventListener('input',()=>{
   if(['evidenceClass','recordKind'].includes(id))captureQuick=false;
   clearTimeout(searchTimer);searchTimer=setTimeout(()=>{page=0;closeProfile(false);render();},['search','city'].includes(id)?120:0);
 });
+for(const input of document.querySelectorAll('#boutiqueFilters input,#boutiqueFilters select'))input.addEventListener('input',()=>{page=0;closeProfile(false);render();});
 for(const mode of ['locations','organisations'])$(mode+'View').onclick=()=>{viewMode=mode;page=0;for(const m of ['locations','organisations'])$(m+'View').setAttribute('aria-pressed',String(m===mode));renderList();};
 $('previousPage').onclick=()=>{page--;renderList();};$('nextPage').onclick=()=>{page++;renderList();};
 $('fitResults').onclick=()=>{const points=matches.filter(hasPoint);if(points.length&&map)map.fitBounds(L.latLngBounds(points.map(r=>[r.lat,r.lng])).pad(.25),{maxZoom:10,animate:false});};
-$('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const bundle=catalog?await catalog.exportBundle(snapshot):{rows:snapshot};const rows=bundle.rows;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows,bundle)],{type:'text/csv;charset=utf-8'}));a.download='motionx_atlas_filtered_v1.1.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
+$('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const bundle=catalog?await catalog.exportBundle(snapshot):{rows:snapshot};const rows=bundle.rows.map(r=>{const p=boutiqueData?.profiles[r.id];return p?{...r,advisory_service_alignment:p.score,advisory_service_signals:Object.keys(p.signals),advisory_research_status:p.research_status}:r;});const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows,bundle)],{type:'text/csv;charset=utf-8'}));a.download='motionx_atlas_filtered_v1.2.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
 window.addEventListener('resize',()=>setTimeout(()=>map?.invalidateSize(),80));
 function setControls(enabled){document.querySelectorAll('#filters input,#filters select,#quickFilters button,#exportCsv,#sortResults,#resetFilters,#fitResults,#locationsView,#organisationsView,#previousPage,#nextPage').forEach(el=>{el.disabled=!enabled;});if(!map)$('fitResults').disabled=true;}
 async function initialize(){
+  boutiqueMode=false;boutiqueData=null;
   const start=performance.now();loaded=false;setControls(false);$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='Loading studio database… ';$('retryLoad').hidden=true;$('count').textContent='Loading locations…';$('companies').textContent='';$('detail').hidden=true;
   studios=[];matches=[];directory=null;markerGroups=[];spatial=null;layer?.clearLayers();$('list').textContent='Loading the complete catalogue…';$('catalogSummary').replaceChildren();for(const c of ['A','B','C'])$('legend'+c).textContent='—';
   try{

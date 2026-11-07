@@ -220,7 +220,7 @@
   }
   const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
     'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships',
-    'evidence_class','record_kind','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','research_reasons','source_status','source_type','potential_duplicates','export_licences','export_notices'];
+    'evidence_class','record_kind','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','research_reasons','source_status','source_type','potential_duplicates','export_licences','export_notices','advisory_service_alignment','advisory_service_signals','advisory_research_status'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
       value && typeof value==='object'?JSON.stringify(value):String(value??'');

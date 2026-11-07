@@ -1,0 +1,2405 @@
+{
+  "method": "Retrospective entity-disjoint split frozen before classifier implementation; discovery source overlap exists. Not a blind prospective or source-disjoint estimate of global recall. Collector never reads benchmark files.",
+  "splits": {
+    "development": {
+      "total": 100,
+      "found": 96,
+      "recall": 0.96,
+      "statuses": {
+        "discovered_correctly": 92,
+        "alternate_identity": 4,
+        "unrelated_or_misleading": 4
+      },
+      "entries": [
+        {
+          "name": "Frame Machine",
+          "domain": "framemachine.tv",
+          "city": "Santa Monica",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.framemachine.tv/about-frame_machine/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Official animation, real-time VFX and Unreal co-development services; official studio address separately reviewed.",
+          "qualification": "size and ownership not independently established",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-39fd34a0-9be1-4ac0-a46e-ebd53a1599ff"
+          ],
+          "research_visible_ids": [
+            "overture-39fd34a0-9be1-4ac0-a46e-ebd53a1599ff"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Floating Rock",
+          "domain": "floating-rock.com",
+          "city": "Wellington",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "alternate_identity",
+          "record_ids": [
+            "boutique-5926fcc99b16ed8ea595dcf5459f"
+          ],
+          "research_visible_ids": [
+            "boutique-5926fcc99b16ed8ea595dcf5459f"
+          ],
+          "reason": "domain and compatible operating name (alternate identity)",
+          "confidence": "medium"
+        },
+        {
+          "name": "TinFilmUS",
+          "domain": "tinfilmus.com",
+          "city": "Brooklyn",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://tinfilmus.com/about.html",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Stop-motion production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-794707dca6e2a37fda2a66999fb0"
+          ],
+          "research_visible_ids": [
+            "boutique-794707dca6e2a37fda2a66999fb0"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Cause and FX",
+          "domain": "causefx.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-7086ce78e01066fe08ae15773f87"
+          ],
+          "research_visible_ids": [
+            "boutique-7086ce78e01066fe08ae15773f87"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Resin",
+          "domain": "resin.com.au",
+          "city": "Adelaide",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "alternate_identity",
+          "record_ids": [
+            "resin-adelaide"
+          ],
+          "research_visible_ids": [
+            "resin-adelaide"
+          ],
+          "reason": "domain and compatible operating name (alternate identity)",
+          "confidence": "medium"
+        },
+        {
+          "name": "POW Studios",
+          "domain": "powpost.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6d8f145661de5e58b4cc1111c96c"
+          ],
+          "research_visible_ids": [
+            "boutique-6d8f145661de5e58b4cc1111c96c"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Masters of Reality",
+          "domain": "morvfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-3ed6d7f4574b4da11480b81bb635"
+          ],
+          "research_visible_ids": [
+            "boutique-3ed6d7f4574b4da11480b81bb635"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Pixie Post",
+          "domain": "pixievfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-33a1fe2049c81a02dff31f60be0f"
+          ],
+          "research_visible_ids": [
+            "boutique-33a1fe2049c81a02dff31f60be0f"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Dog Ears",
+          "domain": "cheersdogears.com",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-b02ab6124400146cb2bc1d95b5bf"
+          ],
+          "research_visible_ids": [
+            "boutique-b02ab6124400146cb2bc1d95b5bf"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Maverick Films",
+          "domain": "maverickfilms.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-e851e12ada50884ef58e392d5b77"
+          ],
+          "research_visible_ids": [
+            "boutique-e851e12ada50884ef58e392d5b77"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Dream Logic Studios",
+          "domain": "dreamlogic.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-2c6c814e-4e44-489c-9b0d-fec52311706e"
+          ],
+          "research_visible_ids": [
+            "overture-2c6c814e-4e44-489c-9b0d-fec52311706e"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "ModelFarm",
+          "domain": "modelfarm.com.au",
+          "city": "Adelaide",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX, Animation, Virtual production production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-bd922ba2cd1dcd66361049c27ed0"
+          ],
+          "research_visible_ids": [
+            "boutique-bd922ba2cd1dcd66361049c27ed0"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "NAMU Animation",
+          "domain": "namuanimation.com",
+          "city": "Seoul",
+          "country": "South Korea",
+          "region": "Asia",
+          "source": "https://namuanimation.com/?act=info.page&pcode=company2",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-8d73d48cf82d5fbc115b47ff944b"
+          ],
+          "research_visible_ids": [
+            "boutique-8d73d48cf82d5fbc115b47ff944b"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Teaspoon Films",
+          "domain": "teaspoonfilms.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-292f42820888a241f7b2e2dd1ad9"
+          ],
+          "research_visible_ids": [
+            "boutique-292f42820888a241f7b2e2dd1ad9"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Yukfoo",
+          "domain": "yukfoo.net",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9dced7d001f52caa8bb7c43b3e34"
+          ],
+          "research_visible_ids": [
+            "boutique-9dced7d001f52caa8bb7c43b3e34"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Method",
+          "domain": "method.digital",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-33ad81ef050902966f6d22eace17"
+          ],
+          "research_visible_ids": [
+            "boutique-33ad81ef050902966f6d22eace17"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Park Road Post Production",
+          "domain": "parkroad.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9ac71155d028a35da92048982c74"
+          ],
+          "research_visible_ids": [
+            "boutique-9ac71155d028a35da92048982c74"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "The Down Low Concept",
+          "domain": "thedownlowconcept.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f9af9dc05e06d640738a077b4028"
+          ],
+          "research_visible_ids": [
+            "boutique-f9af9dc05e06d640738a077b4028"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "AMA Digital Studio",
+          "domain": "amadigitalstudios.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1e9e017434d7965bd6853a729b42"
+          ],
+          "research_visible_ids": [
+            "boutique-1e9e017434d7965bd6853a729b42"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Olala Studio",
+          "domain": "olalastudio.my",
+          "city": "",
+          "country": "",
+          "region": "Unknown",
+          "source": "https://olalastudio.my/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-afc8f09790d01168bf47cd798efc"
+          ],
+          "research_visible_ids": [
+            "boutique-afc8f09790d01168bf47cd798efc"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Igloo Studio",
+          "domain": "igloostudio.com",
+          "city": "",
+          "country": "Thailand",
+          "region": "Asia",
+          "source": "https://igloostudio.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 3D, Rigging, Previs, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-3ecc7ecec4982f34a90f42b31f92"
+          ],
+          "research_visible_ids": [
+            "boutique-3ecc7ecec4982f34a90f42b31f92"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Spy My Studio",
+          "domain": "spy.my",
+          "city": "Kuala Lumpur",
+          "country": "Malaysia",
+          "region": "Asia",
+          "source": "https://spy.my/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-45447431c51cf6556cc9e6561964"
+          ],
+          "research_visible_ids": [
+            "boutique-45447431c51cf6556cc9e6561964"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Evil Eye Pictures",
+          "domain": "evileyepictures.com",
+          "city": "",
+          "country": "",
+          "region": "Unknown",
+          "source": "https://evileyepictures.com/services/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Unreal Engine, Character animation, Cinematics production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-eb78682df65c713b3e2ea45e167d"
+          ],
+          "research_visible_ids": [
+            "boutique-eb78682df65c713b3e2ea45e167d"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Baobab Studios",
+          "domain": "baobabstudios.com",
+          "city": "",
+          "country": "",
+          "region": "Unknown",
+          "source": "https://www.baobabstudios.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-4f12eceb5a8b7288cea60dfed313"
+          ],
+          "research_visible_ids": [
+            "boutique-4f12eceb5a8b7288cea60dfed313"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Studio 9",
+          "domain": "studio9.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-1abebc2b-f9ec-45b2-a2a8-641aab5b074b",
+            "overture-7f41fc64-8da8-4c09-ab80-455fc067c802",
+            "overture-7fe490d7-995b-4e9e-9d25-01311728d2b1",
+            "overture-dd5fcd7f-3737-4318-abc9-2821087ff6af"
+          ],
+          "research_visible_ids": [],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Algorithm",
+          "domain": "algorithm.ie",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-78a57e249b7131b38271e4d92c28"
+          ],
+          "research_visible_ids": [
+            "boutique-78a57e249b7131b38271e4d92c28"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "JAM Media",
+          "domain": "jammedia.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-294b575d-9488-4391-8739-f85c77fa6951"
+          ],
+          "research_visible_ids": [
+            "overture-294b575d-9488-4391-8739-f85c77fa6951"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Studio Psycho",
+          "domain": "studiopsycho.com",
+          "city": "Melbourne",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-aa13ff36721b2d2a7b29a983fab9"
+          ],
+          "research_visible_ids": [
+            "boutique-aa13ff36721b2d2a7b29a983fab9"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Shadedbox Animations",
+          "domain": "shadedbox.com",
+          "city": "Los Angeles",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.shadedbox.com/about/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Character animation, Cinematics production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1948fdda19b8a97e0fa6c046e6eb"
+          ],
+          "research_visible_ids": [
+            "boutique-1948fdda19b8a97e0fa6c046e6eb"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Final Boss VFX",
+          "domain": "finalbossvfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-2dfa80272cb10c18166c6d29135c"
+          ],
+          "research_visible_ids": [
+            "boutique-2dfa80272cb10c18166c6d29135c"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Fathom",
+          "domain": "fathomvfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f70b29b0ab4ecb19c7f47e54b988"
+          ],
+          "research_visible_ids": [
+            "boutique-f70b29b0ab4ecb19c7f47e54b988"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Moetion Films",
+          "domain": "moetionfilms.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-0593eadd-2b2a-4c22-8103-f4561c8d9363"
+          ],
+          "research_visible_ids": [
+            "overture-0593eadd-2b2a-4c22-8103-f4561c8d9363"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Blackbird",
+          "domain": "studioblackbird.com.au",
+          "city": "Sydney",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX, Character animation, Previs production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-5b0a4f86c7832a4a5c659c2364b7"
+          ],
+          "research_visible_ids": [
+            "boutique-5b0a4f86c7832a4a5c659c2364b7"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Loomi Animation",
+          "domain": "loomianimation.ca",
+          "city": "Quebec City",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://www.loomianimation.ca/?lang=en",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-939c72aa-67cf-4fd9-aa24-4703cfb97562"
+          ],
+          "research_visible_ids": [
+            "overture-939c72aa-67cf-4fd9-aa24-4703cfb97562"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Kavaleer",
+          "domain": "kavaleer.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "alternate_identity",
+          "record_ids": [
+            "overture-690450d9-598c-4341-8b8c-325e5349a300"
+          ],
+          "research_visible_ids": [
+            "overture-690450d9-598c-4341-8b8c-325e5349a300"
+          ],
+          "reason": "domain and compatible operating name (alternate identity)",
+          "confidence": "medium"
+        },
+        {
+          "name": "Treehouse Republic",
+          "domain": "treehouserepublic.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-6fe103f6-bcb8-4453-8adf-a9ecff689c75"
+          ],
+          "research_visible_ids": [
+            "overture-6fe103f6-bcb8-4453-8adf-a9ecff689c75"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Cirkus",
+          "domain": "cirkus.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-ec24dc07094a8ed04f0d71aa0bff"
+          ],
+          "research_visible_ids": [
+            "boutique-ec24dc07094a8ed04f0d71aa0bff"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Big Jump Entertainment",
+          "domain": "bigjumpent.com",
+          "city": "Ottawa",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://bigjumpent.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-5c57a827-2d5a-4197-9fa5-422455155aff"
+          ],
+          "research_visible_ids": [
+            "overture-5c57a827-2d5a-4197-9fa5-422455155aff"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Distillery Films",
+          "domain": "distilleryfilms.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-c5f938170abd106b13481fc0c948"
+          ],
+          "research_visible_ids": [
+            "boutique-c5f938170abd106b13481fc0c948"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "SANAM",
+          "domain": "sanam.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-5ecfdee36da64aad9854ffccec51"
+          ],
+          "research_visible_ids": [
+            "boutique-5ecfdee36da64aad9854ffccec51"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Luce Creative",
+          "domain": "luce-creative.com",
+          "city": "Melbourne",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-b6acece09cad8546d16a964d7bb3"
+          ],
+          "research_visible_ids": [
+            "boutique-b6acece09cad8546d16a964d7bb3"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Rascal",
+          "domain": "rascalkids.app",
+          "city": "Wellington",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-2e286bee-accc-4315-9c9f-946df855110f"
+          ],
+          "research_visible_ids": [],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Dúlamán Studios",
+          "domain": "dulamanstudios.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9d407ecf2217655938390deb1eb8"
+          ],
+          "research_visible_ids": [
+            "boutique-9d407ecf2217655938390deb1eb8"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Well Told Entertainment",
+          "domain": "welltold.games",
+          "city": "Orange County",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.welltold.games/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, Cinematics production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-96fb82f4fca368b2c66f1378ae73"
+          ],
+          "research_visible_ids": [
+            "boutique-96fb82f4fca368b2c66f1378ae73"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Trinity Motion Pictures",
+          "domain": "trinitymotionpictures.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1b64456f04b2edcd4a7761c40ede"
+          ],
+          "research_visible_ids": [
+            "boutique-1b64456f04b2edcd4a7761c40ede"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "KissingParty",
+          "domain": "kissingparty.io",
+          "city": "Los Angeles",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://kissingparty.io/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-0bae9ff128d068f50567d025e915"
+          ],
+          "research_visible_ids": [
+            "boutique-0bae9ff128d068f50567d025e915"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Animation Research Ltd",
+          "domain": "arl.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-3575a420aa5cab2ccb03ba439103"
+          ],
+          "research_visible_ids": [
+            "boutique-3575a420aa5cab2ccb03ba439103"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Bungalow Films",
+          "domain": "bungalowfilms.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f76b6633afa967d9f9f7f3ef113c"
+          ],
+          "research_visible_ids": [
+            "boutique-f76b6633afa967d9f9f7f3ef113c"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Animation Rebel",
+          "domain": "animationrebel.com",
+          "city": "",
+          "country": "",
+          "region": "Unknown",
+          "source": "https://www.animationrebel.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Character animation, Mocap cleanup, Cinematics production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-ec06daaf6cbbbde4e180596ca69d"
+          ],
+          "research_visible_ids": [
+            "boutique-ec06daaf6cbbbde4e180596ca69d"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Paper Owl Films",
+          "domain": "paperowlfilms.com",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-5dfb528d-6668-4cdc-b208-0a18e49bec63"
+          ],
+          "research_visible_ids": [
+            "overture-5dfb528d-6668-4cdc-b208-0a18e49bec63"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Department of Post",
+          "domain": "departmentofpost.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-5d999366b82fdb0709d0d5b35c0a"
+          ],
+          "research_visible_ids": [
+            "boutique-5d999366b82fdb0709d0d5b35c0a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Mukpuddy Animation Ltd",
+          "domain": "mukpuddy.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "alternate_identity",
+          "record_ids": [
+            "boutique-8b66b9f2265eb6ec006aa666ec0c"
+          ],
+          "research_visible_ids": [
+            "boutique-8b66b9f2265eb6ec006aa666ec0c"
+          ],
+          "reason": "domain and compatible operating name (alternate identity)",
+          "confidence": "medium"
+        },
+        {
+          "name": "Studio Eeksaurus",
+          "domain": "studioeeksaurus.com",
+          "city": "Mumbai",
+          "country": "India",
+          "region": "Asia",
+          "source": "https://studioeeksaurus.com/eeksaurus-story-awards-about/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-03cc13a8-176a-4f8b-8739-c748ec2afd2a"
+          ],
+          "research_visible_ids": [
+            "overture-03cc13a8-176a-4f8b-8739-c748ec2afd2a"
+          ],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Paper Panther",
+          "domain": "paperpanther.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6d34033a88414f7f35e7ba72c5ba"
+          ],
+          "research_visible_ids": [
+            "boutique-6d34033a88414f7f35e7ba72c5ba"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Studio Meala",
+          "domain": "studiomeala.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-febddb395f0a999cc6648665f40a"
+          ],
+          "research_visible_ids": [
+            "boutique-febddb395f0a999cc6648665f40a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Animaza Studios",
+          "domain": "animaza.com",
+          "city": "Miami",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.animaza.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f392c7bf0b0467d8c92687462098"
+          ],
+          "research_visible_ids": [
+            "boutique-f392c7bf0b0467d8c92687462098"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Flux Animation",
+          "domain": "fluxmedia.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6c1475bc423eeb209c3ade3248f2"
+          ],
+          "research_visible_ids": [
+            "boutique-6c1475bc423eeb209c3ade3248f2"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Studio Local",
+          "domain": "studiolocal.tv",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-c0139ced-06f4-40e5-b8a9-e1e46b26c84d"
+          ],
+          "research_visible_ids": [
+            "overture-c0139ced-06f4-40e5-b8a9-e1e46b26c84d"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "elk.Studios",
+          "domain": "elkstudios.tv",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-c0d86b0a6cbf365884636cfdf8b4"
+          ],
+          "research_visible_ids": [
+            "boutique-c0d86b0a6cbf365884636cfdf8b4"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Giant Animation",
+          "domain": "giantanimation.ie",
+          "city": "Dublin",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports CG, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-be2cee391488f9a7c5fc2df2f5b7"
+          ],
+          "research_visible_ids": [
+            "boutique-be2cee391488f9a7c5fc2df2f5b7"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Mechanic Animation",
+          "domain": "mechanicanimation.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1c976cea5408ef2db28403748975"
+          ],
+          "research_visible_ids": [
+            "boutique-1c976cea5408ef2db28403748975"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Stretchy",
+          "domain": "kiriandlou.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, Stop-motion production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-d3d598e39bb29eef63e8555988f1"
+          ],
+          "research_visible_ids": [
+            "boutique-d3d598e39bb29eef63e8555988f1"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Wiggleywoo",
+          "domain": "wiggleywoo.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1bca3c2e3ef7c7f1bdb378d409e7"
+          ],
+          "research_visible_ids": [
+            "boutique-1bca3c2e3ef7c7f1bdb378d409e7"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Robot Playground Media",
+          "domain": "robotplaygroundmedia.com",
+          "city": "Singapore",
+          "country": "Singapore",
+          "region": "Asia",
+          "source": "https://www.robotplaygroundmedia.com/about",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9a4db026193fabeaf00c99930ec4"
+          ],
+          "research_visible_ids": [
+            "boutique-9a4db026193fabeaf00c99930ec4"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Curiosity Studio",
+          "domain": "curiositystudio.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-660ec9c953b97783df1acbf562aa"
+          ],
+          "research_visible_ids": [
+            "boutique-660ec9c953b97783df1acbf562aa"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Revelator",
+          "domain": "revelatorstudio.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-86e966c55de07e19602453ff6a72"
+          ],
+          "research_visible_ids": [
+            "boutique-86e966c55de07e19602453ff6a72"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Vinewood Animation",
+          "domain": "vinewoodanimation.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-0fd1adb9348e148d23a029a55f41"
+          ],
+          "research_visible_ids": [
+            "boutique-0fd1adb9348e148d23a029a55f41"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Pikkukala",
+          "domain": "pikkukala.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-4e3a51fdc42f6a95afd576658a39"
+          ],
+          "research_visible_ids": [
+            "boutique-4e3a51fdc42f6a95afd576658a39"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Igloo Animations",
+          "domain": "iglooanimations.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-7aea3584d5647644b307befac93e"
+          ],
+          "research_visible_ids": [
+            "boutique-7aea3584d5647644b307befac93e"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Augenblick Studios",
+          "domain": "augenblickstudios.com",
+          "city": "Brooklyn",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.augenblickstudios.com/about",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-9ef612c4-d0dc-4aa0-bfca-b5234a2eba78"
+          ],
+          "research_visible_ids": [
+            "overture-9ef612c4-d0dc-4aa0-bfca-b5234a2eba78"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "ALT Animation",
+          "domain": "altanimation.com",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-f0c6ebab-67dd-442b-9d8f-8d20f1000264"
+          ],
+          "research_visible_ids": [
+            "overture-f0c6ebab-67dd-442b-9d8f-8d20f1000264"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Sixteen South",
+          "domain": "sixteensouth.tv",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-581633b7-0837-4ad1-b276-c11aa166fce7"
+          ],
+          "research_visible_ids": [
+            "overture-581633b7-0837-4ad1-b276-c11aa166fce7"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Flickerpix",
+          "domain": "flickerpix.com",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-355a9ff32512a12a0830f0872a12"
+          ],
+          "research_visible_ids": [
+            "boutique-355a9ff32512a12a0830f0872a12"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "808 Ltd",
+          "domain": "808ltd.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-893b6733bae793ffe6f2ee45048e"
+          ],
+          "research_visible_ids": [
+            "boutique-893b6733bae793ffe6f2ee45048e"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Stiúidio Fia",
+          "domain": "stiuideofia.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6a3013e1bcd0c30b7d33a2af52b8"
+          ],
+          "research_visible_ids": [
+            "boutique-6a3013e1bcd0c30b7d33a2af52b8"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Trickshot Films",
+          "domain": "trickshotfilms.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-cbb506a5b6122db53c7fdb262837"
+          ],
+          "research_visible_ids": [
+            "boutique-cbb506a5b6122db53c7fdb262837"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Images & Sound",
+          "domain": "imagesandsound.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-3f3aaaa1ceb9bf0aa0a738cd7b6a"
+          ],
+          "research_visible_ids": [
+            "boutique-3f3aaaa1ceb9bf0aa0a738cd7b6a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Cantilever Media",
+          "domain": "cantilever.media",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-78529c3adfc7b0a83a424b71e969"
+          ],
+          "research_visible_ids": [
+            "boutique-78529c3adfc7b0a83a424b71e969"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Brilliant Pictures",
+          "domain": "brilliant-pictures.com",
+          "city": "",
+          "country": "",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-885af2bd-67d7-4c63-b71b-63eed1cface8"
+          ],
+          "research_visible_ids": [],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Piranha Bar",
+          "domain": "piranhabar.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-7c8ce51dd2bf6643fc628f452806"
+          ],
+          "research_visible_ids": [
+            "boutique-7c8ce51dd2bf6643fc628f452806"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "The R&D Studio",
+          "domain": "rnd.my",
+          "city": "Petaling Jaya",
+          "country": "Malaysia",
+          "region": "Asia",
+          "source": "https://rnd.my/about-us/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-bda48b2f-8cd9-4e44-bf7f-2974eca487db"
+          ],
+          "research_visible_ids": [
+            "overture-bda48b2f-8cd9-4e44-bf7f-2974eca487db"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Toybox",
+          "domain": "toybox.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-da6ad4f8d92ac9b259fe6bc0e40a"
+          ],
+          "research_visible_ids": [
+            "boutique-da6ad4f8d92ac9b259fe6bc0e40a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Little Moon",
+          "domain": "littlemoonanimation.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9f2dffb24ba5c1b992855eaedca7"
+          ],
+          "research_visible_ids": [
+            "boutique-9f2dffb24ba5c1b992855eaedca7"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Industrial Brothers",
+          "domain": "industrialbrothers.com",
+          "city": "Toronto",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://www.industrialbrothers.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-b2b2dc7d-8270-4243-a5e0-6749a443d9b9"
+          ],
+          "research_visible_ids": [
+            "overture-b2b2dc7d-8270-4243-a5e0-6749a443d9b9"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Dracogen Studios",
+          "domain": "dracogen.com",
+          "city": "Toronto",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://dracogen.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-90f9796d8926aa5e83a051fa105b"
+          ],
+          "research_visible_ids": [
+            "boutique-90f9796d8926aa5e83a051fa105b"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Sauce FX Studios",
+          "domain": "sauce.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-08b0d6f4e10055b99d8ffbb08148"
+          ],
+          "research_visible_ids": [
+            "boutique-08b0d6f4e10055b99d8ffbb08148"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Goblin Worldwide",
+          "domain": "goblinworldwide.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-20bd1c673f2d18bce4c53dd0d727"
+          ],
+          "research_visible_ids": [
+            "boutique-20bd1c673f2d18bce4c53dd0d727"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "OHUfx",
+          "domain": "ohufx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-8f44a9ff8c947389e8e139c2b0ec"
+          ],
+          "research_visible_ids": [
+            "boutique-8f44a9ff8c947389e8e139c2b0ec"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "OGNR",
+          "domain": "ognr.kr",
+          "city": "Seoul",
+          "country": "South Korea",
+          "region": "Asia",
+          "source": "https://ognr.kr/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-0a22db9eec073053d6f5aa9c93e2"
+          ],
+          "research_visible_ids": [
+            "boutique-0a22db9eec073053d6f5aa9c93e2"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Turnip + Duck",
+          "domain": "turnipandduck.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6d6793a82151dd129427291f7bf7"
+          ],
+          "research_visible_ids": [
+            "boutique-6d6793a82151dd129427291f7bf7"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "37Degrees Studio",
+          "domain": "37degrees-studio.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-1c9253bf41b21ad7f693f98184d1"
+          ],
+          "research_visible_ids": [
+            "boutique-1c9253bf41b21ad7f693f98184d1"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Lech Studio",
+          "domain": "lech.studio",
+          "city": "",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://www.lech.studio/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-2d7bdd429712db419335b91d88d2"
+          ],
+          "research_visible_ids": [
+            "boutique-2d7bdd429712db419335b91d88d2"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "PRPVFX",
+          "domain": "prpvfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-b3918926ba78b69f98b23b2460c3"
+          ],
+          "research_visible_ids": [
+            "boutique-b3918926ba78b69f98b23b2460c3"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "and maps and plans",
+          "domain": "andmapsandplans.com",
+          "city": "Dublin",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-d28c7337cad33c150e7d90a714f6"
+          ],
+          "research_visible_ids": [
+            "boutique-d28c7337cad33c150e7d90a714f6"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Undercover Media",
+          "domain": "undercover-media.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-ce137699c66f09189178ffaae40e"
+          ],
+          "research_visible_ids": [
+            "boutique-ce137699c66f09189178ffaae40e"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Perceptual Engineering",
+          "domain": "perceptual.engineering",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-c5c386e225d9e6c792b8254194ba"
+          ],
+          "research_visible_ids": [
+            "boutique-c5c386e225d9e6c792b8254194ba"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "ZOMA Studios",
+          "domain": "zomastudios.com",
+          "city": "",
+          "country": "",
+          "region": "Unknown",
+          "source": "https://www.zomastudios.com/about-us",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f03595ffd3f23d69f941f46f6d7b"
+          ],
+          "research_visible_ids": [
+            "boutique-f03595ffd3f23d69f941f46f6d7b"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Slap Happy Cartoons",
+          "domain": "slaphappycartoons.com",
+          "city": "",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://slaphappycartoons.com/studio/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-dbbb622a570d90f588e2e0803fff"
+          ],
+          "research_visible_ids": [
+            "boutique-dbbb622a570d90f588e2e0803fff"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Bad Clay Studio",
+          "domain": "bad-clay.com",
+          "city": "Ho Chi Minh City",
+          "country": "Vietnam",
+          "region": "Asia",
+          "source": "https://www.bad-clay.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-61d01908e19bb5e22543593cae12"
+          ],
+          "research_visible_ids": [
+            "boutique-61d01908e19bb5e22543593cae12"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "XZV Studio",
+          "domain": "xzvco.com",
+          "city": "",
+          "country": "Malaysia",
+          "region": "Asia",
+          "source": "https://xzvco.com/about-us/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-f4ade8a856ca8386dd65e6b406b3"
+          ],
+          "research_visible_ids": [
+            "boutique-f4ade8a856ca8386dd65e6b406b3"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        }
+      ]
+    },
+    "held-out": {
+      "total": 19,
+      "found": 17,
+      "recall": 0.8947,
+      "statuses": {
+        "discovered_correctly": 17,
+        "unrelated_or_misleading": 2
+      },
+      "entries": [
+        {
+          "name": "Lazy Sunday",
+          "domain": "lazysunday.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-5cf2322ae3336223ef6b9431427e"
+          ],
+          "research_visible_ids": [
+            "boutique-5cf2322ae3336223ef6b9431427e"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Bizaar Studios",
+          "domain": "bizaarstudios.com",
+          "city": "Los Angeles",
+          "country": "United States",
+          "region": "North America",
+          "source": "https://www.bizaarstudios.com/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-ad24db7248db438b76fdae889975"
+          ],
+          "research_visible_ids": [
+            "boutique-ad24db7248db438b76fdae889975"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Scrawl Animation",
+          "domain": "scrawlanimation.com",
+          "city": "Singapore",
+          "country": "Singapore",
+          "region": "Asia",
+          "source": "https://scrawlanimation.com/about",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-02b32b3e25b0693f01f05a67e5f2"
+          ],
+          "research_visible_ids": [
+            "boutique-02b32b3e25b0693f01f05a67e5f2"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Pioneertown Productions",
+          "domain": "pioneertownproductions.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-6c881618b29b662ad95aa3ef0bdc"
+          ],
+          "research_visible_ids": [
+            "boutique-6c881618b29b662ad95aa3ef0bdc"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Studio Kane",
+          "domain": "studiokane.art",
+          "city": "",
+          "country": "South Korea",
+          "region": "Asia",
+          "source": "https://www.studiokane.art/about-studio",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-45b560220baa0d4816e39d8ea1c4"
+          ],
+          "research_visible_ids": [
+            "boutique-45b560220baa0d4816e39d8ea1c4"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Monster Entertainment",
+          "domain": "monsterentertainment.tv",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-ba11f106ca9a9583282e4cc56efa"
+          ],
+          "research_visible_ids": [
+            "boutique-ba11f106ca9a9583282e4cc56efa"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Deep Animation",
+          "domain": "deepanimation.co.nz",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-9d3cabae9172e007a757f15cf25b"
+          ],
+          "research_visible_ids": [
+            "boutique-9d3cabae9172e007a757f15cf25b"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Enter Yes",
+          "domain": "enteryes.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-8ff40084-b90a-4754-b9ad-5bd367ff5cb7"
+          ],
+          "research_visible_ids": [
+            "overture-8ff40084-b90a-4754-b9ad-5bd367ff5cb7"
+          ],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Cartoon Saloon",
+          "domain": "cartoonsaloon.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-f1da83ce-fb28-4572-9f3a-bb34e5f26160"
+          ],
+          "research_visible_ids": [
+            "overture-f1da83ce-fb28-4572-9f3a-bb34e5f26160"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Dainty Productions",
+          "domain": "daintyproductions.com",
+          "city": "Ottawa",
+          "country": "Canada",
+          "region": "North America",
+          "source": "https://daintyproductions.com/about/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-2f323382fc7774c428f231733c91"
+          ],
+          "research_visible_ids": [
+            "boutique-2f323382fc7774c428f231733c91"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Pixel Zoo",
+          "domain": "pixelzoo.com.au",
+          "city": "Brisbane",
+          "country": "Australia",
+          "region": "Oceania",
+          "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "overture-5c8da17a-ac0b-4095-b1f6-6bd58fa003ca"
+          ],
+          "research_visible_ids": [
+            "overture-5c8da17a-ac0b-4095-b1f6-6bd58fa003ca"
+          ],
+          "reason": "exact name and compatible geography; website unavailable",
+          "confidence": "medium"
+        },
+        {
+          "name": "Albedo",
+          "domain": "albedovfx.com",
+          "city": "",
+          "country": "New Zealand",
+          "region": "Oceania",
+          "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-fbf510be9c53ef964951ef54f1a5"
+          ],
+          "research_visible_ids": [
+            "boutique-fbf510be9c53ef964951ef54f1a5"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Engine House",
+          "domain": "engine-house.co.uk",
+          "city": "",
+          "country": "United Kingdom",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-adafb8376b643881048355b6b25f"
+          ],
+          "research_visible_ids": [
+            "boutique-adafb8376b643881048355b6b25f"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Dark Sandwich",
+          "domain": "darksandwich.com",
+          "city": "",
+          "country": "Malaysia",
+          "region": "Asia",
+          "source": "https://darksandwich.com/about/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Cinematics, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-05e9973688c8ce6ec157e2a67dd6"
+          ],
+          "research_visible_ids": [
+            "boutique-05e9973688c8ce6ec157e2a67dd6"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Pictor",
+          "domain": "pictor.ie",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "unrelated_or_misleading",
+          "record_ids": [
+            "overture-972e09c7-d0a4-4f7d-bec7-6b7b034dbe3b"
+          ],
+          "research_visible_ids": [],
+          "reason": "name collision or different country/domain; identity review required",
+          "confidence": "low"
+        },
+        {
+          "name": "Whackala",
+          "domain": "whackala.com",
+          "city": "",
+          "country": "Ireland",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-fe6d7efedf924820a511de68cb8d"
+          ],
+          "research_visible_ids": [
+            "boutique-fe6d7efedf924820a511de68cb8d"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "GATO",
+          "domain": "gatoanimation.jp",
+          "city": "",
+          "country": "Japan",
+          "region": "Asia",
+          "source": "https://www.gatoanimation.jp/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-04e482252eecf5b5a061b927015f"
+          ],
+          "research_visible_ids": [
+            "boutique-04e482252eecf5b5a061b927015f"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Agent Orange",
+          "domain": "agentorange.asia",
+          "city": "Kuala Lumpur",
+          "country": "Malaysia",
+          "region": "Asia",
+          "source": "https://agentorange.asia/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-01143c81c58b39347c5908fd078a"
+          ],
+          "research_visible_ids": [
+            "boutique-01143c81c58b39347c5908fd078a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Ink and Light",
+          "domain": "ink-and-light.com",
+          "city": "",
+          "country": "",
+          "region": "Europe",
+          "source": "https://animationireland.com/studios/",
+          "reviewed_on": "2026-11-07",
+          "rationale": "Source supports CG, Animation production relevance. Size, independence and current facility status require separate review.",
+          "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated",
+          "status": "discovered_correctly",
+          "record_ids": [
+            "boutique-d391b19b657d63c1f46e3343317a"
+          ],
+          "research_visible_ids": [
+            "boutique-d391b19b657d63c1f46e3343317a"
+          ],
+          "reason": "exact name and non-shared website domain",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "target_recall": 1.0,
+  "approval_granted": false
+}

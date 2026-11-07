@@ -1,0 +1,13 @@
+{
+  "source_id": "animstudios-github",
+  "commit": "8178b6b5e6db6c5b6f25206359ec44037f6d11b3",
+  "observed_on": "2026-11-07",
+  "complete": false,
+  "published_records": 0,
+  "closure_signals": [],
+  "history_policy": "Fresh immutable snapshots only; failures never delete prior observations.",
+  "error": {
+    "type": "gaierror",
+    "reason": "[Errno -3] Temporary failure in name resolution"
+  }
+}

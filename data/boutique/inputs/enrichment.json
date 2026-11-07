@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-07",
+  "records": [
+    {
+      "website": "https://www.framemachine.tv/",
+      "name": "Frame Machine",
+      "city": "Santa Monica",
+      "country": "United States",
+      "claims": [
+        "Animation",
+        "VFX",
+        "Unreal Engine",
+        "Cinematics"
+      ],
+      "evidence": [
+        "https://www.framemachine.tv/about-frame_machine/",
+        "https://www.framemachine.tv/connect/",
+        "https://www.framemachine.tv/project/fortnite-live-events-reel/"
+      ],
+      "note": "Official studio address and service pages reviewed. No capture stage established."
+    },
+    {
+      "website": "https://floating-rock.com/",
+      "name": "Floating Rock",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "claims": [
+        "Animation",
+        "VFX",
+        "Cinematics"
+      ],
+      "evidence": [
+        "https://floating-rock.com/",
+        "https://floating-rock.com/contact/",
+        "https://www.wellingtonnz.com/screen-wellington/made-in-wellington/game-changer-for-wellington-tech-industry"
+      ],
+      "note": "Wellington address and animation/game-cinematics supported. No capture stage established. Primary evidence enriches the NZFC-discovered company reference, not a new physical branch."
+    }
+  ]
+}

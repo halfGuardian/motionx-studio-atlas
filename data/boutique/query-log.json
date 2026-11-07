@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "provider": "Permitted indexed web search and official-page review; no engine scraping",
+  "recording_note": "Earlier exploratory query intents are summaries, not exact engine request transcripts; exact=true identifies verbatim retained queries. No result prose or contacts copied.",
+  "queries": [
+    {
+      "group": "official_collections",
+      "query": "NZ Film Commission production facilities animation VFX",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities"
+      ]
+    },
+    {
+      "group": "official_collections",
+      "query": "NZFC 2026 Annecy delegation animation",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation"
+      ]
+    },
+    {
+      "group": "official_collections",
+      "query": "Screen Wellington Floating Rock animation",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ]
+    },
+    {
+      "group": "official_collections",
+      "query": "Visual Effects Professionals Guild NZ directory",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.vfxg.nz/business-directory"
+      ]
+    },
+    {
+      "group": "licence_source",
+      "query": "animation studios directory GitHub CC BY",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://github.com/tlahitte/animation-studios-directory"
+      ]
+    },
+    {
+      "group": "regional_primary",
+      "query": "independent animation studio Canada official",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.industrialbrothers.com/"
+      ]
+    },
+    {
+      "group": "regional_primary",
+      "query": "independent animation studio Los Angeles official",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.shadedbox.com/about/"
+      ]
+    },
+    {
+      "group": "regional_primary",
+      "query": "Malaysia Singapore independent animation studio",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.robotplaygroundmedia.com/about"
+      ]
+    },
+    {
+      "group": "regional_primary",
+      "query": "Thailand Japan Korea character animation studio official",
+      "exact": false,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://igloostudio.com/"
+      ]
+    },
+    {
+      "group": "source_review",
+      "query": "site:animationireland.com/studios \"47\"",
+      "exact": true,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://animationireland.com/"
+      ]
+    },
+    {
+      "group": "source_review",
+      "query": "site:ausfilm.com.au modelfarm website",
+      "exact": true,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/modelfarm/"
+      ]
+    },
+    {
+      "group": "source_review",
+      "query": "site:ausfilm.com.au \"Luce\" \"Psycho\"",
+      "exact": true,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.ausfilm.com.au/about/events/animation-australia-2026/"
+      ]
+    },
+    {
+      "group": "seed_primary",
+      "query": "site:framemachine.tv \"Rigging\"",
+      "exact": true,
+      "observed_on": "2026-11-07",
+      "selected_source_urls": [
+        "https://www.framemachine.tv/about-frame_machine/"
+      ]
+    }
+  ]
+}

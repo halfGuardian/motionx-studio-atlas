@@ -1,0 +1,577 @@
+{
+  "source_id": "primary-indexed",
+  "source_version": "2026-11-07",
+  "license": "UNSPECIFIED",
+  "observed_on": "2026-11-07",
+  "complete": false,
+  "records": [
+    {
+      "source_record_id": "321e8f113ce9f8e7f724",
+      "name": "Well Told Entertainment",
+      "website": "https://www.welltold.games/",
+      "city": "Orange County",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "Cinematics"
+      ],
+      "source_url": "https://www.welltold.games/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "b614988eaf4649400531",
+      "name": "Shadedbox Animations",
+      "website": "https://www.shadedbox.com/",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Character animation",
+        "Cinematics"
+      ],
+      "source_url": "https://www.shadedbox.com/about/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a6b565e72933b95dead0",
+      "name": "Evil Eye Pictures",
+      "website": "https://evileyepictures.com/",
+      "city": "",
+      "country": "",
+      "region": "Unknown",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Unreal Engine",
+        "Character animation",
+        "Cinematics"
+      ],
+      "source_url": "https://evileyepictures.com/services/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "22e9df1c9ae9e19ffbb2",
+      "name": "TinFilmUS",
+      "website": "https://tinfilmus.com/",
+      "city": "Brooklyn",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Stop-motion"
+      ],
+      "source_url": "https://tinfilmus.com/about.html",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "fbeebc9803a61ea97056",
+      "name": "KissingParty",
+      "website": "https://kissingparty.io/",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://kissingparty.io/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ed3a6c09c40a2cb281b1",
+      "name": "ZOMA Studios",
+      "website": "https://www.zomastudios.com/",
+      "city": "",
+      "country": "",
+      "region": "Unknown",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.zomastudios.com/about-us",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "35650a7b9265174e1484",
+      "name": "Animaza Studios",
+      "website": "https://www.animaza.com/",
+      "city": "Miami",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.animaza.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "9f3e3b18ade55339432f",
+      "name": "Baobab Studios",
+      "website": "https://www.baobabstudios.com/",
+      "city": "",
+      "country": "",
+      "region": "Unknown",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.baobabstudios.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a5072825638cae6ef360",
+      "name": "Augenblick Studios",
+      "website": "https://www.augenblickstudios.com/",
+      "city": "Brooklyn",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.augenblickstudios.com/about",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c57c8902740992f0d283",
+      "name": "Bizaar Studios",
+      "website": "https://www.bizaarstudios.com/",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.bizaarstudios.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "5092f4f731940bd33758",
+      "name": "Dracogen Studios",
+      "website": "https://dracogen.com/",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://dracogen.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d58b3e4932dc03ae94a4",
+      "name": "Lech Studio",
+      "website": "https://www.lech.studio/",
+      "city": "",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.lech.studio/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "795c033f72a767ab5519",
+      "name": "Industrial Brothers",
+      "website": "https://www.industrialbrothers.com/",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.industrialbrothers.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "0b4615d21a60b25df42b",
+      "name": "Dainty Productions",
+      "website": "https://daintyproductions.com/",
+      "city": "Ottawa",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://daintyproductions.com/about/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "417546d9db956d8ec2f6",
+      "name": "Big Jump Entertainment",
+      "website": "https://bigjumpent.com/",
+      "city": "Ottawa",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "Animation"
+      ],
+      "source_url": "https://bigjumpent.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "935675982af9b285af5a",
+      "name": "Loomi Animation",
+      "website": "https://www.loomianimation.ca/",
+      "city": "Quebec City",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "Animation"
+      ],
+      "source_url": "https://www.loomianimation.ca/?lang=en",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c4271a7b927b17ee1d72",
+      "name": "Slap Happy Cartoons",
+      "website": "https://slaphappycartoons.com/",
+      "city": "",
+      "country": "Canada",
+      "region": "North America",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://slaphappycartoons.com/studio/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4d7167e609b1ad2dbaed",
+      "name": "Animation Rebel",
+      "website": "https://www.animationrebel.com/",
+      "city": "",
+      "country": "",
+      "region": "Unknown",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Character animation",
+        "Mocap cleanup",
+        "Cinematics"
+      ],
+      "source_url": "https://www.animationrebel.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "e33bc13023311e8e54d3",
+      "name": "Spy My Studio",
+      "website": "https://spy.my/",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://spy.my/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "876a45a9fb627e592482",
+      "name": "Dark Sandwich",
+      "website": "https://darksandwich.com/",
+      "city": "",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Cinematics",
+        "Animation"
+      ],
+      "source_url": "https://darksandwich.com/about/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "b58756c1586253c4d875",
+      "name": "Robot Playground Media",
+      "website": "https://www.robotplaygroundmedia.com/",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.robotplaygroundmedia.com/about",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "707a39fff5cc226178d4",
+      "name": "The R&D Studio",
+      "website": "https://rnd.my/",
+      "city": "Petaling Jaya",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://rnd.my/about-us/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "2d59d4c8270683b8319b",
+      "name": "Olala Studio",
+      "website": "https://olalastudio.my/",
+      "city": "",
+      "country": "",
+      "region": "Unknown",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://olalastudio.my/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4955dddf7805598bc902",
+      "name": "Bad Clay Studio",
+      "website": "https://www.bad-clay.com/",
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX",
+        "Animation"
+      ],
+      "source_url": "https://www.bad-clay.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4ccf34413ac1508a476a",
+      "name": "XZV Studio",
+      "website": "https://xzvco.com/",
+      "city": "",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://xzvco.com/about-us/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "3210438c797aaba18927",
+      "name": "Scrawl Animation",
+      "website": "https://scrawlanimation.com/",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://scrawlanimation.com/about",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "dc2d29c274e035b30320",
+      "name": "Agent Orange",
+      "website": "https://agentorange.asia/",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://agentorange.asia/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "8bdeeccbbc52cba8d2ac",
+      "name": "Igloo Studio",
+      "website": "https://igloostudio.com/",
+      "city": "",
+      "country": "Thailand",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "3D",
+        "Rigging",
+        "Previs",
+        "Animation"
+      ],
+      "source_url": "https://igloostudio.com/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "cc1fdf8a16784e30e844",
+      "name": "Studio Eeksaurus",
+      "website": "https://studioeeksaurus.com/",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://studioeeksaurus.com/eeksaurus-story-awards-about/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a9a27a97a366385ee5ed",
+      "name": "NAMU Animation",
+      "website": "https://namuanimation.com/",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://namuanimation.com/?act=info.page&pcode=company2",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "89433860de3d2846291f",
+      "name": "GATO",
+      "website": "https://www.gatoanimation.jp/",
+      "city": "",
+      "country": "Japan",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://www.gatoanimation.jp/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "5ce855125b503a44cc2e",
+      "name": "Project Studio Q",
+      "website": "https://studio-q.co.jp/",
+      "city": "",
+      "country": "Japan",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "3D",
+        "Animation"
+      ],
+      "source_url": "https://studio-q.co.jp/en/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "5ebd1d073e4067998816",
+      "name": "Studio Kane",
+      "website": "https://www.studiokane.art/",
+      "city": "",
+      "country": "South Korea",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.studiokane.art/about-studio",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "274fece6654aac5ea827",
+      "name": "OGNR",
+      "website": "https://ognr.kr/",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "Asia",
+      "source_kind": "official_company",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://ognr.kr/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    }
+  ]
+}

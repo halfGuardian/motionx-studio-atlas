@@ -27,6 +27,18 @@ def check(root=ROOT):
             expected,_=build_unified(snapshots,root/companies,tmp/'public',root/'studios.json',root/'data/bulk/sources.json',observed=release['company_observed_on_utc'],company_source=release['company_source_url'])
         else:expected=build(read(tmp/'review/proposed-b.json'),root/'studios.json',tmp/'public',release['source_policy_hash'],report['run_id'])
         if expected['counts']!=release['expected_counts']:raise ValueError('release counts differ from reproduced catalogue')
+        extension=root/'data/boutique/release.json'
+        if extension.exists():
+            from boutique import extend
+            config=read(extension)
+            if config['baseline_records']!=expected['counts']['records']:raise ValueError('boutique baseline mismatch')
+            for name,expected_hash in config['input_hashes'].items():
+                path=Path(name)
+                if path.is_absolute() or '..' in path.parts or (path.parts[0] not in ('inputs','benchmarks') and str(path) not in ('regions.json','vocabulary.json')) or sha(root/'data/boutique'/path)!=expected_hash:raise ValueError('boutique input checkpoint changed')
+            proposal=extend(tmp/'public',root/'studios.json',root/'data/boutique')
+            expected=read(tmp/'public/manifest.json')
+            if expected['counts']!=config['expected_counts']:raise ValueError('boutique release counts differ')
+            if digest(read(root/'data/boutique/sources.json'))!=config['source_registry_hash']:raise ValueError('boutique source policy changed')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')

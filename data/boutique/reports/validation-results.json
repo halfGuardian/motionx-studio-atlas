@@ -1,0 +1,251 @@
+{
+  "reviewed_on": "2026-11-07",
+  "kind": "Executed local checks on proposed branch; not deployed Pages and not human publication approval.",
+  "versions": {
+    "python": "3.12.14",
+    "node": "v24.22.1",
+    "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)"
+  },
+  "baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+  "manifest_sha256": "d9f3e128d6c762431574bba5a0e7482fb05c8d15d14fe4c368c2e26a52a64c3f",
+  "release_checkpoint_sha256": "0d7d0ad6db979e9b29b98485277a7cd3f302b35b89dc0cbea4dac181ccabb581",
+  "implementation_sha256": {
+    "app.js": "4be1f3759a36ee94c3b7ffa7f7b7b17beb3eebdf301e55dc51c3527fc978573c",
+    "boutique.js": "e28499512b54341a2045469afc53ea72839a216615b9ab9e01fbc29e457390b0",
+    "catalog.js": "457fd1b9894135c9a1dc0d28022105b582b29de20d756adc16a554ea6aae925c",
+    "data.js": "8302bc182dfa37d702c5d544208e5933ded79497fd33c821b0bedc70e38f083d",
+    "index.html": "71bfc27f66ce5e44f1035133e21f9f5ecce4c813bf7e3055e7f39212b37798a6",
+    "atlas.css": "e57a72e77ca933a5e5b83bdc2f86e10474fef07133def7b16ee031e376bbb0b2",
+    "tools/boutique.py": "0280ffab53a15992127ceaa453ad9289a7d30c9ce933c12299888b382c6e7bf6",
+    "tools/boutique_collect.py": "349a2d2f3e540b2ef7f6acbc2a0b244254bcf397c152066c056d291c0ef43187",
+    "tools/boutique_release.py": "d48e5bcd4d099b994ed1326ddeb81efb71c62dfcf8fd9886aa9a88fbe9cd1212",
+    "tools/check_bulk_release.py": "ac968ec809c9d4c6414c05ae5d9ef2e3e8fb3a68aba11bb16a1bbae3bac86d25",
+    "tools/launch_readiness.py": "9e047c2897fdeb0efe2af321e1ddb1b5d17fc65308b11f510fc480ab9def1a3c"
+  },
+  "tests": {
+    "python": {
+      "passed": 201,
+      "failed": 0,
+      "log_sha256": "a8385ef24e0d3cda059b9d98e0b14a283db531eacf02a1a97489758f8884a8d0"
+    },
+    "javascript": {
+      "passed": 59,
+      "failed": 0,
+      "log_sha256": "3ec894a63184588516ab4292810ed1a442256a601c7a4e7a143da18bb4c4f88e"
+    },
+    "browser_baseline_and_50000": {
+      "passed": 19,
+      "failed": 0,
+      "log_sha256": "4cadbc3706084f097ac71acbd0cac054ede887fa580e40fc480d42623db59b57"
+    },
+    "browser_sharded_50000": {
+      "passed": 6,
+      "failed": 0,
+      "log_sha256": "a1d08792046a2c2cff6df732e1e10d18d30b3174c8128b9a20848106a3fe4c36"
+    },
+    "browser_actual_catalogue": {
+      "passed": 9,
+      "failed": 0,
+      "log_sha256": "4d5b9221caf5ef4e57571fd1459abac20c0089b92f13a5eb91928eb18896b84f"
+    },
+    "browser_unified_research": {
+      "passed": 9,
+      "failed": 0,
+      "log_sha256": "9f3807a1ce5bac52c260665050569a9f0883eca2b167f44396b66fb95904ce6c"
+    },
+    "browser_boutique": {
+      "passed": 8,
+      "failed": 0,
+      "log_sha256": "6ca86dfcf7a90eb94ad4d6546b93a7e0b8b3e2d235cca6cef6aee3191d34278d"
+    }
+  },
+  "browser_checks_total": 51,
+  "canonical": {
+    "records": 243,
+    "validation_errors": 0,
+    "validation_warnings": 265
+  },
+  "full_catalogue": {
+    "validation_errors": 0,
+    "counts": {
+      "records": 42067,
+      "public_records": 42067,
+      "class_a": 230,
+      "class_b": 4626,
+      "class_c": 37211,
+      "retained_locations": 243,
+      "source_location_observations": 40376,
+      "company_references": 1448,
+      "records_with_coordinates": 40619,
+      "countries": 178,
+      "retained_operating_organisations": 119,
+      "source_identities": 41566
+    },
+    "baseline_preserved": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+    "raw_source_records": 40376,
+    "research_candidates": 35750,
+    "warnings": {
+      "canonical_baseline": 265,
+      "unreviewed_new_references": 41824,
+      "source_point_precision_unverified": 40376,
+      "company_references_without_coordinates": 1448,
+      "unspecified_company_source_terms": 1213,
+      "source_records_missing_city": 170,
+      "source_records_missing_country": 14,
+      "possible_duplicate_candidates": 117,
+      "boutique_company_references_requiring_review": 332
+    },
+    "approval": "Human review and authorised merge still required; tests are not approval."
+  },
+  "additional_executed_check": "All 424 factual projection rows exactly matched project(raw pinned author dataset, commit, actual review date); raw contacts/prose were not committed.",
+  "final_counts": {
+    "records": 42067,
+    "public_records": 42067,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 37211,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1448,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41566
+  },
+  "source_decisions": {
+    "new_company_reference": 332,
+    "already_represented": 111,
+    "identity_review": 22,
+    "irrelevant_or_insufficient_specialisation": 87,
+    "repeat_source_reference": 18
+  },
+  "benchmark": {
+    "development": {
+      "total": 100,
+      "found": 96,
+      "recall": 0.96,
+      "statuses": {
+        "discovered_correctly": 92,
+        "alternate_identity": 4,
+        "unrelated_or_misleading": 4
+      }
+    },
+    "held-out": {
+      "total": 19,
+      "found": 17,
+      "recall": 0.8947,
+      "statuses": {
+        "discovered_correctly": 17,
+        "unrelated_or_misleading": 2
+      }
+    }
+  },
+  "performance": {
+    "actual_catalogue": {
+      "initial_ready_seconds": 1.654,
+      "initial_app_timings": {
+        "load_validate_ms": 598.3999999985099,
+        "index_ms": 265.5,
+        "search_ms": 11.699999999254942,
+        "viewport_groups": 39171,
+        "rendered_markers": 44,
+        "marker_render_ms": 99.19999999925494,
+        "ready_ms": 1153.5
+      },
+      "complete_query": {
+        "records": 42067,
+        "milliseconds": 17.300000000745058
+      },
+      "search_end_to_end_ms": 220.39,
+      "search_compute_ms": 18.5,
+      "map_navigation": {
+        "elapsed_ms": 40.100000001490116,
+        "marker_render_ms": 35.600000001490116,
+        "markers": 140
+      },
+      "uncached_profile_detail_ms": 84.5,
+      "unthrottled_app_timings": {
+        "load_validate_ms": 598.3999999985099,
+        "index_ms": 265.5,
+        "search_ms": 11.899999998509884,
+        "viewport_groups": 0,
+        "rendered_markers": 0,
+        "marker_render_ms": 0,
+        "ready_ms": 1153.5,
+        "profile_open_ms": 9.299999997019768
+      },
+      "throttled_initial_ready_seconds": 31.152,
+      "throttled_app_timings": {
+        "load_validate_ms": 27085.699999999255,
+        "index_ms": 1017.5999999977648,
+        "search_ms": 28.899999998509884,
+        "viewport_groups": 32588,
+        "rendered_markers": 29,
+        "marker_render_ms": 278.70000000298023,
+        "ready_ms": 28904.599999997765
+      },
+      "kind": "real_proposed_catalogue_not_deployed_production",
+      "records": 42067,
+      "class_a": 230,
+      "class_b": 4626,
+      "baseline_bytes": 358282,
+      "index_bytes": 5070883,
+      "index_gzip_bytes": 2200402,
+      "checks": 9,
+      "conditions": "Local HTTP subdirectory / installed headless Chromium. The app explicitly fetches lossless columnar gzip index/compressed baseline and checks compressed/decompressed hashes. Pages deployment performance is not measured. CPU/network emulation is not a physical low-memory mobile device."
+    },
+    "synthetic_50000_sharded": {
+      "kind": "synthetic_only_not_acquisition",
+      "synthetic_locations": 50000,
+      "baseline_retained": 243,
+      "baseline_class_a_visible": 230,
+      "legacy_class_c_visible": 13,
+      "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x950 and 390x844, lossless columnar transport, no CPU/network throttling; not a physical low-memory phone.",
+      "compact_index_bytes": 5831708,
+      "compact_index_gzip_bytes": 375352,
+      "full_detail_bytes": 61664090,
+      "initial_ready_seconds": 1.071,
+      "search_ms": 7.100000001490116,
+      "profile_ms": 53.100000001490116,
+      "viewport_render_ms": 5.399999998509884,
+      "app_timings": {
+        "load_validate_ms": 329,
+        "index_ms": 185.30000000074506,
+        "search_ms": 16.599999997764826,
+        "viewport_groups": 1,
+        "rendered_markers": 1,
+        "marker_render_ms": 0.6000000014901161,
+        "ready_ms": 731.8000000007451,
+        "profile_open_ms": 2.300000000745058
+      },
+      "checks": 6
+    },
+    "unified_ui": {
+      "confirmed_capture_quick_filter": 22,
+      "warm_cache_ready_seconds": 0.902,
+      "checks": 9,
+      "kind": "actual_catalogue_ux_not_deployed_pages",
+      "conditions": "Local HTTP subdirectory / installed headless Chromium, 1440x950 and 390x844, no CPU/network throttle; warm reload explicitly identified. Screenshots are proposed UI, not production."
+    },
+    "boutique": {
+      "boutique_first_open_seconds": 0.348,
+      "filtered_search_compute_ms": 15.600000001490116,
+      "licensed_export_records": 2,
+      "checks": 8,
+      "records": 42067,
+      "boutique_metadata_bytes": 4597256,
+      "boutique_metadata_gzip_bytes": 303821,
+      "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x1000 and 390x844, no CPU/network throttle. Not deployed Pages or a physical low-memory device. Benchmark JSON is never requested by the app."
+    }
+  },
+  "limitations": [
+    "Local HTTP subdirectory only; no deployed-Pages claim.",
+    "CPU/network emulation is not a physical low-memory mobile device.",
+    "Initial-load comparisons across releases are not a controlled statistical benchmark.",
+    "Full world-wide CSV memory use was not measured; bounded filtered exports passed.",
+    "Human precision sample remains pending and source-wide terms remain unresolved for some factual references.",
+    "New robots-aware downloader failed before retrieval at local DNS resolution; manual Actions download workflow not dispatched.",
+    "No new verified location/capture-stage claims; source assertions and advisory scores do not approve publication."
+  ],
+  "canonical_details": "canonical-validation.json"
+}

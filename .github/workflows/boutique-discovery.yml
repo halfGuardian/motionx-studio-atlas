@@ -1,0 +1,22 @@
+name: Collect reviewed boutique dataset
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Robots-aware download of the exact licence-reviewed dataset revision
+        run: python tools/boutique_collect.py collect --commit 8178b6b5e6db6c5b6f25206359ec44037f6d11b3 --output /tmp/boutique-collection
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: boutique-licensed-source-observations
+          path: /tmp/boutique-collection
+      # No write token, automatic database update, approval, merge or deployment.

@@ -1,0 +1,18 @@
+{
+  "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+  "repository": "https://github.com/tlahitte/animation-studios-directory",
+  "commit": "8178b6b5e6db6c5b6f25206359ec44037f6d11b3",
+  "raw_sha256": "86b42f3882ebe7425f0bb20cf0f2793689fc16f02ab395d23fa596b5016e2bde",
+  "projection_sha256": "13b34c6fd522e0dfd8a65e0b340897b0a6e7e0fd9eb55116086ee3f4d480d7e0",
+  "raw_records": 424,
+  "data_generated_on": "2026-04-12",
+  "observed_on": "2026-11-07",
+  "permission_sources": [
+    "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/README.md",
+    "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/LICENSE"
+  ],
+  "license": "CC-BY-4.0",
+  "attribution": "Tommy Lahitte and European Animation Studios Directory contributors",
+  "transformation": "Contact emails and authored project descriptions omitted; factual company, geography, directory size/type and animation-style assertions retained. No photographs, TMDB assets or API keys used. Assertions remain uncorroborated.",
+  "access_note": "The source README explicitly offers raw data. Official GitHub download used; animstudios.org returned HTTP 530 and is not enabled for web scraping."
+}

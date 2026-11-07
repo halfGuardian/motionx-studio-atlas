@@ -1,0 +1,698 @@
+{
+  "source_id": "nzfc-facilities",
+  "source_version": "2026-11-07",
+  "license": "UNSPECIFIED",
+  "observed_on": "2026-11-07",
+  "complete": true,
+  "records": [
+    {
+      "source_record_id": "6836b6b339782065c25f",
+      "name": "37Degrees Studio",
+      "website": "https://37degrees-studio.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "571fd425bd793130145e",
+      "name": "808 Ltd",
+      "website": "https://808ltd.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "fe68a769a2b4053df0e6",
+      "name": "Albedo",
+      "website": "https://albedovfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "8384b56c865023e7da6f",
+      "name": "Animation Research Ltd",
+      "website": "https://arl.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "88f4c0cccbf38a4c962d",
+      "name": "Bespoke Post",
+      "website": "https://bespokepost.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4d3e07117dec380c67df",
+      "name": "Blockhead",
+      "website": "https://assemblyltd.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07",
+      "identity_review_reason": "The NZFC entry is labelled Blockhead but links to Assembly (assemblyltd.com). Resolve the operating identity and website before adding a company reference."
+    },
+    {
+      "source_record_id": "ac5d7cec171859de7283",
+      "name": "Cause and FX",
+      "website": "https://causefx.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "18afaa20df0c4724b436",
+      "name": "Cirkus",
+      "website": "https://cirkus.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "99a78a2a259e9e9d3090",
+      "name": "Deep Animation",
+      "website": "https://deepanimation.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f443e65cb27b492c8719",
+      "name": "Department of Post",
+      "website": "https://departmentofpost.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "b5e1ffac2c78154bbeba",
+      "name": "Envy Studios",
+      "website": "https://envystudios.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "7542d21d905e78046cf2",
+      "name": "Fathom",
+      "website": "https://fathomvfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4932ab6f22683050c3bd",
+      "name": "Final Boss VFX",
+      "website": "https://finalbossvfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "cfda1d52625143ff4c85",
+      "name": "Floating Rock",
+      "website": "https://floating-rock.com/",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c96f2ae082da3fa71a0c",
+      "name": "Flux Animation",
+      "website": "https://fluxmedia.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ae327f2ec4a75067fb48",
+      "name": "Franklin Rd Music & Sound",
+      "website": "https://franklinrd.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "aac4a123ba19bb863d9f",
+      "name": "Images & Sound",
+      "website": "https://imagesandsound.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "20c91f60b5d1dfaa5edf",
+      "name": "Jon Online",
+      "website": "https://jononline.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "41f8cc75e6815ee7b368",
+      "name": "Masters of Reality",
+      "website": "https://morvfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ed0a6d2f76883ca7729e",
+      "name": "Mechanic Animation",
+      "website": "https://mechanicanimation.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "674ef30715982b7f484d",
+      "name": "Method",
+      "website": "https://method.digital/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d6886370702196c34241",
+      "name": "Mukpuddy Animation Ltd",
+      "website": "https://mukpuddy.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "8b771913c53d095cedf8",
+      "name": "Native Audio",
+      "website": "https://nativeaudio.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "591ef074b5c19351559f",
+      "name": "Natural History New Zealand",
+      "website": "https://nhnz.tv/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ebc9c4fc305830887fc6",
+      "name": "OHUfx",
+      "website": "https://ohufx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "967b974e1eabaca2f319",
+      "name": "Park Road Post Production",
+      "website": "https://parkroad.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "bb12cdaf0291de73fe28",
+      "name": "Perceptual Engineering",
+      "website": "https://perceptual.engineering/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "dcafaccd38a9cd2384f1",
+      "name": "Pinnacle Post",
+      "website": "https://pinnaclepost.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Post"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "7790960de493b1fc5b36",
+      "name": "Pixie Post",
+      "website": "https://pixievfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "650fee35a6c1f7e04218",
+      "name": "POW Studios",
+      "website": "https://powpost.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "65341ae0392156177625",
+      "name": "PRPVFX",
+      "website": "https://prpvfx.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4697ec2283468feb46f5",
+      "name": "Sauce FX Studios",
+      "website": "https://sauce.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "5ecc98a6da9f66865e29",
+      "name": "Studio Local",
+      "website": "https://studiolocal.tv/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "65409a4e36747dd74b33",
+      "name": "Teaspoon Films",
+      "website": "https://teaspoonfilms.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "305b4d4639ef5afbf5c5",
+      "name": "The Inside Track",
+      "website": "https://insidetrack.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "611cc68425ce1a3f8ef8",
+      "name": "The Rebel Fleet",
+      "website": "https://rebelfleet.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "DIT",
+        "Post"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "9dd85dd41a911da2111f",
+      "name": "The Soundroom",
+      "website": "https://thesoundroom.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Post"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c090022b5196ce532f7a",
+      "name": "Toybox",
+      "website": "https://toybox.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f6142b63a92df961d88c",
+      "name": "Undercover Media",
+      "website": "https://undercover-media.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "8bfba4b444fef73d6770",
+      "name": "Vinewood Animation",
+      "website": "https://vinewoodanimation.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ee7a9fa2ddf01602acf9",
+      "name": "Wētā FX",
+      "website": "https://wetafx.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "42f697b6a7ea12e55459",
+      "name": "Yukfoo",
+      "website": "https://yukfoo.net/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    }
+  ]
+}

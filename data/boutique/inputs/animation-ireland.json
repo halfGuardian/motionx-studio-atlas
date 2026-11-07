@@ -1,0 +1,764 @@
+{
+  "source_id": "animation-ireland",
+  "source_version": "2026-11-07",
+  "license": "UNSPECIFIED",
+  "observed_on": "2026-11-07",
+  "complete": true,
+  "records": [
+    {
+      "source_record_id": "905043bb8eec0602ef67",
+      "name": "Algorithm",
+      "website": "https://algorithm.ie/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d389c789f85546d3a4c6",
+      "name": "ALT Animation",
+      "website": "https://altanimation.com/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d7d6372c17d112c16361",
+      "name": "and maps and plans",
+      "website": "https://andmapsandplans.com/",
+      "city": "Dublin",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "9e5aa0441121e3d62f38",
+      "name": "Boulder Media",
+      "website": "https://bouldermedia.tv/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f97c1f6ed2d63c212c4a",
+      "name": "Brown Bag Films",
+      "website": "https://brownbagfilms.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "392b432e66ba0d06cb14",
+      "name": "Cantilever Media",
+      "website": "https://cantilever.media/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "1dafa6304fae2c2aa778",
+      "name": "Cartoon Saloon",
+      "website": "https://cartoonsaloon.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ceabc042407142d0ad26",
+      "name": "Curiosity Studio",
+      "website": "https://curiositystudio.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d990e4fa7f3f490db9a2",
+      "name": "Distillery Films",
+      "website": "https://distilleryfilms.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "de89f187141b1b0cd436",
+      "name": "Dog Ears",
+      "website": "https://cheersdogears.com/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "20476c0ee1eccb59618f",
+      "name": "Dream Logic Studios",
+      "website": "https://dreamlogic.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c05782396e225489528f",
+      "name": "Dúlamán Studios",
+      "website": "https://dulamanstudios.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "7ed7ce9b818b26832681",
+      "name": "elk.Studios",
+      "website": "https://elkstudios.tv/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "7e40431a39a6c1a73b0f",
+      "name": "Engine House",
+      "website": "https://engine-house.co.uk/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "6645da477a37fe2dc2ad",
+      "name": "Enter Yes",
+      "website": "https://enteryes.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "afad79dc6ebb7062627f",
+      "name": "Flickerpix",
+      "website": "https://flickerpix.com/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "d2038b7b9356a4ed532a",
+      "name": "Giant Animation",
+      "website": "https://giantanimation.ie/",
+      "city": "Dublin",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "CG",
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "faff1a22754d6e1a604b",
+      "name": "Igloo Animations",
+      "website": "https://iglooanimations.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "6314fa3471d44ccd93d5",
+      "name": "Ink and Light",
+      "website": "https://ink-and-light.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "CG",
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a67a852cd24d803a8d72",
+      "name": "JAM Media",
+      "website": "https://jammedia.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "bb231bd498570a0cb22f",
+      "name": "Kavaleer",
+      "website": "https://kavaleer.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "80447c2f9b3fafab9109",
+      "name": "Lazy Sunday",
+      "website": "https://lazysunday.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "cc73665a90595294ab37",
+      "name": "Lighthouse Studios",
+      "website": "https://lighthousestudios.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "014f1b859bf417f250eb",
+      "name": "Little Moon",
+      "website": "https://littlemoonanimation.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "62eca368307a8db387e2",
+      "name": "Maverick Films",
+      "website": "https://maverickfilms.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c982a44efdf0b48543b1",
+      "name": "Moetion Films",
+      "website": "https://moetionfilms.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "7bc134586b0edda131a5",
+      "name": "Monster Entertainment",
+      "website": "https://monsterentertainment.tv/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "b3bef1f0987d28d6ef7f",
+      "name": "Paper Owl Films",
+      "website": "https://paperowlfilms.com/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "40195ae76b9b8048bbaf",
+      "name": "Paper Panther",
+      "website": "https://paperpanther.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "cf61694f93746b0495a0",
+      "name": "Pictor",
+      "website": "https://pictor.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a928b0e89fcc6510036a",
+      "name": "Pikkukala",
+      "website": "https://pikkukala.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f38cb72d7c29f53d201c",
+      "name": "Pioneertown Productions",
+      "website": "https://pioneertownproductions.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "1da35fe35dcabcfc9e16",
+      "name": "Piranha Bar",
+      "website": "https://piranhabar.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c0f86477e0de92b33830",
+      "name": "Revelator",
+      "website": "https://revelatorstudio.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "661a4d2a74748a0ce4b9",
+      "name": "SANAM",
+      "website": "https://sanam.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "6e944966a463eb7ace55",
+      "name": "Score Draw Media",
+      "website": "https://scoredrawmedia.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Sound"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ed0e725eb865ea063db1",
+      "name": "Sixteen South",
+      "website": "https://sixteensouth.tv/",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "9304a26b4b1d22f75f48",
+      "name": "Stiúidio Fia",
+      "website": "https://stiuideofia.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "6a50753114751376d67c",
+      "name": "Studio 9",
+      "website": "https://studio9.ie/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "1d499bd043a6f4ac3cc1",
+      "name": "Studio Meala",
+      "website": "https://studiomeala.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "23eb5de961ec0813b5d9",
+      "name": "Treehouse Republic",
+      "website": "https://treehouserepublic.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "a89afd4786b9421925c9",
+      "name": "Trickshot Films",
+      "website": "https://trickshotfilms.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "65e0a56b361693f86d67",
+      "name": "Triggerfish",
+      "website": "https://triggerfish.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "3241d2ed34105aad84f7",
+      "name": "Trinity Motion Pictures",
+      "website": "https://trinitymotionpictures.com/",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "9dbc9001a2014de1dbf5",
+      "name": "Turnip + Duck",
+      "website": "https://turnipandduck.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "bdce2b63164c13e8f2ec",
+      "name": "Whackala",
+      "website": "https://whackala.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4b6e75dc73917bbb5827",
+      "name": "Wiggleywoo",
+      "website": "https://wiggleywoo.com/",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source_kind": "association_listing",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://animationireland.com/studios/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    }
+  ]
+}
