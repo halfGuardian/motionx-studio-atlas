@@ -1,0 +1,8 @@
+PASS 50,000 synthetic B + all 243 retained A/C identities searchable using the lossless compact transport
+PASS viewport rendering and keyboard selection of two source-listed facilities at unchanged identical coordinates
+PASS A/B and confirmed-only filters, lazy source evidence and safe Class B profile
+PASS filtered CSV obtains full licence/provenance, not compact stubs
+PASS direct source-listed profile URL, browser back/forward and cached shard navigation
+PASS 390px mobile shard profile, filters and horizontal containment
+{"kind": "synthetic_only_not_acquisition", "synthetic_locations": 50000, "baseline_retained": 243, "baseline_class_a_visible": 230, "legacy_class_c_visible": 13, "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x950 and 390x844, lossless columnar transport, no CPU/network throttling; not a physical low-memory phone.", "compact_index_bytes": 5831708, "compact_index_gzip_bytes": 375352, "full_detail_bytes": 61664090, "initial_ready_seconds": 1.546, "search_ms": 7.7000000001862645, "profile_ms": 42.4000000001397, "viewport_render_ms": 3.5, "app_timings": {"load_validate_ms": 440.19999999995343, "index_ms": 224.69999999995343, "search_ms": 23.899999999906868, "viewport_groups": 1, "rendered_markers": 1, "marker_render_ms": 0.6999999999534339, "ready_ms": 1053.5999999998603, "profile_open_ms": 3.4000000001396984}, "checks": 6}
+6 bulk HTTP browser checks passed

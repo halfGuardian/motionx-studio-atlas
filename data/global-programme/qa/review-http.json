@@ -1,0 +1,5 @@
+{
+  "checks": 4,
+  "dataset": "actual 44394 replayed observations; not new published businesses",
+  "conditions": "Local HTTP, installed Chromium, desktop and 390px emulation; no deployment or physical-device claim"
+}
