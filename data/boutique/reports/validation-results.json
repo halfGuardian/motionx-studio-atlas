@@ -7,7 +7,7 @@
     "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)"
   },
   "baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
-  "manifest_sha256": "d9f3e128d6c762431574bba5a0e7482fb05c8d15d14fe4c368c2e26a52a64c3f",
+  "manifest_sha256": "44545f8b667b98573377c2849f8f8437dbc630bae8874649da36a7c5f1dfbffc",
   "release_checkpoint_sha256": "0d7d0ad6db979e9b29b98485277a7cd3f302b35b89dc0cbea4dac181ccabb581",
   "implementation_sha256": {
     "app.js": "4be1f3759a36ee94c3b7ffa7f7b7b17beb3eebdf301e55dc51c3527fc978573c",
@@ -16,22 +16,25 @@
     "data.js": "8302bc182dfa37d702c5d544208e5933ded79497fd33c821b0bedc70e38f083d",
     "index.html": "71bfc27f66ce5e44f1035133e21f9f5ecce4c813bf7e3055e7f39212b37798a6",
     "atlas.css": "e57a72e77ca933a5e5b83bdc2f86e10474fef07133def7b16ee031e376bbb0b2",
-    "tools/boutique.py": "0280ffab53a15992127ceaa453ad9289a7d30c9ce933c12299888b382c6e7bf6",
+    "tools/boutique.py": "5a63166277e51bdd8a2750324180f3b36ef5c1a375fa57748b371478ed5ca7f3",
     "tools/boutique_collect.py": "349a2d2f3e540b2ef7f6acbc2a0b244254bcf397c152066c056d291c0ef43187",
     "tools/boutique_release.py": "d48e5bcd4d099b994ed1326ddeb81efb71c62dfcf8fd9886aa9a88fbe9cd1212",
     "tools/check_bulk_release.py": "ac968ec809c9d4c6414c05ae5d9ef2e3e8fb3a68aba11bb16a1bbae3bac86d25",
-    "tools/launch_readiness.py": "9e047c2897fdeb0efe2af321e1ddb1b5d17fc65308b11f510fc480ab9def1a3c"
+    "tools/launch_readiness.py": "9e047c2897fdeb0efe2af321e1ddb1b5d17fc65308b11f510fc480ab9def1a3c",
+    ".github/workflows/bulk-acquisition.yml": "6184711c18199b7268fddaf1b13580dee4642fae7fdd2053b895148a75c70688",
+    ".github/workflows/boutique-discovery.yml": "09350f4e33f51a9d17516610c9d29c90516d3a638bf79a5d7287d736db2af27f",
+    ".github/workflows/test.yml": "76e1bafdb3553e5e40be44720827e2aa3e37f3134571f00d0cf442e72b410d09"
   },
   "tests": {
     "python": {
-      "passed": 201,
+      "passed": 202,
       "failed": 0,
-      "log_sha256": "a8385ef24e0d3cda059b9d98e0b14a283db531eacf02a1a97489758f8884a8d0"
+      "log_sha256": "c4f7bc8d0a371b7610af3c73c209bdf7d9dbfc4baaf31bf6f4ff689026bb38e0"
     },
     "javascript": {
       "passed": 59,
       "failed": 0,
-      "log_sha256": "3ec894a63184588516ab4292810ed1a442256a601c7a4e7a143da18bb4c4f88e"
+      "log_sha256": "2564d93599249353ef803fc05f8638768366b25ebeeb89a618cce75dcd7502a2"
     },
     "browser_baseline_and_50000": {
       "passed": 19,
@@ -56,7 +59,7 @@
     "browser_boutique": {
       "passed": 8,
       "failed": 0,
-      "log_sha256": "6ca86dfcf7a90eb94ad4d6546b93a7e0b8b3e2d235cca6cef6aee3191d34278d"
+      "log_sha256": "48e2db281c2a484ad6dc908ea569696782cf1a41b3e436c4a37671c01fccc0f4"
     }
   },
   "browser_checks_total": 51,
@@ -228,8 +231,8 @@
       "conditions": "Local HTTP subdirectory / installed headless Chromium, 1440x950 and 390x844, no CPU/network throttle; warm reload explicitly identified. Screenshots are proposed UI, not production."
     },
     "boutique": {
-      "boutique_first_open_seconds": 0.348,
-      "filtered_search_compute_ms": 15.600000001490116,
+      "boutique_first_open_seconds": 0.297,
+      "filtered_search_compute_ms": 14.799999997019768,
       "licensed_export_records": 2,
       "checks": 8,
       "records": 42067,

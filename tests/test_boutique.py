@@ -61,6 +61,10 @@ class FullDiscoveryTests(unittest.TestCase):
         for p in self.result['profiles'].values():self.assertEqual(p['external_support_need'],'unknown');self.assertEqual(p['purchasing_intent'],'unknown');self.assertLessEqual(p['score'],100)
     def test_a_reviewed_source_identity_conflict_is_held_even_without_an_existing_match(self):
         observation=next(a for a in self.result['audit'] if a['source_id']=='nzfc-facilities' and a['name']=='Blockhead');self.assertEqual(observation['decision'],'identity_review');self.assertIsNone(observation['record_id']);self.assertIn('Assembly',observation['matching_reason']);self.assertFalse(any(r['name']=='Blockhead' for r in self.result['proposed_references']))
+    def test_unresolved_reuse_links_belong_to_each_records_own_evidence(self):
+        rows=[r for r in self.result['proposed_references'] if r['license']=='UNSPECIFIED'];self.assertEqual(len(rows),97)
+        for r in rows:
+            for p in r['source_provenance']:self.assertEqual(p['license_url'],p['url'])
     def test_taxonomy_only_leads_are_not_reported_as_primary_source_reviews(self):
         weak=[p for p in self.result['profiles'].values() if p['research_status']=='taxonomy_lead'];self.assertGreater(len(weak),1000);self.assertLess(self.result['summary']['source_supported_reference_profiles'],1000)
     def test_repeat_preparation_is_idempotent_without_duplicate_business_ids(self):

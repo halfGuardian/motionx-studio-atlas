@@ -89,9 +89,11 @@ python tools/boutique_collect.py collect \
 python tools/boutique_collect.py queries --output /tmp/motionx-query-plan.json
 ```
 
+PR bulk checks restore the complete hash-checked committed archive instead of depending on an expiring cache or starting an unnecessary worldwide scan. The existing full live collector remains available through manual dispatch. Both paths have read-only repository permissions and produce research artifacts, not public-database writes.
+
 The registry pins permission-reviewed input versions. A different source revision requires a new access/licence review; it is not silently trusted. Network/robots failures produce no deletion or closure signals. Source snapshots and complete prior discovery queues are preserved. This v1.2 recipe reproduces its fixed 41,735-record baseline; a subsequent release must reconcile against the **then-current complete catalogue**, preserve all existing boutique IDs and audit explicit corrections instead of replacing the atlas with a fresh historical build.
 
-Every observation has its original source ID, hash, URL, date and matching reason/confidence. The release binds inputs, benchmark freeze, region/vocabulary configuration, source policy, original baseline and old shard hashes. Reproduction fails for stale/tampered input or public output. Nothing modifies canonical location evidence or inherits company services into branch capabilities.
+Every observation has its original source ID, hash, URL, date and matching reason/confidence. Unresolved reuse links point to each reference’s own evidence page; the [before/after provenance correction audit](reports/provenance-correction.json) retains the 31 corrected pointers without changing business claims or granting a licence. The release binds inputs, benchmark freeze, region/vocabulary configuration, source policy, original baseline and old shard hashes. Reproduction fails for stale/tampered input or public output. Nothing modifies canonical location evidence or inherits company services into branch capabilities.
 
 The [graph](reports/graph.json) contains bounded company-to-source co-listing/event-participation edges. These are discovery signals, not inferred collaboration, parentage, customers or commercial relationships. No unbounded website traversal follows them. The [query log](query-log.json) distinguishes retained exact queries from earlier exploratory intent summaries. The multilingual [query plan](query-plan.json) is explicitly **not executed**; it does not imply global source coverage.
 
@@ -109,7 +111,7 @@ The old broad strategy prioritised animation/place categories and generic produc
 
 ## Executed release checks
 
-Local checks passed: **201 Python tests, 59 JavaScript tests and 51 HTTP browser checks** (19 baseline/50,000-location checks, six sharded-50,000 checks, nine actual-catalogue checks, nine research-UX checks and eight boutique checks). Canonical validation: **0 errors / 265 warnings**; full-catalogue and source-provenance reproduction: **0 errors**. All 13 legacy unknown records remain labelled, all 40,376 source points remain unverified facility geocodes, and all 1,448 company-only references remain pin-free. The current hash-bound B/C review queue has 41,837 records; it approves none of them. Identity-review cases, unknown permissions and missing geography remain visible rather than being suppressed.
+Local checks passed: **202 Python tests, 59 JavaScript tests and 51 HTTP browser checks** (19 baseline/50,000-location checks, six sharded-50,000 checks, nine actual-catalogue checks, nine research-UX checks and eight boutique checks). Canonical validation: **0 errors / 265 warnings**; full-catalogue and source-provenance reproduction: **0 errors**. All 13 legacy unknown records remain labelled, all 40,376 source points remain unverified facility geocodes, and all 1,448 company-only references remain pin-free. The current hash-bound B/C review queue has 41,837 records; it approves none of them. Identity-review cases, unknown permissions and missing geography remain visible rather than being suppressed.
 
 | Measurement | Actual result / conditions |
 | --- | --- |
@@ -121,8 +123,8 @@ Local checks passed: **201 Python tests, 59 JavaScript tests and 51 HTTP browser
 | Viewport marker update | 35.6 ms, 140 rendered groups |
 | Uncached profile | 84.5 ms |
 | Boutique metadata | 4,597,256 bytes plain / 303,821 gzip, fetched lazily |
-| First boutique opening | 0.348 s, local unthrottled desktop |
-| Boutique combined filters | 15.6 ms, one measured selection |
+| First boutique opening | 0.297 s, local unthrottled desktop |
+| Boutique combined filters | 14.8 ms, one measured selection |
 | Separate 50,000-location synthetic sharded fixture | 1.071 s initial load / 7.1 ms search; zero synthetic public records |
 
 These are individual local runs, not p95 measurements, a controlled cross-release timing comparison, deployed Pages measurements or physical low-memory-device tests. The optional boutique metadata adds no default startup request. Direct location links still open the base/source profile; selecting Boutique Studios makes the additional advisory company-evidence panel available. The 10 MB metadata guard and expensive unbounded CSV export remain operational limits. See [the machine-readable results](reports/validation-results.json) for exact conditions, hashes, warnings and limitations.

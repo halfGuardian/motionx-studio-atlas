@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: '3.12'
       - uses: actions/cache@v4
+        if: github.event_name == 'workflow_dispatch'
         with:
           path: bulk-run
           key: bulk-snapshots-overture-2026-10-21.0-${{ github.run_id }}
@@ -26,13 +27,33 @@ jobs:
             bulk-snapshots-overture-2026-10-21.0-
             bulk-snapshots-${{ hashFiles('tools/bulk_collect.py', 'data/bulk/sources.json') }}-
       - run: pip install duckdb==1.4.3
+        if: github.event_name == 'workflow_dispatch'
       - name: Collect approved API metadata, never canonical records
+        if: github.event_name == 'workflow_dispatch'
         run: |
           python tools/bulk_collect.py --output bulk-run
           python tools/bulk_overture.py --output bulk-run
+      - name: Restore the complete licensed archive for read-only PR checks
+        if: github.event_name == 'pull_request'
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'tools')
+          from discovery import read
+          from bulk_archive import restore
+          archive = Path(read('data/bulk/release.json')['snapshot_archive'])
+          if archive.is_absolute() or '..' in archive.parts or archive.parts[:3] != ('data', 'bulk', 'runs'):
+              raise ValueError('unapproved source archive path')
+          restore(archive, Path('bulk-restored'))
+          PY
+          mkdir -p bulk-run
+          mv bulk-restored/snapshots bulk-redistributable
+      - name: Project manually collected source metadata
+        if: github.event_name == 'workflow_dispatch'
+        run: python tools/bulk_snapshot.py bulk-run --output bulk-redistributable
       - name: Prepare research ledger and coverage report when available
         run: |
-          python tools/bulk_snapshot.py bulk-run --output bulk-redistributable
           python tools/bulk_ingest.py --input bulk-redistributable --output bulk-review --ledger bulk-run/research-public.sqlite
       - name: Create immutable research archive (never public studio data)
         if: always()
