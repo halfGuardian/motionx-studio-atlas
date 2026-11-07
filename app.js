@@ -19,6 +19,8 @@ function boutiqueProfile(s){const p=boutiqueData?.profiles[s.id];if(!p)return ''
 const timings=globalThis.MotionXPerformance={};
 const map=globalThis.L?L.map('map',{worldCopyJump:true,preferCanvas:true,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false}).setView([28,-25],2):null;
 const layer=map?L.layerGroup().addTo(map):null;
+const companyReferenceLayer=map?L.layerGroup().addTo(map):null;let companyReferences=[],displayPoints=[],sourceByCoordinate=new Map(),referenceByCoordinate=new Map();
+const coordinateKey=r=>r.lat+','+r.lng;
 if(map){
   const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>',maxZoom:19}).addTo(map);
@@ -53,7 +55,7 @@ function renderList(){
   $('companies').textContent=`${countLabel(grouped.size,'organization')} · ${studios.length} total locations / ${countLabel(directory.organisations.size,'organization')}`;
   if(catalog){const c=catalog.manifest.counts;$('companies').textContent=unified()?`${c.retained_locations} retained · ${c.source_location_observations.toLocaleString()} source observations · ${c.company_references.toLocaleString()} company references. Records can overlap.`:`${grouped.size} matching identities · ${c.class_a} Class A / ${c.class_b} Class B locations · ${c.reviewed_operating_organisations} reviewed operating organisations / ${c.provisional_source_identities} provisional source identities`;}
   $('list').innerHTML=items.slice(page*pageSize,(page+1)*pageSize).map(item=>viewMode==='locations'?locationCard(item):organisationCard(directory.organisations.get(item),grouped.get(item))).join('')||
-    '<div class="empty-state"><h3>'+(unified()?'No records match yet.':'No studios match yet.')+'</h3><p class="muted">Try fewer capabilities, a broader city search, or reset the filters.</p><button data-reset>Reset all filters</button></div>';
+    '<div class="empty-state"><h3>'+(unified()?'No records match yet.':'No studios match yet.')+'</h3><p class="muted">Try fewer capabilities, a broader city search, or reset the filters. Company-only filters exclude source-location observations. Company-sector labels do not verify facility capabilities.</p><button data-reset>Reset all filters</button></div>';
   $('pageInfo').textContent=items.length?`${page*pageSize+1}–${Math.min((page+1)*pageSize,items.length)} of ${items.length}`:'0 results';
   $('previousPage').disabled=page===0;$('nextPage').disabled=(page+1)*pageSize>=items.length;
 }
@@ -63,10 +65,10 @@ function render(){
   if(boutiqueMode&&boutiqueData){matches=MotionXBoutique.filter(matches,boutiqueData.profiles,{...boutiqueOptions(),query:filters.query,texts:boutiqueSearch});if($('sortResults').value==='relevance')matches.sort((a,b)=>boutiqueData.profiles[b.id].score-boutiqueData.profiles[a.id].score||a.name.localeCompare(b.name));}
   $('boutiqueFilters').hidden=!boutiqueMode;timings.search_ms=performance.now()-start;
   const selectedCaps=controls().capabilities.length;$('capabilitySummary').textContent=`Capabilities · ${selectedCaps?selectedCaps+' selected':'any'}`;
-  renderList();const points=matches.filter(hasPoint),unpinned=matches.length-points.length;
-  $('unmappedCount').textContent=unpinned?unpinned.toLocaleString()+' matching directory records have no map pin; find them in the searchable list.':'All matching directory records have map coordinates.';
+  renderList();const points=matches.filter(hasPoint),unpinned=matches.length-points.length;displayPoints=MotionXGeography.viewPoints(matches,$('showCompanyReferences').checked?catalog?.visibility:null);companyReferences=displayPoints.filter(r=>r.display_kind==='company_reference_location');$('referenceCount').textContent=companyReferences.length;sourceByCoordinate=new Map();referenceByCoordinate=new Map();for(const [values,index] of [[points,sourceByCoordinate],[companyReferences,referenceByCoordinate]])for(const r of values){const k=coordinateKey(r);if(!index.has(k))index.set(k,[]);index.get(k).push(r);}
+  $('unmappedCount').textContent=unpinned?unpinned.toLocaleString()+' matching directory records have no original map coordinates; '+companyReferences.length+' have separate approximate company references. Browse the searchable company list.':'All matching directory records have map coordinates.';
   $('browseUnmapped').hidden=!unpinned;
-  markerGroups=D.coordinateGroups(points);spatial=D.createSpatialIndex(markerGroups);renderMarkers();$('fitResults').disabled=!map||!markerGroups.length;
+  markerGroups=D.coordinateGroups(points);spatial=D.createSpatialIndex(markerGroups);renderMarkers();renderCompanyReferences();$('fitResults').disabled=!map||!displayPoints.length;
   const counts=D.evidenceCounts(points);for(const c of ['A','B','C'])$('legend'+c).textContent=counts[c].toLocaleString();
   syncQuickFilters();
 }
@@ -80,7 +82,7 @@ function chooser(rows,distinct,marker){
   previous.textContent='← Previous';next.textContent='Next →';info.setAttribute('aria-live','polite');
   function draw(){list.replaceChildren();for(const studio of rows.slice(offset,offset+size)){
     const li=document.createElement('li'),button=document.createElement('button');button.type='button';button.dataset.recordId=studio.id;
-    button.innerHTML=badge(studio,true)+'<span>'+esc(studio.name+' — '+studio.city)+'</span>';
+    button.innerHTML=badge(studio,true)+'<span>'+esc(studio.name+' — '+studio.city)+(studio.display_kind==='company_reference_location'?'<small>Approximate company city reference; not a facility</small>':'')+'</span>';
     button.onclick=()=>{marker.closePopup();navigate('location',studio.id,button);};li.appendChild(button);list.appendChild(li);
   }if(rows.length>size){info.textContent=`${offset+1}–${Math.min(offset+size,rows.length)} of ${rows.length}`;previous.disabled=offset===0;next.disabled=offset+size>=rows.length;}}
   previous.onclick=()=>{offset-=size;draw();list.querySelector('button')?.focus();};next.onclick=()=>{offset+=size;draw();list.querySelector('button')?.focus();};
@@ -103,12 +105,24 @@ function renderMarkers(){
     marker.addTo(layer);marker.motionxLocations=cluster.rows.map(r=>r.id);
     const element=marker.getElement();element.setAttribute('role','button');element.setAttribute('aria-label',title);element.dataset.evidence=count===1?c:info.classes.length===1?info.classes[0]:'mixed';for(const cls of ['A','B','C'])element.dataset['classCount'+cls]=info.counts[cls];
     element.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();marker.fire('click');}});
-    if(count===1){marker.on('click',()=>navigate('location',s.id));continue;}
-    const panel=chooser(cluster.rows,cluster.groups.length,marker);marker.bindPopup(panel,{maxWidth:320});
+    if(count===1){marker.on('click',()=>{const extra=(referenceByCoordinate.get(coordinateKey(s))||[]);if(extra.length)marker.bindPopup(chooser([s,...extra],1,marker),{maxWidth:340}).openPopup();else navigate('location',s.id);});continue;}
+    const extra=[...new Map(cluster.rows.flatMap(s=>referenceByCoordinate.get(coordinateKey(s))||[]).map(r=>[r.id,r])).values()];const panel=chooser([...cluster.rows,...extra],cluster.groups.length,marker);marker.bindPopup(panel,{maxWidth:320});
     marker.on('popupopen',()=>panel.querySelector('button')?.focus());
   }
   timings.viewport_groups=visible.length;timings.rendered_markers=clusters.length;timings.marker_render_ms=performance.now()-start;
 }
+function renderCompanyReferences(){
+ if(!companyReferenceLayer)return;companyReferenceLayer.clearLayers();
+ const groups=D.coordinateGroups(companyReferences),bounds=map.getBounds().pad(.2),visible=D.visibleCoordinateGroups(groups,{west:bounds.getWest(),east:bounds.getEast(),south:bounds.getSouth(),north:bounds.getNorth()});
+ for(const cluster of D.clusterCoordinateGroups(visible,map.getZoom())){
+  const r=cluster.anchor||cluster.rows[0],title=cluster.rows.length+' approximate company reference'+(cluster.rows.length===1?'':'s')+' · not verified facilities';
+  const marker=L.marker([r.lat,r.lng],{keyboard:true,title,zIndexOffset:200,icon:L.divIcon({className:'company-city-reference',html:'<span aria-hidden="true">◇</span><small>'+cluster.rows.length+'</small>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(companyReferenceLayer);marker.motionxLocations=cluster.rows.map(r=>r.id);const el=marker.getElement();el.setAttribute('role','button');el.setAttribute('aria-label',title);el.dataset.displayKind='company_reference_location';
+  const others=[...new Map(cluster.rows.flatMap(r=>sourceByCoordinate.get(coordinateKey(r))||[]).map(s=>[s.id,s])).values()];
+  marker.bindPopup(chooser([...cluster.rows,...others],cluster.groups.length,marker),{maxWidth:340});marker.on('popupopen',()=>marker.getPopup().getElement()?.querySelector('button')?.focus());el.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();marker.openPopup();}});
+ }
+}
+$('showCompanyReferences').onchange=()=>render();
+map?.on('moveend',renderCompanyReferences);
 map?.on('moveend',()=>{if(markerGroups.length>120&&!layer.getLayers().some(m=>m.isPopupOpen()))renderMarkers();});
 map?.on('popupclose',()=>requestAnimationFrame(()=>{if(markerGroups.length>120&&!layer.getLayers().some(m=>m.isPopupOpen()))renderMarkers();}));
 function branchLinks(rows,limit=12){return '<ul class="branch-list">'+rows.slice(0,limit).map(r=>`<li>${profileLink('location',r.id,r.name+` · ${r.city||'City not supplied'}, ${r.country||'Country not supplied'}`)}</li>`).join('')+'</ul>';}
@@ -135,6 +149,8 @@ function locationProfile(s){
     <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.source_provenance?'Original source reference':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':s.source_provenance?'Website listed by source':'Official website')}</dd></dl>
     <h3>Evidence & review</h3><p>${external(s.evidence,s.source_provenance?'Source dataset':'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
     ${s.research_review?'<h3>Research relevance and publication scope</h3><p>'+esc(({motionx_core:'MotionX core',adjacent_production:'Adjacent production',game_development:'Game development — no independently established animation/cinematic/capture specialisation',supporting_services:'Supporting services'})[s.research_review.relevance])+'</p><p>Provisional research lead; completed human evidence verification is not asserted. Publication authority comes from the reviewed PR. Current operation: '+esc(s.research_review.operation_status.replaceAll('_',' '))+'. '+(s.research_review.source_rights==='agency_factual_projection_permission'?'NZ On Air permission covers its scoped factual source fields; it does not license third-party company claims, authored descriptions or assets.':'Minimal factual reference; source-wide commercial reuse and expanded service claims remain unresolved.')+'</p><p><a href="data/nz-census/final-review/reports/dashboard.html#company-'+esc(s.id)+'">Read the company evidence and maintainer review questions</a></p>':''}
+    ${catalog?.visibility?.references[s.id]?'<section class="company-geography"><h3>Separate approximate company reference</h3><p>'+esc(catalog.visibility.references[s.id].explanation)+'</p><p>Class C remains unchanged. '+external(catalog.visibility.references[s.id].company_evidence,'Company geographic source')+' · '+external(catalog.visibility.references[s.id].coordinate_source,'GeoNames city reference')+' · '+external(catalog.visibility.references[s.id].license_url,'CC BY 4.0')+'</p></section>':''}
+    ${catalog?.visibility?.golden_reviews[s.id]&&!catalog.visibility.references[s.id]?'<section class="company-geography"><h3>Geographic discovery status</h3><p>'+esc(catalog.visibility.golden_reviews[s.id].operation)+' Original source coordinates are retained, not independently verified. Record type: '+esc(s.record_kind)+'. Company-only filters exclude source-location observations.</p></section>':''}
     ${boutiqueProfile(s)}
     <h3>Organisation relationships</h3>${relationshipList([s])}
     ${s.source_provenance?'<h3>Directory provenance & reuse</h3><p class="source-note">Current operation, physical facility type and services have not been independently corroborated. The source category is not a verified capability. Observed: '+esc(s.source_observed_on)+'. Identity: '+esc(s.identity_status.replaceAll('_',' '))+(s.identity_status==='matched_existing'?'. This is a candidate match to a retained operating identity; it does not confirm a physical branch or ownership.':'')+'</p><ul>'+s.source_provenance.map(p=>'<li>'+esc(p.source_id+' / '+p.source_record_id)+' · '+external(p.url,'Source object')+' · '+external(p.license_url,p.license==='UNSPECIFIED'?'Source reuse terms not specified':p.license)+' · '+esc(p.observed_on)+'</li>').join('')+'</ul><p class="muted">'+esc(s.attribution)+'</p>':''}
@@ -189,6 +205,7 @@ async function applyRoute(restoreFocus=true){
     let s=directory.byId.get(route.id);if(s||catalog?.researchOnly.has(route.id)){
       if(catalog){$('detail').hidden=false;$('detailContent').textContent='Loading profile evidence…';try{s=await catalog.details(route.id);}catch(error){if(version!==routeVersion)return;$('detailContent').innerHTML='<h2 id="profileTitle" tabindex="-1">Profile evidence unavailable</h2><p>'+esc(error.message)+'</p><button data-retry-profile>Retry profile</button>';return;}if(version!==routeVersion)return;}
       selected=s.id;content=locationProfile(s);
+      const ref=catalog?.visibility?.references[s.id];if(map&&ref)map.setView([ref.lat,ref.lng],7,{animate:false});
       if(map&&hasPoint(s)&&!map.getBounds().contains([s.lat,s.lng]))map.setView([s.lat,s.lng],Math.max(map.getZoom(),6),{animate:false});}
   }else if(route.kind==='organisation'){selected='organisation:'+route.id;content=organisationProfile(route.id);}
   $('detailContent').innerHTML=content||'<div class="eyebrow">PROFILE UNAVAILABLE</div><h2 id="profileTitle" tabindex="-1">This profile could not be found.</h2><p>The link may be incomplete or the identity may not be listed yet.</p><button data-close>Back to directory</button>';
@@ -227,14 +244,14 @@ for(const id of ['search','country','city','category','locationType','evidenceCl
 for(const input of document.querySelectorAll('#boutiqueFilters input,#boutiqueFilters select'))input.addEventListener('input',()=>{page=0;closeProfile(false);render();});
 for(const mode of ['locations','organisations'])$(mode+'View').onclick=()=>{viewMode=mode;page=0;for(const m of ['locations','organisations'])$(m+'View').setAttribute('aria-pressed',String(m===mode));renderList();};
 $('previousPage').onclick=()=>{page--;renderList();};$('nextPage').onclick=()=>{page++;renderList();};
-$('fitResults').onclick=()=>{const points=matches.filter(hasPoint);if(points.length&&map)map.fitBounds(L.latLngBounds(points.map(r=>[r.lat,r.lng])).pad(.25),{maxZoom:10,animate:false});};
+$('fitResults').onclick=()=>{const points=displayPoints;if(points.length&&map)map.fitBounds(L.latLngBounds(points.map(r=>[r.lat,r.lng])).pad(.25),{maxZoom:10,animate:false});};
 $('exportCsv').onclick=async()=>{const button=$('exportCsv'),snapshot=matches.slice();button.disabled=true;button.textContent='Loading evidence…';try{const bundle=catalog?await catalog.exportBundle(snapshot):{rows:snapshot};const rows=bundle.rows.map(r=>{const p=boutiqueData?.profiles[r.id];return p?{...r,advisory_service_alignment:p.score,advisory_service_signals:Object.keys(p.signals),advisory_research_status:p.research_status}:r;});const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\uFEFF'+D.exportCSV(rows,bundle)],{type:'text/csv;charset=utf-8'}));a.download='motionx_atlas_filtered_v1.3.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}catch(error){$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='CSV export failed. No partial file downloaded. '+error.message+' ';$('retryLoad').hidden=false;}finally{button.disabled=false;button.textContent='↓ CSV';}};
 window.addEventListener('resize',()=>setTimeout(()=>map?.invalidateSize(),80));
 function setControls(enabled){document.querySelectorAll('#filters input,#filters select,#quickFilters button,#exportCsv,#sortResults,#resetFilters,#fitResults,#locationsView,#organisationsView,#previousPage,#nextPage').forEach(el=>{el.disabled=!enabled;});if(!map)$('fitResults').disabled=true;}
 async function initialize(){
   boutiqueMode=false;boutiqueData=null;
   const start=performance.now();loaded=false;setControls(false);$('dataStatus').hidden=false;$('dataStatus').firstChild.textContent='Loading studio database… ';$('retryLoad').hidden=true;$('count').textContent='Loading locations…';$('companies').textContent='';$('detail').hidden=true;
-  studios=[];matches=[];directory=null;markerGroups=[];spatial=null;layer?.clearLayers();$('list').textContent='Loading the complete catalogue…';$('catalogSummary').replaceChildren();for(const c of ['A','B','C'])$('legend'+c).textContent='—';$('unmappedCount').textContent='Loading non-geolocated record count…';$('browseUnmapped').hidden=true;
+  studios=[];matches=[];directory=null;markerGroups=[];spatial=null;layer?.clearLayers();companyReferenceLayer?.clearLayers();$('list').textContent='Loading the complete catalogue…';$('catalogSummary').replaceChildren();for(const c of ['A','B','C'])$('legend'+c).textContent='—';$('unmappedCount').textContent='Loading non-geolocated record count…';$('browseUnmapped').hidden=true;
   try{
     const progress=info=>{const total=info.total?Math.min(100,Math.floor(info.received/info.total*100)):null;$('dataStatus').firstChild.textContent=`Loading complete global search index${total===null?'':': '+total+'%'} · ${(info.received/1048576).toFixed(1)} MB received. Full results are available after integrity checks. `;};
     if(document.documentElement.dataset.catalog==='sharded'){catalog=await MotionXCatalog.load(D,undefined,undefined,{onProgress:progress});studios=catalog.rows;}else{catalog=null;studios=(await D.loadDatabase()).map(r=>({...r,evidence_class:r.evidence_state==='confirmed'?'A':'C'}));}timings.load_validate_ms=performance.now()-start;const indexing=performance.now();directory=D.createDirectoryIndex(studios);timings.index_ms=performance.now()-indexing;

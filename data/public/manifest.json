@@ -2529,5 +2529,12 @@
     ],
     "audited_proposals": 59,
     "human_approved": false
+  },
+  "global_visibility": {
+    "path": "visibility.json",
+    "sha256": "d10e9b9201dad49a90b14c73d11d2f22a6a2dc9ee606db5611df32b38064f1bf",
+    "gzip_sha256": "706c5f26a387142c90ae60db0a0f8308dcc40ca1d2892dea2f53717a8f64e3e0",
+    "gzip_bytes": 32994,
+    "content_addressed": true
   }
 }
