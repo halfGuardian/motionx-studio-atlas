@@ -1,4 +1,14 @@
-# MotionX Studio Atlas v1.5 — New Zealand census continuation (draft)
+# MotionX Studio Atlas v1.5 — Final quality gate (draft PR #15)
+
+**READY FOR HUMAN REVIEW.** The [final maintainer dashboard](data/nz-census/final-review/reports/dashboard.html) reviews every one of the 59 original proposals, all 27 identity keys, a separate Niantic NZ-office alert and four facility dossiers. It offers 91 evidence-backed working items with blank decisions and no automatic approval. [Publication scope, source rights and remaining questions](data/nz-census/final-review/README.md).
+
+The proposed directory contains **42,296 references**: all **42,239 original IDs** plus **57 Class C company leads**. Melodics and the unresolved “Level” identity stay staged and auditable. Relevance across the original 59: **6 MotionX core / 8 adjacent production / 33 game development / 11 supporting / 1 outside demonstrated scope**. Insight Creative is classified as game-production/playtesting support, not an inferred game developer. There are **zero new pins or verified capabilities**; the root database remains 243 locations / 119 operating organisations.
+
+Thirty included identities use the scoped agency factual-source permission; 27 use the existing minimal-factual-reference model with wider source terms unresolved and maintainer scope review required. Public profiles and CSV distinguish company assertions, source-only geography and review status. Source-wide rights, independent operation and facility verification are not fabricated. The two staged records are excluded from directory search/export but retained in the review history; this public repository is not private storage.
+
+The original 29-entry NZ and 37-row Annecy human worksheets remain unchanged. This release requires manual review of the exact draft PR; tests and worksheet clicks are not approval. [Validation results](data/nz-census/final-review/validation.md). **Do not merge or deploy automatically.**
+
+# Historical d0cd0a5 — New Zealand census continuation
 
 **42,298 unified reference records**, preserving all 42,239 previous IDs and evidence. This proposal adds **59 Class C company references**, **zero map pins** and **zero verified capability claims**. The retained database remains 243 locations / 119 operating organisations; the combined catalogue includes overlapping source observations and 1,679 company-only references. It is not 42,298 verified operating studios.
 

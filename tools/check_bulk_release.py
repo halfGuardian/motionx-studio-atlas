@@ -55,6 +55,14 @@ def check(root=ROOT):
             extend_nz(tmp/'public',root/'studios.json',root/'data/nz-census')
             expected=read(tmp/'public/manifest.json')
             if expected['counts']!=config['after_counts']:raise ValueError('NZ census release counts differ')
+        gate=root/'data/nz-census/final-review/release.json'
+        if gate.exists():
+            from nz_quality_gate import checkpoint as gate_checkpoint,apply as apply_gate
+            config=gate_checkpoint(root/'data/nz-census/final-review')
+            if expected['counts']!=config['before_counts']:raise ValueError('NZ quality gate baseline mismatch')
+            apply_gate(tmp/'public',root/'studios.json',root/'data/nz-census/final-review')
+            expected=read(tmp/'public/manifest.json')
+            if expected['counts']!=config['after_counts']:raise ValueError('NZ final gate release counts differ')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')

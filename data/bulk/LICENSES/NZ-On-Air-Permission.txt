@@ -9,10 +9,19 @@ additional permission, subject to accurate reproduction, a non-derogatory and
 non-misleading context, and acknowledgement of the source and copyright status.
 Third-party funded photos and videos are excluded from that grant.
 
-MotionX projects company names and programme-year association only. It omits
+The initial d0cd0a5 projection retained company names and programme-year association only. It omitted
 financial amounts/bands, authored descriptions, personal contacts and media.
 A historic programme mention does not establish current operation, a physical
 studio, facility coordinates or technical services. No NZ On Air endorsement
 or independent verification is claimed. Third-party company websites and
 research claims do not inherit this permission. This notice summarises the
 recorded grant; the linked terms control. This is not a Creative Commons licence.
+
+Final quality-gate projection: the agency annual review also supports a coarse
+playtesting / game-production-support classification for Insight Creative.
+Source: https://www.nzonair.govt.nz/news/our-year-in-review-2024-2025/game-development-sector-rebate/
+MotionX paraphrases that minimal factual classification with source/date and
+agency copyright acknowledgement. No authored paragraph, finance, contact or
+media is reproduced. The agency grant applies to its factual source fields;
+company-site claims, MotionX research judgements and third-party assets do not
+receive an unrestricted commercial licence through this notice.

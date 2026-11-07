@@ -1,4 +1,8 @@
-# New Zealand census · v1.5 continuation
+# Current final quality gate
+
+The [final review](final-review/README.md) and [91-item maintainer dashboard](final-review/reports/dashboard.html) supersede the raw-59 publication proposal below. They retain the full 217-observation audit, classify all 59 companies, include 57 as provisional directory leads and stage two for scope/identity decisions. All original source snapshots, the 29-entry worksheet and history below remain frozen. No human approval, new facility pin or verified capability is created.
+
+# Historical d0cd0a5 NZ census continuation
 
 Reviewed **7 November 2026**. Continues the original Wave 1 in draft PR #15, tracking issue #14. **The census remains incomplete.** The target is traceable coverage of relevant operating businesses, not an inflated count of verified facilities.
 

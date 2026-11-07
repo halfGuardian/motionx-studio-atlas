@@ -17,7 +17,7 @@ from validate import ID,url_valid,validate,normalized
 from compact_index import add_transport
 
 KINDS={'source_location','company_reference'}
-FIELDS={'id','company_id','name','city','country','lat','lng','website','website_kind','categories','capabilities','capability_evidence','evidence_state','evidence_class','evidence','verified_on','source_observed_on','coordinate_precision','coordinate_source','location_type','relationships','status','identity_status','record_kind','source_provenance','license','attribution','research_reasons','potential_duplicates','source_status','source_category','source_type','provider_confidence','source_release','organisation_matching_reasons'}
+FIELDS={'id','company_id','name','city','country','lat','lng','website','website_kind','categories','capabilities','capability_evidence','evidence_state','evidence_class','evidence','verified_on','source_observed_on','coordinate_precision','coordinate_source','location_type','relationships','status','identity_status','record_kind','source_provenance','license','attribution','research_reasons','potential_duplicates','source_status','source_category','source_type','provider_confidence','source_release','organisation_matching_reasons','research_review'}
 
 def validate_research(rows):
     errors=[];seen=set()
@@ -42,6 +42,17 @@ def validate_research(rows):
             if row.get(k) and not url_valid(row[k]):error('unsafe '+k)
         if not isinstance(row.get('categories'),list) or any(not isinstance(c,str) or not c.strip() for c in row['categories']):error('invalid source sectors')
         if not row.get('license') or not row.get('attribution'):error('source terms/attribution required')
+        review=row.get('research_review')
+        if review is not None:
+            expected={'version','relevance','publication_state','source_rights','operation_status','reviewed_on','human_approved','facility_verified'}
+            if (not isinstance(review,dict) or set(review)!=expected or review.get('version')!=1
+                or row.get('record_kind')!='company_reference' or row.get('evidence_class')!='C'
+                or review.get('relevance') not in ('motionx_core','adjacent_production','game_development','supporting_services')
+                or review.get('publication_state')!='provisional_research_lead'
+                or review.get('source_rights') not in ('agency_factual_projection_permission','minimal_facts_terms_unspecified')
+                or review.get('operation_status') not in ('programme_listing_only','source_self_report_unverified','regional_listing_only')
+                or review.get('reviewed_on')!=row.get('source_observed_on')
+                or review.get('human_approved') is not False or review.get('facility_verified') is not False):error('invalid company research review; approval/facility inference forbidden')
         duplicates=row.get('potential_duplicates',[])
         if not isinstance(duplicates,list):error('invalid duplicate review metadata')
         else:

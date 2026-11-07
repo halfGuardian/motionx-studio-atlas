@@ -1,0 +1,7 @@
+{
+  "checks": 6,
+  "records": 42296,
+  "review_items": 91,
+  "staged_proposals": 2,
+  "conditions": "Local HTTP repository subdirectory, installed headless Chromium, 1440x1000 and 390x844. No CPU/network throttle here. Not deployed Pages, physical mobile or completed human review."
+}

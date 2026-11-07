@@ -119,21 +119,22 @@ function relationshipList(rows){
 }
 function locationProfile(s){
   const org=directory.organisations.get(s.company_id),branches=org.rows.filter(r=>r.id!==s.id);
-  const precision=s.coordinate_precision==='exact'?'Exact (see cited research evidence)':`${s.coordinate_precision} — approximate reference pin; not a verified street address`;
+  const precision=!hasPoint(s)?'Unverified — no coordinates or map pin supplied':s.coordinate_precision==='exact'?'Exact (see cited research evidence)':`${s.coordinate_precision} — approximate reference pin; not a verified street address`;
   const capabilities=state=>s.capabilities.filter(c=>s.capability_evidence[c].state===state).map(c=>{
     const e=s.capability_evidence[c];return `<li>${esc(c)} — ${esc(e.state)}${e.evidence?' · '+external(e.evidence,'Source'):''}${e.verified_on?' · reviewed '+esc(e.verified_on):' · not yet reviewed'}</li>`;
   }).join('');
   return `<div class="eyebrow">${s.record_kind==='company_reference'?'COMPANY REFERENCE · PHYSICAL BRANCHES UNVERIFIED':s.record_kind==='source_location'?'SOURCE LOCATION OBSERVATION':'STUDIO LOCATION'}</div><h2 id="profileTitle" tabindex="-1">${esc(s.name)}</h2>
-    <p class="muted">${esc(s.city||'City not supplied')}, ${esc(s.country||'Country not supplied')}${!hasPoint(s)?' · No source coordinates; no map pin is invented.':''}</p>
+    <p class="muted">${s.record_kind==='company_reference'?'Geographic source association: '+esc([s.city,s.country].filter(Boolean).join(', ')||'Geography not supplied')+' · physical branch unverified':esc(s.city||'City not supplied')+', '+esc(s.country||'Country not supplied')}${!hasPoint(s)?' · No source coordinates; no map pin is invented.':''}</p>
     <p>${profileLink('organisation',org.id,org.name)} · ${countLabel(org.rows.length,unified()?'record':'location')} in this ${s.identity_status==='source_provisional'?'provisional source identity':'operating organisation'}</p>
     ${badge(s)}<span class="stat">${s.evidence_class==='B'?'Class B — Source-listed, not independently corroborated':D.evidenceClass(s)==='A'?'Class A — Source-reviewed location':'Class C — Research required'} · Evidence confidence: ${esc(s.evidence_state)}</span><span class="stat">${esc((s.location_type||'uncertain').replaceAll('_',' '))}</span>
     <p class="source-note muted">${esc(s.status)}</p>
     <h3>Source-confirmed capabilities</h3>${capabilities('confirmed')?'<ul>'+capabilities('confirmed')+'</ul>':'<p class="muted">No facility capability is confirmed in the recorded evidence.</p>'}
     ${capabilities('likely')?'<h3>Likely capabilities</h3><ul>'+capabilities('likely')+'</ul>':''}
     ${capabilities('unknown')?'<h3>Unreviewed capabilities</h3><ul>'+capabilities('unknown')+'</ul>':''}
-    <h3>Specialisations & location</h3><p>${s.categories.map(c=>`<span class="tag">${esc(c)}</span>`).join('')}</p>
+    <h3>${s.record_kind==='company_reference'?'Company-level sector assertions':'Specialisations & location'}</h3>${s.record_kind==='company_reference'?'<p class="muted">Source classifications and company marketing are not verified physical-branch capabilities. Programme listing does not establish current operation.</p>':''}<p>${s.categories.map(c=>`<span class="tag">${esc(c)}</span>`).join('')}</p>
     <dl><dt>Location type</dt><dd>${esc((s.location_type||'uncertain').replaceAll('_',' '))}</dd><dt>Coordinate precision</dt><dd>${esc(precision)}${s.coordinate_source?' · '+external(s.coordinate_source,s.source_provenance?'Original source reference':'City reference source'):''}</dd><dt>Location reference</dt><dd>${esc(s.address||'Street address not verified')}</dd><dt>Website</dt><dd>${external(s.website,s.website_kind==='source_listing'?'Directory source listing':s.source_provenance?'Website listed by source':'Official website')}</dd></dl>
     <h3>Evidence & review</h3><p>${external(s.evidence,s.source_provenance?'Source dataset':'Official/public source')}<br><span class="muted">${s.legacy_research&&s.evidence_state==='unknown'?'Legacy recorded review date (not independently verified)':'Recorded review date'}: ${esc(s.verified_on||'Not reviewed')}. Source presence does not prove capability, registration or current operation.</span></p>
+    ${s.research_review?'<h3>Research relevance and publication scope</h3><p>'+esc(({motionx_core:'MotionX core',adjacent_production:'Adjacent production',game_development:'Game development — no independently established animation/cinematic/capture specialisation',supporting_services:'Supporting services'})[s.research_review.relevance])+'</p><p>Provisional research lead; completed human evidence verification is not asserted. Publication authority comes from the reviewed PR. Current operation: '+esc(s.research_review.operation_status.replaceAll('_',' '))+'. '+(s.research_review.source_rights==='agency_factual_projection_permission'?'NZ On Air permission covers its scoped factual source fields; it does not license third-party company claims, authored descriptions or assets.':'Minimal factual reference; source-wide commercial reuse and expanded service claims remain unresolved.')+'</p><p><a href="data/nz-census/final-review/reports/dashboard.html#company-'+esc(s.id)+'">Read the company evidence and maintainer review questions</a></p>':''}
     ${boutiqueProfile(s)}
     <h3>Organisation relationships</h3>${relationshipList([s])}
     ${s.source_provenance?'<h3>Directory provenance & reuse</h3><p class="source-note">Current operation, physical facility type and services have not been independently corroborated. The source category is not a verified capability. Observed: '+esc(s.source_observed_on)+'. Identity: '+esc(s.identity_status.replaceAll('_',' '))+(s.identity_status==='matched_existing'?'. This is a candidate match to a retained operating identity; it does not confirm a physical branch or ownership.':'')+'</p><ul>'+s.source_provenance.map(p=>'<li>'+esc(p.source_id+' / '+p.source_record_id)+' · '+external(p.url,'Source object')+' · '+external(p.license_url,p.license==='UNSPECIFIED'?'Source reuse terms not specified':p.license)+' · '+esc(p.observed_on)+'</li>').join('')+'</ul><p class="muted">'+esc(s.attribution)+'</p>':''}
@@ -176,10 +177,15 @@ async function compareRecords(ids){
 }
 function closeProfile(restoreFocus=true){if(location.hash)history.pushState(null,'',location.pathname+location.search);applyRoute(restoreFocus);}
 async function applyRoute(restoreFocus=true){
-  if(!loaded)return;const version=++routeVersion,start=performance.now(),route=D.parseProfileHash(location.hash);
+  if(!loaded)return;clearTimeout(searchTimer);const version=++routeVersion,start=performance.now(),route=D.parseProfileHash(location.hash);
   if(route.kind==='directory'){$('detail').hidden=true;selected=null;renderList();if(restoreFocus&&opener){const target=[...$('list').querySelectorAll('a')].find(a=>a.getAttribute('href')===openerHash);if(target?.getClientRects().length)target.focus();else if($('search').getClientRects().length)$('search').focus();else $('map').focus();}return;}
   let content=null;
   if(route.kind==='location'){
+    if(catalog?.staged.has(route.id)){
+      selected=null;
+      $('detailContent').innerHTML='<h2 id="profileTitle" tabindex="-1">Reference staged for review</h2><p>This v1.5 proposal is excluded from directory results and CSV exports while its identity or relevance is reviewed. It has not been silently deleted or promoted.</p><p><a href="data/nz-census/final-review/reports/dashboard.html#company-'+esc(route.id)+'">Review the proposal and source evidence</a></p>';
+      $('detail').hidden=false;$('profileTitle').focus();return;
+    }
     let s=directory.byId.get(route.id);if(s||catalog?.researchOnly.has(route.id)){
       if(catalog){$('detail').hidden=false;$('detailContent').textContent='Loading profile evidence…';try{s=await catalog.details(route.id);}catch(error){if(version!==routeVersion)return;$('detailContent').innerHTML='<h2 id="profileTitle" tabindex="-1">Profile evidence unavailable</h2><p>'+esc(error.message)+'</p><button data-retry-profile>Retry profile</button>';return;}if(version!==routeVersion)return;}
       selected=s.id;content=locationProfile(s);

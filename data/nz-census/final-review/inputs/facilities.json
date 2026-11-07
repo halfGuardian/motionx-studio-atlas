@@ -1,0 +1,166 @@
+{
+  "reviewed_on": "2026-11-07",
+  "facilities": [
+    {
+      "proposal_id": "nz-facility-bab3b8aebe0b73cf97cc",
+      "name": "Avalon Studios",
+      "operator_source_claim": "Avalon Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Lower Hutt",
+      "country": "New Zealand",
+      "source_address_claim": "41 Percy Cameron Street, Avalon, Lower Hutt",
+      "address_verified_by_human": false,
+      "function_source_claim": "Film/television production spaces and associated support facilities.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://avalonstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/avalon-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-88c0b3c2901ee08dd834",
+      "name": "Lane Street Studios",
+      "operator_source_claim": "Lane Street Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Upper Hutt",
+      "country": "New Zealand",
+      "source_address_claim": "32 Lane Street, Wallaceville, Upper Hutt",
+      "address_verified_by_human": false,
+      "function_source_claim": "Source-listed sound stages, B stages, production and workshop spaces.",
+      "current_operation": "Current regional listing exists, but earlier property-sale reporting creates an explicit operational uncertainty.",
+      "evidence": [
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.oneroof.co.nz/news/premium-film-studio-offers-blockbuster-opportunity-48435",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval.",
+        "Property marketed for sale in 2025; this is a change-of-operation investigation signal, not a closure determination.",
+        "Direct company homepage was inaccessible during review; current booking/operator status requires confirmation."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-57b7bcb47c90a1260813",
+      "name": "Stone Street Studios",
+      "operator_source_claim": "Stone Street Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Wellington",
+      "country": "New Zealand",
+      "source_address_claim": "1 Stone Street, Miramar, Wellington",
+      "address_verified_by_human": false,
+      "function_source_claim": "Company and regional source describe sound stages and production support.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://www.stonestreetstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/stone-street-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-7f69d3df5c96c1862e6c",
+      "name": "Te Whare Piringa Film Studio",
+      "operator_source_claim": "Local Gecko Productions",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Rotorua",
+      "country": "New Zealand",
+      "source_address_claim": null,
+      "address_verified_by_human": false,
+      "function_source_claim": "Source-listed hire space for film/TV and other screen production; not a verified capture stage.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://poutama.co.nz/local-gecko-productions/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval.",
+        "Exact street location and coordinate evidence not established; do not derive a pin from regional travel-time descriptions.",
+        "Facility name and Local Gecko operator must not become duplicate operating-company records."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    }
+  ],
+  "creates_public_locations": false
+}

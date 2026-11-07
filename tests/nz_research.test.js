@@ -11,10 +11,10 @@ test('NZ dashboard ANDs text, outcome and source without hiding source identity'
 });
 test('all real NZ references validate, retain shareable routes and have no pins or confirmed capabilities',()=>{
   assert.equal(proposed.length,59);
-  const index=JSON.parse(fs.readFileSync(path.join(root,'data/public/index.json')));
+  const index=JSON.parse(fs.readFileSync(path.join(root,'data/public/index.json'))),manifest=JSON.parse(fs.readFileSync(path.join(root,'data/public/manifest.json')));
   for(const row of proposed){
     C.checkResearch(D,row);assert.equal(row.evidence_class,'C');assert.equal(row.record_kind,'company_reference');assert.equal(row.lat,null);assert.deepEqual(row.capabilities,[]);
-    assert.ok(index.some(r=>r[0]===row.id));assert.deepEqual(D.parseProfileHash(D.profileHash('location',row.id)),{kind:'location',id:row.id});
+    assert.equal(index.some(r=>r[0]===row.id),!manifest.nz_quality_gate.staged_ids.includes(row.id));assert.deepEqual(D.parseProfileHash(D.profileHash('location',row.id)),{kind:'location',id:row.id});
   }
 });
 async function actualCatalog(corrupt=false){
@@ -26,7 +26,7 @@ async function actualCatalog(corrupt=false){
 }
 test('actual lazy NZ shard and export include exact scoped NZ On Air grant, never CC BY',async()=>{
   const c=await actualCatalog(),row=proposed.find(r=>r.name==='Balancing Monkey Games');
-  const detail=await c.details(row.id);assert.deepEqual(detail,row);
+  const detail=await c.details(row.id);const {research_review,...historical}=detail;assert.deepEqual(historical,row);assert.equal(research_review.human_approved,false);
   const bundle=await c.exportBundle(c.rows.filter(r=>r.id===row.id));
   assert.equal(bundle.rows.length,1);assert.match(bundle.licenseTexts,/Copyright © NZ On Air/);assert.match(bundle.licenseTexts,/copyright-and-terms-use/);assert.doesNotMatch(bundle.licenseTexts,/Creative Commons Attribution/);
 });

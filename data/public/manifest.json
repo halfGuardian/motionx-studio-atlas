@@ -496,19 +496,19 @@
   },
   "index": {
     "path": "index.json",
-    "sha256": "1e0772de0f1f989e0207f4ad973ea22bdb30882dc977b43a6e6bf2fd3431dfcd",
-    "gzip_sha256": "c2ab20db1198cdbb0cb67942c03f8ab4647ec65750c395d77cfaab5efd46051f",
-    "gzip_bytes": 3317867,
-    "records": 42055,
-    "bytes": 11466736,
+    "sha256": "cd838232f7fc3c0a5edb746ebb266c7bde05459c7fe846045f685218ab2dda6f",
+    "gzip_sha256": "6af818ca30b93467d5fa10daa6e60a12ed06848a391a3864c8d8885adfbf0bf4",
+    "gzip_bytes": 3317807,
+    "records": 42053,
+    "bytes": 11466286,
     "compact": {
       "path": "index.compact.json",
       "encoding": "motionx-columnar-v1",
-      "records": 42055,
-      "sha256": "14bd20ed6a2aebf209bcfffcf03bc2ea81f01ba09239024a44b9522af2e0a88a",
-      "gzip_sha256": "9b95826152f58a9daffcc7c8f0cf5d8c0bb10560e3bbf16a5822eba803d73acf",
-      "bytes": 5100537,
-      "gzip_bytes": 2214097,
+      "records": 42053,
+      "sha256": "e8c9e1986cfe44e62e7e851c9f18da19941522d7fc739a431f400b881497cd2e",
+      "gzip_sha256": "6d4deee8795fa6e71293312e6f0237d38833b2f6c4efaa0d4b35532fd26088c8",
+      "bytes": 5100321,
+      "gzip_bytes": 2213984,
       "content_addressed": true
     }
   },
@@ -2434,12 +2434,12 @@
       "bytes": 367546
     },
     "shards/821e1c1af0a4-000.json": {
-      "sha256": "0ebcc3a32d1010b8606475e6fbf9a7907fbefc055aed0afa9e4fb126b85b5716",
-      "gzip_sha256": "fd8b5c8e9052690f4950e85532da8b913897d5f39f43c53bc8db9969d0f8739c",
-      "gzip_bytes": 12129,
-      "records": 59,
+      "sha256": "1fb3376423089737884ca6b9e650a798c771b649b8c3fc181f454a54b0a28602",
+      "gzip_sha256": "4af1db3b5d92a42682c598c8294ebc941000f6e25bf55c70a9b6d188b7a521a4",
+      "gzip_bytes": 12546,
+      "records": 57,
       "country": "New Zealand",
-      "bytes": 162996
+      "bytes": 174577
     }
   },
   "index_columns": [
@@ -2476,46 +2476,58 @@
       "sha256": "fe3a07c5e76c7de3f05f6bddff0d1e1b1481d16533491e7131e4f407dd6cdbd2"
     },
     "NZ-On-Air-Permission.txt": {
-      "sha256": "242d63550a18149f3b0008cc858bd5edf95d506dafa170c3ad023de48ef6c98e"
+      "sha256": "c760fa502d6fce10e0968bf3ed8d7ada5a25d4a2a3be4f8cc64505369c0fa244"
     },
     "Unicode-3.0.txt": {
       "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1"
     }
   },
   "counts": {
-    "records": 42298,
-    "public_records": 42298,
+    "records": 42296,
+    "public_records": 42296,
     "class_a": 230,
     "class_b": 4626,
-    "class_c": 37442,
+    "class_c": 37440,
     "retained_locations": 243,
     "source_location_observations": 40376,
-    "company_references": 1679,
+    "company_references": 1677,
     "records_with_coordinates": 40619,
     "countries": 178,
     "retained_operating_organisations": 119,
-    "source_identities": 41797
+    "source_identities": 41795
   },
   "warning_meaning": "All source records are accessible in one research directory. Record totals are not verified unique studio/facility counts. Source status/type/sector are claims; company references have no invented coordinates. Existing curated evidence is preserved.",
   "warnings": {
     "canonical_baseline": 265,
-    "unreviewed_new_references": 42055,
+    "unreviewed_new_references": 42053,
     "source_point_precision_unverified": 40376,
-    "company_references_without_coordinates": 1679,
+    "company_references_without_coordinates": 1677,
     "unspecified_company_source_terms": 1412,
     "source_records_missing_city": 170,
     "source_records_missing_country": 14,
     "possible_duplicate_candidates": 120,
     "boutique_company_references_requiring_review": 332,
     "annecy_class_c_company_references_requiring_review": 172,
-    "nz_census_references_requiring_review": 59,
-    "nz_census_foreign_name_collisions": 3
+    "nz_census_references_requiring_review": 57,
+    "nz_census_foreign_name_collisions": 3,
+    "nz_gate_staged_proposals": 2,
+    "nz_gate_minimal_facts_wider_rights_review": 27
   },
   "boutique": {
     "path": "boutique.json",
-    "sha256": "421ff84af8bc8b10dc9c1bdeaf84fb07981faa789339d176fc4c982f13e2f3db",
-    "gzip_sha256": "703286a2bf61b1dd044d6a291e0b8e9798f68e8e23c932d849fe290d45a5d8d2",
-    "gzip_bytes": 315647,
+    "sha256": "f913b2b25b00e8d9dc3cfd0bbce889e058bf408e94b664ee2da4cfab6ed1348d",
+    "gzip_sha256": "40f9d9e99efcfc8d17c1c79c7b3d13ef20772f06fbd27a033b145b1d50673258",
+    "gzip_bytes": 315691,
     "content_addressed": true
+  },
+  "nz_quality_gate": {
+    "version": 1,
+    "report_path": "data/nz-census/final-review/reports/dashboard.html",
+    "staged_ids": [
+      "nzcensus-2a118b09ac10de6ab7d579b9bd44",
+      "nzcensus-f7bf938638654f34ce214ebe84e0"
+    ],
+    "audited_proposals": 59,
+    "human_approved": false
   }
 }

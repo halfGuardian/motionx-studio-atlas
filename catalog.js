@@ -89,6 +89,10 @@
   }
   function checkResearch(D,row){
     if(!row||!identifier.test(row.id)||!identifier.test(row.company_id)||!['B','C'].includes(row.evidence_class)||!['source_location','company_reference'].includes(row.record_kind)||typeof row.name!=='string'||!row.name.trim()||typeof row.city!=='string'||typeof row.country!=='string')throw new Error('Invalid research identity.');
+    if(row.research_review!==undefined){
+      const r=row.research_review,keys=['version','relevance','publication_state','source_rights','operation_status','reviewed_on','human_approved','facility_verified'];
+      if(!r||Object.keys(r).length!==keys.length||keys.some(k=>!Object.hasOwn(r,k))||r.version!==1||row.record_kind!=='company_reference'||row.evidence_class!=='C'||!['motionx_core','adjacent_production','game_development','supporting_services'].includes(r.relevance)||r.publication_state!=='provisional_research_lead'||!['agency_factual_projection_permission','minimal_facts_terms_unspecified'].includes(r.source_rights)||!['programme_listing_only','source_self_report_unverified','regional_listing_only'].includes(r.operation_status)||r.reviewed_on!==row.source_observed_on||r.human_approved!==false||r.facility_verified!==false)throw new Error('Invalid company research review: approval/facility inference forbidden.');
+    }
     const hasPoint=row.lat!==null||row.lng!==null;
     if(hasPoint&&(!Number.isFinite(row.lat)||Math.abs(row.lat)>90||!Number.isFinite(row.lng)||Math.abs(row.lng)>180)||row.record_kind==='company_reference'&&hasPoint)throw new Error('Invalid research coordinates.');
     if(row.evidence_state!=='unknown'||row.verified_on||!Array.isArray(row.capabilities)||row.capabilities.length||!row.capability_evidence||Object.keys(row.capability_evidence).length||row.relationships?.length||row.coordinate_precision==='exact'||!Array.isArray(row.categories)||row.categories.some(c=>typeof c!=='string'||!c.trim())||!D.httpsURL(row.website)||!D.httpsURL(row.evidence)||!D.validDate(row.source_observed_on)||!row.license||!row.attribution||!Array.isArray(row.source_provenance)||!row.source_provenance.length)throw new Error('Research records cannot claim verification.');
@@ -126,6 +130,8 @@
       rows.push(row);ids.add(id);metadata.set(id,row);
     }
     if(rows.length!==(unified?m.counts.records:m.counts.public_locations)||m.counts.class_a!==m.baseline.eligible_ids.length||(!unified&&m.counts.class_b!==index.length)||(unified&&['A','B','C'].some(cls=>rows.filter(r=>r.evidence_class===cls).length!==m.counts['class_'+cls.toLowerCase()])))throw new Error('Catalogue counts mismatch.');
+    const staged=new Set(m.nz_quality_gate?.staged_ids||[]);
+    if(m.nz_quality_gate&&(m.nz_quality_gate.version!==1||m.nz_quality_gate.human_approved!==false||m.nz_quality_gate.report_path!=='data/nz-census/final-review/reports/dashboard.html'||!Array.isArray(m.nz_quality_gate.staged_ids)||staged.size!==m.nz_quality_gate.staged_ids.length||[...staged].some(id=>!/^nzcensus-[a-f0-9]{28}$/.test(id)||ids.has(id))))throw new Error('Invalid research staging metadata.');
     const pending=new Map(),full=new Map(rows.filter(r=>baseMap.has(r.id)).map(r=>[r.id,r]));
     let boutiquePending;
     async function boutique(){
@@ -171,7 +177,7 @@
       if(values.some(r=>r.license==='UNSPECIFIED'))notices+='\nSome source references have no explicit dataset redistribution licence. Retain each source-specific attribution and permission warning; factual references do not grant source-wide reuse rights. Authored descriptions and contacts omitted.';
       return {rows:values,licenseTexts:texts.join('\n\n'),notices};
     }
-    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held};
+    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held,staged};
   }
   const api={load,sha,checkB,checkResearch,decodeIndex};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MotionXCatalog=api;
 })(globalThis);

@@ -228,11 +228,16 @@ def checkpoint(home=HOME):
 def check(home=HOME,output=None):
     config=checkpoint(home);m,all_rows=records(ROOT/'data/public',ROOT/'studios.json');base=[r for r in all_rows if not r['id'].startswith(PREFIX)];report=build(base,home)
     if len(base)!=42239 or report['baseline_ids_sha256']!=config['baseline_ids_sha256']:raise ValueError('Original 42,239 identities changed')
-    if sha(ROOT/'studios.json')!=config['retained_baseline_sha256'] or m['counts']!=config['after_counts']:raise ValueError('Retained baseline or release totals changed')
+    expected=report['proposed_references'];expected_counts=config['after_counts']
+    gate_home=ROOT/'data/nz-census/final-review'
+    if (gate_home/'release.json').exists():
+        from nz_quality_gate import public_records,checkpoint as gate_checkpoint
+        expected=public_records(expected,gate_home);expected_counts=gate_checkpoint(gate_home)['after_counts']
+    if sha(ROOT/'studios.json')!=config['retained_baseline_sha256'] or m['counts']!=expected_counts:raise ValueError('Retained baseline or release totals changed')
     for n,h in config['retained_shard_hashes'].items():
         if sha(ROOT/'data/public'/n)!=h:raise ValueError('Retained evidence shard overwritten')
-    if {r['id']:r for r in all_rows if r['id'].startswith(PREFIX)}!={r['id']:r for r in report['proposed_references']}:raise ValueError('Reference proposal differs from catalogue')
-    report.update(before_counts=config['before_counts'],after_counts=m['counts'],retained_shard_hashes=config['retained_shard_hashes'],retained_baseline_sha256=config['retained_baseline_sha256'])
+    if {r['id']:r for r in all_rows if r['id'].startswith(PREFIX)}!={r['id']:r for r in expected}:raise ValueError('Reference proposal differs from catalogue')
+    report.update(before_counts=config['before_counts'],after_counts=config['after_counts'],retained_shard_hashes=config['retained_shard_hashes'],retained_baseline_sha256=config['retained_baseline_sha256'])
     with tempfile.TemporaryDirectory() as t:
         save(report,Path(t))
         for p in Path(t).iterdir():

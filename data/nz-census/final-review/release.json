@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "before_counts": {
+    "records": 42298,
+    "public_records": 42298,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 37442,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1679,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41797
+  },
+  "after_counts": {
+    "records": 42296,
+    "public_records": 42296,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 37440,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1677,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41795
+  },
+  "staged_ids": [
+    "nzcensus-2a118b09ac10de6ab7d579b9bd44",
+    "nzcensus-f7bf938638654f34ce214ebe84e0"
+  ],
+  "original_ids_sha256": "1d439cb5a2c4fe60d490775368a325ad365468abd3e26e897d3bcbbc15088ab3",
+  "input_hashes": {
+    "inputs/companies.json": "86828bdb546341bc25760eec95f61d9b4d2de1850d8567553cfe48406ca3e1f8",
+    "inputs/facilities.json": "d4e5506cbeaae083fcd752781f0b9db6a0caf885e30c3da47dcb3768d5ea9eda",
+    "inputs/identities.json": "82e287a6134243685ac69bf75af9d5b8928f07ed8e0be598753f8787ab92a03f",
+    "inputs/parent-checkpoint.json": "fd00439f22ba3fe182f187a5ef175a914cdcf37730cd0de56db9a105c48934ba",
+    "inputs/source-receipts.json": "fb06c26ce67a9b5308800bbaa548792c0065296f36791c99ed10966d159806fd"
+  },
+  "human_approved": false
+}

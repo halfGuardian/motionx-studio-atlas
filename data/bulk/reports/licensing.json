@@ -240,7 +240,21 @@
       "required_notices": "Retain original source links, dates, attribution and applicable full licence.",
       "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
       "broader_promotion_or_reuse": "Accurate attributed agency projection; retain copyright and controlling terms. No third-party media or independent verification.",
-      "records": 35
+      "records": 33
+    },
+    {
+      "source": "NZ census research: nzonair-gdsr-context",
+      "url": "https://www.nzonair.govt.nz/news/our-year-in-review-2024-2025/game-development-sector-rebate/",
+      "dataset_version": "4060b1f9ec3c2db660590d7cc72759f646ecefdcea384d19fcb8c1111f096595",
+      "retrieval_or_recorded_review": "2026-11-07",
+      "applicable_licence": "NZ-On-Air-Permission",
+      "redistribution_status": "Reuse documented",
+      "attribution_requirements": "Copyright © NZ On Air. Accurate factual company-name/programme-year projection, source acknowledged; no endorsement. Permission applies to this scoped agency projection, not third-party websites or detailed service claims. Final review adds the coarse agency-reported playtesting support classification, not a verified company or facility service.",
+      "commercial_use_restrictions": "Subject to the source-specific grant; no blanket source-wide clearance.",
+      "required_notices": "Retain original source links, dates, attribution and applicable full licence.",
+      "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
+      "broader_promotion_or_reuse": "Accurate attributed agency projection; retain copyright and controlling terms. No third-party media or independent verification.",
+      "records": 1
     },
     {
       "source": "Boutique discovery: primary-indexed",
@@ -828,5 +842,5 @@
     "Inspect required-review rules and bypass rights; current enforcement is unconfirmed.",
     "Re-test deployed Pages after any authorised merge; this draft does not deploy."
   ],
-  "catalogue_sha256": "99e927875c5147e24487e54b04cc8fa1f914a4ad122a45d2ecab0ea0b507e939"
+  "catalogue_sha256": "49a186d01163aceefa05aead2c0609a1ced819c5e54ff4560830c2abf8a625c8"
 }
