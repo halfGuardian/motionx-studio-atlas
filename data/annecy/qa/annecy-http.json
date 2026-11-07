@@ -1,0 +1,6 @@
+{
+  "checks": 5,
+  "catalogue_records": 42239,
+  "new_class_c_references": 172,
+  "conditions": "Local HTTP subdirectory; installed headless Chromium, 1440x1000 and 390x844; no network/CPU throttle. PR proposal, not deployed Pages or human evidence verification."
+}

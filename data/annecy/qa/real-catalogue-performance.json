@@ -1,0 +1,53 @@
+{
+  "initial_ready_seconds": 1.867,
+  "initial_app_timings": {
+    "load_validate_ms": 836.6999999955297,
+    "index_ms": 364.20000000298023,
+    "search_ms": 6.600000001490116,
+    "viewport_groups": 39171,
+    "rendered_markers": 44,
+    "marker_render_ms": 85,
+    "ready_ms": 1414.3999999985099
+  },
+  "complete_query": {
+    "records": 42239,
+    "milliseconds": 31.200000002980232
+  },
+  "search_end_to_end_ms": 272.24,
+  "search_compute_ms": 13.300000004470348,
+  "map_navigation": {
+    "elapsed_ms": 43.900000005960464,
+    "marker_render_ms": 37.399999998509884,
+    "markers": 140
+  },
+  "uncached_profile_detail_ms": 102.70000000298023,
+  "unthrottled_app_timings": {
+    "load_validate_ms": 836.6999999955297,
+    "index_ms": 364.20000000298023,
+    "search_ms": 6.700000002980232,
+    "viewport_groups": 0,
+    "rendered_markers": 0,
+    "marker_render_ms": 0.10000000149011612,
+    "ready_ms": 1414.3999999985099,
+    "profile_open_ms": 7.5
+  },
+  "throttled_initial_ready_seconds": 31.075,
+  "throttled_app_timings": {
+    "load_validate_ms": 27198,
+    "index_ms": 884.4000000059605,
+    "search_ms": 33.30000000447035,
+    "viewport_groups": 32588,
+    "rendered_markers": 29,
+    "marker_render_ms": 258.79999999701977,
+    "ready_ms": 28873.10000000149
+  },
+  "kind": "real_proposed_catalogue_not_deployed_production",
+  "records": 42239,
+  "class_a": 230,
+  "class_b": 4626,
+  "baseline_bytes": 358282,
+  "index_bytes": 5092380,
+  "index_gzip_bytes": 2209751,
+  "checks": 9,
+  "conditions": "Local HTTP subdirectory / installed headless Chromium. The app explicitly fetches lossless columnar gzip index/compressed baseline and checks compressed/decompressed hashes. Pages deployment performance is not measured. CPU/network emulation is not a physical low-memory mobile device."
+}

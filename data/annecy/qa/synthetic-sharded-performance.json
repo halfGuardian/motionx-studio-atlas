@@ -1,0 +1,26 @@
+{
+  "kind": "synthetic_only_not_acquisition",
+  "synthetic_locations": 50000,
+  "baseline_retained": 243,
+  "baseline_class_a_visible": 230,
+  "legacy_class_c_visible": 13,
+  "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x950 and 390x844, lossless columnar transport, no CPU/network throttling; not a physical low-memory phone.",
+  "compact_index_bytes": 5831708,
+  "compact_index_gzip_bytes": 375352,
+  "full_detail_bytes": 61664090,
+  "initial_ready_seconds": 1.56,
+  "search_ms": 9.700000002980232,
+  "profile_ms": 46.5,
+  "viewport_render_ms": 2.7999999970197678,
+  "app_timings": {
+    "load_validate_ms": 546.8000000044703,
+    "index_ms": 272.5,
+    "search_ms": 24.899999998509884,
+    "viewport_groups": 1,
+    "rendered_markers": 1,
+    "marker_render_ms": 0.5999999940395355,
+    "ready_ms": 1116.5,
+    "profile_open_ms": 2.5
+  },
+  "checks": 6
+}

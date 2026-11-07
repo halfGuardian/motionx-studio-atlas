@@ -244,7 +244,7 @@ def save_reports(report,output):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('command',choices=('preview','check'));p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-    m,all_rows=records(ROOT/'data/public',ROOT/'studios.json');base=[r for r in all_rows if not r['id'].startswith('boutique-')];report=build_research(base);report['evaluation']=evaluate(report,base+report['proposed_references']);report['final_catalogue_counts']=m['counts'];report['retained_catalogue_records_preserved']=len(base);report['new_record_hashes']={r['id']:digest(r) for r in report['proposed_references']}
+    m,all_rows=records(ROOT/'data/public',ROOT/'studios.json');base=[r for r in all_rows if not r['id'].startswith(('boutique-','annecy-'))];report=build_research(base);report['evaluation']=evaluate(report,base+report['proposed_references']);report['final_catalogue_counts']=read(HOME/'release.json')['expected_counts'];report['retained_catalogue_records_preserved']=len(base);report['new_record_hashes']={r['id']:digest(r) for r in report['proposed_references']}
     if a.command=='check':
         with tempfile.TemporaryDirectory() as tmp:
             save_reports(report,Path(tmp))

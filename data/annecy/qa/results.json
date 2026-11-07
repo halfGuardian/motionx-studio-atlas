@@ -1,0 +1,40 @@
+{
+  "observed_on": "2026-11-07",
+  "python": {
+    "tests": 227,
+    "failures": 0
+  },
+  "javascript": {
+    "tests": 61,
+    "failures": 0
+  },
+  "http": {
+    "checks": 56,
+    "failures": 0,
+    "suites": {
+      "baseline_and_50000_synthetic": 19,
+      "sharded_50000_synthetic": 6,
+      "actual_public_catalogue": 9,
+      "unified_ux": 9,
+      "boutique": 8,
+      "annecy": 5
+    }
+  },
+  "canonical": {
+    "records": 243,
+    "errors": 0,
+    "warnings": 265
+  },
+  "catalogue_reproduction": {
+    "errors": 0,
+    "old_ids_preserved": 42067,
+    "old_detail_shards_preserved": 239,
+    "canonical_unchanged": true
+  },
+  "approval_granted": false,
+  "deployment_performed": false,
+  "limitations": [
+    "Local HTTP and Chromium emulation, not deployed Pages or a physical low-memory phone.",
+    "Tests establish software/data consistency, not independent business verification or human precision."
+  ]
+}

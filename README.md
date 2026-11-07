@@ -1,4 +1,16 @@
-# MotionX Studio Atlas v1.2 — Global Boutique Studio Discovery
+# MotionX Studio Atlas v1.3 — Annecy Boutique Studio Coverage
+
+**One unified atlas: 42,239 reference records.** This proposal adds **172 Class C company references** from Annecy research and preserves all **42,067 existing IDs**, the 243 retained locations, all original coordinates and all prior evidence shards. Totals are **A 230 / B 4,626 / C 37,383**, with **178 countries/territories** and **119 retained operating organisations**. Source observations and provisional company identities overlap; these are not 42,239 verified studio locations.
+
+The [Annecy coverage dashboard](data/annecy/reports/coverage.html), [complete 1,074-row reconciliation](data/annecy/reports/reconciliation.json), [CSV](data/annecy/reports/reconciliation.csv), [before/after counts](data/annecy/reports/summary.json) and [research workflow](data/annecy/README.md) document the release. The workbook recovered the missing crosscheck file: all **253 priority** and **313 production** entries received indexed research, with 864 queries and 375 selected page requests. Outcomes: **161 existing, 172 new, 3 duplicate, 9 rejected, 2 reported inactive, 727 unresolved**. Other exhibitors receive identity matching, not individual current-operation verification.
+
+New references are searchable alongside existing data. They carry source URLs, actual observation dates, provisional identities and company-service signals, with **no invented physical branches, pins or confirmed capture capabilities**. A readable company claim is not independent verification. The [separate human precision worksheet](data/annecy/reports/human-precision-review.json) remains pending; no human precision rate or publication approval is claimed.
+
+The [source-policy review](data/annecy/source-policy.json) records unresolved redistribution terms and access limitations. Raw PDF/workbook binaries, authored web prose, contacts and private company intelligence are omitted. No new collector is enabled. Restricted sources remain disabled. A maintainer must review the exact draft PR and source rights before authorising merge; tests and draft status do not enforce human approval. No merge, deployment or Pages setting change is automatic.
+
+Run `python tools/annecy.py check` for repeatable coverage, identity, checkpoint and proposal validation. Actions publishes the complete review artifact. See [executed test results and remaining gaps](data/annecy/validation.md).
+
+# Historical v1.2 — Global Boutique Studio Discovery
 
 **One unified research atlas: 42,067 records.** All **41,735 previous records** remain available: 243 retained locations, 40,376 Overture observations and 1,116 game-company references. This proposal adds **332 source-supported company research references**. Record totals include overlapping source observations and company-only entries; they are not verified facility counts.
 

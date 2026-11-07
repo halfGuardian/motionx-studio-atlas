@@ -496,19 +496,19 @@
   },
   "index": {
     "path": "index.json",
-    "sha256": "1eb1c40365a905c8fdd2e93a0c0e5052417fc1e17e5056265323e4dfdad365e4",
-    "gzip_sha256": "7b1a9bdc8526d3beb7266f65fa356f4df55717e6a2453b08a5f3c9b90318a0e7",
-    "gzip_bytes": 3309299,
-    "records": 41824,
-    "bytes": 11414301,
+    "sha256": "7fe153d94dc287f56d7b2e78e6bd2e8970690839d3350f76a16fbc565402d231",
+    "gzip_sha256": "5f492930df248f1b250c8450f3ee780d00bbc580f31203557a5a1fb6cd59dc3a",
+    "gzip_bytes": 3315673,
+    "records": 41996,
+    "bytes": 11452605,
     "compact": {
       "path": "index.compact.json",
       "encoding": "motionx-columnar-v1",
-      "records": 41824,
-      "sha256": "293ef073904fb79fb83aab9e5a0ac788417b5b9a50f0ea8ec053c692934c9aed",
-      "gzip_sha256": "58cb38d9fdf8b288df3ba8de6821496062a19caf3d9dd3d7791fd734d0599d52",
-      "bytes": 5070883,
-      "gzip_bytes": 2200402,
+      "records": 41996,
+      "sha256": "df44c2854d4bec1d880881953a50e161a065f80332881151e9f34c48c847a0dc",
+      "gzip_sha256": "b9326b216641fc4d8667446ae61a8b241c3157a685658d52b0f52febeadcb640",
+      "bytes": 5092380,
+      "gzip_bytes": 2209751,
       "content_addressed": true
     }
   },
@@ -2424,6 +2424,14 @@
       "records": 332,
       "country": "Multiple / unresolved",
       "bytes": 643022
+    },
+    "shards/3bd736a2e143-000.json": {
+      "sha256": "172d59d675ee876431a2a5313683fc1a91fc0ec606ca731fe850c6f6e191b3b8",
+      "gzip_sha256": "10440f8a5735580fae90655b72305ae5d7a0770068f1d54b7e3c3526e377ca7e",
+      "gzip_bytes": 32559,
+      "records": 172,
+      "country": "Multiple / unresolved",
+      "bytes": 367546
     }
   },
   "index_columns": [
@@ -2464,36 +2472,37 @@
     }
   },
   "counts": {
-    "records": 42067,
-    "public_records": 42067,
+    "records": 42239,
+    "public_records": 42239,
     "class_a": 230,
     "class_b": 4626,
-    "class_c": 37211,
+    "class_c": 37383,
     "retained_locations": 243,
     "source_location_observations": 40376,
-    "company_references": 1448,
+    "company_references": 1620,
     "records_with_coordinates": 40619,
     "countries": 178,
     "retained_operating_organisations": 119,
-    "source_identities": 41566
+    "source_identities": 41738
   },
   "warning_meaning": "All source records are accessible in one research directory. Record totals are not verified unique studio/facility counts. Source status/type/sector are claims; company references have no invented coordinates. Existing curated evidence is preserved.",
   "warnings": {
     "canonical_baseline": 265,
-    "unreviewed_new_references": 41824,
+    "unreviewed_new_references": 41996,
     "source_point_precision_unverified": 40376,
-    "company_references_without_coordinates": 1448,
-    "unspecified_company_source_terms": 1213,
+    "company_references_without_coordinates": 1620,
+    "unspecified_company_source_terms": 1385,
     "source_records_missing_city": 170,
     "source_records_missing_country": 14,
     "possible_duplicate_candidates": 117,
-    "boutique_company_references_requiring_review": 332
+    "boutique_company_references_requiring_review": 332,
+    "annecy_class_c_company_references_requiring_review": 172
   },
   "boutique": {
     "path": "boutique.json",
-    "sha256": "38a8a2be5f0f0269d7204f508939913e8a8f832995279f339643dccdfbe00782",
-    "gzip_sha256": "67f0fdee40247d0c32367215e2f51b23b6daf76bd38e38dbf6b658d8c250f5ba",
-    "gzip_bytes": 303821,
+    "sha256": "1fcf7277e34cf6c7936b8d9f33ef89127c8dd845b91dfd00be409a7feb4ad917",
+    "gzip_sha256": "b8da8f9c9cbbcb19c6f64da3823a887e902458649472aa0d40071dcd291c6582",
+    "gzip_bytes": 314805,
     "content_addressed": true
   }
 }

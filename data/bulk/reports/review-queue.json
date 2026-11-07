@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "catalogue_sha256": "44545f8b667b98573377c2849f8f8437dbc630bae8874649da36a7c5f1dfbffc",
+  "catalogue_sha256": "c5344dd1c32514d97b6d3932a048fee49363efa91fdf856a7974977d4512aa98",
   "baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
   "approval_granted": false,
   "columns": [
@@ -20,7 +20,7 @@
     "8": "source permission review",
     "16": "no confirmed facility capabilities"
   },
-  "records": 41837,
+  "records": 42009,
   "entries": [
     [
       "overture-80bfd555-f63c-4cf6-9076-a1eb89f91590",
@@ -1430,6 +1430,76 @@
       ]
     ],
     [
+      "annecy-324d83111f57862ae85efb98d0cb",
+      "C",
+      28,
+      "c16cc192a45a5121c964cf4658fd52c517bc9a44da491586224f9fc3e664e59e",
+      "",
+      "2026-11-07",
+      "https://echomedia.tv/",
+      []
+    ],
+    [
+      "annecy-5d8746ec308186dbdd2f828dfa7a",
+      "C",
+      28,
+      "731d41e89d8d4a3b13ce4fa42de13ca97032c9f05db4ec7600971477c085f3f4",
+      "",
+      "2026-11-07",
+      "https://www.creavisionfilms.com/shortfilms",
+      []
+    ],
+    [
+      "annecy-7a8c3e310aa2c94959d8faac4a85",
+      "C",
+      28,
+      "69852ead79617bca01687fbcae69e1a8bc2aca2f9bb9e4a0be84f04a206e5a45",
+      "",
+      "2026-11-07",
+      "https://www.spiritanimation.com/about/",
+      []
+    ],
+    [
+      "annecy-88f65b8e8f3bd8e05f3d3d1410c0",
+      "C",
+      28,
+      "f365211b7f2db581990196229d5fd4ad969a99e28a07304d40ac05944d590146",
+      "",
+      "2026-11-07",
+      "https://plantalta.tv/home/services",
+      []
+    ],
+    [
+      "annecy-95588993d0f266d357a309bc29b1",
+      "C",
+      28,
+      "339a0b36574e4a642d7042e640a00a5456b16521679720ac06a5f3614b29df32",
+      "",
+      "2026-11-07",
+      "https://cottonwood.tv/about-us",
+      []
+    ],
+    [
+      "annecy-cd96f14ac0cf3cfb84ea65b4ad19",
+      "C",
+      28,
+      "d77144cc5b9095ac3cadf0a17cbbd0f5eab4c3615e5f1ee2e8419a48341e77ff",
+      "",
+      "2026-11-07",
+      "https://www.wajnbrosse.com/",
+      []
+    ],
+    [
+      "annecy-e26e802e17f2edcf47a396e1cf2c",
+      "C",
+      28,
+      "10f26152abbfb11877cce4ebf3bd357e2cbce01ed1f0d38952ebd73fc6cd4182",
+      "",
+      "2026-11-07",
+      "https://www.atomiccartoons.com/",
+      []
+    ],
+    [
       "boutique-1b64456f04b2edcd4a7761c40ede",
       "C",
       28,
@@ -1597,6 +1667,26 @@
       "",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-6c520331ebd6a02873ed54b32b79",
+      "C",
+      28,
+      "70121023f06a2b0190221cc2440948d75c89c9c9740226180c329ccc37c9ce74",
+      "Argentina",
+      "2026-11-07",
+      "https://www.pipalupa.com/about",
+      []
+    ],
+    [
+      "annecy-ac4b1d7b8481ff5570f0bb16475a",
+      "C",
+      28,
+      "d2eb2b0ae55c70d8b26a0baf9af10bc282283f77b8a1ba4cfb96806a84c659dd",
+      "Argentina",
+      "2026-11-07",
+      "https://kuiperanimation.com/",
       []
     ],
     [
@@ -1900,6 +1990,16 @@
       []
     ],
     [
+      "annecy-9df1084521f6d09262ed922156d4",
+      "C",
+      28,
+      "fcb43ec3ab4255897c5fcd76f5120ffaf1219b571f736a08e6c6850767ec7b96",
+      "Austria",
+      "2026-11-07",
+      "https://movinglines.digital/",
+      []
+    ],
+    [
       "gamedb-0b5c26608821aea5f004592ce3bd",
       "C",
       28,
@@ -2017,6 +2117,26 @@
       "Belarus",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-7317ebf3ec535eb96e54e9765743",
+      "C",
+      28,
+      "91117ef79b446d6a400809afd0a99157ac01c0ab56e838452e89b13b31cc4df3",
+      "Belgium",
+      "2026-11-07",
+      "https://aromates-studio.com/",
+      []
+    ],
+    [
+      "annecy-81f274adc04d855b5cbc3b5e9026",
+      "C",
+      28,
+      "d2115c962dabaf797ad4a814fff2087c3e45405515979cf00c0c73f0bc569280",
+      "Belgium",
+      "2026-11-07",
+      "https://www.peyo.company/en/productions",
       []
     ],
     [
@@ -2160,6 +2280,56 @@
       []
     ],
     [
+      "annecy-3ed5c0806ef390e84236a9d3612e",
+      "C",
+      28,
+      "e782575d83c167582b9d2d2d3e1a0f09911bef52da4691a179c9c828206534b5",
+      "Brazil",
+      "2026-11-07",
+      "https://alopra.com/about/",
+      []
+    ],
+    [
+      "annecy-72a1a194b44e0ff11132bd96d6a0",
+      "C",
+      28,
+      "0764ace020c4a770aa2dc474643d8c6d4cb1c349ecea83fff8f380a829b7ff48",
+      "Brazil",
+      "2026-11-07",
+      "https://ozprodutora.com.br/animacao",
+      []
+    ],
+    [
+      "annecy-8a9591b957c9560796b52449f770",
+      "C",
+      28,
+      "07ce0290a14743f54492bbb853cc9355f0b4413c58b546a3f5bc75ba7d29acbf",
+      "Brazil",
+      "2026-11-07",
+      "https://splitstudio.tv/en/sobre/",
+      []
+    ],
+    [
+      "annecy-9282a792414716f2b7066b754f13",
+      "C",
+      28,
+      "a4d578976c21bf4da0844943d93cddac87ab4bbfcbca7cc29317a1b120ea9019",
+      "Brazil",
+      "2026-11-07",
+      "https://www.combostudio.com.br/",
+      []
+    ],
+    [
+      "annecy-a71f4f109ffab414467875365d31",
+      "C",
+      28,
+      "553e90dce8fbbc283270d7ab2b5d06d6c37332703c69d6b969d9904edb2cd079",
+      "Brazil",
+      "2026-11-07",
+      "https://copastudio.com/about-us/",
+      []
+    ],
+    [
       "gamedb-054b9801d45db9dd09aecbbe8ba2",
       "C",
       28,
@@ -2230,6 +2400,16 @@
       []
     ],
     [
+      "annecy-e2009aa9d1e5829a3f1f9ddfbce1",
+      "C",
+      28,
+      "11e831f3112b23ebf09bf50a01b059503b64645cc59b9a48ef9c177ecf0202c8",
+      "Bulgaria",
+      "2026-11-07",
+      "https://www.chaseacloud.com/about-us",
+      []
+    ],
+    [
       "gamedb-36e4394871bc2b3ed867b946da2f",
       "C",
       28,
@@ -2267,6 +2447,96 @@
       "Bulgaria",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-0f8a7cf5ad0272068fc0c7762fe2",
+      "C",
+      28,
+      "d5ba0afb80e178dc38942a40be2cb486d94666dd42355a017855431a602d11b2",
+      "Canada",
+      "2026-11-07",
+      "https://mystichouse.ca/about/",
+      []
+    ],
+    [
+      "annecy-134b601685d63ea22cd22713c0aa",
+      "C",
+      28,
+      "6a61b0f9783ee47691cb725025b95ce26168a06ae3ba86937bd1b9455da9b2d1",
+      "Canada",
+      "2026-11-07",
+      "https://www.iconcreativestudio.com/",
+      []
+    ],
+    [
+      "annecy-1bde5281d3b69c2c56527451d525",
+      "C",
+      28,
+      "1550fdd1a376c2bce06afd1256f667ebf6f23b9f3fe8f77de50afc060c6deed3",
+      "Canada",
+      "2026-11-07",
+      "https://studio-unagi.com/",
+      []
+    ],
+    [
+      "annecy-4eed8edfe05b663124aa9e6de960",
+      "C",
+      28,
+      "dd83dd6fc60d8fb45caf434abb02a742ba79027dddfbe96d84ddc4f4aca48636",
+      "Canada",
+      "2026-11-07",
+      "https://www.embuscadefilms.com/about-3",
+      []
+    ],
+    [
+      "annecy-5d3b5d5c795bf76386c3d15fb1f7",
+      "C",
+      28,
+      "560fe2dff57ff876b0fe83a15d51dfe0dbf41b9463ef5f92e89b9e78a4390d30",
+      "Canada",
+      "2026-11-07",
+      "https://pudoctopus.com/about-us/",
+      []
+    ],
+    [
+      "annecy-99adb48b2c1763a9dcb10cf8e761",
+      "C",
+      28,
+      "1840bf11e8637259bc9dacce8b33746ff7b874c72810faa701a6f776f2bf296e",
+      "Canada",
+      "2026-11-07",
+      "https://artistsanimation.com/",
+      []
+    ],
+    [
+      "annecy-a58e8207c2e29f1dbd1614310b1f",
+      "C",
+      28,
+      "4178019a0efa7302fdc24382ed27c4cae698019a64e423aeb0c6c01d06098e04",
+      "Canada",
+      "2026-11-07",
+      "https://www.lakesideanimation.com/",
+      []
+    ],
+    [
+      "annecy-d42bb12e56cd0a52910fd2fc2d6b",
+      "C",
+      28,
+      "efc2a5f2b081e864889634ce28648dd546d54d624c97176b97a9738b6be55bc3",
+      "Canada",
+      "2026-11-07",
+      "https://www.colegram.com/",
+      []
+    ],
+    [
+      "annecy-dc740366fd7c92c05d78cb6b4824",
+      "C",
+      28,
+      "89c350eb8950052306a28c72cbdd05edf7e5623a64e31add5b0a4f4debb17bd5",
+      "Canada",
+      "2026-11-07",
+      "https://kaibouproduction.com/en/about/",
       []
     ],
     [
@@ -2890,6 +3160,66 @@
       []
     ],
     [
+      "annecy-00d818f8a3c77583fb806c27d74b",
+      "C",
+      28,
+      "8308af3be93da7696145657cedbb61650ea5181859f1799730f178dd2e028428",
+      "Chile",
+      "2026-11-07",
+      "https://punkrobot.cl/en/studio/",
+      []
+    ],
+    [
+      "annecy-0bc956b22fba823aa15c29d7c7a0",
+      "C",
+      28,
+      "5ada5f6c3f91b189a17758a7ca3a8cbc30d9fe1962aadd5e83ec6bafecdde2bd",
+      "Chile",
+      "2026-11-07",
+      "https://www.marmotastudio.com/",
+      []
+    ],
+    [
+      "annecy-1f0921690bc2bf524360c89e0216",
+      "C",
+      28,
+      "73332e7d8f754dd8ff2dfec0098a4029fa191e20f5f884dba125a9c712dc825a",
+      "Chile",
+      "2026-11-07",
+      "https://www.estudiolunes.cl/animaci%C3%B3n",
+      []
+    ],
+    [
+      "annecy-9b61a5dec8e5b7b0b57299f0ce82",
+      "C",
+      28,
+      "a4b283bcb8b2dfc3d6fb9647934ca17292dc267523c4945599d0b0a25a24f293",
+      "Chile",
+      "2026-11-07",
+      "https://www.formidable.studio/",
+      []
+    ],
+    [
+      "annecy-de98eedc6a5caa29a8b7e7149162",
+      "C",
+      28,
+      "d947a1c3ecbe4729c2e184227d5ab126a227a0103cae4ea40b5804fff8224eb3",
+      "Chile",
+      "2026-11-07",
+      "https://poston.studio/",
+      []
+    ],
+    [
+      "annecy-e1eb801e3b81726a46e047efbe2f",
+      "C",
+      28,
+      "67e95a12ef504dd4a43dbaf81d32960b9dd9dffea73258f47cf91405b57e7aa7",
+      "Chile",
+      "2026-11-07",
+      "https://www.gvgproducciones.com/en",
+      []
+    ],
+    [
       "gamedb-9504a213f27f37474441ce087955",
       "C",
       28,
@@ -2907,6 +3237,16 @@
       "Chile",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-70e94ad72d0501f91ce9b4fca167",
+      "C",
+      28,
+      "8480b0f53f50049a2a823fb46599dd220b72ff03ce99e8e77a6b18b64613d584",
+      "China",
+      "2026-11-07",
+      "https://liangzifilm.com/en_about.asp",
       []
     ],
     [
@@ -3140,6 +3480,26 @@
       []
     ],
     [
+      "annecy-7726b5feaac03a4dd5e6e963507a",
+      "C",
+      28,
+      "a2c8206f58d03ffa9747cecb6f9c046fc57e32bdffb79498b4964239ae641b72",
+      "Colombia",
+      "2026-11-07",
+      "https://3dadosmedia.com/nosotros/",
+      []
+    ],
+    [
+      "annecy-c221d9962e3b0b0b2e971897da07",
+      "C",
+      28,
+      "58e5bb8beeaf4c08f2ae7afad1c6e7ac8a0ed7a4cc15f13c1ed7d724b6e738d5",
+      "Colombia",
+      "2026-11-07",
+      "https://www.dinamitaanimacion.com/dinamita-pura-",
+      []
+    ],
+    [
       "gamedb-11c3bf0b011247b24232b4815dff",
       "C",
       28,
@@ -3167,6 +3527,16 @@
       "Costa Rica",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-91e302bf104dcec54ca9e493fafa",
+      "C",
+      28,
+      "9ce71b5207f364e4a8f55580997595a9f13c705c71745249ee4f28a10cb469c8",
+      "Croatia",
+      "2026-11-07",
+      "https://minya.eu/",
       []
     ],
     [
@@ -3217,6 +3587,66 @@
       "Cyprus",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-63f868f2ae3f4271386af232bdd5",
+      "C",
+      28,
+      "3fdf0b8a0958c8210c2e8393635c2411b8d97bf7e27a8f6aed7ac3940dca1e7a",
+      "Czechia",
+      "2026-11-07",
+      "https://www.bluelightpictures.eu/",
+      []
+    ],
+    [
+      "annecy-7c2d5fb64960ba6b0eaf1d482fc1",
+      "C",
+      28,
+      "84dad37833fbb8f148bb0a91d474aa91af5fbcf48987e3d2644de48c43d400af",
+      "Czechia",
+      "2026-11-07",
+      "https://www.silentcartoons.co/",
+      []
+    ],
+    [
+      "annecy-adb719187dd14fa0f099ab19cb11",
+      "C",
+      28,
+      "7d45c13a8c936ad5531da287ff95e5728aca6c35f676d792b368199825fbacc8",
+      "Czechia",
+      "2026-11-07",
+      "https://threebohemians.studio/studio/",
+      []
+    ],
+    [
+      "annecy-b27fd0fe5c961144151238f44a01",
+      "C",
+      28,
+      "025f2c88e285147922cfdc42dc2c4479529c9e85897d4d7470a696225a0d4260",
+      "Czechia",
+      "2026-11-07",
+      "https://hausboot.cz/",
+      []
+    ],
+    [
+      "annecy-c24a94998510e52e86376871e8a1",
+      "C",
+      28,
+      "2e3734265cec2a629a73f872e69543d38f5d74b80df756fe21a5c866fc8bde3b",
+      "Czechia",
+      "2026-11-07",
+      "https://ahojanimation.cz/",
+      []
+    ],
+    [
+      "annecy-fbf841063d50413edb24c09f1d29",
+      "C",
+      28,
+      "7ee352bf5690356a01995491fb8033640804b6920552012028379ee8662af519",
+      "Czechia",
+      "2026-11-07",
+      "https://kouzelna.com/",
       []
     ],
     [
@@ -3327,6 +3757,46 @@
       "Czechia",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-735246a25bb8cd4bac1c4a6fb285",
+      "C",
+      28,
+      "d35a14ce0faf6a92bb1b1b0ba2045a1e37340aab48649e14dc366fdac90eda21",
+      "Côte d’Ivoire",
+      "2026-11-07",
+      "https://www.lestudioka.com/",
+      []
+    ],
+    [
+      "annecy-3a440ef90ba00ebbe59071053547",
+      "C",
+      28,
+      "a1570ca9acead95f9eb1693fe22bf1ff591183f7e357352bc3ce07811bf9a5ef",
+      "Denmark",
+      "2026-11-07",
+      "https://cph.hydralab.com/contact",
+      []
+    ],
+    [
+      "annecy-5e9c19fca220773789de74f6a57b",
+      "C",
+      28,
+      "7b24bab0021fd0fcb80456ce970571b2f6bdadd2e2d70dcd9a3417ac4ae96988",
+      "Denmark",
+      "2026-11-07",
+      "https://www.skjaldborn.com/",
+      []
+    ],
+    [
+      "annecy-e9bde69289c06a0292c9f50d3a00",
+      "C",
+      28,
+      "4bd291306bf8d0d31cf11af84097d2fdae9fa2bd4413afc10c28054c8034a14f",
+      "Denmark",
+      "2026-11-07",
+      "https://m2animation.com/about/",
       []
     ],
     [
@@ -3560,6 +4030,16 @@
       []
     ],
     [
+      "annecy-0e34503e23dff06b239f5699d581",
+      "C",
+      28,
+      "811ea1e347c59a14cd8796243a5a22293bd1fdcd3406341f9cf07d6d85d1ba62",
+      "Estonia",
+      "2026-11-07",
+      "https://grafik.ee/",
+      []
+    ],
+    [
       "gamedb-0a0b79dfe7d9b398e4a759819282",
       "C",
       28,
@@ -3747,6 +4227,386 @@
       "Finland",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-02c0dd70c175f0abdb31d0beef98",
+      "C",
+      28,
+      "d51e815b818ffdbee05989daffa76bbe285aebb8ea325119e4186eb768355e44",
+      "France",
+      "2026-11-07",
+      "https://laidakfilms.com/about/",
+      []
+    ],
+    [
+      "annecy-047ae47272e88827ed003a9f4be5",
+      "C",
+      28,
+      "1140f33a69875913802ef9d1bdc071f970ef3b6b368a114a6156cee2b0034ffd",
+      "France",
+      "2026-11-07",
+      "https://www.lesastronautes.fr/studio.html",
+      []
+    ],
+    [
+      "annecy-0e666ea6befea3dfc7312297e709",
+      "C",
+      28,
+      "15fee4c7d6eb4c2b6a6ebe67ffe7260ec763473de4396634604391f64eb03d9e",
+      "France",
+      "2026-11-07",
+      "https://angelcorp.org/en/studio/",
+      []
+    ],
+    [
+      "annecy-15e13d48c133bab9d323bc2631fb",
+      "C",
+      28,
+      "63c11512a8c6b9470b3f9875e3141570ccdf2bf18f65c76788da3f601efb4406",
+      "France",
+      "2026-11-07",
+      "https://www.monello.fr/",
+      []
+    ],
+    [
+      "annecy-189b5f47d5c6837bf8b353cd988c",
+      "C",
+      28,
+      "74f19e8d546f207f6edbeaa81c23ec63e5870cc5e4a194010c037ebf51bc4868",
+      "France",
+      "2026-11-07",
+      "https://www.thebeastmakers.com/about-us",
+      []
+    ],
+    [
+      "annecy-23e0f4234cb87990422659e6cebd",
+      "C",
+      28,
+      "f48a29e93dc997254738c7a54f3513a93378eede2fcdeae9448bb633f87980ab",
+      "France",
+      "2026-11-07",
+      "https://sacrebleuprod.fr/?page_id=1566",
+      []
+    ],
+    [
+      "annecy-2f75ec86dabeb491a42c66c5caf9",
+      "C",
+      28,
+      "a2eb28e96e62044d24db243154ea689c1fac15a12b731f0705955ba554e029f1",
+      "France",
+      "2026-11-07",
+      "https://hari-studios.com/",
+      []
+    ],
+    [
+      "annecy-3361ccb48d0e19893b52cd67bd79",
+      "C",
+      28,
+      "2b1dadea3e341ce701b816b076c42c004f23e0431125b349d14f99b2e5e0e7a1",
+      "France",
+      "2026-11-07",
+      "https://tokoto.fr/",
+      []
+    ],
+    [
+      "annecy-3e4cbcaaa3a5dd3fcf3c615060b5",
+      "C",
+      28,
+      "eebd053a74334ca840135a2632edeed5cbfe3ba0ce3af1c701d8cd75829dfa32",
+      "France",
+      "2026-11-07",
+      "https://kazooanimation.com/a-propos/",
+      []
+    ],
+    [
+      "annecy-4a630f30280b1bf29af1646d16cb",
+      "C",
+      28,
+      "686694605a611dccc2392b9d7213bc35dbb4886438e1511e57aafd2e6195aeb1",
+      "France",
+      "2026-11-07",
+      "https://gaspfilms.com/gasp/",
+      []
+    ],
+    [
+      "annecy-59f83117bbe9c50d99718c7b65c6",
+      "C",
+      28,
+      "34d03813d7d581df4cce040b051e4a67ac2def9ebbb72e1a45a7726fee840b31",
+      "France",
+      "2026-11-07",
+      "https://tamtamsoie.com/",
+      []
+    ],
+    [
+      "annecy-6481a15078f76d8bb9c17c5f3a23",
+      "C",
+      28,
+      "e88bbe727ba55c3d7d6544aaeefcc8fd8d72453625033351aaa4b6e3c9534bfb",
+      "France",
+      "2026-11-07",
+      "https://www.lescontesmodernes.fr/nous/",
+      []
+    ],
+    [
+      "annecy-6484aa758b9a50841af4b2999923",
+      "C",
+      28,
+      "c0b592f1780c193cae99f5cf73c96ab78e9158eab221bc7be4418c0e19eb4890",
+      "France",
+      "2026-11-07",
+      "https://www.watchnextmedia.com/en/about-us/",
+      []
+    ],
+    [
+      "annecy-64d433738fef33b0783f3a966215",
+      "C",
+      28,
+      "ebdf7e83e236ef4be5ca83dbf27c97b8be2fbd3dea35f814510357ea50fc8071",
+      "France",
+      "2026-11-07",
+      "https://www.chouetteco.com/",
+      []
+    ],
+    [
+      "annecy-66c9f502685114c9f764fd33a32b",
+      "C",
+      28,
+      "612d1c6e77b17366386bf2ea183ff412a9b1e5b2b35e0a861e584b0078cd3740",
+      "France",
+      "2026-11-07",
+      "https://toonfactory.fr/a-propos/",
+      []
+    ],
+    [
+      "annecy-6c1c659c9272cff5590b2d42211d",
+      "C",
+      28,
+      "215fa05a55b8720d96faa9211c5f89f58335e69ba41a5cb7880a1662d2dccac3",
+      "France",
+      "2026-11-07",
+      "https://www.1224films.com/",
+      []
+    ],
+    [
+      "annecy-73684304f5ce6bd5268b109c1c29",
+      "C",
+      28,
+      "6c4cb0d36459dfcd98fdd04f8309bcfe104521321363653946488e2bfe6a830e",
+      "France",
+      "2026-11-07",
+      "https://mrloyal.fr/about/",
+      []
+    ],
+    [
+      "annecy-7373d9db0670b63d589891c262ec",
+      "C",
+      28,
+      "8b76bf76c6e0623c1415890b91cd150e0a6cc60c991a50e562aa59235e05a8cb",
+      "France",
+      "2026-11-07",
+      "https://www.bigcompany.fr/prod/",
+      []
+    ],
+    [
+      "annecy-78c91e9c47cf60edb3ba958cc90e",
+      "C",
+      28,
+      "20d558d89d29fa3158fb1ff76913d9fd8764f85265d30ca34904ba023b118fc3",
+      "France",
+      "2026-11-07",
+      "https://bloc-d.com/about/",
+      []
+    ],
+    [
+      "annecy-7a66437a1f631ea132884ed2cde8",
+      "C",
+      28,
+      "26f29ef843f3931db8485ed008fbaa8cd4d0543885e72d766b4c6b4db0bcd3a4",
+      "France",
+      "2026-11-07",
+      "https://godostudio.fr/",
+      []
+    ],
+    [
+      "annecy-8071179c8e02cda65e74e6e38ad3",
+      "C",
+      28,
+      "44d23aa2df33724cb5dac90521ab50e82d9e65ce382f6be91f763237d0745664",
+      "France",
+      "2026-11-07",
+      "https://circus.fr/",
+      []
+    ],
+    [
+      "annecy-82470525446d4a1797c6205e314c",
+      "C",
+      28,
+      "29dec20e7bb42d3e0e2d768b6fd39ed88b4e7850b177b10561a53ddcba47bf8f",
+      "France",
+      "2026-11-07",
+      "https://fargo.fr/fargo_site/",
+      []
+    ],
+    [
+      "annecy-82d85e2a202356c8e29d88f144a8",
+      "C",
+      28,
+      "987411d7b5ae9707bf1de427ad8b4958b148d3317ae95eb81c163ff44efcdab2",
+      "France",
+      "2026-11-07",
+      "https://www.dessingesanimes.com/",
+      []
+    ],
+    [
+      "annecy-87463615bb7cd257e07bd0a1f34b",
+      "C",
+      28,
+      "752dc33b73d7f4d1168c9af6ab7b3edc26b43c4bb9b3a571be8e67579016f6ee",
+      "France",
+      "2026-11-07",
+      "https://amopix.com/",
+      []
+    ],
+    [
+      "annecy-9d06b9a549f09db6c7c5ef72e746",
+      "C",
+      28,
+      "3e4d93dcbb69df8f3b25a81b783b3a1ca93ea80d0a070333133a7512faa9a08d",
+      "France",
+      "2026-11-07",
+      "https://jplfilms.com/?page_id=56",
+      []
+    ],
+    [
+      "annecy-a2a1e75d8bcdd2d53e96bba7554c",
+      "C",
+      28,
+      "975f01a7efe8fffc90de661043d53cf73148fbb4afb4d1a7b23fb4f16608e919",
+      "France",
+      "2026-11-07",
+      "https://enigme.studio/enigme-studio",
+      []
+    ],
+    [
+      "annecy-a5529f16d137297e5b5a8548e868",
+      "C",
+      28,
+      "6036665ca05ff730a27d4be66fb0ae35f733ebf427286590aa7728b1ac3e31d4",
+      "France",
+      "2026-11-07",
+      "https://sirenerougegames.com/",
+      []
+    ],
+    [
+      "annecy-ad26741f29667a38b8c039b7f354",
+      "C",
+      28,
+      "cbf34ac3a5828df5fce5f55f7a01c451c7f4b7680d861d8d50d961bfa48a2145",
+      "France",
+      "2026-11-07",
+      "https://www.chromatik-studio.fr/",
+      []
+    ],
+    [
+      "annecy-b33762f58e60da3a88bf59251770",
+      "C",
+      28,
+      "ebdcf3d3a1eb5b19f603dcc0cad7fe674eca2025aa0fa41a722261fb0af1f606",
+      "France",
+      "2026-11-07",
+      "https://www.tchack.com/fr/articles/tchack-remporte-le-prix-procirep-2023-du-producteu/",
+      []
+    ],
+    [
+      "annecy-c997d80438000fe34508914e4852",
+      "C",
+      28,
+      "10751d33b28e69ac6265a2b91ba4faef0d9f653a9d21e3c03dbffc59222b3b8b",
+      "France",
+      "2026-11-07",
+      "https://lightvfx.com/about",
+      []
+    ],
+    [
+      "annecy-ceb59eca536749ee63cdbb16a132",
+      "C",
+      28,
+      "bc9f577afabc9b1c7373b949ac6fee7eeced83e6af918313b77ef3d50e24ec6b",
+      "France",
+      "2026-11-07",
+      "https://lincroyablestudio.com/",
+      []
+    ],
+    [
+      "annecy-d22cbe39d2977fd6d470c55bab12",
+      "C",
+      28,
+      "239028f7cedd4358bae42b36418c8791e2c71fc496dbc3a969fdee808da47e43",
+      "France",
+      "2026-11-07",
+      "https://www.templecache.com/work/",
+      []
+    ],
+    [
+      "annecy-da1333c70809bb7c65c0146629af",
+      "C",
+      28,
+      "9dfc867ec080cf9a5eee80a65555b30ea4836895f40bb1e4bb2b1251bc393b19",
+      "France",
+      "2026-11-07",
+      "https://www.lapompadour.tv/a-propos",
+      []
+    ],
+    [
+      "annecy-dae2435828ec0f61e415266d31b7",
+      "C",
+      28,
+      "bc9d0a21090ca011c95094869c3ccf5a105d6ddc21a74fd8d1c4ef431257b4cf",
+      "France",
+      "2026-11-07",
+      "https://zephyranimation.com/",
+      []
+    ],
+    [
+      "annecy-ea64ce5ba307a4330a3cd04db4cf",
+      "C",
+      28,
+      "d356ff28660fc58aa13685f7d4a510b2422b4b4c8c080cebc51bdb7b8edb0796",
+      "France",
+      "2026-11-07",
+      "https://gilipusproductions.com/",
+      []
+    ],
+    [
+      "annecy-ed3b275334b7a67fc2eebf51bd95",
+      "C",
+      28,
+      "6c90dd94619a32d49feb286c99a4cbb8abcad7289dc33ded406c80092d2ba378",
+      "France",
+      "2026-11-07",
+      "https://nojo-and-co.com/",
+      []
+    ],
+    [
+      "annecy-f7df39d32f84a4773981647d6c8b",
+      "C",
+      28,
+      "0515e197497eade14cd58ffd58d116ab78e62bc5744ace5bf9c0bedbd5045405",
+      "France",
+      "2026-11-07",
+      "https://ikkifilms.com/en/about-us/",
+      []
+    ],
+    [
+      "annecy-f94c64ea8116994bb89b51f875f8",
+      "C",
+      28,
+      "a1cd40805e9fc4975f29a9adfb2866d715c905ca905962f5d459f50a15a43fa7",
+      "France",
+      "2026-11-07",
+      "https://xbofilms.com/",
       []
     ],
     [
@@ -4227,6 +5087,26 @@
       "France",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-0e230b18926354e8fbac5f50d133",
+      "C",
+      28,
+      "b956c0e9c221e10cf625db22b4f3616ca9d48c916ef3caa105aece43074684dd",
+      "Germany",
+      "2026-11-07",
+      "https://www.youngfilms.de/",
+      []
+    ],
+    [
+      "annecy-af18be0f37895ff7ee4387b23656",
+      "C",
+      28,
+      "880b18db82e6f47ad7e09345bd08a18ed7e81695e97e85521a96b9d1c39c6b3f",
+      "Germany",
+      "2026-11-07",
+      "https://pompom-animation.com/",
       []
     ],
     [
@@ -5180,6 +6060,36 @@
       []
     ],
     [
+      "annecy-b9f4d558076bd2f1a9c2f903f317",
+      "C",
+      28,
+      "9a28f05cab542efdd2c91d28b34f732e2e0ff664cad8c408f3ce748020581112",
+      "Ghana",
+      "2026-11-07",
+      "https://acuteformula.net/about",
+      []
+    ],
+    [
+      "annecy-cafd6cc962bf06461d95c5a986c2",
+      "C",
+      28,
+      "8c91da3870631ab26513d117f350c1e281aa17421387c392f936765a55ea168f",
+      "Ghana",
+      "2026-11-07",
+      "https://www.pokastudios.com/",
+      []
+    ],
+    [
+      "annecy-17551260256f9125e85e6dceef3c",
+      "C",
+      28,
+      "ebecfd3453242d3b38df734cff0d38d2e6beeee33ecacf6f0a1bd3e7d208f0a3",
+      "Greece",
+      "2026-11-07",
+      "https://www.funnytales.eu/about-funny-tails",
+      []
+    ],
+    [
       "gamedb-518fc8ff7cf49b6318e40da62ae6",
       "C",
       28,
@@ -5187,6 +6097,46 @@
       "Greece",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-694fcf50822219c749f1aa7a5808",
+      "C",
+      28,
+      "2c896066b047720d1070c422619d76078233bd1c100553eff6cdc38200aeb52c",
+      "Hong Kong SAR China",
+      "2026-11-07",
+      "https://www.visiondesire.com/",
+      []
+    ],
+    [
+      "annecy-9aedc11d4c50b0937f4a2dde0096",
+      "C",
+      28,
+      "1b0bb6b416ae7a2791667dbb45af345ca78f19570f55c2b2ae347be7190d3926",
+      "Hong Kong SAR China",
+      "2026-11-07",
+      "https://www.simage.hk/about",
+      []
+    ],
+    [
+      "annecy-3e6af6c0aefd77a0ace34057b6de",
+      "C",
+      28,
+      "a8b74305080526c350cc8741bad5167c7ad35cd8d46d024a940d3a5577e8a256",
+      "Hungary",
+      "2026-11-07",
+      "https://www.keddstudio.com/index.php/rolunk/",
+      []
+    ],
+    [
+      "annecy-b2fcaf13f0d8d6f9d67cb3f5f0e2",
+      "C",
+      28,
+      "bbdae00d1b97d791d312596f5c62a5b6589b13b13139dc47343c965a247fc1f6",
+      "Hungary",
+      "2026-11-07",
+      "https://ionartstudios.com/",
       []
     ],
     [
@@ -5217,6 +6167,16 @@
       "Hungary",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-1910cfcd08b82a5726e00555fb41",
+      "C",
+      28,
+      "666fead7e0dd4f1d0854abbb73852fda4aedf19d0dc8cd12eb04e745d849180b",
+      "Iceland",
+      "2026-11-07",
+      "https://www.tulipopstudios.com/about",
       []
     ],
     [
@@ -5620,6 +6580,66 @@
       []
     ],
     [
+      "annecy-08e218e8f363369e300e33594732",
+      "C",
+      28,
+      "feade561f2f74a0b52a3ee9c37c61ecc50ce53c854a72a4e68b4bd1ffe963b07",
+      "Italy",
+      "2026-11-07",
+      "https://goodkarmaentertainment.it/about/",
+      []
+    ],
+    [
+      "annecy-13677448a1ed85905e74b75d087c",
+      "C",
+      28,
+      "8990cbf3eb088291a719502027e208d8df1cebb9d718ae1968c6e1e6da94185b",
+      "Italy",
+      "2026-11-07",
+      "https://www.movimenti.com/00/u0000001/team-bio.html",
+      []
+    ],
+    [
+      "annecy-50d40464342549fb9496b928abf4",
+      "C",
+      28,
+      "fe347c2f45110a5235da171c87b943c9830a2e9f04a0025ecdc434332e4668d5",
+      "Italy",
+      "2026-11-07",
+      "https://www.cartobaleno.it/about.php",
+      []
+    ],
+    [
+      "annecy-d61912470138bb6db7245882e7b5",
+      "C",
+      28,
+      "eb62861bce87745b4727858b2e4ce3c5fa75931faf217d027814d16309a40ad5",
+      "Italy",
+      "2026-11-07",
+      "https://www.panebarco.it/studio-creativo-animazione",
+      []
+    ],
+    [
+      "annecy-f85bd8af43c900a222823363893a",
+      "C",
+      28,
+      "7f160c3b4c1f7f1c066cd9e77a92f7a65ba2b37bc7fa6271cf8e152dd104cfb6",
+      "Italy",
+      "2026-11-07",
+      "https://www.selvaticostudio.it/",
+      []
+    ],
+    [
+      "annecy-ffed5d76408207466b47186f20bf",
+      "C",
+      28,
+      "955ec03734a3b6cd1dfe1a056a95f789cd5c8998378ad09ce3f6889b51b34559",
+      "Italy",
+      "2026-11-07",
+      "https://www.greenink.it/chi-siamo/",
+      []
+    ],
+    [
       "gamedb-148769256e10f5416e8b0ae8c46c",
       "C",
       28,
@@ -5817,6 +6837,36 @@
       "Italy",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-51ac7ed1defb4c4f9a980bfda9dc",
+      "C",
+      28,
+      "1442fa95af67aac600fdcaadfc4427073c1c4b8767176194383bae68e63dac83",
+      "Japan",
+      "2026-11-07",
+      "https://kodanshavrlab.com/original/retsu/",
+      []
+    ],
+    [
+      "annecy-b005395cfe602fb9dceb419972c3",
+      "C",
+      28,
+      "6ca6be71d1b88e54b028b0ed84df4c5031458af2e2d8bd2fa5be818de16676e9",
+      "Japan",
+      "2026-11-07",
+      "https://gooneys.co.jp/company/",
+      []
+    ],
+    [
+      "annecy-ed2b73b9b2b559cff3d374093506",
+      "C",
+      28,
+      "731c9dea835e4d71a02b108bfdf33d532ce6ea934df1be1cd260ec4bc1143f7d",
+      "Japan",
+      "2026-11-07",
+      "https://www.zelicofilm.com/about",
       []
     ],
     [
@@ -6400,6 +7450,26 @@
       []
     ],
     [
+      "annecy-2b83621c4338ba76971c857d43bf",
+      "C",
+      28,
+      "9c3b775f4761bec572db9586d6f3f34943825c503a3ab04f6adb143dd37e0ee4",
+      "Lithuania",
+      "2026-11-07",
+      "https://nunc.lt/about",
+      []
+    ],
+    [
+      "annecy-8f8c3a69f3085aeda226460d94a4",
+      "C",
+      28,
+      "27d010cf4b706c28cbd30149b949b5aa91f8414362b0eb5a8831dc8bdde3c023",
+      "Lithuania",
+      "2026-11-07",
+      "https://glukmedia.com/en/work/",
+      []
+    ],
+    [
       "gamedb-39c4c295b3592f1083cba6f47f2e",
       "C",
       28,
@@ -6440,6 +7510,36 @@
       []
     ],
     [
+      "annecy-4e1da493f36cd067a39223eb1053",
+      "C",
+      28,
+      "d8eaf2ba74ab3d3090e2b2fa6de57da95de8c409274980acbd0fd8830fd3dcfb",
+      "Luxembourg",
+      "2026-11-07",
+      "https://bidibul.eu/bidibul_productions.php",
+      []
+    ],
+    [
+      "annecy-7cc3aa077f66afd11d24a59e1715",
+      "C",
+      28,
+      "8b27b12d80ad7bf5b718b50af9f90e6435429843f457d110bd68d14d5a7f763e",
+      "Luxembourg",
+      "2026-11-07",
+      "https://skilllab.net/otosplanet/",
+      []
+    ],
+    [
+      "annecy-df4782ad26775c47e8d007037066",
+      "C",
+      28,
+      "682bba457cba2eccc34cf45ed32319c7387ecc865265038cfe9d73bca7d5a0c6",
+      "Luxembourg",
+      "2026-11-07",
+      "https://thisisradar.com/about",
+      []
+    ],
+    [
       "gamedb-2dd6be1792a5bf65ab970e2a6ca3",
       "C",
       28,
@@ -6447,6 +7547,46 @@
       "Luxembourg",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-583adea47e0e06f4aef3e082ba4b",
+      "C",
+      28,
+      "3161f18429801f50f516c1e5deadc9165a1106b599a338d76f57284f5a479885",
+      "Malaysia",
+      "2026-11-07",
+      "https://www.momodica.com/home",
+      []
+    ],
+    [
+      "annecy-81dc941870ec5703d3c200882d07",
+      "C",
+      28,
+      "8ccf2713f948bf77de3c8f163b6827e6f0bdc71093adeb6f4840493696d69eb4",
+      "Malaysia",
+      "2026-11-07",
+      "https://www.studioraksa.com/",
+      []
+    ],
+    [
+      "annecy-a255da9233109d0234f530ffc033",
+      "C",
+      28,
+      "f9e90781bd0b43184c1da1865b273b6ba9f90e602cf1be3ed34c8c14f48a90f1",
+      "Malaysia",
+      "2026-11-07",
+      "https://lilcritterworkshop.tv/about-us/",
+      []
+    ],
+    [
+      "annecy-fc4d673b8b49e70a7e4174edbc02",
+      "C",
+      28,
+      "4105d924252178124bdc7792637bc1c177d63f0614bc8efc2155a004c995e86f",
+      "Malaysia",
+      "2026-11-07",
+      "https://redkurita.com/",
       []
     ],
     [
@@ -6540,6 +7680,46 @@
       []
     ],
     [
+      "annecy-148220c1aa4d46a50d150fe02eff",
+      "C",
+      28,
+      "5eab50780a15d4352311b0c38898f7b5e9c32b9ad6cc9938ada8daee8ebaa437",
+      "Mexico",
+      "2026-11-07",
+      "https://sismica.studio/cgi/",
+      []
+    ],
+    [
+      "annecy-1f657a634f9cfd9857cb9129dd47",
+      "C",
+      28,
+      "3e04eaa0e76d9e91c219ec1409fd28cccc5165857aeeb88539451520d8ea4510",
+      "Mexico",
+      "2026-11-07",
+      "https://www.vivacalavera.studio/",
+      []
+    ],
+    [
+      "annecy-55718d91ad62c92d076d46f39224",
+      "C",
+      28,
+      "acdc6e92e7c5c974f0c2731f999af8d2b559197d07364ac7f52830531954bf4f",
+      "Mexico",
+      "2026-11-07",
+      "https://mistermachin.mx/about-us/",
+      []
+    ],
+    [
+      "annecy-ec268079d69f5a9c2d4207437914",
+      "C",
+      28,
+      "1b8cad4154066657ad660137326b81948e043d861620af5eb7f0999de7d7bfe6",
+      "Mexico",
+      "2026-11-07",
+      "https://www.gasolinastudios.com/",
+      []
+    ],
+    [
       "gamedb-547cecc676878b6ec581b8933c1a",
       "C",
       28,
@@ -6547,6 +7727,16 @@
       "Mexico",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-2a0887d808dcf782171eda3c5a77",
+      "C",
+      28,
+      "7bfe14b91c6cd8b29c0c3be738f77765b38db766e2128edd592308fab05b2a82",
+      "Netherlands",
+      "2026-11-07",
+      "https://manofiga.com/",
       []
     ],
     [
@@ -7250,6 +8440,76 @@
       []
     ],
     [
+      "annecy-1cdbdf08afa4a41a390e770a3221",
+      "C",
+      28,
+      "719dc757b6bc7d2ff5b54eeba9aa223545f80ef27b90f71062efd64256d533a1",
+      "Nigeria",
+      "2026-11-07",
+      "https://www.spoofanimations.com/portfolio/ajaka-lost-in-rome/",
+      []
+    ],
+    [
+      "annecy-5461f149a723b1b7dea8a7734bee",
+      "C",
+      28,
+      "56a54fb25b250183c71eadf9647abc71c9c8a77c4aeb801c2c8991cac9c63585",
+      "Nigeria",
+      "2026-11-07",
+      "https://www.limitless-studios.co/",
+      []
+    ],
+    [
+      "annecy-8c97301ae017d4a09ac962b8fff3",
+      "C",
+      28,
+      "2d9674b5436c8f9178ebfe35c85550e1509e203b2791e31fe5a7950e59a671b4",
+      "Nigeria",
+      "2026-11-07",
+      "https://www.folktailstudios.com/",
+      []
+    ],
+    [
+      "annecy-a002320869d72d8d6306b21dca13",
+      "C",
+      28,
+      "12542fe1d20745e2da732daaee51011304ceeda4da54432d021cd92b7aaa11c7",
+      "Nigeria",
+      "2026-11-07",
+      "https://www.micromediamarketingltd.com/about-micromedia/",
+      []
+    ],
+    [
+      "annecy-53124e78a74cb47fe1a872633bc1",
+      "C",
+      28,
+      "586f4c986f0458c3d7aa61abec0bc707593437e275213304606a1012cad5efed",
+      "Norway",
+      "2026-11-07",
+      "https://www.trollfilm.no/blank-9",
+      []
+    ],
+    [
+      "annecy-cb0183c9e7936a21d4a6fe6b2f82",
+      "C",
+      28,
+      "ba9981e93f70734fe66a56024108df0a7de14f1e4395e190206aea8148b3ca33",
+      "Norway",
+      "2026-11-07",
+      "https://www.expanse.no/",
+      []
+    ],
+    [
+      "annecy-d9d384caae3069a8a56675f57b0f",
+      "C",
+      28,
+      "5f9e8ca2fdd7c86dc45a270d45ee695cad73560125101cfac21f817eff12a283",
+      "Norway",
+      "2026-11-07",
+      "https://klippoglim.no/fiction/ovary-acting/",
+      []
+    ],
+    [
       "gamedb-1839077bd24c78cab5e5c95d1e2d",
       "C",
       28,
@@ -7340,6 +8600,46 @@
       []
     ],
     [
+      "annecy-0c284149bc8b78ff1efd3c0fe44c",
+      "C",
+      28,
+      "2083307e62f5f56e1f7b882b216fd4b8d951b9639fdd02ab12b6e5a260b452ef",
+      "Peru",
+      "2026-11-07",
+      "https://www.makaco.pe/aboutus",
+      []
+    ],
+    [
+      "annecy-41768e6ceefe944c776d6158c467",
+      "C",
+      28,
+      "c95b3d1fb6dd061c3737054572c05bc96bd4426cb188fe87819b11abedb4432c",
+      "Peru",
+      "2026-11-07",
+      "https://manekistudio.com/en/",
+      []
+    ],
+    [
+      "annecy-a913d008c8a5ced672d3a9979363",
+      "C",
+      28,
+      "f2e72a434ae01c1644defd38ce7b34f25b15a9874ec54fd7325f56c8f76ee1c8",
+      "Peru",
+      "2026-11-07",
+      "https://bicicleta.com.pe/",
+      []
+    ],
+    [
+      "annecy-1a128851e0b5c10f5eabd6b74d3b",
+      "C",
+      28,
+      "8677be2aef36329e029f626ebc726ffa919598cebb52d561e600a5fc9f23afd3",
+      "Philippines",
+      "2026-11-07",
+      "https://kinoarts.ph/about-us/",
+      []
+    ],
+    [
       "gamedb-31e7d1735dd833789b4b92c2e5ab",
       "C",
       28,
@@ -7377,6 +8677,56 @@
       "Philippines",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-0b231662a31d88af8b3ad3187682",
+      "C",
+      28,
+      "15c5097e5c5c3d53514f9d0e7aa46d5c7a8bdcd7a8bd4ad93acd6ce1387a036d",
+      "Poland",
+      "2026-11-07",
+      "https://www.runningrabbitfilms.pl/",
+      []
+    ],
+    [
+      "annecy-45f586a18726648f24cc3255e04a",
+      "C",
+      28,
+      "5d7d2fad02f5b32edd113abbb77d48f140e220eecd7603b080248da736c9bb59",
+      "Poland",
+      "2026-11-07",
+      "https://filmograf.com.pl/",
+      []
+    ],
+    [
+      "annecy-5976cca9a4ff23cc77a24d2f761a",
+      "C",
+      28,
+      "20d3791b6e2a7e403d241dc020f40bf677d62578cb1e0f01f53d0396a76408d1",
+      "Poland",
+      "2026-11-07",
+      "https://laniakea.pictures/",
+      []
+    ],
+    [
+      "annecy-d5b88c3a2356f825cf1062591264",
+      "C",
+      28,
+      "603b6d32018ebb0db56f1648adb1a9abae55b0e94d8657e1e83f8e44c81e6dd8",
+      "Poland",
+      "2026-11-07",
+      "https://kazstudio.pl/o-nas/",
+      []
+    ],
+    [
+      "annecy-f530f1e66d4edcc75b1dd25df24d",
+      "C",
+      28,
+      "9feb33fc462a414fa9b0ad577ac1cab698501d8fe8bc21646060eca6db2fb8e3",
+      "Poland",
+      "2026-11-07",
+      "https://www.momakin.pl/en/about-us",
       []
     ],
     [
@@ -8320,6 +9670,46 @@
       []
     ],
     [
+      "annecy-286e4e2e5f0bb4fad14db4547a03",
+      "C",
+      28,
+      "4f754dc41e3da60bb445d1be5a094ddf21702d4bf4056b687e63c073422eb226",
+      "Portugal",
+      "2026-11-07",
+      "https://animais-avpl.com/quem-somos/",
+      []
+    ],
+    [
+      "annecy-8656990b207994e05ecd6e193379",
+      "C",
+      28,
+      "513a9eab01344ee8402b04f694286c8aa57cc2e74b8645d8b9c4c121bc3f38c2",
+      "Portugal",
+      "2026-11-07",
+      "https://osfilmesdopinguim.pt/",
+      []
+    ],
+    [
+      "annecy-a2a25ad5831f02fb5c1c5c9e21b6",
+      "C",
+      28,
+      "b4ac2df9de53a3989224a2ad315a334a832e20f835fa9bb367f0fb3f151c9f6c",
+      "Portugal",
+      "2026-11-07",
+      "https://www.musofilms.com/about",
+      []
+    ],
+    [
+      "annecy-cbf0f9a3a1875dae706195f6311c",
+      "C",
+      28,
+      "444fa271a4ef188cb283cb53249e471695848bd2675c41bae560cb4e64471a12",
+      "Portugal",
+      "2026-11-07",
+      "https://luckymatrix.pt/about.html",
+      []
+    ],
+    [
       "gamedb-1c5b8cc21ed59d319acefb9cc2b5",
       "C",
       28,
@@ -8460,6 +9850,16 @@
       []
     ],
     [
+      "annecy-5bfd82eae714164a2dade5ed46e8",
+      "C",
+      28,
+      "1e3044232373f1e81931ee53d9247e8fdf983a05a9c4a768a8c85263fa4df8dc",
+      "Saudi Arabia",
+      "2026-11-07",
+      "https://manga.com.sa/about-us/",
+      []
+    ],
+    [
       "gamedb-0380632b27427bfb5501b09ddb8b",
       "C",
       28,
@@ -8530,6 +9930,16 @@
       []
     ],
     [
+      "annecy-d400ed91ac52a590719b85945d6d",
+      "C",
+      28,
+      "7c565e7b4556b5dfe805e1b7d51984cc1b6553a983c89595f2db5ee861663ff7",
+      "Serbia",
+      "2026-11-07",
+      "https://metaxilasis.com/about-us",
+      []
+    ],
+    [
       "gamedb-857564fc33215d37d34196d50cd6",
       "C",
       28,
@@ -8547,6 +9957,26 @@
       "Serbia",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-8a58f070ef7fa199fa257fc56e81",
+      "C",
+      28,
+      "1f58cc95d3f7dc86c4b0c837e08a27891ebfd35448090844a5c939b10661f3ca",
+      "Singapore",
+      "2026-11-07",
+      "https://www.omens-studios.com/services/",
+      []
+    ],
+    [
+      "annecy-e5bc3d569f9955fc7e48a73080b8",
+      "C",
+      28,
+      "02b6d523acbf7f993b0e821c62cf770ffd7298c8cf27674b7f21b0ce85908598",
+      "Singapore",
+      "2026-11-07",
+      "https://leveret.group/",
       []
     ],
     [
@@ -8620,6 +10050,26 @@
       []
     ],
     [
+      "annecy-9242c50d62c0663de0e06df785d1",
+      "C",
+      28,
+      "cd912c7369695ebe224c8af6620d1f2f34efa59d6d93f076248e93e4154bf7e4",
+      "Slovakia",
+      "2026-11-07",
+      "https://blue-faces.com/animation/about-us/",
+      []
+    ],
+    [
+      "annecy-e2ef636e1005508cae0ef92ebb87",
+      "C",
+      28,
+      "f4893af69826a01054f105c8a142970482d428c1b883dfc10a526ae47804c6b3",
+      "Slovakia",
+      "2026-11-07",
+      "https://artichoke.tv/about",
+      []
+    ],
+    [
       "gamedb-196f45c804d231a3e14f01a1e824",
       "C",
       28,
@@ -8630,6 +10080,16 @@
       []
     ],
     [
+      "annecy-09aad0d4e515c562295f80e46e91",
+      "C",
+      28,
+      "06386e962fcb7055130eca98864c3f7495181a6ae5f00cfda2ccfa5c560f7997",
+      "Slovenia",
+      "2026-11-07",
+      "https://invida.tv/en/about/",
+      []
+    ],
+    [
       "gamedb-903bc8e25d268253f507c35750de",
       "C",
       28,
@@ -8637,6 +10097,56 @@
       "Slovenia",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-17f627b832d75aca5d9ec3fa70fc",
+      "C",
+      28,
+      "1b5a52bb12c079653d5482f849d20cef56445ae48f97e9aa91bd759531fcfc06",
+      "South Africa",
+      "2026-11-07",
+      "https://www.ferincollective.com/",
+      []
+    ],
+    [
+      "annecy-4c04d8eb4f21fcf3de14236d6aca",
+      "C",
+      28,
+      "455685f5335feb38a53445704872362759f068ac0a1c02f9db40c1523981b1ea",
+      "South Africa",
+      "2026-11-07",
+      "https://itthynkgaming.co.za/services/showcasing-and-competitions/",
+      []
+    ],
+    [
+      "annecy-8698c50b0a720e99a8ad99a63af3",
+      "C",
+      28,
+      "0409edbad33cf6ec7f18f11e856b207365b97496c6821f3a9878268c659368ca",
+      "South Africa",
+      "2026-11-07",
+      "https://pixcomm.co.za/jabu-about/",
+      []
+    ],
+    [
+      "annecy-8817394add37bd6a3dd842b7c668",
+      "C",
+      28,
+      "8bc9981ba8d44655aac5b30cbf25477ed2e1b200185b8ff36e7594d8b7024b6a",
+      "South Africa",
+      "2026-11-07",
+      "https://www.bugbox.co.za/",
+      []
+    ],
+    [
+      "annecy-c16eed0a4fee7cef94520ab1a72f",
+      "C",
+      28,
+      "39011a8a8e42c9550b8c8572916780ed1237474c357240dba090210a03548a6c",
+      "South Africa",
+      "2026-11-07",
+      "https://www.lucan.tv/about",
       []
     ],
     [
@@ -8677,6 +10187,56 @@
       "South Africa",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-04f3fc6a7519667d5b83ef41c740",
+      "C",
+      28,
+      "6ce571f0d44eecf5322a0fc936af7b6066d5e54aad0513cdc73bc32fbcb75c73",
+      "South Korea",
+      "2026-11-07",
+      "https://www.studiotnt.tv/",
+      []
+    ],
+    [
+      "annecy-0df420e9d1879a201dfdd4754a17",
+      "C",
+      28,
+      "738f797a8cbec13dcedb18134abcb4dde3f084afff7d96304bb3eec1319249f1",
+      "South Korea",
+      "2026-11-07",
+      "https://www.namexent.com/",
+      []
+    ],
+    [
+      "annecy-0fe88bb9ad70381f531c142eec32",
+      "C",
+      28,
+      "99130f083fc4ea9806a63bb6233c4fa75b9fcad1d8bae6845d9a2b3105836cbd",
+      "South Korea",
+      "2026-11-07",
+      "https://vcrworks.kr/about-us",
+      []
+    ],
+    [
+      "annecy-515da9fc8aea93a2d35702e5bed3",
+      "C",
+      28,
+      "1b2a31ee42c0776bfe436df6a616c0fb85c1f2270ea2d7decfa12ed19ceed192",
+      "South Korea",
+      "2026-11-07",
+      "https://holhory.com/en/",
+      []
+    ],
+    [
+      "annecy-a51bcd53b84ed7ab84faa49462ab",
+      "C",
+      28,
+      "6eb8a12130ba7d94f448298500ee12821f5fcc63b1a86b0ab0044f6750ecdd58",
+      "South Korea",
+      "2026-11-07",
+      "https://www.pingo.kr/about-us",
       []
     ],
     [
@@ -8970,6 +10530,66 @@
       []
     ],
     [
+      "annecy-24855388ebedd45c6613b4e7e104",
+      "C",
+      28,
+      "d21d12396983fa3f34e92067ff24970d6f0878b7facf417f57de97a5c183f0a8",
+      "Spain",
+      "2026-11-07",
+      "https://lamola.studio/hay-algun-muerto-en-la-sala/",
+      []
+    ],
+    [
+      "annecy-5d1a4b0ca99f369778099d516854",
+      "C",
+      28,
+      "4bf41af019fe66b71991f4169c8563b939853b891232e8489f16059f8b78a379",
+      "Spain",
+      "2026-11-07",
+      "https://www.bigbangbox.es/nosotros/",
+      []
+    ],
+    [
+      "annecy-68f6e661f25c501f20ff26091869",
+      "C",
+      28,
+      "042c1e73dcd4056a25d5c87f9bc062ba1a3e7c0f8faf67439da07e3d934bc3ce",
+      "Spain",
+      "2026-11-07",
+      "https://www.nutsideas.com/?lang=en",
+      []
+    ],
+    [
+      "annecy-6e9522d7dbc93f9043a99ad4814d",
+      "C",
+      28,
+      "c53a97a0de9f117bc194c2854fc7a96c1fc807582965184fbbeccd1668c0c959",
+      "Spain",
+      "2026-11-07",
+      "https://minimovfx.com/about-us/",
+      []
+    ],
+    [
+      "annecy-abfcf2cbd551e610b9a574ef180f",
+      "C",
+      28,
+      "8ae269bef94d89f7bbe347f8a4d0deb042023ae0f1735d74231960fe73dff51c",
+      "Spain",
+      "2026-11-07",
+      "https://finalfrontier.tv/about/",
+      []
+    ],
+    [
+      "annecy-d2f2b609b0975dc28c7469c4f2b4",
+      "C",
+      28,
+      "d4c1236cc171ee30e1f92e1ba99a14547722dbf4d496217c6912b3b844d3fba7",
+      "Spain",
+      "2026-11-07",
+      "https://loturafilms.eus/en/history/",
+      []
+    ],
+    [
       "gamedb-0a4838d8b64a5e806785d182b602",
       "C",
       28,
@@ -9237,6 +10857,16 @@
       "Spain",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-784041acfd8d30cf5ee6a388f6ac",
+      "C",
+      28,
+      "a6c94fc6c8b964a10c3b606e1f5c12e65d86448b9a41bc69bf9e85b3ba633db1",
+      "Sweden",
+      "2026-11-07",
+      "https://nutteryentertainment.com/",
       []
     ],
     [
@@ -9860,6 +11490,16 @@
       []
     ],
     [
+      "annecy-2766e448bc36234d40e2a804fdf8",
+      "C",
+      28,
+      "13d614f7a360cf41ea6b124f7fd9e6cddaee1d643063f26ec9691e8055177991",
+      "Taiwan",
+      "2026-11-07",
+      "https://chimneyani-en.carrd.co/",
+      []
+    ],
+    [
       "gamedb-0cae669ce7d0f083ed25363e6222",
       "C",
       28,
@@ -9900,6 +11540,16 @@
       []
     ],
     [
+      "annecy-8e533ef71c8a5761c709e13606fc",
+      "C",
+      28,
+      "80097d741dca721e3bffe56f6aae77e13083ec833ce59451375dd5d5954a5236",
+      "Thailand",
+      "2026-11-07",
+      "https://www.plastiek.com/main-plastiek-page/about",
+      []
+    ],
+    [
       "boutique-3ecc7ecec4982f34a90f42b31f92",
       "C",
       28,
@@ -9927,6 +11577,26 @@
       "Türkiye",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-ced66039a667c7387e8b791c5852",
+      "C",
+      28,
+      "0f9f7ddda66141dc384b7bdb2a8a5130a11ca57727bea3eb045bd8bb611216fe",
+      "Ukraine",
+      "2026-11-07",
+      "https://www.animagrad.com/about",
+      []
+    ],
+    [
+      "annecy-f122728922331ad42d8951e663f5",
+      "C",
+      28,
+      "b36a44894eb532acb4626308ea56b7594aa5f3e26e0ca2ecf1759a10026753df",
+      "Ukraine",
+      "2026-11-07",
+      "https://kapianimation.com/",
       []
     ],
     [
@@ -9990,6 +11660,16 @@
       []
     ],
     [
+      "annecy-502537edfe26fc2df5dfcb1b38f9",
+      "C",
+      28,
+      "278f2bd42d9de071b6957774084ee52a2b7f11ac0b27b9d87a6f8e1aa5cd61a4",
+      "United Arab Emirates",
+      "2026-11-07",
+      "https://animotion.media/tpost/31ye4jdrg1-animotion-media-group-puts-a-premium-on",
+      []
+    ],
+    [
       "gamedb-1150356197fb99e7be04843ff06f",
       "C",
       28,
@@ -10007,6 +11687,46 @@
       "United Arab Emirates",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "annecy-20c5bd0e0bdaaa973551642ba884",
+      "C",
+      28,
+      "d1667c081f28da1ae7406dfa3164b4ca6ba8ecf9860c438ed449ff2d9f3b8b02",
+      "United Kingdom",
+      "2026-11-07",
+      "https://www.ritzyanimation.com/about",
+      []
+    ],
+    [
+      "annecy-4d8d47125361997e6efa078e39ee",
+      "C",
+      28,
+      "ac06f5c5aa530b7c7ea36b381aae13f79ab1047a033324fcd02ad33737c4e796",
+      "United Kingdom",
+      "2026-11-07",
+      "https://www.kelebekmedia.com/",
+      []
+    ],
+    [
+      "annecy-507191351e9eac4c0c13f7a1751a",
+      "C",
+      28,
+      "2325f8e83ddb2e29cf5f94e41d245b6c431c984ef3ce42bad3c02967c0b85d21",
+      "United Kingdom",
+      "2026-11-07",
+      "https://sunandmoonstudios.co.uk/services/animation/",
+      []
+    ],
+    [
+      "annecy-c05b23d632f820c84e6d985429a6",
+      "C",
+      28,
+      "7cfb0e208437a69751aa72e2fc7192579c5cb5590d8ae9da68cee0f2a51ff5da",
+      "United Kingdom",
+      "2026-11-07",
+      "https://snafu-pictures.com/team/",
       []
     ],
     [

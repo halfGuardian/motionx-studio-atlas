@@ -1,0 +1,3969 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-07",
+  "provider": "Permitted indexed search, not search-engine scraping. No website collector is enabled.",
+  "records": [
+    {
+      "exhibitor_id": "annecy2024-0002",
+      "name": "BANDIDOGUAPO",
+      "country": "Argentina",
+      "research_group": "priority",
+      "query": "\"BANDIDOGUAPO\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0004",
+      "name": "CREAVISION FILMS",
+      "country": "Argentina",
+      "research_group": "priority",
+      "query": "\"CREAVISION FILMS\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0005",
+      "name": "KUIPER ANIMATION",
+      "country": "Argentina",
+      "research_group": "production_review",
+      "query": "\"KUIPER ANIMATION\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0006",
+      "name": "PICANTE",
+      "country": "Argentina",
+      "research_group": "priority",
+      "query": "\"PICANTE\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0007",
+      "name": "PIPALUPA",
+      "country": "Argentina",
+      "research_group": "priority",
+      "query": "\"PIPALUPA\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0008",
+      "name": "PLANTA ALTA",
+      "country": "Argentina",
+      "research_group": "production_review",
+      "query": "\"PLANTA ALTA\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0009",
+      "name": "SMILEHOOD",
+      "country": "Argentina",
+      "research_group": "priority",
+      "query": "\"SMILEHOOD\" Argentina official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0010",
+      "name": "ARTSTEP-STUDIO",
+      "country": "Armenia",
+      "research_group": "production_review",
+      "query": "\"ARTSTEP-STUDIO\" Armenia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0011",
+      "name": "BANZAY PRODUCTION",
+      "country": "Armenia",
+      "research_group": "priority",
+      "query": "\"BANZAY PRODUCTION\" Armenia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0012",
+      "name": "MULTART+",
+      "country": "Armenia",
+      "research_group": "priority",
+      "query": "\"MULTART+\" Armenia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0014",
+      "name": "ONOFF STUDIO LLC",
+      "country": "Armenia",
+      "research_group": "production_review",
+      "query": "\"ONOFF STUDIO LLC\" Armenia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0017",
+      "name": "MOVING LINES (PTY) LTD",
+      "country": "Austria",
+      "research_group": "priority",
+      "query": "\"MOVING LINES (PTY) LTD\" Austria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0019",
+      "name": "DYNAMIC BOX",
+      "country": "Azerbaijan",
+      "research_group": "priority",
+      "query": "\"DYNAMIC BOX\" Azerbaijan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0020",
+      "name": "AGENT DOUBLE PRODUCTIONS",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"AGENT DOUBLE PRODUCTIONS\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0021",
+      "name": "AROMATES STUDIO",
+      "country": "Belgium",
+      "research_group": "priority",
+      "query": "\"AROMATES STUDIO\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0024",
+      "name": "BESIDE PRODUCTIONS",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"BESIDE PRODUCTIONS\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0032",
+      "name": "LIMITED ADVENTURES",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"LIMITED ADVENTURES\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0034",
+      "name": "MIYU PRODUCTIONS",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"MIYU PRODUCTIONS\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0035",
+      "name": "PANIQUE!",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"PANIQUE!\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0036",
+      "name": "PEYO PRODUCTION",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"PEYO PRODUCTION\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0037",
+      "name": "PEYO PRODUCTIONS",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"PEYO PRODUCTIONS\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0038",
+      "name": "SQUAREFISH",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"SQUAREFISH\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0040",
+      "name": "SYNK - THE PACK",
+      "country": "Belgium",
+      "research_group": "priority",
+      "query": "\"SYNK - THE PACK\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0043",
+      "name": "WAJNBROSSE",
+      "country": "Belgium",
+      "research_group": "production_review",
+      "query": "\"WAJNBROSSE\" Belgium official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0046",
+      "name": "44 TOONS",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"44 TOONS\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0047",
+      "name": "ALOPRA ANIMATION STUDIO",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"ALOPRA ANIMATION STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0049",
+      "name": "APIÁRIO ESTÚDIO CRIATIVO",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"APIÁRIO ESTÚDIO CRIATIVO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0050",
+      "name": "BALOO FILMES",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"BALOO FILMES\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0052",
+      "name": "CHATRONE",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"CHATRONE\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0053",
+      "name": "COMBO STUDIO",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"COMBO STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0054",
+      "name": "COPA STUDIO",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"COPA STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0055",
+      "name": "FRAIHA PRODUÇÕES",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"FRAIHA PRODUÇÕES\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0056",
+      "name": "LOBEROSO STUDIO",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"LOBEROSO STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0057",
+      "name": "MAR FILMES",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"MAR FILMES\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0058",
+      "name": "MUIRAQUITÃ FILMES",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"MUIRAQUITÃ FILMES\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0059",
+      "name": "OZ PRODUTORA",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"OZ PRODUTORA\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0060",
+      "name": "SPIRIT ANIMATION",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"SPIRIT ANIMATION\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0061",
+      "name": "SPLIT STUDIO",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"SPLIT STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0063",
+      "name": "TOCANTINS FILMES",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"TOCANTINS FILMES\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0064",
+      "name": "TROPICAL ENTRETENIMENTO",
+      "country": "Brazil",
+      "research_group": "production_review",
+      "query": "\"TROPICAL ENTRETENIMENTO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0065",
+      "name": "VERANITO STUDIO",
+      "country": "Brazil",
+      "research_group": "priority",
+      "query": "\"VERANITO STUDIO\" Brazil official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0067",
+      "name": "BOTTLESHIP",
+      "country": "Bulgaria",
+      "research_group": "priority",
+      "query": "\"BOTTLESHIP\" Bulgaria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0068",
+      "name": "CHASE A CLOUD",
+      "country": "Bulgaria",
+      "research_group": "priority",
+      "query": "\"CHASE A CLOUD\" Bulgaria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0071",
+      "name": "10E AVE PRODUCTIONS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"10E AVE PRODUCTIONS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0074",
+      "name": "ARTISTS ANIMATION STUDIO",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"ARTISTS ANIMATION STUDIO\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0075",
+      "name": "ATOMIC CARTOONS",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"ATOMIC CARTOONS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0079",
+      "name": "CHRYSTELLE MAECHLER PRODUCTIONS INC.",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"CHRYSTELLE MAECHLER PRODUCTIONS INC.\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0080",
+      "name": "COLEGRAM",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"COLEGRAM\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0081",
+      "name": "DNEG ANIMATION",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"DNEG ANIMATION\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0082",
+      "name": "ECHO MEDIA",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"ECHO MEDIA\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0083",
+      "name": "EMBUSCADE FILMS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"EMBUSCADE FILMS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0084",
+      "name": "EPIC STORYWORLDS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"EPIC STORYWORLDS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0085",
+      "name": "EX NIHILO PRODUCTIONS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"EX NIHILO PRODUCTIONS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0087",
+      "name": "FLYING KRAKEN CREATIVE STUDIOS INC.",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"FLYING KRAKEN CREATIVE STUDIOS INC.\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0094",
+      "name": "ICON CREATIVE STUDIOS",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"ICON CREATIVE STUDIOS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0095",
+      "name": "IMAGE-IN ATLANTIQUE",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"IMAGE-IN ATLANTIQUE\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0097",
+      "name": "KAIBOU PRODUCTION INC",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"KAIBOU PRODUCTION INC\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0099",
+      "name": "LAKESIDE ANIMATION STUDIOS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"LAKESIDE ANIMATION STUDIOS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0100",
+      "name": "MOONSHOT RIGHTS MOCAP PRODUCTIONS",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"MOONSHOT RIGHTS MOCAP PRODUCTIONS\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0101",
+      "name": "MYSTIC HOUSE ANIMATION LTD.",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"MYSTIC HOUSE ANIMATION LTD.\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0102",
+      "name": "NEXT PIXEL ENTERTAINMENT INC.",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"NEXT PIXEL ENTERTAINMENT INC.\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0105",
+      "name": "PRODUCTIONS L'UNITÉ CENTRALE",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"PRODUCTIONS L'UNITÉ CENTRALE\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0107",
+      "name": "PVP MÉDIA INC.",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"PVP MÉDIA INC.\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0109",
+      "name": "REDEFINE",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"REDEFINE\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0110",
+      "name": "REZOLUTION PICTURES",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"REZOLUTION PICTURES\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0114",
+      "name": "SINKING SHIP ENTERTAINMENT",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"SINKING SHIP ENTERTAINMENT\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0118",
+      "name": "SPUN PRODUCTIONS INC",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"SPUN PRODUCTIONS INC\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0122",
+      "name": "STUDIO UNAGI",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"STUDIO UNAGI\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0124",
+      "name": "TERRE INNUE",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"TERRE INNUE\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0127",
+      "name": "VIVAVISION",
+      "country": "Canada",
+      "research_group": "production_review",
+      "query": "\"VIVAVISION\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0129",
+      "name": "WITH BELLS ON ENTERTAINMENT",
+      "country": "Canada",
+      "research_group": "priority",
+      "query": "\"WITH BELLS ON ENTERTAINMENT\" Canada official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0133",
+      "name": "FORMIDABLE STUDIO",
+      "country": "Chile",
+      "research_group": "production_review",
+      "query": "\"FORMIDABLE STUDIO\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0134",
+      "name": "GVG PRODUCCIONES",
+      "country": "Chile",
+      "research_group": "production_review",
+      "query": "\"GVG PRODUCCIONES\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0135",
+      "name": "LLOLLEO CREATIVO",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"LLOLLEO CREATIVO\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0136",
+      "name": "LUNES",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"LUNES\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0137",
+      "name": "MARÍA WOOD PRODUCCIONES",
+      "country": "Chile",
+      "research_group": "production_review",
+      "query": "\"MARÍA WOOD PRODUCCIONES\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0138",
+      "name": "MARMOTA STUDIO",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"MARMOTA STUDIO\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0139",
+      "name": "OFICINA 76",
+      "country": "Chile",
+      "research_group": "production_review",
+      "query": "\"OFICINA 76\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0140",
+      "name": "POSTON DIGITAL ARTS",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"POSTON DIGITAL ARTS\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0142",
+      "name": "PUDOCTOPUS",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"PUDOCTOPUS\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0143",
+      "name": "PUNKROBOT STUDIO",
+      "country": "Chile",
+      "research_group": "production_review",
+      "query": "\"PUNKROBOT STUDIO\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0144",
+      "name": "RAYO PURPURA ESTUDIO",
+      "country": "Chile",
+      "research_group": "priority",
+      "query": "\"RAYO PURPURA ESTUDIO\" Chile official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0145",
+      "name": "BEIJING MIAOW'S HOUSE CULTURE MEDIA CO., LTD.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"BEIJING MIAOW'S HOUSE CULTURE MEDIA CO., LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0146",
+      "name": "BILIBILI INC.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"BILIBILI INC.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0147",
+      "name": "CCTV ANIMATION GROUP LIMITED",
+      "country": "China",
+      "research_group": "production_review",
+      "query": "\"CCTV ANIMATION GROUP LIMITED\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0150",
+      "name": "CHINA FILM GROUP",
+      "country": "China",
+      "research_group": "production_review",
+      "query": "\"CHINA FILM GROUP\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0152",
+      "name": "CHINA FILM PAVILION",
+      "country": "China",
+      "research_group": "production_review",
+      "query": "\"CHINA FILM PAVILION\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0154",
+      "name": "ESCAPE VELOCITY ANIMATION STUDIO",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"ESCAPE VELOCITY ANIMATION STUDIO\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0155",
+      "name": "FANTAWILD ANIMATION INC",
+      "country": "China",
+      "research_group": "production_review",
+      "query": "\"FANTAWILD ANIMATION INC\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0157",
+      "name": "FZ ENTERTAINMENT CO., LTD.",
+      "country": "China",
+      "research_group": "production_review",
+      "query": "\"FZ ENTERTAINMENT CO., LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0161",
+      "name": "HUNAN GOLDEN EAGLE CARTOON MEDIA CO.,LTD",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"HUNAN GOLDEN EAGLE CARTOON MEDIA CO.,LTD\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0164",
+      "name": "SHANGHAI YUEWEN INFORMATION TECHNOLOGY CO. LTD.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"SHANGHAI YUEWEN INFORMATION TECHNOLOGY CO. LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0165",
+      "name": "SHENGDING CULTURE",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"SHENGDING CULTURE\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0166",
+      "name": "SHENZHEN TIAN TIAN CHENG ZHANG FILM AND TELEVISION PRODUCTIONS LTD.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"SHENZHEN TIAN TIAN CHENG ZHANG FILM AND TELEVISION PRODUCTIONS LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0167",
+      "name": "SUZHOU PEGASUS LIANGZI FILM CO. LTD.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"SUZHOU PEGASUS LIANGZI FILM CO. LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0168",
+      "name": "ZAOZHUANG YIJIA ANIMATION PRODUCTION CO., LTD",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"ZAOZHUANG YIJIA ANIMATION PRODUCTION CO., LTD\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0170",
+      "name": "ZHEJIANG ZOLAND ANIMATION CO., LTD.",
+      "country": "China",
+      "research_group": "priority",
+      "query": "\"ZHEJIANG ZOLAND ANIMATION CO., LTD.\" China official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0171",
+      "name": "3DADOS MEDIA",
+      "country": "Colombia",
+      "research_group": "priority",
+      "query": "\"3DADOS MEDIA\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0172",
+      "name": "DINAMITA ANIMACION",
+      "country": "Colombia",
+      "research_group": "priority",
+      "query": "\"DINAMITA ANIMACION\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0173",
+      "name": "EL TUERTO PICTURES",
+      "country": "Colombia",
+      "research_group": "production_review",
+      "query": "\"EL TUERTO PICTURES\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0174",
+      "name": "MAKIA CREATIVE / MAMONCILLO",
+      "country": "Colombia",
+      "research_group": "priority",
+      "query": "\"MAKIA CREATIVE / MAMONCILLO\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0175",
+      "name": "SAMSA STUDIO",
+      "country": "Colombia",
+      "research_group": "priority",
+      "query": "\"SAMSA STUDIO\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0176",
+      "name": "SIGNOS STUDIO",
+      "country": "Colombia",
+      "research_group": "production_review",
+      "query": "\"SIGNOS STUDIO\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0177",
+      "name": "STORY SAS",
+      "country": "Colombia",
+      "research_group": "production_review",
+      "query": "\"STORY SAS\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0178",
+      "name": "VERITÉ COLOMBIA",
+      "country": "Colombia",
+      "research_group": "production_review",
+      "query": "\"VERITÉ COLOMBIA\" Colombia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0182",
+      "name": "MINYA FILM AND ANIMATION",
+      "country": "Croatia",
+      "research_group": "production_review",
+      "query": "\"MINYA FILM AND ANIMATION\" Croatia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0186",
+      "name": "FETISOFF ILLUSION - EUROPE LTD",
+      "country": "Cyprus",
+      "research_group": "production_review",
+      "query": "\"FETISOFF ILLUSION - EUROPE LTD\" Cyprus official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0187",
+      "name": "MIBO LIMITED",
+      "country": "Cyprus",
+      "research_group": "priority",
+      "query": "\"MIBO LIMITED\" Cyprus official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0188",
+      "name": "13KA",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"13KA\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0189",
+      "name": "AHOJ ANIMATION",
+      "country": "Czech Republic",
+      "research_group": "priority",
+      "query": "\"AHOJ ANIMATION\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0190",
+      "name": "AMU-FAMU PRAGUE",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"AMU-FAMU PRAGUE\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0192",
+      "name": "ANIMATION PEOPLE",
+      "country": "Czech Republic",
+      "research_group": "priority",
+      "query": "\"ANIMATION PEOPLE\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0193",
+      "name": "BAREBEAR PRODUCTION S.R.O.",
+      "country": "Czech Republic",
+      "research_group": "priority",
+      "query": "\"BAREBEAR PRODUCTION S.R.O.\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0194",
+      "name": "BIONAUT",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"BIONAUT\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0195",
+      "name": "BLUE LIGHT PICTURES S.R.O.",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"BLUE LIGHT PICTURES S.R.O.\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0198",
+      "name": "HAUSBOOT",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"HAUSBOOT\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0199",
+      "name": "KOUZELNA ANIMACE",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"KOUZELNA ANIMACE\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0200",
+      "name": "LAST FILMS",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"LAST FILMS\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0201",
+      "name": "MAUR FILM",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"MAUR FILM\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0202",
+      "name": "PFX",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"PFX\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0203",
+      "name": "ROLLING PICTURES SPOL. S R.O.",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"ROLLING PICTURES SPOL. S R.O.\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0204",
+      "name": "SILENT CARTOONS",
+      "country": "Czech Republic",
+      "research_group": "priority",
+      "query": "\"SILENT CARTOONS\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0205",
+      "name": "THREE BOHEMIANS",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"THREE BOHEMIANS\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0206",
+      "name": "TVORBA FILMS",
+      "country": "Czech Republic",
+      "research_group": "production_review",
+      "query": "\"TVORBA FILMS\" Czech Republic official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0208",
+      "name": "HYDRALAB",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"HYDRALAB\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0209",
+      "name": "M2 ANIMATION",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"M2 ANIMATION\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0211",
+      "name": "MINICOSMOS",
+      "country": "Denmark",
+      "research_group": "production_review",
+      "query": "\"MINICOSMOS\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0212",
+      "name": "MOOD ANIMATION",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"MOOD ANIMATION\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0213",
+      "name": "NICE NINJA A/S",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"NICE NINJA A/S\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0214",
+      "name": "OYA COPENHAGEN",
+      "country": "Denmark",
+      "research_group": "production_review",
+      "query": "\"OYA COPENHAGEN\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0216",
+      "name": "SKJALDBORN",
+      "country": "Denmark",
+      "research_group": "production_review",
+      "query": "\"SKJALDBORN\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0217",
+      "name": "SPARRE PRODUCTION",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"SPARRE PRODUCTION\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0218",
+      "name": "THE SACHSE COMPANY",
+      "country": "Denmark",
+      "research_group": "priority",
+      "query": "\"THE SACHSE COMPANY\" Denmark official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0219",
+      "name": "DEVGAME OU",
+      "country": "Estonia",
+      "research_group": "priority",
+      "query": "\"DEVGAME OU\" Estonia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0221",
+      "name": "GRAFIK",
+      "country": "Estonia",
+      "research_group": "priority",
+      "query": "\"GRAFIK\" Estonia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0222",
+      "name": "KOPLI KINOKOMPANII",
+      "country": "Estonia",
+      "research_group": "production_review",
+      "query": "\"KOPLI KINOKOMPANII\" Estonia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0224",
+      "name": "RAO HEIDMETSA FILMISTUUDIO OÜ",
+      "country": "Estonia",
+      "research_group": "priority",
+      "query": "\"RAO HEIDMETSA FILMISTUUDIO OÜ\" Estonia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0225",
+      "name": "UNDI TEOD",
+      "country": "Estonia",
+      "research_group": "production_review",
+      "query": "\"UNDI TEOD\" Estonia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0228",
+      "name": "CHARACTER HOUSE",
+      "country": "Finland",
+      "research_group": "production_review",
+      "query": "\"CHARACTER HOUSE\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0229",
+      "name": "DBH MUSIC",
+      "country": "Finland",
+      "research_group": "production_review",
+      "query": "\"DBH MUSIC\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0231",
+      "name": "INK AND LIGHT",
+      "country": "Finland",
+      "research_group": "priority",
+      "query": "\"INK AND LIGHT\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0232",
+      "name": "KANTELINEN COMPANY",
+      "country": "Finland",
+      "research_group": "production_review",
+      "query": "\"KANTELINEN COMPANY\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0233",
+      "name": "PLASTILIN MEDIA",
+      "country": "Finland",
+      "research_group": "production_review",
+      "query": "\"PLASTILIN MEDIA\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0234",
+      "name": "WRAPICE",
+      "country": "Finland",
+      "research_group": "production_review",
+      "query": "\"WRAPICE\" Finland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0235",
+      "name": "12 // 24 FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"12 // 24 FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0244",
+      "name": "ALL IN ONE PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"ALL IN ONE PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0247",
+      "name": "AMOPIX",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"AMOPIX\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0248",
+      "name": "AMOPIX",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"AMOPIX\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0249",
+      "name": "ANGEL CORP",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"ANGEL CORP\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0250",
+      "name": "ANIMALPS PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"ANIMALPS PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0260",
+      "name": "AVRIL FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"AVRIL FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0262",
+      "name": "BEAUX ET BIEN HABILLÉS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"BEAUX ET BIEN HABILLÉS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0263",
+      "name": "BIG COMPANY",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"BIG COMPANY\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0264",
+      "name": "BLACKMEAL",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"BLACKMEAL\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0267",
+      "name": "BLOC D",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"BLOC D\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0269",
+      "name": "BLYND",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"BLYND\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0275",
+      "name": "CELLOFAN'",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"CELLOFAN'\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0277",
+      "name": "CG-ANIMATION",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"CG-ANIMATION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0280",
+      "name": "CHROMATIK",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"CHROMATIK\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0282",
+      "name": "CIELO FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"CIELO FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0283",
+      "name": "CIRCUS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"CIRCUS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0285",
+      "name": "CITRON BIEN",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"CITRON BIEN\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0289",
+      "name": "COLIN-MANDERSCHEID",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"COLIN-MANDERSCHEID\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0293",
+      "name": "COTTONWOOD MEDIA",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"COTTONWOOD MEDIA\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0294",
+      "name": "CREATIVE TOUCH STUDIOS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"CREATIVE TOUCH STUDIOS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0295",
+      "name": "CYBER GROUP STUDIOS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"CYBER GROUP STUDIOS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0296",
+      "name": "DADA ! ANIMATION",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"DADA ! ANIMATION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0299",
+      "name": "DELTAROCKET",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"DELTAROCKET\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0302",
+      "name": "DES SINGES ANIMÉS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"DES SINGES ANIMÉS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0315",
+      "name": "ÉNIGME",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"ÉNIGME\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0320",
+      "name": "EST-OUEST FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"EST-OUEST FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0322",
+      "name": "FARGO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"FARGO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0329",
+      "name": "FRANCE 3 CINÉMA",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"FRANCE 3 CINÉMA\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0331",
+      "name": "FRANCE TÉLÉVISIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"FRANCE TÉLÉVISIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0338",
+      "name": "GASP!",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"GASP!\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0340",
+      "name": "GILIPUS PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"GILIPUS PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0341",
+      "name": "GIRELLE PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"GIRELLE PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0345",
+      "name": "GODO STUDIO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"GODO STUDIO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0347",
+      "name": "GURU STUDIO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"GURU STUDIO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0348",
+      "name": "HARI",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"HARI\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0352",
+      "name": "IDISCOVR",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"IDISCOVR\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0353",
+      "name": "IFIND",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"IFIND\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0354",
+      "name": "IKKI FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"IKKI FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0355",
+      "name": "IMPALAS FILMS PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"IMPALAS FILMS PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0359",
+      "name": "INTHEBOX",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"INTHEBOX\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0360",
+      "name": "ISTORIES PROD.",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"ISTORIES PROD.\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0362",
+      "name": "JPL FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"JPL FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0363",
+      "name": "JULIANNE FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"JULIANNE FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0364",
+      "name": "KARANIM",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"KARANIM\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0366",
+      "name": "KAZOO ANIMATION",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"KAZOO ANIMATION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0368",
+      "name": "KOMAWÉ",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"KOMAWÉ\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0371",
+      "name": "L'INCROYABLE STUDIO",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"L'INCROYABLE STUDIO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0372",
+      "name": "LA CHOUETTE COMPAGNIE",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LA CHOUETTE COMPAGNIE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0373",
+      "name": "LA PELLICULE ENSORCELÉE",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LA PELLICULE ENSORCELÉE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0374",
+      "name": "LA POMPADOUR",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"LA POMPADOUR\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0377",
+      "name": "LAÏDAK FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LAÏDAK FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0381",
+      "name": "LES ASTRONAUTES",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LES ASTRONAUTES\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0382",
+      "name": "LES CONTES MODERNES",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LES CONTES MODERNES\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0383",
+      "name": "LES FILMS DU CYGNE",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LES FILMS DU CYGNE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0384",
+      "name": "LES FILMS DU NORD",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LES FILMS DU NORD\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0385",
+      "name": "LES FILMS DU TAMBOUR DE SOIE",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LES FILMS DU TAMBOUR DE SOIE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0386",
+      "name": "LES PARABOLEURS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"LES PARABOLEURS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0387",
+      "name": "LIGHT",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"LIGHT\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0388",
+      "name": "LUCHAFILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"LUCHAFILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0390",
+      "name": "MAGIC C",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MAGIC C\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0391",
+      "name": "MANGOUSTE ANIM",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MANGOUSTE ANIM\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0392",
+      "name": "MASH&CO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MASH&CO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0394",
+      "name": "MEDIA-PARTICIPATIONS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"MEDIA-PARTICIPATIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0396",
+      "name": "MEDIAWAN KIDS & FAMILY",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MEDIAWAN KIDS & FAMILY\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0399",
+      "name": "MIAM! ANIMATION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MIAM! ANIMATION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0401",
+      "name": "MIKROS IMAGE",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"MIKROS IMAGE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0407",
+      "name": "MONELLO PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MONELLO PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0409",
+      "name": "MOTION LAB",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"MOTION LAB\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0410",
+      "name": "MOUKDA PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MOUKDA PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0411",
+      "name": "MR LOYAL",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"MR LOYAL\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0415",
+      "name": "NOJO & CO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"NOJO & CO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0423",
+      "name": "PARANGON",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"PARANGON\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0425",
+      "name": "PASSION PARIS PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"PASSION PARIS PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0430",
+      "name": "PLAYSMART",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"PLAYSMART\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0438",
+      "name": "PROMENONS NOUS DANS LES BOIS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"PROMENONS NOUS DANS LES BOIS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0439",
+      "name": "PROMENONS-NOUS DANS LES BOIS / EJT LABO",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"PROMENONS-NOUS DANS LES BOIS / EJT LABO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0442",
+      "name": "QWEST MEDIA",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"QWEST MEDIA\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0443",
+      "name": "RAINBOX PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"RAINBOX PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0456",
+      "name": "SACREBLEU PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"SACREBLEU PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0458",
+      "name": "SANOSI PRODUCTIONS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"SANOSI PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0460",
+      "name": "SIRÈNE ROUGE GAMES",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"SIRÈNE ROUGE GAMES\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0461",
+      "name": "SOMETHING BIG",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"SOMETHING BIG\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0466",
+      "name": "STUDIO MANETTE",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"STUDIO MANETTE\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0472",
+      "name": "SUPINFOCOM RUBIKA",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"SUPINFOCOM RUBIKA\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0473",
+      "name": "SYNEGRAM",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"SYNEGRAM\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0474",
+      "name": "TANT MIEUX PROD",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"TANT MIEUX PROD\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0475",
+      "name": "TAT STUDIO",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"TAT STUDIO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0476",
+      "name": "TCHACK",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"TCHACK\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0477",
+      "name": "TCHOKUN",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"TCHOKUN\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0479",
+      "name": "TEMPLE CACHÉ",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"TEMPLE CACHÉ\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0480",
+      "name": "THE BEAST MAKERS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"THE BEAST MAKERS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0481",
+      "name": "TIKTAK PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"TIKTAK PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0483",
+      "name": "TOKOTO STUDIO",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"TOKOTO STUDIO\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0484",
+      "name": "TOON FACTORY",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"TOON FACTORY\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0493",
+      "name": "WATCH NEXT MEDIA",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"WATCH NEXT MEDIA\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0494",
+      "name": "WEILAÏ PRODUCTIONS",
+      "country": "France",
+      "research_group": "priority",
+      "query": "\"WEILAÏ PRODUCTIONS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0495",
+      "name": "WERLEN IPSUM",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"WERLEN IPSUM\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0496",
+      "name": "WILL PRODUCTION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"WILL PRODUCTION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0497",
+      "name": "XBO FILMS",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"XBO FILMS\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0499",
+      "name": "XR CRÉATION GROUP",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"XR CRÉATION GROUP\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0501",
+      "name": "ZEPHYR ANIMATION",
+      "country": "France",
+      "research_group": "production_review",
+      "query": "\"ZEPHYR ANIMATION\" France official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0504",
+      "name": "POCKET STUDIO",
+      "country": "Georgia",
+      "research_group": "priority",
+      "query": "\"POCKET STUDIO\" Georgia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0505",
+      "name": "RADIUM FILMS",
+      "country": "Georgia",
+      "research_group": "production_review",
+      "query": "\"RADIUM FILMS\" Georgia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0506",
+      "name": "SAQANIMA",
+      "country": "Georgia",
+      "research_group": "production_review",
+      "query": "\"SAQANIMA\" Georgia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0507",
+      "name": "AHOIFILM",
+      "country": "Germany",
+      "research_group": "priority",
+      "query": "\"AHOIFILM\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0509",
+      "name": "ALEXANDRA SCHATZ FILMPRODUKTION",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"ALEXANDRA SCHATZ FILMPRODUKTION\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0512",
+      "name": "DULLY & DAX",
+      "country": "Germany",
+      "research_group": "priority",
+      "query": "\"DULLY & DAX\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0514",
+      "name": "FFL FILM UND FERNSEH LABOR",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"FFL FILM UND FERNSEH LABOR\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0516",
+      "name": "FILMVERMOEGEN GMBH",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"FILMVERMOEGEN GMBH\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0519",
+      "name": "GRETELS GOLD GMBH",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"GRETELS GOLD GMBH\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0520",
+      "name": "MACK ONE",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"MACK ONE\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0521",
+      "name": "POM POM ANIMATION",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"POM POM ANIMATION\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0522",
+      "name": "STUDIO 100 INTERNATIONAL",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"STUDIO 100 INTERNATIONAL\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0526",
+      "name": "TAMA FILMPRODUKTION",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"TAMA FILMPRODUKTION\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0530",
+      "name": "YOUNGFILMS GMBH & CO. KG",
+      "country": "Germany",
+      "research_group": "production_review",
+      "query": "\"YOUNGFILMS GMBH & CO. KG\" Germany official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0531",
+      "name": "ACUTE FORMULA LLC",
+      "country": "Ghana",
+      "research_group": "priority",
+      "query": "\"ACUTE FORMULA LLC\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0533",
+      "name": "ANIMAXFYB STUDIOS",
+      "country": "Ghana",
+      "research_group": "production_review",
+      "query": "\"ANIMAXFYB STUDIOS\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0535",
+      "name": "INDIGENE BROS LLC",
+      "country": "Ghana",
+      "research_group": "production_review",
+      "query": "\"INDIGENE BROS LLC\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0536",
+      "name": "KHPH STUDIOS",
+      "country": "Ghana",
+      "research_group": "priority",
+      "query": "\"KHPH STUDIOS\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0537",
+      "name": "MILLS MEDIA",
+      "country": "Ghana",
+      "research_group": "production_review",
+      "query": "\"MILLS MEDIA\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0538",
+      "name": "POKA STUDIOS LTD",
+      "country": "Ghana",
+      "research_group": "production_review",
+      "query": "\"POKA STUDIOS LTD\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0540",
+      "name": "WONDERWORLD INSTITUTE",
+      "country": "Ghana",
+      "research_group": "priority",
+      "query": "\"WONDERWORLD INSTITUTE\" Ghana official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0543",
+      "name": "FUNNY TALES",
+      "country": "Greece",
+      "research_group": "production_review",
+      "query": "\"FUNNY TALES\" Greece official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0545",
+      "name": "INCISE PICTURE",
+      "country": "Hong Kong",
+      "research_group": "production_review",
+      "query": "\"INCISE PICTURE\" Hong Kong official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0547",
+      "name": "NIKOPICTO",
+      "country": "Hong Kong",
+      "research_group": "priority",
+      "query": "\"NIKOPICTO\" Hong Kong official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0548",
+      "name": "SIMAGE ANIMATION & MEDIA LTD",
+      "country": "Hong Kong",
+      "research_group": "production_review",
+      "query": "\"SIMAGE ANIMATION & MEDIA LTD\" Hong Kong official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0550",
+      "name": "TSUI BROTHERS",
+      "country": "Hong Kong",
+      "research_group": "production_review",
+      "query": "\"TSUI BROTHERS\" Hong Kong official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0551",
+      "name": "VISION DESIRE LIMITED",
+      "country": "Hong Kong",
+      "research_group": "production_review",
+      "query": "\"VISION DESIRE LIMITED\" Hong Kong official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0552",
+      "name": "IONART STUDIO",
+      "country": "Hungary",
+      "research_group": "production_review",
+      "query": "\"IONART STUDIO\" Hungary official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0553",
+      "name": "KEDD",
+      "country": "Hungary",
+      "research_group": "priority",
+      "query": "\"KEDD\" Hungary official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0554",
+      "name": "LIBERTY GLOBAL KFT",
+      "country": "Hungary",
+      "research_group": "priority",
+      "query": "\"LIBERTY GLOBAL KFT\" Hungary official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0555",
+      "name": "MOME - MOHOLY-NAGY UNIVERSITY OF ART AND DESIGN BUDAPEST",
+      "country": "Hungary",
+      "research_group": "production_review",
+      "query": "\"MOME - MOHOLY-NAGY UNIVERSITY OF ART AND DESIGN BUDAPEST\" Hungary official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0556",
+      "name": "UMATIK ENTERTAINMENT",
+      "country": "Hungary",
+      "research_group": "production_review",
+      "query": "\"UMATIK ENTERTAINMENT\" Hungary official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0557",
+      "name": "COMPASS FILMS",
+      "country": "Iceland",
+      "research_group": "production_review",
+      "query": "\"COMPASS FILMS\" Iceland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0558",
+      "name": "TULIPOP",
+      "country": "Iceland",
+      "research_group": "production_review",
+      "query": "\"TULIPOP\" Iceland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0560",
+      "name": "DIGITOONZ MEDIA & ENTERTAINMENT PVT. LTD.",
+      "country": "India",
+      "research_group": "priority",
+      "query": "\"DIGITOONZ MEDIA & ENTERTAINMENT PVT. LTD.\" India official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0561",
+      "name": "TECHNICOLOR INDIA",
+      "country": "India",
+      "research_group": "production_review",
+      "query": "\"TECHNICOLOR INDIA\" India official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0562",
+      "name": "SOUREH CINEMA ORGANIZATION",
+      "country": "Iran",
+      "research_group": "production_review",
+      "query": "\"SOUREH CINEMA ORGANIZATION\" Iran official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0567",
+      "name": "HOT DROP FILMS LTD.",
+      "country": "Ireland",
+      "research_group": "priority",
+      "query": "\"HOT DROP FILMS LTD.\" Ireland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0573",
+      "name": "SOW YOU ENTERTAINMENT",
+      "country": "Ireland",
+      "research_group": "production_review",
+      "query": "\"SOW YOU ENTERTAINMENT\" Ireland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0574",
+      "name": "TRINITY MOTION PICTURES",
+      "country": "Ireland",
+      "research_group": "production_review",
+      "query": "\"TRINITY MOTION PICTURES\" Ireland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0576",
+      "name": "SMART CREATIVE TV",
+      "country": "Israel",
+      "research_group": "priority",
+      "query": "\"SMART CREATIVE TV\" Israel official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0578",
+      "name": "ANIMATÒ",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"ANIMATÒ\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0579",
+      "name": "ANIMOKA STUDIOS SRL",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"ANIMOKA STUDIOS SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0582",
+      "name": "CARTOBALENO SRL",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"CARTOBALENO SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0583",
+      "name": "CROCOPIE X 206 LAB S.R.L.",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"CROCOPIE X 206 LAB S.R.L.\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0589",
+      "name": "GOOD KARMA",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"GOOD KARMA\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0590",
+      "name": "GRAFFITI FILM",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"GRAFFITI FILM\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0592",
+      "name": "GREEN INK ANIMATION SRL.",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"GREEN INK ANIMATION SRL.\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0598",
+      "name": "L & C S.R.L.",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"L & C S.R.L.\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0599",
+      "name": "LYNX MULTIMEDIA FACTORY S.R.L",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"LYNX MULTIMEDIA FACTORY S.R.L\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0602",
+      "name": "MIRABILIA STUDIO SRL",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"MIRABILIA STUDIO SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0603",
+      "name": "MOBO SRL",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"MOBO SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0604",
+      "name": "MONDO TV GROUP S.P.A",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"MONDO TV GROUP S.P.A\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0605",
+      "name": "MOVIMENTI PRODUCTION SRL",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"MOVIMENTI PRODUCTION SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0607",
+      "name": "PALOMAR S.P.A.",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"PALOMAR S.P.A.\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0608",
+      "name": "PANEBARCO S.R.L.",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"PANEBARCO S.R.L.\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0609",
+      "name": "POPCULT",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"POPCULT\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0610",
+      "name": "PRIMAL SHAPE",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"PRIMAL SHAPE\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0611",
+      "name": "RAI KIDS / RADIOTELEVISIONE ITALIANA (RAI)",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"RAI KIDS / RADIOTELEVISIONE ITALIANA (RAI)\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0614",
+      "name": "RAINBOW SPA",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"RAINBOW SPA\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0616",
+      "name": "RIGOTZ STORIES",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"RIGOTZ STORIES\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0618",
+      "name": "SELVATICO STUDIO",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"SELVATICO STUDIO\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0620",
+      "name": "STUDIO BOZZETTO",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"STUDIO BOZZETTO\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0625",
+      "name": "VALLAROUND SRL",
+      "country": "Italy",
+      "research_group": "priority",
+      "query": "\"VALLAROUND SRL\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0626",
+      "name": "VISMANIMATION",
+      "country": "Italy",
+      "research_group": "production_review",
+      "query": "\"VISMANIMATION\" Italy official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0627",
+      "name": "AFRIKATOON",
+      "country": "Ivory Coast",
+      "research_group": "production_review",
+      "query": "\"AFRIKATOON\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0628",
+      "name": "AROBASE STUDIO",
+      "country": "Ivory Coast",
+      "research_group": "priority",
+      "query": "\"AROBASE STUDIO\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0629",
+      "name": "BOOYA STUDIOS",
+      "country": "Ivory Coast",
+      "research_group": "production_review",
+      "query": "\"BOOYA STUDIOS\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0630",
+      "name": "REDCREATIV",
+      "country": "Ivory Coast",
+      "research_group": "priority",
+      "query": "\"REDCREATIV\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0631",
+      "name": "STUDIO KÄ",
+      "country": "Ivory Coast",
+      "research_group": "production_review",
+      "query": "\"STUDIO KÄ\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0632",
+      "name": "STUDIOS LADONIK",
+      "country": "Ivory Coast",
+      "research_group": "production_review",
+      "query": "\"STUDIOS LADONIK\" Ivory Coast official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0634",
+      "name": "ARCH INC.",
+      "country": "Japan",
+      "research_group": "production_review",
+      "query": "\"ARCH INC.\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0636",
+      "name": "JET SET GO LTD.",
+      "country": "Japan",
+      "research_group": "production_review",
+      "query": "\"JET SET GO LTD.\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0639",
+      "name": "KODANSHA VR LAB, LTD.",
+      "country": "Japan",
+      "research_group": "priority",
+      "query": "\"KODANSHA VR LAB, LTD.\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0640",
+      "name": "LAZO INC.",
+      "country": "Japan",
+      "research_group": "priority",
+      "query": "\"LAZO INC.\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0641",
+      "name": "MOON FACE ANIMATION",
+      "country": "Japan",
+      "research_group": "priority",
+      "query": "\"MOON FACE ANIMATION\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0643",
+      "name": "OKADO TAKASHI",
+      "country": "Japan",
+      "research_group": "priority",
+      "query": "\"OKADO TAKASHI\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0645",
+      "name": "S.O.K LLC",
+      "country": "Japan",
+      "research_group": "production_review",
+      "query": "\"S.O.K LLC\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0646",
+      "name": "STUDIO GOONEYS.INC",
+      "country": "Japan",
+      "research_group": "production_review",
+      "query": "\"STUDIO GOONEYS.INC\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0647",
+      "name": "STUDIO SELFISH LLC",
+      "country": "Japan",
+      "research_group": "priority",
+      "query": "\"STUDIO SELFISH LLC\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0652",
+      "name": "ZELICOFILM, LLC",
+      "country": "Japan",
+      "research_group": "production_review",
+      "query": "\"ZELICOFILM, LLC\" Japan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0657",
+      "name": "ANIMATRIX, UAB",
+      "country": "Lithuania",
+      "research_group": "priority",
+      "query": "\"ANIMATRIX, UAB\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0658",
+      "name": "ARTBOX",
+      "country": "Lithuania",
+      "research_group": "production_review",
+      "query": "\"ARTBOX\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0660",
+      "name": "BROOM FILMS",
+      "country": "Lithuania",
+      "research_group": "production_review",
+      "query": "\"BROOM FILMS\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0661",
+      "name": "GLUK MEDIA",
+      "country": "Lithuania",
+      "research_group": "production_review",
+      "query": "\"GLUK MEDIA\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0662",
+      "name": "KINOMIND FILMS",
+      "country": "Lithuania",
+      "research_group": "priority",
+      "query": "\"KINOMIND FILMS\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0664",
+      "name": "LITLBAZ",
+      "country": "Lithuania",
+      "research_group": "production_review",
+      "query": "\"LITLBAZ\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0665",
+      "name": "NUNC",
+      "country": "Lithuania",
+      "research_group": "priority",
+      "query": "\"NUNC\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0666",
+      "name": "OAK9 ENTERTAINMENT",
+      "country": "Lithuania",
+      "research_group": "priority",
+      "query": "\"OAK9 ENTERTAINMENT\" Lithuania official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0667",
+      "name": "AMOUR FOU LUXEMBOURG",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"AMOUR FOU LUXEMBOURG\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0668",
+      "name": "BIDIBUL PRODUCTIONS",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"BIDIBUL PRODUCTIONS\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0670",
+      "name": "FABRIQUE D'IMAGES",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"FABRIQUE D'IMAGES\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0673",
+      "name": "MELUSINE PRODUCTIONS / STUDIO 352",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"MELUSINE PRODUCTIONS / STUDIO 352\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0674",
+      "name": "PAUL THILTGES DISTRIBUTIONS",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"PAUL THILTGES DISTRIBUTIONS\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0676",
+      "name": "RADAR",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"RADAR\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0677",
+      "name": "SKILL LAB",
+      "country": "Luxembourg",
+      "research_group": "production_review",
+      "query": "\"SKILL LAB\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0678",
+      "name": "STUDIO352",
+      "country": "Luxembourg",
+      "research_group": "priority",
+      "query": "\"STUDIO352\" Luxembourg official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0681",
+      "name": "JOOVE ANIMATION STUDIO SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"JOOVE ANIMATION STUDIO SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0683",
+      "name": "LIL CRITTER WORKSHOP SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"LIL CRITTER WORKSHOP SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0685",
+      "name": "METAL BRAIN STUDIO",
+      "country": "Malaysia",
+      "research_group": "production_review",
+      "query": "\"METAL BRAIN STUDIO\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0686",
+      "name": "MIRAYI SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"MIRAYI SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0687",
+      "name": "MOMODICA SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"MOMODICA SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0688",
+      "name": "RED CIRCLE STUDIO SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"RED CIRCLE STUDIO SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0689",
+      "name": "REDKURITA SDN BHD",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"REDKURITA SDN BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0690",
+      "name": "SIUNG FILM PRODUCTIONS SDN.BHD",
+      "country": "Malaysia",
+      "research_group": "production_review",
+      "query": "\"SIUNG FILM PRODUCTIONS SDN.BHD\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0691",
+      "name": "SPACESHEEP STUDIO",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"SPACESHEEP STUDIO\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0692",
+      "name": "STUDIO RAKSA",
+      "country": "Malaysia",
+      "research_group": "priority",
+      "query": "\"STUDIO RAKSA\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0694",
+      "name": "VENTURA INTERACTIVE",
+      "country": "Malaysia",
+      "research_group": "production_review",
+      "query": "\"VENTURA INTERACTIVE\" Malaysia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0695",
+      "name": "¡VIVA CALAVERA!",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"¡VIVA CALAVERA!\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0696",
+      "name": "ANA CRUZ PRODUCTION",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"ANA CRUZ PRODUCTION\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0697",
+      "name": "BANZAI STUDIO MX",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"BANZAI STUDIO MX\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0698",
+      "name": "GASOLINA STUDIOS",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"GASOLINA STUDIOS\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0699",
+      "name": "ITHRAX ANIMATED",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"ITHRAX ANIMATED\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0701",
+      "name": "MIGHTY ANIMATION",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"MIGHTY ANIMATION\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0702",
+      "name": "MISTER MACHIN",
+      "country": "Mexico",
+      "research_group": "priority",
+      "query": "\"MISTER MACHIN\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0704",
+      "name": "SÍSMICA STUDIO",
+      "country": "Mexico",
+      "research_group": "production_review",
+      "query": "\"SÍSMICA STUDIO\" Mexico official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0709",
+      "name": "BLENDER",
+      "country": "Netherlands",
+      "research_group": "production_review",
+      "query": "\"BLENDER\" Netherlands official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0711",
+      "name": "MANO FIGA",
+      "country": "Netherlands",
+      "research_group": "production_review",
+      "query": "\"MANO FIGA\" Netherlands official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0718",
+      "name": "FOLKTAIL STUDIOS",
+      "country": "Nigeria",
+      "research_group": "production_review",
+      "query": "\"FOLKTAIL STUDIOS\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0719",
+      "name": "GUEREZA ANIMATION",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"GUEREZA ANIMATION\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0720",
+      "name": "JAWBONE STUDIOS",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"JAWBONE STUDIOS\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0721",
+      "name": "LIMITLESS STUDIOS",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"LIMITLESS STUDIOS\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0722",
+      "name": "MICROMEDIA ANIMATION STUDIO",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"MICROMEDIA ANIMATION STUDIO\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0724",
+      "name": "RADIOXITY MEDIA",
+      "country": "Nigeria",
+      "research_group": "production_review",
+      "query": "\"RADIOXITY MEDIA\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0725",
+      "name": "SCHUCKS MEDIA",
+      "country": "Nigeria",
+      "research_group": "production_review",
+      "query": "\"SCHUCKS MEDIA\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0726",
+      "name": "SMIDS ANIMATION STUDIOS",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"SMIDS ANIMATION STUDIOS\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0727",
+      "name": "SPOOF MEDIA LIMITED",
+      "country": "Nigeria",
+      "research_group": "priority",
+      "query": "\"SPOOF MEDIA LIMITED\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0728",
+      "name": "TAYEKENI PRODUCTIONS",
+      "country": "Nigeria",
+      "research_group": "production_review",
+      "query": "\"TAYEKENI PRODUCTIONS\" Nigeria official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0730",
+      "name": "ANIMASKIN",
+      "country": "Norway",
+      "research_group": "priority",
+      "query": "\"ANIMASKIN\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0731",
+      "name": "BIVROST FILM AS",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"BIVROST FILM AS\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0733",
+      "name": "EXPANSE - ANIMATION AND VFX",
+      "country": "Norway",
+      "research_group": "priority",
+      "query": "\"EXPANSE - ANIMATION AND VFX\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0734",
+      "name": "FENOMEN STUDIOS",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"FENOMEN STUDIOS\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0735",
+      "name": "INTHEMOOD FILM",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"INTHEMOOD FILM\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0736",
+      "name": "KLIPP OG LIM",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"KLIPP OG LIM\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0737",
+      "name": "KOOL PRODUKTION AS",
+      "country": "Norway",
+      "research_group": "priority",
+      "query": "\"KOOL PRODUKTION AS\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0738",
+      "name": "MIKROFILM AS",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"MIKROFILM AS\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0742",
+      "name": "TROLLFILM AS",
+      "country": "Norway",
+      "research_group": "production_review",
+      "query": "\"TROLLFILM AS\" Norway official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0743",
+      "name": "INFINITY ANIMATIONS",
+      "country": "Pakistan",
+      "research_group": "priority",
+      "query": "\"INFINITY ANIMATIONS\" Pakistan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0744",
+      "name": "TUNCHE FILMS SAC",
+      "country": "Panama",
+      "research_group": "priority",
+      "query": "\"TUNCHE FILMS SAC\" Panama official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0745",
+      "name": "APUS ESTUDIO",
+      "country": "Peru",
+      "research_group": "production_review",
+      "query": "\"APUS ESTUDIO\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0746",
+      "name": "BICICLETA CASA AUDIOVISUAL",
+      "country": "Peru",
+      "research_group": "production_review",
+      "query": "\"BICICLETA CASA AUDIOVISUAL\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0747",
+      "name": "MAKACO",
+      "country": "Peru",
+      "research_group": "priority",
+      "query": "\"MAKACO\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0748",
+      "name": "MANEKI STUDIO",
+      "country": "Peru",
+      "research_group": "priority",
+      "query": "\"MANEKI STUDIO\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0750",
+      "name": "RED ANIMATION STUDIO",
+      "country": "Peru",
+      "research_group": "priority",
+      "query": "\"RED ANIMATION STUDIO\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0751",
+      "name": "STARTOONS ANIMATION",
+      "country": "Peru",
+      "research_group": "priority",
+      "query": "\"STARTOONS ANIMATION\" Peru official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0756",
+      "name": "KAMPILAN PRODUCTIONS, LLC",
+      "country": "Philippines",
+      "research_group": "priority",
+      "query": "\"KAMPILAN PRODUCTIONS, LLC\" Philippines official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0757",
+      "name": "KINO ARTS",
+      "country": "Philippines",
+      "research_group": "production_review",
+      "query": "\"KINO ARTS\" Philippines official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0758",
+      "name": "LEVERET",
+      "country": "Philippines",
+      "research_group": "priority",
+      "query": "\"LEVERET\" Philippines official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0759",
+      "name": "MARI NICOLE MENDOZA",
+      "country": "Philippines",
+      "research_group": "priority",
+      "query": "\"MARI NICOLE MENDOZA\" Philippines official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0761",
+      "name": "ZIGZAG STUDIOS INC",
+      "country": "Philippines",
+      "research_group": "priority",
+      "query": "\"ZIGZAG STUDIOS INC\" Philippines official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0763",
+      "name": "EGOFILM",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"EGOFILM\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0764",
+      "name": "FILMOGRAF LTD",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"FILMOGRAF LTD\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0766",
+      "name": "HUMAN FILM",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"HUMAN FILM\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0767",
+      "name": "KAZ STUDIO",
+      "country": "Poland",
+      "research_group": "priority",
+      "query": "\"KAZ STUDIO\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0768",
+      "name": "LANIAKEA PICTURES",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"LANIAKEA PICTURES\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0769",
+      "name": "LETKO",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"LETKO\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0770",
+      "name": "LIKAON SP. Z O.O.",
+      "country": "Poland",
+      "research_group": "priority",
+      "query": "\"LIKAON SP. Z O.O.\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0771",
+      "name": "MOMAKIN",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"MOMAKIN\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0772",
+      "name": "MOREFILM SPZOO",
+      "country": "Poland",
+      "research_group": "priority",
+      "query": "\"MOREFILM SPZOO\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0773",
+      "name": "RUNNING RABBIT FILMS",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"RUNNING RABBIT FILMS\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0775",
+      "name": "WJTEAM / LIKAON",
+      "country": "Poland",
+      "research_group": "production_review",
+      "query": "\"WJTEAM / LIKAON\" Poland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0779",
+      "name": "AMARELA MECANICA STUDIO",
+      "country": "Portugal",
+      "research_group": "priority",
+      "query": "\"AMARELA MECANICA STUDIO\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0780",
+      "name": "ANIMAIS AVPL",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"ANIMAIS AVPL\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0784",
+      "name": "FILMES DO GAJO",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"FILMES DO GAJO\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0785",
+      "name": "FILMÓGRAFO",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"FILMÓGRAFO\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0786",
+      "name": "FLY MOUSTACHE UNIPESSOAL LDA",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"FLY MOUSTACHE UNIPESSOAL LDA\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0789",
+      "name": "LUCKYMATRIX",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"LUCKYMATRIX\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0790",
+      "name": "MODO IMAGO",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"MODO IMAGO\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0792",
+      "name": "MUSŌ FILMS",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"MUSŌ FILMS\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0793",
+      "name": "OCIDENTAL FILMES",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"OCIDENTAL FILMES\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0794",
+      "name": "OH ! ANIMATION",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"OH ! ANIMATION\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0795",
+      "name": "PINGUIM ATREVIDO",
+      "country": "Portugal",
+      "research_group": "priority",
+      "query": "\"PINGUIM ATREVIDO\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0799",
+      "name": "SPARKLE ANIMATION",
+      "country": "Portugal",
+      "research_group": "production_review",
+      "query": "\"SPARKLE ANIMATION\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0801",
+      "name": "TAKE IT EASY - PRODUÇÕES AUDIOVISUAIS",
+      "country": "Portugal",
+      "research_group": "priority",
+      "query": "\"TAKE IT EASY - PRODUÇÕES AUDIOVISUAIS\" Portugal official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0803",
+      "name": "MANGA PRODUCTIONS",
+      "country": "Saudi Arabia",
+      "research_group": "production_review",
+      "query": "\"MANGA PRODUCTIONS\" Saudi Arabia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0804",
+      "name": "BVX INNOVATION & PRODUCTION D.O.O.",
+      "country": "Serbia",
+      "research_group": "priority",
+      "query": "\"BVX INNOVATION & PRODUCTION D.O.O.\" Serbia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0805",
+      "name": "METAXILASIS LLC",
+      "country": "Serbia",
+      "research_group": "priority",
+      "query": "\"METAXILASIS LLC\" Serbia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0806",
+      "name": "OMENS STUDIOS",
+      "country": "Singapore",
+      "research_group": "priority",
+      "query": "\"OMENS STUDIOS\" Singapore official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0807",
+      "name": "ARTICHOKE",
+      "country": "Slovakia",
+      "research_group": "production_review",
+      "query": "\"ARTICHOKE\" Slovakia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0808",
+      "name": "BLUE FACES",
+      "country": "Slovakia",
+      "research_group": "priority",
+      "query": "\"BLUE FACES\" Slovakia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0813",
+      "name": "INVIDA STUDIO",
+      "country": "Slovenia",
+      "research_group": "priority",
+      "query": "\"INVIDA STUDIO\" Slovenia official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0816",
+      "name": "AMBANI AFRICA",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"AMBANI AFRICA\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0818",
+      "name": "BEYOND REEL ENTERTAINMENT (PTY) LTD",
+      "country": "South Africa",
+      "research_group": "production_review",
+      "query": "\"BEYOND REEL ENTERTAINMENT (PTY) LTD\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0819",
+      "name": "BUGBOX ANIMATION STUDIO",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"BUGBOX ANIMATION STUDIO\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0820",
+      "name": "CABBLOW STUDIOS (PTY) LTD",
+      "country": "South Africa",
+      "research_group": "production_review",
+      "query": "\"CABBLOW STUDIOS (PTY) LTD\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0822",
+      "name": "CHOCOLATE TRIBE (PTY) LIMITED",
+      "country": "South Africa",
+      "research_group": "production_review",
+      "query": "\"CHOCOLATE TRIBE (PTY) LIMITED\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0823",
+      "name": "DIPRENTE STUDIOS",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"DIPRENTE STUDIOS\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0824",
+      "name": "FERIN",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"FERIN\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0825",
+      "name": "GOLDEN ROAD ENTERTAINMENT",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"GOLDEN ROAD ENTERTAINMENT\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0826",
+      "name": "ITTHYNK GAMING",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"ITTHYNK GAMING\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0827",
+      "name": "KATANIMATE ANIMATION STUDIO",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"KATANIMATE ANIMATION STUDIO\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0828",
+      "name": "KATEI STUDIO",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"KATEI STUDIO\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0829",
+      "name": "LUCAN STUDIO",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"LUCAN STUDIO\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0831",
+      "name": "MOLLO ACADEMY",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"MOLLO ACADEMY\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0832",
+      "name": "MOTIF STUDIOS",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"MOTIF STUDIOS\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0834",
+      "name": "OLD FASHIONED YOUNGIN",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"OLD FASHIONED YOUNGIN\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0835",
+      "name": "PANDAEXCLAMATED",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"PANDAEXCLAMATED\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0836",
+      "name": "PIXCOMM",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"PIXCOMM\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0837",
+      "name": "PLAY NICE PICTURES",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"PLAY NICE PICTURES\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0838",
+      "name": "SIMON JONATHAN TAYLOR",
+      "country": "South Africa",
+      "research_group": "production_review",
+      "query": "\"SIMON JONATHAN TAYLOR\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0839",
+      "name": "STORY OASIS",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"STORY OASIS\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0840",
+      "name": "STUDIO BOLLAND",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"STUDIO BOLLAND\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0842",
+      "name": "TSHIMOLOGONG PRECINCT",
+      "country": "South Africa",
+      "research_group": "production_review",
+      "query": "\"TSHIMOLOGONG PRECINCT\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0844",
+      "name": "WITS INCUBATOR T/A TSHIMOLOGONG",
+      "country": "South Africa",
+      "research_group": "priority",
+      "query": "\"WITS INCUBATOR T/A TSHIMOLOGONG\" South Africa official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0845",
+      "name": "38°C ANIMATION STUDIO",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"38°C ANIMATION STUDIO\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0846",
+      "name": "ACOMMZ",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"ACOMMZ\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0848",
+      "name": "BREAD BARBERSHOP CO., LTD",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"BREAD BARBERSHOP CO., LTD\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0849",
+      "name": "E.I.O",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"E.I.O\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0850",
+      "name": "G&KO ENTERTAINMENT",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"G&KO ENTERTAINMENT\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0851",
+      "name": "GRAFIZIX CO., LTD.",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"GRAFIZIX CO., LTD.\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0857",
+      "name": "LIRI BRIDGE",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"LIRI BRIDGE\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0858",
+      "name": "MATCH CUT INC.",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"MATCH CUT INC.\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0859",
+      "name": "MAZEL DEFINE",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"MAZEL DEFINE\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0860",
+      "name": "MOGGOZI CO.,LTD",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"MOGGOZI CO.,LTD\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0861",
+      "name": "MOSTAPES",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"MOSTAPES\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0862",
+      "name": "NAME X ENTERTAINMENT",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"NAME X ENTERTAINMENT\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0863",
+      "name": "PINGO ENTERTAINMENT CO.,LTD",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"PINGO ENTERTAINMENT CO.,LTD\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0864",
+      "name": "SANGSANGBANG",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"SANGSANGBANG\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0865",
+      "name": "STUDIO ACORN INC.",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"STUDIO ACORN INC.\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0866",
+      "name": "STUDIO GALE",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"STUDIO GALE\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0867",
+      "name": "STUDIO HOLHORY CO., LTD.",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"STUDIO HOLHORY CO., LTD.\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0868",
+      "name": "STUDIO TNT",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"STUDIO TNT\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0869",
+      "name": "STUDIO W.BABA",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"STUDIO W.BABA\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0870",
+      "name": "TADOH",
+      "country": "South Korea",
+      "research_group": "priority",
+      "query": "\"TADOH\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0872",
+      "name": "VCRWORKS",
+      "country": "South Korea",
+      "research_group": "production_review",
+      "query": "\"VCRWORKS\" South Korea official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0873",
+      "name": "3 BESSONES AIE",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"3 BESSONES AIE\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0875",
+      "name": "AMUSE STUDIOS",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"AMUSE STUDIOS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0876",
+      "name": "ANIMA KITCHENT",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"ANIMA KITCHENT\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0877",
+      "name": "ANIMA KITCHENT CANARIAS SOCIEDAD LIMITADA.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"ANIMA KITCHENT CANARIAS SOCIEDAD LIMITADA.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0878",
+      "name": "ANIMAZING",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"ANIMAZING\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0880",
+      "name": "ARMENTEIRA PRODUCCIONES",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"ARMENTEIRA PRODUCCIONES\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0887",
+      "name": "BIG BANG BOX",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"BIG BANG BOX\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0895",
+      "name": "DR. PLATYPUS & MS. WOMBAT",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"DR. PLATYPUS & MS. WOMBAT\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0897",
+      "name": "EMYLI KIDS S.L.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"EMYLI KIDS S.L.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0899",
+      "name": "FINAL FRONTIER",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"FINAL FRONTIER\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0902",
+      "name": "HAMPA STUDIO SL",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"HAMPA STUDIO SL\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0905",
+      "name": "IKIRU FILMS, S.L.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"IKIRU FILMS, S.L.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0906",
+      "name": "IMAGIC TV",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"IMAGIC TV\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0910",
+      "name": "LA CREME FILMS",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"LA CREME FILMS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0912",
+      "name": "LAMOLA STUDIO",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"LAMOLA STUDIO\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0913",
+      "name": "LE CUBE",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"LE CUBE\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0914",
+      "name": "LIGHTBOX ANIMATION STUDIOS S.L.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"LIGHTBOX ANIMATION STUDIOS S.L.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0916",
+      "name": "LOTURA FILMS",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"LOTURA FILMS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0920",
+      "name": "MANSALVA FILMS",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"MANSALVA FILMS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0921",
+      "name": "MGC MARKETING PRODUCCIÓN Y GESTIÓN CULTURAL SL",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"MGC MARKETING PRODUCCIÓN Y GESTIÓN CULTURAL SL\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0923",
+      "name": "MINIMO VFX",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"MINIMO VFX\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0924",
+      "name": "MOA STUDIO",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"MOA STUDIO\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0925",
+      "name": "MONDO TV STUDIOS",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"MONDO TV STUDIOS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0926",
+      "name": "MORGANA VFX & MOTION",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"MORGANA VFX & MOTION\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0927",
+      "name": "NUTS IDEAS",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"NUTS IDEAS\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0928",
+      "name": "OUO TIME",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"OUO TIME\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0929",
+      "name": "PANGUR ANIMATION COOP. V.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"PANGUR ANIMATION COOP. V.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0934",
+      "name": "ROCÍO MIRA",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"ROCÍO MIRA\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0939",
+      "name": "TARANNÀ FILMS, SL",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"TARANNÀ FILMS, SL\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0942",
+      "name": "THE FRANK & BARTON COMPANY S.L.",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"THE FRANK & BARTON COMPANY S.L.\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0943",
+      "name": "TINGLADO FILM",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"TINGLADO FILM\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0946",
+      "name": "TOONWOLF STUDIO",
+      "country": "Spain",
+      "research_group": "production_review",
+      "query": "\"TOONWOLF STUDIO\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0950",
+      "name": "WACKAMOLA",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"WACKAMOLA\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0951",
+      "name": "WIDEFRAME STUDIO",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"WIDEFRAME STUDIO\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0952",
+      "name": "ZEPTOLAB - BARCELONE",
+      "country": "Spain",
+      "research_group": "priority",
+      "query": "\"ZEPTOLAB - BARCELONE\" Spain official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0953",
+      "name": "APPARAT FILMPRODUKTION AB",
+      "country": "Sweden",
+      "research_group": "production_review",
+      "query": "\"APPARAT FILMPRODUKTION AB\" Sweden official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0954",
+      "name": "DOCKHUS ANIMATION AB",
+      "country": "Sweden",
+      "research_group": "priority",
+      "query": "\"DOCKHUS ANIMATION AB\" Sweden official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0955",
+      "name": "NUTTERY ENTERTAINMENT",
+      "country": "Sweden",
+      "research_group": "production_review",
+      "query": "\"NUTTERY ENTERTAINMENT\" Sweden official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0959",
+      "name": "CIE GILLES JOBIN",
+      "country": "Switzerland",
+      "research_group": "priority",
+      "query": "\"CIE GILLES JOBIN\" Switzerland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0963",
+      "name": "LANGFILM",
+      "country": "Switzerland",
+      "research_group": "production_review",
+      "query": "\"LANGFILM\" Switzerland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0966",
+      "name": "SUPERSWISS RED",
+      "country": "Switzerland",
+      "research_group": "production_review",
+      "query": "\"SUPERSWISS RED\" Switzerland official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0970",
+      "name": "BRILLIANT ANIMATION STUDIOS LTD",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"BRILLIANT ANIMATION STUDIOS LTD\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0971",
+      "name": "CHIMNEY ANIMATION",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"CHIMNEY ANIMATION\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0972",
+      "name": "DIGITAL FRONTIER MOTION PICTURES CORP.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"DIGITAL FRONTIER MOTION PICTURES CORP.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0973",
+      "name": "DOTTODOT LTD.",
+      "country": "Taiwan",
+      "research_group": "production_review",
+      "query": "\"DOTTODOT LTD.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0974",
+      "name": "F.RHYTHM 3D ANIMATION CO.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"F.RHYTHM 3D ANIMATION CO.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0975",
+      "name": "GO GO STUDIOS LTD. CO.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"GO GO STUDIOS LTD. CO.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0976",
+      "name": "MANGOWORK STUDIO CO., LTD.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"MANGOWORK STUDIO CO., LTD.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0977",
+      "name": "MK ORIGIN STUDIO",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"MK ORIGIN STUDIO\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0978",
+      "name": "STUDIO ILYA ANIMATION, INTL.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"STUDIO ILYA ANIMATION, INTL.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0980",
+      "name": "TAIWANBAR STUDIO INC.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"TAIWANBAR STUDIO INC.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0981",
+      "name": "TS TIMES CO., LTD.",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"TS TIMES CO., LTD.\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0983",
+      "name": "ZERO ONE FILM CO. LTD",
+      "country": "Taiwan",
+      "research_group": "priority",
+      "query": "\"ZERO ONE FILM CO. LTD\" Taiwan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0984",
+      "name": "BIG BRAIN STUDIO",
+      "country": "Thailand",
+      "research_group": "production_review",
+      "query": "\"BIG BRAIN STUDIO\" Thailand official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0988",
+      "name": "PLASTIEK CO.,LTD.",
+      "country": "Thailand",
+      "research_group": "priority",
+      "query": "\"PLASTIEK CO.,LTD.\" Thailand official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0989",
+      "name": "REDMOS ANIMATION",
+      "country": "Thailand",
+      "research_group": "priority",
+      "query": "\"REDMOS ANIMATION\" Thailand official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0991",
+      "name": "THE MONK STUDIOS",
+      "country": "Thailand",
+      "research_group": "priority",
+      "query": "\"THE MONK STUDIOS\" Thailand official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0992",
+      "name": "YGGDRAZIL GROUP",
+      "country": "Thailand",
+      "research_group": "priority",
+      "query": "\"YGGDRAZIL GROUP\" Thailand official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0993",
+      "name": "MESS PICTURES",
+      "country": "Togo",
+      "research_group": "priority",
+      "query": "\"MESS PICTURES\" Togo official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0996",
+      "name": "NORAVISION",
+      "country": "Turkey",
+      "research_group": "production_review",
+      "query": "\"NORAVISION\" Turkey official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0997",
+      "name": "MENZILMEKAN ANIMATION",
+      "country": "Turkmenistan",
+      "research_group": "priority",
+      "query": "\"MENZILMEKAN ANIMATION\" Turkmenistan official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0998",
+      "name": "ANIMAGRAD",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"ANIMAGRAD\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-0999",
+      "name": "CAFFEINE FILM PRODUCTION",
+      "country": "Ukraine",
+      "research_group": "production_review",
+      "query": "\"CAFFEINE FILM PRODUCTION\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1001",
+      "name": "FILM UA GROUP",
+      "country": "Ukraine",
+      "research_group": "production_review",
+      "query": "\"FILM UA GROUP\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1002",
+      "name": "FILMAKO - FILM ANIMATION COMPANY",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"FILMAKO - FILM ANIMATION COMPANY\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1003",
+      "name": "KARANDASH ANIMATION STUDIO",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"KARANDASH ANIMATION STUDIO\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1004",
+      "name": "LASTOON",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"LASTOON\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1006",
+      "name": "STUDIO KAPI",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"STUDIO KAPI\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1008",
+      "name": "UNITED HEROES",
+      "country": "Ukraine",
+      "research_group": "production_review",
+      "query": "\"UNITED HEROES\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1009",
+      "name": "YARKI KIDS",
+      "country": "Ukraine",
+      "research_group": "priority",
+      "query": "\"YARKI KIDS\" Ukraine official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1010",
+      "name": "ANIMOTION MEDIA GROUP",
+      "country": "United Arab Emirates",
+      "research_group": "production_review",
+      "query": "\"ANIMOTION MEDIA GROUP\" United Arab Emirates official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1011",
+      "name": "AARDMAN",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"AARDMAN\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1012",
+      "name": "AARDMAN ACADEMY",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"AARDMAN ACADEMY\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1018",
+      "name": "BLINK INDUSTRIES",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"BLINK INDUSTRIES\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1023",
+      "name": "DANIEL SLIGHT",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"DANIEL SLIGHT\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1025",
+      "name": "DNEG ANIMATION",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"DNEG ANIMATION\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1030",
+      "name": "GFM ANIMATION",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"GFM ANIMATION\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1031",
+      "name": "HASBRO ENTERTAINMENT",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"HASBRO ENTERTAINMENT\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1034",
+      "name": "INTERFERENCE PATTERN LTD",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"INTERFERENCE PATTERN LTD\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1036",
+      "name": "KELEBEK MEDIA LIMITED",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"KELEBEK MEDIA LIMITED\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1038",
+      "name": "LIL CRITTER WORKSHOP LTD UK",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"LIL CRITTER WORKSHOP LTD UK\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1041",
+      "name": "MOJO SWOPTOPS PRODUCTIONS LTD",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"MOJO SWOPTOPS PRODUCTIONS LTD\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1044",
+      "name": "RITZY ANIMATION",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"RITZY ANIMATION\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1050",
+      "name": "SNAFU PICTURES",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"SNAFU PICTURES\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1052",
+      "name": "SUN & MOON STUDIOS",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"SUN & MOON STUDIOS\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1054",
+      "name": "TEMPLE CARRINGTON & BROWN",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"TEMPLE CARRINGTON & BROWN\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1055",
+      "name": "THE ILLUMINATED FILMS COMPANY",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"THE ILLUMINATED FILMS COMPANY\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1057",
+      "name": "VIRTX LTD",
+      "country": "United Kingdom",
+      "research_group": "production_review",
+      "query": "\"VIRTX LTD\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1058",
+      "name": "WILD CHILD ANIMATION",
+      "country": "United Kingdom",
+      "research_group": "priority",
+      "query": "\"WILD CHILD ANIMATION\" United Kingdom official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1062",
+      "name": "CLAYMANIAK",
+      "country": "USA",
+      "research_group": "priority",
+      "query": "\"CLAYMANIAK\" USA official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1066",
+      "name": "IMAGINATION BAY ENTERTAINMENT",
+      "country": "USA",
+      "research_group": "production_review",
+      "query": "\"IMAGINATION BAY ENTERTAINMENT\" USA official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1067",
+      "name": "LEX + OTIS",
+      "country": "USA",
+      "research_group": "priority",
+      "query": "\"LEX + OTIS\" USA official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1068",
+      "name": "M2 ANIMATION",
+      "country": "USA",
+      "research_group": "priority",
+      "query": "\"M2 ANIMATION\" USA official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1071",
+      "name": "RAUL GARCIA",
+      "country": "USA",
+      "research_group": "production_review",
+      "query": "\"RAUL GARCIA\" USA official animation production studio company"
+    },
+    {
+      "exhibitor_id": "annecy2024-1074",
+      "name": "WARNER BROS. DISCOVERY",
+      "country": "USA",
+      "research_group": "priority",
+      "query": "\"WARNER BROS. DISCOVERY\" USA official animation production studio company"
+    }
+  ]
+}
