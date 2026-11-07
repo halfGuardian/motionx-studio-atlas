@@ -1,0 +1,1522 @@
+{
+  "version": 1,
+  "source_id": "nzonair-gdsr",
+  "observed_on": "2026-11-07",
+  "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+  "complete": true,
+  "completeness": "complete_published_2024_2026_sections",
+  "scope": "Names in all three published recipient-year sections; not every NZ developer or confirmation of present operation. Financial amounts, bands and personal details omitted.",
+  "license": "NZ-On-Air-Permission",
+  "license_url": "https://www.nzonair.govt.nz/copyright-and-terms-use/",
+  "source_response_sha256": "b8d8094574007dc637b9a83381b563f28c7995c8591803ed67414965395494b9",
+  "records": [
+    {
+      "id": "gdsr-2026-e4d94837ef3be789",
+      "name": "Ahwoo",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 52,
+      "source_row_hash": "4d5348928c538f39d4ebda95034008896a7b9043f7cfd8ca42448e4899dd05a5"
+    },
+    {
+      "id": "gdsr-2026-3ea5a1d1e2236713",
+      "name": "Astronaut Diaries",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 53,
+      "source_row_hash": "9fb5e29ba3a159f608f041159829af2d075c3789b2c9698365856461e08fdb41"
+    },
+    {
+      "id": "gdsr-2026-98a40fc8becf2470",
+      "name": "Balancing Monkey Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 54,
+      "source_row_hash": "e527a557f0c686531e9e5a34e3a2417ea612989d840e7922611dcdb900b72d8c"
+    },
+    {
+      "id": "gdsr-2026-0368ff0b594e21e9",
+      "name": "Big Adventure",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 55,
+      "source_row_hash": "a03fa48815edb3ea6ebd105f3c631fecc8c3bed617c852cb9ae7dee02a7c2232"
+    },
+    {
+      "id": "gdsr-2026-0c24efecc34c87fc",
+      "name": "Blind Squirrel Entertainment New Zealand",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 56,
+      "source_row_hash": "da0e00c00ca8140a95baf8ed2ecc6f60596c6c0b898b769fb08d12a38c216897"
+    },
+    {
+      "id": "gdsr-2026-3eb3a57f24d204fd",
+      "name": "Camshaft Software",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 57,
+      "source_row_hash": "cbca018da496c8225e6d9f48bef6c80ee6368f019f2133c1ed53cc93ad5f2aea"
+    },
+    {
+      "id": "gdsr-2026-ea46df145497f363",
+      "name": "CerebralFix",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 58,
+      "source_row_hash": "ef60611b567dd9677e1d57fa819f74cd04f6016b01e7f3dd5555c79f690b869c"
+    },
+    {
+      "id": "gdsr-2026-f5477f80ccfc0db1",
+      "name": "Deep Field Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 59,
+      "source_row_hash": "a2b97b4e1d60fa560d01a4f6904b0161edd9e3ae5624937ba3f87059fc0c5bb6"
+    },
+    {
+      "id": "gdsr-2026-0873b6784c596cc0",
+      "name": "Digital Confectioners",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 60,
+      "source_row_hash": "a307b6e57d35df64d56fe3b2af766ce1c76ad08b22972dc325ad7dfa16c1b932"
+    },
+    {
+      "id": "gdsr-2026-6c5c5c4dcc0dcbaf",
+      "name": "Dinosaur Polo Club",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 61,
+      "source_row_hash": "dd479487157d0707820b0a5e436998dc8274dc6c685cb9dd9694d72dedc09a6c"
+    },
+    {
+      "id": "gdsr-2026-11f3a1bc49ba9841",
+      "name": "Dreamloft",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 62,
+      "source_row_hash": "516339ae1f2281dc4f1f0cfd6f556d00447e542667685f4884247dc190107e3e"
+    },
+    {
+      "id": "gdsr-2026-69b141a83ca6b49c",
+      "name": "Dry Cactus",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 63,
+      "source_row_hash": "b0fd4bc3ef338bfc5021a39e2342fa96840b4a3666e402c34c275d27a9aaa573"
+    },
+    {
+      "id": "gdsr-2026-786893f114d0ca38",
+      "name": "Evans Taylor Digital",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 64,
+      "source_row_hash": "c625b22886ef04169dd54485a81449371f46d84fb98f41f0fe3bb22327e30d41"
+    },
+    {
+      "id": "gdsr-2026-58d16a2d8e9225e1",
+      "name": "Flightless",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 65,
+      "source_row_hash": "7b4d390d4d03795e530eea5bd4884a596e5092efb20c4cc8c7ce5240951e43c5"
+    },
+    {
+      "id": "gdsr-2026-b47aacea70e14d13",
+      "name": "Floating Rock Studio",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 66,
+      "source_row_hash": "c62df7a251cba0cb0e550f21e74eabcfcaeee37ee40f3a068cf80b561887ae5f"
+    },
+    {
+      "id": "gdsr-2026-816ffb126bf27e3c",
+      "name": "Geo AR Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 67,
+      "source_row_hash": "5f9a450c0ee817ae4304cff35304fe2aaeef98a367140e3b50fbdffc2386fc81"
+    },
+    {
+      "id": "gdsr-2026-022be03620ef6734",
+      "name": "Gfactor",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 68,
+      "source_row_hash": "4c390689148834508ce3d7b0aa1bce645ece0ef506cbc4bb9e4e2a528b610c87"
+    },
+    {
+      "id": "gdsr-2026-d21a600234a554cd",
+      "name": "Grinding Gear Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 69,
+      "source_row_hash": "2b005bc9d9836a85b75608f6205cb8c7ccf00d0f0ed8fccd6baf705114ae9576"
+    },
+    {
+      "id": "gdsr-2026-1ff8ec28f03f8944",
+      "name": "Insight Creative",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 70,
+      "source_row_hash": "87775e35dfad1a0cbb975060d4861ea31b7e9c8fe05f03870e00afbac2c6e589"
+    },
+    {
+      "id": "gdsr-2026-4490fdad9c3b84a5",
+      "name": "Jeremy Hanna Studio",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 71,
+      "source_row_hash": "19b3caa8b2ecf60690126b5b15cdefa3a722a0247657782cf3a220a13ff77590"
+    },
+    {
+      "id": "gdsr-2026-0608743fc1736d86",
+      "name": "Level",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 72,
+      "source_row_hash": "290976ba3fd6cbd2d06cd677da1244c83d6c58621fb32a019db36503f6532e39"
+    },
+    {
+      "id": "gdsr-2026-f2930019ab10d338",
+      "name": "Light Pattern",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 73,
+      "source_row_hash": "06407c159cbaed7a0330af9938fa88a4a9d9e49f8a4053196c37d1cb1c277235"
+    },
+    {
+      "id": "gdsr-2026-11fde84cbe512bb6",
+      "name": "Melodics",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 74,
+      "source_row_hash": "930d26801a7a1e3e757f5ce9c580ecd1acc85036a9690bc80ff572873bc202a2"
+    },
+    {
+      "id": "gdsr-2026-2c5f2fb94edfdb44",
+      "name": "Mytona",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 75,
+      "source_row_hash": "d6586e2399c0ea2bdb57f615e2197590fd265fdcc3a9042d5e5acf55c082f451"
+    },
+    {
+      "id": "gdsr-2026-2878fb5a3a764f53",
+      "name": "Niantic Aotearoa",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 76,
+      "source_row_hash": "cec33b649e9b4494e607e5181d1d8d29a3e1d11b89e8743657a7aa5c351d367e"
+    },
+    {
+      "id": "gdsr-2026-29e97f02c3b5e88f",
+      "name": "Ninja Kiwi",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 77,
+      "source_row_hash": "b0ce4a0fcb6d903fae0fc51e8b405f671e5d1a3b0f844c94df04884457b744da"
+    },
+    {
+      "id": "gdsr-2026-2a845669b9d5594c",
+      "name": "Outerdawn",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 78,
+      "source_row_hash": "e6dfbf33f4d41834747434a745a5c033f098bad9a42fa4d2518cb8fe3233b672"
+    },
+    {
+      "id": "gdsr-2026-5892680c4b87fe6b",
+      "name": "PikPok",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 79,
+      "source_row_hash": "2eba77269e543ae0edae8f689361439e8660b45b84194b1c069fe67990bb9c56"
+    },
+    {
+      "id": "gdsr-2026-d0f8e01e00585c85",
+      "name": "Playside Studios NZ",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 80,
+      "source_row_hash": "f63fe78cc705e9903970755825665fbd4e1c16984766e83da9e3e8e089b23af2"
+    },
+    {
+      "id": "gdsr-2026-d0c010bf84d8a53b",
+      "name": "Prismatic Studios",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 81,
+      "source_row_hash": "6b75f91580af8fe0abfb8b45ef6fdf2b3cb51fb320e6216d90bed75ceefb7163"
+    },
+    {
+      "id": "gdsr-2026-b0c1258a9a48ed92",
+      "name": "RiffRaff Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 82,
+      "source_row_hash": "2b5797cddbe21877b36400c5753cb3732b7ff428556525c9e94df59372dcaae2"
+    },
+    {
+      "id": "gdsr-2026-5cc9c6460fc2d9f8",
+      "name": "RocketWerkz",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 83,
+      "source_row_hash": "e1bc8fb0a897582757183bb54415942de5734666286a9616da12022ffcdae823"
+    },
+    {
+      "id": "gdsr-2026-4e3e11a7fa32267c",
+      "name": "Runaway",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 84,
+      "source_row_hash": "f1fc18e9d1ac6199a49e1af7ee852cf3eea20642bb807e72fb5595022dfa9655"
+    },
+    {
+      "id": "gdsr-2026-b90ee83d1c5c5d79",
+      "name": "Shapefarm",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 85,
+      "source_row_hash": "3230f3223af31d7bc4285cb90e9b5e352301ebff35472a1c53f8cf4fdbc865eb"
+    },
+    {
+      "id": "gdsr-2026-f23bbfba66e78d4e",
+      "name": "Sharpmind Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 86,
+      "source_row_hash": "4bb8931d85c4e04a13bc19c3c93d6e1b4b24cc847980f639880fa9e6dce3638d"
+    },
+    {
+      "id": "gdsr-2026-5df2d7ce6941d1f4",
+      "name": "Snickerdoodle Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 87,
+      "source_row_hash": "05680595f36b78a1853f1aacd51e97ea6f0ef7bb15ab6e6dd5ed6f4ad2cf7460"
+    },
+    {
+      "id": "gdsr-2026-fd8f5111b3c90263",
+      "name": "Sometimes",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 88,
+      "source_row_hash": "5689c6287b4042378a2e9025a73cc80290f89180e2bcd23065bc420ccb6a7620"
+    },
+    {
+      "id": "gdsr-2026-aa0ca1d318827178",
+      "name": "Space Rock games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 89,
+      "source_row_hash": "ebcecd817ce6a5969322d9c63fc0087ae73f17cbaa049d725691d0f064e450a1"
+    },
+    {
+      "id": "gdsr-2026-9cc81e3180677cba",
+      "name": "Splitting Point",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 90,
+      "source_row_hash": "c3f7b78c541335d1dd25744eb1a1b8ba16206e061367528f4b8009576e7ed008"
+    },
+    {
+      "id": "gdsr-2026-1c1fba7ec51de037",
+      "name": "StaplesVR",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 91,
+      "source_row_hash": "1d1f18209418b4632e2c6e3d3b2795b071d2c9b235b1ab37cc2d5ed3a38e897e"
+    },
+    {
+      "id": "gdsr-2026-efe7735a5fcc9e2f",
+      "name": "Synty Studios",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 92,
+      "source_row_hash": "d8e618364fb3ce77d26bc0a60a8ef8ae9cc2c41d1da8af9dcd6f20bb488dd63e"
+    },
+    {
+      "id": "gdsr-2026-4ffb511a5d8f0753",
+      "name": "Unclear Games",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 93,
+      "source_row_hash": "d66368ed3e7769685312730a36fc2e419f79901c670977522775933f5b54c62d"
+    },
+    {
+      "id": "gdsr-2026-2f4cef2550e45ff9",
+      "name": "Wētā Workshop",
+      "labels": [
+        "2026 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2026",
+      "source_line": 94,
+      "source_row_hash": "5099ef9b0f37e2454e7dcfa691edc3c07c5859598586be7cf238f9b774c38d6c"
+    },
+    {
+      "id": "gdsr-2025-97a1fb286a8a6d70",
+      "name": "2Up Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 99,
+      "source_row_hash": "1030e98c2dba6fbaf7c95dc57304d97958181b2d33e22123f106c452ef220280"
+    },
+    {
+      "id": "gdsr-2025-602db0f962bad7d8",
+      "name": "A44",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 101,
+      "source_row_hash": "9c3c21ec9414289d2e80d2417873504f36515b1f4194a5f8d3bdaa33aba538ec"
+    },
+    {
+      "id": "gdsr-2025-98a40fc8becf2470",
+      "name": "Balancing Monkey Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 103,
+      "source_row_hash": "17d55a3f845ef464dff4f88e85d97312c6c64ff8b473946b4e791eb38212ae16"
+    },
+    {
+      "id": "gdsr-2025-68d5746f29db70cb",
+      "name": "Beyond Studio",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 105,
+      "source_row_hash": "ec5a4bf8cca7a1c5b12d5ab5cc234027ca18e66f11e74c3d54467cac64d828b8"
+    },
+    {
+      "id": "gdsr-2025-0368ff0b594e21e9",
+      "name": "Big Adventure",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 107,
+      "source_row_hash": "c8a3fcd68882d3816e32b556acd525dfeb5c6270ef0b825dd0aad354958653a6"
+    },
+    {
+      "id": "gdsr-2025-1855e09efceac500",
+      "name": "Blind Squirrel Entertainment",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 109,
+      "source_row_hash": "49753d630b459236882a65392dc641275f367be9b23f9e6635dcfb2358769610"
+    },
+    {
+      "id": "gdsr-2025-3eb3a57f24d204fd",
+      "name": "Camshaft Software",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 111,
+      "source_row_hash": "a822aaec3e3fedd6ec4dd851bb4b84afd320c8b824e0da44794cc0eb0237b70a"
+    },
+    {
+      "id": "gdsr-2025-ea46df145497f363",
+      "name": "CerebralFix",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 113,
+      "source_row_hash": "160dbe3080372d03ff313cd481117e91e1daac494ded29b1dfc6667c8b516c9f"
+    },
+    {
+      "id": "gdsr-2025-3241ecabee8221a1",
+      "name": "Conical",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 115,
+      "source_row_hash": "e17e4479d579591db03111debf691b7dc6a9469bd58f74e953b95c165dc6e64c"
+    },
+    {
+      "id": "gdsr-2025-f5477f80ccfc0db1",
+      "name": "Deep Field Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 117,
+      "source_row_hash": "318358ef9ea14322ef6a2314c53a83fe94a671af8cece749be454930da8c1cc2"
+    },
+    {
+      "id": "gdsr-2025-0873b6784c596cc0",
+      "name": "Digital Confectioners",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 119,
+      "source_row_hash": "6f28d3a8e0541a3356d2850f092a9998b1e6936c038d545ec2b0acb46164184e"
+    },
+    {
+      "id": "gdsr-2025-6c5c5c4dcc0dcbaf",
+      "name": "Dinosaur Polo Club",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 121,
+      "source_row_hash": "4601db4b5bf648e486253d7194b1ab36d8fa13de1a926449655a93c6bfbf5210"
+    },
+    {
+      "id": "gdsr-2025-e1f3752609f5f0b7",
+      "name": "DreamLoft",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 123,
+      "source_row_hash": "2703a4cbf14e07d323ba8668430d979f16ac205266586ad0b7787ec235059b9d"
+    },
+    {
+      "id": "gdsr-2025-69b141a83ca6b49c",
+      "name": "Dry Cactus",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 125,
+      "source_row_hash": "3c256d3016d3cb177361a61c093ebb237fa8826855a0e94aaa9157942369500f"
+    },
+    {
+      "id": "gdsr-2025-786893f114d0ca38",
+      "name": "Evans Taylor Digital",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 127,
+      "source_row_hash": "b9961c6c7133dea72afb0be3c8b6cdb6970b73054000a43267b7b1ccad592e30"
+    },
+    {
+      "id": "gdsr-2025-58d16a2d8e9225e1",
+      "name": "Flightless",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 129,
+      "source_row_hash": "bce54e178cb63d3f487c19315edc078ebed5cfdc7a2b05391b7f6bd35929a2f6"
+    },
+    {
+      "id": "gdsr-2025-b47aacea70e14d13",
+      "name": "Floating Rock Studio",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 131,
+      "source_row_hash": "3bd78df71046c0f6b446db6c63ef91a8d36cf678cd2cbf7a360965598bd941db"
+    },
+    {
+      "id": "gdsr-2025-74814a5f860546ec",
+      "name": "Futureverse",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 133,
+      "source_row_hash": "762e8e81efcfe4190efa8019c8f78fa4ab7bd594cc0dbd061618d130fd266ba5"
+    },
+    {
+      "id": "gdsr-2025-3acebfe29c7b98a0",
+      "name": "Geo AR",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 135,
+      "source_row_hash": "179627b0080548024d74d823b2c28af1cdced719dde4afba7f7545e25097909b"
+    },
+    {
+      "id": "gdsr-2025-022be03620ef6734",
+      "name": "Gfactor",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 137,
+      "source_row_hash": "bf540c30fc319dd7eea74108a7cdf8210511c98d07a6368c91eeb9bb6a3d82ec"
+    },
+    {
+      "id": "gdsr-2025-d21a600234a554cd",
+      "name": "Grinding Gear Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 139,
+      "source_row_hash": "d4a17439697956aec281fdc78bec1db223878c0f917718b87bfb6ce09b1fe6d0"
+    },
+    {
+      "id": "gdsr-2025-1ff8ec28f03f8944",
+      "name": "Insight Creative",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 141,
+      "source_row_hash": "4ace6619ad929d87df60ca60f3628234a63620b034b530e6e86d65c0bd337a9c"
+    },
+    {
+      "id": "gdsr-2025-11fde84cbe512bb6",
+      "name": "Melodics",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 143,
+      "source_row_hash": "a9e26ffd75b05f0212c5d7dc453646a7aa450ee5fe3d347e94b4d9049f80c922"
+    },
+    {
+      "id": "gdsr-2025-c7749bc9ca19bc90",
+      "name": "Mighty Eyes",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 145,
+      "source_row_hash": "af53fa55fda4b30824d7bad36e35f1f585cd4556ebe584ce37cdb65b67ca0133"
+    },
+    {
+      "id": "gdsr-2025-2c5f2fb94edfdb44",
+      "name": "Mytona",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 147,
+      "source_row_hash": "c58973bca1dbc000ca66a247b244085354ca237379ba2bad250b251a5b75d153"
+    },
+    {
+      "id": "gdsr-2025-2878fb5a3a764f53",
+      "name": "Niantic Aotearoa",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 149,
+      "source_row_hash": "4ebbc98e126ff75771f6cc74915857d2e4e88c498c11c09ad03961d5b2218aea"
+    },
+    {
+      "id": "gdsr-2025-29e97f02c3b5e88f",
+      "name": "Ninja Kiwi",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 151,
+      "source_row_hash": "a24c32a141141634bfc0a1aa511b6c101d362a5c4802352faa870d804b588956"
+    },
+    {
+      "id": "gdsr-2025-2a845669b9d5594c",
+      "name": "Outerdawn",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 153,
+      "source_row_hash": "61783278d5d1d7e787a2becd2790c9a2c656d3357e8d964ae304a087d290ec8b"
+    },
+    {
+      "id": "gdsr-2025-5892680c4b87fe6b",
+      "name": "PikPok",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 155,
+      "source_row_hash": "6ff60a8b81d4401c18a29a70a93681c7762dd760e047651496a8a537f9e9926e"
+    },
+    {
+      "id": "gdsr-2025-61524ee3580c5d39",
+      "name": "PlaySide Studios",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 157,
+      "source_row_hash": "2810bc7e7bc1aa11d1ec03d4deceedfa3bfc7d89128727e16d85179c48bf3792"
+    },
+    {
+      "id": "gdsr-2025-b0c1258a9a48ed92",
+      "name": "RiffRaff Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 159,
+      "source_row_hash": "2b053c99236da663246251f03ea3022efee47de46402d01991820ce2697ac352"
+    },
+    {
+      "id": "gdsr-2025-5cc9c6460fc2d9f8",
+      "name": "RocketWerkz",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 160,
+      "source_row_hash": "8b5b4fc8d3a38c779c66c15c23f0084aa403b0b2ab5937dec8be86a027cb03fa"
+    },
+    {
+      "id": "gdsr-2025-4e3e11a7fa32267c",
+      "name": "Runaway",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 162,
+      "source_row_hash": "79737502daae4e1d04cf8604d6b95d6007db7aa55b8c8aa037060f73f190ef7f"
+    },
+    {
+      "id": "gdsr-2025-702d0ecfd82f674c",
+      "name": "SharpMind Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 164,
+      "source_row_hash": "4da9a28aa1b16aad01d42c5120ae30dbf8d077cc29229505f76fe3be07604418"
+    },
+    {
+      "id": "gdsr-2025-5df2d7ce6941d1f4",
+      "name": "Snickerdoodle Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 166,
+      "source_row_hash": "3f056fdc691ecfb5faf1c61083683bcfed6df06543c06f474af826b7d498d834"
+    },
+    {
+      "id": "gdsr-2025-ced965f542b240a0",
+      "name": "Space Rock Games",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 168,
+      "source_row_hash": "82f06f7a4c97fa97f784504a55875ba87d57fcb9c648200fec4519e1fbab5e78"
+    },
+    {
+      "id": "gdsr-2025-9cc81e3180677cba",
+      "name": "Splitting Point",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 170,
+      "source_row_hash": "497e75e1d8c086c573ffab0bdf5e74ffce53d8fc1f905f7014ed11367b6e1371"
+    },
+    {
+      "id": "gdsr-2025-0f01c9d1ed258242",
+      "name": "Staples Productions",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 172,
+      "source_row_hash": "7b02111483ae42b9ef174e690475bb34b6736aaf370a24a2119e66ee78907999"
+    },
+    {
+      "id": "gdsr-2025-efe7735a5fcc9e2f",
+      "name": "Synty Studios",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 174,
+      "source_row_hash": "b24bfd9c6c87e8c87e1b6722fce0009cedde8377b5dba35431f3a9ded3bf1316"
+    },
+    {
+      "id": "gdsr-2025-2f4cef2550e45ff9",
+      "name": "Wētā Workshop",
+      "labels": [
+        "2025 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2025",
+      "source_line": 176,
+      "source_row_hash": "8016b2d0d922b39ac2c1dbabad823399e415fa14ead9af3ee2a91440408335e5"
+    },
+    {
+      "id": "gdsr-2024-f5477f80ccfc0db1",
+      "name": "Deep Field Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 183,
+      "source_row_hash": "27515e3efd94e9b4805c95be34f4ed53f0da23e541d07349284ed6b6b6796a7c"
+    },
+    {
+      "id": "gdsr-2024-76bbd4db50812b9c",
+      "name": "GFactor",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 184,
+      "source_row_hash": "1825f9a0a9cca147a0c95356b639607ac442eb32cf22dc359fae5ec5e22c94ed"
+    },
+    {
+      "id": "gdsr-2024-9cc81e3180677cba",
+      "name": "Splitting Point",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 185,
+      "source_row_hash": "1f2a05991d6088e4c11169d72c537693d7897474081f5854f324783030297b09"
+    },
+    {
+      "id": "gdsr-2024-82813b1a21c8f4a0",
+      "name": "Usual Suspects Studios",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 186,
+      "source_row_hash": "36fc6b134ea4383c0fcc0b1a8f24ad85a30e325177631293f1cf3bee10246dea"
+    },
+    {
+      "id": "gdsr-2024-97a1fb286a8a6d70",
+      "name": "2Up Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 190,
+      "source_row_hash": "13030e77b80e6752a323614d2f33d97d074910d3dc5d8e764264a8196cbbaafe"
+    },
+    {
+      "id": "gdsr-2024-98a40fc8becf2470",
+      "name": "Balancing Monkey Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 191,
+      "source_row_hash": "79a5c48a6c421339c225fe60d27dafd4e433e60d21a992b599f0b5954938ad7a"
+    },
+    {
+      "id": "gdsr-2024-1855e09efceac500",
+      "name": "Blind Squirrel Entertainment",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 192,
+      "source_row_hash": "bfa6a77de36897c53316dc99585836201dab1cb60ea7557288773eaadd9450fc"
+    },
+    {
+      "id": "gdsr-2024-8e53c563169f46c2",
+      "name": "CamShaft Software",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 193,
+      "source_row_hash": "ee773314c9274ad60fc8559db09b206351248d337727f0a78179c505b7ba58e9"
+    },
+    {
+      "id": "gdsr-2024-11f3a1bc49ba9841",
+      "name": "Dreamloft",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 194,
+      "source_row_hash": "21130ee8c5814a9f6c949d7264adc314e45aa8dbf94a36c797919dd26e593861"
+    },
+    {
+      "id": "gdsr-2024-58d16a2d8e9225e1",
+      "name": "Flightless",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 195,
+      "source_row_hash": "3308dc607fc5e107231c0fdc43e380ec4ac9fe14d0d54cdf5b3dcbbec12d33e0"
+    },
+    {
+      "id": "gdsr-2024-e97eca78461ea8b8",
+      "name": "Hashbane Interactive",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 196,
+      "source_row_hash": "5ec4761dd1bc8c6d53f50e958c0e6e58f6bbcedddcc3dc5b539f8168483865d3"
+    },
+    {
+      "id": "gdsr-2024-f23bbfba66e78d4e",
+      "name": "Sharpmind Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 197,
+      "source_row_hash": "c07a78b149d2795943a6ba64a4c1ace6c1c365a106ce2d1a5c260e14e4c3400f"
+    },
+    {
+      "id": "gdsr-2024-0f01c9d1ed258242",
+      "name": "Staples Productions",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 198,
+      "source_row_hash": "a5b94b7e2a5c7f808e2b43f6d2720c4d63d791ec535295706a42f10068b5a871"
+    },
+    {
+      "id": "gdsr-2024-b0c1258a9a48ed92",
+      "name": "RiffRaff Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 202,
+      "source_row_hash": "243ac1ef93d876828cde119a724fd50465cb0c76641252e5886ad3b40f5b335d"
+    },
+    {
+      "id": "gdsr-2024-ced965f542b240a0",
+      "name": "Space Rock Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 203,
+      "source_row_hash": "9ed84aca3d480aa5fc6fc191f6ef21cf05c449a44129be0aebf03a9b9ace1b9b"
+    },
+    {
+      "id": "gdsr-2024-4737b299f128583f",
+      "name": "ZeroKing",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 204,
+      "source_row_hash": "9b91b9ef8d7ee7eb9612dbb27448f51b834b61270d9fde60173bf9fbacc81f1e"
+    },
+    {
+      "id": "gdsr-2024-68d5746f29db70cb",
+      "name": "Beyond Studio",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 208,
+      "source_row_hash": "5a3659d4d216e776cf483c16c879d2aab200e1f2ab6e018f1c833f4cd9f1ac0a"
+    },
+    {
+      "id": "gdsr-2024-0873b6784c596cc0",
+      "name": "Digital Confectioners",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 209,
+      "source_row_hash": "893d35e8cb08a15af2bb7e4347517b88766d2fe1be89c01dee31814c73d78c5c"
+    },
+    {
+      "id": "gdsr-2024-c7749bc9ca19bc90",
+      "name": "Mighty Eyes",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 210,
+      "source_row_hash": "bf9866b950b02297a33555797073b73e804ed5872b8ae15d62ea9e8df2ce92dc"
+    },
+    {
+      "id": "gdsr-2024-6c5c5c4dcc0dcbaf",
+      "name": "Dinosaur Polo Club",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 213,
+      "source_row_hash": "5cbede2e5831a7687241fafb2f2453a531f9adcb5f64eddd29c1ca49ad06595b"
+    },
+    {
+      "id": "gdsr-2024-29e97f02c3b5e88f",
+      "name": "Ninja Kiwi",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 214,
+      "source_row_hash": "f5fb1a85b2abdb6ec578712b0fdb66844de012f86280305371888316903043df"
+    },
+    {
+      "id": "gdsr-2024-ce08e36b1f53eab0",
+      "name": "Niantic Aotearoa New Zealand",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 215,
+      "source_row_hash": "1597220304fdbc975e1b548384268bdfcec6710de5092a83946ea0eec5ca9ea2"
+    },
+    {
+      "id": "gdsr-2024-2a845669b9d5594c",
+      "name": "Outerdawn",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 216,
+      "source_row_hash": "5416b342fe2de914611a2ee95b31008a567954e8091800c98e1ac397a8744932"
+    },
+    {
+      "id": "gdsr-2024-f8bc9817b846ef17",
+      "name": "Runaway Play",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 217,
+      "source_row_hash": "5a967d39d68299f6740ad6408dc33ad5b10f75b96d1c14f886289e6bcd2a11f5"
+    },
+    {
+      "id": "gdsr-2024-efe7735a5fcc9e2f",
+      "name": "Synty Studios",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 221,
+      "source_row_hash": "1c3bec4e3e830860d30b09d69a3ebe07d1507d39abab2d53d347ba1124089b5c"
+    },
+    {
+      "id": "gdsr-2024-2f4cef2550e45ff9",
+      "name": "Wētā Workshop",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 222,
+      "source_row_hash": "6f578a45f0ed38b77dd80900787ccc56362ed0e231f64bd3a16b56377c4d5e7b"
+    },
+    {
+      "id": "gdsr-2024-602db0f962bad7d8",
+      "name": "A44",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 226,
+      "source_row_hash": "5496d59b4536216ec8e9933bd457f23694c2224c9222a938a99903606a44d6ed"
+    },
+    {
+      "id": "gdsr-2024-ea46df145497f363",
+      "name": "CerebralFix",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 227,
+      "source_row_hash": "e548051f96d197a33a2c97331b01fb25ed57d0d74ded8bb44c5d7c5c2e9fbf56"
+    },
+    {
+      "id": "gdsr-2024-2c5f2fb94edfdb44",
+      "name": "Mytona",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 228,
+      "source_row_hash": "7f3e9aa27d1e1b3cf3163ebf9e2ee0053c254b7be6d55c6425b4cf72d6fa5d96"
+    },
+    {
+      "id": "gdsr-2024-5cc9c6460fc2d9f8",
+      "name": "RocketWerkz",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 229,
+      "source_row_hash": "735ed5aef38c00a2280cda99b31dc48958b592b2cc6aca61630f0508421d33d3"
+    },
+    {
+      "id": "gdsr-2024-74814a5f860546ec",
+      "name": "Futureverse",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 241,
+      "source_row_hash": "0f26f35439fa04a1ef1132148e9d7bf7322feb06e27d3b0b8167e65b602e7fd4"
+    },
+    {
+      "id": "gdsr-2024-d21a600234a554cd",
+      "name": "Grinding Gear Games",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 242,
+      "source_row_hash": "9351b5034059bb46e6b3750e30dd19ce253892af15bc008edf4be67283b3b515"
+    },
+    {
+      "id": "gdsr-2024-5892680c4b87fe6b",
+      "name": "PikPok",
+      "labels": [
+        "2024 GDSR recipients"
+      ],
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "site_url": "",
+      "location_claim": "New Zealand programme recipient; not an established physical studio location",
+      "source_period": "2024",
+      "source_line": 243,
+      "source_row_hash": "79e52c5d86997b84a333ec0f982e34db8a1b89e6b1015ef3a11b55e04c8ff3e8"
+    }
+  ]
+}

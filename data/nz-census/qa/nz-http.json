@@ -1,0 +1,7 @@
+{
+  "checks": 5,
+  "catalogue_records": 42298,
+  "source_observations": 217,
+  "new_class_c_references": 59,
+  "conditions": "Local HTTP subdirectory; installed headless Chromium, desktop 1440x1000 and mobile 390x844. No CPU/network throttle. Not deployed Pages, a physical low-memory device, independent company verification or human approval."
+}

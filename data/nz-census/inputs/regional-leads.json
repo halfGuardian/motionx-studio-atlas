@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "observation_id": "film-bay-of-plenty:te-whare-piringa",
+      "source_id": "film-bay-of-plenty",
+      "name": "Te Whare Piringa Film Studio",
+      "service_labels": [
+        "Film studios & production hubs"
+      ],
+      "source_url": "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/",
+      "detail_url": "",
+      "site_url": "",
+      "location_claim": "Rotorua; facility feature names Local Gecko Productions as operator; no geocode",
+      "observed_on": "2026-11-07",
+      "source_scope": "one_featured_facility_not_full_directory",
+      "source_period": "",
+      "origin": "bounded_regional_facility_feature"
+    },
+    {
+      "observation_id": "screen-canterbury:koawa-news",
+      "source_id": "screen-canterbury",
+      "name": "Kōawa Studios",
+      "service_labels": [
+        "Production and post-production facility"
+      ],
+      "source_url": "https://www.christchurchnz.com/about/news/Production-Grant-renewed",
+      "detail_url": "",
+      "site_url": "https://koawa.co.nz/",
+      "location_claim": "Canterbury source association; existing canonical location retained",
+      "observed_on": "2026-11-07",
+      "source_scope": "selected_official_announcement",
+      "source_period": "",
+      "origin": "bounded_regional_announcement"
+    },
+    {
+      "observation_id": "screen-canterbury:whitebait-news",
+      "source_id": "screen-canterbury",
+      "name": "WhitebaitMedia",
+      "service_labels": [
+        "Screen production company"
+      ],
+      "source_url": "https://www.christchurchnz.com/about/news/Production-Grant-renewed",
+      "detail_url": "",
+      "site_url": "",
+      "location_claim": "Christchurch-based company according to source announcement; not an independently reviewed studio",
+      "observed_on": "2026-11-07",
+      "source_scope": "selected_official_announcement",
+      "source_period": "",
+      "origin": "bounded_regional_announcement"
+    }
+  ]
+}

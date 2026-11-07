@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "source_names_researched": 42,
+  "records": [
+    {
+      "source_name": "A44",
+      "query": "\"A44\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "a705fdef52e53447b8547d8582cce2ef750d2b3002a17437abe62be03b180877",
+      "batch": "outstanding-000.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Assembly",
+      "query": "\"Assembly\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "a705fdef52e53447b8547d8582cce2ef750d2b3002a17437abe62be03b180877",
+      "batch": "outstanding-000.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Avalon Studios",
+      "query": "\"Avalon Studios\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "a705fdef52e53447b8547d8582cce2ef750d2b3002a17437abe62be03b180877",
+      "batch": "outstanding-000.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Bespoke Post",
+      "query": "\"Bespoke Post\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "a705fdef52e53447b8547d8582cce2ef750d2b3002a17437abe62be03b180877",
+      "batch": "outstanding-000.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Beyond Fun",
+      "query": "\"Beyond Fun\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "41218634728334c2831447d7b748cafd270704deb5b36b1ed47dd7d93305682c",
+      "batch": "outstanding-001.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Big Adventure",
+      "query": "\"Big Adventure\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "41218634728334c2831447d7b748cafd270704deb5b36b1ed47dd7d93305682c",
+      "batch": "outstanding-001.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Big Picture",
+      "query": "\"Big Picture\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "41218634728334c2831447d7b748cafd270704deb5b36b1ed47dd7d93305682c",
+      "batch": "outstanding-001.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Blockhead",
+      "query": "\"Blockhead\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "41218634728334c2831447d7b748cafd270704deb5b36b1ed47dd7d93305682c",
+      "batch": "outstanding-001.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Creature Post",
+      "query": "\"Creature Post\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7f30a95847aec53095233cf24ff8caad0d74a12381cfb71c5e21ddb81c1571db",
+      "batch": "outstanding-002.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Eleven FX",
+      "query": "\"Eleven FX\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7f30a95847aec53095233cf24ff8caad0d74a12381cfb71c5e21ddb81c1571db",
+      "batch": "outstanding-002.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Envy Studios",
+      "query": "\"Envy Studios\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7f30a95847aec53095233cf24ff8caad0d74a12381cfb71c5e21ddb81c1571db",
+      "batch": "outstanding-002.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Evoke Audio",
+      "query": "\"Evoke Audio\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7f30a95847aec53095233cf24ff8caad0d74a12381cfb71c5e21ddb81c1571db",
+      "batch": "outstanding-002.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Fox & Co",
+      "query": "\"Fox & Co\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "cef94040550e828c6c59b51dbaffdd4028a167214881281171ddfc095216728d",
+      "batch": "outstanding-003.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Franklin Rd Music & Sound",
+      "query": "\"Franklin Rd Music & Sound\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "cef94040550e828c6c59b51dbaffdd4028a167214881281171ddfc095216728d",
+      "batch": "outstanding-003.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Graphic Monk Ltd",
+      "query": "\"Graphic Monk Ltd\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "cef94040550e828c6c59b51dbaffdd4028a167214881281171ddfc095216728d",
+      "batch": "outstanding-003.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Inside Track",
+      "query": "\"Inside Track\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "cef94040550e828c6c59b51dbaffdd4028a167214881281171ddfc095216728d",
+      "batch": "outstanding-003.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Jon Online",
+      "query": "\"Jon Online\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "6b6d076101215c0dd7af2665af78b506737a35b26f9441f62a3242062c630972",
+      "batch": "outstanding-004.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Lane Street Studios",
+      "query": "\"Lane Street Studios\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "6b6d076101215c0dd7af2665af78b506737a35b26f9441f62a3242062c630972",
+      "batch": "outstanding-004.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Lets Play.Live",
+      "query": "\"Lets Play.Live\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "6b6d076101215c0dd7af2665af78b506737a35b26f9441f62a3242062c630972",
+      "batch": "outstanding-004.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Lost Cosmonauts",
+      "query": "\"Lost Cosmonauts\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "6b6d076101215c0dd7af2665af78b506737a35b26f9441f62a3242062c630972",
+      "batch": "outstanding-004.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Mandy VFX",
+      "query": "\"Mandy VFX\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "273bc77a59272beda8306ec512db52a16b030b368f73479a470859d328570a32",
+      "batch": "outstanding-005.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Metia",
+      "query": "\"Metia\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "273bc77a59272beda8306ec512db52a16b030b368f73479a470859d328570a32",
+      "batch": "outstanding-005.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Mohawk Media",
+      "query": "\"Mohawk Media\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "273bc77a59272beda8306ec512db52a16b030b368f73479a470859d328570a32",
+      "batch": "outstanding-005.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Native Audio",
+      "query": "\"Native Audio\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "273bc77a59272beda8306ec512db52a16b030b368f73479a470859d328570a32",
+      "batch": "outstanding-005.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Niantic Aotearoa NZ",
+      "query": "\"Niantic Aotearoa NZ\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "5f2a289f971f671e2ce917eb6675a7b196df3cad377371ef37289e6818608a43",
+      "batch": "outstanding-006.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Pinnacle Post",
+      "query": "\"Pinnacle Post\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "5f2a289f971f671e2ce917eb6675a7b196df3cad377371ef37289e6818608a43",
+      "batch": "outstanding-006.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Portsmouth Film Equipment Rental",
+      "query": "\"Portsmouth Film Equipment Rental\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "5f2a289f971f671e2ce917eb6675a7b196df3cad377371ef37289e6818608a43",
+      "batch": "outstanding-006.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Rascal Kids",
+      "query": "\"Rascal Kids\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "5f2a289f971f671e2ce917eb6675a7b196df3cad377371ef37289e6818608a43",
+      "batch": "outstanding-006.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Resn",
+      "query": "\"Resn\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "907cc42b68493d4e8ad85722c9f2f75dab752b7f7bbdd6fe5d5193d4f36de557",
+      "batch": "outstanding-007.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "RiffRaff Games",
+      "query": "\"RiffRaff Games\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "907cc42b68493d4e8ad85722c9f2f75dab752b7f7bbdd6fe5d5193d4f36de557",
+      "batch": "outstanding-007.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Shotover Media Ltd",
+      "query": "\"Shotover Media Ltd\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "907cc42b68493d4e8ad85722c9f2f75dab752b7f7bbdd6fe5d5193d4f36de557",
+      "batch": "outstanding-007.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Stone Street Studios",
+      "query": "\"Stone Street Studios\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "907cc42b68493d4e8ad85722c9f2f75dab752b7f7bbdd6fe5d5193d4f36de557",
+      "batch": "outstanding-007.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Stormcloak Games",
+      "query": "\"Stormcloak Games\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "08fe40952c7f941f42379ec71db1d5abf330cbdde394b77c124c2f80dfcd532a",
+      "batch": "outstanding-008.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Storybox",
+      "query": "\"Storybox\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "08fe40952c7f941f42379ec71db1d5abf330cbdde394b77c124c2f80dfcd532a",
+      "batch": "outstanding-008.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "The Inside Track",
+      "query": "\"The Inside Track\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "08fe40952c7f941f42379ec71db1d5abf330cbdde394b77c124c2f80dfcd532a",
+      "batch": "outstanding-008.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "The Machine Room",
+      "query": "\"The Machine Room\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "08fe40952c7f941f42379ec71db1d5abf330cbdde394b77c124c2f80dfcd532a",
+      "batch": "outstanding-008.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "The Rebel Fleet",
+      "query": "\"The Rebel Fleet\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7039c98c8341b45732e52297eda97dcb0e12be9a5010c5ed97c0cf071714cb8e",
+      "batch": "outstanding-009.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "The Rig",
+      "query": "\"The Rig\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7039c98c8341b45732e52297eda97dcb0e12be9a5010c5ed97c0cf071714cb8e",
+      "batch": "outstanding-009.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "The Sound Room",
+      "query": "\"The Sound Room\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7039c98c8341b45732e52297eda97dcb0e12be9a5010c5ed97c0cf071714cb8e",
+      "batch": "outstanding-009.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Wētā Workshop",
+      "query": "\"Wētā Workshop\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "7039c98c8341b45732e52297eda97dcb0e12be9a5010c5ed97c0cf071714cb8e",
+      "batch": "outstanding-009.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Wildboy Studios",
+      "query": "\"Wildboy Studios\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "09be606f4d6521fd82e557ac306ae61aa44d657e1acc656e768e84e03d1d54e2",
+      "batch": "outstanding-010.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    },
+    {
+      "source_name": "Wrestler",
+      "query": "\"Wrestler\" New Zealand official studio production current",
+      "observed_on": "2026-11-07",
+      "retained_response_sha256": "09be606f4d6521fd82e557ac306ae61aa44d657e1acc656e768e84e03d1d54e2",
+      "batch": "outstanding-010.json",
+      "note": "Raw authored text and contacts withheld; prohibited-source snippets redacted after terms review. A receipt is not verification."
+    }
+  ]
+}

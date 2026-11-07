@@ -29,6 +29,20 @@ jobs:
         run: python tools/boutique.py check --output data/boutique/reports
       - name: Reproduce complete Annecy reconciliation and pending human review
         run: python tools/annecy.py check
+      - name: Retain frozen Wave 1 audit against its original 42,239-record baseline
+        run: python tools/nz_census.py prepare --output /tmp/nz-wave1-reports
+      - name: Validate complete NZ continuation and unchanged historical data
+        run: python tools/nz_research.py check
+      - name: Reproduce NZ final relevance, rights, staging and pending maintainer review
+        run: python tools/nz_quality_gate.py check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nz-census-reconciliation-and-pending-human-review
+          path: |
+            data/nz-census
+            nz-review.js
+            nz-final-review.js
       - uses: actions/upload-artifact@v4
         with:
           name: annecy-2024-coverage-and-human-review
@@ -74,6 +88,10 @@ jobs:
         run: python tests/unified_ux.py
       - name: Actual boutique view, seed identities and safe research exports
         run: python tests/boutique_browser.py
+      - name: NZ coverage, provisional references and source-specific licence export
+        run: python tests/nz_census_browser.py
+      - name: NZ final review worksheet, staging, public assertions and safe exports
+        run: python tests/nz_quality_browser.py
       - name: Annecy coverage dashboard and actual company references
         run: python tests/annecy_browser.py
       - uses: actions/upload-artifact@v4
@@ -90,6 +108,8 @@ jobs:
             /tmp/motionx-v12-*.json
             /tmp/motionx-v13-*.json
             /tmp/motionx-v13-*.png
+            /tmp/motionx-v15-*.json
+            /tmp/motionx-v15-*.png
             data/bulk/reports/licensing.html
             data/bulk/reports/licensing.json
             data/bulk/reports/review-queue.json
