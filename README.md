@@ -1,3 +1,7 @@
+# New Zealand census Wave 1 — source-by-source coverage (draft v1.5)
+
+[Source scope, audit method and outstanding gaps](data/nz-census/README.md). Adds **56 newly documented regional source observations** alongside the existing 42-row NZFC snapshot: 24 visible Screen Auckland digital/post-production vendor rows (pages 2/4/5 remain unavailable), nine Screen Wellington showcase entries, 21 Wellington creative-showreel names, and two selected Otago/Southland production-tech entries. The CI audit matches all **98 source observations** against every existing **42,239** Atlas record and uploads the complete reconciliation. No new public company records, map pins or confirmed facility claims are added.
+
 # Visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
 
 The Atlas now makes **company references without map pins** visible as an explicit number on the map and offers a direct directory shortcut. **All 42 New Zealand Film Commission facilities-directory entries** are accessible through a [source-to-Atlas reconciliation page](data/boutique/reports/nzfc-coverage.html), including nine exclusions and the held Blockhead/Assembly identity. 27 new and three cross-source reconciled references, plus two previously existing identities, account for 32 represented records; **representation is not verified physical coverage**. The historical NZFC Wētā FX source is linked to Wellington in this new report, not an overseas branch.
