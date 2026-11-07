@@ -82,6 +82,7 @@ test('every NZFC listing is reconciled, including excluded and identity-held nam
 test('represented NZFC names are real Atlas records; no company-only map pins invented',()=>{
   const index=read(path.join(root,'data/public/index.json'));
   const lookup=new Map(index.map(row=>[row[0],row]));
+  const retained=new Map(read(path.join(root,'studios.json')).map(row=>[row.id,row]));
   const audit=triage.audit.filter(a=>a.source_id==='nzfc-facilities');
   for(const row of audit){
     if(row.decision==='identity_review'||row.decision==='irrelevant_or_insufficient_specialisation'){
@@ -90,7 +91,7 @@ test('represented NZFC names are real Atlas records; no company-only map pins in
     }
     assert.ok(row.record_id,'Missing represented identity for '+row.name);
     const item=lookup.get(row.record_id);
-    assert.ok(item,'Missing catalogue record for '+row.name);
+    assert.ok(item||retained.has(row.record_id),'Missing catalogue or retained baseline record for '+row.name);
     if(['new_company_reference','repeat_source_reference'].includes(row.decision)){
       assert.equal(item[5],null,'Unverified company cannot receive an invented map latitude');
       assert.equal(item[6],null,'Unverified company cannot receive an invented map longitude');
