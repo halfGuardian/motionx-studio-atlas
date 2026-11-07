@@ -79,6 +79,20 @@ test('every NZFC listing is reconciled, including excluded and identity-held nam
   assert.match(report,/42 \/ 42/);
   assert.match(report,/<b>0<\/b><small>New verified facility pins<\/small>/);
 });
+test('full NZFC PP/A/VFX/S/DIT labels survive independently of reduced boutique tags',()=>{
+  const snapshot=read(path.join(root,'data/coverage/nzfc-2026-11-07.json'));
+  assert.equal(snapshot.observed_on,'2026-11-07');
+  assert.deepEqual(snapshot.records.map(r=>r.name),expectedNames);
+  const byName=new Map(snapshot.records.map(r=>[r.name,r.nzfc_service_codes]));
+  assert.deepEqual(byName.get('Blockhead'),['PP','A']);
+  assert.deepEqual(byName.get('POW Studios'),['PP','S','A','VFX']);
+  assert.deepEqual(byName.get('Images & Sound'),['PP','S','VFX','DIT']);
+  for(const row of snapshot.records){
+    assert.ok(row.nzfc_service_codes.length>0);
+    const reportLine=report.split('\\n').find(line=>line.includes('<th scope="row">'+escapeHtml(row.name)+'</th>'));
+    assert.ok(reportLine&&reportLine.includes('<td>'+row.nzfc_service_codes.join(' · ')+'</td>'),'Missing complete directory categories for '+row.name);
+  }
+});
 test('represented NZFC names are real Atlas records; no company-only map pins invented',()=>{
   const index=read(path.join(root,'data/public/index.json'));
   const lookup=new Map(index.map(row=>[row[0],row]));
