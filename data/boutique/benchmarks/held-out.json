@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "split": "held-out",
+  "frozen_on": "2026-11-07",
+  "method": "Retrospective entity-disjoint split frozen before classifier implementation; discovery source overlap exists. Not a blind prospective or source-disjoint estimate of global recall. Collector never reads benchmark files.",
+  "records": [
+    {
+      "name": "Lazy Sunday",
+      "domain": "lazysunday.ie",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Bizaar Studios",
+      "domain": "bizaarstudios.com",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America",
+      "source": "https://www.bizaarstudios.com/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Scrawl Animation",
+      "domain": "scrawlanimation.com",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Asia",
+      "source": "https://scrawlanimation.com/about",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Pioneertown Productions",
+      "domain": "pioneertownproductions.com",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Studio Kane",
+      "domain": "studiokane.art",
+      "city": "",
+      "country": "South Korea",
+      "region": "Asia",
+      "source": "https://www.studiokane.art/about-studio",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Monster Entertainment",
+      "domain": "monsterentertainment.tv",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Deep Animation",
+      "domain": "deepanimation.co.nz",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Enter Yes",
+      "domain": "enteryes.com",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Cartoon Saloon",
+      "domain": "cartoonsaloon.ie",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Dainty Productions",
+      "domain": "daintyproductions.com",
+      "city": "Ottawa",
+      "country": "Canada",
+      "region": "North America",
+      "source": "https://daintyproductions.com/about/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Pixel Zoo",
+      "domain": "pixelzoo.com.au",
+      "city": "Brisbane",
+      "country": "Australia",
+      "region": "Oceania",
+      "source": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation, VFX production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Albedo",
+      "domain": "albedovfx.com",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports VFX production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Engine House",
+      "domain": "engine-house.co.uk",
+      "city": "",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Dark Sandwich",
+      "domain": "darksandwich.com",
+      "city": "",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source": "https://darksandwich.com/about/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Cinematics, Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Pictor",
+      "domain": "pictor.ie",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Whackala",
+      "domain": "whackala.com",
+      "city": "",
+      "country": "Ireland",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "GATO",
+      "domain": "gatoanimation.jp",
+      "city": "",
+      "country": "Japan",
+      "region": "Asia",
+      "source": "https://www.gatoanimation.jp/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports 2D, 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Agent Orange",
+      "domain": "agentorange.asia",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "region": "Asia",
+      "source": "https://agentorange.asia/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports 3D, Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    },
+    {
+      "name": "Ink and Light",
+      "domain": "ink-and-light.com",
+      "city": "",
+      "country": "",
+      "region": "Europe",
+      "source": "https://animationireland.com/studios/",
+      "reviewed_on": "2026-11-07",
+      "rationale": "Source supports CG, Animation production relevance. Size, independence and current facility status require separate review.",
+      "qualification": "service-relevant SME-target reference; size/ownership not uniformly corroborated"
+    }
+  ]
+}

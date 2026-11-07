@@ -1,26 +1,20 @@
-# MotionX Studio Atlas v1.1 — Global Bulk Data Acquisition
+# MotionX Studio Atlas v1.2 — Global Boutique Studio Discovery
 
-**One unified research atlas: 41,735 records.** Browse the existing **243 locations**, all **40,376 Overture source observations**, and all **1,116 game-company references** together. Nothing is excluded from the directory merely because it requires research. The full dataset, map, search, filters, profiles and CSV export use one catalogue. Record totals include overlapping references and company-only entries; they are not counts of independently verified physical studios.
+**One unified research atlas: 42,067 records.** All **41,735 previous records** remain available: 243 retained locations, 40,376 Overture observations and 1,116 game-company references. This proposal adds **332 source-supported company research references**. Record totals include overlapping source observations and company-only entries; they are not verified facility counts.
 
-All 243 original IDs, coordinates, evidence and company relationships remain byte-for-byte in `studios.json`. The [combined catalogue](data/public/manifest.json) adds hash-bound, country-grouped research shards and a compressed search index. All 13 legacy unknown-evidence records remain visible with research labels. Company references have no invented cities, branches, facilities or map pins.
+The new **Boutique Studios** view combines full-atlas reconciliation, official industry sources and a complete CC BY 4.0 animation-company dataset. It shows advisory service alignment, source-linked company research, region/specialisation/size/status filters and comparison. Evidence classes remain separate: **A 230 / B 4,626 / C 37,211**. All new company references are C, without invented pins or confirmed facility capabilities. Existing operating identities, subsidiaries, all original coordinates and every original evidence shard remain unchanged. `studios.json` is byte-for-byte preserved.
 
-- **A — Source-reviewed location:** 230 retained records. Capability evidence stays specific to each claim; source review is not an independent business audit.
-- **B — Source-listed location observation:** 4,626 records. The permitted directory supports the listing; current operation, physical facility type and services remain uncorroborated.
-- **C — Research required:** 36,879 records, including company references, uncertain observations and legacy unknowns. They remain searchable alongside A/B with explicit warnings. Inclusion does not approve their claims.
+The [boutique research report and workflow](data/boutique/README.md), [readable review dashboard](data/boutique/reports/review.html), [observation audit](data/boutique/reports/triage.json), [permission registry](data/boutique/sources.json) and [recall results](data/boutique/reports/benchmark-results.json) explain all 570 source observations. There are 5,687 research-visible service leads, including **460 with additional source evidence** and **5,227 explicitly weak taxonomy leads**. Size/independence are not universally verified. External support needs and purchasing intent stay unknown.
 
-No new confirmed capture or other facility-capability claims are created. Source closure/status labels are displayed as assertions and never silently overwrite reviewed records. Possible duplicates are linked for research rather than automatically merged or deleted. All original geographical points and the shared-coordinate selection popup remain intact.
+Frame Machine was already present as a Class C Santa Monica observation and retains its ID; its primary company-service evidence is now visible. Floating Rock Studio is discovered through NZFC and remains a Wellington company reference pending facility research. Neither is assumed to own a capture stage. The 100-example benchmark reaches **96% recall**; 19 separate held-out entities reach **89.47%**. The split is retrospective, has source overlap, and is not a blind worldwide-coverage estimate. Conflicting identities remain in the review queue. No human precision rate or approval is fabricated.
 
-The [bulk report and workflow](data/bulk/README.md), [combined audit](data/public/audit.json) and [source receipts](data/bulk/unified-input/source-receipt.json) retain provenance and limitations. Overture records carry their provider licences and notices. Game-company entries are factual references: the source README offers download/local use but does not state an explicit dataset redistribution licence; that limitation is labelled and authored descriptions are omitted. No source is described as permissively licensed without evidence.
+Leaflet, OpenStreetMap attribution, shared-coordinate selection, viewport map rendering, dark styling, mobile navigation, profiles, hash URLs and filtered CSV exports are preserved. Controls combine with **AND**; confirmed-only searches still check facility evidence. Boutique text search can use recorded service terms without converting them into verified capabilities. Advisory metadata loads only when the Boutique view is selected, with integrity checks and retry; a failed optional request leaves the full atlas available.
 
-This remains a **public GitHub Pages site**, even if its URL is not promoted. No private CRM data, personal contacts, credentials or confidential business intelligence are added. Loading/error states, secure links, CSV formula protection, Leaflet and OpenStreetMap attribution are preserved. Gzip assets are explicitly fetched and decompressed where supported, with uncompressed equivalents for other browsers; all representations are hash-checked.
+This remains a **public repository and GitHub Pages site**, regardless of an intention to use it internally. The [licensing dashboard](data/bulk/reports/licensing.html) distinguishes the 235 new CC BY 4.0 projections from 97 new minimal factual references with unresolved source-wide terms, and preserves the old 1,116 game-company permission warnings. Contacts, authored project descriptions, photographs, credentials and private CRM information are omitted. Keep [source attribution/full licences](data/bulk/NOTICE.html) when reusing exports. EA, Cinesite and other restricted/unresolved website collectors remain disabled.
 
-The release is a **draft PR requiring human review and an authorised merge**. Nothing automatically merges, deploys or changes Pages settings. Source collection produces research artifacts only. The existing content-bound approval-bundle workflow remains separate; no historical approval is invented or reused. The [read-only GitHub rule audit](data/bulk/review-rules-run42287663788.json) returned no effective rules and could not expose classic protection, so required-review enforcement remains unconfirmed.
+This release uses a **draft PR requiring human review and an authorised merge**. Nothing automatically merges, deploys or changes Pages settings. Collection creates research artifacts only. The new downloader failed at local DNS resolution; the previously retrieved author-offered pinned dataset was processed completely. A manual read-only Actions download workflow is provided, not claimed as run. Existing review protection remains unconfirmed; a draft flag and passing tests do not enforce human approval. Historical approval-bundle safeguards remain separate and no historical approval is reused.
 
-The unified atlas now uses **green squares (A), blue circles (B) and amber triangles (C)**, with text labels and permanent map/list legends. Mixed clusters show evidence composition and open a keyboard-accessible record chooser. Quick views cover all records, each class, company-only references and facilities with confirmed Motion/Body/Performance Capture evidence. Advanced filters include organisation identity and advisory research signals. Results prefer relevant names and reviewed evidence; B/C references remain accessible. Record comparisons preserve each source's evidence and never merge identities.
-
-The lossless columnar search transport is **2.18 MB gzip**, compared with the original 3.30 MB. IDs and original coordinates reconstruct exactly; the original readable index and every evidence shard remain unchanged. A compressed, hash-bound copy of the unchanged baseline and versioned index cache reduce repeat downloads. Progress is explicit, and complete global results are exposed only after all data and integrity checks finish. Profiles still load full evidence on demand. See the [optimisation report](data/bulk/reports/optimisation.md) for measured desktop/mobile results and limitations.
-
-The [licensing and launch-readiness dashboard](data/bulk/reports/licensing.html) covers datasets, coordinate references and every registered source policy. **The 1,116 company references remain permission-unresolved**, not licence-cleared. The [advisory review queue](data/bulk/reports/review-queue.json) binds all 41,505 B/C records to their exact content and baseline. `tools/launch_readiness.py` generates pending research templates; no score, report or template grants publication approval. Source review, canonical reconciliation and a human-authorised PR remain required.
+The [original v1.1 bulk workflow](data/bulk/README.md), [original cohort audit](data/public/audit.json) and [v1.1 optimisation report](data/bulk/reports/optimisation.md) remain historical evidence. The [current manifest](data/public/manifest.json), [v1.2 release checkpoint](data/boutique/release.json) and [current pending review queue](data/bulk/reports/review-queue.json) bind the proposed full catalogue and all source records without granting approval.
 
 ## Public atlas
 
@@ -206,7 +200,7 @@ Required offline checks (Python standard library and Node 18+; no npm install):
 
 ```sh
 python -m unittest discover -s tests -p 'test_*.py' -v
-node tests/data.test.js
+node --test tests/*.test.js
 python tools/validate.py studios.json --report data/validation_report.json
 ```
 
@@ -216,6 +210,10 @@ Optional real-browser integration checks, including HTTP hosting below a reposit
 python -m pip install playwright
 python -m playwright install chromium  # or use an existing Chromium
 python tests/browser_smoke.py
+python tests/bulk_browser.py
+python tests/public_catalog_smoke.py
+python tests/unified_ux.py
+python tests/boutique_browser.py
 ```
 
 `CHROMIUM=/path/to/chromium` can select a browser. The browser suite uses live unpkg/OSM resources, so network outages can fail its tile check. It checks loading, map attribution/tiles, search, combined filters, profiles, totals, CSV export, mobile navigation, error/retry states, and 50,000 **in-memory synthetic test locations**, including shared coordinates with pagination. These fixtures never enter `studios.json`. Screenshots go to the system temporary directory. Pull requests run Python, JavaScript and HTTP browser checks in GitHub Actions; no deployment workflow is added. `tests/performance_compare.py --baseline /tmp/v093-checkout --output /tmp/comparison.json` compares an archived baseline against the same 50,000-record HTTP fixture. Baseline files must be the original `index.html`, `data.js` and `app.js`.

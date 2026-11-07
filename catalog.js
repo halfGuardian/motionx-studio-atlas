@@ -126,6 +126,22 @@
     }
     if(rows.length!==(unified?m.counts.records:m.counts.public_locations)||m.counts.class_a!==m.baseline.eligible_ids.length||(!unified&&m.counts.class_b!==index.length)||(unified&&['A','B','C'].some(cls=>rows.filter(r=>r.evidence_class===cls).length!==m.counts['class_'+cls.toLowerCase()])))throw new Error('Catalogue counts mismatch.');
     const pending=new Map(),full=new Map(rows.filter(r=>baseMap.has(r.id)).map(r=>[r.id,r]));
+    let boutiquePending;
+    async function boutique(){
+      const meta=m.boutique;if(!meta)return {version:1,profiles:{},summary:{}};
+      if(meta.path!=='boutique.json'||!/^[a-f0-9]{64}$/.test(meta.sha256))throw new Error('Invalid boutique metadata path.');
+      if(!boutiquePending)boutiquePending=(async()=>{
+        const value=(await asset(fetcher,'./data/public/boutique.json',meta,10000000)).value;
+        if(value?.version!==1||!value.profiles||Array.isArray(value.profiles)||Object.keys(value.profiles).length>rows.length)throw new Error('Invalid boutique research metadata.');
+        const weights={animation:10,cg:10,character:20,cinematics:20,realtime:20,pipeline:10,vfx:5,previs:5};
+        for(const [id,p] of Object.entries(value.profiles)){
+          if(!Array.isArray(p.research_terms)||p.research_terms.length>100||p.research_terms.some(t=>typeof t!=='string'||t.length>300))throw new Error('Invalid company research terms.');
+          if(!ids.has(id)||p.record_id!==id||!['name','country','region','size_claim','size_reviewed_on'].every(k=>typeof p[k]==='string')||!Number.isInteger(p.score)||p.score<0||p.score>100||!p.signals||Array.isArray(p.signals)||Object.entries(p.signals).some(([k,v])=>!Object.hasOwn(weights,k)||v!==weights[k])||Object.values(p.signals).reduce((a,b)=>a+b,0)!==p.score||p.external_support_need!=='unknown'||p.purchasing_intent!=='unknown'||p.independence!=='unknown'||!['taxonomy_lead','source_listed_research','primary_claims_reviewed'].includes(p.research_status)||!Array.isArray(p.sources)||p.sources.length>100||p.sources.some(s=>!s||typeof s.basis!=='string'||typeof s.url!=='string'||s.url&&!D.httpsURL(s.url)||s.observed_on&&!D.validDate(s.observed_on)||s.source_updated_on&&!D.validDate(s.source_updated_on)))throw new Error('Invalid advisory fit or evidence links.');
+        }
+        return value;
+      })().catch(error=>{boutiquePending=null;throw error;});
+      return boutiquePending;
+    }
     async function details(id){
       if(full.has(id))return full.get(id);
       const stub=metadata.get(id);if(!stub)throw new Error(held.has(id)?'This legacy identity is retained in the research queue pending location-evidence review.':'Profile identity unavailable.');
@@ -151,10 +167,10 @@
       const values=await exportRows(filtered),codes=[...new Set(values.filter(r=>r.license&&r.license!=='UNSPECIFIED').flatMap(r=>r.license.split(' AND ')))];
       const texts=await Promise.all(codes.map(async code=>code+'\n'+await licence(fetcher,code+'.txt',m.licence_files?.[code+'.txt']?.sha256)));
       let notices=codes.includes('Apache-2.0')?await licence(fetcher,'Foursquare-NOTICE.txt',m.licence_files?.['Foursquare-NOTICE.txt']?.sha256):'';
-      if(values.some(r=>r.license==='UNSPECIFIED'))notices+='\nGame Studios & Publishers Database: no explicit dataset redistribution licence supplied. Factual company references only; authored descriptions omitted. Source: https://github.com/EddieWing/gamedev-studios-db';
+      if(values.some(r=>r.license==='UNSPECIFIED'))notices+='\nSome source references have no explicit dataset redistribution licence. Retain each source-specific attribution and permission warning; factual references do not grant source-wide reuse rights. Authored descriptions and contacts omitted.';
       return {rows:values,licenseTexts:texts.join('\n\n'),notices};
     }
-    return {rows,manifest:m,details,exportRows,exportBundle,researchOnly:held};
+    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held};
   }
   const api={load,sha,checkB,checkResearch,decodeIndex};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MotionXCatalog=api;
 })(globalThis);

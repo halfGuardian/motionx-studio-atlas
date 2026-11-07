@@ -25,6 +25,17 @@ jobs:
         run: if [ -f data/bulk/release.json ]; then python tools/check_bulk_release.py; fi
       - name: Reproduce advisory queue and licensing audit without granting approval
         run: if [ -f data/bulk/reports/licensing.json ]; then python tools/launch_readiness.py check --output data/bulk/reports; fi
+      - name: Reproduce boutique matching, benchmark and pending research proposals
+        run: python tools/boutique.py check --output data/boutique/reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: boutique-discovery-review-and-coverage
+          path: |
+            data/boutique/reports
+            data/boutique/sources.json
+            data/boutique/query-log.json
+            data/boutique/collection-attempt.json
+            data/boutique/README.md
   browser:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -48,6 +59,8 @@ jobs:
         run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
       - name: Evidence colours, mixed clusters, research review and launch readiness
         run: python tests/unified_ux.py
+      - name: Actual boutique view, seed identities and safe research exports
+        run: python tests/boutique_browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -58,6 +71,8 @@ jobs:
             /tmp/motionx-v11-real-performance.json
             /tmp/motionx-v11-ux-performance.json
             /tmp/motionx-v11-*.png
+            /tmp/motionx-v12-*.png
+            /tmp/motionx-v12-*.json
             data/bulk/reports/licensing.html
             data/bulk/reports/licensing.json
             data/bulk/reports/review-queue.json

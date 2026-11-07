@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "query_mode": "Plans for permitted indexed search only; no search-engine scraper or automatic query execution.",
+  "languages": {
+    "en": [
+      "boutique animation studio",
+      "character animation studio",
+      "CG production house",
+      "game cinematics studio",
+      "real-time animation",
+      "Unreal Engine animation",
+      "animation outsourcing",
+      "creature animation",
+      "performance animation",
+      "mocap cleanup",
+      "retargeting studio",
+      "rigging pipeline"
+    ],
+    "fr": [
+      "studio animation de personnages",
+      "studio effets visuels",
+      "cinématiques jeux vidéo",
+      "animation temps réel",
+      "production virtuelle"
+    ],
+    "es": [
+      "estudio animación 3D",
+      "animación de personajes",
+      "cinemáticas videojuegos",
+      "efectos visuales",
+      "producción virtual"
+    ],
+    "pt": [
+      "estúdio animação 3D",
+      "animação de personagens",
+      "efeitos visuais",
+      "produção virtual"
+    ],
+    "de": [
+      "Animationsstudio",
+      "Charakteranimation",
+      "Echtzeit Animation"
+    ],
+    "ja": [
+      "3DCG 制作会社",
+      "キャラクターアニメーション",
+      "ゲームシネマティクス"
+    ],
+    "ko": [
+      "애니메이션 스튜디오",
+      "게임 시네마틱"
+    ],
+    "zh": [
+      "三维动画工作室",
+      "角色动画",
+      "游戏过场动画"
+    ]
+  },
+  "regions": [
+    "New Zealand",
+    "Australia",
+    "United States",
+    "Canada",
+    "Europe",
+    "Japan",
+    "South Korea",
+    "Southeast Asia",
+    "Latin America",
+    "Africa",
+    "Middle East"
+  ],
+  "exclude": [
+    "wedding videography",
+    "generic photography",
+    "dance school",
+    "3D printing"
+  ],
+  "caveat": "Language coverage is a query plan, not evidence that queries were executed or businesses verified."
+}

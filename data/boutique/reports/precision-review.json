@@ -1,0 +1,257 @@
+{
+  "method": "Deterministic 25-record worksheet for primary-source review. A generated worksheet is not a completed human review or publication approval.",
+  "human_reviewed": 0,
+  "false_positive_rate": null,
+  "records": [
+    {
+      "record_id": "boutique-7649a1e73c992e6dadd6f0c3b8fa",
+      "name": "Boddah",
+      "website": "https://boddah.hu",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-f075e603856aecfb842884661686",
+      "name": "Lumatic",
+      "website": "https://lumatic.xyz",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-f392c7bf0b0467d8c92687462098",
+      "name": "Animaza Studios",
+      "website": "https://www.animaza.com/",
+      "source_url": "https://www.animaza.com/",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-78f2d1abb14efb2fe72ba67453a3",
+      "name": "Zagreb Film",
+      "website": "https://zagrebfilm.hr",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-893b6733bae793ffe6f2ee45048e",
+      "name": "808 Ltd",
+      "website": "https://808ltd.co.nz/",
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-ce137699c66f09189178ffaae40e",
+      "name": "Undercover Media",
+      "website": "https://undercover-media.co.nz/",
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-82392901a11b50482ec25ae0f619",
+      "name": "Cinemon Entertainment",
+      "website": "https://cinemon.hu",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-3a8b560f7faa96856d4ae61de26b",
+      "name": "Wolkenlenker",
+      "website": "https://wolkenlenker.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-6ae5c2f580fce7bbdfbff01675ca",
+      "name": "Bonobo Studio (distribution)",
+      "website": "https://bonobostudio.hr",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-04e482252eecf5b5a061b927015f",
+      "name": "GATO",
+      "website": "https://www.gatoanimation.jp/",
+      "source_url": "https://www.gatoanimation.jp/",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-dbbb622a570d90f588e2e0803fff",
+      "name": "Slap Happy Cartoons",
+      "website": "https://slaphappycartoons.com/",
+      "source_url": "https://slaphappycartoons.com/studio/",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-cbb506a5b6122db53c7fdb262837",
+      "name": "Trickshot Films",
+      "website": "https://trickshotfilms.com/",
+      "source_url": "https://animationireland.com/studios/",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-5ea452d06c7237c739d01437832e",
+      "name": "Studio Film Bilder",
+      "website": "https://filmbilder.de",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-626322c83ecbf37fb337daf519e2",
+      "name": "Dreamwall",
+      "website": "https://dreamwall.be",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-fd75590e21e4ead7300835aeb4b5",
+      "name": "Little Dream Entertainment",
+      "website": "https://littledream-entertainment.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-fe6c263d5e02073d95125e6d0c5d",
+      "name": "Graphilm",
+      "website": "https://graphilm.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-6867d5928a408f76a68f575e063b",
+      "name": "A Private View",
+      "website": "https://aprivateview.be",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-fb5211b610f8af1f7cf6d0b93814",
+      "name": "Karrot Animation",
+      "website": "https://karrotanimation.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-31827b31d967a8ff3cf0d112b745",
+      "name": "Fumi Studio",
+      "website": "https://fumistudio.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-69b696157809b2d9af861d87f7ca",
+      "name": "Fabrique Fantastique",
+      "website": "https://fabriquefantastique.be",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-eb31cafb88c69c4a43b9ee28576e",
+      "name": "Aardman Animations",
+      "website": "https://aardman.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-df82fc367b3d3c851eb1435a3135",
+      "name": "Brikk Animation",
+      "website": "https://brikk.se",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-9dced7d001f52caa8bb7c43b3e34",
+      "name": "Yukfoo",
+      "website": "https://yukfoo.net/",
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-df4e956bd7b7eb70e5551b33116a",
+      "name": "TAT Productions",
+      "website": "https://tatprod.com",
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    },
+    {
+      "record_id": "boutique-ad24db7248db438b76fdae889975",
+      "name": "Bizaar Studios",
+      "website": "https://www.bizaarstudios.com/",
+      "source_url": "https://www.bizaarstudios.com/",
+      "observed_on": "2026-11-07",
+      "review_status": "pending_human_review",
+      "decision": null,
+      "reason": null
+    }
+  ]
+}

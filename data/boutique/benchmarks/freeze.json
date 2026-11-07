@@ -1,0 +1,10 @@
+{
+  "frozen_on": "2026-11-07",
+  "files": {
+    "development.json": "a58a3183e8530446d679891173e3f089e40a19c373f7af10498e7c2abfe53903",
+    "held-out.json": "b1f68bb771245e205ad6d042694d9757fc696d6b76a1866b74dc2ad8f003c983"
+  },
+  "development": 100,
+  "held_out": 19,
+  "prospective_blind": false
+}

@@ -1,0 +1,110 @@
+{
+  "source_id": "ausfilm",
+  "source_version": "2026-11-07",
+  "license": "UNSPECIFIED",
+  "observed_on": "2026-11-07",
+  "complete": false,
+  "records": [
+    {
+      "source_record_id": "f4737975a87ea4c85f94",
+      "name": "ModelFarm",
+      "website": "https://modelfarm.com.au/",
+      "city": "Adelaide",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX",
+        "Animation",
+        "Virtual production"
+      ],
+      "source_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/modelfarm/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "8491b3d57d207fded60d",
+      "name": "Blackbird",
+      "website": "https://studioblackbird.com.au/",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX",
+        "Character animation",
+        "Previs"
+      ],
+      "source_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/blackbird/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "c506d69acec262f47be3",
+      "name": "Pixel Zoo",
+      "website": "https://pixelzoo.com.au/",
+      "city": "Brisbane",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation",
+        "VFX"
+      ],
+      "source_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/pixel-zoo/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "e8abcc6a3cc8e4927215",
+      "name": "Resin",
+      "website": "https://resin.com.au/",
+      "city": "Adelaide",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX"
+      ],
+      "source_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/resin/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "144bda3db957fbf8527e",
+      "name": "Luce Creative",
+      "website": "https://luce-creative.com/",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.ausfilm.com.au/about/events/animation-australia-2026/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "21c56842b3378c9481bb",
+      "name": "Studio Psycho",
+      "website": "https://studiopsycho.com/",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Oceania",
+      "source_kind": "reviewed_reference",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.ausfilm.com.au/about/events/animation-australia-2026/",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "policy": "No recursive crawling or restrictions bypass. Automated acquisition requires an explicitly reviewed reusable dataset and a documented download. Reviewed factual references do not grant source-wide reuse or publication approval.",
+  "sources": [
+    {
+      "id": "animation-ireland",
+      "license": "UNSPECIFIED",
+      "license_url": "https://animationireland.com/studios/",
+      "include_factual_references": true,
+      "automatic_collection": false,
+      "collection_mode": "bounded_reviewed_factual_references_only",
+      "robots_review": "No automatic collection enabled; robots permission not established.",
+      "reuse_review": "No source-wide redistribution grant established. Minimal company identifiers and factual service labels only; no authored prose, photos or contacts. Further permission review required for bulk automated reuse.",
+      "attribution": "Official/public source cited per observation. Factual company references only; authored descriptions and personal contacts omitted. Source-wide reuse terms not established.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Europe"
+      ],
+      "source_url": "https://animationireland.com/studios/"
+    },
+    {
+      "id": "animstudios-github",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "include_factual_references": true,
+      "automatic_collection": true,
+      "collection_mode": "author_offered_pinned_github_download",
+      "robots_review": "Not a website crawl; documented author-provided GitHub raw dataset download.",
+      "reuse_review": "Explicit dataset CC BY 4.0; full attribution and licence retained.",
+      "attribution": "Tommy Lahitte and European Animation Studios Directory contributors. CC BY 4.0. Factual projection; emails and project prose omitted.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Europe"
+      ],
+      "source_url": "https://github.com/tlahitte/animation-studios-directory/blob/8178b6b5e6db6c5b6f25206359ec44037f6d11b3/site/data/studios.json"
+    },
+    {
+      "id": "ausfilm",
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "include_factual_references": true,
+      "automatic_collection": false,
+      "collection_mode": "bounded_reviewed_factual_references_only",
+      "robots_review": "No automatic collection enabled; robots permission not established.",
+      "reuse_review": "No source-wide redistribution grant established. Minimal company identifiers and factual service labels only; no authored prose, photos or contacts. Further permission review required for bulk automated reuse.",
+      "attribution": "Official/public source cited per observation. Factual company references only; authored descriptions and personal contacts omitted. Source-wide reuse terms not established.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Oceania"
+      ],
+      "source_url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/"
+    },
+    {
+      "id": "nzfc-annecy",
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "include_factual_references": true,
+      "automatic_collection": false,
+      "collection_mode": "bounded_reviewed_factual_references_only",
+      "robots_review": "No automatic collection enabled; robots permission not established.",
+      "reuse_review": "No source-wide redistribution grant established. Minimal company identifiers and factual service labels only; no authored prose, photos or contacts. Further permission review required for bulk automated reuse.",
+      "attribution": "Official/public source cited per observation. Factual company references only; authored descriptions and personal contacts omitted. Source-wide reuse terms not established.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Oceania"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation"
+    },
+    {
+      "id": "nzfc-facilities",
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "include_factual_references": true,
+      "automatic_collection": false,
+      "collection_mode": "bounded_reviewed_factual_references_only",
+      "robots_review": "No automatic collection enabled; robots permission not established.",
+      "reuse_review": "No source-wide redistribution grant established. Minimal company identifiers and factual service labels only; no authored prose, photos or contacts. Further permission review required for bulk automated reuse.",
+      "attribution": "Official/public source cited per observation. Factual company references only; authored descriptions and personal contacts omitted. Source-wide reuse terms not established.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Oceania"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities"
+    },
+    {
+      "id": "primary-indexed",
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.welltold.games/",
+      "include_factual_references": true,
+      "automatic_collection": false,
+      "collection_mode": "bounded_reviewed_factual_references_only",
+      "robots_review": "No automatic collection enabled; robots permission not established.",
+      "reuse_review": "No source-wide redistribution grant established. Minimal company identifiers and factual service labels only; no authored prose, photos or contacts. Further permission review required for bulk automated reuse.",
+      "attribution": "Official/public source cited per observation. Factual company references only; authored descriptions and personal contacts omitted. Source-wide reuse terms not established.",
+      "reviewed_on": "2026-11-07",
+      "regions": [
+        "Asia",
+        "North America",
+        "Unknown"
+      ],
+      "source_url": "https://www.welltold.games/"
+    },
+    {
+      "id": "screen-wellington",
+      "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Official showcase inspected; mixed games, creative and VFX businesses. Co-listing is not facility evidence. Floating Rock corroboration retained in enrichment.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "vfxg-nz",
+      "source_url": "https://www.vfxg.nz/business-directory",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.vfxg.nz/business-directory",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Directory includes people; no personal-member ingestion. Historical visits are not current-operation proof.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "animation-uk",
+      "source_url": "https://www.animationuk.org/directory/",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.animationuk.org/directory/",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Direct directory fetch timed out; indexed references reviewed but no complete feed acquired.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "animetik-france",
+      "source_url": "https://www.data.gouv.fr/datasets/studios-danimation-numerique-et-effets-visuels-en-france",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "Open-Licence-2.0",
+      "license_url": "https://www.data.gouv.fr/datasets/studios-danimation-numerique-et-effets-visuels-en-france",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Open Licence 2.0 documented; official CSV download unavailable to web tool. Zero records acquired.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "ea",
+      "source_url": "https://www.ea.com/ea-studios",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://www.ea.com/ea-studios",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Previously restricted. Permission absent; remains disabled.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "cinesite",
+      "source_url": "https://cinesite.com/",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://cinesite.com/",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Previous access restriction remains; no alternate-host or screenshot workaround.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    },
+    {
+      "id": "animstudios-web",
+      "source_url": "https://animstudios.org/",
+      "automatic_collection": false,
+      "include_factual_references": false,
+      "license": "UNSPECIFIED",
+      "license_url": "https://animstudios.org/",
+      "reviewed_on": "2026-11-07",
+      "robots_review": "Not cleared for automated collection.",
+      "reuse_review": "Website HTTP 530. No website crawling enabled. Separate author-offered CC BY raw GitHub download is independently documented.",
+      "attribution": "No feed acquired.",
+      "regions": []
+    }
+  ]
+}

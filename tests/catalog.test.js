@@ -25,6 +25,17 @@ test('index loads every A/B location; provenance shards are lazy and shared',asy
   assert.equal(one,two);assert.equal(s.calls.filter(p=>p.includes('/shards/')).length,1);
   assert.deepEqual(await catalog.exportRows(catalog.rows),[{...s.f.a,evidence_class:'A'},s.f.row]);
 });
+test('boutique metadata loads lazily, verifies integrity, and retries without losing atlas rows',async()=>{
+  const s=await server(),p={record_id:'original',name:'Example',country:'Canada',region:'North America',score:10,signals:{animation:10},research_terms:['Animation'],size_claim:'Unknown',size_reviewed_on:'',independence:'unknown',external_support_need:'unknown',purchasing_intent:'unknown',research_status:'taxonomy_lead',sources:[{url:'https://example.test',basis:'existing_record_taxonomy',observed_on:'2026-11-07'}]};
+  const text=JSON.stringify({version:1,profiles:{original:p},summary:{}});s.manifest.boutique={path:'boutique.json',sha256:await C.sha(text)};s.files.set('./data/public/manifest.json',JSON.stringify(s.manifest));const catalog=await C.load(D,s.fetcher);
+  assert.equal(s.calls.some(p=>p.includes('boutique')),false);await assert.rejects(catalog.boutique(),/404/);assert.equal(catalog.rows.length,2);
+  s.files.set('./data/public/boutique.json',text+' ');await assert.rejects(catalog.boutique(),/integrity/);s.files.set('./data/public/boutique.json',text);assert.equal((await catalog.boutique()).profiles.original.score,10);assert.equal(catalog.rows[0].evidence_class,'A');
+});
+test('boutique payload cannot assert purchasing intent, inject capability scores or unsafe URLs',async()=>{
+  for(const mutate of [p=>p.purchasing_intent='likely',p=>p.external_support_need='high',p=>p.signals={capture_stage:10},p=>p.sources[0].url='javascript:alert(1)',p=>p.research_terms=[{}]]){
+    const s=await server(),p={record_id:'original',name:'Example',country:'Canada',region:'North America',score:10,signals:{animation:10},research_terms:['Animation'],size_claim:'Unknown',size_reviewed_on:'',independence:'unknown',external_support_need:'unknown',purchasing_intent:'unknown',research_status:'taxonomy_lead',sources:[{url:'https://example.test',basis:'existing_record_taxonomy',observed_on:'2026-11-07'}]};mutate(p);const text=JSON.stringify({version:1,profiles:{original:p}});s.manifest.boutique={path:'boutique.json',sha256:await C.sha(text)};s.files.set('./data/public/boutique.json',text);s.files.set('./data/public/manifest.json',JSON.stringify(s.manifest));const catalog=await C.load(D,s.fetcher);await assert.rejects(catalog.boutique(),/Invalid/);assert.equal(catalog.rows.length,2);
+  }
+});
 test('A/B filter and confirmed capabilities never inherit directory sector claims',async()=>{
   const s=await server(),catalog=await C.load(D,s.fetcher),index=D.createDirectoryIndex(catalog.rows);
   assert.equal(D.queryDirectory(index,{evidenceClass:'B'}).length,1);
@@ -97,7 +108,7 @@ test('real compact transport preserves every identity, category and original coo
   const fs=require('node:fs'),path=require('node:path'),folder=path.join(__dirname,'../data/public');
   const original=JSON.parse(fs.readFileSync(path.join(folder,'index.json'),'utf8')),packed=JSON.parse(fs.readFileSync(path.join(folder,'index.compact.json'),'utf8'));
   const rows=C.decodeIndex(packed,original.length).map(r=>r.slice(0,13)).sort((a,b)=>a[0]<b[0]?-1:1);
-  assert.deepEqual(rows,original);assert.equal(rows.filter(r=>r[12]==='company_reference').length,1116);
+  assert.deepEqual(rows,original);assert.equal(rows.filter(r=>r[12]==='company_reference').length,JSON.parse(fs.readFileSync(path.join(folder,'manifest.json'),'utf8')).counts.company_references);assert.equal(rows.filter(r=>r[0].startsWith('gamedb-')).length,1116);
 });
 test('malformed column lengths, dictionary references and identity encodings fail closed',()=>{
   const fs=require('node:fs'),packed=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'../data/public/index.compact.json'),'utf8'));

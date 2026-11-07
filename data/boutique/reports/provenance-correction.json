@@ -1,0 +1,224 @@
+{
+  "reviewed_on": "2026-11-07",
+  "scope": "Unmerged v1.2 research proposal; source identifiers and business claims unchanged.",
+  "approval_granted": false,
+  "changes": [
+    {
+      "record_id": "boutique-bd922ba2cd1dcd66361049c27ed0",
+      "field": "source_provenance.license_url",
+      "before": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "after": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/modelfarm/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-5b0a4f86c7832a4a5c659c2364b7",
+      "field": "source_provenance.license_url",
+      "before": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "after": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/blackbird/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-b6acece09cad8546d16a964d7bb3",
+      "field": "source_provenance.license_url",
+      "before": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "after": "https://www.ausfilm.com.au/about/events/animation-australia-2026/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-aa13ff36721b2d2a7b29a983fab9",
+      "field": "source_provenance.license_url",
+      "before": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/",
+      "after": "https://www.ausfilm.com.au/about/events/animation-australia-2026/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-1948fdda19b8a97e0fa6c046e6eb",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.shadedbox.com/about/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-eb78682df65c713b3e2ea45e167d",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://evileyepictures.com/services/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-794707dca6e2a37fda2a66999fb0",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://tinfilmus.com/about.html",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-0bae9ff128d068f50567d025e915",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://kissingparty.io/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-f03595ffd3f23d69f941f46f6d7b",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.zomastudios.com/about-us",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-f392c7bf0b0467d8c92687462098",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.animaza.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-4f12eceb5a8b7288cea60dfed313",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.baobabstudios.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-ad24db7248db438b76fdae889975",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.bizaarstudios.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-90f9796d8926aa5e83a051fa105b",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://dracogen.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-2d7bdd429712db419335b91d88d2",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.lech.studio/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-2f323382fc7774c428f231733c91",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://daintyproductions.com/about/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-dbbb622a570d90f588e2e0803fff",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://slaphappycartoons.com/studio/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-ec06daaf6cbbbde4e180596ca69d",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.animationrebel.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-45447431c51cf6556cc9e6561964",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://spy.my/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-05e9973688c8ce6ec157e2a67dd6",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://darksandwich.com/about/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-9a4db026193fabeaf00c99930ec4",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.robotplaygroundmedia.com/about",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-afc8f09790d01168bf47cd798efc",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://olalastudio.my/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-61d01908e19bb5e22543593cae12",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.bad-clay.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-f4ade8a856ca8386dd65e6b406b3",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://xzvco.com/about-us/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-02b32b3e25b0693f01f05a67e5f2",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://scrawlanimation.com/about",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-01143c81c58b39347c5908fd078a",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://agentorange.asia/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-3ecc7ecec4982f34a90f42b31f92",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://igloostudio.com/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-8d73d48cf82d5fbc115b47ff944b",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://namuanimation.com/?act=info.page&pcode=company2",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-04e482252eecf5b5a061b927015f",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.gatoanimation.jp/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-976e6b49bad9a2954d6a09f8c054",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://studio-q.co.jp/en/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-45b560220baa0d4816e39d8ea1c4",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://www.studiokane.art/about-studio",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    },
+    {
+      "record_id": "boutique-0a22db9eec073053d6f5aa9c93e2",
+      "field": "source_provenance.license_url",
+      "before": "https://www.welltold.games/",
+      "after": "https://ognr.kr/",
+      "reason": "Use this record’s own source as the unresolved-terms reference, not a source-group default. No licence or verification is granted."
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "source_id": "nzfc-annecy",
+  "source_version": "2026-11-07",
+  "license": "UNSPECIFIED",
+  "observed_on": "2026-11-07",
+  "complete": true,
+  "records": [
+    {
+      "source_record_id": "6836b6b339782065c25f",
+      "name": "37Degrees Studio",
+      "website": "https://37degrees-studio.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "CG",
+        "Real-time"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "dca2419fe0935832dacf",
+      "name": "AMA Digital Studio",
+      "website": "https://amadigitalstudios.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "5fa51887e8c05ec752f1",
+      "name": "Brilliant Pictures",
+      "website": "https://brilliant-pictures.com/",
+      "city": "",
+      "country": "",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D",
+        "VFX"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "70df579369841dd082ea",
+      "name": "Bungalow Films",
+      "website": "https://bungalowfilms.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "e95eea7c67049ba26970",
+      "name": "Fantail Finances",
+      "website": "https://fantailfinances.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Finance"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f290161705f2fb92e003",
+      "name": "Floating Rock Studio",
+      "website": "https://floating-rock.com/",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "CG",
+        "VFX",
+        "Cinematics"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "f41faa847f3c5294ca9a",
+      "name": "Goblin Worldwide",
+      "website": "https://goblinworldwide.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "3D"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ea8f0e9bf26f4332e285",
+      "name": "Mukpuddy",
+      "website": "https://mukpuddy.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Character animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "784e8325e282a7f2727c",
+      "name": "NZ Media Tech",
+      "website": "https://mediatechproductions.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Finance"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "e5561c0a0fdf15f6188c",
+      "name": "Rascal",
+      "website": "https://rascalkids.app/",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "bf2670c12e54882fe12a",
+      "name": "RDYSTDY",
+      "website": "https://rdystdy.com/",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Creative production"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "495c59946584f133b071",
+      "name": "Screen Wellington",
+      "website": "https://wellingtonnz.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Film office"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "4cc29f65c6821e35910e",
+      "name": "STUDIOCANAL",
+      "website": "https://studiocanal.com/",
+      "city": "",
+      "country": "",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Distribution"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "aa474d5358f70a9994ad",
+      "name": "Stretchy",
+      "website": "https://kiriandlou.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "2D",
+        "Stop-motion"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "6848242e83d17b5a7f9f",
+      "name": "The Down Low Concept",
+      "website": "https://thedownlowconcept.com/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "2450c9b92f2c3796c5f3",
+      "name": "The Sweetshop Films",
+      "website": "https://thesweetshop.tv/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "Creative production"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    },
+    {
+      "source_record_id": "ee7a9fa2ddf01602acf9",
+      "name": "Wētā FX",
+      "website": "https://wetafx.co.nz/",
+      "city": "",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "source_kind": "event_participant",
+      "size_claim": "Unknown",
+      "animation_types": [
+        "VFX",
+        "Animation"
+      ],
+      "source_url": "https://www.nzfilm.co.nz/nzfc-annecy-2026-delegation",
+      "source_updated_on": "",
+      "observed_on": "2026-11-07"
+    }
+  ]
+}
