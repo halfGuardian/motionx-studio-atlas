@@ -114,6 +114,7 @@ test_robots_404_allows_and_rate_is_honoured (test_discovery.NetworkTests.test_ro
 test_robots_disallow_does_not_fetch_page (test_discovery.NetworkTests.test_robots_disallow_does_not_fetch_page) ... ok
 test_robots_unavailability_fails_closed (test_discovery.NetworkTests.test_robots_unavailability_fails_closed) ... ok
 test_source_and_redirect_restrictions (test_discovery.NetworkTests.test_source_and_redirect_restrictions) ... ok
+test_relative_review_assets_are_retained_and_unsafe_outputs_rejected (test_global_package.ReviewPackageTests.test_relative_review_assets_are_retained_and_unsafe_outputs_rejected) ... ok
 test_actual_global_denominators_and_all_pending_approvals (test_global_programme.GlobalProgrammeTests.test_actual_global_denominators_and_all_pending_approvals) ... ok
 test_corrupted_missing_snapshot_history_is_detected (test_global_programme.GlobalProgrammeTests.test_corrupted_missing_snapshot_history_is_detected) ... ok
 test_failed_fetch_and_incomplete_history_never_infer_closure (test_global_programme.GlobalProgrammeTests.test_failed_fetch_and_incomplete_history_never_infer_closure) ... ok
@@ -283,6 +284,6 @@ test_rules_audit_reports_unavailable_and_empty_rules_honestly (test_v10.LaunchTe
 test_same_city_named_facilities_need_identity_review (test_v10.LaunchTests.test_same_city_named_facilities_need_identity_review) ... ok
 
 ----------------------------------------------------------------------
-Ran 283 tests in 61.432s
+Ran 284 tests in 62.620s
 
 OK

@@ -2,8 +2,8 @@
   "tested_on": "2026-11-07",
   "environment": "Managed cloud, Python 3.12.14, Node.js v24.22.1, Chromium 155.0.8059.79, localhost HTTP subdirectory; not a deployed Pages verification or physical low-memory handset. Real and sharded synthetic benchmark runs overlapped read-only validation work; raw conditions/results retained.",
   "python": {
-    "tests": 283,
-    "passed": 283,
+    "tests": 284,
+    "passed": 284,
     "failed": 0
   },
   "javascript": {
@@ -126,7 +126,7 @@
   "historical_failures_and_resolutions": [
     "Two older browser fixtures were updated to include the new geography module and separate-reference fit behaviour, then passed.",
     "One concurrent legacy 50,000-location baseline fixture timed out; its isolated complete rerun passed all 19 checks. The source-sharded 50,000-location benchmark passed independently.",
-    "A new geographic schema guard initially rejected the original unversioned input. Backward compatibility was restored and all 283 Python checks passed."
+    "A new geographic schema guard initially rejected the original unversioned input. Backward compatibility was restored and all 284 Python checks passed."
   ],
   "independent_quality": {
     "sample_candidates": 14,
@@ -142,5 +142,10 @@
   "human_approved": false,
   "global_complete": false,
   "canonical_updates": 0,
-  "ci_note": "Local results above. GitHub PR checks run separately; consult draft PR #18 for the latest commit run. No live manual global-workflow dispatch or deployment is claimed."
+  "ci_note": "Local results above. GitHub PR checks run separately; consult draft PR #18 for the latest commit run. No live manual global-workflow dispatch or deployment is claimed.",
+  "standalone_review_artifact": {
+    "checks": 4,
+    "passed": 4,
+    "note": "Same four dashboard cases rerun against an independently packaged HTTP directory; not added again to the 78 unique HTTP checks. Relative scripts, safe exports, mobile and missing-report behaviour pass."
+  }
 }
