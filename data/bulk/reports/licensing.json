@@ -159,6 +159,20 @@
       "records": 235
     },
     {
+      "source": "Boutique discovery: annecy-2024-company-review",
+      "url": "https://punkrobot.cl/en/studio/",
+      "dataset_version": "52a9096aa983af20a1e9bf44c4285736707cb6f00d45b6134bbcb348339908e1",
+      "retrieval_or_recorded_review": "2026-11-07",
+      "applicable_licence": "UNSPECIFIED",
+      "redistribution_status": "Permission not established",
+      "attribution_requirements": "Annecy / MIFA 2024 historical exhibitor identity supplied by the user; current company self-description assessed separately at the linked official source. Minimal factual reference, no source prose, logo or contact details. No source-wide reuse grant established.",
+      "commercial_use_restrictions": "Subject to the source-specific grant; no blanket source-wide clearance.",
+      "required_notices": "Retain original source links, dates, attribution and applicable full licence.",
+      "unresolved_questions": "Company references do not establish current facilities or independently verified services.",
+      "broader_promotion_or_reuse": "Further permission review before automated bulk reuse.",
+      "records": 172
+    },
+    {
       "source": "Boutique discovery: ausfilm",
       "url": "https://www.ausfilm.com.au/why-film-in-australia/australian-screen-businesses/post-sound-music-vfx-production/blackbird/",
       "dataset_version": "c14daa84b99d3471909c76f8da28c28f15c70410b6b9939657da7a7a79c785cb",
@@ -786,5 +800,5 @@
     "Inspect required-review rules and bypass rights; current enforcement is unconfirmed.",
     "Re-test deployed Pages after any authorised merge; this draft does not deploy."
   ],
-  "catalogue_sha256": "44545f8b667b98573377c2849f8f8437dbc630bae8874649da36a7c5f1dfbffc"
+  "catalogue_sha256": "c5344dd1c32514d97b6d3932a048fee49363efa91fdf856a7974977d4512aa98"
 }

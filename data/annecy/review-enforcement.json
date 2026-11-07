@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "observed_on": "2026-11-07",
+  "base_commit": "cf7a14949ef2ecab1549a39b1c6ef78fa9571b17",
+  "main_protected": false,
+  "protection_enabled": false,
+  "required_checks_enforcement": "off",
+  "repository_rulesets": 0,
+  "evidence_urls": [
+    "https://api.github.com/repos/halfGuardian/motionx-studio-atlas/branches/main",
+    "https://api.github.com/repos/halfGuardian/motionx-studio-atlas/rulesets"
+  ],
+  "conclusion": "The observed API reports main unprotected, checks off and no repository rulesets. A draft and passing tests do not enforce human review. A maintainer must personally review and authorise publication. No repository protection or Pages setting was changed."
+}

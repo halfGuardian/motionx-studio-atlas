@@ -1,0 +1,590 @@
+{
+  "method": "Deterministic stratified worksheet; agent decisions are not human precision measurements. Check current operation, identity, relevance, geography, claims and permissions.",
+  "reconciliation_sha256": "31194e678aff765d311674ce51ab0419ce13e24942bc464539087cc21c68785d",
+  "human_reviewed": 0,
+  "precision": null,
+  "publication_approved": false,
+  "rows": [
+    {
+      "exhibitor_id": "annecy2024-0248",
+      "name": "AMOPIX",
+      "proposed_disposition": "duplicate",
+      "sources": [
+        {
+          "url": "https://amopix.com/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "4e1b601cc215ad842a87f6b9684429d0257b7ec6cac9eea51d27020084b187a4",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0037",
+      "name": "PEYO PRODUCTIONS",
+      "proposed_disposition": "duplicate",
+      "sources": [
+        {
+          "url": "https://www.peyo.company/en/productions",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "3ec5cde600f1198304693d6ec59a70c85bdf2ed4a365561aa66e67b3e4847572",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-1068",
+      "name": "M2 ANIMATION",
+      "proposed_disposition": "duplicate",
+      "sources": [
+        {
+          "url": "https://m2animation.com/about/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "85819e815859792a0b2b1f8cf19627cd79d9c7eba8b1e35701ac1496e202aad5",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0295",
+      "name": "CYBER GROUP STUDIOS",
+      "proposed_disposition": "inactive",
+      "sources": [
+        {
+          "url": "https://www.awn.com/news/cyber-group-studios-ordered-liquidate",
+          "kind": "change_report",
+          "access": "indexed_source",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "1442d726fe3934b29059117976578239b0bf92403f0c15b7db49eb5c6c47bc3b",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0561",
+      "name": "TECHNICOLOR INDIA",
+      "proposed_disposition": "inactive",
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/technicolor-india-shuts-down-operations-impacting-over-3370-employees/articleshow/118628051.cms?from=mdr",
+          "kind": "change_report",
+          "access": "indexed_source",
+          "observed_on": "2026-11-07"
+        },
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/technicolor-india-shuts-down-operations-impacting-over-3370-employees/articleshow/118628051.cms?from=mdr",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "a86001b2dbf7f98d62a39fde282c9ef3e95123bb1f23cf1008cf83b38b2af286",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0803",
+      "name": "MANGA PRODUCTIONS",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://manga.com.sa/about-us/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "cd8fd83f207aae15ace0146173ba121db7ea76d94138c989e89ec30f3f8e9bed",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0122",
+      "name": "STUDIO UNAGI",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://studio-unagi.com/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "162f0933f9924d5967d527d86510c7ec8f59fd1bba8d79ef3ad3fa7a699c0d1e",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0771",
+      "name": "MOMAKIN",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://www.momakin.pl/en/about-us",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "b92fb9d9fc8f8e502f89c92120ebb0376a33290156be74e73caf87432c8cdcac",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0736",
+      "name": "KLIPP OG LIM",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://klippoglim.no/fiction/ovary-acting/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "593c28e8cb13d669539c2c2128fe56c5d8880190e6e54e3945899aa11df00f06",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0923",
+      "name": "MINIMO VFX",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://minimovfx.com/about-us/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "fee5010983271c41928ecbefb31d4827046eaf02124dae3a4bf1960b667f3a78",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0501",
+      "name": "ZEPHYR ANIMATION",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://zephyranimation.com/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "e4da640a65c09592c6f65ed9d67d63c03775b0698924469ff04b5a5321439352",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0182",
+      "name": "MINYA FILM AND ANIMATION",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://minya.eu/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "7e083e6fff09bea1b3eeb5074de854facc3ca777c477803e7d593c7dca948428",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0083",
+      "name": "EMBUSCADE FILMS",
+      "proposed_disposition": "newly_added",
+      "sources": [
+        {
+          "url": "https://www.embuscadefilms.com/about-3",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "834d3e092eb9551684189f9a82bd00253b80fd1d3223651f94891acaaa0acd20",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0192",
+      "name": "ANIMATION PEOPLE",
+      "proposed_disposition": "previously_existing",
+      "sources": [
+        {
+          "url": "https://www.animation.cz/",
+          "kind": "official_company",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "e3edb0fb288b30e269b32b6c06d7ef1e85d294439bcc7450e6592d2df80252c0",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0783",
+      "name": "COLA ANIMATION",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "c50c5e1dc63cd41762e29ad86ed29a6e4ac6fbe715a69d394530025c7cbbb2b3",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0404",
+      "name": "MIYU PRODUCTIONS",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "8247a150cf3ede1b68cb376a25a95f6a2953e27418fb774470e71caadaa070d4",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0018",
+      "name": "SINE LEGE FILM GMBH",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "53f27bb8d34386a67007e1d159737cc3524d50c412ffcc323ef01a34308df27e",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0042",
+      "name": "VIVI FILM",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "0dfc5b4923b215e51a1ad85d7e70b2718aace519e177cfe75500bba08308058e",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0723",
+      "name": "QUARTERMAX MEDIA",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "f4fc8badfbf9c2c71b0235fda7d95ffcd402df258a30988c7056455aa433679d",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0918",
+      "name": "MAGO PRODUCTION",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "e7e6c82e4f2801a216826d0c10310f52ec6d29f6b7eb80227a4b91650cf67d04",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0535",
+      "name": "INDIGENE BROS LLC",
+      "proposed_disposition": "previously_existing",
+      "sources": [],
+      "content_hash": "1387f06f3c961658e37a928dc1be07ef70b3840e493a2b7e9b6c7387e64355e6",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0555",
+      "name": "MOME - MOHOLY-NAGY UNIVERSITY OF ART AND DESIGN BUDAPEST",
+      "proposed_disposition": "rejected",
+      "sources": [],
+      "content_hash": "d0e4e8e1e735f5050417c3a2c7ededd7277712defdd951c8ec6a42afab27c7db",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0353",
+      "name": "IFIND",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://www.ifind.pictures/copy-of-catalogue",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "7e9cfd442537f490967e06eafdd715e186238690b658e7870860f32b5151166c",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0844",
+      "name": "WITS INCUBATOR T/A TSHIMOLOGONG",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://tshimologong.joburg/about-us/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "6ce6eca4675b2eb8f2564a7fc3b8f190893f900fd55a8137298342654e201f6b",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0506",
+      "name": "SAQANIMA",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://saqanima.com/about-us/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "e49fbb6342d83504aa35879c06e5a955fabd088b6b3747276d83629b07bead2a",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0472",
+      "name": "SUPINFOCOM RUBIKA",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://rubika-edu.com/blog/films-animation-rubika-festivals-internationaux-2026/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "57d0e834c09a211865a1281d867e433e3704022cf2bb947c05d150b499854369",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0373",
+      "name": "LA PELLICULE ENSORCELÉE",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://lapelliculeensorcelee.org/qui-sommes-nous/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "a5cc5b1f4d96db0e2b6cc94e305d3c3b2d5f75a80e1a6ad758f3d66d5d20457a",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0190",
+      "name": "AMU-FAMU PRAGUE",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://www.famu.cz/en/faculty/about-famu/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "fe31bc5655550d19c4a55552fc208c74429bf04cf551219a94c011909a203c24",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-1012",
+      "name": "AARDMAN ACADEMY",
+      "proposed_disposition": "rejected",
+      "sources": [
+        {
+          "url": "https://www.aardman.com/latest-news/2023/june/the-aardman-academy-launches-in-studio-stop-motion-course/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "51673e8d193f9caf8910e19541dce6e339da339c7146796361f5a5a79362a109",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-1074",
+      "name": "WARNER BROS. DISCOVERY",
+      "proposed_disposition": "unresolved",
+      "sources": [],
+      "content_hash": "54cab55b412bb7a1f003d9fba25bbf54a27a8c20b78b95e57a1a97da62e073a8",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0799",
+      "name": "SPARKLE ANIMATION",
+      "proposed_disposition": "unresolved",
+      "sources": [],
+      "content_hash": "52406a482c84d884997b45f1a2f3a58589f3e8835bcf5425b33b113b0e0de49f",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0063",
+      "name": "TOCANTINS FILMES",
+      "proposed_disposition": "unresolved",
+      "sources": [
+        {
+          "url": "https://www.tocantinsfilmes.com/projetos",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "974d8a5af185cf3a39780cc16deddfb4f9122dbe6154416199e013e2ea8540ed",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0187",
+      "name": "MIBO LIMITED",
+      "proposed_disposition": "unresolved",
+      "sources": [
+        {
+          "url": "https://www.mibo-studio.co.uk/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "9a04506ad19a3c1181f980c087f65de2245d33f560edbe18ad96fd60e830a434",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0504",
+      "name": "POCKET STUDIO",
+      "proposed_disposition": "unresolved",
+      "sources": [
+        {
+          "url": "https://www.pocket-studio.com/about/",
+          "kind": "candidate_page",
+          "access": "readable_page",
+          "observed_on": "2026-11-07"
+        }
+      ],
+      "content_hash": "c74bfa9665d1b69cb1fcbcabe444e1f9b91380d199326e10bf43e1638b6efecf",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0958",
+      "name": "SÖRÄNGENS FOLKHÖGSKOLA",
+      "proposed_disposition": "unresolved",
+      "sources": [],
+      "content_hash": "da3c992f5a33271b442ba86ba7349ae1ccf0a17c2e45a73468b85bfa2f8e475d",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0890",
+      "name": "CLAVNA AUDIOVISUAL CLUSTER OF NAVARRA",
+      "proposed_disposition": "unresolved",
+      "sources": [],
+      "content_hash": "4b40500adf50b13a51cc3636b91e1d213f113810d7aa7c42b3c608ac2233db24",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    },
+    {
+      "exhibitor_id": "annecy2024-0946",
+      "name": "TOONWOLF STUDIO",
+      "proposed_disposition": "unresolved",
+      "sources": [],
+      "content_hash": "e18cabe5292bb64671a3ee34ec6792c0ce24b157bd89b6e49e8c23865de966fe",
+      "reviewer": null,
+      "decision": null,
+      "reason": null,
+      "review_status": "pending_human_review"
+    }
+  ]
+}

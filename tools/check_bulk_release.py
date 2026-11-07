@@ -39,6 +39,14 @@ def check(root=ROOT):
             expected=read(tmp/'public/manifest.json')
             if expected['counts']!=config['expected_counts']:raise ValueError('boutique release counts differ')
             if digest(read(root/'data/boutique/sources.json'))!=config['source_registry_hash']:raise ValueError('boutique source policy changed')
+        annecy=root/'data/annecy/release.json'
+        if annecy.exists():
+            from annecy import verify_checkpoint,extend as extend_annecy
+            config=verify_checkpoint(root/'data/annecy')
+            if expected['counts']!=config['before_counts']:raise ValueError('Annecy baseline mismatch')
+            proposal=extend_annecy(tmp/'public',root/'studios.json',root/'data/annecy')
+            expected=read(tmp/'public/manifest.json')
+            if expected['counts']!=config['after_counts']:raise ValueError('Annecy release counts differ')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')

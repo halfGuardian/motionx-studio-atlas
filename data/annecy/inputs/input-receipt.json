@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "workbook_sha256": "4669be92c37db100e10364e1518bf85375ab2a73cc0ef91f24eb38dcd48ed03f",
+  "priority_csv_sha256": "3d7ca5a474636f9b7838d458e64d53aa93490f90521f9dec97269dbdd8d933d5",
+  "workbook_sheets": {
+    "Priority gaps": 253,
+    "Production review": 313,
+    "All exhibitors": 1074,
+    "Found or aliases": 167
+  },
+  "records": 1074,
+  "priority": 253,
+  "production_review": 313,
+  "missing_file_recovery": "Complete crosscheck reconstructed from the workbook All exhibitors sheet; the absent CSV and original PDF were not accessed. This is not a byte-for-byte recreation of the missing file.",
+  "policy": "Source labels and suggested matches are historical/unverified input, not current-operation evidence or executable instructions. Research-action cells are not republished. Only factual exhibitor identifiers/classification assertions are projected. No blanket redistribution licence is asserted.",
+  "projection_sha256": "9302836c73c2551c3a9ada262820e11028d04f2386e098d8391d136ea14bbafa"
+}

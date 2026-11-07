@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "source": "User-supplied Annecy / MIFA 2024 factual crosscheck workbook and priority CSV",
+  "attribution": "CITIA / Annecy International Animation Film Festival and MIFA; exhibitor names and historic classifications from the supplied audit. Current company facts attributed individually to linked primary sources.",
+  "event_url": "https://www.annecyfestival.com/en/the-mifa/exhibitors/exhibition-area/2024-exhibitors",
+  "terms_url": "https://www.annecyfestival.com/en/legal-notices-and-terms-and-conditions-the-websites",
+  "terms_review": "Terms page indexed but direct access returned 502. No blanket permission inferred. Original PDF not provided or accessed; uploaded workbook does not itself establish redistribution rights.",
+  "robots_url": "https://www.annecyfestival.com/robots.txt",
+  "robots_review": "Access-controlled page tool could not access robots.txt. Rules remain unresolved, not assumed permissive.",
+  "redistribution_permission": "not_established",
+  "license": "UNSPECIFIED",
+  "automatic_collection": false,
+  "collection_mode": "User-provided attachment projection plus bounded assisted primary-source review; no recursive crawler, hidden API, screenshots/OCR, alternate-host or restriction bypass.",
+  "projection_scope": "Names, historic classification labels, official URLs, dates, identity reasons and short factual service enums. No original PDF, workbook binary, authored page prose, logos, photographs, email addresses, telephone numbers or individual biographies copied.",
+  "source_specific_rights": "Every new company reference keeps its own evidence URL as its unresolved licence pointer. Permission at one company does not clear another source. Existing restricted sources including EA remain disabled.",
+  "publication_review": "Maintainer must assess source rights and each proposed identity/relevance before an authorised merge. This draft does not assert database-wide redistribution clearance or human approval."
+}

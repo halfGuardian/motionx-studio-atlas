@@ -27,6 +27,19 @@ jobs:
         run: if [ -f data/bulk/reports/licensing.json ]; then python tools/launch_readiness.py check --output data/bulk/reports; fi
       - name: Reproduce boutique matching, benchmark and pending research proposals
         run: python tools/boutique.py check --output data/boutique/reports
+      - name: Reproduce complete Annecy reconciliation and pending human review
+        run: python tools/annecy.py check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: annecy-2024-coverage-and-human-review
+          path: |
+            data/annecy/reports
+            data/annecy/inputs/input-receipt.json
+            data/annecy/source-policy.json
+            data/annecy/README.md
+            data/annecy/validation.md
+            data/annecy/review-enforcement.json
+            data/annecy/qa
       - uses: actions/upload-artifact@v4
         with:
           name: boutique-discovery-review-and-coverage
@@ -61,6 +74,8 @@ jobs:
         run: python tests/unified_ux.py
       - name: Actual boutique view, seed identities and safe research exports
         run: python tests/boutique_browser.py
+      - name: Annecy coverage dashboard and actual company references
+        run: python tests/annecy_browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -73,6 +88,8 @@ jobs:
             /tmp/motionx-v11-*.png
             /tmp/motionx-v12-*.png
             /tmp/motionx-v12-*.json
+            /tmp/motionx-v13-*.json
+            /tmp/motionx-v13-*.png
             data/bulk/reports/licensing.html
             data/bulk/reports/licensing.json
             data/bulk/reports/review-queue.json

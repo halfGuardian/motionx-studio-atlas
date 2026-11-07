@@ -36,7 +36,7 @@ class MatchingTests(unittest.TestCase):
 class FullDiscoveryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.manifest,cls.all=records(ROOT/'data/public',ROOT/'studios.json');cls.base=[r for r in cls.all if not r['id'].startswith('boutique-')];cls.result=build_research(cls.base)
+        cls.manifest,current=records(ROOT/'data/public',ROOT/'studios.json');cls.all=[r for r in current if not r['id'].startswith('annecy-')];cls.base=[r for r in cls.all if not r['id'].startswith('boutique-')];cls.result=build_research(cls.base)
     def test_entire_41735_record_baseline_and_all_source_rows_are_examined(self):
         self.assertEqual(len(self.base),41735);self.assertEqual(self.result['summary']['existing_catalogue_records_examined'],41735)
         self.assertEqual(self.result['summary']['raw_source_rows'],sum(a['raw_records'] for a in self.result['input_audit']));self.assertEqual(len(self.result['audit']),570)

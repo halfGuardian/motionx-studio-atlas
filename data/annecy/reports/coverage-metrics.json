@@ -1,0 +1,28 @@
+{
+  "meaning": "Exhibitor-row identity representation, including duplicate event entries, not verified operating facilities, blind recall or human precision. The number of genuine eligible companies among unresolved rows remains unknown.",
+  "groups": {
+    "priority": {
+      "entries": 253,
+      "baseline_identity_represented_rows": 5,
+      "proposed_identity_represented_rows": 94,
+      "proposed_row_representation_fraction": 0.371542,
+      "research_attempts": 253
+    },
+    "production_review": {
+      "entries": 313,
+      "baseline_identity_represented_rows": 10,
+      "proposed_identity_represented_rows": 99,
+      "proposed_row_representation_fraction": 0.316294,
+      "research_attempts": 313
+    },
+    "other": {
+      "entries": 508,
+      "baseline_identity_represented_rows": 143,
+      "proposed_identity_represented_rows": 143,
+      "proposed_row_representation_fraction": 0.281496,
+      "research_attempts": 0
+    }
+  },
+  "human_precision": null,
+  "human_reviewed": 0
+}
