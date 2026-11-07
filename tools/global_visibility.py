@@ -16,7 +16,8 @@ DISPOSITIONS={'company_identity_no_verified_location','source_supported_city_reg
 
 def build(rows,home=HOME):
     original={r['id']:r for r in rows};reviews=read(home/'inputs/location-reviews.json');byid={};references={}
-    if reviews.get('version')!=1 or date.fromisoformat(reviews['reviewed_on']).isoformat()!=reviews['reviewed_on'] or reviews['reviewed_on']>date.today().isoformat():raise ValueError('Invalid actual geographic review date')
+    # The first saved review input predates an explicit version field.
+    if reviews.get('version',1)!=1 or date.fromisoformat(reviews['reviewed_on']).isoformat()!=reviews['reviewed_on'] or reviews['reviewed_on']>date.today().isoformat():raise ValueError('Invalid actual geographic review date')
     for review in reviews['records']:
         if review['record_id'] in byid:raise ValueError('Duplicate geographic review identity')
         row=original.get(review['record_id'])
