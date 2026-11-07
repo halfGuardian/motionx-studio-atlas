@@ -13,6 +13,8 @@ The earlier v1.2 factual projection contains **42 entries**, all with recorded t
 - 9 excluded under the animation/VFX boutique relevance policy (sound/DIT/general post); these remain visible in the source audit
 - 1 held for a mismatched identity: **Blockhead** links to **Assembly** on the NZFC source snapshot. Do not silently conflate these brands.
 
+The historic v1.2 boutique observation projection **discarded several source service labels**, particularly PP (post-production), S (sound) and DIT (dailies) when the entry also had animation/VFX. The v1.4 [factual service-code snapshot](nzfc-2026-11-07.json) preserves all five NZFC categories for all 42 names, without overwriting the old hash-bound input or upgrading any facility capability. The linked human-readable crosscheck now shows complete source service codes alongside catalogue dispositions.
+
 **32 of the 42 are represented as catalogue identities.** That is not 32 verified physical NZ locations. No new facility coordinates or capture-stage claims were added by this source. The nine excluded entries are genuine source listings and should be visible in audits even though they are outside the current boutique subset.
 
 [Browse every NZFC source row and its disposition](../boutique/reports/nzfc-coverage.html). The main Atlas displays a count of currently matching records without pins and an explicit link to its searchable company-reference list.
