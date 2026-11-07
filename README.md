@@ -271,3 +271,24 @@ The client fetches and validates the whole JSON file; lists are paginated at 50 
 Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v1.0 adds no private records or credentials.
 
 Committed PR discovery checkpoints are merged additively into later scans: missing candidates and earliest observation dates are retained without replacing newer run evidence or reviews. The checkpoint itself is archived and grants no approval.
+# Global company research continuation — draft PR #18
+
+The [company review dashboard](data/global-programme/continuation/reports/dashboard.html)
+contains 68 individual reviews, 30 proposed Class C company references, identity
+holds and source-backed geographic proposals. These have **not** been imported:
+all 42,296 canonical references and their original source evidence remain intact.
+See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
+
+The directory now distinguishes potential MotionX clients, service providers,
+both, adjacent/uncertain and out-of-scope records. These are recorded-sector
+eligibility labels, not purchasing intent or confirmed facility services. Game
+developers remain relevant without capture. Filters combine with AND; client and
+provider choices each include “both”. Confirmed-only capability filtering remains
+independent. Separate company-city discovery does not imply a verified facility.
+
+Four individually reviewed audio-only references are reversibly excluded from
+normal search/map/CSV results: normal results contain 42,292 references; the
+explicit audit view and direct profiles preserve all 42,296. Multidisciplinary
+visual/audio companies remain eligible. Numerical commercial/service-alignment
+scores are no longer displayed or exported. This draft does not merge or deploy.
+

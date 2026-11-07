@@ -1,3 +1,4 @@
+from public_scope import visible_counts
 """Read-only HTTP checks of actual evidence UX, review tools and safe failures."""
 import csv,io,json,os,shutil,threading,time
 from functools import partial
@@ -10,7 +11,7 @@ class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*_):pass
 
 def main():
-    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=manifest['counts'];duplicate_count=manifest['warnings']['possible_duplicate_candidates'];total_text=str(counts['records'])+' records'
+    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=visible_counts(ROOT,manifest['counts']);duplicate_count=manifest['warnings']['possible_duplicate_candidates'];total_text=str(counts['records'])+' records'
     server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT.parent)));threading.Thread(target=server.serve_forever,daemon=True).start();url=f'http://127.0.0.1:{server.server_port}/{ROOT.name}/';checks=0;report={}
     def passed(text):
         nonlocal checks;checks+=1;print('PASS '+text,flush=True)

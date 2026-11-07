@@ -1,0 +1,163 @@
+[
+  {
+    "record_id": "boutique-61d01908e19bb5e22543593cae12",
+    "name": "Bad Clay Studio",
+    "before": {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.bad-clay.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-07",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 10.82302,
+      "lng": 106.62965,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1566083",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "d0c4da93748cffd0916bf35a1397404a637b1bf7471dfc2e962db89089f05778"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates."
+  },
+  {
+    "record_id": "boutique-02b32b3e25b0693f01f05a67e5f2",
+    "name": "Scrawl Animation",
+    "before": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Singapore",
+    "country": "Singapore",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://scrawlanimation.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-07",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 1.28967,
+      "lng": 103.85007,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1880252/singapore.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates."
+  },
+  {
+    "record_id": "boutique-9a4db026193fabeaf00c99930ec4",
+    "name": "Robot Playground Media",
+    "before": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Singapore",
+    "country": "Singapore",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.robotplaygroundmedia.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-07",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 1.28967,
+      "lng": 103.85007,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1880252/singapore.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates."
+  },
+  {
+    "record_id": "boutique-bd922ba2cd1dcd66361049c27ed0",
+    "name": "ModelFarm",
+    "before": {
+      "city": "Adelaide",
+      "country": "Australia",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Adelaide",
+    "country": "Australia",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://modelfarm.com.au/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-07",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": -34.92866,
+      "lng": 138.59863,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/2078025",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "d0c4da93748cffd0916bf35a1397404a637b1bf7471dfc2e962db89089f05778"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates."
+  },
+  {
+    "record_id": "boutique-1f28c480f65ce8c30cc0b07e0628",
+    "name": "Tumblehead",
+    "before": {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Viborg",
+    "country": "Denmark",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://tumblehead.com/contact",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-07",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates."
+  }
+]

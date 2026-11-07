@@ -139,6 +139,12 @@
       if(!root.MotionXGeography&&typeof require==='function')root.MotionXGeography=require('./geography.js');
       visibility=root.MotionXGeography.validate(visibility,rows,D);
     }
+    let commercial=null;
+    if(m.commercial_scope){
+      const meta=m.commercial_scope;if(meta.path!=='commercial.json'||!/^[a-f0-9]{64}$/.test(meta.sha256))throw new Error('Invalid commercial scope path.');
+      if(!root.MotionXCommercial&&typeof require==='function')root.MotionXCommercial=require('./commercial.js');
+      commercial=root.MotionXCommercial.validate((await asset(fetcher,'./data/public/commercial.json',meta,2000000)).value,rows,D);
+    }
     const pending=new Map(),full=new Map(rows.filter(r=>baseMap.has(r.id)).map(r=>[r.id,r]));
     let boutiquePending;
     async function boutique(){
@@ -178,14 +184,14 @@
       await Promise.all(Array.from({length:Math.min(3,filtered.length)},async()=>{while(cursor<filtered.length){const i=cursor++;results[i]=await details(filtered[i].id);}}));return results;
     }
     async function exportBundle(filtered){
-      const values=(await exportRows(filtered)).map(r=>visibility?.references[r.id]?{...r,company_reference_location:visibility.references[r.id]}:r),codes=[...new Set(values.flatMap(r=>[...(r.license&&r.license!=='UNSPECIFIED'?r.license.split(' AND '):[]),...(r.company_reference_location?[r.company_reference_location.coordinate_license]:[])]))];
+      const values=(await exportRows(filtered)).map(r=>visibility?.references[r.id]?{...r,company_reference_location:visibility.references[r.id]}:r).map(r=>commercial?root.MotionXCommercial.exportFields(r,commercial):r),codes=[...new Set(values.flatMap(r=>[...(r.license&&r.license!=='UNSPECIFIED'?r.license.split(' AND '):[]),...(r.company_reference_location?[r.company_reference_location.coordinate_license]:[])]))];
       const texts=await Promise.all(codes.map(async code=>code+'\n'+await licence(fetcher,code+'.txt',m.licence_files?.[code+'.txt']?.sha256)));
       let notices=codes.includes('Apache-2.0')?await licence(fetcher,'Foursquare-NOTICE.txt',m.licence_files?.['Foursquare-NOTICE.txt']?.sha256):'';
       if(values.some(r=>r.license==='UNSPECIFIED'))notices+='\nSome source references have no explicit dataset redistribution licence. Retain each source-specific attribution and permission warning; factual references do not grant source-wide reuse rights. Authored descriptions and contacts omitted.';
       if(values.some(r=>r.company_reference_location))notices+='\nSeparate company-reference coordinates are approximate GeoNames city/region points under CC BY 4.0, not studio entrances or verified facilities. Original record coordinates remain unchanged. Retain per-reference attribution and scope.';
       return {rows:values,licenseTexts:texts.join('\n\n'),notices};
     }
-    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held,staged,visibility};
+    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held,staged,visibility,commercial};
   }
   const api={load,sha,checkB,checkResearch,decodeIndex};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MotionXCatalog=api;
 })(globalThis);

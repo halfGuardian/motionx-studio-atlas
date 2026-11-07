@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "records": [
+    {
+      "record_id": "nzcensus-1238fc887e8013b884ea4e5ef08a",
+      "name": "The Inside Track",
+      "evidence": [
+        "https://insidetrack.co.nz/"
+      ],
+      "reason": "Audio post, ADR, foley, mixing and mastering only in the demonstrated services. Film and television client credits are not visual production services.",
+      "role": "out_of_scope",
+      "excluded": true,
+      "basis": "individual_service_review",
+      "confidence": "source_supported_company_scope",
+      "human_approved": false,
+      "facility_verified": false,
+      "automatic_collection": false,
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "record_id": "nzcensus-5da0eb8be2c155c348ef9e9fefcf",
+      "name": "Native Audio",
+      "evidence": [
+        "https://www.nativeaudio.co.nz/"
+      ],
+      "reason": "Audio services for screen, games and interactive productions do not establish game development, animation or visual post.",
+      "role": "out_of_scope",
+      "excluded": true,
+      "basis": "individual_service_review",
+      "confidence": "source_supported_company_scope",
+      "human_approved": false,
+      "facility_verified": false,
+      "automatic_collection": false,
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "record_id": "nzcensus-52749b168c44aa1c71ba5b289af2",
+      "name": "Evoke Audio",
+      "evidence": [
+        "https://aucklandeconomicdevelopment.com/te-puna-creative/case-studies/te-kopua-hendersons-sound-innovators-evoke-audio"
+      ],
+      "reason": "Agency case study supports audio post in Henderson. Official homepage unavailable; present operation remains uncertain. Weta Workshop audio-play commission is not a VFX service.",
+      "role": "out_of_scope",
+      "excluded": true,
+      "basis": "individual_service_review",
+      "confidence": "source_supported_company_scope",
+      "human_approved": false,
+      "facility_verified": false,
+      "automatic_collection": false,
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "record_id": "nzcensus-a574603da74bca72ee54c088614e",
+      "name": "The Sound Room",
+      "evidence": [
+        "https://thesoundroom.co.nz/whatwedo"
+      ],
+      "reason": "Official offerings are audio, music, recording and sound design. Animation and game credits describe audio contributions, not visual animation or game development.",
+      "role": "out_of_scope",
+      "excluded": true,
+      "basis": "individual_service_review",
+      "confidence": "source_supported_company_scope",
+      "human_approved": false,
+      "facility_verified": false,
+      "automatic_collection": false,
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "record_id": "nzcensus-6555982e90d64a7764473f0d6967",
+      "name": "Envy Studios",
+      "evidence": [
+        "https://envystudios.co.nz/video-post/"
+      ],
+      "reason": "Video editing, grading, online finishing and VFX/motion graphics are demonstrated alongside audio. Retain multidisciplinary visual production.",
+      "role": "both",
+      "excluded": false,
+      "basis": "individual_service_review",
+      "confidence": "source_supported_company_scope",
+      "human_approved": false,
+      "facility_verified": false,
+      "automatic_collection": false,
+      "reviewed_on": "2026-11-07"
+    }
+  ]
+}

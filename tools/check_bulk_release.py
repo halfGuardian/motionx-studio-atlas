@@ -68,6 +68,10 @@ def check(root=ROOT):
             from global_visibility import install
             install(tmp/'public',root/'studios.json',root/'data/global-programme')
             expected=read(tmp/'public/manifest.json')
+        if (root/'data/global-programme/continuation/inputs/scope-reviews.json').exists():
+            from global_continuation import install as install_scope
+            install_scope(tmp/'public',root/'studios.json',root/'data/global-programme/continuation')
+            expected=read(tmp/'public/manifest.json')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')

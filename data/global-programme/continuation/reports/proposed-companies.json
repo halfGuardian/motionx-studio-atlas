@@ -1,0 +1,1570 @@
+[
+  {
+    "id": "globalcompany-d72df45555cac40aeecb3087558a",
+    "company_id": "globalorg-d72df45555cac40aeecb3087558a",
+    "name": "Able & Baker",
+    "city": "Madrid",
+    "country": "Spain",
+    "lat": null,
+    "lng": null,
+    "website": "https://ableandbakerstudios.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Original animation production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://ableandbakerstudios.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://ableandbakerstudios.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Current primary company claims; no independently verified facility, service availability or purchasing intent inferred.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-673b2f38159ccd8a76e08ab3",
+        "url": "https://ableandbakerstudios.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://ableandbakerstudios.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "6297582fd9fb55d6ddc66f7b4f19f900d97ab06f68caf7eb1302cb0b150a7cdf"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-2219e9bd7f08aa0062c28e10a996",
+    "company_id": "globalorg-2219e9bd7f08aa0062c28e10a996",
+    "name": "a_BAHN",
+    "city": "",
+    "country": "Luxembourg",
+    "lat": null,
+    "lng": null,
+    "website": "https://a-bahn.com/",
+    "website_kind": "official",
+    "categories": [
+      "Film production",
+      "Animation production",
+      "Immersive production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://a-bahn.com/about",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://a-bahn.com/about",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Producer of animation, documentary and immersive works; not evidence that every technical production service is offered to third parties. Luxembourg country supported; city remains unconfirmed.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-ad9024b3ca3f3ae6f0e57bd1",
+        "url": "https://a-bahn.com/about",
+        "license": "UNSPECIFIED",
+        "license_url": "https://a-bahn.com/about",
+        "observed_on": "2026-11-07",
+        "observation_hash": "cbc1eaa5e8b8e999d445c20113eeb2d2c44592140338dda52cf1b3beb4499d29"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-d120fdf7c01c8b44012dfa50cf84",
+    "company_id": "globalorg-d120fdf7c01c8b44012dfa50cf84",
+    "name": "Animadre Studio",
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": null,
+    "lng": null,
+    "website": "https://animadre.studio/",
+    "website_kind": "official",
+    "categories": [
+      "Animation production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://animadre.studio/about/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://animadre.studio/about/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Current primary company claims; no independently verified facility, service availability or purchasing intent inferred.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-e88531cca27c4723c5357d12",
+        "url": "https://animadre.studio/about/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://animadre.studio/about/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "8ac62f610099532127b8448fd0de006be769edf07eddf39bbece26f36917a9a5"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-eddb0041b128f185f88634728573",
+    "company_id": "globalorg-eddb0041b128f185f88634728573",
+    "name": "Eallin",
+    "city": "Prague",
+    "country": "Czechia",
+    "lat": null,
+    "lng": null,
+    "website": "https://eallin.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://eallin.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://eallin.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official office list names Prague, Tokyo and Bratislava. Stockholm is explicitly in development, not an active branch. Branch types and services remain separate research questions.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-63197984ab6a795c901ca138",
+        "url": "https://eallin.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://eallin.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "3eeb63777ae0578fb6ee65fd20d0ccf1183dfded7f8719461681e4762a3c9830"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-b70cffef97d4678769662965c0cc",
+    "company_id": "globalorg-b70cffef97d4678769662965c0cc",
+    "name": "Woodblock",
+    "city": "Berlin",
+    "country": "Germany",
+    "lat": null,
+    "lng": null,
+    "website": "https://woodblock.tv/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://woodblock.tv/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://woodblock.tv/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official company lists Berlin, Ludwigsburg and Los Angeles; historical Hamburg hint conflicts. No automatic relocation or deletion. Held-out worksheet remains unlabeled; this research is not independent ground truth.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-7b6a28264a99e2b4ac33d349",
+        "url": "https://woodblock.tv/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://woodblock.tv/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "dbe76d429b38a3c043c01cd8897d40cd0baaf94663bb21f0e5b256e42e1971c0"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-b986b9d2ed342423897deb75e407",
+    "company_id": "globalorg-b986b9d2ed342423897deb75e407",
+    "name": "Mirayi",
+    "city": "",
+    "country": "Malaysia",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.mirayi.my/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Game cinematics",
+      "Rigging"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.mirayi.my/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.mirayi.my/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Correct official domain was identified by search, not an access bypass. Official source supports Selangor region; Petaling Jaya is separately company self-reported, not independently established city evidence. No capture inference.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-6a83a9c56bd7f02896627971",
+        "url": "https://www.mirayi.my/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.mirayi.my/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "5bc8043f6abc168b32b3f416efd4eba48b357bf9ff6b6024534041ea9f64b853"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-499d8d70d8a65ef6172e762590bc",
+    "company_id": "globalorg-499d8d70d8a65ef6172e762590bc",
+    "name": "SMIDS ANIMATION STUDIOS",
+    "city": "",
+    "country": "Nigeria",
+    "lat": null,
+    "lng": null,
+    "website": "https://smidsstudios.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://nationaltheatre.gov.ng/event/gallery/toontopia10/e2RwmBOv",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://nationaltheatre.gov.ng/event/gallery/toontopia10/e2RwmBOv",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official homepage inaccessible; 2026 event and 2025 national theatre evidence corroborate animation producer identity, not a current physical facility or detailed services.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-d2b4b22d1b98808d8a14432e",
+        "url": "https://nationaltheatre.gov.ng/event/gallery/toontopia10/e2RwmBOv",
+        "license": "UNSPECIFIED",
+        "license_url": "https://nationaltheatre.gov.ng/event/gallery/toontopia10/e2RwmBOv",
+        "observed_on": "2026-11-07",
+        "observation_hash": "13ea6e8f4e6a647cb7a8684883a463ad583735bcff18ce0cd44f6a0487dcd776"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-d2b4b22d1b98808d8a14432e",
+        "url": "https://nifsummit.com/agenda/nifs-2026-lagos-agenda-day-3",
+        "license": "UNSPECIFIED",
+        "license_url": "https://nifsummit.com/agenda/nifs-2026-lagos-agenda-day-3",
+        "observed_on": "2026-11-07",
+        "observation_hash": "13ea6e8f4e6a647cb7a8684883a463ad583735bcff18ce0cd44f6a0487dcd776"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-f757ed129be5afeac43d683cde77",
+    "company_id": "globalorg-f757ed129be5afeac43d683cde77",
+    "name": "Mighty Animation",
+    "city": "",
+    "country": "Mexico",
+    "lat": null,
+    "lng": null,
+    "website": "https://mighty.mx/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://mighty.mx/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://mighty.mx/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Current portfolio plus independent supplier profile support company identity. Guadalajara is in older independent sources, not accepted here as a current facility location.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-452c1982c1212f4f8bdef79a",
+        "url": "https://mighty.mx/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://mighty.mx/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "b5d4d56655ff84534f1752d43bfa124ecf3e5314fdd25949595d133914194a69"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-452c1982c1212f4f8bdef79a",
+        "url": "https://welcon.kocca.kr/ko/ovs-company-info/1198",
+        "license": "UNSPECIFIED",
+        "license_url": "https://welcon.kocca.kr/ko/ovs-company-info/1198",
+        "observed_on": "2026-11-07",
+        "observation_hash": "b5d4d56655ff84534f1752d43bfa124ecf3e5314fdd25949595d133914194a69"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-3684db9dab90e6bfc37824145a40",
+    "company_id": "globalorg-3684db9dab90e6bfc37824145a40",
+    "name": "LLOLLEO CREATIVO",
+    "city": "",
+    "country": "Chile",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+    "website_kind": "source_listing",
+    "categories": [
+      "Animation production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "2026 regional industry programme and ProChile historical delegation corroborate company identity. Official website and precise municipality still unresolved; no current Valparaíso facility pin.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-5d438b49d99e1e7a08227efe",
+        "url": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+        "observed_on": "2026-11-07",
+        "observation_hash": "9f867867a577942b1b6323d5ef07d8d480f1f1dd7138033f4c367eff7a4c3a8c"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-85ce9c447e02d1d8ce90da16e69f",
+    "company_id": "globalorg-85ce9c447e02d1d8ce90da16e69f",
+    "name": "Banzai Studio",
+    "city": "",
+    "country": "Mexico",
+    "lat": null,
+    "lng": null,
+    "website": "https://banzai.mx/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Storyboards"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://banzai.mx/about/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://banzai.mx/about/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official company describes original animation and hybrid remote/office working. Do not confuse with Barcelona live-action stage banzaistudio.tv. No physical facility assumed from remote production.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-3fce2da940a019f9acdbc458",
+        "url": "https://banzai.mx/about/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://banzai.mx/about/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "6f10aabd17c5cb072f7d61fb523b87607d7a67457ceb2453df3dc34114b7be69"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-ae4237a2b8ee9630f1e7876e4fe6",
+    "company_id": "globalorg-ae4237a2b8ee9630f1e7876e4fe6",
+    "name": "Flying Kraken Creative Studios",
+    "city": "",
+    "country": "Canada",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.flyingkraken.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Art direction"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.flyingkraken.com/design-services",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.flyingkraken.com/design-services",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official design services and Canadian audiovisual directory support company identity. No current city/facility asserted.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-5265e19cc67ed3a2ae56c22b",
+        "url": "https://www.flyingkraken.com/design-services",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.flyingkraken.com/design-services",
+        "observed_on": "2026-11-07",
+        "observation_hash": "6a92db5f80c6a0dd4a010eb279eb04d500a066e0d29535bb91ddca67fe78af59"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-5265e19cc67ed3a2ae56c22b",
+        "url": "https://rdvcanada.ca/en/directories/companies/flying-kraken-creative-studios/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://rdvcanada.ca/en/directories/companies/flying-kraken-creative-studios/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "6a92db5f80c6a0dd4a010eb279eb04d500a066e0d29535bb91ddca67fe78af59"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-8985b72c3c6e47910231fadc4f3c",
+    "company_id": "globalorg-8985b72c3c6e47910231fadc4f3c",
+    "name": "Rija Films",
+    "city": "Riga",
+    "country": "Latvia",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.rijafilms.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Film production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.rijafilms.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.rijafilms.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Visual animation production plus dubbing: retain multidisciplinary company, do not exclude because audio services are also present.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-83c8fbb8f75322d299b67280",
+        "url": "https://www.rijafilms.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.rijafilms.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "612809d2efe07c2ed0647caf22af9b01b788b50c72bdabe7648e1fdd3784a36f"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-456dff79bd79952eeb96488608e8",
+    "company_id": "globalorg-456dff79bd79952eeb96488608e8",
+    "name": "Lex and Otis Studios",
+    "city": "",
+    "country": "United States",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.lexandotis.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Storyboards"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.lexandotis.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.lexandotis.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official animation/production identity corroborated by Animation Guild and commissioning game company. Do not infer a new facility or acquisition from news navigation.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-730b10e62f9527e38fca7cc7",
+        "url": "https://www.lexandotis.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.lexandotis.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "96d31c135571bc0fcfa0372a1ae4d2889702545ec59c92a9c1715169c5c88eb1"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-730b10e62f9527e38fca7cc7",
+        "url": "https://animationguild.org/about-the-guild/studios/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://animationguild.org/about-the-guild/studios/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "96d31c135571bc0fcfa0372a1ae4d2889702545ec59c92a9c1715169c5c88eb1"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-730b10e62f9527e38fca7cc7",
+        "url": "https://callofthearbiter.com/faq/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://callofthearbiter.com/faq/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "96d31c135571bc0fcfa0372a1ae4d2889702545ec59c92a9c1715169c5c88eb1"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-6e74785a3050931af1ef1638d0a2",
+    "company_id": "globalorg-6e74785a3050931af1ef1638d0a2",
+    "name": "KATANIMATE ANIMATION STUDIO",
+    "city": "Durban",
+    "country": "South Africa",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+    "website_kind": "source_listing",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Industry body and regional agency booklet corroborate animation company identity. Official company domain and current operation remain unresolved.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-0c5e7f84e77068f7e9cde1c7",
+        "url": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+        "observed_on": "2026-11-07",
+        "observation_hash": "c24506bce0c169b0525d0599bac7bddf5e286df6fa9e2ce28470f2d2d8ce6391"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-3628c3a0b0e7a0c7b5d69b89a256",
+    "company_id": "globalorg-3628c3a0b0e7a0c7b5d69b89a256",
+    "name": "Hashbane Interactive",
+    "city": "",
+    "country": "New Zealand",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.playinstinction.com/",
+    "website_kind": "official",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.playinstinction.com/faq",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.playinstinction.com/faq",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official game FAQ identifies the New Zealand developer. Prior credits of team members do not establish company services, offices abroad or capture stages. Root company website returned 502; product site is independently discoverable official evidence, not a restriction workaround.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-0ae274fc1e7ee88da00e2daf",
+        "url": "https://www.playinstinction.com/faq",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.playinstinction.com/faq",
+        "observed_on": "2026-11-07",
+        "observation_hash": "3df102d94baada60b67ad5aad6535adfc3a37a03ad6cb6ed3247e68bd86e1d7b"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-0ae274fc1e7ee88da00e2daf",
+        "url": "https://www.unrealengine.com/developer-interviews/instinction-from-architectural-visualization-to-a-dino-crisis-spiritual-successor-using-unreal-engine-5?lang=en-US",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.unrealengine.com/developer-interviews/instinction-from-architectural-visualization-to-a-dino-crisis-spiritual-successor-using-unreal-engine-5?lang=en-US",
+        "observed_on": "2026-11-07",
+        "observation_hash": "3df102d94baada60b67ad5aad6535adfc3a37a03ad6cb6ed3247e68bd86e1d7b"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-6d1e08091c7be62e83e83b06ef61",
+    "company_id": "globalorg-6d1e08091c7be62e83e83b06ef61",
+    "name": "2Up Games",
+    "city": "",
+    "country": "New Zealand",
+    "lat": null,
+    "lng": null,
+    "website": "https://2up.games/",
+    "website_kind": "official",
+    "categories": [
+      "Game Development"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official domain inaccessible; historical NZ On Air recipient and self-reported company profile establish a game-development lead, not a current physical studio. Game development is relevant without capture services.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-06b5152bc10485c9bc8100a1",
+        "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "63296c7b56a4bc5081a6d00d1b837f6b1493fb5e1ffc59a1ada7baf0850de977"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-85abe40c3fc137ea322190fbf46f",
+    "company_id": "globalorg-85abe40c3fc137ea322190fbf46f",
+    "name": "NIKOPICTO",
+    "city": "",
+    "country": "Hong Kong SAR China",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.nikopicto.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Character design"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=3461",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=3461",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official site inaccessible. Hong Kong government production directory corroborates company identity and company-level CG/character services; current physical facility remains unverified.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-acbdf20296d326b3ce7984d6",
+        "url": "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=3461",
+        "license": "UNSPECIFIED",
+        "license_url": "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=3461",
+        "observed_on": "2026-11-07",
+        "observation_hash": "66f1c525fefffb185d6c5113788b441f9c7bcd8a82d04514d00b17c4a27175f7"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-94a5dfaf12131a74cb67ebe631f6",
+    "company_id": "globalorg-94a5dfaf12131a74cb67ebe631f6",
+    "name": "Yggdrazil Group",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "lat": null,
+    "lng": null,
+    "website": "https://ygg-cg.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "VFX",
+      "Cinematics",
+      "Game Development",
+      "Rigging",
+      "Virtual Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://ygg-cg.com/what-we-do/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://ygg-cg.com/what-we-do/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official service page and 2026 trade-agency profile support multidisciplinary company identity. Virtual production is a company claim, not independently verified facility equipment or capture availability.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-b92e5da776448e49f009416d",
+        "url": "https://ygg-cg.com/what-we-do/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://ygg-cg.com/what-we-do/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "d3ef068c35eafaeeb6bfdea8cf6f6783702d6ca9e6ab7f6018aec23fdd317d78"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-b92e5da776448e49f009416d",
+        "url": "https://thai.film/website/company.php?from=service&id=34&item=17",
+        "license": "UNSPECIFIED",
+        "license_url": "https://thai.film/website/company.php?from=service&id=34&item=17",
+        "observed_on": "2026-11-07",
+        "observation_hash": "d3ef068c35eafaeeb6bfdea8cf6f6783702d6ca9e6ab7f6018aec23fdd317d78"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-60248badfbf489fc1d27c56d16a5",
+    "company_id": "globalorg-60248badfbf489fc1d27c56d16a5",
+    "name": "Bandido Guapo",
+    "city": "",
+    "country": "Argentina",
+    "lat": null,
+    "lng": null,
+    "website": "https://bandidoguapo.tv/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://bandidoguapo.tv/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://bandidoguapo.tv/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official studio page supports animation production and original IP; Buenos Aires is a founding association, not independently verified current facility geography. Do not infer games development from a project title alone.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-c24003428eeeb4d3de3655e7",
+        "url": "https://bandidoguapo.tv/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://bandidoguapo.tv/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "ddb5b3003cf42652cce1adaf5469e2e28debf96c348e1b2cfecc666c49e75ac2"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-2fee2da885c3efa0839a58ff77de",
+    "company_id": "globalorg-2fee2da885c3efa0839a58ff77de",
+    "name": "SMILEHOOD",
+    "city": "",
+    "country": "Argentina",
+    "lat": null,
+    "lng": null,
+    "website": "https://smilehood.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://cveintiuno.com/smilehood-producira-nueva-serie-animada-de-plim-plim/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://cveintiuno.com/smilehood-producira-nueva-serie-animada-de-plim-plim/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official site inaccessible; independent 2025 production announcement corroborates animation producer identity. No physical branch, capture services or present operational guarantee.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-09a7945121b8a4e7bbebc23b",
+        "url": "https://cveintiuno.com/smilehood-producira-nueva-serie-animada-de-plim-plim/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://cveintiuno.com/smilehood-producira-nueva-serie-animada-de-plim-plim/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "a3618fd724d807bca9baaf1ae84d1226a7d204f3b0dd059a3e77ed6c1af7dc15"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-d9450ebdbfe23744388f632d5fef",
+    "company_id": "globalorg-d9450ebdbfe23744388f632d5fef",
+    "name": "Red Animation Studio",
+    "city": "",
+    "country": "Peru",
+    "lat": null,
+    "lng": null,
+    "website": "https://redanima.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://redanima.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://redanima.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official animation studio page and PromPeru listing support identity. Company page Miraflores and agency San Isidro addresses differ; neither is geocoded. Rio and Tenerife are separate branch-review leads, not automatic new facilities.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-f358ee2ffff91f47160b880c",
+        "url": "https://redanima.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://redanima.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "eddeca886f2a6dd569df995b0a2f6e7dfcfd48d2684c344c17504954703cc4c4"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-f358ee2ffff91f47160b880c",
+        "url": "https://sites.peru.info/en-us/filminperu/production/det/red-animation",
+        "license": "UNSPECIFIED",
+        "license_url": "https://sites.peru.info/en-us/filminperu/production/det/red-animation",
+        "observed_on": "2026-11-07",
+        "observation_hash": "eddeca886f2a6dd569df995b0a2f6e7dfcfd48d2684c344c17504954703cc4c4"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-f358ee2ffff91f47160b880c",
+        "url": "https://www.webtenerife.co.uk/tenerifefilm/professional-directory/red-animation/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.webtenerife.co.uk/tenerifefilm/professional-directory/red-animation/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "eddeca886f2a6dd569df995b0a2f6e7dfcfd48d2684c344c17504954703cc4c4"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-3d9355fb09493471c100463924a1",
+    "company_id": "globalorg-3d9355fb09493471c100463924a1",
+    "name": "Taiwan Bar",
+    "city": "",
+    "country": "Taiwan",
+    "lat": null,
+    "lng": null,
+    "website": "https://taiwanbar.cc/",
+    "website_kind": "official",
+    "categories": [
+      "Animation production",
+      "Digital content production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://taiwanbar.cc/about-us/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://taiwanbar.cc/about-us/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official Chinese-language company page supports animated educational content. Independent government museum profile corroborates operating identity; historical Taipei association not promoted to a current physical branch.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-58cd1d1be7d0ca5ab6993f6e",
+        "url": "https://taiwanbar.cc/about-us/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://taiwanbar.cc/about-us/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "2cef2ad740d13451bc15f3083895ef81c64f9f661a11d624b193c116b7c30976"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-58cd1d1be7d0ca5ab6993f6e",
+        "url": "https://www.kmfa.gov.tw/ArtAccrediting/ArtArticleDetail.aspx?Cond=6fa267a6-ee16-47a9-8495-955e60b0789d",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.kmfa.gov.tw/ArtAccrediting/ArtArticleDetail.aspx?Cond=6fa267a6-ee16-47a9-8495-955e60b0789d",
+        "observed_on": "2026-11-07",
+        "observation_hash": "2cef2ad740d13451bc15f3083895ef81c64f9f661a11d624b193c116b7c30976"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-da5b6674e63a15947773800f294a",
+    "company_id": "globalorg-da5b6674e63a15947773800f294a",
+    "name": "STUDIO GALE",
+    "city": "Seongnam",
+    "country": "South Korea",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.studiogale.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://welcon.kocca.kr/en/directory/company/studio-gale-co-ltd--240",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://welcon.kocca.kr/en/directory/company/studio-gale-co-ltd--240",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official homepage is image-only in available tool. KOCCA company profile supports animation identity and Seongnam, not Seoul. Parent history is a historical subsidiary claim, not proof of current ownership. No Unity service is inferred at every facility.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-751f4c643db9eddd00b51829",
+        "url": "https://welcon.kocca.kr/en/directory/company/studio-gale-co-ltd--240",
+        "license": "UNSPECIFIED",
+        "license_url": "https://welcon.kocca.kr/en/directory/company/studio-gale-co-ltd--240",
+        "observed_on": "2026-11-07",
+        "observation_hash": "ea0395df3ee79ee4c9511b2e1aae990272a49184a633da662d111a02fd84a971"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-59e2ce5f50231b43dbbddc274cd7",
+    "company_id": "globalorg-59e2ce5f50231b43dbbddc274cd7",
+    "name": "Cabblow Studios",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.cabblowstudios.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.southafricanculturalobservatory.org.za/content/cabblow-studios-leadership",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.southafricanculturalobservatory.org.za/content/cabblow-studios-leadership",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Company site timed out; South African Cultural Observatory and 2025 specialist article independently corroborate animation company identity. No facility coordinate or capture claim.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-1c3681132445b2a09ae66240",
+        "url": "https://www.southafricanculturalobservatory.org.za/content/cabblow-studios-leadership",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.southafricanculturalobservatory.org.za/content/cabblow-studios-leadership",
+        "observed_on": "2026-11-07",
+        "observation_hash": "a27738d50400ee7728e429fe3b8698907184f1d8182fe32db4af6e5d146c15d9"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-1c3681132445b2a09ae66240",
+        "url": "https://www.awn.com/animationworld/cabblow-studios-talks-crimson-rorisang-and-all-things-female",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.awn.com/animationworld/cabblow-studios-talks-crimson-rorisang-and-all-things-female",
+        "observed_on": "2026-11-07",
+        "observation_hash": "a27738d50400ee7728e429fe3b8698907184f1d8182fe32db4af6e5d146c15d9"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-1155a94afc8b87512e78159b50f5",
+    "company_id": "globalorg-1155a94afc8b87512e78159b50f5",
+    "name": "AMBANI AFRICA",
+    "city": "",
+    "country": "South Africa",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.ambaniafrica.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Digital / Interactive Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://www.ambaniafrica.com/s-projects-side-by-side",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://www.ambaniafrica.com/s-projects-side-by-side",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official corporate services support animation, AR and gamified educational content. Retain relevant visual/digital services despite educational focus; no independent capture or game-development facility claim.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-130b70478b14ebad0a3d66a9",
+        "url": "https://www.ambaniafrica.com/s-projects-side-by-side",
+        "license": "UNSPECIFIED",
+        "license_url": "https://www.ambaniafrica.com/s-projects-side-by-side",
+        "observed_on": "2026-11-07",
+        "observation_hash": "caf5563a21cb69586a2b70624245df843ca183843ced63d91627cd6c6491cb3d"
+      },
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-130b70478b14ebad0a3d66a9",
+        "url": "https://wsa-global.org/winner/ambani-africa/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://wsa-global.org/winner/ambani-africa/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "caf5563a21cb69586a2b70624245df843ca183843ced63d91627cd6c6491cb3d"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-7e9cc9b11316bd302ae3330215cc",
+    "company_id": "globalorg-7e9cc9b11316bd302ae3330215cc",
+    "name": "LOBEROSO STUDIO",
+    "city": "",
+    "country": "Brazil",
+    "lat": null,
+    "lng": null,
+    "website": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+    "website_kind": "source_listing",
+    "categories": [
+      "Animation"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "2025 Senac animation event corroborates studio identity and animation production. Official domain/current municipality unresolved; no facility assumed.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-16641b13b71e23e3c92be20d",
+        "url": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "9e0acf0925f5957727c7a2d59e120065411f51ab6ed8f31108e0ef4d197bde59"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-68d8f1bc5abf81278e08cca740b9",
+    "company_id": "globalorg-68d8f1bc5abf81278e08cca740b9",
+    "name": "CZAR Amsterdam",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "lat": null,
+    "lng": null,
+    "website": "https://czar.nl/",
+    "website_kind": "official",
+    "categories": [
+      "Film / Video Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://czar.nl/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://czar.nl/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official film/photography production site and Amsterdam contact association support client eligibility. ROG/Asus commercial credits do not make this a game developer or capture provider.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-f4f38ed6fce8019fd462c79e",
+        "url": "https://czar.nl/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://czar.nl/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "15cfc3753d20dae0e6508fc190cb376ffbb00a50c891df5a7477d3360547596d"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-fa34812aadfdece6d12236f6f249",
+    "company_id": "globalorg-fa34812aadfdece6d12236f6f249",
+    "name": "Dice Film & Animation",
+    "city": "",
+    "country": "United Kingdom",
+    "lat": null,
+    "lng": null,
+    "website": "https://diceproductions.co.uk/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Film / Video Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://diceproductions.co.uk/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://diceproductions.co.uk/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official site offers animation and film production plus commissioned briefs; animation provider/client eligibility only. No physical-city or capture claim.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-14258f03ae81a3de1c1dad29",
+        "url": "https://diceproductions.co.uk/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://diceproductions.co.uk/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "8e1c98b2b28c9c098833aa7161059d61d3644a4b288f23f76ce5669a45889d6d"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-08ba896a522ade91d52cee3545fd",
+    "company_id": "globalorg-08ba896a522ade91d52cee3545fd",
+    "name": "Familiar Shadow",
+    "city": "Stratford-upon-Avon",
+    "country": "United Kingdom",
+    "lat": null,
+    "lng": null,
+    "website": "https://familiarshadow.com/",
+    "website_kind": "official",
+    "categories": [
+      "Animation production",
+      "Film / Video Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://familiarshadow.com/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://familiarshadow.com/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official creative production page supports animation/film projects and Stratford-upon-Avon headquarters, contradicting generic historical London association. Do not infer a physical game studio from tabletop/online game projects.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-5782722980d2a152794aace2",
+        "url": "https://familiarshadow.com/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://familiarshadow.com/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "57aa767dc2fb0f2798ae872aa492f1925b3425d660b51b3a7b15c9f82311fe99"
+      }
+    ]
+  },
+  {
+    "id": "globalcompany-a0b775707c531c6f11ba5078e938",
+    "company_id": "globalorg-a0b775707c531c6f11ba5078e938",
+    "name": "Flying Duck Studio Lab",
+    "city": "",
+    "country": "United Kingdom",
+    "lat": null,
+    "lng": null,
+    "website": "https://flyingduckstudiolab.co.uk/",
+    "website_kind": "official",
+    "categories": [
+      "Animation",
+      "Film / Video Production"
+    ],
+    "capabilities": [],
+    "capability_evidence": {},
+    "evidence_state": "unknown",
+    "evidence_class": "C",
+    "verified_on": "",
+    "source_observed_on": "2026-11-07",
+    "evidence": "https://flyingduckstudiolab.co.uk/",
+    "coordinate_precision": "unverified",
+    "coordinate_source": "https://flyingduckstudiolab.co.uk/",
+    "location_type": "uncertain",
+    "relationships": [],
+    "record_kind": "company_reference",
+    "identity_status": "source_provisional",
+    "status": "Research proposal only. Company self-report is not independent current-operation or physical-facility verification. No capture stage or buying intent established. Human publication review required.",
+    "license": "UNSPECIFIED",
+    "attribution": "MotionX minimal factual company reference; source-wide commercial reuse unresolved. No authored source prose, contacts or media reproduced.",
+    "research_reasons": [
+      "Official animation/design and production services support relevance; team-member prior credits and previous clients do not establish current company contracts or facility capabilities. Visual services keep it eligible despite sound/music work.",
+      "Company service assertions do not establish capabilities at every branch."
+    ],
+    "potential_duplicates": [],
+    "source_status": "company claim; independent current operation unverified",
+    "source_type": "Individual global company research",
+    "source_provenance": [
+      {
+        "source_id": "global-company-primary-review",
+        "source_record_id": "research-4261634ecb7d2c843673d0ec",
+        "url": "https://flyingduckstudiolab.co.uk/",
+        "license": "UNSPECIFIED",
+        "license_url": "https://flyingduckstudiolab.co.uk/",
+        "observed_on": "2026-11-07",
+        "observation_hash": "668d959621e5a5688bc691f46d676c44316911db202553ed67c5c7df96ac21cc"
+      }
+    ]
+  }
+]

@@ -35,6 +35,8 @@ jobs:
         run: python tools/nz_research.py check
       - name: Audit every company-only geography without changing parent records
         run: python tools/global_visibility.py check
+      - name: Check company proposals, preserved backlog and reversible scope exclusions
+        run: python tools/global_continuation.py check
       - name: Reproduce global source coverage, full identity outcomes and pending review
         run: python tools/global_programme.py check
       - name: Check actual permitted snapshot continuity and repeat-import idempotency
@@ -98,6 +100,8 @@ jobs:
         run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
       - name: Actual company-reference geography, filters and coincident selection
         run: python tests/global_visibility_browser.py
+      - name: Audience eligibility, reversible audio scope, evidence exports and mobile
+        run: python tests/commercial_browser.py
       - name: Global coverage dashboard, safe review export and missing-report handling
         run: python tests/global_review_browser.py
       - name: Evidence colours, mixed clusters, research review and launch readiness

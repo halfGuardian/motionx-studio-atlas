@@ -63,7 +63,7 @@ def check(home=HOME):
     for name,h in baseline['original_public_files'].items():
         if name!='manifest.json' and sha(ROOT/'data/public'/name)!=h:raise ValueError('Historical public file changed: '+name)
     original_manifest=read(home/'inputs/parent-manifest.json')
-    if {k:v for k,v in m.items() if k!='global_visibility'}!=original_manifest:raise ValueError('Parent manifest metadata changed beyond the display sidecar')
+    if {k:v for k,v in m.items() if k not in ('global_visibility','commercial_scope')}!=original_manifest:raise ValueError('Parent manifest metadata changed beyond the display/scope sidecars')
     if sha(ROOT/'studios.json')!=baseline['root_sha256'] or m['counts']!=baseline['counts']:raise ValueError('Original root/counts changed')
     value,audit=build(rows,home)
     descriptor=m.get('global_visibility',{})

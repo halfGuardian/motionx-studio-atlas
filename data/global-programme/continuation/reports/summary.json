@@ -1,0 +1,49 @@
+{
+  "starting_commit": "d5583994cda4dd3c99aa28508666057e5e0e96fa",
+  "reviewed_on_utc": "2026-11-07",
+  "canonical_records_before": 42296,
+  "canonical_records_after": 42296,
+  "canonical_additions": 0,
+  "proposed_new_class_c_company_references": 30,
+  "individual_company_reviews": 68,
+  "backlog_keys_reviewed": 60,
+  "backlog_keys_remaining": 665,
+  "backlog_observations_preserved": 753,
+  "backlog_keys_preserved": 725,
+  "research_dispositions": {
+    "company_proposal_prepared": 30,
+    "existing_identity_reconciled": 10,
+    "identity_review": 2,
+    "research_out_of_scope": 1,
+    "research_unresolved": 25
+  },
+  "countries_individually_investigated": 35,
+  "commercial_role_counts": {
+    "adjacent_uncertain": 123,
+    "both": 5838,
+    "out_of_scope": 4,
+    "potential_client": 36311,
+    "service_provider": 20
+  },
+  "audio_only_exclusions": 4,
+  "normal_results_before": 42296,
+  "normal_results_after": 42292,
+  "audit_results_after": 42296,
+  "map_markers_changed": 0,
+  "original_records_changed": 0,
+  "geographic_review_proposals": 5,
+  "new_verified_facilities": 0,
+  "new_verified_capabilities": 0,
+  "human_approved": false,
+  "independent_precision": null,
+  "independent_recall": null,
+  "validation_errors": 0,
+  "warnings": [
+    "Canonical records remain frozen; company proposals have not been imported or published.",
+    "Company self-report and historical exhibitor/directory corroboration do not independently prove current operation.",
+    "725 normalized queue keys are not 725 verified distinct businesses.",
+    "No new automated collection permissions or source completeness claims.",
+    "The 14-candidate held-out evaluation still lacks independent human labels.",
+    "Role classifications derive mostly from recorded source sectors; they do not establish purchasing intent or current service availability."
+  ]
+}

@@ -1,0 +1,1959 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "reviews": [
+    {
+      "candidate_id": "research-673b2f38159ccd8a76e08ab3",
+      "name": "Able & Baker",
+      "country": "Spain",
+      "official_name": "Able & Baker",
+      "aliases": [],
+      "official_website": "https://ableandbakerstudios.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Madrid",
+      "company_claims": [
+        "Animation",
+        "Original animation production"
+      ],
+      "reason": "Current primary company claims; no independently verified facility, service availability or purchasing intent inferred.",
+      "evidence": [
+        {
+          "url": "https://ableandbakerstudios.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-ad9024b3ca3f3ae6f0e57bd1",
+      "name": "a_BAHN",
+      "country": "Luxembourg",
+      "official_name": "a_BAHN",
+      "aliases": [],
+      "official_website": "https://a-bahn.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Film production",
+        "Animation production",
+        "Immersive production"
+      ],
+      "reason": "Producer of animation, documentary and immersive works; not evidence that every technical production service is offered to third parties. Luxembourg country supported; city remains unconfirmed.",
+      "evidence": [
+        {
+          "url": "https://a-bahn.com/about",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-e88531cca27c4723c5357d12",
+      "name": "Animadre Studio",
+      "country": "Austria",
+      "official_name": "Animadre Studio",
+      "aliases": [],
+      "official_website": "https://animadre.studio/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "Vienna",
+      "company_claims": [
+        "Animation production"
+      ],
+      "reason": "Current primary company claims; no independently verified facility, service availability or purchasing intent inferred.",
+      "evidence": [
+        {
+          "url": "https://animadre.studio/about/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-acbab30d43159edd9dda2c43",
+      "name": "bounty.studio",
+      "country": "Austria",
+      "official_name": "bounty.studio",
+      "aliases": [],
+      "official_website": "https://bounty.studio/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL could not be read through the available browser tool. Historical Vienna association is retained in the queue; current operation and geography not established. No alternate-host workaround.",
+      "evidence": [
+        {
+          "url": "https://bounty.studio/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-91206c4f527a480c5b3c2631",
+      "name": "Dada! Animation",
+      "country": "France",
+      "official_name": "Dada! Animation",
+      "aliases": [],
+      "official_website": "https://dada-animation.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official page inaccessible through available tool; no claim of closure, current operation or verified Paris facility.",
+      "evidence": [
+        {
+          "url": "https://dada-animation.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-63197984ab6a795c901ca138",
+      "name": "Eallin",
+      "country": "Czechia",
+      "official_name": "Eallin",
+      "aliases": [],
+      "official_website": "https://eallin.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Prague",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official office list names Prague, Tokyo and Bratislava. Stockholm is explicitly in development, not an active branch. Branch types and services remain separate research questions.",
+      "evidence": [
+        {
+          "url": "https://eallin.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-f1536d50579d4e04216974cc",
+      "name": "Eyebolls",
+      "country": "United Kingdom",
+      "official_name": "Eyebolls",
+      "aliases": [],
+      "official_website": "https://eyebolls.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL inaccessible. Historical London hint is not accepted as current geographic evidence.",
+      "evidence": [
+        {
+          "url": "https://eyebolls.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-7b6a28264a99e2b4ac33d349",
+      "name": "Woodblock",
+      "country": "Germany",
+      "official_name": "Woodblock",
+      "aliases": [],
+      "official_website": "https://woodblock.tv/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Berlin",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official company lists Berlin, Ludwigsburg and Los Angeles; historical Hamburg hint conflicts. No automatic relocation or deletion. Held-out worksheet remains unlabeled; this research is not independent ground truth.",
+      "evidence": [
+        {
+          "url": "https://woodblock.tv/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-6a83a9c56bd7f02896627971",
+      "name": "MIRAYI SDN BHD",
+      "country": "Malaysia",
+      "official_name": "Mirayi",
+      "aliases": [
+        "Mirayi"
+      ],
+      "official_website": "https://www.mirayi.my/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Game cinematics",
+        "Rigging"
+      ],
+      "reason": "Correct official domain was identified by search, not an access bypass. Official source supports Selangor region; Petaling Jaya is separately company self-reported, not independently established city evidence. No capture inference.",
+      "evidence": [
+        {
+          "url": "https://www.mirayi.my/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-fd039e5d6d5e2b497c7de050",
+      "name": "SPACESHEEP STUDIO",
+      "country": "Malaysia",
+      "official_name": "SPACESHEEP STUDIO",
+      "aliases": [],
+      "official_website": "https://www.spacesheep.com.my/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "directory_only",
+      "commercial_role": "adjacent_uncertain",
+      "city": "Petaling Jaya",
+      "company_claims": [],
+      "reason": "Malaysian trade agency lists this company and city. Do not conflate with French spacesheep.tv, a different-country business. Current operation and relevant visual services still require official corroboration.",
+      "evidence": [
+        {
+          "url": "https://malaysiaservices.matrade.gov.my/company-info/131146",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-d2b4b22d1b98808d8a14432e",
+      "name": "SMIDS ANIMATION STUDIOS",
+      "country": "Nigeria",
+      "official_name": "SMIDS ANIMATION STUDIOS",
+      "aliases": [],
+      "official_website": "https://smidsstudios.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Animation production"
+      ],
+      "reason": "Official homepage inaccessible; 2026 event and 2025 national theatre evidence corroborate animation producer identity, not a current physical facility or detailed services.",
+      "evidence": [
+        {
+          "url": "https://smidsstudios.com/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://nationaltheatre.gov.ng/event/gallery/toontopia10/e2RwmBOv",
+          "basis": "independent_2025_event"
+        },
+        {
+          "url": "https://nifsummit.com/agenda/nifs-2026-lagos-agenda-day-3",
+          "basis": "independent_2026_event"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-53471ed20400b43c13a03f6a",
+      "name": "STUDIO BOLLAND",
+      "country": "South Africa",
+      "official_name": "Studio Bo",
+      "aliases": [
+        "Studio Bo",
+        "Studio Bolland"
+      ],
+      "official_website": "https://www.studiobo.io/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Cape Town",
+      "company_claims": [
+        "Animation",
+        "Game Development",
+        "Motion design"
+      ],
+      "reason": "Current official Studio Bo site and its own Studio Bolland testimonials support alias investigation; independent agency project page explicitly connects old and current names. Do not count the rebrand twice.",
+      "evidence": [
+        {
+          "url": "https://www.studiobo.io/about",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://www.clou.ch/projekte/studio-bo",
+          "basis": "independent_alias_corroboration"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-982e5469f5015cf172969899",
+      "name": "DIPRENTE STUDIOS",
+      "country": "South Africa",
+      "official_name": "DIPRENTE STUDIOS",
+      "aliases": [],
+      "official_website": "https://diprente.co.za/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Available official URL could not be read; historical exhibitor identity retained, no active facility inferred.",
+      "evidence": [
+        {
+          "url": "https://diprente.co.za/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-452c1982c1212f4f8bdef79a",
+      "name": "MIGHTY ANIMATION",
+      "country": "Mexico",
+      "official_name": "Mighty Animation",
+      "aliases": [
+        "Mighty Animation"
+      ],
+      "official_website": "https://mighty.mx/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Current portfolio plus independent supplier profile support company identity. Guadalajara is in older independent sources, not accepted here as a current facility location.",
+      "evidence": [
+        {
+          "url": "https://mighty.mx/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://welcon.kocca.kr/ko/ovs-company-info/1198",
+          "basis": "independent_industry_directory"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-20699e5f80c0277304352ca1",
+      "name": "ANIMAKING STUDIOS",
+      "country": "Brazil",
+      "official_name": "Animaking",
+      "aliases": [
+        "Animaking"
+      ],
+      "official_website": "https://animaking.com.br/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Florianópolis",
+      "company_claims": [
+        "Animation",
+        "Stop motion"
+      ],
+      "reason": "Official Portuguese company page and contact page support Florianópolis. Motion control is camera technology, not motion capture. Stop motion is not performance capture.",
+      "evidence": [
+        {
+          "url": "https://animaking.com.br/sobre/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://animaking.com.br/contatos/",
+          "basis": "official_company_geography"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-5d438b49d99e1e7a08227efe",
+      "name": "LLOLLEO CREATIVO",
+      "country": "Chile",
+      "official_name": "LLOLLEO CREATIVO",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "directory_only",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Animation production"
+      ],
+      "reason": "2026 regional industry programme and ProChile historical delegation corroborate company identity. Official website and precise municipality still unresolved; no current Valparaíso facility pin.",
+      "evidence": [
+        {
+          "url": "https://mai.cl/2026/lab-proyectos/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://www.prochile.gob.cl/noticias/detalle-noticia/2023/06/13/animaci%C3%B3n-chilena-mercado-mifa-festival-annecy-2023-prochile",
+          "basis": "independent_historical_agency"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-3fce2da940a019f9acdbc458",
+      "name": "BANZAI STUDIO MX",
+      "country": "Mexico",
+      "official_name": "Banzai Studio",
+      "aliases": [
+        "Banzai Studio"
+      ],
+      "official_website": "https://banzai.mx/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Storyboards"
+      ],
+      "reason": "Official company describes original animation and hybrid remote/office working. Do not confuse with Barcelona live-action stage banzaistudio.tv. No physical facility assumed from remote production.",
+      "evidence": [
+        {
+          "url": "https://banzai.mx/about/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-e4a37d40c298a3f275607b7f",
+      "name": "DIGITOONZ MEDIA & ENTERTAINMENT PVT. LTD.",
+      "country": "India",
+      "official_name": "Digitoonz",
+      "aliases": [
+        "Digitoonz"
+      ],
+      "official_website": "https://digitoonz.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Noida",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Contact page supports Noida and Kolkata plus Fairfield, Glendale and Madrid office addresses. Los Angeles is a marketing label for Glendale; office addresses alone do not establish production facilities.",
+      "evidence": [
+        {
+          "url": "https://digitoonz.com/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://digitoonz.com/contact/",
+          "basis": "official_company_geography"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-5265e19cc67ed3a2ae56c22b",
+      "name": "FLYING KRAKEN CREATIVE STUDIOS INC.",
+      "country": "Canada",
+      "official_name": "Flying Kraken Creative Studios",
+      "aliases": [
+        "Flying Kraken Creative Studios"
+      ],
+      "official_website": "https://www.flyingkraken.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Art direction"
+      ],
+      "reason": "Official design services and Canadian audiovisual directory support company identity. No current city/facility asserted.",
+      "evidence": [
+        {
+          "url": "https://www.flyingkraken.com/design-services",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://rdvcanada.ca/en/directories/companies/flying-kraken-creative-studios/",
+          "basis": "independent_industry_directory"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-83c8fbb8f75322d299b67280",
+      "name": "Rija Films",
+      "country": "Latvia",
+      "official_name": "Rija Films",
+      "aliases": [],
+      "official_website": "https://www.rijafilms.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Riga",
+      "company_claims": [
+        "Animation",
+        "Film production"
+      ],
+      "reason": "Visual animation production plus dubbing: retain multidisciplinary company, do not exclude because audio services are also present.",
+      "evidence": [
+        {
+          "url": "https://www.rijafilms.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-95c7273c4f46cd3683d7bfaa",
+      "name": "Lusco Fusco Animation",
+      "country": "Portugal",
+      "official_name": "Lusco Fusco Animation",
+      "aliases": [],
+      "official_website": "https://www.luscofuscoanimation.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Page unavailable to tool; no alternate-host retry or claim of current Porto facility.",
+      "evidence": [
+        {
+          "url": "https://www.luscofuscoanimation.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-9002e516aa6838867f54ee92",
+      "name": "Mirabilia Studio",
+      "country": "Italy",
+      "official_name": "Mirabilia Studio",
+      "aliases": [],
+      "official_website": "https://www.mirabilia.studio/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official page inaccessible; historical Rome association not promoted to verified geography.",
+      "evidence": [
+        {
+          "url": "https://www.mirabilia.studio/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-421d9c9702ca47b368ec551c",
+      "name": "Eye Present",
+      "country": "United Kingdom",
+      "official_name": "Eye Present",
+      "aliases": [],
+      "official_website": "https://www.eyepresent.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Readable homepage contains image references but no substantive operating, service or geographic evidence. A functioning URL alone is insufficient.",
+      "evidence": [
+        {
+          "url": "https://www.eyepresent.co.uk/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-730b10e62f9527e38fca7cc7",
+      "name": "LEX + OTIS",
+      "country": "United States",
+      "official_name": "Lex and Otis Studios",
+      "aliases": [
+        "Lex and Otis Studios"
+      ],
+      "official_website": "https://www.lexandotis.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Storyboards"
+      ],
+      "reason": "Official animation/production identity corroborated by Animation Guild and commissioning game company. Do not infer a new facility or acquisition from news navigation.",
+      "evidence": [
+        {
+          "url": "https://www.lexandotis.com/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://animationguild.org/about-the-guild/studios/",
+          "basis": "independent_industry_roster"
+        },
+        {
+          "url": "https://callofthearbiter.com/faq/",
+          "basis": "commissioning_company_evidence"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-448e82cf722bcc6372ec64c7",
+      "name": "NORAVISION",
+      "country": "Türkiye",
+      "official_name": "NORAVISION",
+      "aliases": [],
+      "official_website": "https://noravis.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [
+        "Distribution"
+      ],
+      "reason": "Animation programme catalogue supports distribution interest, not an operating animation production studio or specific Türkiye facility. Keep unresolved; not a new studio proposal.",
+      "evidence": [
+        {
+          "url": "https://noravis.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-0c5e7f84e77068f7e9cde1c7",
+      "name": "KATANIMATE ANIMATION STUDIO",
+      "country": "South Africa",
+      "official_name": "KATANIMATE ANIMATION STUDIO",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "directory_only",
+      "commercial_role": "both",
+      "city": "Durban",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Industry body and regional agency booklet corroborate animation company identity. Official company domain and current operation remain unresolved.",
+      "evidence": [
+        {
+          "url": "https://durbanfilmmart.co.za/clare-louis/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://www.wesgro.co.za/uploads/files/Animation-South-Africa-Studios-and-Producer%E2%80%99s-Booklet.pdf",
+          "basis": "independent_regional_agency"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-0ae274fc1e7ee88da00e2daf",
+      "name": "Hashbane Interactive",
+      "country": "New Zealand",
+      "official_name": "Hashbane Interactive",
+      "aliases": [],
+      "official_website": "https://www.playinstinction.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Game Development"
+      ],
+      "reason": "Official game FAQ identifies the New Zealand developer. Prior credits of team members do not establish company services, offices abroad or capture stages. Root company website returned 502; product site is independently discoverable official evidence, not a restriction workaround.",
+      "evidence": [
+        {
+          "url": "https://www.playinstinction.com/faq",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://www.unrealengine.com/developer-interviews/instinction-from-architectural-visualization-to-a-dino-crisis-spiritual-successor-using-unreal-engine-5?lang=en-US",
+          "basis": "independent_historical_company_profile"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-06b5152bc10485c9bc8100a1",
+      "name": "2Up Games",
+      "country": "New Zealand",
+      "official_name": "2Up Games",
+      "aliases": [],
+      "official_website": "https://2up.games/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Game Development"
+      ],
+      "reason": "Official domain inaccessible; historical NZ On Air recipient and self-reported company profile establish a game-development lead, not a current physical studio. Game development is relevant without capture services.",
+      "evidence": [
+        {
+          "url": "https://2up.games/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "basis": "independent_historical_agency"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-fa41881f0192ed515ddaa30a",
+      "name": "RDYSTDY",
+      "country": "New Zealand",
+      "official_name": "RDYSTDY",
+      "aliases": [],
+      "official_website": "https://rdystdy.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL inaccessible through the available tool. Neither name nor historical service label justifies current operation or an audio-only exclusion. Retain queue for source review; no alternate-host attempt.",
+      "evidence": [
+        {
+          "url": "https://rdystdy.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-55a0960ecfbd96e545248cb4",
+      "name": "NZ Media Tech",
+      "country": "New Zealand",
+      "official_name": "NZ Media Tech",
+      "aliases": [],
+      "official_website": "https://mediatechproductions.co.nz/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL inaccessible through the available tool. Neither name nor historical service label justifies current operation or an audio-only exclusion. Retain queue for source review; no alternate-host attempt.",
+      "evidence": [
+        {
+          "url": "https://mediatechproductions.co.nz/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-6ed1a86c6c7c6fba1560bb05",
+      "name": "Fantail Finances",
+      "country": "New Zealand",
+      "official_name": "Fantail Finances",
+      "aliases": [],
+      "official_website": "https://fantailfinances.co.nz/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL inaccessible through the available tool. Neither name nor historical service label justifies current operation or an audio-only exclusion. Retain queue for source review; no alternate-host attempt.",
+      "evidence": [
+        {
+          "url": "https://fantailfinances.co.nz/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-14c47b968d19bc42a4099ac6",
+      "name": "Franklin Rd Music & Sound",
+      "country": "New Zealand",
+      "official_name": "Franklin Rd Music & Sound",
+      "aliases": [],
+      "official_website": "https://franklinrd.co.nz/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official URL inaccessible through the available tool. Neither name nor historical service label justifies current operation or an audio-only exclusion. Retain queue for source review; no alternate-host attempt.",
+      "evidence": [
+        {
+          "url": "https://franklinrd.co.nz/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "supplemental-88604ea70b95ec84e8811674",
+      "name": "THE HIVE STUDIO",
+      "country": "Israel",
+      "official_name": "THE HIVE STUDIO",
+      "aliases": [],
+      "official_website": "https://thehivepro.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Tel Aviv",
+      "company_claims": [
+        "Animation",
+        "Storyboards"
+      ],
+      "reason": "Official source lists Tel Aviv, Jerusalem, Sderot and Athens branches. Services are company-wide claims; no branch-specific capture or technical capability is inferred. Branch physical type requires independent review.",
+      "evidence": [
+        {
+          "url": "https://thehivepro.com/about/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://animationguild.org.il/agencies/anka-%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95-%D7%90%D7%A0%D7%A7%D7%94/",
+          "basis": "independent_industry_body"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-acbdf20296d326b3ce7984d6",
+      "name": "NIKOPICTO",
+      "country": "Hong Kong SAR China",
+      "official_name": "NIKOPICTO",
+      "aliases": [],
+      "official_website": "https://www.nikopicto.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Character design"
+      ],
+      "reason": "Official site inaccessible. Hong Kong government production directory corroborates company identity and company-level CG/character services; current physical facility remains unverified.",
+      "evidence": [
+        {
+          "url": "https://www.nikopicto.com/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://fpf.ccidahk.gov.hk/en/production_directory/detail.php?id=3461",
+          "basis": "independent_government_directory"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-b92e5da776448e49f009416d",
+      "name": "YGGDRAZIL GROUP",
+      "country": "Thailand",
+      "official_name": "Yggdrazil Group",
+      "aliases": [
+        "Yggdrazil Group",
+        "YGGDRAZIL GROUP PUBLIC CO., LTD."
+      ],
+      "official_website": "https://ygg-cg.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Bangkok",
+      "company_claims": [
+        "Animation",
+        "VFX",
+        "Cinematics",
+        "Game Development",
+        "Rigging",
+        "Virtual Production"
+      ],
+      "reason": "Official service page and 2026 trade-agency profile support multidisciplinary company identity. Virtual production is a company claim, not independently verified facility equipment or capture availability.",
+      "evidence": [
+        {
+          "url": "https://ygg-cg.com/what-we-do/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://thai.film/website/company.php?from=service&id=34&item=17",
+          "basis": "independent_2026_trade_agency"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-61d01908e19bb5e22543593cae12",
+      "name": "Bad Clay Studio",
+      "country": "Vietnam",
+      "official_name": "Bad Clay Studio",
+      "aliases": [],
+      "official_website": "https://www.bad-clay.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Ho Chi Minh City",
+      "company_claims": [
+        "Animation",
+        "VFX"
+      ],
+      "reason": "Current company page supports city, creative production and AIOI co-founding claim. Preserve distinct operating identities; no automatic merger or promotion of shared services to every branch.",
+      "evidence": [
+        {
+          "url": "https://www.bad-clay.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-02b32b3e25b0693f01f05a67e5f2",
+      "name": "Scrawl Animation",
+      "country": "Singapore",
+      "official_name": "Scrawl Animation",
+      "aliases": [],
+      "official_website": "https://scrawlanimation.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Singapore",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official company/contact page supports Singapore city association; address is not geocoded as an exact facility.",
+      "evidence": [
+        {
+          "url": "https://scrawlanimation.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-9a4db026193fabeaf00c99930ec4",
+      "name": "Robot Playground Media",
+      "country": "Singapore",
+      "official_name": "Robot Playground Media",
+      "aliases": [],
+      "official_website": "https://www.robotplaygroundmedia.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Singapore",
+      "company_claims": [
+        "Animation",
+        "VFX"
+      ],
+      "reason": "Official animation/VFX company page lists Singapore address. Company claim does not independently verify a facility or service availability.",
+      "evidence": [
+        {
+          "url": "https://www.robotplaygroundmedia.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-bd922ba2cd1dcd66361049c27ed0",
+      "name": "ModelFarm",
+      "country": "Australia",
+      "official_name": "ModelFarm",
+      "aliases": [],
+      "official_website": "https://modelfarm.com.au/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Adelaide",
+      "company_claims": [
+        "Animation",
+        "VFX",
+        "Virtual Production"
+      ],
+      "reason": "Official homepage lists Adelaide and Brisbane. Separate branch follow-up; no automatic per-location VP or capture claim.",
+      "evidence": [
+        {
+          "url": "https://modelfarm.com.au/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-1f28c480f65ce8c30cc0b07e0628",
+      "name": "Tumblehead",
+      "country": "Denmark",
+      "official_name": "Tumblehead",
+      "aliases": [],
+      "official_website": "https://tumblehead.com/contact",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "Viborg",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Current official contact says Viborg; historical Copenhagen association conflicts. Propose before/after correction without altering original record or creating a Copenhagen pin.",
+      "evidence": [
+        {
+          "url": "https://tumblehead.com/contact",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-7e58ec63cec28f3fcd6dfdf688cb",
+      "name": "Lukkien",
+      "country": "Netherlands",
+      "official_name": "Lukkien",
+      "aliases": [],
+      "official_website": "https://lukkien.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official homepage inaccessible. Independent current public registry suggests Ede rather than historical Enter, but do not change or pin without sufficient geographic/identity review.",
+      "evidence": [
+        {
+          "url": "https://lukkien.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": null,
+      "record_id": "boutique-aa13ff36721b2d2a7b29a983fab9",
+      "name": "Studio Psycho",
+      "country": "Australia",
+      "official_name": "Studio Psycho",
+      "aliases": [],
+      "official_website": "https://studiopsycho.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Readable merchandise store is not proof of a physical Melbourne production branch. Currency and shipping countries are navigation, not studio locations. Review animation company about page separately.",
+      "evidence": [
+        {
+          "url": "https://studiopsycho.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-c24003428eeeb4d3de3655e7",
+      "name": "BANDIDOGUAPO",
+      "country": "Argentina",
+      "official_name": "Bandido Guapo",
+      "aliases": [
+        "Bandido Guapo"
+      ],
+      "official_website": "https://bandidoguapo.tv/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official studio page supports animation production and original IP; Buenos Aires is a founding association, not independently verified current facility geography. Do not infer games development from a project title alone.",
+      "evidence": [
+        {
+          "url": "https://bandidoguapo.tv/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-09a7945121b8a4e7bbebc23b",
+      "name": "SMILEHOOD",
+      "country": "Argentina",
+      "official_name": "SMILEHOOD",
+      "aliases": [],
+      "official_website": "https://smilehood.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Animation production"
+      ],
+      "reason": "Official site inaccessible; independent 2025 production announcement corroborates animation producer identity. No physical branch, capture services or present operational guarantee.",
+      "evidence": [
+        {
+          "url": "https://smilehood.com/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://cveintiuno.com/smilehood-producira-nueva-serie-animada-de-plim-plim/",
+          "basis": "independent_2025_production_announcement"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-f358ee2ffff91f47160b880c",
+      "name": "RED ANIMATION STUDIO",
+      "country": "Peru",
+      "official_name": "Red Animation Studio",
+      "aliases": [
+        "Red Animation Studio"
+      ],
+      "official_website": "https://redanima.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official animation studio page and PromPeru listing support identity. Company page Miraflores and agency San Isidro addresses differ; neither is geocoded. Rio and Tenerife are separate branch-review leads, not automatic new facilities.",
+      "evidence": [
+        {
+          "url": "https://redanima.com/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://sites.peru.info/en-us/filminperu/production/det/red-animation",
+          "basis": "independent_government_directory"
+        },
+        {
+          "url": "https://www.webtenerife.co.uk/tenerifefilm/professional-directory/red-animation/",
+          "basis": "independent_regional_film_commission"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-74ccdab716c67bb444c111ce",
+      "name": "MAKIA CREATIVE / MAMONCILLO",
+      "country": "Colombia",
+      "official_name": "Mamoncillo Studios",
+      "aliases": [
+        "Mamoncillo Studios"
+      ],
+      "official_website": "https://mamoncillo.co/es/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official page returned 404 on revisit; indexed company claims and independent industry reporting corroborate Mamoncillo animation identity. Composite exhibitor name may combine Makia and Mamoncillo: resolve their operating/legal relationship before any new record. A partnership does not prove ownership.",
+      "evidence": [
+        {
+          "url": "https://mamoncillo.co/es/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://www.produ.com/television/noticias/dario-silva-de-mamoncillo-buscamos-alianzas-con-estudios-en-latam-para-potencializar-nuestra-capacidad-de-produccion/",
+          "basis": "independent_industry_identity"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null,
+      "identity_hold": true
+    },
+    {
+      "candidate_id": "research-58cd1d1be7d0ca5ab6993f6e",
+      "name": "TAIWANBAR STUDIO INC.",
+      "country": "Taiwan",
+      "official_name": "Taiwan Bar",
+      "aliases": [
+        "Taiwan Bar",
+        "臺灣吧"
+      ],
+      "official_website": "https://taiwanbar.cc/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "",
+      "company_claims": [
+        "Animation production",
+        "Digital content production"
+      ],
+      "reason": "Official Chinese-language company page supports animated educational content. Independent government museum profile corroborates operating identity; historical Taipei association not promoted to a current physical branch.",
+      "evidence": [
+        {
+          "url": "https://taiwanbar.cc/about-us/",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://www.kmfa.gov.tw/ArtAccrediting/ArtArticleDetail.aspx?Cond=6fa267a6-ee16-47a9-8495-955e60b0789d",
+          "basis": "independent_government_museum_profile"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-751f4c643db9eddd00b51829",
+      "name": "STUDIO GALE",
+      "country": "South Korea",
+      "official_name": "STUDIO GALE",
+      "aliases": [],
+      "official_website": "https://www.studiogale.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "both",
+      "city": "Seongnam",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Official homepage is image-only in available tool. KOCCA company profile supports animation identity and Seongnam, not Seoul. Parent history is a historical subsidiary claim, not proof of current ownership. No Unity service is inferred at every facility.",
+      "evidence": [
+        {
+          "url": "https://www.studiogale.com/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://welcon.kocca.kr/en/directory/company/studio-gale-co-ltd--240",
+          "basis": "independent_government_industry_directory"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-1c3681132445b2a09ae66240",
+      "name": "CABBLOW STUDIOS (PTY) LTD",
+      "country": "South Africa",
+      "official_name": "Cabblow Studios",
+      "aliases": [
+        "Cabblow Studios"
+      ],
+      "official_website": "https://www.cabblowstudios.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "corroborated_identity_official_unavailable",
+      "commercial_role": "both",
+      "city": "Johannesburg",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "Company site timed out; South African Cultural Observatory and 2025 specialist article independently corroborate animation company identity. No facility coordinate or capture claim.",
+      "evidence": [
+        {
+          "url": "https://www.cabblowstudios.com/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://www.southafricanculturalobservatory.org.za/content/cabblow-studios-leadership",
+          "basis": "independent_public_industry_profile"
+        },
+        {
+          "url": "https://www.awn.com/animationworld/cabblow-studios-talks-crimson-rorisang-and-all-things-female",
+          "basis": "independent_2025_industry_profile"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-130b70478b14ebad0a3d66a9",
+      "name": "AMBANI AFRICA",
+      "country": "South Africa",
+      "official_name": "AMBANI AFRICA",
+      "aliases": [],
+      "official_website": "https://www.ambaniafrica.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Digital / Interactive Production"
+      ],
+      "reason": "Official corporate services support animation, AR and gamified educational content. Retain relevant visual/digital services despite educational focus; no independent capture or game-development facility claim.",
+      "evidence": [
+        {
+          "url": "https://www.ambaniafrica.com/s-projects-side-by-side",
+          "basis": "official_company_page"
+        },
+        {
+          "url": "https://wsa-global.org/winner/ambani-africa/",
+          "basis": "independent_award_company_profile"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-f2d1eb1043baea4104549956",
+      "name": "INFINITY ANIMATIONS",
+      "country": "Pakistan",
+      "official_name": "INFINITY ANIMATIONS",
+      "aliases": [],
+      "official_website": "https://www.infinityanimations.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Name-alike website lists US and Canadian addresses, not Pakistan. Do not merge a Pakistani exhibitor with a same-name overseas agency or the unrelated Baldurs Gate software project. Correct official identity unresolved.",
+      "evidence": [
+        {
+          "url": "https://www.infinityanimations.com/contact-us",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-16641b13b71e23e3c92be20d",
+      "name": "LOBEROSO STUDIO",
+      "country": "Brazil",
+      "official_name": "LOBEROSO STUDIO",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "directory_only",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation"
+      ],
+      "reason": "2025 Senac animation event corroborates studio identity and animation production. Official domain/current municipality unresolved; no facility assumed.",
+      "evidence": [
+        {
+          "url": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+          "basis": "access_failed_or_insufficient"
+        },
+        {
+          "url": "https://eventos.sp.senac.br/evento/anima-senac-2025/",
+          "basis": "independent_2025_educational_industry_event"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-ad0864381dfb1c88096847e4",
+      "name": "PICANTE",
+      "country": "Argentina",
+      "official_name": "PICANTE",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Search returned historical exhibitor entries but no sufficiently resolved current official identity. Generic name creates collision risk. Preserve lead, not a current operating-studio assertion.",
+      "evidence": [
+        {
+          "url": "https://www.annecyfestival.com/about/archives/2023/2023-mifa/2023-mifa-registered-companies",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-6057ae589aa4258ff3750d28",
+      "name": "GUEREZA ANIMATION",
+      "country": "Nigeria",
+      "official_name": "GUEREZA ANIMATION",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Only historical event identity and a search-indexed self-reported social profile found; no adequate current official company source. No scraping of restricted social platforms.",
+      "evidence": [
+        {
+          "url": "https://www.annecyfestival.com/about/archives/2023/2023-mifa/2023-mifa-registered-companies",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-16299adc0bcf9737c50c1339",
+      "name": "SMART CREATIVE TV",
+      "country": "Israel",
+      "official_name": "SMART CREATIVE TV",
+      "aliases": [],
+      "official_website": "",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "insufficient_current_content",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Historical development-studio category and generic name are insufficient to identify current operating business or website; do not infer a physical studio.",
+      "evidence": [
+        {
+          "url": "https://www.annecyfestival.com/en/the-mifa/exhibitors/exhibition-area/2024-exhibitors",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-6d6c33183ffd47d45aa403cb",
+      "name": "8 Lions Entertainment",
+      "country": "United Kingdom",
+      "official_name": "8 Lions Entertainment",
+      "aliases": [],
+      "official_website": "https://8lions.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://8lions.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-21e46c2c0376fe711e558355",
+      "name": "Animation Associates",
+      "country": "United Kingdom",
+      "official_name": "Animation Associates",
+      "aliases": [],
+      "official_website": "https://animation-associates.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://animation-associates.co.uk/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-b12d47eba8e4d94742b67cde",
+      "name": "Atelier 11",
+      "country": "United Kingdom",
+      "official_name": "Atelier 11",
+      "aliases": [],
+      "official_website": "https://atelier11.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://atelier11.co.uk/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-504e6c4c6f005b7a91361af9",
+      "name": "Don Dada Studio",
+      "country": "United Kingdom",
+      "official_name": "Don Dada Studio",
+      "aliases": [],
+      "official_website": "https://dondada.studio/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://dondada.studio/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-3fc7fd00558fe7ee593a6ad9",
+      "name": "Eagle Vs Bat",
+      "country": "United Kingdom",
+      "official_name": "Eagle Vs Bat",
+      "aliases": [],
+      "official_website": "https://eaglevsbat.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://eaglevsbat.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-c078439f83f5d1a290365245",
+      "name": "Kidscave Entertainment",
+      "country": "United Kingdom",
+      "official_name": "Kidscave Entertainment",
+      "aliases": [],
+      "official_website": "https://kidscave.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://kidscave.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-e598574e8691bb4c9d655bcf",
+      "name": "King Bee",
+      "country": "United Kingdom",
+      "official_name": "King Bee",
+      "aliases": [],
+      "official_website": "https://kingbee.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://kingbee.co.uk/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-f8b22d5df2267ab3161c8e8a",
+      "name": "Madmicrobe",
+      "country": "United Kingdom",
+      "official_name": "Madmicrobe",
+      "aliases": [],
+      "official_website": "https://madmicrobe.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Recorded official domain unavailable through available public web tool. Preserve historical company lead and source associations; do not infer closure or current operating location, and do not retry alternate hosts.",
+      "evidence": [
+        {
+          "url": "https://madmicrobe.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-f4f38ed6fce8019fd462c79e",
+      "name": "CZAR Amsterdam",
+      "country": "Netherlands",
+      "official_name": "CZAR Amsterdam",
+      "aliases": [],
+      "official_website": "https://czar.nl/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "Amsterdam",
+      "company_claims": [
+        "Film / Video Production"
+      ],
+      "reason": "Official film/photography production site and Amsterdam contact association support client eligibility. ROG/Asus commercial credits do not make this a game developer or capture provider.",
+      "evidence": [
+        {
+          "url": "https://czar.nl/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-14258f03ae81a3de1c1dad29",
+      "name": "Dice Film & Animation",
+      "country": "United Kingdom",
+      "official_name": "Dice Film & Animation",
+      "aliases": [],
+      "official_website": "https://diceproductions.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Film / Video Production"
+      ],
+      "reason": "Official site offers animation and film production plus commissioned briefs; animation provider/client eligibility only. No physical-city or capture claim.",
+      "evidence": [
+        {
+          "url": "https://diceproductions.co.uk/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-03eb9932771c0c8191c07898",
+      "name": "FSTVS",
+      "country": "United Kingdom",
+      "official_name": "FSTVS",
+      "aliases": [],
+      "official_website": "https://fstvs.net/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "out_of_scope",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official site is an animation jobs/events/community service, not evidence of its own animation production studio. Employer vacancy links are not FSTVS facilities. Retain source history and reject a new studio proposal.",
+      "evidence": [
+        {
+          "url": "https://fstvs.net/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-5782722980d2a152794aace2",
+      "name": "Familiar Shadow",
+      "country": "United Kingdom",
+      "official_name": "Familiar Shadow",
+      "aliases": [],
+      "official_website": "https://familiarshadow.com/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "potential_client",
+      "city": "Stratford-upon-Avon",
+      "company_claims": [
+        "Animation production",
+        "Film / Video Production"
+      ],
+      "reason": "Official creative production page supports animation/film projects and Stratford-upon-Avon headquarters, contradicting generic historical London association. Do not infer a physical game studio from tabletop/online game projects.",
+      "evidence": [
+        {
+          "url": "https://familiarshadow.com/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-4261634ecb7d2c843673d0ec",
+      "name": "Flying Duck Studio Lab",
+      "country": "United Kingdom",
+      "official_name": "Flying Duck Studio Lab",
+      "aliases": [],
+      "official_website": "https://flyingduckstudiolab.co.uk/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "both",
+      "city": "",
+      "company_claims": [
+        "Animation",
+        "Film / Video Production"
+      ],
+      "reason": "Official animation/design and production services support relevance; team-member prior credits and previous clients do not establish current company contracts or facility capabilities. Visual services keep it eligible despite sound/music work.",
+      "evidence": [
+        {
+          "url": "https://flyingduckstudiolab.co.uk/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    }
+  ]
+}
