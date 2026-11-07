@@ -89,7 +89,7 @@ test('full NZFC PP/A/VFX/S/DIT labels survive independently of reduced boutique 
   assert.deepEqual(byName.get('Images & Sound'),['PP','S','VFX','DIT']);
   for(const row of snapshot.records){
     assert.ok(row.nzfc_service_codes.length>0);
-    const reportLine=report.split('\\n').find(line=>line.includes('<th scope="row">'+escapeHtml(row.name)+'</th>'));
+    const reportLine=report.split(String.fromCharCode(10)).find(line=>line.includes('<th scope="row">'+escapeHtml(row.name)+'</th>'));
     assert.ok(reportLine&&reportLine.includes('<td>'+row.nzfc_service_codes.join(' · ')+'</td>'),'Missing complete directory categories for '+row.name);
   }
 });
