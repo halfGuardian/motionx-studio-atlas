@@ -49,8 +49,8 @@ Single final local runs, installed headless Chromium, actual HTTP subdirectory; 
 | Constrained mobile readiness | 32.666 s | 33.098 s |
 | Query all stored records | 26.2 ms / 42,296 | 21 ms / 42,478 |
 | Search compute | 11.1 ms | 14.5 ms |
-| Uncached detail profile | 122.2 ms | 77.30000000447035 ms |
+| Uncached detail profile | 122.2 ms | 77.3 ms |
 
-The compact index is 5,126,978 bytes / 2,224,418 gzip bytes; the compressed root baseline is 358,282 bytes. These compressed fallbacks are explicitly fetched and hash-checked because a static Pages host need not negotiate compression. Detail shards stay lazy. Viewport panning rendered 140 markers in 35.69999999552965 ms in this run. The full download/integrity check remains a roughly half-minute wait in the constrained scenario; sharding/search is not an offline or low-memory guarantee. The same machine was not held at fixed load between historical and final runs, so differences are observations, not a controlled speedup claim.
+The compact index is 5,126,978 bytes / 2,224,418 gzip bytes; the compressed root baseline is 358,282 bytes. These compressed fallbacks are explicitly fetched and hash-checked because a static Pages host need not negotiate compression. Detail shards stay lazy. Viewport panning rendered 140 markers in 35.7 ms in this run. The full download/integrity check remains a roughly half-minute wait in the constrained scenario; sharding/search is not an offline or low-memory guarantee. The same machine was not held at fixed load between historical and final runs, so differences are observations, not a controlled speedup claim.
 
 The separate sharded **50,000 synthetic** fixture became ready in 1.085 s, searched in 14.7 ms and opened a profile in 58.1 ms. The deliberately unsharded 50,000-row compatibility fixture took 11.792 s to load and validate (13.448 s for its scenario). Neither fixture adds real companies, public records, country coverage or verification. Full raw metrics and executed commands/logs are in `qa/`.
