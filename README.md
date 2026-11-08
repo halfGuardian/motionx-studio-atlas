@@ -3,15 +3,21 @@
 ## Global company research continuation — draft PR #18
 
 The [company review dashboard](data/global-programme/continuation/reports/dashboard.html)
-contains 70 company reviews, seven office/branch investigations, 30 proposed Class C company references, identity
-holds and source-backed geographic proposals. These have **not** been imported:
+contains 737 company/geographic reviews, seven office/branch investigations and
+184 proposed Class C company references, including the original 30. All 725 saved
+keys have an assessment; 381 identity/evidence/historical cases remain unresolved.
+The separate city queue retains 238 uninvestigated geographic associations.
+These proposals have **not** been imported:
 all 42,296 canonical references and their original source evidence remain intact.
 See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
 
-The directory now distinguishes potential MotionX clients, service providers,
-both, adjacent/uncertain and out-of-scope records. These are recorded-sector
+The directory distinguishes explicit sector eligibility as potential client,
+service provider, both, plausible unconfirmed prospect, adjacent/insufficient
+evidence and individually reviewed out of scope. These are recorded-sector
 eligibility labels, not purchasing intent or confirmed facility services. Game
-developers remain relevant without capture. Filters combine with AND; client and
+developers, animation and VFX companies remain eligible without capture. Generic
+film/video production and publishing are plausible only; visual tags alone do
+not establish an external service offer. Filters combine with AND; client and
 provider choices each include “both”. Confirmed-only capability filtering remains
 independent. Separate company-city discovery does not imply a verified facility.
 
