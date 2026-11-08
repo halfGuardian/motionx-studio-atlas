@@ -1,3 +1,9 @@
+# Final map visibility and release acceptance — PR #19
+
+The 182 admitted Class C companies now have **102 separate licensed city/urban reference points and 80 explicitly unpinned directory entries**. All 106 recorded cities were audited; four remain held for specific municipality/evidence issues, while 76 companies have no recorded city. Company search, country/sector filters, profiles and exports share the same directory. All 42,478 records and original coordinates remain unchanged.
+
+[Single owner approval summary for #15 → #18 → #19](data/release-candidate/OWNER-APPROVAL.md) · [Final map evidence audit](data/release-candidate/map-gate/reports/dashboard.html) · [Scope and reproducibility](data/release-candidate/map-gate/README.md). No merge, deployment, Pages change or fabricated human approval. Earlier checkpoint sections below retain their historical counts.
+
 # MotionX global integrated release candidate — stacked draft
 
 The actual draft atlas now contains **42,478 references**, including **182 new Class C companies** from the 184-proposal audit. Two trade-taxonomy-only cases are withheld. All 42,296 parent records remain unchanged; four audio-only records stay available in audit scope, giving 42,474 normal results. Company references have no invented coordinates or confirmed facility capabilities. Seven separately licensed city-reference points are prepared, including ModelFarm's additional Brisbane association.

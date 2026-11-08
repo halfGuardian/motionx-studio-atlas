@@ -1,0 +1,7 @@
+PASS actual styled HTTP atlas loads all 182 companies, 102 separate references and 80 unpinned companies; OSM attribution retained
+PASS new animation, game, VFX and mocap company searches combine with country/sector; keyboard markers open profiles and confirmed-only adds no invented capabilities
+PASS integrated unpinned view preserves country/category/search and explains all four city holds plus companies with no city
+PASS all coincident London company references remain individually keyboard-selectable through map movement; global clustering preserves all 110 old/new display points
+PASS filtered CSV retains null originals, provisional company rights and separate licensed city evidence; Floating Rock and Frame Machine unchanged
+PASS 390px styled map-to-unpinned keyboard navigation, profiles and complete geographic decision dashboard remain accessible
+6 final map acceptance HTTP checks passed

@@ -1,0 +1,10 @@
+{
+  "boutique_first_open_seconds": 0.329,
+  "filtered_search_compute_ms": 36.39999999990687,
+  "licensed_export_records": 2,
+  "checks": 10,
+  "records": 42478,
+  "boutique_metadata_bytes": 4717248,
+  "boutique_metadata_gzip_bytes": 315691,
+  "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x1000 and 390x844, no CPU/network throttle. Not deployed Pages or a physical low-memory device. Benchmark JSON is never requested by the app."
+}

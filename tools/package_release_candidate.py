@@ -9,7 +9,7 @@ def package(output,review_only=False,source=ROOT):
     if output.exists() or output.is_relative_to(source):raise ValueError('Fresh artifact directory outside the checkout required')
     paths=[source/'data/release-candidate',source/'data/global-programme/continuation/reports',source/'data/nz-census/final-review/reports']
     if not review_only:
-        paths=[source/'index.html',source/'studios.json',*sorted(source.glob('*.js')),source/'data/public',source/'data/release-candidate',source/'data/global-programme',source/'data/nz-census',source/'data/annecy/reports',source/'data/boutique/reports',source/'data/bulk/reports',source/'data/bulk/LICENSES',source/'data/bulk/NOTICE.html']
+        paths=[source/'index.html',source/'atlas.css',source/'studios.json',*sorted(source.glob('*.js')),source/'data/public',source/'data/release-candidate',source/'data/global-programme',source/'data/nz-census',source/'data/annecy/reports',source/'data/boutique/reports',source/'data/bulk/reports',source/'data/bulk/LICENSES',source/'data/bulk/NOTICE.html']
     for path in paths:
         if not path.exists() or path.is_symlink() or path.is_dir() and any(p.is_symlink() for p in path.rglob('*')):raise ValueError('Missing/unsafe public artifact path: '+path.name)
     for path in paths:

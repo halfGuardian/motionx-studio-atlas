@@ -46,6 +46,7 @@ jobs:
       - name: Validate the actual integrated draft and scoped current licensing audit
         run: |
           python tools/release_candidate.py check
+          python tools/map_gate.py check
           python tools/launch_readiness.py check --output data/release-candidate/reports/readiness
       - name: Package the integrated release decisions and complete static atlas
         run: |
@@ -120,6 +121,10 @@ jobs:
         run: python tests/commercial_browser.py
       - name: Integrated release-candidate companies, taxonomy, geography and exports
         run: python tests/release_candidate_browser.py
+      - name: Final admitted-company map and unpinned-directory acceptance
+        run: |
+          python tools/package_release_candidate.py --output "$RUNNER_TEMP/map-gate-atlas"
+          MOTIONX_MAP_GATE_ROOT="$RUNNER_TEMP/map-gate-atlas" python tests/map_gate_browser.py
       - name: Actual standalone company and branch review artifact
         run: |
           python tools/package_global_review.py --output "$RUNNER_TEMP/continuation-review-browser"
@@ -154,6 +159,7 @@ jobs:
             /tmp/motionx-v15-*.png
             /tmp/motionx-global-*.json
             /tmp/motionx-rc-*.json
+            /tmp/motionx-map-gate-*.json
             data/global-programme
             geography.js
             data/bulk/reports/licensing.html

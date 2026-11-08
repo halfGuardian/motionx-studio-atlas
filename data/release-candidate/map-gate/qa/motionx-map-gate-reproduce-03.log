@@ -1,0 +1,61 @@
+{
+  "existing_catalogue_records_examined": 41735,
+  "raw_source_rows": 570,
+  "decisions": {
+    "new_company_reference": 332,
+    "already_represented": 111,
+    "identity_review": 22,
+    "irrelevant_or_insufficient_specialisation": 87,
+    "repeat_source_reference": 18
+  },
+  "existing_relevant_record_ids": 127,
+  "new_unique_company_references": 332,
+  "new_confirmed_operating_locations": 0,
+  "new_verified_capture_claims": 0,
+  "qualifying_research_records": 5687,
+  "advisory_alignment_40_plus": 8,
+  "source_supported_reference_profiles": 460,
+  "taxonomy_only_leads": 5227,
+  "unique_provisional_or_operating_identity_keys": 5593,
+  "countries_with_new_references": 37,
+  "publication_approved": false,
+  "human_reviewed_precision_sample": null,
+  "limitations": [
+    "Reference benchmark is retrospective and has source overlap; held-out entities are not a blind global sample.",
+    "Size/independence are not uniformly corroborated. Relevant service evidence does not prove independent SME status.",
+    "All additions are Class C company references; zero new facility geocodes or capture-stage claims.",
+    "Taxonomy-only candidates are weak leads, not confirmed boutique companies.",
+    "Unknown source reuse terms remain visible; automatic collection stays disabled for unresolved sources."
+  ],
+  "regions": {
+    "Europe": 3638,
+    "North America": 895,
+    "Asia": 740,
+    "Oceania": 159,
+    "Latin America & Caribbean": 152,
+    "Africa": 54,
+    "Middle East": 32,
+    "Unknown": 17
+  },
+  "source_supported_regions": {
+    "Oceania": 45,
+    "Europe": 349,
+    "North America": 25,
+    "Asia": 25,
+    "Africa": 1,
+    "Unknown": 15
+  },
+  "specialisation_signals": {
+    "animation": 5509,
+    "cg": 183,
+    "character": 5,
+    "cinematics": 16,
+    "realtime": 4,
+    "pipeline": 9,
+    "vfx": 170,
+    "previs": 18
+  },
+  "unknown_size_records": 5330,
+  "new_source_listed_class_b_locations": 0,
+  "unresolved_identity_observations": 22
+}

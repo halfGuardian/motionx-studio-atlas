@@ -1,0 +1,18 @@
+{
+  "reviewed_head": "29364389eb69f1da480a15b27b8c28f3bbba7923",
+  "python_tests": 324,
+  "javascript_tests": 95,
+  "prior_http_suites": 13,
+  "prior_http_checks": 96,
+  "targeted_map_gate_root_checks": 6,
+  "packaged_map_gate_checks": 6,
+  "canonical_errors": 0,
+  "canonical_warnings": 265,
+  "full_source_replay": "passed after deterministic key-order correction",
+  "gazetteer_package_projections_verified": 68,
+  "direct_geonames_entries_reviewed": 1,
+  "all_original_records_preserved": 42478,
+  "publication_approved": false,
+  "final_http_suites": 14,
+  "final_http_checks": 102
+}

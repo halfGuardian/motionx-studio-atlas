@@ -856,5 +856,5 @@
     "Inspect required-review rules and bypass rights; current enforcement is unconfirmed.",
     "Re-test deployed Pages after any authorised merge; this draft does not deploy."
   ],
-  "catalogue_sha256": "f57aab4eda8e88ce945eb5348f8af4fbfa979f2a3858ad39870a6d392840e4f7"
+  "catalogue_sha256": "1ed52a8425e3cd0adee0bc27bd932edb05a624b4717d83e43dd9eeae7252e43a"
 }

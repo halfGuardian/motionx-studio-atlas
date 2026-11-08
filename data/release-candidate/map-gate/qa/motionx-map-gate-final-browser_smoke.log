@@ -1,0 +1,20 @@
+PASS HTTP subdirectory loading, disabled loading controls, 243 locations / 119 organizations
+PASS real Leaflet map, live OpenStreetMap tiles and attribution
+PASS coincident marker popup lists all studios and keyboard selection opens each profile
+PASS search, company grouping and profile evidence / coordinate precision
+PASS filtered CSV download with location and company identities
+PASS combined country / capability filtering and fit-results action
+PASS batch 1 organisation grouping, VFX/country filters, confirmed profile evidence, new-record CSV export and London previs
+PASS optional location type, sourced group relationships, coordinate provenance and relationship search
+PASS new co-located capture stages, precise capability filters and explicitly reviewed legacy correction
+PASS confirmed capability filtering, site-specific capture and keyboard selection between Annapurna stages
+PASS direct profile links, organisation/parent identities, back/forward, focus, AND/OR capabilities, city/type/confirmed-only, empty state and reset
+PASS 390px mobile list, profile, map navigation and no horizontal overflow
+PASS 65 coincident studios remain selectable through popup pagination on mobile; hostile text, URL routes, external links and formula CSV are safe
+PASS 404 error state, no fallback, successful retry
+PASS invalid JSON error state, no fallback, successful retry
+PASS invalid schema error state, no fallback, successful retry
+PASS network failure state
+PASS 50000 synthetic locations, indexed filters, grouped viewport rendering, profiles and mobile (14.2s)
+PASS 50000-location shared-coordinate chooser preserves keyboard selection and original coordinates
+19 browser checks passed

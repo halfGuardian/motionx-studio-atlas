@@ -1,0 +1,6 @@
+{
+  "python": "Python 3.12.14",
+  "node": "v24.22.1",
+  "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)",
+  "network": "Live Leaflet CDN and OpenStreetMap tiles through configured proxy; no substitute map assets"
+}

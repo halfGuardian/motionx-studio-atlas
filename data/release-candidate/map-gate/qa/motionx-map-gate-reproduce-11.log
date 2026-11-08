@@ -1,0 +1,47 @@
+{
+  "pre_v15_reference_records": 42239,
+  "prior_raw_proposal_records": 42298,
+  "proposed_reference_records": 42296,
+  "retained_locations": 243,
+  "retained_operating_organisations": 119,
+  "countries_and_territories": 178,
+  "audited_companies": 59,
+  "relevance": {
+    "adjacent_production": 8,
+    "game_development": 33,
+    "motionx_core": 6,
+    "out_of_scope": 1,
+    "supporting_services": 11
+  },
+  "publication_readiness": {
+    "eligible_minimal_factual_reference": 27,
+    "eligible_source_authorised_identity": 30,
+    "staged_identity_review": 1,
+    "staged_scope_review": 1
+  },
+  "eligible_directory_research_leads": 57,
+  "staged_proposals": 2,
+  "identity_key_reviews": 27,
+  "separate_closure_alerts": 1,
+  "identity_outcomes": {
+    "existing_identity_domain_review": 2,
+    "facility_operator_review": 1,
+    "historical_relevance_current_operation_unresolved": 5,
+    "qualified_company_pending_intake": 10,
+    "supported_proposed_alias": 3,
+    "supported_proposed_name_variant": 2,
+    "unresolved_identity": 4
+  },
+  "facility_dossiers": 4,
+  "independent_facility_reviews": 0,
+  "maintainer_minimal_rights_scope_decisions": 27,
+  "human_decisions": 0,
+  "human_approved": false,
+  "historical_nz_pending_worksheet": 29,
+  "historical_annecy_pending_worksheet": 37,
+  "new_map_pins": 0,
+  "new_verified_capabilities": 0,
+  "recommendation": "READY FOR HUMAN REVIEW",
+  "recommendation_basis": "Every proposal has relevance, rights scope, operation uncertainty, matching context and a documented disposition. Conflicts are staged, company assertions are labelled, and no automated decision grants publication approval.",
+  "census_complete": false
+}

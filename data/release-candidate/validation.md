@@ -1,4 +1,8 @@
-# Release-candidate validation and publication limits
+# Final map-gate validation
+
+The [final acceptance report](map-gate/validation.md) and [single owner decision](OWNER-APPROVAL.md) supersede the checkpoint results below: 102 new separate city references and 80 integrated unpinned companies, with every original record unchanged. The following report retains the reviewed `2936438` company-admission checkpoint and its historical test counts.
+
+# Release-candidate validation and publication limits — historical checkpoint
 
 The executed local checks target the actual integrated catalogue, not just standalone proposals. The two parent PRs remain unchanged. This draft does not merge, deploy or grant human approval.
 

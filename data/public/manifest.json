@@ -2543,9 +2543,9 @@
   },
   "global_visibility": {
     "path": "visibility.json",
-    "sha256": "0d126c8ddec881b937cffc1a668cbf6e3d874fe175f79b07e0fff8253fe92dd4",
-    "gzip_sha256": "8522ba5c0b4266a07f81608e127cfe54b38a57dec40e40ed3db8b3b5b006ec85",
-    "gzip_bytes": 37316,
+    "sha256": "6002824c17a9ffa75578f41fafdec1832becf548f601f628a34277648059391c",
+    "gzip_sha256": "4e7a3a63dd4806fdf15e78925f890b1abfd0bd11a2212559b8be679b2795b5fa",
+    "gzip_bytes": 59719,
     "content_addressed": true
   },
   "commercial_scope": {
@@ -2746,6 +2746,19 @@
     ],
     "report_path": "data/release-candidate/reports/dashboard.html",
     "publication_approved": false,
-    "human_approved": false
+    "human_approved": false,
+    "map_acceptance_gate": {
+      "version": 1,
+      "reviewed_head": "29364389eb69f1da480a15b27b8c28f3bbba7923",
+      "report_path": "data/release-candidate/map-gate/reports/dashboard.html",
+      "input_hashes": {
+        "checkpoint.json": "555b4e9c1a43742494a4de3193df4061db506429229bf5c49114439d24926bbd",
+        "city-reviews.json": "3e63d7da2387279857bb78dd2e4f9ec7dfb42633ac8ade5d639484548d74e707",
+        "city-coordinates.json": "d094f2381c1c9d521a8ae2adfdd655e5c492394650061031586d53df5df44e4a",
+        "gazetteer-receipt.json": "3ea6574a28b24f90ed275013457cec45cef69b86a19166757645d60c5eb46874"
+      },
+      "human_approved": false,
+      "publication_approved": false
+    }
   }
 }

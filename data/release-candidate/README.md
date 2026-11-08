@@ -1,3 +1,7 @@
+# Final map gate
+
+**102 / 106 city-associated companies receive separate licensed references; four city holds and 76 without cities remain unpinned in the same searchable directory.** See the [single owner approval summary](OWNER-APPROVAL.md), [complete map audit](map-gate/reports/dashboard.html) and [executed validation](map-gate/validation.md). All 42,478 records remain unchanged. The following sections retain the original admission scope and historical checkpoint.
+
 # Global integrated release candidate
 
 This draft is stacked on PR #18 at `5c3c838f67eded5988a8f6dd8541582716becb15`, which depends on PR #15 at `efd52a86e66417438830aac285e3fffee3aa0fa0`. Both parent branches and all their research/data history remain unchanged.

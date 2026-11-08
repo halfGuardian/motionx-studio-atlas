@@ -8,11 +8,17 @@
   if(Object.keys(value.company_audit).length!==rows.filter(r=>r.record_kind==='company_reference').length)throw new Error('Incomplete unpinned-company audit.');
   function check(id,p,additional=false){const r=byId.get(id);if(!r||r.record_kind!=='company_reference'||D.evidenceClass(r)!=='C'||r.lat!==null||r.lng!==null||typeof p.city!=='string'||!p.city.trim()||(!additional&&p.city!==r.city)||p.country!==r.country||!Number.isFinite(p.lat)||Math.abs(p.lat)>90||!Number.isFinite(p.lng)||Math.abs(p.lng)>180||!['city','region'].includes(p.precision)||p.evidence_class!=='C'||p.human_approved!==false||p.facility_verified!==false||p.coordinate_license!=='CC-BY-4.0'||![p.company_evidence,p.coordinate_source,p.license_url].every(D.httpsURL)||!D.validDate(p.observed_on)||!p.explanation||!p.attribution)throw new Error('Company reference cannot assert a verified facility or alter an original point.');}
   for(const [id,p] of Object.entries(value.references))check(id,p);
-  if(value.additional_references!==undefined&&(!value.additional_references||Array.isArray(value.additional_references)))throw new Error('Invalid additional company references.');
+  if(value.additional_references!==undefined&&(!value.additional_references||typeof value.additional_references!=='object'||Array.isArray(value.additional_references)))throw new Error('Invalid additional company references.');
   for(const [id,refs] of Object.entries(value.additional_references||{})){
    if(!value.references[id]||!Array.isArray(refs)||!refs.length||refs.length>30)throw new Error('Additional references need a supported primary company reference.');
    const cities=new Set([value.references[id].city]),points=new Set([value.references[id].lat+','+value.references[id].lng]);
    for(const p of refs){check(id,p,true);const point=p.lat+','+p.lng;if(cities.has(p.city)||points.has(point))throw new Error('Duplicate company display reference.');cities.add(p.city);points.add(point);}
+  }
+  if(value.intake_map_gate!==undefined){
+   if(!value.intake_map_gate||typeof value.intake_map_gate!=='object'||Array.isArray(value.intake_map_gate)||Object.keys(value.intake_map_gate).length!==rows.filter(r=>r.id.startsWith('globalcompany-')).length)throw new Error('Incomplete intake map assessment.');
+   for(const [id,review] of Object.entries(value.intake_map_gate)){
+    const r=byId.get(id);if(!r||r.record_kind!=='company_reference'||D.evidenceClass(r)!=='C'||!['city_reference','unpinned'].includes(review.state)||!review.reason||!review.reason_code||!D.validDate(review.reviewed_on_utc)||(review.state==='city_reference')!==!!value.references[id])throw new Error('Intake map state conflicts with original company geography.');
+   }
   }
   return value;
  }

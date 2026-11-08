@@ -171,7 +171,7 @@
         ...(row.relationships || []).map(r=>r.name),...row.categories,...row.capabilities,...[visibility?.references?.[row.id],...(visibility?.additional_references?.[row.id]||[])].filter(Boolean).map(p=>p.city)].join(' ')),city:fold([row.city,...[visibility?.references?.[row.id],...(visibility?.additional_references?.[row.id]||[])].filter(Boolean).map(p=>p.city)].join(' ')),name:fold(row.name),organisation:fold(organisations.get(row.company_id).name+' '+row.company_id)}));
     if(commercial)for(const entry of entries)entry.text+=' '+fold(commercial.labels[entry.commercial.role]+' '+entry.commercial.role.replaceAll('_',' '));
     const ranked=entries.slice().sort((a,b)=>evidenceClass(a.row).localeCompare(evidenceClass(b.row))||a.name.localeCompare(b.name)||a.row.id.localeCompare(b.row.id));
-    return {rows,entries,ranked,byId,organisations,groups,reviewedByCountry,commercial,C};
+    return {rows,entries,ranked,byId,organisations,groups,reviewedByCountry,commercial,C,referenceIds:new Set(Object.keys(visibility?.references||{}))};
   }
   function queryDirectory(index, filters = {}) {
     const words=fold(filters.query).trim().split(/\s+/).filter(Boolean), city=fold(filters.city).trim();
@@ -180,7 +180,9 @@
     const found=(filters.sort==='relevance'?index.ranked:index.entries).filter(entry => {
       const r=entry.row;
       if(entry.commercial&&!index.C.matches(entry.commercial,filters.commercialRole,filters.scopeMode))return false;
-      if(filters.geographicView==='company_city'&&(!(r.record_kind==='company_reference')||!filters.referenceIds?.has(r.id)))return false;
+      const referenceIds=filters.referenceIds||index.referenceIds;
+      if(filters.geographicView==='company_city'&&(!(r.record_kind==='company_reference')||!referenceIds?.has(r.id)))return false;
+      if(filters.geographicView==='no_display'&&(r.record_kind!=='company_reference'||referenceIds?.has(r.id)))return false;
       if(filters.geographicView==='unpinned'&&Number.isFinite(r.lat))return false;
       if(filters.confirmedCaptureOnly&&!confirmedCapture(r))return false;
       if(organisation&&!entry.organisation.includes(organisation))return false;

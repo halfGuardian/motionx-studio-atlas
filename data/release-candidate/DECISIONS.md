@@ -1,3 +1,7 @@
+# Final map acceptance
+
+Use the [single owner approval summary](OWNER-APPROVAL.md) for PRs #15 → #18 → #19. The completed gate adds 102 defensible approximate references from 106 city-associated companies; four city holds plus 76 without cities remain integrated as 80 unpinned companies. All seven prior city-reference proposals and Floating Rock are preserved. The recommendations below retain the earlier company-admission decisions; the new [map audit](map-gate/reports/dashboard.html) supplies the final geographic scope.
+
 # Maintainer release decisions
 
 This is a concrete draft directory update, not approval or a production release.

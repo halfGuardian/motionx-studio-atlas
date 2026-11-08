@@ -33659,6 +33659,31 @@
       "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
     }
   ],
+  "map_acceptance": {
+    "admitted_companies": 182,
+    "admitted_companies_unpinned": 80,
+    "canonical_coordinates_changed": 0,
+    "canonical_records_changed": 0,
+    "city_associations_still_unpinned": 4,
+    "city_associations_with_display_reference": 102,
+    "companies_without_recorded_city": 76,
+    "distinct_city_country_references": 69,
+    "human_approved": false,
+    "new_confirmed_capabilities": 0,
+    "new_display_points": 102,
+    "preserved_prior_display_points": 8,
+    "publication_approved": false,
+    "recorded_city_associations_audited": 106,
+    "reviewed_head": "29364389eb69f1da480a15b27b8c28f3bbba7923",
+    "total_company_display_points": 110,
+    "unpinned_reason_counts": {
+      "ambiguous_registry_city": 1,
+      "city_evidence_not_retrievable": 1,
+      "company_city_not_corroborated": 1,
+      "municipality_conflict": 1,
+      "no_recorded_city": 76
+    }
+  },
   "commercial_before": {
     "adjacent_uncertain": 8,
     "both": 19,
