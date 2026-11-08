@@ -1,0 +1,13 @@
+# Research continuation — 8 November 2026
+
+This internal checkpoint continues PR #18 from reviewed head db8265e. PR #15 and its head are unchanged. Research continues after this commit; this is not a release, a publication approval, or a claim of complete global coverage.
+
+At this checkpoint, 427 of 725 original backlog keys have individual assessments and 298 remain uninvestigated. The 428 company/geographic reviews also include supplemental cases outside that queue; seven earlier branch/department reviews remain intact. There are 98 pending Class C company payloads, including the original cohort, with before/after preservation of all 30 reviewed proposal payloads. Limited-access, ambiguous, historical and rights-restricted cases remain unresolved, not verified businesses. The complete key IDs and continuation commands are in reports/research-checkpoint.json.
+
+The actual 42,296-record catalogue now separates 35,295 plausible but unconfirmed prospects from 1,131 explicitly sector-relevant potential clients, 5,838 client/provider records, 20 providers, eight adjacent/insufficiently evidenced records and four reviewed audio-only exclusions. These are relevance assessments, not verified current operation, outsourcing needs or purchasing intent. The previous policy and every changed assessment are retained in the classification audit. Original source categories and canonical records remain unchanged.
+
+Current official evidence supports the existing Tumblehead Viborg correction proposal, Ho Chi Minh City and Singapore proposals, and ModelFarm's Adelaide/Brisbane city associations. It also raises municipality/office-type and rebranding questions. None authorises a new entrance coordinate, branch capability, canonical overwrite or Class A promotion. Audio-name signals remain a research queue; capture providers such as Audiomotion remain eligible.
+
+Validation so far: all 303 Python tests and 89 JavaScript tests passed. An earlier targeted Python run failed the stale-generated-report guard while research inputs were being expanded; regeneration fixed that failure, and all 18 continuation tests passed on rerun. Browser and full reproduction checks will be rerun for the final head. No production-deployment test or new human precision labels are claimed.
+
+All 42,296 original IDs, full record/evidence hashes, coordinates and historical source checkpoints remain protected. No source collector has been newly enabled; EA remains disabled, denied routes are not bypassed, and PROGISS/3DVF terms require a separate rights decision. Source-wide/national coverage remains incomplete.

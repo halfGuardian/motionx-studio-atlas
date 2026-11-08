@@ -16,3 +16,10 @@ test('scope sidecar cannot invent approval, move records or hide unknown names',
  for(const fn of [r=>r.human_approved=true,r=>r.role='verified_buyer',r=>r.evidence=['javascript:bad'],r=>r.name='Wrong identity',r=>r.excluded=!r.excluded]){const bad=structuredClone(p);fn(Object.values(bad.overrides)[0]);assert.throws(()=>C.validate(bad,ids,D));}
  assert.equal(C.classify({id:'sound-games',categories:['Game Development']},p).excluded,false);
 });
+
+test('generic production stays plausible, with explicit sector confidence and original source categories',()=>{
+ const rows=[['Film / Video Production'],['Film / Television Production'],['Game Publishing']];
+ for(const categories of rows){const row={id:'generic',categories},before=structuredClone(row),a=C.classify(row,policy);assert.equal(a.role,'plausible_unconfirmed');assert.equal(a.confidence,'plausible_sector_only');assert.equal(C.matches(a,'client'),false);assert.equal(C.matches(a,'plausible_unconfirmed'),true);assert.deepEqual(row,before);}
+ for(const categories of [['Animation'],['VFX'],['Game Development']]){const a=C.classify({id:'explicit',categories},policy);assert.equal(C.matches(a,'client'),true);assert.equal(a.confidence,'explicit_sector_eligibility');assert.equal(a.facility_verified,false);}
+ assert.equal(C.classify({id:'sound-film',categories:['Film / Video Production']},policy).excluded,false);
+});

@@ -2539,9 +2539,9 @@
   },
   "commercial_scope": {
     "path": "commercial.json",
-    "sha256": "45f757d3f7f15eb654a7a78202af6a1edc97ac61caaae630554c013a6cea972a",
-    "gzip_sha256": "c2490b4a063628a2a9f5d6c78a19a57f9eefa5cb2c7af0e80aef33e1f8614f95",
-    "gzip_bytes": 1411,
+    "sha256": "2e18b07f021d0621b88dbbbf7de2756d3eab1f054de705a5c62bfd5eda9e0b0c",
+    "gzip_sha256": "040f90016a3ead11c9bcceca4f0d0f01c350300965f26fd3b9a042fe82da10ef",
+    "gzip_bytes": 1454,
     "content_addressed": true
   }
 }

@@ -1,0 +1,3439 @@
+{
+  "total_keys": 725,
+  "original_observations": 753,
+  "individually_assessed_keys": 427,
+  "uninvestigated_keys": 298,
+  "completed_key_ids": [
+    "research-042f32d6659feb8d93f49095",
+    "research-13cd4d6549dee03f47a68dfc",
+    "research-94d33504e7a9be2185d336ae",
+    "research-cb3f094c3a87533571977258",
+    "research-380967881b5fb86b682351ef",
+    "research-115fd4230fe0ddc7ed14bc9c",
+    "research-3bfd015b1920b99a2e23cafd",
+    "research-9286dc978b7a4e0b60a36efa",
+    "research-291f1096142f5c1cae00b1a7",
+    "research-7cdf46b963edc1b1c24ce3d5",
+    "research-b8db3b7f0c91e6c613f8d623",
+    "research-df3f6fea2a69747270a6b39b",
+    "research-3bf2047496ca41a611f33b4f",
+    "research-eafa6d15071dcca6e5cd55b4",
+    "research-005f833217fac71556b2a0cd",
+    "research-b9dc5f063b8b2f6eea95d56b",
+    "research-dc319c6e45f0b9b8a638f335",
+    "research-e86b2471af07c108e6c6f13e",
+    "research-a0abb018b7b7fb0b5ab4fdcc",
+    "research-dd2f7087279addd134c01720",
+    "research-e2eeed53824f72325e9e23cd",
+    "research-96a4ef9b7d2ec5804a6fa521",
+    "research-61300d81347429b3e6253547",
+    "research-465049e44e674896db66c001",
+    "research-e4cc36e8f19aa2e75298319c",
+    "research-ce8ebebd7333fc1821067d22",
+    "research-0b107d9d598ec5932851ef97",
+    "research-a8d78a94a9ef53577aad76f6",
+    "research-e9358c699526c265be012b31",
+    "research-cc9e6bdc29a38896bc489932",
+    "research-caa82c9f980c5d7d147abd4e",
+    "research-fdf11d3198b12179dd493a5a",
+    "research-5d28084cd153942d953bf7bb",
+    "research-6969ddcbd5dcb0a6be63b3ef",
+    "research-2a8f6d75a253cb58155bb603",
+    "research-8b8261ed16d84f414d70a3b9",
+    "research-c5c07fdecae7a85621ee68ac",
+    "research-ec5f377d6ff79f1c40df3895",
+    "research-725c372e25fc8b1a44ed0d65",
+    "research-858783d890968cbaaaf215f8",
+    "research-a2fdd0f250ce141399731b94",
+    "research-b37888f7217a02e99af45d33",
+    "research-786a16a4eba6370f9f84c6cf",
+    "research-0ad33bec70fed1de331c142f",
+    "research-94a5e47894b08bc0e398e4b6",
+    "research-b570c0105086ec10757690b8",
+    "research-c8a168102796a810948a87fc",
+    "research-20faec3f3bfb4d116b00e92e",
+    "research-69b0d16923023c3744024676",
+    "research-6c606733908d3140d888f4d5",
+    "research-c967b87f26445a1a1492e337",
+    "research-3fd3fc6fa30bb854712b90dd",
+    "research-50c8beb11847b83f5bd47d96",
+    "research-f60e8b3cd927273169512594",
+    "research-c0dcb33ef1ae4144d2b47eb1",
+    "research-631a20cdfcffa37227428f0b",
+    "research-a574fbb450bd4a993e3a0ea9",
+    "research-af98a7f78af8fa1c895c9aaa",
+    "research-825a031b5d5018aebf46c403",
+    "research-6fab6ff3352bdd4b45fd22e4",
+    "research-1abcf2765686581c121b9122",
+    "research-f052fdeaf0f57764c12f2193",
+    "research-9b4d6867ed2c657e24f36ada",
+    "research-2b99673d3521ca0703557059",
+    "research-35c3a77dc51a33fbcdb8eb7d",
+    "research-c75b79b46dfda7f616583519",
+    "research-b60c6352dc96529d300ceb93",
+    "research-bc3941e0adf4ecf797130006",
+    "research-e4c218aeacbd52f57699c192",
+    "research-05efde6440f145a1785d7ee8",
+    "research-929604f6e4b5b4683b1897c6",
+    "research-35d3de6016578759ee8fb854",
+    "research-8c9acae66115fb720347399b",
+    "research-1dcb58a17f783c655183c36c",
+    "research-6ee565d5330c840e0b07eb56",
+    "research-6af9ec9ce3732b4e814542d6",
+    "research-060d762b6a9e1bf7cb707a8a",
+    "research-d4246e087c2a82e4e2221735",
+    "research-37aed2ddcc378dd4bd586de8",
+    "research-7a87acfa6ab94378c600c93e",
+    "research-66eeaba11ce9c04d3efd80ae",
+    "research-08c389860d6444698c4b9085",
+    "research-64039e3a5db2a956b1c780e3",
+    "research-568c93a13b050de2dd9085c6",
+    "research-59629cb18c64441662f75347",
+    "research-e56d803b93280201b38a9a24",
+    "research-7a0cf9827d1d2df3e503123d",
+    "research-c24003428eeeb4d3de3655e7",
+    "research-23ab4ee8deb9c3e22cee8e1a",
+    "research-ad0864381dfb1c88096847e4",
+    "research-e425f1590f9c58bb40505d29",
+    "research-09a7945121b8a4e7bbebc23b",
+    "research-c48015837313dd934e2dc618",
+    "research-927c9c9c8ff31ab062d71b29",
+    "research-a95060ec469f014d3905a3fd",
+    "research-5b0703a775c85bd688ea4959",
+    "research-e88531cca27c4723c5357d12",
+    "research-acbab30d43159edd9dda2c43",
+    "research-44364b4ebd3f18a73a928aa3",
+    "research-48871f890da7ab91f1712e64",
+    "research-20699e5f80c0277304352ca1",
+    "research-ab7b84f4b358c2cac1422f91",
+    "research-b0b5ede462ca08031aeb8fe5",
+    "research-da8cd8092089e6d16d940a96",
+    "research-041bffa9a6c2b7bc44037003",
+    "research-16641b13b71e23e3c92be20d",
+    "research-2b9e4a82b54b66b220ffb1d9",
+    "research-11d093e5b8329a13492193ef",
+    "research-c4e2719e3eb91fd8031cf6c0",
+    "research-1079afa6d78f399e170bef76",
+    "research-31faa4fa0a2e857f0d114788",
+    "research-d8fb91ef8d2d7983f9e814b4",
+    "research-5265e19cc67ed3a2ae56c22b",
+    "research-5d438b49d99e1e7a08227efe",
+    "research-deb200ecf30e21684bacf461",
+    "research-7a9d5f0c1e394a682647c217",
+    "research-bb84e321f2351bf9a70af6e1",
+    "research-3f8b5b00cfc96dfc488ea200",
+    "research-d90c985d4c654fda571ecaa7",
+    "research-74ccdab716c67bb444c111ce",
+    "research-5302d82d6af87eff70b1adc3",
+    "research-efaf386256d053e732ddffd1",
+    "research-1d97a5b088c0b3aaa54f4219",
+    "research-586b0a66bcb413c4ee7177ef",
+    "research-a9cae0a6564788b61cd20c24",
+    "research-437486a6b48f2d7318555456",
+    "research-63197984ab6a795c901ca138",
+    "research-adf381de0a3cebd9dba1ecfc",
+    "research-239016fb68d4a8808c3ee5a5",
+    "research-f37345a118e372bbb15f56a9",
+    "research-fb7c45628c7ba2fc3b2b71de",
+    "research-c9e35bf64cdd2b53c8124a72",
+    "research-391a9290415e9c88ddb24599",
+    "research-5732d38447ee00d5a2e62dfd",
+    "research-e5eacfa2d0d99466eea36a69",
+    "research-8f6018e33c4427dfd95cfeaa",
+    "research-6c56e510b79d6b06d4227ca8",
+    "research-70d1f3f056b62c77f349de7d",
+    "research-d61e6404934abb0b5cfdbf91",
+    "research-687168047d48e5521aeca4c5",
+    "research-65158a59256b74d0c806d0cf",
+    "research-71c40e4c0fda04fa65462887",
+    "research-1f43cda81a91370f403c4cde",
+    "research-31bb8461ab8e2f94834284cd",
+    "research-5d6075448e3af6937891e928",
+    "research-135481bfb3cd31e2f5c33a17",
+    "research-4c85a2f74e1641e82502ec70",
+    "research-ce4f864089b22c53352169a9",
+    "research-c7a88e6c5d7a678b5a92ac80",
+    "research-6ee57ecf27518424425d4d56",
+    "research-6052cfe34a44c8c59abe979e",
+    "research-672c36f135faeb57f3062a23",
+    "research-a97e8288a7cf1fe097288ec7",
+    "research-a868394991c275ee7e301a30",
+    "research-85cb5759acb117a4be8da9a1",
+    "research-24f94a4a7bffca2291ace4b9",
+    "research-2bd25886df06cecac61abb80",
+    "research-9f94adc07c3a39ba07dc9b59",
+    "research-212b06e079930cfc2ebd783b",
+    "research-30c629298f5617351afcc6a1",
+    "research-b7cda487ef058a8742165a85",
+    "research-b07c170066bd32115aaf0174",
+    "research-767865f1fdfe2a9954ab751d",
+    "research-a76797da4b9f09f5f574168f",
+    "research-91206c4f527a480c5b3c2631",
+    "research-dfc9a386601339144789c967",
+    "research-1667c762c1ca9ee0542c9037",
+    "research-c72cdcf8f72e0113d3ee7fd7",
+    "research-8b8ef15e9ade9e9f2e055787",
+    "research-3264f7c2529167dbd839a86c",
+    "research-915b47098ac4cd65559d8026",
+    "research-6ca3161fcb9e065b0364ce02",
+    "research-655f347ad0e9c25777f6606a",
+    "research-086526862f5abeb6aa477080",
+    "research-c0318230c293ccb921d84c31",
+    "research-1abc34ccc798efed455238a9",
+    "research-052106ddd414a5a8ae0e3e3e",
+    "research-224845d799ba5b01e7b5c36f",
+    "research-8efda11991bb4c31388ab112",
+    "research-3ab527fa3d22368cbbae8f26",
+    "research-846c9f4efe25cf527ccba608",
+    "research-89f799b8671d5bfef10eebe7",
+    "research-152ad3e477a916ccd1121665",
+    "research-e639c318a387c929af63c605",
+    "research-b4afe91b128443ec1582a273",
+    "research-8d3c6d5b6322e80c98c2d1eb",
+    "research-8cd23d1978b8506fedbbd384",
+    "research-58601d3c2710b2b43003a9f4",
+    "research-9cecafd10d63f21a36d82408",
+    "research-42a5f4fc1403939ff4a58d71",
+    "research-bdaedbca7705733ec1335cd2",
+    "research-281043c5717458f333013e5f",
+    "research-b880a01cd45e23209cd82d43",
+    "research-5ca3ec222a86beef68ae8abc",
+    "research-ae1ff7611d6e64294a24081f",
+    "research-2d83a2401a68f8add8ebfcfa",
+    "research-507d60a9c75041060643d6da",
+    "research-8970b60f6cfd84119fe42b96",
+    "research-e5f4e5e63f1d6af115718842",
+    "research-87fae90bb8e1cd071059029c",
+    "research-9f5b666d523329676e53c76e",
+    "research-50f7e1487ba1869b8b591921",
+    "research-ce3bf15ad01d005db6df3759",
+    "research-283c22225d5007e415b09594",
+    "research-824bb877bb945df463949df4",
+    "research-1b8665bc4cf05148ab68543b",
+    "research-d0b2d3f70416f81952813c42",
+    "research-488abacbf61cadac4420e572",
+    "research-d6f86d94a6f5cb2b0928834a",
+    "research-b3673b5f2a5b304d2d19ed64",
+    "research-de5438f923a5e15b4795b98e",
+    "research-130fd1168b73f415b5788515",
+    "research-4d805a84d7d75d158d65b437",
+    "research-40da46dc26651fbb285c1429",
+    "research-fcbf04fbf2fc4d084c6f3062",
+    "research-de1afb513afe70119dbd6e3a",
+    "research-c00bc60eb06732852ca3b7b6",
+    "research-1d655468d78f173d34419908",
+    "research-8676f58fddb161ed4455a09e",
+    "research-f37d4d4821897148b9831855",
+    "research-f9350e78eb32a6efc497a89a",
+    "research-83b657deee83c58738c50691",
+    "research-838482e4bbbadb408cfa4daf",
+    "research-2e8187177c36dd0209d5e612",
+    "research-28cc82fc60937074e0049ab5",
+    "research-72a4b1c8bf21a758c039df22",
+    "research-32c59f06ec728fee0d1df181",
+    "research-a9ce795cbcc59533fd4354b2",
+    "research-805156a1baaf7fa29effdbe2",
+    "research-0b18e2fce5412b9e986f0837",
+    "research-b1f99a0ab1ad83cb3b784f24",
+    "research-d96e61cf0bd95de36bc124e1",
+    "research-c9a8d63c48171ff7f16086a6",
+    "research-ac7cca951781494b01f75b05",
+    "research-e81fc0d99718c1c691317f80",
+    "research-8c2a305b1728a75d897377a2",
+    "research-8c78960cb8478d812e978041",
+    "research-8cd2e915b02b16770b5beb82",
+    "research-1325f8d76f4ad88d5d94f8fb",
+    "research-4d699fbd60188522dda20962",
+    "research-0e4004bd6717bbfe1e10e994",
+    "research-6df3e7713e58bc19a2d2b7c0",
+    "research-c94566907c9ae78ad4e34a1c",
+    "research-5f54a5fc3ee9d0bbd1390b82",
+    "research-838dc86181a5c9d296eec6c6",
+    "research-5d9d20a77999b601371c1521",
+    "research-bd4254e998b9959687565ca3",
+    "research-7b6a28264a99e2b4ac33d349",
+    "research-ca599cde7abc79d9d50dd7c0",
+    "research-aff4203d9aa7258c2bf689c0",
+    "research-de27c7a4e10390379eb90014",
+    "research-acbdf20296d326b3ce7984d6",
+    "research-a5686b2c92a6b9356d42b02c",
+    "research-7512bf1163150063b48a0d21",
+    "research-e4a37d40c298a3f275607b7f",
+    "research-cd95da3db18606165af84415",
+    "research-3507ba37701f883b717fc237",
+    "research-8b62e8c87a322e06bbe73e77",
+    "research-f011b021199343452384e9c8",
+    "research-765fc26908fea79baa2673d3",
+    "research-922e6abde6a5baae244237c0",
+    "research-4f265960d1663d9d5d0415b5",
+    "research-2ac6fbb946e1bb03518a3320",
+    "research-007760c8f3f6dc7702608367",
+    "research-1c7025e29fe2a8d93e861b33",
+    "research-ac63e6a91bce60f69ec2a8fb",
+    "research-6f1177334122a3fbf20b598a",
+    "research-c9111a4bcbbd342f98a88764",
+    "research-3d3a287fc0bd11c7bb8a16e1",
+    "research-16299adc0bcf9737c50c1339",
+    "research-9002e516aa6838867f54ee92",
+    "research-a51b2890dbaeae67ab6eef13",
+    "research-295436687e5e0f2df1e708c2",
+    "research-4ef3a83ee75b6e04e58f0867",
+    "research-e92f4a2de94027961ad4038a",
+    "research-909884e698836c4681e5a49b",
+    "research-f2460edc5bd4691e9cd957c1",
+    "research-37b670ec401c0f40e99a8760",
+    "research-a5e5b3c9f51bf4cd435d5bc2",
+    "research-9f2dd9df962704c45d903765",
+    "research-347021babce8ee76e5703f54",
+    "research-83c8fbb8f75322d299b67280",
+    "research-ad9024b3ca3f3ae6f0e57bd1",
+    "research-1287c0557f8342b0f153446e",
+    "research-5c0332b94c1459402889d547",
+    "research-089ff3bf5937cb9dd7ae6670",
+    "research-6a83a9c56bd7f02896627971",
+    "research-ea70585d48e6885b7498a7fb",
+    "research-46c611aca337eb89d5792f66",
+    "research-fd039e5d6d5e2b497c7de050",
+    "research-bf68b2ef21acb6e6d342a5ef",
+    "research-3fce2da940a019f9acdbc458",
+    "research-452c1982c1212f4f8bdef79a",
+    "research-c709e1ec188b91d472c13e34",
+    "research-f4f38ed6fce8019fd462c79e",
+    "research-7f70cd4215083afb63c00460",
+    "research-bf02ca7a2b091c2ad8ce61ea",
+    "research-06b5152bc10485c9bc8100a1",
+    "research-48848befaa090170f3fd9340",
+    "research-b7d0dfa3018e870b93137b02",
+    "research-4768812c113e64388b4df80e",
+    "research-e63ce9fad3e256a887459a24",
+    "research-dc30781ae82e261362a58c32",
+    "research-112b408e94e04f33461c7070",
+    "research-6ed1a86c6c7c6fba1560bb05",
+    "research-0a45c715cf7a3377cf5af0fe",
+    "research-14c47b968d19bc42a4099ac6",
+    "research-0ae274fc1e7ee88da00e2daf",
+    "research-d0324ba230da3cf3e3cc0cee",
+    "research-d7e800291cd34c2f7dce923e",
+    "research-0e12e21f3372a64edb2d15e1",
+    "research-7155adda5675f7c5d7db4d00",
+    "research-16c46974c47738b169d1ca3a",
+    "research-55a0960ecfbd96e545248cb4",
+    "research-fa41881f0192ed515ddaa30a",
+    "research-18b6a520207f130b57dd5e0c",
+    "research-74200b208816aa2e33ae1c5d",
+    "research-237cb335c90af579f787fd48",
+    "research-fe75df53e96ffe503111b596",
+    "research-6057ae589aa4258ff3750d28",
+    "research-4b2d6eeeba62e049710330a3",
+    "research-a7996dc74c3666417fd1cede",
+    "research-ef7ba045d64b9f8ff5834a7a",
+    "research-d2b4b22d1b98808d8a14432e",
+    "research-d37ec44a294637f8e91cea6d",
+    "research-88a93ec06333e055a57bb08a",
+    "research-f2d1eb1043baea4104549956",
+    "research-f358ee2ffff91f47160b880c",
+    "research-8879559b2b27d9ea65c15a08",
+    "research-eac52506a022957221f6ac3b",
+    "research-35cb6b34aed941f79d593f3f",
+    "research-596574e2aee3d482a77ab7a3",
+    "research-e9b625c9f47fbeb0baae7300",
+    "research-95c7273c4f46cd3683d7bfaa",
+    "research-130b70478b14ebad0a3d66a9",
+    "research-6a7603de80e0d6c87579299d",
+    "research-b50d837c16c3474a13d0a8be",
+    "research-1c3681132445b2a09ae66240",
+    "research-982e5469f5015cf172969899",
+    "research-511f9603e315d02dedf102e3",
+    "research-0c5e7f84e77068f7e9cde1c7",
+    "research-5f2526b12884e8fac32efd93",
+    "research-8e84b067f4f33cbebfa67255",
+    "research-15f83e361784c2999d550ed1",
+    "research-de25841abfcf45f4e01e101c",
+    "research-acc021316ca7d844259668fb",
+    "research-a514551ba42708dcda63e4e5",
+    "research-d8b6c811a4f769f97e3709cb",
+    "research-53471ed20400b43c13a03f6a",
+    "research-45e063aa923843a981a863d7",
+    "research-2cad8c12f1282a4e5e6cf2e3",
+    "research-ecdc7183250332c14414a9cd",
+    "research-662eb96d169bb2ace3123ea5",
+    "research-0e7221abd467352939915e50",
+    "research-5f0a42f1dbfc7d7ad6309173",
+    "research-f8295a5845fde1d5dba54684",
+    "research-76da85bd93a87568493f2204",
+    "research-68d5802ecd06095219cb367d",
+    "research-ac562e87774ef290affe703d",
+    "research-46779bbfba5dced822a5a328",
+    "research-c86a555c76354b0f65ef7b22",
+    "research-085a7793f297a6eae049de14",
+    "research-0ebc315bb79eeb54ecf1825f",
+    "research-9ee59e02e4805b700378b161",
+    "research-751f4c643db9eddd00b51829",
+    "research-fc2cfb1ecf1f4cef88ee4429",
+    "research-67b1e2347014f1f19d7c2347",
+    "research-922b713f1a77b06946e877ec",
+    "research-673b2f38159ccd8a76e08ab3",
+    "research-4ce8212b14cc369c92268e33",
+    "research-3665d4583769cca95b6807ef",
+    "research-540a2445d505c16887c2dffa",
+    "research-34939ac460492de9dff2778e",
+    "research-ce22144896ab6543a1529141",
+    "research-f882606428554966a599ac7b",
+    "research-1f2814e4913dc8866404d60c",
+    "research-813eddac344e28b6c34bda75",
+    "research-a71dd3f4973e0e00c3864671",
+    "research-0a5b9c7aaf8be164c01eee10",
+    "research-11ec01df20dd5164ecc70890",
+    "research-1256b6709ff537b0f68ef2aa",
+    "research-2c3b246ee90fc0d143f77fc5",
+    "research-3b63eb03240254c91ef74d83",
+    "research-58cd1d1be7d0ca5ab6993f6e",
+    "research-e97a052d359f16a9766df204",
+    "research-b03f007da6f3908a1800097d",
+    "research-5cfcdd785b7e024536b4a06c",
+    "research-75684b5226a334c1b111f900",
+    "research-b92e5da776448e49f009416d",
+    "research-448e82cf722bcc6372ec64c7",
+    "research-6d6c33183ffd47d45aa403cb",
+    "research-b7b8d59c6bcee9dbf7456964",
+    "research-21e46c2c0376fe711e558355",
+    "research-de815741f6251841a27f5c51",
+    "research-b12d47eba8e4d94742b67cde",
+    "research-a425370da463c7afc6f8e792",
+    "research-02cdf11e01d46f5c9f700fcd",
+    "research-6553a53d7e3902e040f98466",
+    "research-6bf317568a7553108345f02b",
+    "research-14258f03ae81a3de1c1dad29",
+    "research-504e6c4c6f005b7a91361af9",
+    "research-3fc7fd00558fe7ee593a6ad9",
+    "research-421d9c9702ca47b368ec551c",
+    "research-f1536d50579d4e04216974cc",
+    "research-03eb9932771c0c8191c07898",
+    "research-5782722980d2a152794aace2",
+    "research-4261634ecb7d2c843673d0ec",
+    "research-c078439f83f5d1a290365245",
+    "research-e598574e8691bb4c9d655bcf",
+    "research-72f013f6a62e43fc70f6f2c2",
+    "research-5a374755831a593c73279d1e",
+    "research-ff60068f258a94f4727c6ddf",
+    "research-f8b22d5df2267ab3161c8e8a",
+    "research-52ef8e970b2ecdb410b64725",
+    "research-602e8d7323cf3ae514f03e9e",
+    "research-8501ea407ccb060c29dc7348",
+    "research-1d321e0bb1624abd21c41e8d",
+    "research-81905709ec35705b387825e8",
+    "research-a61c0829af8d862541618509",
+    "research-6858e336c662ab87a651f94e",
+    "research-39093f4121cd8475f6d1af6a",
+    "research-f4cb9c39d99fb805737731dd",
+    "research-9bd7a3d9647eb0a2742921b0",
+    "research-e20c41ddd845fa8d712687dc",
+    "research-88481f3cfe3ebc55e0dc873a",
+    "research-f093e2ccadebb2c747b858dc",
+    "research-730b10e62f9527e38fca7cc7"
+  ],
+  "remaining_key_ids": [
+    "research-114b534ca5fb9c38c2643837",
+    "research-871759468c9c3234d4e3abc7",
+    "research-c15f9050f3e7c92e2442f40e",
+    "research-0f3b989a2d16caf721141d7f",
+    "research-0cceab9e31b7aed00c67ca31",
+    "research-56e3747a3c27002125f4a216",
+    "research-0f506179187d78f826f267af",
+    "research-5f16b3552ddaea57e1b2f7dc",
+    "research-cd631f472cb8a366368d0fcd",
+    "research-dd411493bf7401113f8620dc",
+    "research-7c48691f2618dc1e954b71fa",
+    "research-7490d2c77ab25d44b08edc3d",
+    "research-ab73ca70afd7ebca578b42f7",
+    "research-07388d9e1c7c7c082ea19a4f",
+    "research-7cdf98c50cbc32b15362e629",
+    "research-0f199bbc8d228ab482d7bda7",
+    "research-e8727d2a0be384627066be17",
+    "research-b23729a3abcf45141df3b324",
+    "research-a17dcde76cd3737456bdbe70",
+    "research-0724e8853b9eefd1f5589aa5",
+    "research-3c7ce84faa61730c565aef43",
+    "research-0dc9ab86a4c04305e4591662",
+    "research-0d5a2ab68ac12e1e8dbeec23",
+    "research-aeadc6b0d330ffb48ef99d1f",
+    "research-3d5ffd05babe01eba7c03e70",
+    "research-3eb48643438b6327667ce985",
+    "research-71b4145982fc957a068ca82c",
+    "research-ce4fe866b4317973c5df5fff",
+    "research-47d1e22d95a9210ea59b8237",
+    "research-f46d9172df51dcf051cfd337",
+    "research-dc79e741cd98d8da463811e2",
+    "research-20789458cdf08bb57eeccb41",
+    "research-cdb9a87d7a9120695d2abb00",
+    "research-0ae524dffb24011f8edc6f84",
+    "research-2a01079c7c1122fe42d35b6c",
+    "research-b2ed6a9849c64bb9392569e7",
+    "research-12e4a6e8b87e2f9467e77b88",
+    "research-06c933979733856df3c4a1d1",
+    "research-9fbb50f6e9c53958c90cdd9a",
+    "research-fcc7fbdbb73c291b027f3991",
+    "research-a785407a324ead70dc45c731",
+    "research-9e4c1377657feab2dca83178",
+    "research-8510a9f25f9563b7662c3396",
+    "research-0522800d24aa251b89b81f63",
+    "research-bffc3ac8ddebfe782087dab0",
+    "research-3bfd9b3f8cb9829a1a3c210c",
+    "research-4b93801a2f2709469dca33b3",
+    "research-a89d9982f56e208b67eef6af",
+    "research-83029ca8d4dbfbcf2d58eed2",
+    "research-c3a456b6dae6cb7c876b5e22",
+    "research-b4111a7e1b6747e210b5952d",
+    "research-a06bb8696d0de8478ac30717",
+    "research-3dd0114af15fb3a5c05c7115",
+    "research-24a00c6b541e14dd8e6373b8",
+    "research-2e2c854f3fac9cc4433cd633",
+    "research-992e55b2c2abc247e81f9818",
+    "research-38d165b3c05c6bff856c4c45",
+    "research-9e2af526044d12491406ac46",
+    "research-b50ae7dffc55256f07ec2e02",
+    "research-fad9284975d6fd0dc686833a",
+    "research-709ad5eb29e3d5265cefbb39",
+    "research-235c849e8fb0c7dc8ca8510e",
+    "research-7edc9e67dc2f95991c98d5fa",
+    "research-10eaa4c015f089d72a662140",
+    "research-c368f13cf0aa416d6005f9f5",
+    "research-bc918a48e1a542b35c3d6c62",
+    "research-0d8bbba37600dc3059110e54",
+    "research-adf5859e7569108e33cec77a",
+    "research-2d4db98fa1899e9398c7f1a3",
+    "research-060f4c70dbe2975cd681ded4",
+    "research-4d705e8490f76c68497095ce",
+    "research-5ced1ec49f432e19b1667e86",
+    "research-5c9573475f550ecc47f0c9cd",
+    "research-7ad335af9e6c703b0ad605b0",
+    "research-4cba0e8ee2bfe18367a95ed0",
+    "research-0a88180cff801118f4be6361",
+    "research-50b7a111768daecae4c50c67",
+    "research-047ef51f8e08cacccf386044",
+    "research-aa6230a38e69f2ef283d0595",
+    "research-aad623f4af44f6bded6655c9",
+    "research-00a47200b987f3663f46a394",
+    "research-b71eca77742da9cdb31abe21",
+    "research-233bac23f290f086fc62ea7b",
+    "research-ce29c4053c593ab3045ad1d7",
+    "research-89e028a81613f27962a3b2d7",
+    "research-1fd04b92dbe9ddaaf8c10963",
+    "research-f9494c866734d0d7e84c2400",
+    "research-aba5f9f9219dad40a3ade559",
+    "research-3f9f7a30061bcfd7dfd911ab",
+    "research-1e4de38ed5fd152f4f22850a",
+    "research-2099b3f5a573f13591fcd4c0",
+    "research-127c2ae19e43a7a93b617dc4",
+    "research-a071abb0c00aef138b9a8d94",
+    "research-42e9b2b9afba503b1c800886",
+    "research-97d0050a916d77c26f0b4e8e",
+    "research-ef0eeb3cf1fb17614a8cb56c",
+    "research-4c62278e75b865881c02d062",
+    "research-b42a3a8a7a428195edd252e8",
+    "research-66ae6c315be07dfdc5f5802e",
+    "research-4a1fab59a87cf4070b2aa415",
+    "research-d87b92393a89acbd13ae09e0",
+    "research-01f2abc4b29548edaa67985d",
+    "research-eb9edebcc08266d58febd1cf",
+    "research-6aeded11ea99b6251c7e3bd4",
+    "research-20290af9d024ab1f63221e55",
+    "research-4905f0a20f3aa2e98a358c93",
+    "research-870136927d40c259c5cc4c5e",
+    "research-3bc36a0a8069dea094f152ee",
+    "research-00bbda16a58a1076e7fb73ef",
+    "research-6644a6aa8fe4f7111c99f21f",
+    "research-b40cf9900c4aca822fe37d7c",
+    "research-54f38a719af0d2df74b76507",
+    "research-3b96bab49959822dc447dc98",
+    "research-155ba93c3ad1460bec637132",
+    "research-0df575e8281f523b65f19396",
+    "research-8ac7fbd8fc6dc9c77a4ae132",
+    "research-ef15a657fea87558333d060e",
+    "research-a38427071a5912cb53580f75",
+    "research-22e9d5833748ed3d30579de8",
+    "research-f1e3c4118396dc7127a83b1a",
+    "research-1248e1a512b75f8db7084377",
+    "research-a8711cb496c7450a9ad36933",
+    "research-189759c45a45eb91d51a49f2",
+    "research-478b1e81fe0cb46e4e5b9f51",
+    "research-c51e3cffd540cba94b6a6fda",
+    "research-2dcdc42c1715400a324a3ef4",
+    "research-4eb952494ad12ac71e788337",
+    "research-1bcc21d26ff7ad394eff3ffb",
+    "research-1d866d2f278d3d8c4853f740",
+    "research-aa3a9b0f212067cc4ea5660c",
+    "research-27bf6c1fd7422530152e21c9",
+    "research-ca347bbe1f4e061cdbc12cbf",
+    "research-361b9f614b4a98cefe0227ed",
+    "research-09585968b9b001177d794f04",
+    "research-6282e0e160fa931cc5593237",
+    "research-8af1ce4a6042005d97cc034a",
+    "research-2515474a2af4e703c8c9e94c",
+    "research-64d015fd8bbceb8ff067aecb",
+    "research-d7d3cb7f7c9cbef905f360c4",
+    "research-a01ef7d940095945c7893cce",
+    "research-7d66b64dad70d809ebf9f161",
+    "research-bb3903d44cbd1e1299f6785b",
+    "research-f67efc0cd4df619fe12d81f6",
+    "research-ce7f6d9a9aeb8d04b654c8da",
+    "research-18499cd8a2591fdc5fb01384",
+    "research-9678dafe7c81daee317a965f",
+    "research-1d5f699a031eb25cd6473e8b",
+    "research-87b4789a4b01565ef6a829ff",
+    "research-dbca504aa79476e51c283dd3",
+    "research-7513ac4526d4bd8411e38c93",
+    "research-efd6f2dd17955f940e01994c",
+    "research-121aecf0ff4aca6567c737a8",
+    "research-6cc96835cfe374b9bd416161",
+    "research-d3170498633030e2280b5765",
+    "research-f5456edb8a8b3e64c66608fa",
+    "research-0922e05e3e6cc6a1ea4f838f",
+    "research-a420e891ec73e4be03f04f2c",
+    "research-432b11e2c43c7418b7ae9a20",
+    "research-34fd449e44d20ea3ba71f027",
+    "research-808fca77de795a78c72b7143",
+    "research-c978e9e69efff9131d4846e8",
+    "research-afd0fb3287d5e1f8e0a9b379",
+    "research-d2f3cec216837ab928f658a5",
+    "research-e2e853a7d4bf62b893ea6672",
+    "research-98ea9364126e0dcb879581bb",
+    "research-8e94de7b9e9ba6085fb5909a",
+    "research-753828a8df62eba58ebe847d",
+    "research-63fefb48f4aaa22ac6b1ea44",
+    "research-7958691f09eefc410c956f9a",
+    "research-138d11dee6c109298ab8bde5",
+    "research-3d9fe8ee78f9516737ac448a",
+    "research-ece122081f17ffbad558627e",
+    "research-d34b5f61bd3e1814cda7c953",
+    "research-3f44b99778887f1244e5e901",
+    "research-1591ffc831298bedcbcea7d0",
+    "research-1d4319be64673ee95f56c063",
+    "research-dce4db2cf0db4c1bc18c3e48",
+    "research-00351f7f7d2a506eb0fe9553",
+    "research-acca73440796dbb7bf14c556",
+    "research-64940d8e04f1e76df3a6e8b5",
+    "research-1c247b2465d60960481a9fea",
+    "research-788a6ca10b28cba24a713d5f",
+    "research-d347c326fd117a56300a5371",
+    "research-73e81dcc1612b526670ea644",
+    "research-7891141e8b08d0753186da97",
+    "research-43d4554b215a2cba1d54daed",
+    "research-5bd360c9c3a5422a750d57d1",
+    "research-70067b62f80a85c5c70b71c1",
+    "research-f7c7fb694f47ee875e14d62d",
+    "research-5ba9c3caba49238e3e1e600b",
+    "research-70a702abf6a16b1c4ae79593",
+    "research-4fab7e5bb288eeaa01f85205",
+    "research-5f715c424c0f28ad2812d510",
+    "research-92ceae7c31090e31b5be6c6d",
+    "research-d8eb117ad3ff6ba13b6b07dd",
+    "research-ba6f6c8a6dde3210ab01b827",
+    "research-864df39092d2f1e27b0305a3",
+    "research-7fc8dd94084869d62ffa67e8",
+    "research-8ffb78d2f43bfdb7193850cd",
+    "research-1c0dcabe61f4617f51a22ede",
+    "research-5980da2c73f844f6831e7899",
+    "research-2f6879dc1316f2dc0fb4b285",
+    "research-fd0d57e2b47a13bc534cfe27",
+    "research-32a86a57c88a1afaa48b700c",
+    "research-4a18822fb9db0535890d3806",
+    "research-6c6b788002defff9c87ab501",
+    "research-8db2d7741dc12c5d2f9b33a1",
+    "research-1d1d4b61ae08752afcc9d21e",
+    "research-f0d5a67d7f8111832273341b",
+    "research-05ee856cc72cb983d4d8ede7",
+    "research-7385f5d225fb6b44a4aa67eb",
+    "research-fcd2d3a037ddddcda562f93d",
+    "research-039dcb325b97db92b82aeb64",
+    "research-c322f522c3c00a82f0b1e449",
+    "research-579b484035788201bc0043bf",
+    "research-7f2293b2902dadcaa3cbd8f5",
+    "research-86837dae507a33ebcc0811d7",
+    "research-acedeb86148a9758f96bc024",
+    "research-bf3be74f3ca7c341fd7b0500",
+    "research-169854707e289b56edb41edb",
+    "research-c398979b9e02ebc11e910130",
+    "research-1bde2cab630b01bb055bef00",
+    "research-0d21ef002660b10ab942cc97",
+    "research-e65d811b83eb85e06319b03a",
+    "research-4ce43e5bcd30bd5013664095",
+    "research-82fe82fdd56f0a8ded644e36",
+    "research-2ac52b5b5d5d308acef126ab",
+    "research-348ebe0912501aa8fc6b8762",
+    "research-26f4c8de68de2aa3c1685a72",
+    "research-b7fc3a6568d63e3f77d0118f",
+    "research-9bf70c3c95247f4a48b3670c",
+    "research-5428a2dea8a3d4fdf2a06e34",
+    "research-8902c491ba9fac1b842ba4da",
+    "research-52846ee193371a1a4caba1d5",
+    "research-917772331d1b170fe0705151",
+    "research-3dd5ddf89f666489f61d6050",
+    "research-dae415cde7c1398823f5706e",
+    "research-f291b9a924f57ab64c862565",
+    "research-c53e5697d3b9ef8e0a32bfd1",
+    "research-9229b2ababd65ddabd3a6abe",
+    "research-8b1e3feab7fb7de120486d89",
+    "research-2ec32da4b5429ec9f5500604",
+    "research-da0c458c99a2d03267ffe950",
+    "research-02592d2b61c374d72e6c52b3",
+    "research-31873fbbb59c56eabf0fdb3e",
+    "research-78a32992634e0214cad0e87c",
+    "research-8263e3d9104a4b0ded859600",
+    "research-9325da218d7313d9bf428457",
+    "research-146c8bb7fcbcab7e53e82228",
+    "research-cf4b51271219a041ae1c28e9",
+    "research-aca9f9f93fe9c6c2f2b942ed",
+    "research-f473c45ce82e9a542dad2ba9",
+    "research-c18c3228392fa0a9ea35247f",
+    "research-2c16d7df87d4b892ee240e21",
+    "research-0822b080175ced22661e926e",
+    "research-a77bf9e8600a3ea9d0a1614b",
+    "research-1f31a642f23c7d1bc0db998c",
+    "research-485826c4fe7f0b7b4de4d28e",
+    "research-80a9f4147ccd3c97550d6c72",
+    "research-c7219205d467b7c165ef78d5",
+    "research-fe1b2ecfa987134e7f01f55a",
+    "research-bb66e3b59b7a9ec57dc7a3b8",
+    "research-e0ca0b9087dbe7488c7513ae",
+    "research-29a303f38252d078a26e3b1e",
+    "research-4b4d2ac6731b7604d6cae368",
+    "research-a07300665ae281d0ed3b245e",
+    "research-313af2ca397b53a6a17726db",
+    "research-16f578775b37f0bc0ec8d2c3",
+    "research-45302b640ab702091f5ea8f5",
+    "research-a11839d7541474995ad53c4b",
+    "research-426265b776a3cf0d4173f7d8",
+    "research-72e5afb39b91ec247947372a",
+    "research-550e6d376e114dd4b7edc103",
+    "research-2411cd695c5b53f1f6316c22",
+    "research-4d638b02121d7bb5e7349c3c",
+    "research-03bdd8ac6563503bfe90ed15",
+    "research-b03268b2b9d2d04d57c53683",
+    "research-1aec2d79f095811774c21e45",
+    "research-aa40dcbbd405e37c35781e16",
+    "research-68206954040625062cf48998",
+    "research-56907d24a7c20f1c584ed782",
+    "research-dffc7809609cd10f85c2f159",
+    "research-be663fd35d7f6729dba92fb6",
+    "research-c043f7243260c8258971cd79",
+    "research-d7b2341a2f3a385dc8feb8e6",
+    "research-30056e0c95d763f51fd817c8",
+    "research-9be59830a17d479719898d6e",
+    "research-e8b8352fbae59c962bceab27",
+    "research-499adf6b2acdc5b79b1e58ef",
+    "research-27350eb859393b59f1e9ebe8",
+    "research-a1b6440df9f65c3b56a303b0",
+    "research-d482efbaedb31fbd98c3e25f",
+    "research-0b3eae0022f7fcc7f14dd482",
+    "research-de3894b7c646c9bbc2063b0d",
+    "research-18ef1524f9c3db9db1d47e59",
+    "research-5182e82ec2f2f234dc070ef8",
+    "research-59fdca01ddf946fca07c11d1",
+    "research-48d173352f7773fd2a25e5e9"
+  ],
+  "remaining": [
+    {
+      "candidate_id": "research-114b534ca5fb9c38c2643837",
+      "name": "PROCREATE",
+      "country_hint": "Australia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-871759468c9c3234d4e3abc7",
+      "name": "Sydney, Australia (HQ)",
+      "country_hint": "Australia",
+      "source_urls": [
+        "https://www.flyingbark.com.au/about"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c15f9050f3e7c92e2442f40e",
+      "name": "DYNAMIC BOX",
+      "country_hint": "Azerbaijan",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0f3b989a2d16caf721141d7f",
+      "name": "AGENT DOUBLE PRODUCTIONS",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0cceab9e31b7aed00c67ca31",
+      "name": "BESIDE PRODUCTIONS",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-56e3747a3c27002125f4a216",
+      "name": "LIMITED ADVENTURES",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0f506179187d78f826f267af",
+      "name": "MEDIA-STANDS.EU",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5f16b3552ddaea57e1b2f7dc",
+      "name": "MIYU PRODUCTIONS",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-cd631f472cb8a366368d0fcd",
+      "name": "PANIQUE!",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dd411493bf7401113f8620dc",
+      "name": "PEYO PRODUCTION",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7c48691f2618dc1e954b71fa",
+      "name": "SYNK - THE PACK",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7490d2c77ab25d44b08edc3d",
+      "name": "WAJNBROSSE",
+      "country_hint": "Belgium",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ab73ca70afd7ebca578b42f7",
+      "name": "BOTTLESHIP",
+      "country_hint": "Bulgaria",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-07388d9e1c7c7c082ea19a4f",
+      "name": "10E AVE PRODUCTIONS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7cdf98c50cbc32b15362e629",
+      "name": "10TH AVE ANIMATION",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0f199bbc8d228ab482d7bda7",
+      "name": "ATOMIC CARTOONS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-e8727d2a0be384627066be17",
+      "name": "AVENIDA",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b23729a3abcf45141df3b324",
+      "name": "CHRYSTELLE MAECHLER PRODUCTIONS INC.",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a17dcde76cd3737456bdbe70",
+      "name": "DNEG ANIMATION",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0724e8853b9eefd1f5589aa5",
+      "name": "ECHO MEDIA",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3c7ce84faa61730c565aef43",
+      "name": "EPIC STORYWORLDS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0dc9ab86a4c04305e4591662",
+      "name": "EX NIHILO PRODUCTIONS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0d5a2ab68ac12e1e8dbeec23",
+      "name": "HYPERTEC",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aeadc6b0d330ffb48ef99d1f",
+      "name": "IMAGE-IN ATLANTIQUE",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3d5ffd05babe01eba7c03e70",
+      "name": "MONTREAL",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://folksvfx.com/contact/",
+        "https://www.framestore.com/contact"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3eb48643438b6327667ce985",
+      "name": "MOONSHOT RIGHTS MOCAP PRODUCTIONS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-71b4145982fc957a068ca82c",
+      "name": "NEXT PIXEL ENTERTAINMENT INC.",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ce4fe866b4317973c5df5fff",
+      "name": "PRODUCTIONS L'UNITÉ CENTRALE",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-47d1e22d95a9210ea59b8237",
+      "name": "PVP MÉDIA INC.",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f46d9172df51dcf051cfd337",
+      "name": "REALLIFE PICTURES INC.",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dc79e741cd98d8da463811e2",
+      "name": "REDEFINE",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-20789458cdf08bb57eeccb41",
+      "name": "REZOLUTION PICTURES",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-cdb9a87d7a9120695d2abb00",
+      "name": "RODEO FX ANIMATION",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0ae524dffb24011f8edc6f84",
+      "name": "SINKING SHIP ENTERTAINMENT",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2a01079c7c1122fe42d35b6c",
+      "name": "SLAP HAPPY CARTOONS",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b2ed6a9849c64bb9392569e7",
+      "name": "SPUN PRODUCTIONS INC",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-12e4a6e8b87e2f9467e77b88",
+      "name": "STUDIO SYLLABES",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-06c933979733856df3c4a1d1",
+      "name": "TERRE INNUE",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9fbb50f6e9c53958c90cdd9a",
+      "name": "VIVAVISION",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-fcc7fbdbb73c291b027f3991",
+      "name": "WIND SUN SKY ENTERTAINMENT",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a785407a324ead70dc45c731",
+      "name": "WITH BELLS ON ENTERTAINMENT",
+      "country_hint": "Canada",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9e4c1377657feab2dca83178",
+      "name": "BEIJING MIAOW'S HOUSE CULTURE MEDIA CO., LTD.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8510a9f25f9563b7662c3396",
+      "name": "BILIBILI INC.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0522800d24aa251b89b81f63",
+      "name": "CCTV ANIMATION GROUP LIMITED",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-bffc3ac8ddebfe782087dab0",
+      "name": "CHINA FILM GROUP",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3bfd9b3f8cb9829a1a3c210c",
+      "name": "CHINA FILM PAVILION",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4b93801a2f2709469dca33b3",
+      "name": "ESCAPE VELOCITY ANIMATION STUDIO",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a89d9982f56e208b67eef6af",
+      "name": "FANTAWILD ANIMATION INC",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-83029ca8d4dbfbcf2d58eed2",
+      "name": "FOX RENDERFARM",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c3a456b6dae6cb7c876b5e22",
+      "name": "FZ ENTERTAINMENT CO., LTD.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b4111a7e1b6747e210b5952d",
+      "name": "HUNAN GOLDEN EAGLE CARTOON MEDIA CO.,LTD",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a06bb8696d0de8478ac30717",
+      "name": "SHANGHAI YUEWEN INFORMATION TECHNOLOGY CO. LTD.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3dd0114af15fb3a5c05c7115",
+      "name": "SHENGDING CULTURE",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-24a00c6b541e14dd8e6373b8",
+      "name": "SHENZHEN TIAN TIAN CHENG ZHANG FILM AND TELEVISION PRODUCTIONS LTD.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2e2c854f3fac9cc4433cd633",
+      "name": "ZAOZHUANG YIJIA ANIMATION PRODUCTION CO., LTD",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-992e55b2c2abc247e81f9818",
+      "name": "ZHEJIANG ZOLAND ANIMATION CO., LTD.",
+      "country_hint": "China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-38d165b3c05c6bff856c4c45",
+      "name": "CROATIAN AUDIOVISUAL CENTRE (HAVC) - HRVATSKI AUDIOVIZUALNI CENTAR Financial organisation",
+      "country_hint": "Croatia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9e2af526044d12491406ac46",
+      "name": "FETISOFF ILLUSION - EUROPE LTD",
+      "country_hint": "Cyprus",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b50ae7dffc55256f07ec2e02",
+      "name": "MIBO LIMITED",
+      "country_hint": "Cyprus",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-fad9284975d6fd0dc686833a",
+      "name": "13KA",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-709ad5eb29e3d5265cefbb39",
+      "name": "AMU-FAMU PRAGUE",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-235c849e8fb0c7dc8ca8510e",
+      "name": "BAREBEAR PRODUCTION S.R.O.",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7edc9e67dc2f95991c98d5fa",
+      "name": "BIONAUT",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-10eaa4c015f089d72a662140",
+      "name": "LAST FILMS",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c368f13cf0aa416d6005f9f5",
+      "name": "ROLLING PICTURES SPOL. S R.O.",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-bc918a48e1a542b35c3d6c62",
+      "name": "TVORBA FILMS",
+      "country_hint": "Czechia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0d8bbba37600dc3059110e54",
+      "name": "MARIONETTEXR",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-adf5859e7569108e33cec77a",
+      "name": "MINICOSMOS",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2d4db98fa1899e9398c7f1a3",
+      "name": "MOOD ANIMATION",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-060f4c70dbe2975cd681ded4",
+      "name": "NICE NINJA A/S",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4d705e8490f76c68497095ce",
+      "name": "OYA COPENHAGEN",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5ced1ec49f432e19b1667e86",
+      "name": "SPARRE PRODUCTION",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5c9573475f550ecc47f0c9cd",
+      "name": "THE SACHSE COMPANY",
+      "country_hint": "Denmark",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7ad335af9e6c703b0ad605b0",
+      "name": "DEVGAME OU",
+      "country_hint": "Estonia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4cba0e8ee2bfe18367a95ed0",
+      "name": "KOPLI KINOKOMPANII",
+      "country_hint": "Estonia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0a88180cff801118f4be6361",
+      "name": "OÜ NUKUFILM",
+      "country_hint": "Estonia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-50b7a111768daecae4c50c67",
+      "name": "RAO HEIDMETSA FILMISTUUDIO OÜ",
+      "country_hint": "Estonia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-047ef51f8e08cacccf386044",
+      "name": "UNDI TEOD",
+      "country_hint": "Estonia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aa6230a38e69f2ef283d0595",
+      "name": "AUDIOVISUAL PRODUCERS FINLAND - APFI",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aad623f4af44f6bded6655c9",
+      "name": "CHARACTER HOUSE",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-00a47200b987f3663f46a394",
+      "name": "DBH MUSIC",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b71eca77742da9cdb31abe21",
+      "name": "INK AND LIGHT",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-233bac23f290f086fc62ea7b",
+      "name": "KANTELINEN COMPANY",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ce29c4053c593ab3045ad1d7",
+      "name": "PLASTILIN MEDIA",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-89e028a81613f27962a3b2d7",
+      "name": "WRAPICE",
+      "country_hint": "Finland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1fd04b92dbe9ddaaf8c10963",
+      "name": "FILM IN GEORGIA",
+      "country_hint": "Georgia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f9494c866734d0d7e84c2400",
+      "name": "AHOIFILM",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aba5f9f9219dad40a3ade559",
+      "name": "ALEXANDRA SCHATZ FILMPRODUKTION",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3f9f7a30061bcfd7dfd911ab",
+      "name": "DULLY & DAX",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1e4de38ed5fd152f4f22850a",
+      "name": "FFL FILM UND FERNSEH LABOR",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2099b3f5a573f13591fcd4c0",
+      "name": "FILMVERMOEGEN GMBH",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-127c2ae19e43a7a93b617dc4",
+      "name": "GRETELS GOLD GMBH",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a071abb0c00aef138b9a8d94",
+      "name": "MACK ONE",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-42e9b2b9afba503b1c800886",
+      "name": "STUDIO 100 INTERNATIONAL",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-97d0050a916d77c26f0b4e8e",
+      "name": "TAMA FILMPRODUKTION",
+      "country_hint": "Germany",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ef0eeb3cf1fb17614a8cb56c",
+      "name": "AMBASSADE DE FRANCE AU GHANA",
+      "country_hint": "Ghana",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4c62278e75b865881c02d062",
+      "name": "INCISE PICTURE",
+      "country_hint": "Hong Kong SAR China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b42a3a8a7a428195edd252e8",
+      "name": "TSUI BROTHERS",
+      "country_hint": "Hong Kong SAR China",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-66ae6c315be07dfdc5f5802e",
+      "name": "LIBERTY GLOBAL KFT",
+      "country_hint": "Hungary",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4a1fab59a87cf4070b2aa415",
+      "name": "MOME - MOHOLY-NAGY UNIVERSITY OF ART AND DESIGN BUDAPEST",
+      "country_hint": "Hungary",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d87b92393a89acbd13ae09e0",
+      "name": "UMATIK ENTERTAINMENT",
+      "country_hint": "Hungary",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-01f2abc4b29548edaa67985d",
+      "name": "COMPASS FILMS",
+      "country_hint": "Iceland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-eb9edebcc08266d58febd1cf",
+      "name": "TECHNICOLOR INDIA",
+      "country_hint": "India",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-6aeded11ea99b6251c7e3bd4",
+      "name": "SOUREH CINEMA ORGANIZATION",
+      "country_hint": "Iran",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-20290af9d024ab1f63221e55",
+      "name": "HOT DROP FILMS LTD.",
+      "country_hint": "Ireland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4905f0a20f3aa2e98a358c93",
+      "name": "SOW YOU ENTERTAINMENT",
+      "country_hint": "Ireland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-870136927d40c259c5cc4c5e",
+      "name": "TRINITY MOTION PICTURES",
+      "country_hint": "Ireland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3bc36a0a8069dea094f152ee",
+      "name": "ANIMOKA STUDIOS SRL",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-00bbda16a58a1076e7fb73ef",
+      "name": "CROCOPIE X 206 LAB S.R.L.",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-6644a6aa8fe4f7111c99f21f",
+      "name": "FANTASMAGORIE STUDIO",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b40cf9900c4aca822fe37d7c",
+      "name": "GERTIE",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-54f38a719af0d2df74b76507",
+      "name": "GRAFFITI FILM",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3b96bab49959822dc447dc98",
+      "name": "JINGLEBELL SRL",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-155ba93c3ad1460bec637132",
+      "name": "L & C S.R.L.",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0df575e8281f523b65f19396",
+      "name": "LYNX MULTIMEDIA FACTORY S.R.L",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8ac7fbd8fc6dc9c77a4ae132",
+      "name": "MOBO SRL",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ef15a657fea87558333d060e",
+      "name": "MONDO TV GROUP S.P.A",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a38427071a5912cb53580f75",
+      "name": "NOTES N' POST",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-22e9d5833748ed3d30579de8",
+      "name": "PALOMAR S.P.A.",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f1e3c4118396dc7127a83b1a",
+      "name": "POPCULT",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1248e1a512b75f8db7084377",
+      "name": "RAI KIDS / RADIOTELEVISIONE ITALIANA (RAI)",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a8711cb496c7450a9ad36933",
+      "name": "RAIN FROG",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-189759c45a45eb91d51a49f2",
+      "name": "RAINBOW SPA",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-478b1e81fe0cb46e4e5b9f51",
+      "name": "RIGOTZ STORIES",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c51e3cffd540cba94b6a6fda",
+      "name": "ROBIN STUDIO",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2dcdc42c1715400a324a3ef4",
+      "name": "VALLAROUND SRL",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4eb952494ad12ac71e788337",
+      "name": "VISMANIMATION",
+      "country_hint": "Italy",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1bcc21d26ff7ad394eff3ffb",
+      "name": "OKADO TAKASHI",
+      "country_hint": "Japan",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1d866d2f278d3d8c4853f740",
+      "name": "TOKYO METROPOLITAN GOVERNMENT",
+      "country_hint": "Japan",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aa3a9b0f212067cc4ea5660c",
+      "name": "ANIMATION STUDIO ATOM ART",
+      "country_hint": "Latvia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-27bf6c1fd7422530152e21c9",
+      "name": "ARTBOX",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ca347bbe1f4e061cdbc12cbf",
+      "name": "BALTIC FILM & CREATIVE TECH CLUSTER",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-361b9f614b4a98cefe0227ed",
+      "name": "BROOM FILMS",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-09585968b9b001177d794f04",
+      "name": "KINOMIND FILMS",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-6282e0e160fa931cc5593237",
+      "name": "LITLBAZ",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8af1ce4a6042005d97cc034a",
+      "name": "OAK9 ENTERTAINMENT",
+      "country_hint": "Lithuania",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2515474a2af4e703c8c9e94c",
+      "name": "AMOUR FOU LUXEMBOURG",
+      "country_hint": "Luxembourg",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-64d015fd8bbceb8ff067aecb",
+      "name": "FABRIQUE D'IMAGES",
+      "country_hint": "Luxembourg",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d7d3cb7f7c9cbef905f360c4",
+      "name": "MELUSINE PRODUCTIONS / STUDIO 352",
+      "country_hint": "Luxembourg",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a01ef7d940095945c7893cce",
+      "name": "PAUL THILTGES DISTRIBUTIONS",
+      "country_hint": "Luxembourg",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7d66b64dad70d809ebf9f161",
+      "name": "PHILOPHON",
+      "country_hint": "Luxembourg",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-bb3903d44cbd1e1299f6785b",
+      "name": "MALAYSIA DIGITAL ECONOMY CORPORATION SDN BHD (MDEC)",
+      "country_hint": "Malaysia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f67efc0cd4df619fe12d81f6",
+      "name": "ANA CRUZ PRODUCTION",
+      "country_hint": "Mexico",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ce7f6d9a9aeb8d04b654c8da",
+      "name": "ITHRAX ANIMATED",
+      "country_hint": "Mexico",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-18499cd8a2591fdc5fb01384",
+      "name": "BLENDER",
+      "country_hint": "Netherlands",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9678dafe7c81daee317a965f",
+      "name": "A44",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1d5f699a031eb25cd6473e8b",
+      "name": "Beyond Fun",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-87b4789a4b01565ef6a829ff",
+      "name": "Beyond Studio",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dbca504aa79476e51c283dd3",
+      "name": "Blind Squirrel Entertainment",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7513ac4526d4bd8411e38c93",
+      "name": "Conical",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-efd6f2dd17955f940e01994c",
+      "name": "Fox & Co",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-121aecf0ff4aca6567c737a8",
+      "name": "Futureverse",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-6cc96835cfe374b9bd416161",
+      "name": "Geo AR",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d3170498633030e2280b5765",
+      "name": "Level",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f5456edb8a8b3e64c66608fa",
+      "name": "Lost Cosmonauts",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0922e05e3e6cc6a1ea4f838f",
+      "name": "Melodics",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a420e891ec73e4be03f04f2c",
+      "name": "Mighty Eyes",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-432b11e2c43c7418b7ae9a20",
+      "name": "Mohawk Media",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-34fd449e44d20ea3ba71f027",
+      "name": "Niantic Aotearoa",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-808fca77de795a78c72b7143",
+      "name": "Niantic Aotearoa NZ",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c978e9e69efff9131d4846e8",
+      "name": "Niantic Aotearoa New Zealand",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-afd0fb3287d5e1f8e0a9b379",
+      "name": "PlaySide Studios",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d2f3cec216837ab928f658a5",
+      "name": "Portsmouth Film Equipment Rental",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-e2e853a7d4bf62b893ea6672",
+      "name": "Rascal Kids",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-98ea9364126e0dcb879581bb",
+      "name": "Runaway Play",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8e94de7b9e9ba6085fb5909a",
+      "name": "Shotover Media Ltd",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.filmotagosouthland.com/production-support/industry-directory/shotover-media-ltd"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-753828a8df62eba58ebe847d",
+      "name": "Staples Productions",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-63fefb48f4aaa22ac6b1ea44",
+      "name": "Te Whare Piringa Film Studio",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7958691f09eefc410c956f9a",
+      "name": "Usual Suspects Studios",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-138d11dee6c109298ab8bde5",
+      "name": "WhitebaitMedia",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.christchurchnz.com/about/news/Production-Grant-renewed"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3d9fe8ee78f9516737ac448a",
+      "name": "Wrestler",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.wellingtonnz.com/screen-wellington/why-wellington"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ece122081f17ffbad558627e",
+      "name": "ZeroKing",
+      "country_hint": "New Zealand",
+      "source_urls": [
+        "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d34b5f61bd3e1814cda7c953",
+      "name": "ANIMASKIN",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3f44b99778887f1244e5e901",
+      "name": "BIVROST FILM AS",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1591ffc831298bedcbcea7d0",
+      "name": "FENOMEN STUDIOS",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1d4319be64673ee95f56c063",
+      "name": "INTHEMOOD FILM",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dce4db2cf0db4c1bc18c3e48",
+      "name": "KOOL PRODUKTION AS",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-00351f7f7d2a506eb0fe9553",
+      "name": "MIKROFILM AS",
+      "country_hint": "Norway",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-acca73440796dbb7bf14c556",
+      "name": "TUNCHE FILMS SAC",
+      "country_hint": "Panama",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-64940d8e04f1e76df3a6e8b5",
+      "name": "APUS ESTUDIO",
+      "country_hint": "Peru",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1c247b2465d60960481a9fea",
+      "name": "STARTOONS ANIMATION",
+      "country_hint": "Peru",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-788a6ca10b28cba24a713d5f",
+      "name": "ANIMATION COUNCIL OF THE PHILIPPINES, INC.",
+      "country_hint": "Philippines",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d347c326fd117a56300a5371",
+      "name": "DEPARTMENT OF TRADE AND INDUSTRY (DTI) PHILIPPINES",
+      "country_hint": "Philippines",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-73e81dcc1612b526670ea644",
+      "name": "MARI NICOLE MENDOZA",
+      "country_hint": "Philippines",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7891141e8b08d0753186da97",
+      "name": "HUMAN FILM",
+      "country_hint": "Poland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-43d4554b215a2cba1d54daed",
+      "name": "LETKO",
+      "country_hint": "Poland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5bd360c9c3a5422a750d57d1",
+      "name": "LIKAON SP. Z O.O.",
+      "country_hint": "Poland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-70067b62f80a85c5c70b71c1",
+      "name": "MOREFILM SPZOO",
+      "country_hint": "Poland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f7c7fb694f47ee875e14d62d",
+      "name": "WJTEAM / LIKAON",
+      "country_hint": "Poland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5ba9c3caba49238e3e1e600b",
+      "name": "AMARELA MECANICA STUDIO",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-70a702abf6a16b1c4ae79593",
+      "name": "FILMES DO GAJO",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4fab7e5bb288eeaa01f85205",
+      "name": "FILMÓGRAFO",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5f715c424c0f28ad2812d510",
+      "name": "FLY MOUSTACHE UNIPESSOAL LDA",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-92ceae7c31090e31b5be6c6d",
+      "name": "MODO IMAGO",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d8eb117ad3ff6ba13b6b07dd",
+      "name": "OCIDENTAL FILMES",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-ba6f6c8a6dde3210ab01b827",
+      "name": "OH ! ANIMATION",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-864df39092d2f1e27b0305a3",
+      "name": "SPARKLE ANIMATION",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7fc8dd94084869d62ffa67e8",
+      "name": "TAKE IT EASY - PRODUÇÕES AUDIOVISUAIS",
+      "country_hint": "Portugal",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8ffb78d2f43bfdb7193850cd",
+      "name": "BVX INNOVATION & PRODUCTION D.O.O.",
+      "country_hint": "Serbia",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1c0dcabe61f4617f51a22ede",
+      "name": "SIMON JONATHAN TAYLOR",
+      "country_hint": "South Africa",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5980da2c73f844f6831e7899",
+      "name": "BIAF",
+      "country_hint": "South Korea",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2f6879dc1316f2dc0fb4b285",
+      "name": "BREAD BARBERSHOP CO., LTD",
+      "country_hint": "South Korea",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-fd0d57e2b47a13bc534cfe27",
+      "name": "JEEHOON PARK",
+      "country_hint": "South Korea",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-32a86a57c88a1afaa48b700c",
+      "name": "KOCCA - KOREA CREATIVE CONTENT AGENCY",
+      "country_hint": "South Korea",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4a18822fb9db0535890d3806",
+      "name": "3 BESSONES AIE",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-6c6b788002defff9c87ab501",
+      "name": "AMUSE STUDIOS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8db2d7741dc12c5d2f9b33a1",
+      "name": "ANIMA KITCHENT",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1d1d4b61ae08752afcc9d21e",
+      "name": "ANIMA KITCHENT CANARIAS SOCIEDAD LIMITADA.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f0d5a67d7f8111832273341b",
+      "name": "ANIMAZING",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-05ee856cc72cb983d4d8ede7",
+      "name": "ARMENTEIRA PRODUCCIONES",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7385f5d225fb6b44a4aa67eb",
+      "name": "AUDIO PROJECTS - GALLETLY SA",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-fcd2d3a037ddddcda562f93d",
+      "name": "AUTODESK",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-039dcb325b97db92b82aeb64",
+      "name": "B-WATER ANIMATION STUDIOS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c322f522c3c00a82f0b1e449",
+      "name": "CLAVNA AUDIOVISUAL CLUSTER OF NAVARRA",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-579b484035788201bc0043bf",
+      "name": "CLUSTER AUDIOVISUAL DE CANARIAS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-7f2293b2902dadcaa3cbd8f5",
+      "name": "CONSORCIO DE LA ZONA ESPECIAL CANARIA",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-86837dae507a33ebcc0811d7",
+      "name": "DR. PLATYPUS & MS. WOMBAT",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-acedeb86148a9758f96bc024",
+      "name": "DRV STUDIO",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-bf3be74f3ca7c341fd7b0500",
+      "name": "EMYLI KIDS S.L.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-169854707e289b56edb41edb",
+      "name": "IKIRU FILMS, S.L.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c398979b9e02ebc11e910130",
+      "name": "LA CREME FILMS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1bde2cab630b01bb055bef00",
+      "name": "LE CUBE",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0d21ef002660b10ab942cc97",
+      "name": "LIGHTBOX ANIMATION STUDIOS S.L.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-e65d811b83eb85e06319b03a",
+      "name": "MAD PRODUCCIONES DE SONIDO",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4ce43e5bcd30bd5013664095",
+      "name": "MANSALVA FILMS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-82fe82fdd56f0a8ded644e36",
+      "name": "MGC MARKETING PRODUCCIÓN Y GESTIÓN CULTURAL SL",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2ac52b5b5d5d308acef126ab",
+      "name": "MOA STUDIO",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-348ebe0912501aa8fc6b8762",
+      "name": "MONDO TV STUDIOS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-26f4c8de68de2aa3c1685a72",
+      "name": "MORGANA VFX & MOTION",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b7fc3a6568d63e3f77d0118f",
+      "name": "OUO TIME",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9bf70c3c95247f4a48b3670c",
+      "name": "PANGUR ANIMATION COOP. V.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5428a2dea8a3d4fdf2a06e34",
+      "name": "ROCÍO MIRA",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8902c491ba9fac1b842ba4da",
+      "name": "TANGRAM SOLUTIONS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-52846ee193371a1a4caba1d5",
+      "name": "TANGRAM SOLUTIONS S.L.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-917772331d1b170fe0705151",
+      "name": "TARANNÀ FILMS, SL",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-3dd5ddf89f666489f61d6050",
+      "name": "THE FRANK & BARTON COMPANY S.L.",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dae415cde7c1398823f5706e",
+      "name": "TINGLADO FILM",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f291b9a924f57ab64c862565",
+      "name": "TOMAVISION",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c53e5697d3b9ef8e0a32bfd1",
+      "name": "TOONWOLF STUDIO",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9229b2ababd65ddabd3a6abe",
+      "name": "VERONICA CASAS",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8b1e3feab7fb7de120486d89",
+      "name": "WACKAMOLA",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2ec32da4b5429ec9f5500604",
+      "name": "WIDEFRAME STUDIO",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-da0c458c99a2d03267ffe950",
+      "name": "ZEPTOLAB - BARCELONE",
+      "country_hint": "Spain",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-02592d2b61c374d72e6c52b3",
+      "name": "APPARAT FILMPRODUKTION AB",
+      "country_hint": "Sweden",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-31873fbbb59c56eabf0fdb3e",
+      "name": "DOCKHUS ANIMATION AB",
+      "country_hint": "Sweden",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-78a32992634e0214cad0e87c",
+      "name": "QUALISYS",
+      "country_hint": "Sweden",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-8263e3d9104a4b0ded859600",
+      "name": "CIE GILLES JOBIN",
+      "country_hint": "Switzerland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9325da218d7313d9bf428457",
+      "name": "LANGFILM",
+      "country_hint": "Switzerland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-146c8bb7fcbcab7e53e82228",
+      "name": "SUPERSWISS RED",
+      "country_hint": "Switzerland",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-cf4b51271219a041ae1c28e9",
+      "name": "ANIMATION & VISUAL EFFECTS ASSOCIATION",
+      "country_hint": "Taiwan",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aca9f9f93fe9c6c2f2b942ed",
+      "name": "DITP - DEPARTMENT OF INTERNATIONAL TRADE PROMOTION - MINISTRY OF COMMERCE - THE ROYAL THAI GOVERNMENT",
+      "country_hint": "Thailand",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-f473c45ce82e9a542dad2ba9",
+      "name": "REDMOS ANIMATION",
+      "country_hint": "Thailand",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c18c3228392fa0a9ea35247f",
+      "name": "MESS PICTURES",
+      "country_hint": "Togo",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2c16d7df87d4b892ee240e21",
+      "name": "MENZILMEKAN ANIMATION",
+      "country_hint": "Turkmenistan",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0822b080175ced22661e926e",
+      "name": "CAFFEINE FILM PRODUCTION",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a77bf9e8600a3ea9d0a1614b",
+      "name": "CO ICF HELP FOR YOU",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1f31a642f23c7d1bc0db998c",
+      "name": "FILM UA GROUP",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-485826c4fe7f0b7b4de4d28e",
+      "name": "FILMAKO - FILM ANIMATION COMPANY",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-80a9f4147ccd3c97550d6c72",
+      "name": "KARANDASH ANIMATION STUDIO",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c7219205d467b7c165ef78d5",
+      "name": "LASTOON",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-fe1b2ecfa987134e7f01f55a",
+      "name": "UNITED HEROES",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-bb66e3b59b7a9ec57dc7a3b8",
+      "name": "YARKI KIDS",
+      "country_hint": "Ukraine",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-e0ca0b9087dbe7488c7513ae",
+      "name": "AARDMAN",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-29a303f38252d078a26e3b1e",
+      "name": "AARDMAN ACADEMY",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4b4d2ac6731b7604d6cae368",
+      "name": "BLINK INDUSTRIES",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a07300665ae281d0ed3b245e",
+      "name": "BLUE ZOO ANIMATION STUDIO",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-313af2ca397b53a6a17726db",
+      "name": "CLOTH CAT",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-16f578775b37f0bc0ec8d2c3",
+      "name": "DANIEL SLIGHT",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-45302b640ab702091f5ea8f5",
+      "name": "DEPARTMENT FOR BUSINESS AND TRADE",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a11839d7541474995ad53c4b",
+      "name": "DNEG ANIMATION",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-426265b776a3cf0d4173f7d8",
+      "name": "FOUNDRY",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-72e5afb39b91ec247947372a",
+      "name": "FUSE POST",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-550e6d376e114dd4b7edc103",
+      "name": "GFM ANIMATION",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-2411cd695c5b53f1f6316c22",
+      "name": "HASBRO ENTERTAINMENT",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-4d638b02121d7bb5e7349c3c",
+      "name": "HOCUS POCUS STUDIOS LTD",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-03bdd8ac6563503bfe90ed15",
+      "name": "INTERFERENCE PATTERN LTD",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-b03268b2b9d2d04d57c53683",
+      "name": "KEYFRAME STUDIO LTD",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-1aec2d79f095811774c21e45",
+      "name": "LIL CRITTER WORKSHOP LTD UK",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-aa40dcbbd405e37c35781e16",
+      "name": "LONDON",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://folksvfx.com/contact/",
+        "https://www.framestore.com/contact"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-68206954040625062cf48998",
+      "name": "LUPUS FILMS",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-56907d24a7c20f1c584ed782",
+      "name": "MOJO SWOPTOPS PRODUCTIONS LTD",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-dffc7809609cd10f85c2f159",
+      "name": "RED STAR",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-be663fd35d7f6729dba92fb6",
+      "name": "SCREEN SCOTLAND",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-c043f7243260c8258971cd79",
+      "name": "TEMPLE CARRINGTON & BROWN",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d7b2341a2f3a385dc8feb8e6",
+      "name": "THE ILLUMINATED FILMS COMPANY",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-30056e0c95d763f51fd817c8",
+      "name": "VIRTX LTD",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-9be59830a17d479719898d6e",
+      "name": "WILD CHILD ANIMATION",
+      "country_hint": "United Kingdom",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-e8b8352fbae59c962bceab27",
+      "name": "ANIMATION MAGAZINE",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-499adf6b2acdc5b79b1e58ef",
+      "name": "CLAYMANIAK",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-27350eb859393b59f1e9ebe8",
+      "name": "Chicago",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.framestore.com/contact"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-a1b6440df9f65c3b56a303b0",
+      "name": "HASBRO INC",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-d482efbaedb31fbd98c3e25f",
+      "name": "IMAGINATION BAY ENTERTAINMENT",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-0b3eae0022f7fcc7f14dd482",
+      "name": "Los Angeles, USA",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.flyingbark.com.au/about"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-de3894b7c646c9bbc2063b0d",
+      "name": "M2 ANIMATION",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-18ef1524f9c3db9db1d47e59",
+      "name": "OZONE STORY TECH",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-5182e82ec2f2f234dc070ef8",
+      "name": "RAUL GARCIA",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-59fdca01ddf946fca07c11d1",
+      "name": "RESPEECHER",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    },
+    {
+      "candidate_id": "research-48d173352f7773fd2a25e5e9",
+      "name": "WARNER BROS. DISCOVERY",
+      "country_hint": "United States",
+      "source_urls": [
+        "https://www.annecyfestival.com/"
+      ],
+      "reason": "Not yet individually investigated; retain for subsequent live source research. No source failure or completion asserted."
+    }
+  ],
+  "assessed_outcomes": {
+    "branch_or_department_research": 7,
+    "company_proposal_prepared": 99,
+    "existing_identity_reconciled": 16,
+    "geographic_facility_review": 46,
+    "historical_operation_review": 1,
+    "identity_review": 140,
+    "research_out_of_scope": 23,
+    "research_unresolved": 95
+  },
+  "completion_claim": false,
+  "verification_complete": false,
+  "commands": [
+    "python tools/global_continuation.py prepare",
+    "python tools/global_continuation.py check"
+  ],
+  "resume": "Select remaining_key_ids from frozen inputs/backlog.json, investigate original and official evidence, append an individual review to inputs/company-reviews.json preserving source identity, then run prepare/check. Do not mark a URL lookup as supported company research."
+}

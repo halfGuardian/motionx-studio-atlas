@@ -4,25 +4,28 @@
   "canonical_records_before": 42296,
   "canonical_records_after": 42296,
   "canonical_additions": 0,
-  "proposed_new_class_c_company_references": 30,
-  "individual_company_reviews": 70,
-  "backlog_keys_reviewed": 69,
-  "backlog_keys_remaining": 656,
+  "proposed_new_class_c_company_references": 99,
+  "individual_company_reviews": 428,
+  "backlog_keys_reviewed": 427,
+  "backlog_keys_remaining": 298,
   "backlog_observations_preserved": 753,
   "backlog_keys_preserved": 725,
   "research_dispositions": {
-    "company_proposal_prepared": 30,
-    "existing_identity_reconciled": 10,
-    "identity_review": 2,
-    "research_out_of_scope": 2,
-    "research_unresolved": 26
+    "company_proposal_prepared": 99,
+    "existing_identity_reconciled": 24,
+    "geographic_facility_review": 46,
+    "historical_operation_review": 1,
+    "identity_review": 140,
+    "research_out_of_scope": 23,
+    "research_unresolved": 95
   },
-  "countries_individually_investigated": 35,
+  "countries_individually_investigated": 50,
   "commercial_role_counts": {
-    "adjacent_uncertain": 123,
+    "adjacent_uncertain": 8,
     "both": 5838,
     "out_of_scope": 4,
-    "potential_client": 36311,
+    "plausible_unconfirmed": 35295,
+    "potential_client": 1131,
     "service_provider": 20
   },
   "audio_only_exclusions": 4,
@@ -49,7 +52,7 @@
   "branch_or_department_reviews": 7,
   "dated_branch_change_alerts": 3,
   "branch_reviewed_on_utc": "2026-11-08",
-  "company_reviews_country_unresolved": 1,
+  "company_reviews_country_unresolved": 46,
   "cross_proposal_identity_conflicts": 0,
-  "all_reviewed_country_count": 36
+  "all_reviewed_country_count": 50
 }
