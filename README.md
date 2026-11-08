@@ -1,5 +1,26 @@
 # MotionX global programme — stacked draft PR #18
 
+## Global company research continuation — draft PR #18
+
+The [company review dashboard](data/global-programme/continuation/reports/dashboard.html)
+contains 70 company reviews, seven office/branch investigations, 30 proposed Class C company references, identity
+holds and source-backed geographic proposals. These have **not** been imported:
+all 42,296 canonical references and their original source evidence remain intact.
+See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
+
+The directory now distinguishes potential MotionX clients, service providers,
+both, adjacent/uncertain and out-of-scope records. These are recorded-sector
+eligibility labels, not purchasing intent or confirmed facility services. Game
+developers remain relevant without capture. Filters combine with AND; client and
+provider choices each include “both”. Confirmed-only capability filtering remains
+independent. Separate company-city discovery does not imply a verified facility.
+
+Four individually reviewed audio-only references are reversibly excluded from
+normal search/map/CSV results: normal results contain 42,292 references; the
+explicit audit view and direct profiles preserve all 42,296. Multidisciplinary
+visual/audio companies remain eligible. Numerical commercial/service-alignment
+scores are no longer displayed or exported. This draft does not merge or deploy.
+
 The [global coverage and research dashboard](data/global-programme/reports/dashboard.html) brings source scope, country gaps, complete-catalogue matching, geographic evidence and pending decisions together. It preserves all **42,296** parent references and all **1,677** original unpinned company identities. Floating Rock has a separate, licensed Wellington city reference while its original coordinates stay null; Frame Machine retains its existing Class C source point. Neither becomes a verified facility through map display.
 
 First-pass source-discovery receipts cover all **178** represented countries/territories, with **15** additional directory access/policy assessments. These are not complete national censuses or new collection permissions. Whole existing licensed snapshots and historical discovery/research queues are reconciled offline; every repeated, matched, conflicting and unresolved observation remains auditable. Source classes, observation dates, assertion freshness and facility capabilities remain distinct. No new canonical studio or capability is automatically published.
@@ -48,7 +69,7 @@ Run `python tools/annecy.py check` for repeatable coverage, identity, checkpoint
 
 **One unified research atlas: 42,067 records.** All **41,735 previous records** remain available: 243 retained locations, 40,376 Overture observations and 1,116 game-company references. This proposal adds **332 source-supported company research references**. Record totals include overlapping source observations and company-only entries; they are not verified facility counts.
 
-The new **Boutique Studios** view combines full-atlas reconciliation, official industry sources and a complete CC BY 4.0 animation-company dataset. It shows advisory service alignment, source-linked company research, region/specialisation/size/status filters and comparison. Evidence classes remain separate: **A 230 / B 4,626 / C 37,211**. All new company references are C, without invented pins or confirmed facility capabilities. Existing operating identities, subsidiaries, all original coordinates and every original evidence shard remain unchanged. `studios.json` is byte-for-byte preserved.
+The new **Boutique Studios** view combines full-atlas reconciliation, official industry sources and a complete CC BY 4.0 animation-company dataset. It shows qualitative service signals, source-linked company research, region/specialisation/size/status filters and comparison. Evidence classes remain separate: **A 230 / B 4,626 / C 37,211**. All new company references are C, without invented pins or confirmed facility capabilities. Existing operating identities, subsidiaries, all original coordinates and every original evidence shard remain unchanged. `studios.json` is byte-for-byte preserved.
 
 The [boutique research report and workflow](data/boutique/README.md), [readable review dashboard](data/boutique/reports/review.html), [observation audit](data/boutique/reports/triage.json), [permission registry](data/boutique/sources.json) and [recall results](data/boutique/reports/benchmark-results.json) explain all 570 source observations. There are 5,687 research-visible service leads, including **460 with additional source evidence** and **5,227 explicitly weak taxonomy leads**. Size/independence are not universally verified. External support needs and purchasing intent stay unknown.
 
@@ -271,24 +292,3 @@ The client fetches and validates the whole JSON file; lists are paginated at 50 
 Only public directory data belongs here. Do **not** commit private CRM data, sales leads, outreach notes, client intelligence, tokens, keys or confidential/personal research. Check directory reuse rights and licences before importing third-party data. Use official public business sources and review contacts before publishing. v1.0 adds no private records or credentials.
 
 Committed PR discovery checkpoints are merged additively into later scans: missing candidates and earliest observation dates are retained without replacing newer run evidence or reviews. The checkpoint itself is archived and grants no approval.
-# Global company research continuation — draft PR #18
-
-The [company review dashboard](data/global-programme/continuation/reports/dashboard.html)
-contains 68 individual reviews, 30 proposed Class C company references, identity
-holds and source-backed geographic proposals. These have **not** been imported:
-all 42,296 canonical references and their original source evidence remain intact.
-See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
-
-The directory now distinguishes potential MotionX clients, service providers,
-both, adjacent/uncertain and out-of-scope records. These are recorded-sector
-eligibility labels, not purchasing intent or confirmed facility services. Game
-developers remain relevant without capture. Filters combine with AND; client and
-provider choices each include “both”. Confirmed-only capability filtering remains
-independent. Separate company-city discovery does not imply a verified facility.
-
-Four individually reviewed audio-only references are reversibly excluded from
-normal search/map/CSV results: normal results contain 42,292 references; the
-explicit audit view and direct profiles preserve all 42,296. Multidisciplinary
-visual/audio companies remain eligible. Numerical commercial/service-alignment
-scores are no longer displayed or exported. This draft does not merge or deploy.
-

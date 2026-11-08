@@ -2,22 +2,22 @@
   "version": 1,
   "summary": {
     "starting_commit": "d5583994cda4dd3c99aa28508666057e5e0e96fa",
-    "reviewed_on_utc": "2026-11-07",
+    "reviewed_on_utc": "2026-11-08",
     "canonical_records_before": 42296,
     "canonical_records_after": 42296,
     "canonical_additions": 0,
     "proposed_new_class_c_company_references": 30,
-    "individual_company_reviews": 68,
-    "backlog_keys_reviewed": 60,
-    "backlog_keys_remaining": 665,
+    "individual_company_reviews": 70,
+    "backlog_keys_reviewed": 69,
+    "backlog_keys_remaining": 656,
     "backlog_observations_preserved": 753,
     "backlog_keys_preserved": 725,
     "research_dispositions": {
       "company_proposal_prepared": 30,
       "existing_identity_reconciled": 10,
       "identity_review": 2,
-      "research_out_of_scope": 1,
-      "research_unresolved": 25
+      "research_out_of_scope": 2,
+      "research_unresolved": 26
     },
     "countries_individually_investigated": 35,
     "commercial_role_counts": {
@@ -47,7 +47,13 @@
       "No new automated collection permissions or source completeness claims.",
       "The 14-candidate held-out evaluation still lacks independent human labels.",
       "Role classifications derive mostly from recorded source sectors; they do not establish purchasing intent or current service availability."
-    ]
+    ],
+    "branch_or_department_reviews": 7,
+    "dated_branch_change_alerts": 3,
+    "branch_reviewed_on_utc": "2026-11-08",
+    "company_reviews_country_unresolved": 1,
+    "cross_proposal_identity_conflicts": 0,
+    "all_reviewed_country_count": 36
   },
   "reviews": [
     {
@@ -3604,6 +3610,397 @@
           "potential_new_company"
         ]
       }
+    },
+    {
+      "candidate_id": "research-d0324ba230da3cf3e3cc0cee",
+      "name": "Inside Track",
+      "country": "New Zealand",
+      "official_name": "The Inside Track",
+      "aliases": [
+        "The Inside Track"
+      ],
+      "official_website": "https://insidetrack.co.nz/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "out_of_scope",
+      "city": "",
+      "company_claims": [
+        "Audio Post-production"
+      ],
+      "reason": "Reconcile the saved Inside Track alias to existing The Inside Track record and the individually reviewed sound-post-only scope decision. Screen credits do not establish visual production services. No new company, facility, capability or irreversible exclusion.",
+      "evidence": [
+        {
+          "url": "https://insidetrack.co.nz/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null,
+      "matching": {
+        "record_ids": [
+          "nzcensus-1238fc887e8013b884ea4e5ef08a"
+        ],
+        "company_ids": [
+          "nzcensus-org-1238fc887e8013b884ea4e5e"
+        ],
+        "match_status": "name_and_domain",
+        "confidence": "high",
+        "reason": "Operating-name key and non-shared website agree; no new physical branch inferred."
+      },
+      "disposition": "research_out_of_scope",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "eligible_factual_reference": false,
+      "facility_proposal_prepared": false,
+      "backlog_evidence": {
+        "source_urls": [
+          "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3"
+        ],
+        "observation_ids": [
+          "global-obs-aff4674b99308a6111c97187"
+        ],
+        "original_outcomes": [
+          "identity_conflict"
+        ]
+      }
+    },
+    {
+      "candidate_id": "research-786a16a4eba6370f9f84c6cf",
+      "name": "Score Draw Media",
+      "country": "",
+      "official_name": "Score Draw Media",
+      "aliases": [],
+      "official_website": "https://scoredrawmedia.com/",
+      "reviewed_on": "2026-11-08",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official domain inaccessible through the available tool. Historical Sound service label and association membership do not independently establish current services, country or an audio-only exclusion. Preserve unresolved identity and source links; no alternate-host workaround or current-operation claim.",
+      "evidence": [
+        {
+          "url": "https://scoredrawmedia.com/",
+          "basis": "access_failed_or_insufficient"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "research_unresolved",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "eligible_factual_reference": false,
+      "facility_proposal_prepared": false,
+      "backlog_evidence": {
+        "source_urls": [
+          "https://animationireland.com/studios/"
+        ],
+        "observation_ids": [
+          "global-obs-7444535dcee3e48b85dad0f5"
+        ],
+        "original_outcomes": [
+          "potential_new_company"
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "candidate_id": "research-115fd4230fe0ddc7ed14bc9c",
+      "source_name": "Cary",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft CRC Cary / Red Storm Entertainment",
+      "city": "Cary",
+      "country": "United States",
+      "scope": "mixed_support_and_historical_development",
+      "production_status": "career_page_conflicts_with_reported_change",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "The official careers page describes separate customer/community support and Red Storm game development. Two independent reports dated 19 March 2026 say Red Storm ceased active game development but retained global IT/Snowdrop support. This is a change alert, not closure of Ubisoft or an automatic new game-development studio. Confirm the current department/operator before any proposal.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/cary",
+          "basis": "official_location_page",
+          "published_on": ""
+        },
+        {
+          "url": "https://www.gamedeveloper.com/business/ubisoft-lays-off-105-staff-at-red-storm-ends-game-development",
+          "basis": "independent_report",
+          "published_on": "2026-03-19"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/news/ubisoft-ends-game-development-at-tom-clancy-studio-red-storm-resulting-in-105-job-losses/",
+          "basis": "independent_report",
+          "published_on": "2026-03-19"
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-0b107d9d598ec5932851ef97",
+      "source_name": "Guildford",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft Northern Europe",
+      "city": "Guildford",
+      "country": "United Kingdom",
+      "scope": "regional_office",
+      "production_status": "production_not_established",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "Official Northern Europe contact/address establishes an office claim, not an individual game-development production studio. Preserve regional operating identity and do not invent capture, animation or games services at this office.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/guildford",
+          "basis": "official_location_page",
+          "published_on": ""
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-a8d78a94a9ef53577aad76f6",
+      "source_name": "Los Angeles",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft Film & Television",
+      "city": "Los Angeles",
+      "country": "United States",
+      "scope": "film_tv_production_office",
+      "production_status": "company_role_self_report",
+      "commercial_role": "potential_client",
+      "reason": "Official location page identifies the Film & Television team and production projects. It supports film/TV client relevance, not a capture facility or an additional game-development studio. Reconcile the already-listed source observation before any branch or ownership change.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/los-angeles",
+          "basis": "official_location_page",
+          "published_on": ""
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [
+          "overture-e4f09648-c54d-4bd2-91f5-3335eb5baef8"
+        ],
+        "company_ids": [
+          "overture-org-c84eff88fe581867bbde411d"
+        ],
+        "match_status": "name_and_country",
+        "confidence": "medium",
+        "reason": "Same operating/legal name and listed country. Official-domain/physical-branch corroboration may still be missing."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-a2fdd0f250ce141399731b94",
+      "source_name": "San Francisco",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft San Francisco",
+      "city": "San Francisco",
+      "country": "United States",
+      "scope": "office_production_type_unresolved",
+      "production_status": "production_closure_announced",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "The remaining careers address is not evidence that game production resumed. Ubisoft announced closure of the San Francisco production studio on 4 December 2024. Other corporate/regional functions may differ; do not mark every Ubisoft business or city office closed and do not delete retained records.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/san-francisco",
+          "basis": "official_location_page",
+          "published_on": ""
+        },
+        {
+          "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+          "basis": "official_production_change_announcement",
+          "published_on": "2024-12-04"
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-b37888f7217a02e99af45d33",
+      "source_name": "Sao Paulo",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft Brazil",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "scope": "office_production_type_unresolved",
+      "production_status": "production_not_established",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "Official regional office/address supports a company-location association. The page does not independently establish game-development production, a capture stage or commercial production services at this site.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/sao-paulo",
+          "basis": "official_location_page",
+          "published_on": ""
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-3fd3fc6fa30bb854712b90dd",
+      "source_name": "Sydney",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft Australia",
+      "city": "Sydney",
+      "country": "Australia",
+      "scope": "office_production_type_unresolved",
+      "production_status": "production_ramp_down_announced",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "The official regional-office page refers to Ultimo, Sydney. The 4 December 2024 announcement separately ramps down the Sydney production team. Neither proves current production or closure of every Australian function. Keep office and production-site evidence separate; no new pin or service claim.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/sydney",
+          "basis": "official_location_page",
+          "published_on": ""
+        },
+        {
+          "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+          "basis": "official_production_change_announcement",
+          "published_on": "2024-12-04"
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
+    },
+    {
+      "candidate_id": "research-a574fbb450bd4a993e3a0ea9",
+      "source_name": "Tokyo",
+      "source_country_hint": "",
+      "operating_name": "Ubisoft Japan",
+      "city": "Tokyo",
+      "country": "Japan",
+      "scope": "office_production_type_unresolved",
+      "production_status": "production_not_established",
+      "commercial_role": "adjacent_uncertain",
+      "reason": "Official Japan office/address supports the Tokyo association, not game development, animation or capture at that location. Do not confuse this office with the separately announced Osaka production-studio closure.",
+      "reviewed_on": "2026-11-08",
+      "evidence": [
+        {
+          "url": "https://www.ubisoft.com/en-us/company/careers/locations/tokyo",
+          "basis": "official_location_page",
+          "published_on": ""
+        }
+      ],
+      "human_approved": false,
+      "facility_verified": false,
+      "canonical_updates": [],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "matching": {
+        "record_ids": [],
+        "company_ids": [],
+        "match_status": "no_match",
+        "confidence": "unresolved",
+        "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+      },
+      "disposition": "branch_or_department_research",
+      "proposal_id": null,
+      "publication_state": "not_published",
+      "canonical_approved": false,
+      "facility_proposal_prepared": false
     }
   ],
   "proposals": [
@@ -5176,6 +5573,8 @@
       ]
     }
   ],
+  "withheld_company_proposals": [],
+  "proposal_identity_conflicts": [],
   "geography_proposals": [
     {
       "record_id": "boutique-61d01908e19bb5e22543593cae12",
@@ -5620,8 +6019,54 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-115fd4230fe0ddc7ed14bc9c",
+        "source_name": "Cary",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft CRC Cary / Red Storm Entertainment",
+        "city": "Cary",
+        "country": "United States",
+        "scope": "mixed_support_and_historical_development",
+        "production_status": "career_page_conflicts_with_reported_change",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "The official careers page describes separate customer/community support and Red Storm game development. Two independent reports dated 19 March 2026 say Red Storm ceased active game development but retained global IT/Snowdrop support. This is a change alert, not closure of Ubisoft or an automatic new game-development studio. Confirm the current department/operator before any proposal.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/cary",
+            "basis": "official_location_page",
+            "published_on": ""
+          },
+          {
+            "url": "https://www.gamedeveloper.com/business/ubisoft-lays-off-105-staff-at-red-storm-ends-game-development",
+            "basis": "independent_report",
+            "published_on": "2026-03-19"
+          },
+          {
+            "url": "https://www.videogameschronicle.com/news/ubisoft-ends-game-development-at-tom-clancy-studio-red-storm-resulting-in-105-job-losses/",
+            "basis": "independent_report",
+            "published_on": "2026-03-19"
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-3bfd015b1920b99a2e23cafd",
@@ -6044,8 +6489,44 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-0b107d9d598ec5932851ef97",
+        "source_name": "Guildford",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft Northern Europe",
+        "city": "Guildford",
+        "country": "United Kingdom",
+        "scope": "regional_office",
+        "production_status": "production_not_established",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "Official Northern Europe contact/address establishes an office claim, not an individual game-development production studio. Preserve regional operating identity and do not invent capture, animation or games services at this office.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/guildford",
+            "basis": "official_location_page",
+            "published_on": ""
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-a8d78a94a9ef53577aad76f6",
@@ -6064,8 +6545,48 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-a8d78a94a9ef53577aad76f6",
+        "source_name": "Los Angeles",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft Film & Television",
+        "city": "Los Angeles",
+        "country": "United States",
+        "scope": "film_tv_production_office",
+        "production_status": "company_role_self_report",
+        "commercial_role": "potential_client",
+        "reason": "Official location page identifies the Film & Television team and production projects. It supports film/TV client relevance, not a capture facility or an additional game-development studio. Reconcile the already-listed source observation before any branch or ownership change.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/los-angeles",
+            "basis": "official_location_page",
+            "published_on": ""
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [
+            "overture-e4f09648-c54d-4bd2-91f5-3335eb5baef8"
+          ],
+          "company_ids": [
+            "overture-org-c84eff88fe581867bbde411d"
+          ],
+          "match_status": "name_and_country",
+          "confidence": "medium",
+          "reason": "Same operating/legal name and listed country. Official-domain/physical-branch corroboration may still be missing."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-e9358c699526c265be012b31",
@@ -6326,8 +6847,49 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-a2fdd0f250ce141399731b94",
+        "source_name": "San Francisco",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft San Francisco",
+        "city": "San Francisco",
+        "country": "United States",
+        "scope": "office_production_type_unresolved",
+        "production_status": "production_closure_announced",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "The remaining careers address is not evidence that game production resumed. Ubisoft announced closure of the San Francisco production studio on 4 December 2024. Other corporate/regional functions may differ; do not mark every Ubisoft business or city office closed and do not delete retained records.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/san-francisco",
+            "basis": "official_location_page",
+            "published_on": ""
+          },
+          {
+            "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+            "basis": "official_production_change_announcement",
+            "published_on": "2024-12-04"
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-b37888f7217a02e99af45d33",
@@ -6346,8 +6908,44 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-b37888f7217a02e99af45d33",
+        "source_name": "Sao Paulo",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft Brazil",
+        "city": "São Paulo",
+        "country": "Brazil",
+        "scope": "office_production_type_unresolved",
+        "production_status": "production_not_established",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "Official regional office/address supports a company-location association. The page does not independently establish game-development production, a capture stage or commercial production services at this site.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/sao-paulo",
+            "basis": "official_location_page",
+            "published_on": ""
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-786a16a4eba6370f9f84c6cf",
@@ -6368,8 +6966,56 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "research_unresolved",
+      "review": {
+        "candidate_id": "research-786a16a4eba6370f9f84c6cf",
+        "name": "Score Draw Media",
+        "country": "",
+        "official_name": "Score Draw Media",
+        "aliases": [],
+        "official_website": "https://scoredrawmedia.com/",
+        "reviewed_on": "2026-11-08",
+        "operation_evidence": "access_unavailable",
+        "commercial_role": "adjacent_uncertain",
+        "city": "",
+        "company_claims": [],
+        "reason": "Official domain inaccessible through the available tool. Historical Sound service label and association membership do not independently establish current services, country or an audio-only exclusion. Preserve unresolved identity and source links; no alternate-host workaround or current-operation claim.",
+        "evidence": [
+          {
+            "url": "https://scoredrawmedia.com/",
+            "basis": "access_failed_or_insufficient"
+          }
+        ],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "human_approved": false,
+        "facility_verified": false,
+        "independent_review": null,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "research_unresolved",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "eligible_factual_reference": false,
+        "facility_proposal_prepared": false,
+        "backlog_evidence": {
+          "source_urls": [
+            "https://animationireland.com/studios/"
+          ],
+          "observation_ids": [
+            "global-obs-7444535dcee3e48b85dad0f5"
+          ],
+          "original_outcomes": [
+            "potential_new_company"
+          ]
+        }
+      }
     },
     {
       "candidate_id": "research-0ad33bec70fed1de331c142f",
@@ -6548,8 +7194,49 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-3fd3fc6fa30bb854712b90dd",
+        "source_name": "Sydney",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft Australia",
+        "city": "Sydney",
+        "country": "Australia",
+        "scope": "office_production_type_unresolved",
+        "production_status": "production_ramp_down_announced",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "The official regional-office page refers to Ultimo, Sydney. The 4 December 2024 announcement separately ramps down the Sydney production team. Neither proves current production or closure of every Australian function. Keep office and production-site evidence separate; no new pin or service claim.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/sydney",
+            "basis": "official_location_page",
+            "published_on": ""
+          },
+          {
+            "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+            "basis": "official_production_change_announcement",
+            "published_on": "2024-12-04"
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-50c8beb11847b83f5bd47d96",
@@ -6648,8 +7335,44 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "branch_or_department_research",
+      "review": {
+        "candidate_id": "research-a574fbb450bd4a993e3a0ea9",
+        "source_name": "Tokyo",
+        "source_country_hint": "",
+        "operating_name": "Ubisoft Japan",
+        "city": "Tokyo",
+        "country": "Japan",
+        "scope": "office_production_type_unresolved",
+        "production_status": "production_not_established",
+        "commercial_role": "adjacent_uncertain",
+        "reason": "Official Japan office/address supports the Tokyo association, not game development, animation or capture at that location. Do not confuse this office with the separately announced Osaka production-studio closure.",
+        "reviewed_on": "2026-11-08",
+        "evidence": [
+          {
+            "url": "https://www.ubisoft.com/en-us/company/careers/locations/tokyo",
+            "basis": "official_location_page",
+            "published_on": ""
+          }
+        ],
+        "human_approved": false,
+        "facility_verified": false,
+        "canonical_updates": [],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "matching": {
+          "record_ids": [],
+          "company_ids": [],
+          "match_status": "no_match",
+          "confidence": "unresolved",
+          "reason": "No exact operating/legal-name or non-shared-domain match across the full catalogue."
+        },
+        "disposition": "branch_or_department_research",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "facility_proposal_prepared": false
+      }
     },
     {
       "candidate_id": "research-af98a7f78af8fa1c895c9aaa",
@@ -16447,8 +17170,64 @@
       ],
       "independent_review": null,
       "human_approved": false,
-      "continuation_disposition": "not_yet_individually_investigated",
-      "review": null
+      "continuation_disposition": "research_out_of_scope",
+      "review": {
+        "candidate_id": "research-d0324ba230da3cf3e3cc0cee",
+        "name": "Inside Track",
+        "country": "New Zealand",
+        "official_name": "The Inside Track",
+        "aliases": [
+          "The Inside Track"
+        ],
+        "official_website": "https://insidetrack.co.nz/",
+        "reviewed_on": "2026-11-07",
+        "operation_evidence": "primary_self_report",
+        "commercial_role": "out_of_scope",
+        "city": "",
+        "company_claims": [
+          "Audio Post-production"
+        ],
+        "reason": "Reconcile the saved Inside Track alias to existing The Inside Track record and the individually reviewed sound-post-only scope decision. Screen credits do not establish visual production services. No new company, facility, capability or irreversible exclusion.",
+        "evidence": [
+          {
+            "url": "https://insidetrack.co.nz/",
+            "basis": "official_company_page"
+          }
+        ],
+        "rights": "minimal_factual_reference_only",
+        "automatic_collection": false,
+        "human_approved": false,
+        "facility_verified": false,
+        "independent_review": null,
+        "matching": {
+          "record_ids": [
+            "nzcensus-1238fc887e8013b884ea4e5ef08a"
+          ],
+          "company_ids": [
+            "nzcensus-org-1238fc887e8013b884ea4e5e"
+          ],
+          "match_status": "name_and_domain",
+          "confidence": "high",
+          "reason": "Operating-name key and non-shared website agree; no new physical branch inferred."
+        },
+        "disposition": "research_out_of_scope",
+        "proposal_id": null,
+        "publication_state": "not_published",
+        "canonical_approved": false,
+        "eligible_factual_reference": false,
+        "facility_proposal_prepared": false,
+        "backlog_evidence": {
+          "source_urls": [
+            "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3"
+          ],
+          "observation_ids": [
+            "global-obs-aff4674b99308a6111c97187"
+          ],
+          "original_outcomes": [
+            "identity_conflict"
+          ]
+        }
+      }
     },
     {
       "candidate_id": "research-d7e800291cd34c2f7dce923e",
@@ -23594,16 +24373,18 @@
     {
       "country": "Country unresolved",
       "pending_keys_at_checkpoint": 87,
-      "individual_reviews": 0,
+      "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
-      "unresolved_reviews": 0,
+      "unresolved_reviews": 1,
       "coverage_complete": false
     },
     {
       "country": "Argentina",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 3,
+      "branch_or_department_reviews": 0,
       "company_proposals": 2,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23613,6 +24394,7 @@
       "country": "Armenia",
       "pending_keys_at_checkpoint": 4,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23622,6 +24404,7 @@
       "country": "Australia",
       "pending_keys_at_checkpoint": 2,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 1,
       "company_proposals": 0,
       "identity_matches": 2,
       "unresolved_reviews": 0,
@@ -23631,6 +24414,7 @@
       "country": "Austria",
       "pending_keys_at_checkpoint": 2,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23640,6 +24424,7 @@
       "country": "Azerbaijan",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23649,6 +24434,7 @@
       "country": "Belgium",
       "pending_keys_at_checkpoint": 10,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23658,6 +24444,7 @@
       "country": "Brazil",
       "pending_keys_at_checkpoint": 13,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 1,
       "company_proposals": 1,
       "identity_matches": 1,
       "unresolved_reviews": 0,
@@ -23667,6 +24454,7 @@
       "country": "Bulgaria",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23676,6 +24464,7 @@
       "country": "Canada",
       "pending_keys_at_checkpoint": 29,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23685,6 +24474,7 @@
       "country": "Chile",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23694,6 +24484,7 @@
       "country": "China",
       "pending_keys_at_checkpoint": 15,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23703,6 +24494,7 @@
       "country": "Colombia",
       "pending_keys_at_checkpoint": 6,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23712,6 +24504,7 @@
       "country": "Croatia",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23721,6 +24514,7 @@
       "country": "Cyprus",
       "pending_keys_at_checkpoint": 2,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23730,6 +24524,7 @@
       "country": "Czechia",
       "pending_keys_at_checkpoint": 9,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23739,6 +24534,7 @@
       "country": "Côte d’Ivoire",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23748,6 +24544,7 @@
       "country": "Denmark",
       "pending_keys_at_checkpoint": 7,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 1,
       "unresolved_reviews": 0,
@@ -23757,6 +24554,7 @@
       "country": "Estonia",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23766,6 +24564,7 @@
       "country": "Finland",
       "pending_keys_at_checkpoint": 9,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23775,6 +24574,7 @@
       "country": "France",
       "pending_keys_at_checkpoint": 104,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23784,6 +24584,7 @@
       "country": "Georgia",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23793,6 +24594,7 @@
       "country": "Germany",
       "pending_keys_at_checkpoint": 14,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23802,6 +24604,7 @@
       "country": "Ghana",
       "pending_keys_at_checkpoint": 4,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23811,6 +24614,7 @@
       "country": "Hong Kong SAR China",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23820,6 +24624,7 @@
       "country": "Hungary",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23829,6 +24634,7 @@
       "country": "Iceland",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23838,6 +24644,7 @@
       "country": "India",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23847,6 +24654,7 @@
       "country": "Iran",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23856,6 +24664,7 @@
       "country": "Ireland",
       "pending_keys_at_checkpoint": 16,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23865,6 +24674,7 @@
       "country": "Israel",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 1,
       "unresolved_reviews": 1,
@@ -23874,6 +24684,7 @@
       "country": "Italy",
       "pending_keys_at_checkpoint": 21,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23883,6 +24694,7 @@
       "country": "Japan",
       "pending_keys_at_checkpoint": 11,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 1,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23892,6 +24704,7 @@
       "country": "Latvia",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23901,6 +24714,7 @@
       "country": "Lithuania",
       "pending_keys_at_checkpoint": 6,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23910,6 +24724,7 @@
       "country": "Luxembourg",
       "pending_keys_at_checkpoint": 6,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23919,6 +24734,7 @@
       "country": "Malaysia",
       "pending_keys_at_checkpoint": 9,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23928,6 +24744,7 @@
       "country": "Mexico",
       "pending_keys_at_checkpoint": 4,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 2,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23937,6 +24754,7 @@
       "country": "Netherlands",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 1,
       "unresolved_reviews": 0,
@@ -23945,7 +24763,8 @@
     {
       "country": "New Zealand",
       "pending_keys_at_checkpoint": 48,
-      "individual_reviews": 6,
+      "individual_reviews": 7,
+      "branch_or_department_reviews": 0,
       "company_proposals": 2,
       "identity_matches": 0,
       "unresolved_reviews": 4,
@@ -23955,6 +24774,7 @@
       "country": "Nigeria",
       "pending_keys_at_checkpoint": 7,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23964,6 +24784,7 @@
       "country": "Norway",
       "pending_keys_at_checkpoint": 7,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23973,6 +24794,7 @@
       "country": "Pakistan",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -23982,6 +24804,7 @@
       "country": "Panama",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -23991,6 +24814,7 @@
       "country": "Peru",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24000,6 +24824,7 @@
       "country": "Philippines",
       "pending_keys_at_checkpoint": 7,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24009,6 +24834,7 @@
       "country": "Poland",
       "pending_keys_at_checkpoint": 6,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24018,6 +24844,7 @@
       "country": "Portugal",
       "pending_keys_at_checkpoint": 10,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -24027,6 +24854,7 @@
       "country": "Serbia",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24036,6 +24864,7 @@
       "country": "Singapore",
       "pending_keys_at_checkpoint": 0,
       "individual_reviews": 2,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 2,
       "unresolved_reviews": 0,
@@ -24045,6 +24874,7 @@
       "country": "South Africa",
       "pending_keys_at_checkpoint": 18,
       "individual_reviews": 5,
+      "branch_or_department_reviews": 0,
       "company_proposals": 3,
       "identity_matches": 1,
       "unresolved_reviews": 1,
@@ -24054,6 +24884,7 @@
       "country": "South Korea",
       "pending_keys_at_checkpoint": 21,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24063,6 +24894,7 @@
       "country": "Spain",
       "pending_keys_at_checkpoint": 44,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24072,6 +24904,7 @@
       "country": "Sweden",
       "pending_keys_at_checkpoint": 5,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24081,6 +24914,7 @@
       "country": "Switzerland",
       "pending_keys_at_checkpoint": 3,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24090,6 +24924,7 @@
       "country": "Taiwan",
       "pending_keys_at_checkpoint": 13,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24099,6 +24934,7 @@
       "country": "Thailand",
       "pending_keys_at_checkpoint": 4,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24108,6 +24944,7 @@
       "country": "Togo",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24117,6 +24954,7 @@
       "country": "Turkmenistan",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24126,6 +24964,7 @@
       "country": "Türkiye",
       "pending_keys_at_checkpoint": 1,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 1,
@@ -24135,6 +24974,7 @@
       "country": "Ukraine",
       "pending_keys_at_checkpoint": 8,
       "individual_reviews": 0,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24144,6 +24984,7 @@
       "country": "United Kingdom",
       "pending_keys_at_checkpoint": 61,
       "individual_reviews": 14,
+      "branch_or_department_reviews": 1,
       "company_proposals": 3,
       "identity_matches": 0,
       "unresolved_reviews": 10,
@@ -24153,6 +24994,7 @@
       "country": "United States",
       "pending_keys_at_checkpoint": 12,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 3,
       "company_proposals": 1,
       "identity_matches": 0,
       "unresolved_reviews": 0,
@@ -24162,6 +25004,7 @@
       "country": "Vietnam",
       "pending_keys_at_checkpoint": 0,
       "individual_reviews": 1,
+      "branch_or_department_reviews": 0,
       "company_proposals": 0,
       "identity_matches": 1,
       "unresolved_reviews": 0,
@@ -25388,6 +26231,186 @@
       "rights": "minimal_factual_reference_only",
       "automatic_collection_enabled": false,
       "enumeration_scope": "Individual company evidence only; source directory not fully enumerated.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://insidetrack.co.nz/",
+      "company": "The Inside Track",
+      "country": "New Zealand",
+      "reviewed_on": "2026-11-07",
+      "basis": "official_company_page",
+      "operation_evidence": "primary_self_report",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual company evidence only; source directory not fully enumerated.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://scoredrawmedia.com/",
+      "company": "Score Draw Media",
+      "country": "",
+      "reviewed_on": "2026-11-08",
+      "basis": "access_failed_or_insufficient",
+      "operation_evidence": "access_unavailable",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual company evidence only; source directory not fully enumerated.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/cary",
+      "company": "Ubisoft CRC Cary / Red Storm Entertainment",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "career_page_conflicts_with_reported_change",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/ubisoft-lays-off-105-staff-at-red-storm-ends-game-development",
+      "company": "Ubisoft CRC Cary / Red Storm Entertainment",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "independent_report",
+      "published_on": "2026-03-19",
+      "operation_evidence": "career_page_conflicts_with_reported_change",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.videogameschronicle.com/news/ubisoft-ends-game-development-at-tom-clancy-studio-red-storm-resulting-in-105-job-losses/",
+      "company": "Ubisoft CRC Cary / Red Storm Entertainment",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "independent_report",
+      "published_on": "2026-03-19",
+      "operation_evidence": "career_page_conflicts_with_reported_change",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/guildford",
+      "company": "Ubisoft Northern Europe",
+      "country": "United Kingdom",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "production_not_established",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/los-angeles",
+      "company": "Ubisoft Film & Television",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "company_role_self_report",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/san-francisco",
+      "company": "Ubisoft San Francisco",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "production_closure_announced",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+      "company": "Ubisoft San Francisco",
+      "country": "United States",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_production_change_announcement",
+      "published_on": "2024-12-04",
+      "operation_evidence": "production_closure_announced",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sao-paulo",
+      "company": "Ubisoft Brazil",
+      "country": "Brazil",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "production_not_established",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/sydney",
+      "company": "Ubisoft Australia",
+      "country": "Australia",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "production_ramp_down_announced",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3vzLJjyWT9zUqMoxdSDRRR/72de27a735dc51258423522cb5af1401/PRESS_RELEASE.pdf",
+      "company": "Ubisoft Australia",
+      "country": "Australia",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_production_change_announcement",
+      "published_on": "2024-12-04",
+      "operation_evidence": "production_ramp_down_announced",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
+      "source_wide_reuse_granted": false,
+      "human_approved": false
+    },
+    {
+      "url": "https://www.ubisoft.com/en-us/company/careers/locations/tokyo",
+      "company": "Ubisoft Japan",
+      "country": "Japan",
+      "reviewed_on": "2026-11-08",
+      "basis": "official_location_page",
+      "published_on": "",
+      "operation_evidence": "production_not_established",
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection_enabled": false,
+      "enumeration_scope": "Individual office/department and dated event only; not proof of current production.",
       "source_wide_reuse_granted": false,
       "human_approved": false
     }

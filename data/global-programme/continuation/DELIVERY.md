@@ -1,6 +1,6 @@
 # Company research and commercial scope continuation
 
-Research reviewed **7 November 2026 UTC** (8 November in Auckland). Starting
+Company/scope research reviewed **7–8 November 2026 UTC** (8 November in Auckland); the seven Ubisoft office/branch investigations were reviewed **8 November UTC**. Starting
 checkpoint: `d5583994cda4dd3c99aa28508666057e5e0e96fa`. This continues draft
 PR #18 on `codex/global-discovery-visibility`, stacked on unchanged draft PR #15.
 Neither PR is merged or deployed by this work.
@@ -11,7 +11,7 @@ record payloads. It works in the downloaded Actions bundle over localhost HTTP.
 
 ## What is prepared, rather than published
 
-- 68 individual company reviews across 35 recorded countries, including seven
+- 70 individual company reviews across 35 recorded countries, including seven
   existing city-association reviews. These are not national censuses.
 - 30 schema-valid Class C company-reference proposals. Each has a stable research
   identity, source evidence and date, null coordinates and no confirmed facility
@@ -20,8 +20,9 @@ record payloads. It works in the downloaded Actions bundle over localhost HTTP.
 - Ten existing-identity matches; these are source/software matches, not ten new
   verified businesses. Two identity holds include Digitoonz's foreign source
   observation and the composite Makia Creative / Mamoncillo exhibitor identity.
-- One investigated non-studio lead: FSTVS is a jobs/community service, not its
-  employers' production facilities. 25 investigated cases remain unresolved.
+- Two out-of-scope leads: FSTVS is a jobs/community service, not its
+  employers' production facilities; Inside Track reconciles to the retained
+  audio-only record. 26 investigated company cases remain unresolved.
 - Five geographic review proposals for existing IDs: four separate approximate
   city-reference payloads (Bad Clay, Scrawl Animation, Robot Playground Media,
   ModelFarm), plus a Tumblehead Copenhagen/Viborg correction question. Points
@@ -29,7 +30,7 @@ record payloads. It works in the downloaded Actions bundle over localhost HTTP.
   gazetteer citation already in the baseline; no other studio's facility point
   or parent geography is inherited. None is applied to the map by this release.
 - Every starting pending observation is retained: 753 observations / 725 queue
-  keys. Sixty keys have individual continuation reviews; 665 are explicitly
+  keys. Sixty-nine keys have individual company/branch continuation reviews; 656 are explicitly
   **not yet individually investigated**. Additional reviews are separately
   identified. Queue keys are not proven distinct companies.
 
@@ -38,6 +39,8 @@ French Spacesheep, historical Woodblock Hamburg versus current company-listed
 Berlin/Ludwigsburg/Los Angeles, and Digitoonz's marketed Los Angeles versus
 Glendale address. Office lists, productions and remote teams are not automatic
 physical-facility proposals. Eallin's Stockholm is explicitly in development.
+
+Seven Ubisoft office/department leads now have separate structured reviews and matching evidence. Los Angeles identifies the already-listed Film & Television operation. Generic regional-office pages do not establish game-development facilities. Three dated change alerts distinguish the 2024 San Francisco production closure announcement, the Sydney production ramp-down announcement and corroborated March 2026 Red Storm development-to-support reports. They do not close global organisations or change canonical records. [Read the branch/change audit](reports/branch-reviews.json). Company and branch reviews cover 36 countries in total; this is not complete geographic enumeration.
 
 ## Public-directory scope change
 

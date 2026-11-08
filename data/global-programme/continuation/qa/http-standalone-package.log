@@ -1,0 +1,4 @@
+PASS standalone 390px company/branch/unknown-country filters expose real pending proposals without claiming complete global coverage
+PASS artifact relative JSON links preserve all original coordinates and distinguish four licensed city proposals from a geographic correction question
+PASS nested licensing report returns to the actual artifact landing page; no repository-root dependency or broken data/index.html link
+3 standalone continuation HTTP checks passed

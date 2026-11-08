@@ -1,0 +1,7 @@
+{
+  "checks": 3,
+  "company_reviews": 70,
+  "branch_reviews": 7,
+  "proposed_companies": 30,
+  "conditions": "Actual standalone review directory over local HTTP, Chromium, 390x844; no network/CPU throttle, deployment or human verification."
+}

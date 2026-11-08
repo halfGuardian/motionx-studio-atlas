@@ -1,0 +1,40 @@
+PASS normal directory excludes exactly four reviewed audio-only references; all 42296 raw records remain unchanged and no map points are removed
+PASS excluded records remain keyboard-accessible, clearly labeled and exportable with scope evidence, licence notices and no invented capability
+PASS multidisciplinary visual/audio Envy remains eligible as a provider and client with individual evidence
+PASS game-development client filter needs no capture capability; confirmed-only remains a separate facility-evidence requirement
+PASS supported company-city reference discovery, explicit all-record audit view and reset use the same result set as map and CSV
+PASS 390px mobile and keyboard focus preserve audit scope access without horizontal overflow
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/commercial_browser.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/motionx-studio-atlas/tests/commercial_browser.py", line 32, in main
+    report=browser.new_page(viewport={'width':390,'height':844});report.goto(url+'data/global-programme/continuation/reports/dashboard.html');expect(report.locator('h1')).to_have_text('Global company research continuation');assert report.locator('article').count()>=68;report.locator('#reviewSearch').fill('Mamoncillo');expect(report.locator('#reviewCount')).to_contain_text('1 of');expect(report.locator('article:visible')).to_contain_text('identity review');report.locator('#reviewSearch').fill('');report.locator('#reviewCountry').select_option('New Zealand');expect(report.locator('#reviewCount')).to_contain_text('individual reviews shown');expect(report.locator('[data-branch-review]')).to_have_count(7);expect(report.locator('#branches')).to_have_text('Office, branch and department investigations');expect(report.locator('body')).to_contain_text('production closure announced');expect(report.locator('body')).to_contain_text('Human review remains required');assert report.evaluate('document.documentElement.scrollWidth<=innerWidth');report.close();assert not errors,errors
+                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 22016, in to_contain_text
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 303, in to_contain_text
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to contain text 'identity review'
+Actual value: None
+Error: strict mode violation: locator("article:visible") resolved to 8 elements:
+    1) <article data-company-review="" data-country="Colombia" data-disposition="identity_review">…</article> aka get_by_text("Mamoncillo Studios · Colombiaidentity review · Both client and providerOfficial")
+    2) <article data-branch-review="">…</article> aka get_by_text("Ubisoft CRC Cary / Red Storm Entertainment · Cary, United Statescareer page")
+    3) <article data-branch-review="">…</article> aka get_by_text("Ubisoft Northern Europe · Guildford, United Kingdomproduction not established")
+    4) <article data-branch-review="">…</article> aka get_by_text("Ubisoft Film & Television · Los Angeles, United Statescompany role self report")
+    5) <article data-branch-review="">…</article> aka get_by_text("Ubisoft San Francisco · San Francisco, United Statesproduction closure")
+    6) <article data-branch-review="">…</article> aka get_by_text("Ubisoft Brazil · São Paulo, Brazilproduction not established · office")
+    7) <article data-branch-review="">…</article> aka get_by_text("Ubisoft Australia · Sydney, Australiaproduction ramp down announced · office")
+    8) <article data-branch-review="">…</article> aka get_by_text("Ubisoft Japan · Tokyo, Japanproduction not established · office production type")
+ 
+Call log:
+  - Expect "to_contain_text" with timeout 5000ms
+  - waiting for locator("article:visible")
+

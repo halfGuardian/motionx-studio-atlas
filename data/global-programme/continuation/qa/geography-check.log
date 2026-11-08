@@ -1,0 +1,18 @@
+{
+  "company_only_records": 1677,
+  "original_unpinned_records": 1677,
+  "reviewed_display_references": 1,
+  "still_without_display_reference": 1676,
+  "geographic_dispositions": {
+    "company_identity_no_verified_location": 1369,
+    "historical_operation_review": 24,
+    "identity_geography_conflict": 3,
+    "insufficient_evidence": 24,
+    "reviewed_city_reference": 1,
+    "source_supported_city_region": 256
+  },
+  "independently_reviewed_new_facilities": 0,
+  "new_verified_capabilities": 0,
+  "original_record_coordinates_changed": 0,
+  "human_approved": false
+}

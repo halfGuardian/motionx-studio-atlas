@@ -3,7 +3,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from discovery import read,digest
 from launch_readiness import records
-from global_continuation import HOME,build,check,classify,validate_reviews,proposed_record,validate_backlog
+from global_continuation import HOME,build,check,classify,validate_reviews,proposed_record,validate_backlog,branch_reviews,proposal_conflicts
+from global_programme import GlobalIndex
 from unified_catalog import validate_research
 
 class ContinuationTests(unittest.TestCase):
@@ -19,6 +20,9 @@ class ContinuationTests(unittest.TestCase):
  def test_matched_or_uncertain_identities_never_become_duplicate_company_proposals(self):
   for r in self.report['reviews']:
    if r['matching']['record_ids']:self.assertIsNone(r['proposal_id'])
+  self.assertEqual(self.report['proposal_identity_conflicts'],[])
+ def test_same_batch_aliases_and_shared_parent_domains_require_identity_review(self):
+  a,b=copy.deepcopy(self.report['proposals'][:2]);b['website']=a['website'];reviews=[{'proposal_id':r['id'],'name':r['name'],'aliases':[]} for r in (a,b)];conflicts=proposal_conflicts([a,b],reviews);self.assertTrue(any(c['reason']=='official_domain' and len(c['proposal_ids'])==2 for c in conflicts));self.assertFalse(any(c['human_approved'] for c in conflicts));b['website']='https://another-example.org/';b['country']=a['country'];reviews[1]['aliases']=[a['name']];self.assertTrue(any(c['reason']=='name_country' for c in proposal_conflicts([a,b],reviews)))
  def test_composite_exhibitor_identity_is_held_even_when_no_canonical_name_matches(self):
   r=next(r for r in self.report['reviews'] if r['name']=='MAKIA CREATIVE / MAMONCILLO');self.assertEqual(r['disposition'],'identity_review');self.assertIsNone(r['proposal_id'])
  def test_backlog_cannot_lose_original_observations_or_claim_human_approval(self):
@@ -53,4 +57,18 @@ class ContinuationTests(unittest.TestCase):
   for r in self.report['reviews']:
    if r['operation_evidence']=='access_unavailable':self.assertIsNone(r['proposal_id']);self.assertNotIn('closed',r['disposition'])
   self.assertIsNone(self.report['summary']['independent_precision']);self.assertIsNone(self.report['summary']['independent_recall'])
+ def test_office_and_department_pages_never_create_new_game_studios(self):
+  self.assertEqual(len(self.report['branches']),7)
+  for r in self.report['branches']:self.assertIsNone(r['proposal_id']);self.assertEqual(r['canonical_updates'],[]);self.assertFalse(r['facility_verified']);self.assertFalse(r['human_approved'])
+  la=next(r for r in self.report['branches'] if r['city']=='Los Angeles');self.assertEqual(la['scope'],'film_tv_production_office');self.assertIn('overture-e4f09648-c54d-4bd2-91f5-3335eb5baef8',la['matching']['record_ids'])
+ def test_historical_production_change_is_scoped_to_site_not_global_company(self):
+  sf=next(r for r in self.report['branches'] if r['city']=='San Francisco');self.assertEqual(sf['production_status'],'production_closure_announced');self.assertTrue(any(e['published_on']=='2024-12-04' and e['basis']=='official_production_change_announcement' for e in sf['evidence']));self.assertEqual(sf['canonical_updates'],[])
+ def test_branch_changes_require_dated_evidence_and_cannot_fabricate_verification(self):
+  data=read(HOME/'inputs/branch-reviews.json');index=GlobalIndex(self.rows)
+  for mutate in ('missing_change_evidence','unsupported_verification','lost_identity'):
+   bad=copy.deepcopy(data)
+   if mutate=='missing_change_evidence':bad['reviews'][3]['evidence']=bad['reviews'][3]['evidence'][:1]
+   elif mutate=='unsupported_verification':bad['reviews'][0]['facility_verified']=True
+   else:bad['reviews'][0]['source_name']='An unrelated studio'
+   with self.assertRaises(ValueError):branch_reviews(bad,self.backlog,index)
 if __name__=='__main__':unittest.main()

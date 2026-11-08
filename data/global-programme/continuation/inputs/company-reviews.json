@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewed_on": "2026-11-07",
+  "reviewed_on": "2026-11-08",
   "reviews": [
     {
       "candidate_id": "research-673b2f38159ccd8a76e08ab3",
@@ -1947,6 +1947,60 @@
         {
           "url": "https://flyingduckstudiolab.co.uk/",
           "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-d0324ba230da3cf3e3cc0cee",
+      "name": "Inside Track",
+      "country": "New Zealand",
+      "official_name": "The Inside Track",
+      "aliases": [
+        "The Inside Track"
+      ],
+      "official_website": "https://insidetrack.co.nz/",
+      "reviewed_on": "2026-11-07",
+      "operation_evidence": "primary_self_report",
+      "commercial_role": "out_of_scope",
+      "city": "",
+      "company_claims": [
+        "Audio Post-production"
+      ],
+      "reason": "Reconcile the saved Inside Track alias to existing The Inside Track record and the individually reviewed sound-post-only scope decision. Screen credits do not establish visual production services. No new company, facility, capability or irreversible exclusion.",
+      "evidence": [
+        {
+          "url": "https://insidetrack.co.nz/",
+          "basis": "official_company_page"
+        }
+      ],
+      "rights": "minimal_factual_reference_only",
+      "automatic_collection": false,
+      "human_approved": false,
+      "facility_verified": false,
+      "independent_review": null
+    },
+    {
+      "candidate_id": "research-786a16a4eba6370f9f84c6cf",
+      "name": "Score Draw Media",
+      "country": "",
+      "official_name": "Score Draw Media",
+      "aliases": [],
+      "official_website": "https://scoredrawmedia.com/",
+      "reviewed_on": "2026-11-08",
+      "operation_evidence": "access_unavailable",
+      "commercial_role": "adjacent_uncertain",
+      "city": "",
+      "company_claims": [],
+      "reason": "Official domain inaccessible through the available tool. Historical Sound service label and association membership do not independently establish current services, country or an audio-only exclusion. Preserve unresolved identity and source links; no alternate-host workaround or current-operation claim.",
+      "evidence": [
+        {
+          "url": "https://scoredrawmedia.com/",
+          "basis": "access_failed_or_insufficient"
         }
       ],
       "rights": "minimal_factual_reference_only",

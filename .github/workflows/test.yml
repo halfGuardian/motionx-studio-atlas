@@ -102,6 +102,10 @@ jobs:
         run: python tests/global_visibility_browser.py
       - name: Audience eligibility, reversible audio scope, evidence exports and mobile
         run: python tests/commercial_browser.py
+      - name: Actual standalone company and branch review artifact
+        run: |
+          python tools/package_global_review.py --output "$RUNNER_TEMP/continuation-review-browser"
+          MOTIONX_REVIEW_ROOT="$RUNNER_TEMP/continuation-review-browser" python tests/continuation_package_browser.py
       - name: Global coverage dashboard, safe review export and missing-report handling
         run: python tests/global_review_browser.py
       - name: Evidence colours, mixed clusters, research review and launch readiness
