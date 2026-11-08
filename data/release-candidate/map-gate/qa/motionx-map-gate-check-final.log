@@ -1,0 +1,25 @@
+{
+  "reviewed_head": "29364389eb69f1da480a15b27b8c28f3bbba7923",
+  "admitted_companies": 182,
+  "recorded_city_associations_audited": 106,
+  "city_associations_with_display_reference": 102,
+  "city_associations_still_unpinned": 4,
+  "companies_without_recorded_city": 76,
+  "admitted_companies_unpinned": 80,
+  "new_display_points": 102,
+  "distinct_city_country_references": 69,
+  "preserved_prior_display_points": 8,
+  "total_company_display_points": 110,
+  "unpinned_reason_counts": {
+    "ambiguous_registry_city": 1,
+    "city_evidence_not_retrievable": 1,
+    "company_city_not_corroborated": 1,
+    "municipality_conflict": 1,
+    "no_recorded_city": 76
+  },
+  "canonical_records_changed": 0,
+  "canonical_coordinates_changed": 0,
+  "new_confirmed_capabilities": 0,
+  "human_approved": false,
+  "publication_approved": false
+}

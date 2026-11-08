@@ -1,0 +1,1593 @@
+{
+  "original_provisional_references": 57,
+  "recommendation_counts": {
+    "facility_geography_decision": 3,
+    "outside_motionx_scope": 4,
+    "rights_scope_question": 20,
+    "suitable_minimal_factual_publication_review": 30
+  },
+  "identity_ambiguity_new_blockers": 0,
+  "company_only_references_recommended": 53,
+  "rows": [
+    {
+      "id": "nzcensus-6555982e90d64a7764473f0d6967",
+      "name": "Envy Studios",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://envystudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Audio post-production; no animation or capture-stage specialism established.",
+      "source_categories": [
+        "Post-production",
+        "Audio Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-5da0eb8be2c155c348ef9e9fefcf",
+      "name": "Native Audio",
+      "group": "outside_motionx_scope",
+      "recommendation": "retain only in audit; exclude normal directory under the individually supported audio-only decision",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        "https://www.nativeaudio.co.nz/"
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Audio post-production; useful adjacent vendor, not a capture facility.",
+      "source_categories": [
+        "Audio Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-41ce06b48628e15d2dbd71958e65",
+      "name": "Pinnacle Post",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.pinnaclepost.co.nz/about",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Picture/post-production reference; no verified technical facility capabilities.",
+      "source_categories": [
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-1238fc887e8013b884ea4e5ef08a",
+      "name": "The Inside Track",
+      "group": "outside_motionx_scope",
+      "recommendation": "retain only in audit; exclude normal directory under the individually supported audio-only decision",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        "https://insidetrack.co.nz/"
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Audio post-production company identity; not motion editing or performance capture.",
+      "source_categories": [
+        "Audio Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-3ff213615622f447b658a2de5575",
+      "name": "The Rebel Fleet",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.rebelfleet.co.nz/our-work/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Production/post workflow technology; no animation-pipeline or capture-stage claim inferred.",
+      "source_categories": [
+        "Post-production",
+        "Production Technology"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-a574603da74bca72ee54c088614e",
+      "name": "The Sound Room",
+      "group": "outside_motionx_scope",
+      "recommendation": "retain only in audit; exclude normal directory under the individually supported audio-only decision",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        "https://thesoundroom.co.nz/whatwedo"
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Audio services; sound recording is not body or facial capture.",
+      "source_categories": [
+        "Audio Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-dec24c3fdeb15bf105f8558654ad",
+      "name": "Assembly",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.assemblyltd.com/info",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Company sources support animation and VFX; distinct from the overseas name match.",
+      "source_categories": [
+        "Animation",
+        "VFX"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-20706d6f67cff76e1c77ff435c38",
+      "name": "Big Picture / Creative Technology NZ",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://ct-group.com/aus/about/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "AV/production technology brand context; no virtual production stage inferred.",
+      "source_categories": [
+        "Production Technology"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-f8497e96b5d469806c5f29f0374a",
+      "name": "Creature Post",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.creaturepost.co.nz/team",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Animation/VFX/post company evidence; facility services remain unverified.",
+      "source_categories": [
+        "Animation",
+        "VFX",
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-77c2efd65dbb53aa89054e447ac9",
+      "name": "Eleven FX",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.elevenfx.com/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "VFX and compositing company reference; no capture inference.",
+      "source_categories": [
+        "VFX",
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-52749b168c44aa1c71ba5b289af2",
+      "name": "Evoke Audio",
+      "group": "outside_motionx_scope",
+      "recommendation": "retain only in audit; exclude normal directory under the individually supported audio-only decision",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        "https://aucklandeconomicdevelopment.com/te-puna-creative/case-studies/te-kopua-hendersons-sound-innovators-evoke-audio"
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "Source-listed audio vendor; its own current website/services are insufficiently corroborated.",
+      "source_categories": [
+        "Audio Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-ad47dfef37d00ab385b2b72259da",
+      "name": "Mandy VFX",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.mandyvfx.co.nz/about",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Company-level boutique VFX/post evidence; no independently verified facility.",
+      "source_categories": [
+        "VFX",
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-d42204a462e2b37344d6e21baaba",
+      "name": "Metia Interactive",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.metia.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "NZ game/interactive company; distinct from the unrelated marketing homonym.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-9a821f956d10336fe89dae1df1fc",
+      "name": "The Machine Room",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://themachineroom.co/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "source_reference",
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://thework.awardsplatform.com/gallery/MqOBokER/QZBbXNKM",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "source_reference",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "Post/VFX relevance supported by regional and recent production-credit evidence; sparse company page.",
+      "source_categories": [
+        "Post-production",
+        "VFX"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-44c9273033c798a6bc2839e55092",
+      "name": "The Rig",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://therig.co.nz/about",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Company-level animation/VFX/post evidence; immersive marketing does not establish a capture stage.",
+      "source_categories": [
+        "Animation",
+        "VFX",
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-cce76fcdb59d86ae15af600ed145",
+      "name": "Lane Street Studios",
+      "group": "facility_geography_decision",
+      "recommendation": "recommend company-only Class C minimal factual reference; facility pins/services remain separate",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "source_reference",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Physical screen production facility; not an animation, VFX or capture capability claim.",
+      "source_categories": [
+        "Production Facilities"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-7265abd074266f83c203163f56d8",
+      "name": "Avalon Studios",
+      "group": "facility_geography_decision",
+      "recommendation": "recommend company-only Class C minimal factual reference; facility pins/services remain separate",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://avalonstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Physical film/TV production facilities; separate facility dossier, no verified capture.",
+      "source_categories": [
+        "Production Facilities"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-60d251f7537d167a602b230317b6",
+      "name": "Stone Street Studios",
+      "group": "facility_geography_decision",
+      "recommendation": "recommend company-only Class C minimal factual reference; facility pins/services remain separate",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.stonestreetstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Production sound-stage company; no inherited Wētā services or capture capabilities.",
+      "source_categories": [
+        "Production Facilities"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-daa99cb2d690ae3de58ec024a087",
+      "name": "Wētā Workshop",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.wetaworkshop.com/about-us",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Physical effects/design and game-related operating identity; distinct from Wētā FX.",
+      "source_categories": [
+        "Game Development",
+        "Special Effects"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-973561725e8ebcc0a43e79e2fcf7",
+      "name": "Big Adventure",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.bigadventure.games/press",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Game company evidence; no independently established cinematic or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-31e58cea08f3c9a8b92908bde402",
+      "name": "Resn",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://resn.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "Creative interactive production; sparse primary page does not support detailed facility claims.",
+      "source_categories": [
+        "Digital / Interactive Production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-400a26d0643f74a8e0e3c0d2719a",
+      "name": "RiffRaff Games",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.levelinfinite.com/news/studio-mayday-riffraff-games-tencent-investment/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "source_reference",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Game studio/Studio Mayday name context; publisher announcement is evidence, not its official website.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-9c51b727be3254ae5ba713b74d80",
+      "name": "Stormcloak Games",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://stormcloak.games/about",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Game development self-report; old planned-release milestones do not establish current operation.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-8e4a1fd9c3266bb9062edefa3959",
+      "name": "Storybox",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.storybox.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "Creative production reference; no game, animation, motion-editing or capture services inferred.",
+      "source_categories": [
+        "Creative Production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-ce773c779d2a3d1b1542e9c020d0",
+      "name": "Wildboy Studios",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.wildboystudios.com/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Game studio self-report; no independently established animation or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-32a6280b74c7c3d9c52a039fae43",
+      "name": "Graphic Monk Ltd",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://graphicmonk.com/film-tv/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_self_report_not_independent_verification",
+      "original_classification": "Company-site editing/post evidence only. Historical regional capture labels are not promoted.",
+      "source_categories": [
+        "Post-production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-f5545ca7231e7d7d9c5bcc70450e",
+      "name": "Shotover Creative / Shotover Media",
+      "group": "rights_scope_question",
+      "recommendation": "recommend the documented minimal factual fields; one explicit cohort scope decision, no source-wide reuse grant",
+      "rights": "minimal_facts_sourcewide_terms_unspecified",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://shotovercreative.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://shotovercreative.co.nz/news/insights/the-rare-combination-of-creative-agency-and-video-production-company-why-it-matters/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "source_reference",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "source_listed_or_self_report_not_independently_verified",
+      "original_classification": "Company-site production/post and name-history evidence; unrelated camera brands are not merged.",
+      "source_categories": [
+        "Post-production",
+        "Film / Television Production"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-f3191ba34b59bb2baade29ae1a37",
+      "name": "Ahwoo",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-29d9f8b732ba385ad93d452110c1",
+      "name": "Astronaut Diaries",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-bc14e52be23bf4b472c0e7aa30bb",
+      "name": "Balancing Monkey Games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-54e9db1efbedc354ba3c113d8ec8",
+      "name": "Blind Squirrel Entertainment New Zealand",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://blindsquirrelentertainment.com/about/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company_identity",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-71538a5f6d6f8ac950f3ee9689d9",
+      "name": "Camshaft Software",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-2c2981291fcd536437456e65771f",
+      "name": "CerebralFix",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-6042f25a42fc6b02263a3d82ed48",
+      "name": "Digital Confectioners",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-ce717c0c03bd5b3f4ae9cd32e665",
+      "name": "Dreamloft",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-a9ccc67f1354fe44f5fe731e6e7b",
+      "name": "Evans Taylor Digital",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-6eaef58907f6f810bbe9e5542068",
+      "name": "Flightless",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-3fa8ef88e2bed6b5f11c13fd06bc",
+      "name": "Geo AR Games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.geoar.com/privacy-policy",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company_identity",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-069cbef46e8c8acd75992329c23c",
+      "name": "Gfactor",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-c4aa53c17bbad24b54c25bdd861d",
+      "name": "Insight Creative",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_identity_and_factual_playtesting_context",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.nzonair.govt.nz/news/our-year-in-review-2024-2025/game-development-sector-rebate/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Playtesting service reported as launched September 2025; agency evidence does not independently establish current premises.",
+      "original_classification": "The agency annual review names its Playful playtesting service; this is game production support, not proof it develops games.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-d2e2bf8ce1d54b90619ed6026281",
+      "name": "Jeremy Hanna Studio",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-8686d582eefb945fafbf6496693b",
+      "name": "Light Pattern",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-499bd904d796b7e7a2f2ea513789",
+      "name": "Mytona",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-3ccc625c6c8189abf9add9c82554",
+      "name": "Ninja Kiwi",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-7dd240119cb25e9fd7cb3dc765ad",
+      "name": "Outerdawn",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-d4b4e0edebba33fd04dddece0e1e",
+      "name": "Playside Studios NZ",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-66cb4fb559bcdd94a492d5de154a",
+      "name": "Prismatic Studios",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.prismaticstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "Unreal Engine technical services self-reported on the observed page; independent current operation unknown.",
+      "original_classification": "Official source supports Unreal Engine co-development/technical consultancy; not verified site-specific animation or virtual production.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-63bb04ace0c807391ff1fc742242",
+      "name": "Runaway",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.runawayplay.com/tos",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company_identity",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-b7798cf7ed5ff60bcb0c93e8dfb2",
+      "name": "Shapefarm",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-5daa291ec025db1e4c6d6e056433",
+      "name": "Sharpmind Games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-e3d06919b7673794894610e2570c",
+      "name": "Snickerdoodle Games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-d263ca585957ea52be9356a5664c",
+      "name": "Sometimes",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-fd17998425eb614c4844e9681d4c",
+      "name": "Space Rock games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-a37aab97a0ffabc94436f851edfc",
+      "name": "Splitting Point",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-a9155d21cdcf3bc3680e358ba932",
+      "name": "StaplesVR",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.staplesvr.com/terms-of-service",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company_identity",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-47572ff7caffe82e110261930eb5",
+      "name": "Synty Studios",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://www.syntystudios.com/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "current_operation": "3D asset products self-reported on the observed company page; no physical facility claim.",
+      "original_classification": "Official source supports 3D asset production for production/game workflows; not a verified capture or animation stage.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    },
+    {
+      "id": "nzcensus-d4a302ab7472940fab5b8d71693b",
+      "name": "Unclear Games",
+      "group": "suitable_minimal_factual_publication_review",
+      "recommendation": "recommend the source-authorised factual company identity; detailed services remain unverified",
+      "rights": "agency_name_and_period_only",
+      "permitted_scope": "Minimal factual identity, coarse source-labelled relevance, source URLs/dates and attribution. No authored prose/media, contacts, guessed addresses or confirmed facility services.",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ],
+      "current_operation": "Listing for the recorded programme period, not current-operation or physical-facility verification.",
+      "original_classification": "Programme-listed game-sector company identity only; no independently established animation, VFX, cinematics or capture speciality.",
+      "source_categories": [
+        "Game Development"
+      ],
+      "human_approved": false
+    }
+  ],
+  "separately_staged": [
+    {
+      "name": "Level",
+      "id": "nzcensus-2a118b09ac10de6ab7d579b9bd44",
+      "reason": "The short programme name cannot yet be tied to a distinct operating business. Do not attach a guessed Level website or facility.",
+      "recommendation": "retain_staged",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        }
+      ]
+    },
+    {
+      "name": "Melodics",
+      "id": "nzcensus-f7bf938638654f34ce214ebe84e0",
+      "reason": "Official support describes music-practice software. A rebate listing alone does not demonstrate the directory's studio/production-service scope; retain for possible future scope review.",
+      "recommendation": "retain_staged",
+      "evidence": [
+        {
+          "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_agency",
+          "rights": "NZ-On-Air-Permission"
+        },
+        {
+          "url": "https://support.melodics.com/en/articles/8051176-the-melodics-approach",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "kind": "official_company",
+          "rights": "UNSPECIFIED"
+        }
+      ]
+    }
+  ],
+  "facility_dossiers": [
+    {
+      "proposal_id": "nz-facility-bab3b8aebe0b73cf97cc",
+      "name": "Avalon Studios",
+      "operator_source_claim": "Avalon Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Lower Hutt",
+      "country": "New Zealand",
+      "source_address_claim": "41 Percy Cameron Street, Avalon, Lower Hutt",
+      "address_verified_by_human": false,
+      "function_source_claim": "Film/television production spaces and associated support facilities.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://avalonstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/avalon-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-88c0b3c2901ee08dd834",
+      "name": "Lane Street Studios",
+      "operator_source_claim": "Lane Street Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Upper Hutt",
+      "country": "New Zealand",
+      "source_address_claim": "32 Lane Street, Wallaceville, Upper Hutt",
+      "address_verified_by_human": false,
+      "function_source_claim": "Source-listed sound stages, B stages, production and workshop spaces.",
+      "current_operation": "Current regional listing exists, but earlier property-sale reporting creates an explicit operational uncertainty.",
+      "evidence": [
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.oneroof.co.nz/news/premium-film-studio-offers-blockbuster-opportunity-48435",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval.",
+        "Property marketed for sale in 2025; this is a change-of-operation investigation signal, not a closure determination.",
+        "Direct company homepage was inaccessible during review; current booking/operator status requires confirmation."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-57b7bcb47c90a1260813",
+      "name": "Stone Street Studios",
+      "operator_source_claim": "Stone Street Studios",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Wellington",
+      "country": "New Zealand",
+      "source_address_claim": "1 Stone Street, Miramar, Wellington",
+      "address_verified_by_human": false,
+      "function_source_claim": "Company and regional source describe sound stages and production support.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://www.stonestreetstudios.co.nz/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/stone-street-studios",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    },
+    {
+      "proposal_id": "nz-facility-7f69d3df5c96c1862e6c",
+      "name": "Te Whare Piringa Film Studio",
+      "operator_source_claim": "Local Gecko Productions",
+      "operator_legal_identity": "Not independently established",
+      "municipality": "Rotorua",
+      "country": "New Zealand",
+      "source_address_claim": null,
+      "address_verified_by_human": false,
+      "function_source_claim": "Source-listed hire space for film/TV and other screen production; not a verified capture stage.",
+      "current_operation": "Source self-report/regional listing observed; not independent current-operation verification.",
+      "evidence": [
+        {
+          "url": "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        },
+        {
+          "url": "https://poutama.co.nz/local-gecko-productions/",
+          "observed_on": "2026-11-07",
+          "source_published_on": null,
+          "rights": "UNSPECIFIED"
+        }
+      ],
+      "coordinate_precision": "unverified",
+      "lat": null,
+      "lng": null,
+      "coordinate_rationale": "No coordinate measurement or reliable geocoding was acquired. A published address/source association is not a substantiated exact coordinate.",
+      "unverified_aspects": [
+        "Independent current-operation/facility review not completed.",
+        "No capture, facial, volumetric or virtual-production capability is verified.",
+        "No ownership or parent relationship is inferred from proximity, marketing affiliation or mutual alignment.",
+        "No Class A promotion, map pin or human approval.",
+        "Exact street location and coordinate evidence not established; do not derive a pin from regional travel-time descriptions.",
+        "Facility name and Local Gecko operator must not become duplicate operating-company records."
+      ],
+      "independent_facility_review": "not_completed",
+      "human_decision": null,
+      "human_approved": false
+    }
+  ],
+  "scope_decision": "Retain all records/history. Review 30 scoped agency references and the limited-factual-field cohort; retain Envy visual/audio services, exclude four audio-only references from normal results. Melodics and Level remain staged. Facility/booking/operator questions do not grant pins or capture services.",
+  "human_approved": false,
+  "pr15_approval_required": true
+}

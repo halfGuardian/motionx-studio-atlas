@@ -1,0 +1,7 @@
+{
+  "confirmed_capture_quick_filter": 22,
+  "warm_cache_ready_seconds": 1.203,
+  "checks": 9,
+  "kind": "actual_catalogue_ux_not_deployed_pages",
+  "conditions": "Local HTTP subdirectory / installed headless Chromium, 1440x950 and 390x844, no CPU/network throttle; warm reload explicitly identified. Screenshots are proposed UI, not production."
+}

@@ -1,0 +1,147 @@
+NZ CENSUS WAVE 1
+{
+  "complete_index_examined": 42239,
+  "source_observations": 98,
+  "distinct_source_names": 77,
+  "outcomes": {
+    "foreign_only_name_collision": 3,
+    "identity_review_hold": 2,
+    "no_name_match": 42,
+    "represented_name_match": 51
+  },
+  "by_source": {
+    "nzfc-facilities": {
+      "rows": 42,
+      "scope": "complete_source_snapshot",
+      "outcomes": {
+        "identity_review_hold": 1,
+        "no_name_match": 9,
+        "represented_name_match": 32
+      },
+      "no_name_match": [
+        "Bespoke Post",
+        "Envy Studios",
+        "Franklin Rd Music & Sound",
+        "Jon Online",
+        "Native Audio",
+        "Pinnacle Post",
+        "The Inside Track",
+        "The Rebel Fleet",
+        "The Soundroom"
+      ],
+      "needs_identity_review": [
+        "Blockhead"
+      ]
+    },
+    "screen-auckland-digital": {
+      "rows": 24,
+      "scope": "partial",
+      "outcomes": {
+        "foreign_only_name_collision": 2,
+        "identity_review_hold": 1,
+        "no_name_match": 12,
+        "represented_name_match": 9
+      },
+      "no_name_match": [
+        "Creature Post",
+        "Eleven FX",
+        "Envy Studios",
+        "Evoke Audio",
+        "Inside Track",
+        "Lets Play.Live",
+        "Mandy VFX",
+        "Metia",
+        "The Machine Room",
+        "The Rebel Fleet",
+        "The Rig",
+        "The Sound Room"
+      ],
+      "needs_identity_review": [
+        "Assembly",
+        "Big Picture",
+        "Blockhead"
+      ]
+    },
+    "screen-wellington-showcase": {
+      "rows": 9,
+      "scope": "showcase_only",
+      "outcomes": {
+        "foreign_only_name_collision": 1,
+        "no_name_match": 4,
+        "represented_name_match": 4
+      },
+      "no_name_match": [
+        "Lane Street Studios",
+        "Avalon Studios",
+        "Portsmouth Film Equipment Rental",
+        "Wētā Workshop"
+      ],
+      "needs_identity_review": [
+        "Stone Street Studios"
+      ]
+    },
+    "screen-wellington-showreel": {
+      "rows": 21,
+      "scope": "complete_named_showreel_not_directory",
+      "outcomes": {
+        "no_name_match": 15,
+        "represented_name_match": 6
+      },
+      "no_name_match": [
+        "A44",
+        "Beyond Fun",
+        "Big Adventure",
+        "Fox & Co",
+        "Lost Cosmonauts",
+        "Mohawk Media",
+        "Niantic Aotearoa NZ",
+        "Rascal Kids",
+        "Resn",
+        "RiffRaff Games",
+        "Stormcloak Games",
+        "Storybox",
+        "Wētā Workshop",
+        "Wildboy Studios",
+        "Wrestler"
+      ],
+      "needs_identity_review": []
+    },
+    "film-otago-southland-selected": {
+      "rows": 2,
+      "scope": "partial_selected_only",
+      "outcomes": {
+        "no_name_match": 2
+      },
+      "no_name_match": [
+        "Graphic Monk Ltd",
+        "Shotover Media Ltd"
+      ],
+      "needs_identity_review": []
+    }
+  },
+  "foreign_only_details": [
+    {
+      "name": "Assembly",
+      "source": "screen-auckland-digital",
+      "record_ids": [
+        "overture-350c6159-0f1f-48a9-b28d-95613677aa12"
+      ]
+    },
+    {
+      "name": "Big Picture",
+      "source": "screen-auckland-digital",
+      "record_ids": [
+        "overture-cac92493-e3e2-42ec-b45b-7dfc98a9de1d"
+      ]
+    },
+    {
+      "name": "Stone Street Studios",
+      "source": "screen-wellington-showcase",
+      "record_ids": [
+        "overture-ff3d0412-48b0-4953-a25a-9c2a4ac72805"
+      ]
+    }
+  ],
+  "new_atlas_records_created": 0,
+  "publication_approved": false
+}

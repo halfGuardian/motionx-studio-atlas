@@ -1,0 +1,80 @@
+[
+  {
+    "suite": "browser_smoke",
+    "exit_code": 0,
+    "seconds": 41.38,
+    "log": "/tmp/motionx-map-gate-final-browser_smoke.log"
+  },
+  {
+    "suite": "bulk_browser",
+    "exit_code": 0,
+    "seconds": 18.16,
+    "log": "/tmp/motionx-map-gate-final-bulk_browser.log"
+  },
+  {
+    "suite": "public_catalog_smoke",
+    "exit_code": 0,
+    "seconds": 40.92,
+    "log": "/tmp/motionx-map-gate-final-public_catalog_smoke.log"
+  },
+  {
+    "suite": "global_visibility_browser",
+    "exit_code": 0,
+    "seconds": 5.06,
+    "log": "/tmp/motionx-map-gate-final-global_visibility_browser.log"
+  },
+  {
+    "suite": "commercial_browser",
+    "exit_code": 0,
+    "seconds": 8.09,
+    "log": "/tmp/motionx-map-gate-final-commercial_browser.log"
+  },
+  {
+    "suite": "global_review_browser",
+    "exit_code": 0,
+    "seconds": 2.21,
+    "log": "/tmp/motionx-map-gate-final-global_review_browser.log"
+  },
+  {
+    "suite": "unified_ux",
+    "exit_code": 0,
+    "seconds": 13.25,
+    "log": "/tmp/motionx-map-gate-final-unified_ux.log"
+  },
+  {
+    "suite": "boutique_browser",
+    "exit_code": 0,
+    "seconds": 10.29,
+    "log": "/tmp/motionx-map-gate-final-boutique_browser.log"
+  },
+  {
+    "suite": "nz_census_browser",
+    "exit_code": 0,
+    "seconds": 6.87,
+    "log": "/tmp/motionx-map-gate-final-nz_census_browser.log"
+  },
+  {
+    "suite": "nz_quality_browser",
+    "exit_code": 0,
+    "seconds": 5.27,
+    "log": "/tmp/motionx-map-gate-final-nz_quality_browser.log"
+  },
+  {
+    "suite": "annecy_browser",
+    "exit_code": 0,
+    "seconds": 6.9,
+    "log": "/tmp/motionx-map-gate-final-annecy_browser.log"
+  },
+  {
+    "suite": "continuation_package_browser",
+    "exit_code": 0,
+    "seconds": 2.31,
+    "log": "/tmp/motionx-map-gate-final-continuation_package_browser.log"
+  },
+  {
+    "suite": "release_candidate_browser",
+    "exit_code": 0,
+    "seconds": 8.06,
+    "log": "/tmp/motionx-map-gate-final-release_candidate_browser.log"
+  }
+]

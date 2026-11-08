@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "observed_on_utc": "2026-11-08",
+  "package": "geonamescache",
+  "package_version": "3.0.2",
+  "distribution_url": "https://files.pythonhosted.org/packages/48/c2/52f1b29de8839b4b55cd2641dfd722a6a94953d74fa82514e26084a92318/geonamescache-3.0.2-py3-none-any.whl",
+  "distribution_sha256": "b830e8942f2d58c7e68782dcf4dff2ffe8c4104a35ee881ed1ad4023cefcdba4",
+  "distribution_published_at": "2026-07-28T11:53:11.865928Z",
+  "distribution_bytes": 35000667,
+  "data_path": "geonamescache/data/cities500.json",
+  "data_sha256": "1523be8c6f083eeee946e1c27a0916474d0f0de4361a15104fcc70218bc4d55e",
+  "data_rows": 234908,
+  "origin": "https://download.geonames.org/export/dump/",
+  "origin_licence": "CC-BY-4.0",
+  "licence_evidence": "https://download.geonames.org/export/dump/readme.txt",
+  "packaging_licence": "MIT",
+  "packaging_provenance": "https://github.com/yaph/geonamescache",
+  "projection": "Manually selected city-level factual coordinates, country/admin identifiers and source IDs only. No executable package code is installed or shipped; no automatic company geocoding.",
+  "company_rights": "GeoNames coordinate permission does not grant rights to company-source prose, datasets or services. Company references retain UNSPECIFIED source-wide rights.",
+  "additional_direct_source": "https://www.geonames.org/1841909/gwacheon.html",
+  "private_contacts_copied": false
+}

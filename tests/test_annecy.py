@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from annecy_input import xml,sheets,project,FIELDS
 from annecy_match import IdentityIndex,key,place
 from annecy import HOME,build,inputs,verify_checkpoint,check,safe_csv,DISPOSITIONS
-from launch_readiness import records
+from catalogue_history import records
 from unified_catalog import validate_research
 from discovery import read,digest
 from bulk_catalog import sha

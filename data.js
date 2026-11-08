@@ -150,7 +150,7 @@
     if (names.every(n => n === names[0] || n.startsWith(names[0] + ' '))) return names[0];
     return id.split('-').map(word => word[0].toUpperCase()+word.slice(1)).join(' ');
   }
-  function createDirectoryIndex(rows,commercial=null) {
+  function createDirectoryIndex(rows,commercial=null,visibility=null) {
     const C=root.MotionXCommercial||(typeof require==='function'?require('./commercial.js'):null);
     const byId = new Map(), organisations = new Map(), groups = new Map(),reviewedByCountry=new Map();
     for (const row of rows) {
@@ -168,10 +168,10 @@
     for (const org of organisations.values()) org.name=organisationName(org.id, org.rows);
     const entries = rows.map(row => ({row,commercial:commercial?C.classify(row,commercial):null,categories:new Set(row.categories), capabilities:new Set(row.capabilities),
       text:fold([row.name,row.company_id,organisations.get(row.company_id).name,row.city,row.country,
-        ...(row.relationships || []).map(r=>r.name),...row.categories,...row.capabilities].join(' ')),city:fold(row.city),name:fold(row.name),organisation:fold(organisations.get(row.company_id).name+' '+row.company_id)}));
+        ...(row.relationships || []).map(r=>r.name),...row.categories,...row.capabilities,...[visibility?.references?.[row.id],...(visibility?.additional_references?.[row.id]||[])].filter(Boolean).map(p=>p.city)].join(' ')),city:fold([row.city,...[visibility?.references?.[row.id],...(visibility?.additional_references?.[row.id]||[])].filter(Boolean).map(p=>p.city)].join(' ')),name:fold(row.name),organisation:fold(organisations.get(row.company_id).name+' '+row.company_id)}));
     if(commercial)for(const entry of entries)entry.text+=' '+fold(commercial.labels[entry.commercial.role]+' '+entry.commercial.role.replaceAll('_',' '));
     const ranked=entries.slice().sort((a,b)=>evidenceClass(a.row).localeCompare(evidenceClass(b.row))||a.name.localeCompare(b.name)||a.row.id.localeCompare(b.row.id));
-    return {rows,entries,ranked,byId,organisations,groups,reviewedByCountry,commercial,C};
+    return {rows,entries,ranked,byId,organisations,groups,reviewedByCountry,commercial,C,referenceIds:new Set(Object.keys(visibility?.references||{}))};
   }
   function queryDirectory(index, filters = {}) {
     const words=fold(filters.query).trim().split(/\s+/).filter(Boolean), city=fold(filters.city).trim();
@@ -180,7 +180,9 @@
     const found=(filters.sort==='relevance'?index.ranked:index.entries).filter(entry => {
       const r=entry.row;
       if(entry.commercial&&!index.C.matches(entry.commercial,filters.commercialRole,filters.scopeMode))return false;
-      if(filters.geographicView==='company_city'&&(!(r.record_kind==='company_reference')||!filters.referenceIds?.has(r.id)))return false;
+      const referenceIds=filters.referenceIds||index.referenceIds;
+      if(filters.geographicView==='company_city'&&(!(r.record_kind==='company_reference')||!referenceIds?.has(r.id)))return false;
+      if(filters.geographicView==='no_display'&&(r.record_kind!=='company_reference'||referenceIds?.has(r.id)))return false;
       if(filters.geographicView==='unpinned'&&Number.isFinite(r.lat))return false;
       if(filters.confirmedCaptureOnly&&!confirmedCapture(r))return false;
       if(organisation&&!entry.organisation.includes(organisation))return false;
@@ -225,7 +227,7 @@
   }
   const csvColumns=['id','company_id','company_name','name','city','country','lat','lng','address','website','categories','capabilities',
     'capability_evidence','evidence_state','coordinate_precision','evidence','verified_on','location_type','coordinate_source','relationships',
-    'evidence_class','record_kind','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','research_reasons','source_status','source_type','potential_duplicates','export_licences','export_notices','advisory_service_signals','advisory_research_status','source_category','research_review','company_reference_location','commercial_role','directory_scope','commercial_basis','commercial_confidence','commercial_reason','commercial_evidence'];
+    'evidence_class','record_kind','source_observed_on','website_kind','identity_status','source_provenance','license','attribution','research_reasons','source_status','source_type','potential_duplicates','export_licences','export_notices','advisory_service_signals','advisory_research_status','source_category','research_review','company_reference_location','additional_company_reference_locations','commercial_role','directory_scope','commercial_basis','commercial_confidence','commercial_reason','commercial_evidence'];
   function csvCell(value) {
     let text=Array.isArray(value)?(value.some(v=>typeof v==='object')?JSON.stringify(value):value.join('|')):
       value && typeof value==='object'?JSON.stringify(value):String(value??'');

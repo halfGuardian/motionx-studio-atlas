@@ -1,4 +1,16 @@
-# MotionX global programme — stacked draft PR #18
+# Final map visibility and release acceptance — PR #19
+
+The 182 admitted Class C companies now have **102 separate licensed city/urban reference points and 80 explicitly unpinned directory entries**. All 106 recorded cities were audited; four remain held for specific municipality/evidence issues, while 76 companies have no recorded city. Company search, country/sector filters, profiles and exports share the same directory. All 42,478 records and original coordinates remain unchanged.
+
+[Single owner approval summary for #15 → #18 → #19](data/release-candidate/OWNER-APPROVAL.md) · [Final map evidence audit](data/release-candidate/map-gate/reports/dashboard.html) · [Scope and reproducibility](data/release-candidate/map-gate/README.md). No merge, deployment, Pages change or fabricated human approval. Earlier checkpoint sections below retain their historical counts.
+
+# MotionX global integrated release candidate — stacked draft
+
+The actual draft atlas now contains **42,478 references**, including **182 new Class C companies** from the 184-proposal audit. Two trade-taxonomy-only cases are withheld. All 42,296 parent records remain unchanged; four audio-only records stay available in audit scope, giving 42,474 normal results. Company references have no invented coordinates or confirmed facility capabilities. Seven separately licensed city-reference points are prepared, including ModelFarm's additional Brisbane association.
+
+[Release decisions](data/release-candidate/DECISIONS.md) · [Actual integrated admission dashboard](data/release-candidate/reports/dashboard.html) · [Workflow and preservation](data/release-candidate/README.md). The release-candidate PR is stacked on unchanged #18, above unchanged #15. No merge, deployment, Pages modification or human approval is performed. The following sections preserve the parent research milestones.
+
+# Parent PR #18 research checkpoint — historical counts
 
 ## Global company research continuation — draft PR #18
 
@@ -7,8 +19,7 @@ contains 737 company/geographic reviews, seven office/branch investigations and
 184 proposed Class C company references, including the original 30. All 725 saved
 keys have an assessment; 381 identity/evidence/historical cases remain unresolved.
 The separate city queue retains 238 uninvestigated geographic associations.
-These proposals have **not** been imported:
-all 42,296 canonical references and their original source evidence remain intact.
+At the frozen PR #18 checkpoint these proposals had **not** been imported. This release candidate integrates 182 of them, as documented above; all 42,296 parent references and their original source evidence remain intact.
 See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
 
 The directory distinguishes explicit sector eligibility as potential client,
@@ -22,8 +33,7 @@ provider choices each include “both”. Confirmed-only capability filtering re
 independent. Separate company-city discovery does not imply a verified facility.
 
 Four individually reviewed audio-only references are reversibly excluded from
-normal search/map/CSV results: normal results contain 42,292 references; the
-explicit audit view and direct profiles preserve all 42,296. Multidisciplinary
+normal search/map/CSV results. At the parent checkpoint normal results contained 42,292 references, with all 42,296 preserved in audit/direct profiles. The current draft totals are 42,474 normal / 42,478 audit. Multidisciplinary
 visual/audio companies remain eligible. Numerical commercial/service-alignment
 scores are no longer displayed or exported. This draft does not merge or deploy.
 

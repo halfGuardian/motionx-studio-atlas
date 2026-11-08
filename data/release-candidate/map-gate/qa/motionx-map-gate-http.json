@@ -1,0 +1,9 @@
+{
+  "initial_http_ready_seconds": 1.836,
+  "checks": 6,
+  "admitted": 182,
+  "approximate_company_references": 102,
+  "unpinned": 80,
+  "actual_records": 42478,
+  "conditions": "Actual HTTP subdirectory and packaged CSS/assets; installed Chromium at 1440x1000 and 390x844. No network/CPU throttle; separate full real/synthetic suites measure constrained performance. No deployed Pages or physical-device claim."
+}

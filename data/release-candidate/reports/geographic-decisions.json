@@ -1,0 +1,528 @@
+[
+  {
+    "record_id": "boutique-61d01908e19bb5e22543593cae12",
+    "name": "Bad Clay Studio",
+    "before": {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.bad-clay.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 10.82302,
+      "lng": 106.62965,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1566083",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "d0c4da93748cffd0916bf35a1397404a637b1bf7471dfc2e962db89089f05778"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-02b32b3e25b0693f01f05a67e5f2",
+    "name": "Scrawl Animation",
+    "before": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Singapore",
+    "country": "Singapore",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://scrawlanimation.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 1.28967,
+      "lng": 103.85007,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1880252/singapore.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-9a4db026193fabeaf00c99930ec4",
+    "name": "Robot Playground Media",
+    "before": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Singapore",
+    "country": "Singapore",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.robotplaygroundmedia.com/",
+        "basis": "official_company_page"
+      },
+      {
+        "url": "https://www.robotplaygroundmedia.com/about",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 1.28967,
+      "lng": 103.85007,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/1880252/singapore.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-bd922ba2cd1dcd66361049c27ed0",
+    "name": "ModelFarm",
+    "before": {
+      "city": "Adelaide",
+      "country": "Australia",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Adelaide",
+    "country": "Australia",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://modelfarm.com.au/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": -34.92866,
+      "lng": 138.59863,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/2078025",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "d0c4da93748cffd0916bf35a1397404a637b1bf7471dfc2e962db89089f05778"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-bd922ba2cd1dcd66361049c27ed0",
+    "name": "ModelFarm",
+    "before": {
+      "city": "Adelaide",
+      "country": "Australia",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Brisbane",
+    "country": "Australia",
+    "kind": "company_additional_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://modelfarm.com.au/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": -27.46794,
+      "lng": 153.02809,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/2174003",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "d0c4da93748cffd0916bf35a1397404a637b1bf7471dfc2e962db89089f05778"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-1f28c480f65ce8c30cc0b07e0628",
+    "name": "Tumblehead",
+    "before": {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Viborg",
+    "country": "Denmark",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://tumblehead.com/contact",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-df4e956bd7b7eb70e5551b33116a",
+    "name": "TAT Productions",
+    "before": {
+      "city": "Toulouse",
+      "country": "France",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Toulouse",
+    "country": "France",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://tatprod.com/notre-studio",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-a8c0cc7af6d3220f36fddf233f1c",
+    "name": "Fantasmagorie Studio",
+    "before": {
+      "city": "Milan",
+      "country": "Italy",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Rome",
+    "country": "Italy",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://fantasmagoriestudio.net/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-f26f9cd4f1fdd31b1d03b4cd9713",
+    "name": "Gertie Production",
+    "before": {
+      "city": "Rome",
+      "country": "Italy",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Milan",
+    "country": "Italy",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://www.gertieproduction.com/en/company/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-5e8610f33b9f7f0d53267dd81b07",
+    "name": "Tomavision Studio",
+    "before": {
+      "city": "Madrid",
+      "country": "Spain",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Santa Cruz de Tenerife",
+    "country": "Spain",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://www.tomavision.net/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-40de526b331ce9195d91c5c2483a",
+    "name": "Nukufilm",
+    "before": {
+      "city": "Tallinn",
+      "country": "Estonia",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Tallinn",
+    "country": "Estonia",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://nukufilm.ee/en/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-3866c90cf04960bc322804d15de5",
+    "name": "La Fabrique d'Images",
+    "before": {
+      "city": "Luxembourg City",
+      "country": "Luxembourg",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Differdange",
+    "country": "Luxembourg",
+    "kind": "company_city_correction_review",
+    "evidence": [
+      {
+        "url": "https://www.fabrique-d-images.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-f93b50f4787f0366137f22fd8bdb",
+    "name": "Atom Art",
+    "before": {
+      "city": "Riga",
+      "country": "Latvia",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Riga",
+    "country": "Latvia",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://atomart.lv/en/studio",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-eb31cafb88c69c4a43b9ee28576e",
+    "name": "Aardman Animations",
+    "before": {
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Bristol",
+    "country": "United Kingdom",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.aardman.com/about/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-f654c65bd7da0a4e768d69200ad5",
+    "name": "Blue Zoo",
+    "before": {
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "London",
+    "country": "United Kingdom",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.blue-zoo.co.uk/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/2643743/london.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  },
+  {
+    "record_id": "boutique-26bc3f97c5f180bb5488d360e5e0",
+    "name": "Cloth Cat Animation",
+    "before": {
+      "city": "Cardiff",
+      "country": "United Kingdom",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "Cardiff",
+    "country": "United Kingdom",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://clothcat.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": null,
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "staged_geographic_review",
+    "reason": "No licensed coordinate payload, or unresolved municipality/correction/facility scope. Preserve original city and null coordinates; not a company-admission blocker."
+  },
+  {
+    "record_id": "boutique-854855ad30a25651e0483eb3e96b",
+    "name": "Lupus Films",
+    "before": {
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": null,
+      "lng": null
+    },
+    "proposed_company_city": "London",
+    "country": "United Kingdom",
+    "kind": "company_city_reference_review",
+    "evidence": [
+      {
+        "url": "https://www.lupusfilms.com/",
+        "basis": "official_company_page"
+      }
+    ],
+    "reviewed_on": "2026-11-08",
+    "original_coordinates_changed": false,
+    "facility_verified": false,
+    "human_approved": false,
+    "coordinate": {
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "precision": "city",
+      "coordinate_source": "https://www.geonames.org/2643743/london.html",
+      "coordinate_license": "CC-BY-4.0",
+      "license_url": "https://www.geonames.org/about.html",
+      "attribution": "GeoNames, Creative Commons Attribution 4.0. Approximate city reference; not a facility address.",
+      "gazetteer_input_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4"
+    },
+    "next_step": "Review company city, identity and licensed gazetteer before authorising a separate approximate display point. Never overwrite original coordinates.",
+    "release_disposition": "prepare_separate_city_reference",
+    "reason": "Source-supported company municipality and an existing hash-bound licensed GeoNames point; original record stays unchanged."
+  }
+]

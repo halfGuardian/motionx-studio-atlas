@@ -2,7 +2,7 @@ import copy,sys,tempfile,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from discovery import read,digest
-from launch_readiness import records
+from catalogue_history import records
 from global_continuation import HOME,build,check,classify,validate_reviews,proposed_record,validate_backlog,branch_reviews,proposal_conflicts,recommendations,geographic_associations
 from global_programme import GlobalIndex
 from unified_catalog import validate_research

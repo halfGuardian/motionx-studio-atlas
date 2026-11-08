@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tools/check_bulk_release.py", line 89, in <module>
+    with contextlib.redirect_stdout(io.StringIO()):result=check()
+                                                          ^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/check_bulk_release.py", line 83, in check
+    if read(tmp/'public'/name)!=read(root/'data/public'/name):raise ValueError('public catalogue differs from exact source proposal: '+name)
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: public catalogue differs from exact source proposal: manifest.json

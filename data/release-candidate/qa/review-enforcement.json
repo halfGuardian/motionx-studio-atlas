@@ -1,0 +1,20 @@
+{
+  "reviewed_on": "2026-11-08",
+  "read_only": true,
+  "results": [
+    {
+      "route": "repos/halfGuardian/motionx-studio-atlas/branches/main/protection",
+      "exit_code": 1,
+      "response": {
+        "message": "Get \"https://api.github.com/repos/halfGuardian/motionx-studio-atlas/branches/main/protection\": Forbidden"
+      }
+    },
+    {
+      "route": "repos/halfGuardian/motionx-studio-atlas/rulesets",
+      "exit_code": 1,
+      "response": {
+        "message": "Get \"https://api.github.com/repos/halfGuardian/motionx-studio-atlas/rulesets\": Forbidden"
+      }
+    }
+  ]
+}

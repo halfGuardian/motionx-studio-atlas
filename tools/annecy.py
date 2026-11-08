@@ -13,7 +13,7 @@ from annecy_match import IdentityIndex,key,place
 from bulk_catalog import compact,sha
 from compact_index import add_transport
 from discovery import ROOT,read,write,digest
-from launch_readiness import records
+from catalogue_history import records
 from unified_catalog import validate_research
 from validate import url_valid
 

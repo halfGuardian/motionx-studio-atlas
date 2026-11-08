@@ -1,0 +1,15 @@
+PASS actual styled HTTP atlas loads all 182 companies, 102 separate references and 80 unpinned companies; OSM attribution retained
+CASE Able & Baker
+CASE Mighty Eyes
+CASE Interference Pattern
+CASE SIGNOS STUDIO
+PASS new animation, game, VFX and mocap company searches combine with country/sector; keyboard markers open profiles and confirmed-only adds no invented capabilities
+PASS integrated unpinned view preserves country/category/search and explains all four city holds plus companies with no city
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/map_gate_browser.py", line 136, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/workspace/motionx-studio-atlas/tests/map_gate_browser.py", line 98, in main
+    page.wait_for_function('(id)=>selected===id', rid); page.locator('#close').click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Page.wait_for_function() takes 2 positional arguments but 3 were given

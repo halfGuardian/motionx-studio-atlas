@@ -1,0 +1,86 @@
+[
+  {
+    "command": "python tools/validate.py studios.json",
+    "exit_code": 0,
+    "seconds": 0.06,
+    "log": "/tmp/motionx-map-gate-reproduce-00.log"
+  },
+  {
+    "command": "python tools/launch_readiness.py check --output data/global-programme/reports/readiness",
+    "exit_code": 0,
+    "seconds": 3.91,
+    "log": "/tmp/motionx-map-gate-reproduce-01.log"
+  },
+  {
+    "command": "python tools/launch_readiness.py check --output data/release-candidate/reports/readiness",
+    "exit_code": 0,
+    "seconds": 2.92,
+    "log": "/tmp/motionx-map-gate-reproduce-02.log"
+  },
+  {
+    "command": "python tools/boutique.py check --output data/boutique/reports",
+    "exit_code": 0,
+    "seconds": 3.74,
+    "log": "/tmp/motionx-map-gate-reproduce-03.log"
+  },
+  {
+    "command": "python tools/annecy.py check",
+    "exit_code": 0,
+    "seconds": 23.92,
+    "log": "/tmp/motionx-map-gate-reproduce-04.log"
+  },
+  {
+    "command": "python tools/nz_census.py prepare --output /tmp/motionx-map-gate-nz-wave1",
+    "exit_code": 0,
+    "seconds": 0.44,
+    "log": "/tmp/motionx-map-gate-reproduce-05.log"
+  },
+  {
+    "command": "python tools/nz_research.py check",
+    "exit_code": 0,
+    "seconds": 8.34,
+    "log": "/tmp/motionx-map-gate-reproduce-06.log"
+  },
+  {
+    "command": "python tools/global_visibility.py check",
+    "exit_code": 0,
+    "seconds": 11.25,
+    "log": "/tmp/motionx-map-gate-reproduce-07.log"
+  },
+  {
+    "command": "python tools/global_continuation.py check",
+    "exit_code": 0,
+    "seconds": 18.65,
+    "log": "/tmp/motionx-map-gate-reproduce-08.log"
+  },
+  {
+    "command": "python tools/global_programme.py check",
+    "exit_code": 0,
+    "seconds": 66.76,
+    "log": "/tmp/motionx-map-gate-reproduce-09.log"
+  },
+  {
+    "command": "python tools/global_programme.py maintenance-check",
+    "exit_code": 0,
+    "seconds": 0.13,
+    "log": "/tmp/motionx-map-gate-reproduce-10.log"
+  },
+  {
+    "command": "python tools/nz_quality_gate.py check",
+    "exit_code": 0,
+    "seconds": 2.32,
+    "log": "/tmp/motionx-map-gate-reproduce-11.log"
+  },
+  {
+    "command": "python tools/release_candidate.py check",
+    "exit_code": 0,
+    "seconds": 11.2,
+    "log": "/tmp/motionx-map-gate-reproduce-12.log"
+  },
+  {
+    "command": "python tools/map_gate.py check",
+    "exit_code": 0,
+    "seconds": 2.15,
+    "log": "/tmp/motionx-map-gate-reproduce-13.log"
+  }
+]

@@ -9,7 +9,7 @@ from collections import Counter,defaultdict
 from pathlib import Path
 from datetime import date
 from discovery import ROOT,read,write,digest
-from launch_readiness import records
+from catalogue_history import records
 from boutique import host,record_host,shared,relevance,region
 from annecy_match import IdentityIndex,key
 from nz_census import load_observations,ALIASES,fold

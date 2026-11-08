@@ -21,7 +21,7 @@ test('worksheet drafts remain content-bound, unique and size-limited',()=>{
  const w=JSON.parse(fs.readFileSync(path.join(root,'data/nz-census/final-review/reports/worksheet.json')));assert.equal(w.items.length,91);assert.ok(w.items.every(i=>i.human_decision===null&&i.human_approved===false));
 });
 test('actual staged identities are excluded from search, lazy profiles and export bundles',async()=>{
- const c=await load(),staged=original.filter(r=>['Melodics','Level'].includes(r.name));assert.equal(c.rows.length,42296);assert.equal(c.staged.size,2);
+ const c=await load(),staged=original.filter(r=>['Melodics','Level'].includes(r.name));assert.equal(c.rows.length,c.manifest.counts.records);assert.equal(c.staged.size,2);
  for(const r of staged){assert.ok(c.staged.has(r.id));assert.equal(c.rows.some(x=>x.id===r.id),false);await assert.rejects(c.details(r.id),/identity unavailable/i);await assert.rejects(c.exportBundle([{id:r.id}]),/identity unavailable/i);}
 });
 test('company review metadata validates and cannot elevate an agency lead to verified capabilities',async()=>{

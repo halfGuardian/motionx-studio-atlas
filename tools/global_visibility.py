@@ -8,7 +8,7 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 from discovery import ROOT,read,write,digest
-from launch_readiness import records
+from catalogue_history import records,public_file
 from bulk_catalog import compact,sha
 from validate import url_valid
 from nz_quality_gate import csv_safe
@@ -47,7 +47,9 @@ def build(rows,home=HOME):
     return public,audit
 
 def install(public,database,home=HOME):
-    public=Path(public);m,rows=records(public,database);value,audit=build(rows,home)
+    public=Path(public)
+    if read(public/'manifest.json').get('release_candidate'):raise ValueError('Use release_candidate.py for an integrated draft; historical visibility cannot overwrite it')
+    m,rows=records(public,database);value,audit=build(rows,home)
     compact(public/'visibility.json',value);m['global_visibility']={'path':'visibility.json','sha256':sha(public/'visibility.json'),'gzip_sha256':sha(public/'visibility.json.gz'),'gzip_bytes':(public/'visibility.json.gz').stat().st_size,'content_addressed':True};write(public/'manifest.json',m)
     return value,audit
 
@@ -61,14 +63,14 @@ def check(home=HOME):
     baseline=read(home/'inputs/baseline.json');m,rows=records(ROOT/'data/public',ROOT/'studios.json')
     if digest(sorted(r['id'] for r in rows))!=baseline['baseline_ids_sha256'] or digest({r['id']:digest(r) for r in rows})!=baseline['baseline_record_hashes_sha256']:raise ValueError('Original catalogue record changed')
     for name,h in baseline['original_public_files'].items():
-        if name!='manifest.json' and sha(ROOT/'data/public'/name)!=h:raise ValueError('Historical public file changed: '+name)
+        if name!='manifest.json' and sha(public_file(ROOT/'data/public',name))!=h:raise ValueError('Historical public file changed: '+name)
     original_manifest=read(home/'inputs/parent-manifest.json')
     if {k:v for k,v in m.items() if k not in ('global_visibility','commercial_scope')}!=original_manifest:raise ValueError('Parent manifest metadata changed beyond the display/scope sidecars')
     if sha(ROOT/'studios.json')!=baseline['root_sha256'] or m['counts']!=baseline['counts']:raise ValueError('Original root/counts changed')
     value,audit=build(rows,home)
     descriptor=m.get('global_visibility',{})
-    if descriptor.get('path')!='visibility.json' or descriptor.get('sha256')!=sha(ROOT/'data/public/visibility.json') or descriptor.get('gzip_sha256')!=sha(ROOT/'data/public/visibility.json.gz') or descriptor.get('gzip_bytes')!=(ROOT/'data/public/visibility.json.gz').stat().st_size:raise ValueError('Display projection transport integrity mismatch')
-    if value!=read(ROOT/'data/public/visibility.json') or read(home/'reports/unpinned-companies.json')!=audit:raise ValueError('Stale visibility projection/audit')
+    if descriptor.get('path')!='visibility.json' or descriptor.get('sha256')!=sha(public_file(ROOT/'data/public','visibility.json')) or descriptor.get('gzip_sha256')!=sha(public_file(ROOT/'data/public','visibility.json.gz')) or descriptor.get('gzip_bytes')!=(public_file(ROOT/'data/public','visibility.json.gz')).stat().st_size:raise ValueError('Display projection transport integrity mismatch')
+    if value!=read(public_file(ROOT/'data/public','visibility.json')) or read(home/'reports/unpinned-companies.json')!=audit:raise ValueError('Stale visibility projection/audit')
     return value
 
 def main():
