@@ -1,0 +1,52 @@
+PASS HTTP subdirectory loading, disabled loading controls, 243 locations / 119 organizations
+PASS real Leaflet map, live OpenStreetMap tiles and attribution
+PASS coincident marker popup lists all studios and keyboard selection opens each profile
+PASS search, company grouping and profile evidence / coordinate precision
+PASS filtered CSV download with location and company identities
+PASS combined country / capability filtering and fit-results action
+PASS batch 1 organisation grouping, VFX/country filters, confirmed profile evidence, new-record CSV export and London previs
+PASS optional location type, sourced group relationships, coordinate provenance and relationship search
+PASS new co-located capture stages, precise capability filters and explicitly reviewed legacy correction
+PASS confirmed capability filtering, site-specific capture and keyboard selection between Annapurna stages
+PASS direct profile links, organisation/parent identities, back/forward, focus, AND/OR capabilities, city/type/confirmed-only, empty state and reset
+PASS 390px mobile list, profile, map navigation and no horizontal overflow
+PASS 65 coincident studios remain selectable through popup pagination on mobile; hostile text, URL routes, external links and formula CSV are safe
+PASS 404 error state, no fallback, successful retry
+PASS invalid JSON error state, no fallback, successful retry
+PASS invalid schema error state, no fallback, successful retry
+PASS network failure state
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/browser_smoke.py", line 322, in main
+    try:expect(page.locator('#count')).to_have_text('50000 locations',timeout=30000)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 22839, in to_have_text
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 648, in to_have_text
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to have text '50000 locations'
+Actual value: Studio data unavailable 
+Call log:
+  - Expect "to_have_text" with timeout 30000ms
+  - waiting for locator("#count")
+    62 × locator resolved to <div id="count" class="count" role="status" aria-live="polite">Studio data unavailable</div>
+       - unexpected value "Studio data unavailable"
+
+Aria snapshot:
+- status: Studio data unavailable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/browser_smoke.py", line 387, in <module>
+    main()
+  File "/workspace/motionx-studio-atlas/tests/browser_smoke.py", line 323, in main
+    except AssertionError as error:raise AssertionError('50,000 fixture load failed: '+page.locator('#dataStatus').inner_text()) from error
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 50,000 fixture load failed: Unable to load studios.json. Request timed out. Serve this site over HTTP and check your connection. Retry

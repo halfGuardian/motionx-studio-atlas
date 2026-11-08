@@ -11,8 +11,8 @@
  function classify(row,p){
   if(!p)return {role:'adjacent_uncertain',excluded:false,basis:'scope_policy_unavailable',confidence:'unresolved',reason:'Owner scope policy is not configured for this catalogue.',evidence:[]};
   if(p.overrides[row.id])return p.overrides[row.id];
-  const has=g=>p.groups[g].some(c=>row.categories.includes(c)),client=has('games'),plausible=has('production')||has('publishing'),technical=has('technical');
-  const role=has('visual')||client&&technical?'both':client?'potential_client':technical?'service_provider':plausible?'plausible_unconfirmed':'adjacent_uncertain';
+  const has=g=>p.groups[g].some(c=>row.categories.includes(c)),client=has('games')||has('visual'),plausible=has('production')||has('publishing'),technical=has('technical');
+  const role=client&&technical?'both':client?'potential_client':technical?'service_provider':plausible?'plausible_unconfirmed':'adjacent_uncertain';
   return {role,excluded:false,basis:role==='plausible_unconfirmed'?'broad_production_listing':'explicit_sector_eligibility',confidence:role==='plausible_unconfirmed'?'plausible_sector_only':role==='adjacent_uncertain'?'insufficient_relevance_evidence':'explicit_sector_eligibility',reason:'Recorded sectors support owner-defined audience eligibility only; operation, service availability and purchasing intent are not established.',evidence:[],human_approved:false,facility_verified:false};
  }
  function matches(assessment,role,scope='public'){

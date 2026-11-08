@@ -3,7 +3,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from discovery import read,digest
 from launch_readiness import records
-from global_continuation import HOME,build,check,classify,validate_reviews,proposed_record,validate_backlog,branch_reviews,proposal_conflicts
+from global_continuation import HOME,build,check,classify,validate_reviews,proposed_record,validate_backlog,branch_reviews,proposal_conflicts,recommendations,geographic_associations
 from global_programme import GlobalIndex
 from unified_catalog import validate_research
 
@@ -32,6 +32,23 @@ class ContinuationTests(unittest.TestCase):
    with self.assertRaises(ValueError):validate_backlog(bad,checkpoint)
  def test_game_development_is_client_eligibility_without_capture_inference(self):
   r={'id':'fixture','categories':['Game Development'],'capabilities':[]};before=copy.deepcopy(r);a=classify(r,self.policy);self.assertEqual(a['role'],'potential_client');self.assertFalse(a['excluded']);self.assertEqual(r,before)
+ def test_broad_production_and_visual_sectors_do_not_invent_purchasing_or_provider_claims(self):
+  for cats in (['Film / Video Production'],['Film / Television Production'],['Game Publishing']):
+   a=classify({'id':'fixture','categories':cats},self.policy);self.assertEqual(a['role'],'plausible_unconfirmed');self.assertEqual(a['confidence'],'plausible_sector_only')
+  self.assertEqual(classify({'id':'fixture','categories':['Animation','VFX','Audio Post-production']},self.policy)['role'],'potential_client')
+  self.assertEqual(classify({'id':'fixture','categories':['Game Development','Motion Capture']},self.policy)['role'],'both')
+ def test_all_keys_have_honest_outcomes_and_original_proposals_remain_auditable(self):
+  decisions,state=recommendations(self.report);self.assertEqual(state['uninvestigated_keys'],0);self.assertEqual(len(set(state['completed_key_ids'])),725);self.assertFalse(state['research_complete']);self.assertFalse(state['verification_complete']);self.assertTrue(state['evidence_or_identity_unresolved']);self.assertEqual(decisions['original_proposal_count'],30);self.assertTrue(all(x['before'] and x['historical_payload_preserved'] for x in decisions['original_30_proposals']))
+ def test_country_corrections_and_homonym_dismissals_need_evidence(self):
+  for changes in ({'supported_country':'Poland','country_evidence':'https://unreviewed.example/'},{'dismissed_record_ids':['invented-record-id'],'identity_resolution_note':'Unsupported dismissal'},{'alias_of_candidate_id':'invented-key','identity_resolution_note':'Unsupported alias'}):
+   bad=copy.deepcopy(self.input);bad['reviews'][0].update(changes)
+   with self.assertRaises(ValueError):validate_reviews(bad,self.backlog,self.rows)
+ def test_distinct_names_and_source_aliases_are_not_forced_into_foreign_companies(self):
+  rascal=next(r for r in self.report['reviews'] if r['name']=='Rascal Kids');self.assertEqual(rascal['country'],'New Zealand');self.assertTrue(rascal['automatic_matching']['record_ids']);self.assertFalse(rascal['matching']['record_ids']);self.assertTrue(rascal['proposal_id'])
+  alias=next(r for r in self.report['reviews'] if r['name']=='Beyond Studio');target=next(r for r in self.report['reviews'] if r.get('candidate_id')==alias['alias_of_candidate_id']);self.assertEqual(alias['alias_target_proposal_id'],target['proposal_id']);self.assertIsNone(alias['proposal_id']);self.assertTrue(target['proposal_id'])
+ def test_complete_city_queue_retains_unresearched_rows_and_additional_city_scope(self):
+  queue=geographic_associations(self.report);self.assertEqual(queue['original_associations'],256);self.assertGreater(queue['remaining_individual_geographic_reviews'],0);self.assertTrue(all(not x['canonical_coordinates_changed'] for x in queue['associations']))
+  brisbane=next(x for x in self.report['geography_proposals'] if x['name']=='ModelFarm' and x['proposed_company_city']=='Brisbane');self.assertEqual(brisbane['before']['city'],'Adelaide');self.assertEqual(brisbane['kind'],'company_additional_city_reference_review');self.assertEqual(brisbane['coordinate']['coordinate_license'],'CC-BY-4.0');self.assertFalse(brisbane['human_approved'])
  def test_four_audio_only_exclusions_retain_multidisciplinary_envy(self):
   impact=self.report['scope_impact'];self.assertEqual(sum(r['excluded'] for r in impact),4);self.assertFalse(next(r for r in impact if r['name']=='Envy Studios')['excluded']);self.assertTrue(all(r['audit_mode_visible'] for r in impact));self.assertEqual(self.report['summary']['map_markers_changed'],0)
   effect=self.report['filter_impact'];self.assertEqual(effect['game_development_sector']['before'],effect['game_development_sector']['after']);self.assertEqual(effect['audio_post_sector'],{'before':5,'after':1});self.assertEqual(effect['original_coordinate_records']['before'],effect['original_coordinate_records']['after'])

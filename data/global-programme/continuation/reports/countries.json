@@ -5,8 +5,8 @@
     "individual_reviews": 46,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
-    "identity_matches": 0,
-    "unresolved_reviews": 29,
+    "identity_matches": 1,
+    "unresolved_reviews": 28,
     "coverage_complete": false
   },
   {
@@ -32,9 +32,9 @@
   {
     "country": "Australia",
     "pending_keys_at_checkpoint": 2,
-    "individual_reviews": 3,
+    "individual_reviews": 5,
     "branch_or_department_reviews": 1,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 2,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -52,9 +52,9 @@
   {
     "country": "Azerbaijan",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -62,11 +62,11 @@
   {
     "country": "Belgium",
     "pending_keys_at_checkpoint": 10,
-    "individual_reviews": 1,
+    "individual_reviews": 10,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 2,
     "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "unresolved_reviews": 7,
     "coverage_complete": false
   },
   {
@@ -82,21 +82,21 @@
   {
     "country": "Bulgaria",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 1,
     "coverage_complete": false
   },
   {
     "country": "Canada",
     "pending_keys_at_checkpoint": 29,
-    "individual_reviews": 4,
+    "individual_reviews": 32,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
-    "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "company_proposals": 9,
+    "identity_matches": 3,
+    "unresolved_reviews": 16,
     "coverage_complete": false
   },
   {
@@ -112,11 +112,11 @@
   {
     "country": "China",
     "pending_keys_at_checkpoint": 15,
-    "individual_reviews": 0,
+    "individual_reviews": 15,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 5,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 10,
     "coverage_complete": false
   },
   {
@@ -132,6 +132,16 @@
   {
     "country": "Croatia",
     "pending_keys_at_checkpoint": 3,
+    "individual_reviews": 3,
+    "branch_or_department_reviews": 0,
+    "company_proposals": 1,
+    "identity_matches": 1,
+    "unresolved_reviews": 0,
+    "coverage_complete": false
+  },
+  {
+    "country": "Cyprus",
+    "pending_keys_at_checkpoint": 2,
     "individual_reviews": 2,
     "branch_or_department_reviews": 0,
     "company_proposals": 1,
@@ -140,23 +150,13 @@
     "coverage_complete": false
   },
   {
-    "country": "Cyprus",
-    "pending_keys_at_checkpoint": 2,
-    "individual_reviews": 0,
-    "branch_or_department_reviews": 0,
-    "company_proposals": 0,
-    "identity_matches": 0,
-    "unresolved_reviews": 0,
-    "coverage_complete": false
-  },
-  {
     "country": "Czechia",
     "pending_keys_at_checkpoint": 9,
-    "individual_reviews": 2,
+    "individual_reviews": 9,
     "branch_or_department_reviews": 0,
-    "company_proposals": 2,
+    "company_proposals": 5,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
@@ -172,47 +172,47 @@
   {
     "country": "Denmark",
     "pending_keys_at_checkpoint": 7,
-    "individual_reviews": 1,
+    "individual_reviews": 8,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
-    "identity_matches": 1,
-    "unresolved_reviews": 0,
+    "company_proposals": 1,
+    "identity_matches": 2,
+    "unresolved_reviews": 5,
     "coverage_complete": false
   },
   {
     "country": "Estonia",
     "pending_keys_at_checkpoint": 5,
-    "individual_reviews": 0,
+    "individual_reviews": 6,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
-    "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "identity_matches": 1,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Finland",
     "pending_keys_at_checkpoint": 9,
-    "individual_reviews": 2,
+    "individual_reviews": 9,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
-    "identity_matches": 1,
-    "unresolved_reviews": 1,
+    "company_proposals": 1,
+    "identity_matches": 2,
+    "unresolved_reviews": 5,
     "coverage_complete": false
   },
   {
     "country": "France",
     "pending_keys_at_checkpoint": 104,
-    "individual_reviews": 108,
+    "individual_reviews": 109,
     "branch_or_department_reviews": 0,
-    "company_proposals": 17,
-    "identity_matches": 1,
-    "unresolved_reviews": 73,
+    "company_proposals": 19,
+    "identity_matches": 5,
+    "unresolved_reviews": 67,
     "coverage_complete": false
   },
   {
     "country": "Georgia",
     "pending_keys_at_checkpoint": 5,
-    "individual_reviews": 4,
+    "individual_reviews": 5,
     "branch_or_department_reviews": 0,
     "company_proposals": 3,
     "identity_matches": 0,
@@ -222,17 +222,17 @@
   {
     "country": "Germany",
     "pending_keys_at_checkpoint": 14,
-    "individual_reviews": 5,
+    "individual_reviews": 14,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
+    "company_proposals": 2,
     "identity_matches": 1,
-    "unresolved_reviews": 3,
+    "unresolved_reviews": 11,
     "coverage_complete": false
   },
   {
     "country": "Ghana",
     "pending_keys_at_checkpoint": 4,
-    "individual_reviews": 3,
+    "individual_reviews": 4,
     "branch_or_department_reviews": 0,
     "company_proposals": 1,
     "identity_matches": 0,
@@ -242,9 +242,9 @@
   {
     "country": "Hong Kong SAR China",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 1,
+    "individual_reviews": 3,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
+    "company_proposals": 2,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -252,19 +252,19 @@
   {
     "country": "Hungary",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 0,
+    "individual_reviews": 3,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 2,
     "coverage_complete": false
   },
   {
     "country": "Iceland",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 2,
+    "individual_reviews": 3,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
+    "company_proposals": 2,
     "identity_matches": 0,
     "unresolved_reviews": 1,
     "coverage_complete": false
@@ -272,7 +272,7 @@
   {
     "country": "India",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 3,
+    "individual_reviews": 4,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
@@ -282,7 +282,7 @@
   {
     "country": "Iran",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
@@ -292,11 +292,11 @@
   {
     "country": "Ireland",
     "pending_keys_at_checkpoint": 16,
-    "individual_reviews": 11,
+    "individual_reviews": 14,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
-    "identity_matches": 0,
-    "unresolved_reviews": 11,
+    "company_proposals": 3,
+    "identity_matches": 2,
+    "unresolved_reviews": 9,
     "coverage_complete": false
   },
   {
@@ -312,57 +312,57 @@
   {
     "country": "Italy",
     "pending_keys_at_checkpoint": 21,
-    "individual_reviews": 2,
+    "individual_reviews": 24,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
-    "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "company_proposals": 5,
+    "identity_matches": 2,
+    "unresolved_reviews": 13,
     "coverage_complete": false
   },
   {
     "country": "Japan",
     "pending_keys_at_checkpoint": 11,
-    "individual_reviews": 11,
+    "individual_reviews": 13,
     "branch_or_department_reviews": 1,
     "company_proposals": 4,
     "identity_matches": 0,
-    "unresolved_reviews": 5,
+    "unresolved_reviews": 6,
     "coverage_complete": false
   },
   {
     "country": "Latvia",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 2,
+    "individual_reviews": 4,
     "branch_or_department_reviews": 0,
     "company_proposals": 2,
-    "identity_matches": 0,
+    "identity_matches": 1,
     "unresolved_reviews": 0,
     "coverage_complete": false
   },
   {
     "country": "Lithuania",
     "pending_keys_at_checkpoint": 6,
-    "individual_reviews": 0,
+    "individual_reviews": 6,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Luxembourg",
     "pending_keys_at_checkpoint": 6,
-    "individual_reviews": 1,
+    "individual_reviews": 7,
     "branch_or_department_reviews": 0,
     "company_proposals": 1,
-    "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "identity_matches": 1,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Malaysia",
     "pending_keys_at_checkpoint": 9,
-    "individual_reviews": 8,
+    "individual_reviews": 9,
     "branch_or_department_reviews": 0,
     "company_proposals": 4,
     "identity_matches": 1,
@@ -382,31 +382,31 @@
   {
     "country": "Mexico",
     "pending_keys_at_checkpoint": 4,
-    "individual_reviews": 2,
+    "individual_reviews": 4,
     "branch_or_department_reviews": 0,
-    "company_proposals": 2,
+    "company_proposals": 3,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 1,
     "coverage_complete": false
   },
   {
     "country": "Netherlands",
     "pending_keys_at_checkpoint": 5,
-    "individual_reviews": 5,
+    "individual_reviews": 6,
     "branch_or_department_reviews": 0,
     "company_proposals": 1,
-    "identity_matches": 2,
+    "identity_matches": 3,
     "unresolved_reviews": 2,
     "coverage_complete": false
   },
   {
     "country": "New Zealand",
     "pending_keys_at_checkpoint": 48,
-    "individual_reviews": 21,
+    "individual_reviews": 48,
     "branch_or_department_reviews": 0,
-    "company_proposals": 3,
-    "identity_matches": 2,
-    "unresolved_reviews": 15,
+    "company_proposals": 12,
+    "identity_matches": 9,
+    "unresolved_reviews": 18,
     "coverage_complete": false
   },
   {
@@ -422,11 +422,11 @@
   {
     "country": "Norway",
     "pending_keys_at_checkpoint": 7,
-    "individual_reviews": 1,
+    "individual_reviews": 7,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "unresolved_reviews": 6,
     "coverage_complete": false
   },
   {
@@ -442,19 +442,19 @@
   {
     "country": "Panama",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 1,
     "coverage_complete": false
   },
   {
     "country": "Peru",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 1,
+    "individual_reviews": 3,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
+    "company_proposals": 3,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -462,41 +462,41 @@
   {
     "country": "Philippines",
     "pending_keys_at_checkpoint": 7,
-    "individual_reviews": 4,
+    "individual_reviews": 7,
     "branch_or_department_reviews": 0,
     "company_proposals": 1,
     "identity_matches": 0,
-    "unresolved_reviews": 3,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Poland",
     "pending_keys_at_checkpoint": 6,
-    "individual_reviews": 2,
+    "individual_reviews": 8,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 3,
     "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Portugal",
     "pending_keys_at_checkpoint": 10,
-    "individual_reviews": 1,
+    "individual_reviews": 10,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 5,
     "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "unresolved_reviews": 5,
     "coverage_complete": false
   },
   {
     "country": "Serbia",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
     "company_proposals": 0,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 1,
     "coverage_complete": false
   },
   {
@@ -512,49 +512,49 @@
   {
     "country": "South Africa",
     "pending_keys_at_checkpoint": 18,
-    "individual_reviews": 17,
+    "individual_reviews": 18,
     "branch_or_department_reviews": 0,
     "company_proposals": 5,
     "identity_matches": 1,
-    "unresolved_reviews": 10,
+    "unresolved_reviews": 11,
     "coverage_complete": false
   },
   {
     "country": "South Korea",
     "pending_keys_at_checkpoint": 21,
-    "individual_reviews": 18,
+    "individual_reviews": 22,
     "branch_or_department_reviews": 0,
-    "company_proposals": 10,
+    "company_proposals": 11,
     "identity_matches": 0,
-    "unresolved_reviews": 7,
+    "unresolved_reviews": 8,
     "coverage_complete": false
   },
   {
     "country": "Spain",
     "pending_keys_at_checkpoint": 44,
-    "individual_reviews": 8,
+    "individual_reviews": 48,
     "branch_or_department_reviews": 0,
-    "company_proposals": 1,
-    "identity_matches": 1,
-    "unresolved_reviews": 3,
+    "company_proposals": 8,
+    "identity_matches": 4,
+    "unresolved_reviews": 30,
     "coverage_complete": false
   },
   {
     "country": "Sweden",
     "pending_keys_at_checkpoint": 5,
-    "individual_reviews": 3,
+    "individual_reviews": 6,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
-    "unresolved_reviews": 2,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {
     "country": "Switzerland",
     "pending_keys_at_checkpoint": 3,
-    "individual_reviews": 0,
+    "individual_reviews": 3,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 3,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -562,7 +562,7 @@
   {
     "country": "Taiwan",
     "pending_keys_at_checkpoint": 13,
-    "individual_reviews": 14,
+    "individual_reviews": 15,
     "branch_or_department_reviews": 0,
     "company_proposals": 8,
     "identity_matches": 0,
@@ -572,9 +572,9 @@
   {
     "country": "Thailand",
     "pending_keys_at_checkpoint": 4,
-    "individual_reviews": 2,
+    "individual_reviews": 4,
     "branch_or_department_reviews": 0,
-    "company_proposals": 2,
+    "company_proposals": 3,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -582,9 +582,9 @@
   {
     "country": "Togo",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -592,9 +592,9 @@
   {
     "country": "Turkmenistan",
     "pending_keys_at_checkpoint": 1,
-    "individual_reviews": 0,
+    "individual_reviews": 1,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 1,
     "identity_matches": 0,
     "unresolved_reviews": 0,
     "coverage_complete": false
@@ -612,31 +612,31 @@
   {
     "country": "Ukraine",
     "pending_keys_at_checkpoint": 8,
-    "individual_reviews": 0,
+    "individual_reviews": 7,
     "branch_or_department_reviews": 0,
-    "company_proposals": 0,
+    "company_proposals": 3,
     "identity_matches": 0,
-    "unresolved_reviews": 0,
+    "unresolved_reviews": 2,
     "coverage_complete": false
   },
   {
     "country": "United Kingdom",
     "pending_keys_at_checkpoint": 61,
-    "individual_reviews": 41,
+    "individual_reviews": 70,
     "branch_or_department_reviews": 1,
-    "company_proposals": 4,
-    "identity_matches": 3,
-    "unresolved_reviews": 27,
+    "company_proposals": 11,
+    "identity_matches": 11,
+    "unresolved_reviews": 32,
     "coverage_complete": false
   },
   {
     "country": "United States",
     "pending_keys_at_checkpoint": 12,
-    "individual_reviews": 9,
+    "individual_reviews": 20,
     "branch_or_department_reviews": 3,
-    "company_proposals": 1,
+    "company_proposals": 3,
     "identity_matches": 0,
-    "unresolved_reviews": 1,
+    "unresolved_reviews": 4,
     "coverage_complete": false
   },
   {

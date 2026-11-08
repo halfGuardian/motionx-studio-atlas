@@ -1,138 +1,77 @@
-# Company research and commercial scope continuation
+# Global research continuation — consolidated delivery
 
-Company/scope research reviewed **7–8 November 2026 UTC** (8 November in Auckland); the seven Ubisoft office/branch investigations were reviewed **8 November UTC**. Starting
-checkpoint: `d5583994cda4dd3c99aa28508666057e5e0e96fa`. This continues draft
-PR #18 on `codex/global-discovery-visibility`, stacked on unchanged draft PR #15.
-Neither PR is merged or deployed by this work.
+Reviewed company evidence: 7–8 November 2026 UTC. This pass starts from reviewed PR #18 head `db8265e85b259d4b17214244eb0219c869207b1a`. Internal checked checkpoint `64f86921b3e9f088a07676b1b438665c48e9793b` was committed and pushed before continuing through the rest of the saved queue. Parent PR #15 stays draft, unchanged and unmerged at `efd52a86e66417438830aac285e3fffee3aa0fa0`. No merge, deployment, Pages change or fabricated approval.
 
-The [dashboard](reports/dashboard.html) contains the individual evidence,
-country progress, source-policy limitations, identity holds and actual proposed
-record payloads. It works in the downloaded Actions bundle over localhost HTTP.
+## Complete saved-key assessment pass
 
-## What is prepared, rather than published
+**725 / 725 keys assessed; zero uninvestigated keys.** All 656 keys outstanding at the reviewed head were assessed, without a new company-count stopping point. All 753 original observations and their URLs, hints and outcomes remain bound to the historical source report. A key is a research unit, not necessarily a company. An access-failure assessment is not successful company verification.
 
-- 70 individual company reviews across 35 recorded countries, including seven
-  existing city-association reviews. These are not national censuses.
-- 30 schema-valid Class C company-reference proposals. Each has a stable research
-  identity, source evidence and date, null coordinates and no confirmed facility
-  capabilities or ownership. Company self-report and historical directory/event
-  corroboration do not independently establish present operation.
-- Ten existing-identity matches; these are source/software matches, not ten new
-  verified businesses. Two identity holds include Digitoonz's foreign source
-  observation and the composite Makia Creative / Mamoncillo exhibitor identity.
-- Two out-of-scope leads: FSTVS is a jobs/community service, not its
-  employers' production facilities; Inside Track reconciles to the retained
-  audio-only record. 26 investigated company cases remain unresolved.
-- Five geographic review proposals for existing IDs: four separate approximate
-  city-reference payloads (Bad Clay, Scrawl Animation, Robot Playground Media,
-  ModelFarm), plus a Tumblehead Copenhagen/Viborg correction question. Points
-  cite existing licensed GeoNames city references, including the Singapore
-  gazetteer citation already in the baseline; no other studio's facility point
-  or parent geography is inherited. None is applied to the map by this release.
-- Every starting pending observation is retained: 753 observations / 725 queue
-  keys. Sixty-nine keys have individual company/branch continuation reviews; 656 are explicitly
-  **not yet individually investigated**. Additional reviews are separately
-  identified. Queue keys are not proven distinct companies.
+| Backlog outcome | Keys |
+|---|---:|
+| branch or department research | 7 |
+| company proposal prepared | 184 |
+| existing identity reconciled | 53 |
+| geographic facility review | 55 |
+| historical operation review | 14 |
+| identity review | 263 |
+| research out of scope | 44 |
+| research unresolved | 104 |
+| supported proposal alias | 1 |
 
-Useful identity findings include Studio Bolland / Studio Bo, Malaysian versus
-French Spacesheep, historical Woodblock Hamburg versus current company-listed
-Berlin/Ludwigsburg/Los Angeles, and Digitoonz's marketed Los Angeles versus
-Glendale address. Office lists, productions and remote teams are not automatic
-physical-facility proposals. Eallin's Stockholm is explicitly in development.
+The **263 identity holds, 104 unresolved evidence/access/rights cases and 14 historical-operation cases** remain explicit research work. The 55 geography-only keys and seven branch/department cases must not be counted as new companies. Every key, reason, original source observation and evidence-confidence state is in [the checkpoint](reports/research-checkpoint.json) and [the complete audit](reports/report.json). Neither source presence nor automated matching constitutes independent current-operation verification.
 
-Seven Ubisoft office/department leads now have separate structured reviews and matching evidence. Los Angeles identifies the already-listed Film & Television operation. Generic regional-office pages do not establish game-development facilities. Three dated change alerts distinguish the 2024 San Francisco production closure announcement, the Sydney production ramp-down announcement and corroborated March 2026 Red Storm development-to-support reports. They do not close global organisations or change canonical records. [Read the branch/change audit](reports/branch-reviews.json). Company and branch reviews cover 36 countries in total; this is not complete geographic enumeration.
+## Actual company proposals and identity reconciliation
 
-## Public-directory scope change
+**184 distinct Class C company-reference payloads across 51 country associations**, including all **30 original proposals**. The original payloads remain in `inputs/reviewed-db8265e.json.gz`; `reports/recommendations.json` provides exact before/after fields, stable IDs and recommended groups. There are no unresolved cross-proposal name/domain conflicts in the admitted proposal set. One Beyond source alias links to one proposal, preserving both source histories; it does not duplicate a company.
 
-The canonical storage baseline remains **42,296 references**. All source
-records, evidence and IDs remain unchanged, including the 243 root locations.
-The root database SHA remains
-`ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4`.
+The 53 backlog existing-identity reconciliations are company-level matches, not verified new facilities. Additional existing-ID geographic/supplementary reviews are counted separately. Official operating-name/domain evidence resolves Aardman, DNEG Animation, Lil Critter, Cloth Cat, Mukpuddy, Xilam and other straightforward variants. Source-supported homonym distinctions retain the original automatic matches and exact dismissal reasons: Irish Studio 9, Icelandic Sagafilm, Polish Human/PFX, New Zealand Rascal and Beyond, and French Les Films du Nord/MIAM are not forced into unrelated foreign or similarly named records. No canonical identity is merged or overwritten.
 
-Only the reversible display policy changes. The Inside Track, Native Audio,
-Evoke Audio and The Sound Room demonstrate audio-only services and are excluded
-from normal directory results. Their direct profiles, evidence and full CSV
-exports remain available in explicit audit mode. Envy remains because visual
-post-production is documented. Audio contributions to films, games or animation
-do not establish visual-production or game-development services.
+Proposed public scope: minimal factual company name/country and source-supported city where available, official website or clearly labelled source-listing URL, company-level service categories, evidence URLs/dates, stable provisional identity and explicit uncertainty. Null original coordinates, empty confirmed capabilities, no inferred ownership, no human approval and no Class A promotion. Rights are minimal factual scope with source-wide reuse unresolved; directory evidence pages are not mislabelled official company websites.
 
-| Result set | Before | Normal view after | Audit view |
-|---|---:|---:|---:|
-| All references | 42,296 | 42,292 | 42,296 |
-| Company-only references | 1,677 | 1,673 | 1,677 |
-| Game Development sector | 1,141 | 1,141 | 1,141 |
-| Audio Post-production sector | 5 | 1 | 5 |
-| New Zealand country filter | 149 | 145 | 149 |
-| Records with original coordinates | 40,619 | 40,619 | 40,619 |
+## Commercial correction measured on all 42,296 records
 
-Search, audience/country/sector filters, organisation results, map markers and
-CSV export use the same selected scope. No map coordinate is changed or removed.
-Floating Rock's separate Wellington reference and Frame Machine's original
-Santa Monica source observation retain their regression checks. The 603 broad
-audio/sound/name signals are only a further research queue, **not exclusions**;
-names alone cannot establish an audio-only service offering.
+| Role | Reviewed-head policy | Proposed policy |
+|---|---:|---:|
+| potential client | 36311 | 6950 |
+| service provider | 20 | 20 |
+| both | 5838 | 19 |
+| plausible unconfirmed | 0 | 35295 |
+| adjacent uncertain | 123 | 8 |
+| out of scope | 4 | 4 |
 
-Audience rules distinguish potential clients, providers, both, adjacent/uncertain
-and out-of-scope records. Most derive from existing sector assertions and are
-labeled accordingly. A game developer qualifies as a potential client without
-capture services. Only existing site-specific evidence can satisfy confirmed
-capability filters. No classification establishes purchasing intent, budget,
-outsourcing need or technical problems. Numerical service-alignment scores are
-removed from public controls, ranking, badges and exports; historical research
-files and scoring tests remain intact.
+41114 reversible assessments change; **zero original source categories or records change**. Games/animation/VFX establish sector eligibility as potential clients without mocap or known outsourcing. Visual-production tags alone do not prove an external service offer; both requires separate relevant technical-sector evidence or an individual review. Generic film/video/TV production and game-publishing listings remain plausible, unconfirmed prospects. No budget, purchasing intent or operating-status claim is inferred.
 
-## Rights and review boundaries
+The exact per-record changes are in `reports/classification-changes.json.gz`; its digest is bound by `classification-impact.json`. Public role filters, profiles, counts and CSV use the same six-role assessment; confirmed facility capabilities remain a separate filter.
 
-This is bounded individual company research using public official pages,
-government/industry evidence and already preserved research history. Some web
-tool responses are indexed/cached. A review date records when the evidence was
-examined, not the date of a fresh independent operational inspection. Failed,
-image-only, ambiguous and inaccessible pages stay documented. No screenshots,
-OCR, hidden APIs, alternate hosts or recursive crawling are used as workarounds.
-No previously restricted source is enabled. EA remains disabled.
+## Audio scope
 
-Minimal factual references and evidence links are retained; no source-wide
-commercial dataset permission is inferred. No authored descriptions, media or
-personal contacts are reproduced. Directory enumeration and new bulk collection
-still require their own reviewed access/reuse decision. Historical source rights
-and every old research artifact remain in place.
+The Inside Track, Native Audio, Evoke Audio and The Sound Room remain the only four catalogue exclusions. They remain in explicit audit search, profiles and exports. Normal results are 42,292; audit storage/results remain 42,296. Envy remains eligible on individual visual-service evidence. Audiomotion retains its existing confirmed capture information; no audio-name rule excludes it.
 
-The prepared records are in `reports/proposed-companies.json`, **outside the
-canonical public shards**. Human review must resolve identity/city questions,
-rights and publication scope before a separate authorised canonical change.
-There is no apply command, approval file, fabricated reviewer or automatic merge.
-The original 14-candidate worksheet still lacks independent human labels;
-precision and recall remain null. Draft status and successful tests do not enforce
-human review by themselves; repository protection remains unconfirmed.
+The saved name-signal queue contains **603 records**: three overlap with reviewed audio exclusions and **600 remain name signals, not automatic exclusions**. The fourth exclusion, The Inside Track, has no audio/sound name token. New-intake evidence supports reversible out-of-scope recommendations for 440HZ, BLYND, Emotive Muzik, Studio Le Refuge, Fuse Post and Respeecher; none is silently removed from the catalogue. Multidisciplinary Jinglebell, Audio Projects/Galletly and Blackmeal remain relevant.
 
-## Reproduce and continue
+## Geography and source coverage
+
+**17 geographic proposals for 16 existing company IDs**, including seven licensed approximate city-reference payloads. Bad Clay (Ho Chi Minh City), Scrawl and Robot Playground (Singapore), ModelFarm (Adelaide plus separately supported Brisbane), Blue Zoo and Lupus Films (London) remain proposals only. Source-backed correction questions include Tumblehead → Viborg, Fantasmagorie → Rome, Gertie → Milan, La Fabrique → Differdange and Tomavision → Santa Cruz de Tenerife; an old association is not automatically declared closed. Unsupported/unlicensed coordinate fields remain absent.
+
+Of all 256 saved city associations, **18 have an individual follow-up and 238 still need one**; every ID and precise reason remains in `reports/geographic-associations.json`. Broader 55 branch/city backlog cases are separately retained. Floating Rock’s original company-only record and Wellington display point, Frame Machine’s Santa Monica point, every original coordinate and shared-coordinate selection remain unchanged. No pin offsets or city references presented as studio entrances.
+
+Research spans **64 supported/historical country associations**. Ten regional source follow-ups document actual access, individually supported identities, matches/proposals, ambiguity, scope and unreviewed pages. SPPA/CEE, official film/trade agencies and company pages provide useful factual evidence. Animation SA returns controls without a roster; Animachi remains inaccessible; Animation UK and PROMPERU have indexed evidence but current direct-fetch failures. CEE’s visible 24-entry page is not a full directory enumeration. Country and source completeness remain false.
+
+EA and PROGISS/3DVF are 12 explicit rights-review keys; restricted collectors remain disabled. No recursive crawling, hidden APIs, screenshots/OCR, alternate-host bypass, bulk reuse grant or copied source prose/media/contacts. Current self-reports and historical profiles are distinguished from independent verification.
+
+## Preservation, review and reproducibility
+
+All **42,296 canonical IDs and complete record hashes** are preserved: 243 retained locations / 119 reviewed organisations, 40,376 source-location references and 1,677 company references. Public evidence classes stay A230/B4,626/C37,440. Reference coverage remains 178 countries/territories, with 38 unknown-country references. These totals do not represent 42,296 independently verified active studios. All 209 protected historical research/source files remain intact. **Zero new canonical records, verified facilities or verified capabilities.**
+
+Start with the [small exception summary](reports/review-exceptions.md), then the searchable [dashboard](reports/dashboard.html) and exact-field [recommendations](reports/recommendations.json). The dashboard contains 737 company/geographic reviews plus seven office/department investigations, not 744 distinct businesses. The 14-item held-out sample still lacks independent human labels; precision/recall remain null.
 
 ```sh
 python tools/global_continuation.py prepare
 python tools/global_continuation.py check
-python tools/global_visibility.py check
-python tools/global_programme.py check
 python tools/global_programme.py maintenance-check
-python tools/check_bulk_release.py
-python tools/validate.py studios.json
-python -m unittest discover -s tests -p 'test_*.py'
-node --test tests/*.test.js
-python tests/commercial_browser.py
+python tools/package_global_review.py --output /tmp/motionx-review-fresh
 ```
 
-The continuation validator binds the frozen full-record hashes, root database,
-starting compressed report and every pending observation/hint. All generated
-continuation artifacts and the public scope sidecar reproduce offline. The
-existing workflow also runs the complete HTTP suites, slow-mobile real-data
-scenario, synthetic 50,000-location checks and standalone artifact packaging.
+Continue unresolved IDs with their existing source history and current evidence; never replace an inaccessible case with a guessed company. All assessed and remaining IDs, input hashes and continuation commands are saved. Human review of exact Class C fields, rights scope, identity/facility exceptions and coordinate corrections is required before a separate authorised database change. Draft status and CI do not enforce a human review; required-review protection remains unconfirmed. Parent PR #15 must first receive its own review; do not merge or retarget either PR automatically.
 
-Resume from `reports/backlog.csv` / `report.json`, selecting the explicitly
-uninvestigated keys rather than repeating worldwide URL searches. Append factual
-individual reviews to `inputs/company-reviews.json`, retaining original queue
-keys, dates, rights and evidence; run `prepare` and `check` before committing.
-Review `reports/audio-scope-research-queue.json` individually; do not exclude by
-name. The remaining geographic associations are in the unchanged parent
-`../reports/unpinned-companies.json`. Continue independent branches and distinct
-physical facilities separately from company proposals. Preserve all source
-policy states and frozen history. Save subsequent milestones on this branch;
-leave PR #15, its branch, production and Pages settings unchanged.
+Executed checks, initial failures, final reruns and measured performance: [validation.md](validation.md).

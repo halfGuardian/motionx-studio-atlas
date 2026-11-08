@@ -1,0 +1,208 @@
+{
+  "reviewed_head": "db8265e85b259d4b17214244eb0219c869207b1a",
+  "parent_unchanged": "efd52a86e66417438830aac285e3fffee3aa0fa0",
+  "reviewed_on": "2026-11-08",
+  "python": {
+    "tests": 308,
+    "failures": 0,
+    "seconds": 99.264
+  },
+  "javascript": {
+    "tests": 90,
+    "failures": 0
+  },
+  "canonical": {
+    "errors": 0,
+    "warnings": 265
+  },
+  "http_checks": 89,
+  "initial_http_suites": [
+    {
+      "suite": "browser_smoke",
+      "exit_code": 1,
+      "checks": 17
+    },
+    {
+      "suite": "bulk_browser",
+      "exit_code": 0,
+      "checks": 6
+    },
+    {
+      "suite": "public_catalog_smoke",
+      "exit_code": 0,
+      "checks": 9
+    },
+    {
+      "suite": "global_visibility_browser",
+      "exit_code": 0,
+      "checks": 5
+    },
+    {
+      "suite": "commercial_browser",
+      "exit_code": 0,
+      "checks": 8
+    },
+    {
+      "suite": "continuation_package_browser",
+      "exit_code": 1,
+      "checks": 0
+    },
+    {
+      "suite": "global_review_browser",
+      "exit_code": 0,
+      "checks": 4
+    },
+    {
+      "suite": "unified_ux",
+      "exit_code": 0,
+      "checks": 9
+    },
+    {
+      "suite": "boutique_browser",
+      "exit_code": 0,
+      "checks": 10
+    },
+    {
+      "suite": "nz_census_browser",
+      "exit_code": 0,
+      "checks": 5
+    },
+    {
+      "suite": "nz_quality_browser",
+      "exit_code": 0,
+      "checks": 6
+    },
+    {
+      "suite": "annecy_browser",
+      "exit_code": 0,
+      "checks": 5
+    }
+  ],
+  "final_http_suites": [
+    {
+      "suite": "browser_smoke",
+      "exit_code": 0,
+      "checks": 19,
+      "rerun": "Isolated full rerun passed; initial raw-JSON timeout retained."
+    },
+    {
+      "suite": "bulk_browser",
+      "exit_code": 0,
+      "checks": 6
+    },
+    {
+      "suite": "public_catalog_smoke",
+      "exit_code": 0,
+      "checks": 9
+    },
+    {
+      "suite": "global_visibility_browser",
+      "exit_code": 0,
+      "checks": 5
+    },
+    {
+      "suite": "commercial_browser",
+      "exit_code": 0,
+      "checks": 8
+    },
+    {
+      "suite": "continuation_package_browser",
+      "exit_code": 0,
+      "checks": 3,
+      "rerun": "Full standalone rerun passed after selecting the branch card specifically."
+    },
+    {
+      "suite": "global_review_browser",
+      "exit_code": 0,
+      "checks": 4
+    },
+    {
+      "suite": "unified_ux",
+      "exit_code": 0,
+      "checks": 9
+    },
+    {
+      "suite": "boutique_browser",
+      "exit_code": 0,
+      "checks": 10
+    },
+    {
+      "suite": "nz_census_browser",
+      "exit_code": 0,
+      "checks": 5
+    },
+    {
+      "suite": "nz_quality_browser",
+      "exit_code": 0,
+      "checks": 6
+    },
+    {
+      "suite": "annecy_browser",
+      "exit_code": 0,
+      "checks": 5
+    }
+  ],
+  "reproduction": [
+    {
+      "command": "python tools/check_bulk_release.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/launch_readiness.py check --output data/global-programme/reports/readiness",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/boutique.py check --output data/boutique/reports",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/annecy.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/nz_census.py prepare --output /tmp/nz-wave1-final-20261108",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/nz_research.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/global_visibility.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/global_continuation.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/global_programme.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/global_programme.py maintenance-check",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/nz_quality_gate.py check",
+      "exit_code": 0
+    }
+  ],
+  "alternate_python_hashseed": {
+    "seed": 42,
+    "report_reproduction": "passed"
+  },
+  "checkpoint_actions": {
+    "commit": "64f86921b3e9f088a07676b1b438665c48e9793b",
+    "run": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42453732576",
+    "conclusion": "failure",
+    "errors": [
+      "stale generated dashboard",
+      "browser assumed one unknown-country card; actual 46"
+    ],
+    "current_local_corrections": "Regenerated reports reproduce; country counts and company/branch selectors corrected."
+  },
+  "research_independent_verification": false,
+  "human_approved": false,
+  "deployed_pages_tested": false
+}
