@@ -1,0 +1,153 @@
+✔ Annecy dashboard combines query, outcome and group without changing data (1.102436ms)
+✔ real Annecy references have shareable existing routes, no pins and no verified capabilities (530.00696ms)
+✔ boutique filters combine independent signals with AND and preserve evidence classes (1.462209ms)
+✔ actual research-visible data contains both seed businesses with real provenance, without reading benchmarks (172.017372ms)
+✔ index loads every A/B location; provenance shards are lazy and shared (35.813757ms)
+✔ boutique metadata loads lazily, verifies integrity, and retries without losing atlas rows (6.878393ms)
+✔ boutique payload cannot assert purchasing intent, inject capability scores or unsafe URLs (6.845424ms)
+✔ A/B filter and confirmed capabilities never inherit directory sector claims (8.188674ms)
+✔ baseline or index tampering fails closed; no partial data fallback (38.818425ms)
+✔ corrupt/missing shard fails export without returning partial rows and can retry (3.505056ms)
+✔ indexed path traversal, duplicate IDs and coordinate mismatches rejected (4.141227ms)
+✔ source-listed rows cannot acquire verified claims or unsafe provenance (0.50278ms)
+✔ legacy C profile stays in research and unknown identity fails clearly (2.118962ms)
+✔ CSV carries class, source attribution and full provenance (2.234837ms)
+✔ CSV supplies full licence copies and fails closed when required notices are unavailable (2.724207ms)
+✔ inclusive research validation accepts a company without a pin but never verified services (0.697114ms)
+✔ compressed unified catalogue keeps legacy and company references; corrupted gzip fails without fallback (12.216811ms)
+✔ real compact transport preserves every identity, category and original coordinate (699.945214ms)
+✔ malformed column lengths, dictionary references and identity encodings fail closed (199.952188ms)
+✔ compact index reports progress, uses versioned cache keys and never falls back after corruption (6.507878ms)
+✔ game developer eligibility adds neither capture nor provider claims (0.837861ms)
+✔ reviewed audio-only exclusions are reversible and mixed visual/audio retained (0.135855ms)
+✖ complete actual index, role filters and exports retain all original records (2019.709803ms)
+✔ scope sidecar cannot invent approval, move records or hide unknown names (2.356337ms)
+✔ generic production stays plausible, with explicit sector confidence and original source categories (0.824842ms)
+✔ visual production eligibility does not imply an external service offer (0.319391ms)
+✔ canonical database loads and retains all identities (7.318238ms)
+✔ relative URL is GitHub Pages compatible and disables stale cache (3.418426ms)
+✔ HTTP failure rejects without fallback (0.441144ms)
+✔ invalid JSON rejects without fallback (0.236827ms)
+✔ network failure rejects without fallback (0.177307ms)
+✔ malformed database rejects the entire response (2.414105ms)
+✔ valid empty database is allowed (0.725402ms)
+✔ search and combined country / specialization filters use external records (0.616288ms)
+✔ VFX-only locations do not require mocap (0.461605ms)
+✔ confirmed and likely capabilities require a dated source (0.56399ms)
+✔ HTML contains no embedded studio snapshot (0.784542ms)
+✔ researched VFX studios remain separate locations under stable organisations (0.443718ms)
+✔ batch 1 does not infer mocap from VFX (0.110145ms)
+✔ coincident coordinates group every studio without mutating records (0.417319ms)
+✔ optional metadata is backward compatible and validates sourced relationships (0.470378ms)
+✔ organisation relationship names are searchable without collapsing studios (0.271248ms)
+✔ new batch has six individually sourced capture facilities (0.221633ms)
+✔ 10000 location grouping retains all records and exact original coordinates (11.487325ms)
+✔ viewport grouping retains coincident studios and leaves source coordinates intact (0.357408ms)
+✔ viewport grouping handles the antimeridian and repeated world copies (0.248865ms)
+✔ confirmed-only filtering uses the specific selected capability evidence (0.174042ms)
+✔ 20000 locations retain complete identity and coordinates in viewport rendering (70.844462ms)
+✔ operating organisation pages retain separate branches and subsidiaries (8.729262ms)
+✔ multi-capability AND and OR are explicit and never inherit parent services (16.986539ms)
+✔ country, city, sector, type and multiword search combine with AND (2.715138ms)
+✔ GitHub Pages profile hashes round-trip IDs and reject hostile or broken routes (0.364819ms)
+✔ CSV guards formulas, preserves numeric coordinates and quotes multiline text (0.356056ms)
+✔ spatial buckets match exact viewport results including antimeridian and poles (172.417367ms)
+✔ 50000-record map groups retain every identity and never move coordinates (192.048046ms)
+✔ parent operators with their own branches can navigate separately owned brands (2.048424ms)
+✔ operating names are validated consistently and skip-to-search is a directory route (0.274583ms)
+✔ public links exclude IP literals, credentials, controls and token queries (0.207482ms)
+✔ A/B/C use the specified colours and different non-colour symbols (1.390603ms)
+✔ mixed clusters and identical coordinates expose every evidence class without moving a point (0.49137ms)
+✔ combined totals keep companies searchable without assigning a geographic point (7.438199ms)
+✔ confirmed capture depends on location-specific evidence, never company or sector claims (0.264017ms)
+✔ exact name relevance precedes class, while equal relevance prefers reviewed evidence (0.404369ms)
+✔ organisation search respects operating identities without inventing parent relationships (0.185419ms)
+✔ research flags, stale dates and sparse-country priorities are advisory only (0.769839ms)
+✔ mixed-evidence CSV preserves references, formulas, classes and null coordinates (0.383277ms)
+✔ large-map cluster anchors always use an unchanged member location (2.738382ms)
+✔ working notes bind exact content and never become human approval (1.730165ms)
+✔ formula-safe CSV and evidence links reject executable or credential URLs (1.952159ms)
+✔ actual global index filters all observations without treating names as verified facilities (503.370565ms)
+✖ complete actual company audit and display coordinates leave original records immutable (21.911401ms)
+✔ reference metadata cannot move original points, inherit geography or assert a verified facility (180.499285ms)
+✔ CSV reference location is separate, licensed and never replaces original coordinates (1022.144105ms)
+✔ maintainer filters AND item kind, relevance, readiness and text (2.080885ms)
+✔ selecting accept only exports working notes and cannot create approval or a reviewer (0.531493ms)
+✔ worksheet drafts remain content-bound, unique and size-limited (1.405193ms)
+✖ actual staged identities are excluded from search, lazy profiles and export bundles (769.969234ms)
+✔ company review metadata validates and cannot elevate an agency lead to verified capabilities (636.084608ms)
+✔ playtesting export labels source assertions separately and keeps the scoped agency licence (773.782205ms)
+✔ NZ dashboard ANDs text, outcome and source without hiding source identity (1.997298ms)
+✔ all real NZ references validate, retain shareable routes and have no pins or confirmed capabilities (174.34106ms)
+✔ actual lazy NZ shard and export include exact scoped NZ On Air grant, never CC BY (849.940985ms)
+✔ scoped source grant still fails closed when exported notice hash is corrupted (604.986866ms)
+✔ malformed collision notes fail validation before profile rendering (0.447803ms)
+✔ NZFC source snapshot retains every one of the 42 reviewed vendors (1.286644ms)
+✔ every NZFC listing is reconciled, including excluded and identity-held names (0.781224ms)
+✔ full NZFC PP/A/VFX/S/DIT labels survive independently of reduced boutique tags (3.09992ms)
+✔ represented NZFC names are real Atlas records; no company-only map pins invented (102.062092ms)
+✔ NZFC Weta resolves to Wellington in the coverage report; Blockhead remains held (0.289545ms)
+✔ Atlas reveals unmapped records explicitly and links the complete NZFC crosscheck (0.500332ms)
+ℹ tests 90
+ℹ suites 0
+ℹ pass 87
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11165.881253
+
+✖ failing tests:
+
+test at tests/commercial.test.js:10:1
+✖ complete actual index, role filters and exports retain all original records (2019.709803ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  42478 !== 42296
+  
+      at TestContext.<anonymous> (/workspace/motionx-studio-atlas/tests/commercial.test.js:11:175)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 42478,
+    expected: 42296,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/global_visibility.test.js:4:1
+✖ complete actual company audit and display coordinates leave original records immutable (21.911401ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1859 !== 1677
+  
+      at TestContext.<anonymous> (/workspace/motionx-studio-atlas/tests/global_visibility.test.js:5:30)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1859,
+    expected: 1677,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/nz_quality.test.js:23:1
+✖ actual staged identities are excluded from search, lazy profiles and export bundles (769.969234ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  42478 !== 42296
+  
+      at TestContext.<anonymous> (/workspace/motionx-studio-atlas/tests/nz_quality.test.js:24:95)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 42478,
+    expected: 42296,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

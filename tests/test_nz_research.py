@@ -5,7 +5,7 @@ from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 import nz_research as nz
 from discovery import read,write,digest
-from launch_readiness import records
+from catalogue_history import records
 from bulk_catalog import sha
 from validate import url_valid
 from unified_catalog import validate_research

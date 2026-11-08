@@ -1,0 +1,6 @@
+{
+  "checks": 7,
+  "integrated_new_companies": 182,
+  "actual_directory_records": 42478,
+  "conditions": "Actual local HTTP subdirectory and installed Chromium; desktop 1440x1000/mobile 390x844; not deployed Pages or independent company verification."
+}

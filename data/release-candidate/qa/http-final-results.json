@@ -1,0 +1,80 @@
+[
+  {
+    "command": "python tests/browser_smoke.py",
+    "exit_code": 0,
+    "seconds": 34.72,
+    "log": "/tmp/motionx-rc-final-browser_smoke.log"
+  },
+  {
+    "command": "python tests/bulk_browser.py",
+    "exit_code": 0,
+    "seconds": 16.42,
+    "log": "/tmp/motionx-rc-final-bulk_browser.log"
+  },
+  {
+    "command": "python tests/public_catalog_smoke.py",
+    "exit_code": 0,
+    "seconds": 39.56,
+    "log": "/tmp/motionx-rc-final-public_catalog_smoke.log"
+  },
+  {
+    "command": "python tests/global_visibility_browser.py",
+    "exit_code": 0,
+    "seconds": 4.65,
+    "log": "/tmp/motionx-rc-final-global_visibility_browser.log"
+  },
+  {
+    "command": "python tests/commercial_browser.py",
+    "exit_code": 0,
+    "seconds": 7.32,
+    "log": "/tmp/motionx-rc-final-commercial_browser.log"
+  },
+  {
+    "command": "python tests/global_review_browser.py",
+    "exit_code": 0,
+    "seconds": 2.1,
+    "log": "/tmp/motionx-rc-final-global_review_browser.log"
+  },
+  {
+    "command": "python tests/unified_ux.py",
+    "exit_code": 0,
+    "seconds": 12.02,
+    "log": "/tmp/motionx-rc-final-unified_ux.log"
+  },
+  {
+    "command": "python tests/boutique_browser.py",
+    "exit_code": 0,
+    "seconds": 8.89,
+    "log": "/tmp/motionx-rc-final-boutique_browser.log"
+  },
+  {
+    "command": "python tests/nz_census_browser.py",
+    "exit_code": 0,
+    "seconds": 5.47,
+    "log": "/tmp/motionx-rc-final-nz_census_browser.log"
+  },
+  {
+    "command": "python tests/nz_quality_browser.py",
+    "exit_code": 0,
+    "seconds": 4.85,
+    "log": "/tmp/motionx-rc-final-nz_quality_browser.log"
+  },
+  {
+    "command": "python tests/annecy_browser.py",
+    "exit_code": 0,
+    "seconds": 6.33,
+    "log": "/tmp/motionx-rc-final-annecy_browser.log"
+  },
+  {
+    "command": "python tests/continuation_package_browser.py",
+    "exit_code": 0,
+    "seconds": 2.1,
+    "log": "/tmp/motionx-rc-final-continuation_package_browser.log"
+  },
+  {
+    "command": "python tests/release_candidate_browser.py",
+    "exit_code": 0,
+    "seconds": 6.63,
+    "log": "/tmp/motionx-rc-final-release_candidate_browser.log"
+  }
+]

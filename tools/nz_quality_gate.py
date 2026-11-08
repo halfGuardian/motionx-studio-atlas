@@ -8,7 +8,7 @@ from urllib.parse import urlsplit
 from discovery import ROOT,read,write,digest
 from bulk_catalog import compact,sha
 from compact_index import add_transport
-from launch_readiness import records
+from catalogue_history import records
 from validate import url_valid
 from unified_catalog import validate_research
 

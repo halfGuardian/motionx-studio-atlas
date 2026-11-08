@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "mapping": {
+    "Animation": "Animation",
+    "Animation production": "Animation",
+    "Original animation production": "Animation",
+    "Game cinematics": "Cinematics",
+    "Film production": "Film / Television Production",
+    "Film / Television Production": "Film / Television Production",
+    "Film / Video Production": "Film / Video Production",
+    "Immersive production": "Digital / Interactive Production",
+    "Digital content production": "Digital / Interactive Production",
+    "Digital / Interactive Production": "Digital / Interactive Production",
+    "Game Development": "Game Development",
+    "VFX": "VFX",
+    "Cinematics": "Cinematics",
+    "Virtual Production": "Virtual Production",
+    "Production Technology": "Production Technology",
+    "Production Facilities": "Production Facilities",
+    "Motion Capture": "Motion Capture",
+    "Previsualization": "Previsualization",
+    "Game Art": "Game Art",
+    "Rigging": null,
+    "Storyboards": null,
+    "Art direction": null,
+    "Character design": null
+  },
+  "policy": "Coarse public sectors only. Original labels retained separately; specialisation labels do not become independently confirmed site capabilities. No synonym is inferred as a new service."
+}

@@ -1,0 +1,5 @@
+PASS complete real global review index loads over HTTP, with 178 explicit country/source-search denominators and only 25 rendered cards
+PASS country/search/source-qualified company review exports content-bound working decisions with formula protection and no approval/publication
+PASS 390px review controls, visible keyboard focus and horizontal containment
+PASS missing report fails explicitly and cannot substitute an empty approved queue
+4 global review HTTP checks passed

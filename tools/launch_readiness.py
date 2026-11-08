@@ -47,6 +47,9 @@ def build_audit(m,rows,bulk,discovery,receipt):
     for sid in sorted({p['source_id'] for r in new for p in r.get('source_provenance',[]) if r['id'].startswith(('boutique-','annecy-','nzcensus-'))}):
         cohort=[r for r in new if any(p['source_id']==sid for p in r.get('source_provenance',[]))];first=cohort[0];p=next(p for p in first['source_provenance'] if p['source_id']==sid)
         datasets.append(dataset(('NZ census research: ' if sid in ('nzonair-gdsr','nzonair-gdsr-context','nz-company-primary-review') else 'Boutique discovery: ')+sid,p['url'],first.get('source_release',''),p['observed_on'],p['license'],'Reuse documented' if p['license'] in ('CC-BY-4.0','NZ-On-Air-Permission') else 'Permission not established',first['attribution'],'Subject to the source-specific grant; no blanket source-wide clearance.','Retain original source links, dates, attribution and applicable full licence.','Company references do not establish current facilities or independently verified services.','Accurate attributed agency projection; retain copyright and controlling terms. No third-party media or independent verification.' if p['license']=='NZ-On-Air-Permission' else 'CC BY factual projection with notices.' if p['license']=='CC-BY-4.0' else 'Further permission review before automated bulk reuse.',len(cohort)))
+    global_refs=[r for r in new if r['id'].startswith('globalcompany-')]
+    if global_refs:
+        datasets.append(dataset('Global release candidate — minimal factual company references','https://github.com/halfGuardian/motionx-studio-atlas',m['release_candidate']['parent_commit'],', '.join(sorted({r['source_observed_on'] for r in global_refs})),'UNSPECIFIED','Reuse requires review','Retain every per-record source URL/date, original source sector labels and scoped attribution.','No source-wide redistribution or commercial reuse grant inferred; limited factual fields only.','Keep unverified Class C/company-only status, source-specific uncertainty and attribution. No copied descriptions, media or contacts.','Maintainer must review the exact minimal factual scope and draft PR; unknown source-wide terms are neither a blanket grant nor an automatic ban on company identifiers.','Only the exact limited factual release candidate is proposed; expanded reuse needs a separate source-specific decision.',len(global_refs)))
     for registry_name,registry in (('bulk registry',bulk),('discovery registry',discovery)):
         for source in registry['sources']:
             url=source.get('url') or source.get('endpoint')
@@ -61,14 +64,17 @@ def atlas_prefix(output):
     try:return '../'*len(Path(output).resolve().relative_to(ROOT.resolve()).parts)
     except ValueError:return '../../../'
 
-def generate(public,database,output,bulk=None,discovery=None,receipt=None,return_prefix=None):
+def generate(public,database,output,bulk=None,discovery=None,receipt=None,return_prefix=None,historical=False):
     output=Path(output)
     prefix=atlas_prefix(output) if return_prefix is None else return_prefix
     if not re.fullmatch(r'(?:\.\./){0,8}',prefix):raise ValueError('Invalid relative Atlas return link')
     if output.exists(): raise ValueError('fresh report output directory required')
-    m,rows=records(public,database)
+    if historical:
+        from catalogue_history import records as parent_records,public_file
+        m,rows=parent_records(public,database);manifest_path=public_file(public,'manifest.json')
+    else:m,rows=records(public,database);manifest_path=Path(public)/'manifest.json'
     audit=build_audit(m,rows,bulk or read(ROOT/'data/bulk/sources.json'),discovery or read(ROOT/'data/discovery/sources.json'),receipt or read(ROOT/'data/bulk/unified-input/source-receipt.json'))
-    audit['catalogue_sha256']=file_sha(Path(public)/'manifest.json')
+    audit['catalogue_sha256']=file_sha(manifest_path)
     queue=[]
     for r in rows:
         if r['evidence_class']=='A': continue
@@ -102,7 +108,7 @@ def main():
     elif a.command=='template': template(a.record_id or '',a.public,a.database,a.queue,a.output)
     else:
         with tempfile.TemporaryDirectory() as folder:
-            fresh=Path(folder)/'reports';result=generate(a.public,a.database,fresh,return_prefix=atlas_prefix(a.output))
+            fresh=Path(folder)/'reports';result=generate(a.public,a.database,fresh,return_prefix=atlas_prefix(a.output),historical=a.output.resolve()==(ROOT/'data/global-programme/reports/readiness').resolve())
             for path in fresh.iterdir():
                 if not (a.output/path.name).is_file() or path.read_bytes()!=(a.output/path.name).read_bytes():raise ValueError('stale readiness report: '+path.name)
         print(json.dumps({**result,'report_integrity':'passed'}))

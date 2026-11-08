@@ -92,7 +92,7 @@ def load_atlas():
         raise ValueError("Duplicate ID in source/retained index")
     # Wave 1 is a frozen baseline audit. The continuation separately verifies
     # every retained shard and all appended references against its checkpoint.
-    records = [r for r in records if not r['id'].startswith('nzcensus-')]
+    records = [r for r in records if not r['id'].startswith(('nzcensus-','globalcompany-'))]
     if len(records) != 42239:
         raise ValueError('Historical 42,239-record cohort changed')
     manifest = dict(manifest, counts={**manifest['counts'], 'records':42239, 'company_references':1620})

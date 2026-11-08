@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 from discovery import ROOT, read, write, digest
-from launch_readiness import records
+from catalogue_history import records
 from bulk_catalog import sha
 from boutique import region, record_host, host, shared, source_inputs as boutique_inputs
 from annecy_match import IdentityIndex, key, place

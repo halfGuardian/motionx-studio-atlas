@@ -1,0 +1,16 @@
+.............................................................................................................................................................E......................................................................................................................................................
+======================================================================
+ERROR: test_catalogue_is_fully_loaded_and_no_baseline_records_are_lost (test_nz_census.SourceTests.test_catalogue_is_fully_loaded_and_no_baseline_records_are_lost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/test_nz_census.py", line 98, in test_catalogue_is_fully_loaded_and_no_baseline_records_are_lost
+    m, rows = census.load_atlas()
+              ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/nz_census.py", line 97, in load_atlas
+    raise ValueError('Historical 42,239-record cohort changed')
+ValueError: Historical 42,239-record cohort changed
+
+----------------------------------------------------------------------
+Ran 308 tests in 121.844s
+
+FAILED (errors=1)

@@ -1,0 +1,435 @@
+PASS all 182 new directory entries load through real index, hash-bound lazy shard and export pipeline; total 42478 storage/42474 normal
+PASS normalised Animation filter, provisional profile, original source labels, scoped attribution and filtered CSV work for a newly integrated company
+PASS game-company client eligibility needs no capture, confirmed-only excludes new unverified claims, and four audio-only exclusions retain multidisciplinary Envy
+PASS ModelFarm Adelaide/Brisbane references are separately selectable map points for one unchanged company identity, with accurate city search and CSV
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/release_candidate_browser.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/motionx-studio-atlas/tests/release_candidate_browser.py", line 31, in main
+    page.locator('#resetFilters').click();page.locator('#country').select_option('Singapore');page.locator('#recordKind').select_option('company_reference');page.locator('#geographicView').select_option('company_city');expect(page.locator('#count')).to_have_text('2 records');page.locator('#fitResults').click();expect(page.locator('.company-city-reference')).to_have_count(1);marker=page.locator('.company-city-reference');marker.focus();marker.press('Space');expect(page.locator('.leaflet-popup-content')).to_contain_text('Scrawl Animation');expect(page.locator('.leaflet-popup-content')).to_contain_text('Robot Playground Media');page.locator('.leaflet-popup-content [data-record-id="boutique-02b32b3e25b0693f01f05a67e5f2"]').press('Enter');expect(page.locator('#profileTitle')).to_have_text('Scrawl Animation');page.locator('#close').click()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 22016, in to_contain_text
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 303, in to_contain_text
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to contain text 'Scrawl Animation'
+Actual value: None
+Error: element(s) not found 
+Call log:
+  - Expect "to_contain_text" with timeout 5000ms
+  - waiting for locator(".leaflet-popup-content")
+
+Aria snapshot:
+- link "Skip to studio search":
+  - /url: "#search"
+- banner:
+  - link "MotionX Studio Atlas home":
+    - /url: "#/"
+    - heading "MOTIONX / STUDIO ATLAS" [level=1]
+    - text: THE GLOBAL PRODUCTION DIRECTORY
+  - text: GLOBAL ATLAS 1.3
+- main:
+  - complementary "Studio directory":
+    - text: GLOBAL RESEARCH · EVIDENCE FIRST Global studio research.
+    - paragraph: All references together. Evidence labels distinguish reviewed locations from directory listings and research leads. Record totals are not verified facility counts.
+    - term: Total records
+    - definition: 42,478
+    - term: Geolocated records
+    - definition: 40,619
+    - term: Source-reviewed locations
+    - definition: "230"
+    - term: Provisional identities
+    - definition: 41,940
+    - term: Confirmed capture facilities
+    - definition: "22"
+    - group "Quick research filters":
+      - button "All records"
+      - button "■ Reviewed studios · A"
+      - button "● Source-listed · B"
+      - button "▲ Research leads · C"
+      - button "Company references" [pressed]
+      - button "Boutique Studios"
+      - button "Confirmed capture"
+    - paragraph: Quick views combine with the filters below. Confirmed capture checks site-specific Motion, Body or Performance Capture evidence. Company-only references are searchable even without map pins.
+    - paragraph:
+      - link "Global source coverage and review":
+        - /url: data/global-programme/reports/dashboard.html
+        - strong: Global source coverage and review
+      - text: ·
+      - strong: "New Zealand source coverage:"
+      - link "Final quality gate and maintainer review":
+        - /url: data/nz-census/final-review/reports/dashboard.html
+      - text: ·
+      - link "Historical 217-observation reconciliation":
+        - /url: data/nz-census/reports/coverage.html
+      - text: ·
+      - link "Historical NZFC 42-row audit":
+        - /url: data/boutique/reports/nzfc-coverage.html
+      - text: . Company representation is not verified physical coverage; the census remains incomplete.
+    - text: A · Reviewed B · Listed C · Research
+    - status: 2 records
+    - button "Reset filters"
+    - text: 243 retained · 40,376 source observations · 1,859 company references. Records can overlap. 4 audio-only references excluded from normal results; 42,478 retained for audit. Search the atlas
+    - searchbox "Search the atlas"
+    - text: MotionX audience
+    - combobox "MotionX audience":
+      - option "All eligible audiences" [selected]
+      - option "Explicit potential clients (including both)"
+      - option "Explicit service providers (including both)"
+      - option "Explicitly relevant client and provider"
+      - option "Plausible but unconfirmed prospects"
+      - option "Adjacent / uncertain"
+      - option "Out of scope (use audit view)"
+    - text: Directory scope
+    - combobox "Directory scope":
+      - option "Normal directory" [selected]
+      - option "All retained records · audit"
+      - option "Excluded audio-only · audit"
+    - paragraph: Explicit game/animation/VFX sector claims establish relevance, not buying intent or verified facility services. Generic film/video listings remain plausible, unconfirmed prospects. Game developers qualify without capture. Individually reviewed audio-only companies are excluded from normal results; audit views preserve their profiles and exports.
+    - text: Geographic discovery
+    - combobox "Geographic discovery":
+      - option "All geographic evidence"
+      - option "Supported company city reference · no verified facility" [selected]
+      - option "No original coordinates · still searchable"
+    - paragraph:
+      - link "Integrated release candidate, admission decisions and geographic review":
+        - /url: data/release-candidate/reports/dashboard.html
+    - group:
+      - text: Advanced filters & research priorities Country
+      - combobox "Country":
+        - option "All countries"
+        - option "Afghanistan"
+        - option "Albania"
+        - option "Algeria"
+        - option "Angola"
+        - option "Antigua & Barbuda"
+        - option "Argentina"
+        - option "Armenia"
+        - option "Aruba"
+        - option "Australia"
+        - option "Austria"
+        - option "Azerbaijan"
+        - option "Bahamas"
+        - option "Bahrain"
+        - option "Bangladesh"
+        - option "Belarus"
+        - option "Belgium"
+        - option "Belize"
+        - option "Benin"
+        - option "Bhutan"
+        - option "Bolivia"
+        - option "Bosnia & Herzegovina"
+        - option "Botswana"
+        - option "Brazil"
+        - option "Brunei"
+        - option "Bulgaria"
+        - option "Burkina Faso"
+        - option "Burundi"
+        - option "Cambodia"
+        - option "Cameroon"
+        - option "Canada"
+        - option "Cape Verde"
+        - option "Caribbean Netherlands"
+        - option "Chile"
+        - option "China"
+        - option "Colombia"
+        - option "Congo - Brazzaville"
+        - option "Congo - Kinshasa"
+        - option "Costa Rica"
+        - option "Croatia"
+        - option "Cuba"
+        - option "Curaçao"
+        - option "Cyprus"
+        - option "Czechia"
+        - option "Côte d’Ivoire"
+        - option "Denmark"
+        - option "Dominican Republic"
+        - option "Ecuador"
+        - option "Egypt"
+        - option "El Salvador"
+        - option "Estonia"
+        - option "Ethiopia"
+        - option "Faroe Islands"
+        - option "Finland"
+        - option "France"
+        - option "French Polynesia"
+        - option "Gabon"
+        - option "Gambia"
+        - option "Georgia"
+        - option "Germany"
+        - option "Ghana"
+        - option "Greece"
+        - option "Greenland"
+        - option "Guadeloupe"
+        - option "Guatemala"
+        - option "Guernsey"
+        - option "Guinea"
+        - option "Guyana"
+        - option "Haiti"
+        - option "Honduras"
+        - option "Hong Kong SAR China"
+        - option "Hungary"
+        - option "Iceland"
+        - option "India"
+        - option "Indonesia"
+        - option "Iran"
+        - option "Iraq"
+        - option "Ireland"
+        - option "Isle of Man"
+        - option "Israel"
+        - option "Italy"
+        - option "Jamaica"
+        - option "Japan"
+        - option "Jordan"
+        - option "Kazakhstan"
+        - option "Kenya"
+        - option "Kiribati"
+        - option "Kuwait"
+        - option "Kyrgyzstan"
+        - option "Laos"
+        - option "Latvia"
+        - option "Lebanon"
+        - option "Libya"
+        - option "Liechtenstein"
+        - option "Lithuania"
+        - option "Luxembourg"
+        - option "Macao SAR China"
+        - option "Madagascar"
+        - option "Malawi"
+        - option "Malaysia"
+        - option "Maldives"
+        - option "Malta"
+        - option "Martinique"
+        - option "Mauritania"
+        - option "Mauritius"
+        - option "Mexico"
+        - option "Moldova"
+        - option "Monaco"
+        - option "Mongolia"
+        - option "Montenegro"
+        - option "Morocco"
+        - option "Mozambique"
+        - option "Myanmar (Burma)"
+        - option "Namibia"
+        - option "Nepal"
+        - option "Netherlands"
+        - option "New Caledonia"
+        - option "New Zealand"
+        - option "Nicaragua"
+        - option "Nigeria"
+        - option "North Macedonia"
+        - option "Norway"
+        - option "Oman"
+        - option "Pakistan"
+        - option "Palestinian Territories"
+        - option "Panama"
+        - option "Paraguay"
+        - option "Peru"
+        - option "Philippines"
+        - option "Poland"
+        - option "Portugal"
+        - option "Puerto Rico"
+        - option "Qatar"
+        - option "Romania"
+        - option "Russia"
+        - option "Rwanda"
+        - option "Réunion"
+        - option "San Marino"
+        - option "Saudi Arabia"
+        - option "Senegal"
+        - option "Serbia"
+        - option "Sierra Leone"
+        - option "Singapore" [selected]
+        - option "Slovakia"
+        - option "Slovenia"
+        - option "Somalia"
+        - option "South Africa"
+        - option "South Korea"
+        - option "Spain"
+        - option "Sri Lanka"
+        - option "St. Lucia"
+        - option "Sudan"
+        - option "Suriname"
+        - option "Sweden"
+        - option "Switzerland"
+        - option "Syria"
+        - option "Taiwan"
+        - option "Tajikistan"
+        - option "Tanzania"
+        - option "Thailand"
+        - option "Timor-Leste"
+        - option "Togo"
+        - option "Trinidad & Tobago"
+        - option "Tunisia"
+        - option "Turkmenistan"
+        - option "Türkiye"
+        - option "Uganda"
+        - option "Ukraine"
+        - option "United Arab Emirates"
+        - option "United Kingdom"
+        - option "United States"
+        - option "Uruguay"
+        - option "Uzbekistan"
+        - option "Vanuatu"
+        - option "Vatican City"
+        - option "Venezuela"
+        - option "Vietnam"
+        - option "Yemen"
+        - option "Zambia"
+        - option "Zimbabwe"
+      - text: City
+      - searchbox "City"
+      - text: Organisation or source identity
+      - searchbox "Organisation or source identity"
+      - text: Production sector
+      - combobox "Production sector":
+        - option "All sectors" [selected]
+        - option "Animation"
+        - option "Audio Post-production"
+        - option "Body Capture"
+        - option "Cinematics"
+        - option "Concept Art"
+        - option "Creative Production"
+        - option "Digital / Interactive Production"
+        - option "Facial Capture"
+        - option "Film / Television Production"
+        - option "Film / Video Production"
+        - option "Game Art"
+        - option "Game Development"
+        - option "Game Production Support"
+        - option "Game Publishing"
+        - option "Motion Capture"
+        - option "Motion Editing"
+        - option "Performance Capture"
+        - option "Post-production"
+        - option "Previs"
+        - option "Previsualization"
+        - option "Production Facilities"
+        - option "Production Technology"
+        - option "Research"
+        - option "Retargeting"
+        - option "Special Effects"
+        - option "VFX"
+        - option "Virtual Production"
+        - option "Volumetric Capture"
+      - group: Capabilities · any
+      - text: Location type
+      - combobox "Location type":
+        - option "All location types" [selected]
+        - option "Production studio"
+        - option "Capture facility"
+        - option "Mixed campus"
+        - option "Creative hub"
+        - option "Production office"
+        - option "Type not established"
+      - text: Evidence class
+      - combobox "Evidence class":
+        - option "All evidence classes" [selected]
+        - option "Class A — Source-reviewed location"
+        - option "Class B — Directory-listed, uncorroborated"
+        - option "Class C — Research required"
+      - text: Record type
+      - combobox "Record type":
+        - option "All records together"
+        - option "Retained Atlas location"
+        - option "Source location observation"
+        - option "Company reference — branches unverified" [selected]
+      - checkbox "Confirmed capability evidence only"
+      - text: Confirmed capability evidence only Research focus
+      - combobox "Research focus":
+        - option "All research signals" [selected]
+        - option "Possible existing-location duplicates"
+        - option "Source permission needs review"
+        - option "Missing geography or physical branch"
+        - option "No confirmed capability evidence"
+        - option "Older than 180 days or missing date"
+        - option "Historical / status assertions"
+        - option "Countries with fewer than two reviewed records"
+      - paragraph: Different filters combine with AND. City and search match text. Confirmed-only checks selected capabilities, the selected sector, or any confirmed capability when neither is selected. Parent services are never inherited.
+    - text: Order results
+    - combobox "Order results":
+      - option "Best match, then evidence quality" [selected]
+      - option "Research attention first"
+      - option "Oldest / missing source dates first"
+    - group "Directory view":
+      - button "Records" [pressed]
+      - button "Identities"
+    - button "↓ CSV"
+    - article:
+      - text: Class C Explicitly relevant potential client
+      - link "Robot Playground Media":
+        - /url: "#/organisation/boutique-org-9a4db026193fabeaf00c9993"
+      - heading "Robot Playground Media" [level=3]:
+        - link "Robot Playground Media":
+          - /url: "#/location/boutique-9a4db026193fabeaf00c99930ec4"
+      - text: Singapore, Singapore COMPANY REFERENCE · NO VERIFIED BRANCH Animation No source coordinates · Observed 1 days ago
+      - button "Compare record"
+    - article:
+      - text: Class C Explicitly relevant potential client
+      - link "Scrawl Animation":
+        - /url: "#/organisation/boutique-org-02b32b3e25b0693f01f05a67"
+      - heading "Scrawl Animation" [level=3]:
+        - link "Scrawl Animation":
+          - /url: "#/location/boutique-02b32b3e25b0693f01f05a67e5f2"
+      - text: Singapore, Singapore COMPANY REFERENCE · NO VERIFIED BRANCH Animation No source coordinates · Observed 1 days ago
+      - button "Compare record"
+    - status
+    - button "← Previous" [disabled]
+    - text: 1–2 of 2
+    - button "Next →" [disabled]
+    - paragraph:
+      - text: "Confidence describes the cited capability claim, not independent verification. Legacy claims are unknown pending review. Capability confirmation does not prove registration or current operation. Some pins are city-level estimates. Do not treat a city pin as a street address. Research city references:"
+      - link "GeoNames":
+        - /url: https://www.geonames.org/
+      - text: (
+      - link "CC BY 4.0":
+        - /url: https://creativecommons.org/licenses/by/4.0/
+      - text: "), used as city pins, not facility geocodes. Iver Heath reference: © Crown copyright, Office for National Statistics via"
+      - link "Planning Data":
+        - /url: https://www.planning.data.gov.uk/entity/2504906
+      - text: ","
+      - link "OGL v3.0":
+        - /url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+      - text: .
+    - paragraph:
+      - text: "Source observations:"
+      - link "Overture Maps Foundation":
+        - /url: https://overturemaps.org/
+      - text: and original providers recorded per entry. © Foursquare Labs, Inc. where applicable; Foursquare data was transformed to Overture schema and filtered/normalised by MotionX.
+      - link "Data licences, attribution and transformation notices":
+        - /url: data/bulk/NOTICE.html
+      - text: . All records share this research atlas. Class B/C entries do not confirm current operation, facility services or ownership. Company references have no invented map points. Some company-source terms remain unspecified; these are distinguished from the licensed animation-directory projection. Authored descriptions and contacts are omitted.
+    - paragraph:
+      - link "Licensing & future-launch readiness":
+        - /url: data/release-candidate/reports/readiness/licensing.html
+      - text: ·
+      - link "Coverage and research audit":
+        - /url: data/bulk/reports/coverage.html
+      - text: . A public repository remains publicly accessible. Research priorities and test results never grant human approval.
+  - region "Permanent evidence legend":
+    - strong: Map evidence · geolocated results
+    - text: A · Source-reviewed 0 B · Directory-listed 0 C · Research required 0 Mixed rings show each class. Hollow diamonds are approximate company references, never studio entrances.
+    - checkbox "Show approximate company references 2" [checked]
+    - text: Show approximate company references 2
+    - status: 2 matching directory records have no original map coordinates; 2 have separate approximate company references. Browse the searchable company list.
+    - button "Browse company references"
+  - button "Zoom in"
+  - button "Zoom out"
+  - link "Leaflet":
+    - /url: https://leafletjs.com
+  - text: ©
+  - link "OpenStreetMap contributors":
+    - /url: https://www.openstreetmap.org/copyright
+  - paragraph: Use the studio directory or Tab between map markers. Enter or Space selects a marker. Groups show A/B/C counts and open a selectable list. All original coordinates are preserved.
+  - button "⌖ Fit results"
+- navigation "Mobile navigation":
+  - button "◉ Map" [pressed]
+  - button "☷ Directory"

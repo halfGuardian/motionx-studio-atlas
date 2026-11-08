@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 import nz_quality_gate as gate
 from discovery import read,write,digest
-from launch_readiness import records
+from catalogue_history import records
 from unified_catalog import validate_research
 from bulk_catalog import sha
 

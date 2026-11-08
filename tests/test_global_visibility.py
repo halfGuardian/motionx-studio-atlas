@@ -2,7 +2,7 @@ import copy,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from global_visibility import check,build,DISPOSITIONS
-from launch_readiness import records
+from catalogue_history import records
 from discovery import read,digest
 class GlobalVisibilityTests(unittest.TestCase):
  @classmethod

@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from discovery import ROOT, read, write, digest
 from validate import url_valid
-from launch_readiness import records
+from catalogue_history import records
 from bulk_ingest import SHARED_HOSTS, country as country_name
 from bulk_catalog import compact, sha
 from unified_catalog import validate_research

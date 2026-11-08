@@ -11,7 +11,7 @@ from discovery import ROOT, read, write, digest
 from bulk_catalog import compact, sha
 from global_programme import GlobalIndex, iso
 from annecy_match import key
-from launch_readiness import records
+from catalogue_history import records,public_file
 from unified_catalog import validate_research
 from nz_quality_gate import csv_safe
 from validate import url_valid
@@ -237,7 +237,9 @@ def recommendations(report,home=HOME):
     return {'groups':groups,'group_counts':{k:len(v) for k,v in groups.items()},'original_30_proposals':archived,'original_proposal_count':len(original),'exact_payloads_preserved':True,'human_approved':False},checkpoint
 
 def install(public,database,home=HOME):
-    public=Path(public);m,rows=records(public,database);policy,_=build(rows,home);compact(public/'commercial.json',policy)
+    public=Path(public)
+    if read(public/'manifest.json').get('release_candidate'):raise ValueError('Use release_candidate.py for an integrated draft; historical scope cannot overwrite it')
+    m,rows=records(public,database);policy,_=build(rows,home);compact(public/'commercial.json',policy)
     m['commercial_scope']={'path':'commercial.json','sha256':sha(public/'commercial.json'),'gzip_sha256':sha(public/'commercial.json.gz'),'gzip_bytes':(public/'commercial.json.gz').stat().st_size,'content_addressed':True};write(public/'manifest.json',m)
 
 def geographic_associations(report):
@@ -304,14 +306,14 @@ def save(report,out):
 
 def check(home=HOME):
     m,rows=records(ROOT/'data/public',ROOT/'studios.json');policy,report=build(rows,home)
-    if report!=read(home/'reports/report.json') or policy!=read(ROOT/'data/public/commercial.json'):raise ValueError('Stale continuation report or scope projection')
+    if report!=read(home/'reports/report.json') or policy!=read(public_file(ROOT/'data/public','commercial.json')):raise ValueError('Stale continuation report or scope projection')
     if sha(ROOT/'studios.json')!=read(home/'inputs/checkpoint.json')['root_sha256']:raise ValueError('Retained root database changed')
     with tempfile.TemporaryDirectory() as tmp:
         save(report,tmp)
         for p in Path(tmp).iterdir():
             if not (home/'reports'/p.name).is_file() or p.read_bytes()!=(home/'reports'/p.name).read_bytes():raise ValueError('Stale generated continuation artifact: '+p.name)
     d=m.get('commercial_scope',{})
-    if d.get('path')!='commercial.json' or d.get('sha256')!=sha(ROOT/'data/public/commercial.json') or d.get('gzip_sha256')!=sha(ROOT/'data/public/commercial.json.gz') or d.get('gzip_bytes')!=(ROOT/'data/public/commercial.json.gz').stat().st_size:raise ValueError('Commercial scope transport mismatch')
+    if d.get('path')!='commercial.json' or d.get('sha256')!=sha(public_file(ROOT/'data/public','commercial.json')) or d.get('gzip_sha256')!=sha(public_file(ROOT/'data/public','commercial.json.gz')) or d.get('gzip_bytes')!=(public_file(ROOT/'data/public','commercial.json.gz')).stat().st_size:raise ValueError('Commercial scope transport mismatch')
     return report['summary']
 
 if __name__=='__main__':
