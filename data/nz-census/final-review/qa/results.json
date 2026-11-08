@@ -1,0 +1,120 @@
+{
+  "reviewed_on": "2026-11-07",
+  "review_base_commit": "d0cd0a502463dd0fd08760722b630b5f282870d8",
+  "recommendation": "READY FOR HUMAN REVIEW",
+  "human_approved": false,
+  "python": {
+    "tests": 269,
+    "failed": 0
+  },
+  "javascript": {
+    "tests": 78,
+    "failed": 0
+  },
+  "http": {
+    "checks": 69,
+    "suites": [
+      {
+        "suite": "browser_smoke",
+        "checks": 19,
+        "result": "passed"
+      },
+      {
+        "suite": "bulk_browser",
+        "checks": 6,
+        "result": "passed"
+      },
+      {
+        "suite": "public_catalog_smoke",
+        "checks": 9,
+        "result": "passed"
+      },
+      {
+        "suite": "unified_ux",
+        "checks": 9,
+        "result": "passed"
+      },
+      {
+        "suite": "boutique_browser",
+        "checks": 10,
+        "result": "passed"
+      },
+      {
+        "suite": "annecy_browser",
+        "checks": 5,
+        "result": "passed"
+      },
+      {
+        "suite": "nz_census_browser",
+        "checks": 5,
+        "result": "passed"
+      },
+      {
+        "suite": "nz_quality_browser",
+        "checks": 6,
+        "result": "passed"
+      }
+    ],
+    "failed_final_suites": 0
+  },
+  "canonical": {
+    "errors": 0,
+    "warnings": 265,
+    "retained_locations": 243,
+    "retained_operating_organisations": 119
+  },
+  "counts": {
+    "records": 42296,
+    "public_records": 42296,
+    "class_a": 230,
+    "class_b": 4626,
+    "class_c": 37440,
+    "retained_locations": 243,
+    "source_location_observations": 40376,
+    "company_references": 1677,
+    "records_with_coordinates": 40619,
+    "countries": 178,
+    "retained_operating_organisations": 119,
+    "source_identities": 41795
+  },
+  "warnings": {
+    "canonical_baseline": 265,
+    "unreviewed_new_references": 42053,
+    "source_point_precision_unverified": 40376,
+    "company_references_without_coordinates": 1677,
+    "unspecified_company_source_terms": 1412,
+    "source_records_missing_city": 170,
+    "source_records_missing_country": 14,
+    "possible_duplicate_candidates": 120,
+    "boutique_company_references_requiring_review": 332,
+    "annecy_class_c_company_references_requiring_review": 172,
+    "nz_census_references_requiring_review": 57,
+    "nz_census_foreign_name_collisions": 3,
+    "nz_gate_staged_proposals": 2,
+    "nz_gate_minimal_facts_wider_rights_review": 27
+  },
+  "integrity": {
+    "pre_v15_ids_preserved": 42239,
+    "prior_detail_shards_preserved": 240,
+    "root_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
+    "original_29_item_nz_worksheet": "unchanged",
+    "historical_37_row_annecy_worksheet": "unchanged",
+    "all_59_original_proposals": "retained in frozen parent and final audit; two excluded from directory, not erased",
+    "source_reproduction": "bulk → boutique → Annecy → raw-59 NZ → final gate; passed",
+    "repeat_application": "refused; clean complete replay is deterministic",
+    "public_review_schema": "Rejects unsupported/private fields, identity/rights relabelling and applying the NZ On Air grant to third-party domains."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "node": "v24.22.1",
+    "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)"
+  },
+  "conditions": "Local HTTP repository subdirectory, headless Chromium, desktop and 390px mobile. Explicit network/CPU emulation in the real-catalogue suite. Not deployed Pages, a physical low-memory device or independent business verification.",
+  "corrected_or_retested_failures": [
+    "Browser testing found a pending search debounce could close a newly opened hash profile. applyRoute now cancels it, with a delayed-visibility regression check.",
+    "The mobile review test was updated to target the intended provisional profile link after evidence-comparison links were added; final suite passed.",
+    "An initial concurrent browser_smoke run failed at the 50,000 canonical compatibility-fixture load with Studio data unavailable. A complete isolated rerun passed all 19 checks; the original cause was not conclusively established. A diagnostic now includes the data error on any recurrence. The separate 50,000 sharded test also passed.",
+    "Unpinned company coordinate labels now explicitly say no coordinates or map pin, rather than calling an absent point approximate."
+  ],
+  "pending": "Human evidence/rights/identity decisions, four independent facility reviews, partial/restricted regional source coverage and unconfirmed branch-review enforcement remain open. Staged materials in this public repository are not private."
+}

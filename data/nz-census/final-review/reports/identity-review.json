@@ -1,0 +1,916 @@
+[
+  {
+    "source_name": "Cause and FX",
+    "most_likely_identity": "Cause and FX",
+    "aliases": [],
+    "resolution": "existing_identity_domain_review",
+    "operation_status": "current_primary_activity_observed",
+    "evidence": [
+      {
+        "url": "https://causeandfx.nz/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [
+      "boutique-7086ce78e01066fe08ae15773f87"
+    ],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Existing NZ reference uses causefx.co.nz; regional row uses another host. Current company page has 2026 production/news context; no pin or capability update.",
+    "recommendation": "Link to the existing NZ identity as the likely same operating brand. Review the old causefx.co.nz versus current causeandfx.nz domain; keep the existing ID and evidence unchanged.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Cirkus",
+    "most_likely_identity": "Cirkus",
+    "aliases": [],
+    "resolution": "existing_identity_domain_review",
+    "operation_status": "indexed_company_contact_not_independent_operation",
+    "evidence": [
+      {
+        "url": "https://cirkus.nz/contact-us/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://cirkus.artstation.com/resume",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://cirkusanimation.com/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [
+      "boutique-ec24dc07094a8ed04f0d71aa0bff"
+    ],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Existing record uses cirkus.co.nz; NZ company contact is cirkus.nz. The NZ page open failed, while indexed contact and company portfolio support NZ association. cirkusanimation.com does not establish a NZ alias.",
+    "recommendation": "Existing NZ Cirkus is the likely target. The French-language Cirkus Animation site is a separate-name collision and must not be assigned to NZ Cirkus.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Blockhead",
+    "most_likely_identity": "Blockhead",
+    "aliases": [],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "nz_brand_supported_physical_branch_unconfirmed",
+    "evidence": [
+      {
+        "url": "https://www.blockheadvfx.com/about/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.blockheadvfx.com/join-us/studio-coordinator-position/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://awards.shots.net/artist/stefan-coory",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "About page emphasises Sydney; Auckland job page is undated. NZFC points to Assembly. Job/page freshness is not the date of an operating branch.",
+    "recommendation": "The official job page supports Auckland history and a 2026 industry profile names Sydney/Auckland. Prepare only a distinct company identity for review; do not map a current NZ facility or use Assembly's domain.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Lost Cosmonauts",
+    "most_likely_identity": "Lost Cosmonauts",
+    "aliases": [],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "industry_supported_current_operation_uncertain",
+    "evidence": [
+      {
+        "url": "https://www.vfxg.nz/vfxnews/wellington-trip-highlights",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://vimeo.com/745638918",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No exact current official operating-site/physical-branch verification. Unrelated space-history/music/podcast names rejected.",
+    "recommendation": "Animation relevance is supported by the guild visit and company reel. Preserve as a company intake candidate; remote/historical hiring does not establish a permanent facility.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Beyond Fun",
+    "most_likely_identity": "Beyond Fun",
+    "aliases": [],
+    "resolution": "unresolved_identity",
+    "operation_status": "unknown",
+    "evidence": [
+      {
+        "url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.beyondfunstudio.com/about-us",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Wellington showreel label versus Quebec company. Beyond Studio may be a separate NZ company; no supported alias.",
+    "recommendation": "Keep unresolved. Do not merge with Canadian Beyond Fun Studio or with Beyond Studio without specific alias evidence.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Rascal Kids",
+    "most_likely_identity": "Rascal Kids Entertainment",
+    "aliases": [
+      "Rascal Kids Entertainment"
+    ],
+    "resolution": "historical_relevance_current_operation_unresolved",
+    "operation_status": "historical_animation_evidence",
+    "evidence": [
+      {
+        "url": "https://www.wgtn.ac.nz/wfadi/about/news/news-archives/2024-news/lights-camera-actionthe-wellington-animation-film-festival-and-victoria-university-of-wellington",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://gcm.co.nz/artists/chris-ryan?type=voice",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Parenting-site homonym rejected. No own current operating website established.",
+    "recommendation": "University event reporting supports animation-industry relevance; historic representation/credits do not establish current company operation. Retain candidate, not a verified facility.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Mohawk Media",
+    "most_likely_identity": "Mohawk Media",
+    "aliases": [],
+    "resolution": "historical_relevance_current_operation_unresolved",
+    "operation_status": "source_listed_current_operation_uncertain",
+    "evidence": [
+      {
+        "url": "https://www.databook.co.nz/listing/production/mohawk-media",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "A directory/social listing is not an independently verified current facility.",
+    "recommendation": "Animation/e-learning company relevance is supported by named industry listings; current independent operation and official-site lineage remain unresolved.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Bespoke Post",
+    "most_likely_identity": "Bespoke Post",
+    "aliases": [],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.bespokepost.nz/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.bespokepost.nz/facility",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Old Auckland directory addresses conflict with current company-site Kerikeri context; address and capture capabilities are not imported.",
+    "recommendation": "Current primary site supports an audio-post company associated with Kerikeri. Prepare supporting-service intake; no old Auckland address transfer.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Franklin Rd Music & Sound",
+    "most_likely_identity": "Franklin Rd Studios",
+    "aliases": [
+      "Franklin Rd Studios",
+      "Franklin Road Rocks Limited"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.franklinrd.co.nz/about",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.franklinrd.co.nz/whatissound",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Franklin Rd Studios / Franklin Road Rocks Limited naming is supported on the company site. Prepare a supporting audio-services company proposal without treating music work as motion capture.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Jon Online",
+    "most_likely_identity": "Jon Online",
+    "aliases": [],
+    "resolution": "unresolved_identity",
+    "operation_status": "historical_listing_only",
+    "evidence": [
+      {
+        "url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Retain historical source label and investigate the actual audio business. Generic Jon/person/online results are insufficient identity evidence.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Niantic Aotearoa NZ",
+    "most_likely_identity": "Niantic Aotearoa",
+    "aliases": [
+      "Niantic Aotearoa",
+      "Niantic Aotearoa New Zealand"
+    ],
+    "resolution": "reported_nz_office_closure_review",
+    "operation_status": "historical_nz_office_closure_report",
+    "evidence": [
+      {
+        "url": "https://www.pocketgamer.biz/niantic-spatial-closes-new-zealand-office-amid-enterprise-shift/",
+        "observed_on": "2026-11-07",
+        "source_published_on": "2026-07-07",
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "article_publication_on"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "NZ office operation is distinct from registered company existence, Niantic global operation, Niantic Spatial and the separate games business.",
+    "recommendation": "July 2026 reporting concerns the NZ office of Niantic Spatial. Require human confirmation of the exact entity/office and preserve all global parent identities; no automatic deletion.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "2Up Games",
+    "most_likely_identity": "2UP Games",
+    "aliases": [
+      "2UP Games"
+    ],
+    "resolution": "historical_relevance_current_operation_unresolved",
+    "operation_status": "historic_programme_and_current_profile_not_independent",
+    "evidence": [
+      {
+        "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://kindrik.co.nz/case-studies/2up-games/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Remote-first context does not support a new physical studio. Current own-site operation is not established.",
+    "recommendation": "NZ mobile-game identity is supported historically. Old investment/profile evidence and programme years do not establish current operation or premises.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Beyond Studio",
+    "most_likely_identity": "Beyond Studio",
+    "aliases": [],
+    "resolution": "historical_relevance_current_operation_unresolved",
+    "operation_status": "own_site_placeholder_and_historical_programme",
+    "evidence": [
+      {
+        "url": "https://www.beyondstud.io/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Do not substitute the unrelated beyond.studio 3D/retail brand or Canadian Beyond Fun business.",
+    "recommendation": "The candidate remains unverified. A placeholder and historic recipient name do not resolve its present operation or its relationship to Beyond Fun.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Blind Squirrel Entertainment",
+    "most_likely_identity": "Blind Squirrel Games",
+    "aliases": [
+      "Blind Squirrel Games"
+    ],
+    "resolution": "supported_proposed_name_variant",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://blindsquirrelentertainment.com/about/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [
+      "nzcensus-54e9db1efbedc354ba3c113d8ec8"
+    ],
+    "country_or_brand_conflicts": "Global company brand versus NZ recipient/legal identity. Parent ownership and corporate-entity equivalence remain unapproved.",
+    "recommendation": "Associate this source name with the proposed NZ operating-brand reference for review. The current company source names an Auckland hub. This does not merge the global parent and NZ legal subsidiary.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Conical",
+    "most_likely_identity": "CONICAL",
+    "aliases": [
+      "CONICAL"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.conical.nz/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Official page supports NZ animation/immersive production and games. Prepare company intake; VR/AR content does not establish motion capture or a production stage.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Futureverse",
+    "most_likely_identity": "Futureverse",
+    "aliases": [],
+    "resolution": "unresolved_identity",
+    "operation_status": "historically_supported_current_scope_uncertain",
+    "evidence": [
+      {
+        "url": "https://www.callaghaninnovation.govt.nz/about-us/sir-paul-callaghan-100-report/all-companies/futureverse/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Reject similarly named apparel/AI/service firms at thefutureverse.com, future-verse.in and other unrelated domains. Corporate registration alone does not prove an operating studio.",
+    "recommendation": "Government innovation context supports a historical NZ company lead. Resolve operating subsidiaries and present production scope before intake.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Geo AR",
+    "most_likely_identity": "Geo AR Games",
+    "aliases": [
+      "Geo AR Games",
+      "Geo A.R.",
+      "Dev4Gov"
+    ],
+    "resolution": "supported_proposed_alias",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.geoar.com/privacy-policy",
+        "observed_on": "2026-11-07",
+        "source_published_on": "2026-09-09",
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "policy_updated_on"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [
+      "nzcensus-3fa8ef88e2bed6b5f11c13fd06bc"
+    ],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "The company privacy policy explicitly identifies Geo AR Games Limited trading as Geo A.R. or Dev4Gov. Link the source-name variant to the existing proposal, preserving all source rows.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Hashbane Interactive",
+    "most_likely_identity": "Hashbane",
+    "aliases": [
+      "Hashbane"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.playinstinction.com/faq",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "The official game FAQ identifies the NZ developer. Prior individual credits do not establish current company VFX/capture services or a physical facility.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Lets Play.Live",
+    "most_likely_identity": "Letsplay.Live",
+    "aliases": [
+      "Letsplay.Live"
+    ],
+    "resolution": "historical_relevance_current_operation_unresolved",
+    "operation_status": "historical_esports_evidence",
+    "evidence": [
+      {
+        "url": "https://www.nzesports.org.nz/wp-content/uploads/2023/01/NZ-Esports_2022-Annual-Report_Dec.pdf",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Historical esports broadcasting is neither game-development proof nor a confirmed capture facility.",
+    "recommendation": "A named esports/broadcast lead exists historically. Resolve current brand, website and production-service relevance before intake.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Mighty Eyes",
+    "most_likely_identity": "Mighty Eyes",
+    "aliases": [
+      "Mighty Eyes",
+      "Oddboy",
+      "M-Theory"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.mightyeyes.games/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.mightyeyes.games/news-articles/oddboy-m-theory-merge-to-become-mighty-eyes",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Current primary page supports NZ VR game development. Preserve documented Oddboy/M-Theory history as evidence, not automatic company/facility merging.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "PlaySide Studios",
+    "most_likely_identity": "PlaySide Studios",
+    "aliases": [],
+    "resolution": "supported_proposed_name_variant",
+    "operation_status": "nz_current_facility_unconfirmed",
+    "evidence": [
+      {
+        "url": "https://playsidestudios.com/about/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [
+      "gamedb-6290dc2011446ccf7755058e10b7"
+    ],
+    "proposed_match_candidates": [
+      "nzcensus-d4b4e0edebba33fd04dddece0e1e"
+    ],
+    "country_or_brand_conflicts": "Australian operating studios and remote team members do not establish a current NZ branch. No foreign address transfer or closure inference.",
+    "recommendation": "Historical NZ programme spelling can be associated with the Playside Studios NZ proposal as a research target. Current company locations name Australia; NZ premises remain unconfirmed.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Runaway Play",
+    "most_likely_identity": "Runaway",
+    "aliases": [
+      "Runaway",
+      "Runaway Play Limited"
+    ],
+    "resolution": "supported_proposed_alias",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.runawayplay.com/tos",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.nzonair.govt.nz/news/our-year-in-review-2024-2025/game-development-sector-rebate/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [
+      "nzcensus-63bb04ace0c807391ff1fc742242"
+    ],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Primary terms and agency context support Runaway / Runaway Play Limited. Link the source-name variant to the existing proposal; do not create another company or adopt a registered-office pin.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Staples Productions",
+    "most_likely_identity": "StaplesVR",
+    "aliases": [
+      "StaplesVR",
+      "Staples Productions LTD"
+    ],
+    "resolution": "supported_proposed_alias",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://www.staplesvr.com/terms-of-service",
+        "observed_on": "2026-11-07",
+        "source_published_on": "2025-01-21",
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "policy_updated_on"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [
+      "nzcensus-a9155d21cdcf3bc3680e358ba932"
+    ],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Official terms explicitly identify Staples Productions LTD trading as StaplesVR. Link the source-name variant to the existing proposal. VR training is not virtual production or capture.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Te Whare Piringa Film Studio",
+    "most_likely_identity": "Te Whare Piringa",
+    "aliases": [
+      "Te Whare Piringa"
+    ],
+    "resolution": "facility_operator_review",
+    "operation_status": "source_listed_facility_not_separate_company",
+    "evidence": [
+      {
+        "url": "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://poutama.co.nz/local-gecko-productions/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Physical rooms/stage names are not independent companies; operator legal identity and precise site remain for review.",
+    "recommendation": "Treat as a facility of the source-named Local Gecko Productions, not an additional operating company by default. Keep the separate facility dossier for human review.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Usual Suspects Studios",
+    "most_likely_identity": "Usual Suspects Studios",
+    "aliases": [],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://usualsuspects.games/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Primary page identifies a Dunedin game studio; undated page and prior release year are not independent current-operation proof. Prepare company intake.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "WhitebaitMedia",
+    "most_likely_identity": "Whitebait Media",
+    "aliases": [
+      "Whitebait Media"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_and_recent_regional_context",
+    "evidence": [
+      {
+        "url": "https://www.whitebaitmedia.com/commercial/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.whitebaitmedia.com/facilities/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.christchurchnz.com/about/news/Production-Grant-renewed",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Company pages support production, graphic/animation and post relevance; recent regional project context supports an intake candidate. Do not copy old facility dimensions or infer capture.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "Wrestler",
+    "most_likely_identity": "Wrestler Studios",
+    "aliases": [
+      "Wrestler Studios"
+    ],
+    "resolution": "qualified_company_pending_intake",
+    "operation_status": "source_self_report_unverified",
+    "evidence": [
+      {
+        "url": "https://wrestler.nz/about-us",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "No foreign address or ownership relationship is adopted.",
+    "recommendation": "Current primary page supports a production/creative company. Broader third-party VR/capture descriptions are not adopted without company/facility evidence.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  },
+  {
+    "source_name": "ZeroKing",
+    "most_likely_identity": "ZeroKing",
+    "aliases": [],
+    "resolution": "unresolved_identity",
+    "operation_status": "registered_identity_not_studio_operation",
+    "evidence": [
+      {
+        "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      },
+      {
+        "url": "https://www.companyhub.nz/companyDetails.cfm?nzbn=9429051370190",
+        "observed_on": "2026-11-07",
+        "source_published_on": null,
+        "kind": "primary_or_attributable_industry",
+        "rights": "UNSPECIFIED",
+        "source_date_basis": "unknown"
+      }
+    ],
+    "existing_match_candidates": [],
+    "proposed_match_candidates": [],
+    "country_or_brand_conflicts": "Registration is not operating-studio proof. No personal/residential register address, contacts or unverified website is published.",
+    "recommendation": "Retain the historical company lead; confirm its actual production business and own current website. A similarly named Steam game/band is not identity evidence.",
+    "human_review_needed": "Confirm current operation, operating/legal identity, source scope and any proposed intake/domain correction. No automatic merge, closure or publication.",
+    "reviewed_on": "2026-11-07",
+    "human_decision": null,
+    "human_approved": false
+  }
+]

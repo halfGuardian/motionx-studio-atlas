@@ -1,0 +1,435 @@
+{
+  "baseline_records_examined": 42239,
+  "source_observations": 217,
+  "distinct_normalised_source_names": 132,
+  "outcomes": {
+    "duplicate_observation": 46,
+    "identity_hold": 12,
+    "new_reference": 59,
+    "out_of_scope": 1,
+    "reported_nz_closure": 4,
+    "represented": 65,
+    "represented_alias": 8,
+    "unresolved": 22
+  },
+  "existing_companies_reconciled": 41,
+  "existing_record_ids_reconciled": 41,
+  "new_class_c_company_references": 59,
+  "new_map_points": 0,
+  "new_verified_capability_claims": 0,
+  "unresolved_source_name_keys": 27,
+  "reported_nz_closure_identities": 1,
+  "reported_nz_closure_name_keys": 3,
+  "independently_human_reviewed_facilities": 0,
+  "source_supported_facility_proposals": 4,
+  "human_precision": null,
+  "publication_approved": false,
+  "census_complete": false,
+  "sources": {
+    "nzfc-facilities": {
+      "name": "NZ Film Commission facilities",
+      "source_url": "https://www.nzfilm.co.nz/inbound-productions/filming-in-nz/facilities",
+      "completeness": "complete_historical_42_row_snapshot",
+      "permission": "not_established",
+      "observations": 42,
+      "outcomes": {
+        "identity_hold": 4,
+        "new_reference": 6,
+        "represented": 30,
+        "represented_alias": 2
+      },
+      "limitation": "Existing snapshot and PP/A/VFX/S/DIT codes retained. No updated complete roster or independent current-operation claim.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 42,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-auckland-digital": {
+      "name": "Screen Auckland digital/post-production",
+      "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+      "completeness": "partial_four_of_seven_pages",
+      "permission": "not_established",
+      "observations": 24,
+      "outcomes": {
+        "duplicate_observation": 4,
+        "identity_hold": 4,
+        "new_reference": 9,
+        "represented": 6,
+        "represented_alias": 1
+      },
+      "limitation": "Revisited all seven normal page URLs. Four readable pages retain 24 observations; three are inaccessible. Robots review unavailable. No origin host or alternative API used.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 24,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 3,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-wellington-showcase": {
+      "name": "Screen Wellington showcase",
+      "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+      "completeness": "nine_showcase_cards_only",
+      "permission": "not_established",
+      "observations": 9,
+      "outcomes": {
+        "new_reference": 4,
+        "out_of_scope": 1,
+        "represented": 4
+      },
+      "limitation": "Nine cards revisited; full rendered results remain 0 of 0. Not a complete business roster; no hidden API used.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 9,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-wellington-showreel": {
+      "name": "Wellington creative showreel",
+      "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+      "completeness": "complete_21_named_participants_not_directory",
+      "permission": "not_established",
+      "observations": 21,
+      "outcomes": {
+        "duplicate_observation": 1,
+        "identity_hold": 4,
+        "new_reference": 6,
+        "reported_nz_closure": 1,
+        "represented": 5,
+        "represented_alias": 3,
+        "unresolved": 1
+      },
+      "limitation": "Historical showreel membership is not current-operation or facility evidence.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 21,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-otago-southland-selected": {
+      "name": "Film Otago Southland historical selections",
+      "source_url": "https://www.filmotagosouthland.com/production-support/industry-directory",
+      "completeness": "two_legacy_selections_only",
+      "permission": "commercial_reuse_restricted",
+      "observations": 2,
+      "outcomes": {
+        "new_reference": 2
+      },
+      "limitation": "Existing two Wave 1 entries preserved as history. Newly reviewed terms prohibit commercial reproduction/caching. New roster intake stopped; no newly retrieved roster projection imported. Early page views also changed ordering and cannot substantiate a complete snapshot. Raw newly retrieved roster text was redacted from scratch caches after policy review; hashes retained. Company research proceeds only from independent permitted sources or user-prioritised company websites.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 2,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": false,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 1,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "nzonair-gdsr": {
+      "name": "NZ On Air GDSR published recipients",
+      "source_url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "completeness": "complete_published_2024_2026_sections",
+      "permission": "accurate_attributed_reproduction_permitted",
+      "observations": 116,
+      "outcomes": {
+        "duplicate_observation": 41,
+        "new_reference": 32,
+        "reported_nz_closure": 3,
+        "represented": 19,
+        "represented_alias": 2,
+        "unresolved": 19
+      },
+      "limitation": "43 names in 2026, 40 in 2025, 33 in 2024. Preserve periods and source/copyright acknowledgement; do not use misleadingly. Grant does not cover third-party photos/videos or third-party company sources. No financial figures, bands, contacts or authored descriptions projected. Programme eligibility does not establish present operation or a physical facility.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 116,
+        "expected_rows": 116,
+        "declared_complete": true,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Coherent published programme sections, 43/40/33; minimal attributed name/year projection."
+      },
+      "eligible_complete_reusable_snapshot": true
+    },
+    "screen-canterbury": {
+      "name": "Screen CanterburyNZ",
+      "source_url": "https://www.christchurchnz.com/business/screen-canterburynz",
+      "completeness": "landing_page_and_selected_public_announcements",
+      "permission": "not_established",
+      "observations": 2,
+      "outcomes": {
+        "represented": 1,
+        "unresolved": 1
+      },
+      "limitation": "Regional landing page assessed; no complete local vendor directory enumerated. Kōawa already exists and must not be recreated. Selected facility/company evidence requires separate review.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 2,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-bay-of-plenty": {
+      "name": "Film Bay of Plenty studio feature",
+      "source_url": "https://filmbayofplenty.com/why-film-in-the-bay-of-plenty/film-studios-production-hubs/",
+      "completeness": "one_featured_facility_not_full_directory",
+      "permission": "not_established",
+      "observations": 1,
+      "outcomes": {
+        "unresolved": 1
+      },
+      "limitation": "Te Whare Piringa by Local Gecko Productions in Rotorua is a source-listed facility. Multiple rooms are not automatically separate companies or verified map locations.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 1,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "waikato-screen": {
+      "name": "Waikato Screen directory",
+      "source_url": "https://www.waikatoscreen.nz/waikato-film-directory/",
+      "completeness": "permission_pending_no_roster_projection",
+      "permission": "written_consent_required",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Terms require written consent to copy/reproduce content. Directory and terms assessed; zero new roster entries collected for publication. No collector enabled.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-queenstown-lakes": {
+      "name": "Film Queenstown Lakes",
+      "source_url": "https://www.qldc.govt.nz/community/economic-development/film",
+      "completeness": "regional_referral_not_separate_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Official regional page assessed. Its linked Otago/Southland directory retains its own commercial-use restrictions; not a separately cleared list.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-dunedin": {
+      "name": "Film Dunedin",
+      "source_url": "https://www.dunedinnz.com/screen",
+      "completeness": "regional_landing_page_not_enumerated_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Official regional page assessed; no independently cleared complete roster obtained.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-hawkes-bay": {
+      "name": "Screen Hawke’s Bay",
+      "source_url": "https://screenhawkesbay.co.nz/",
+      "completeness": "inaccessible_no_enumeration",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Published RFONZ link not accessible through the page tool. No closure or absence inferred.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-northland": {
+      "name": "Screen Northland",
+      "source_url": "https://www.filmoffices.nz/",
+      "completeness": "social_contact_referral_no_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "RFONZ lists a social contact link; no authoritative complete business roster acquired.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-taranaki": {
+      "name": "Venture Taranaki film office",
+      "source_url": "https://www.venture.org.nz/sector-development/film-and-screen",
+      "completeness": "regional_support_page_no_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Regional support page reviewed; no complete vendor list claimed.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "film-whanganui": {
+      "name": "Film Whanganui",
+      "source_url": "https://www.filmwhanganui.nz/",
+      "completeness": "filming_guidelines_no_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Public page is filming guidance; no company roster enumerated.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "screen-marlborough": {
+      "name": "Screen Marlborough",
+      "source_url": "https://marlboroughnz.com/screen-marlborough/",
+      "completeness": "regional_landing_page_no_roster",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Regional filming-support page reviewed; no company roster enumerated.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "nzgda": {
+      "name": "NZ Game Developers Association",
+      "source_url": "https://www.nzgda.com/studio-partner",
+      "completeness": "no_text_roster_enumerated",
+      "permission": "not_established",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Studios & Partners page returned a heading without an enumerable text list. No complete membership claim; no member login, image/OCR or embedded alternate-host extraction used. NZ On Air is a different explicitly attributed source, not a reconstructed NZGDA roster.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    },
+    "vfxg-nz": {
+      "name": "VFX Professionals Guild NZ 45-business list",
+      "source_url": "https://www.vfxg.nz/",
+      "completeness": "not_obtained_permission_pending",
+      "permission": "permission_pending",
+      "observations": 0,
+      "outcomes": {},
+      "limitation": "Actual 45-company list not obtained. No email sent, collection workaround, reconstructed roster or claim of coverage.",
+      "reviewed_on": "2026-11-07",
+      "enumeration_audit": {
+        "enumerated_rows": 0,
+        "expected_rows": null,
+        "declared_complete": false,
+        "stable_snapshot": true,
+        "unavailable_pages": 0,
+        "overlap_conflicts": 0,
+        "basis": "Historical/partial/selected observation scope only. Full authoritative current reusable roster is not established."
+      },
+      "eligible_complete_reusable_snapshot": false
+    }
+  },
+  "limitations": [
+    "All additions are provisional company references, not verified active physical studios.",
+    "Four Auckland pages are partial coverage; Wellington full directory remains unavailable.",
+    "Otago/Southland commercial reuse and Waikato written-consent restrictions stop new roster projection.",
+    "VFXG 45-business list remains unobtained; no roster reconstruction or email outreach.",
+    "116 permitted government rows span three programme years; neither eligibility nor presence proves present operation.",
+    "No human precision/facility review or source-wide rights approval is fabricated."
+  ]
+}

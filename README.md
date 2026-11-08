@@ -1,10 +1,28 @@
-# Visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
+# MotionX Studio Atlas v1.5 — Final quality gate (draft PR #15)
+
+**READY FOR HUMAN REVIEW.** The [final maintainer dashboard](data/nz-census/final-review/reports/dashboard.html) reviews every one of the 59 original proposals, all 27 identity keys, a separate Niantic NZ-office alert and four facility dossiers. It offers 91 evidence-backed working items with blank decisions and no automatic approval. [Publication scope, source rights and remaining questions](data/nz-census/final-review/README.md).
+
+The proposed directory contains **42,296 references**: all **42,239 original IDs** plus **57 Class C company leads**. Melodics and the unresolved “Level” identity stay staged and auditable. Relevance across the original 59: **6 MotionX core / 8 adjacent production / 33 game development / 11 supporting / 1 outside demonstrated scope**. Insight Creative is classified as game-production/playtesting support, not an inferred game developer. There are **zero new pins or verified capabilities**; the root database remains 243 locations / 119 operating organisations.
+
+Thirty included identities use the scoped agency factual-source permission; 27 use the existing minimal-factual-reference model with wider source terms unresolved and maintainer scope review required. Public profiles and CSV distinguish company assertions, source-only geography and review status. Source-wide rights, independent operation and facility verification are not fabricated. The two staged records are excluded from directory search/export but retained in the review history; this public repository is not private storage.
+
+The original 29-entry NZ and 37-row Annecy human worksheets remain unchanged. This release requires manual review of the exact draft PR; tests and worksheet clicks are not approval. [Validation results](data/nz-census/final-review/validation.md). **Do not merge or deploy automatically.**
+
+# Historical d0cd0a5 — New Zealand census continuation
+
+**42,298 unified reference records**, preserving all 42,239 previous IDs and evidence. This proposal adds **59 Class C company references**, **zero map pins** and **zero verified capability claims**. The retained database remains 243 locations / 119 operating organisations; the combined catalogue includes overlapping source observations and 1,679 company-only references. It is not 42,298 verified operating studios.
+
+The [NZ coverage dashboard](data/nz-census/reports/coverage.html) reconciles **217 observations**, including all 98 frozen Wave 1 rows and 116 permitted NZ On Air programme-year observations, against the entire previous catalogue. It identifies **41 existing company identities**, 59 proposed references and **27 unresolved source-name identities**. One reported NZ office closure identity is a review alert, not an automatic deletion. Four facility-evidence proposals remain separate and unapproved. The census is **incomplete**: Auckland and Wellington rosters are partial; Otago/Southland and Waikato have reuse restrictions; NZGDA enumeration and the VFXG 45-business list remain unavailable/pending.
+
+[Source-by-source scope, research decisions and permission limits](data/nz-census/README.md) · [Complete reconciliation CSV](data/nz-census/reports/reconciliation.csv) · [Pending human review](data/nz-census/reports/human-review.json) · [Validation results](data/nz-census/validation.md). Run `python tools/nz_research.py check` for deterministic reconciliation, proposal, checkpoint and immutable-history checks. Actions uploads the complete review artifact. No restricted collector is enabled; human review of this draft PR and source rights is required before merge. Tests do not authorise publication.
+
+# Historical visibility follow-up (v1.3 catalogue, v1.4 source-coverage review)
 
 The Atlas now makes **company references without map pins** visible as an explicit number on the map and offers a direct directory shortcut. **All 42 New Zealand Film Commission facilities-directory entries** are accessible through a [source-to-Atlas reconciliation page](data/boutique/reports/nzfc-coverage.html), including nine exclusions and the held Blockhead/Assembly identity. 27 new and three cross-source reconciled references, plus two previously existing identities, account for 32 represented records; **representation is not verified physical coverage**. The historical NZFC Wētā FX source is linked to Wellington in this new report, not an overseas branch.
 
 The [source coverage contract and outstanding discovery gaps](data/coverage/README.md) distinguish data acquisition, searchable identities, verified geography, rights and user-visible coverage. No new facilities, coordinates or capture-stage claims are created; the Annecy v1.3 human precision worksheet remains pending. The v1.2/v1.3 hash-bound research records and source policy remain unchanged.
 
-# MotionX Studio Atlas v1.3 — Annecy Boutique Studio Coverage
+# Historical v1.3 — Annecy Boutique Studio Coverage
 
 **One unified atlas: 42,239 reference records.** This proposal adds **172 Class C company references** from Annecy research and preserves all **42,067 existing IDs**, the 243 retained locations, all original coordinates and all prior evidence shards. Totals are **A 230 / B 4,626 / C 37,383**, with **178 countries/territories** and **119 retained operating organisations**. Source observations and provisional company identities overlap; these are not 42,239 verified studio locations.
 

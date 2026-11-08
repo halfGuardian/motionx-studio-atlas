@@ -1,0 +1,42 @@
+[
+  {
+    "suite": "browser_smoke",
+    "exit_code": 1,
+    "seconds": 73.51
+  },
+  {
+    "suite": "bulk_browser",
+    "exit_code": 0,
+    "seconds": 17.95
+  },
+  {
+    "suite": "public_catalog_smoke",
+    "exit_code": 0,
+    "seconds": 39.33
+  },
+  {
+    "suite": "unified_ux",
+    "exit_code": 0,
+    "seconds": 13.78
+  },
+  {
+    "suite": "boutique_browser",
+    "exit_code": 0,
+    "seconds": 9.41
+  },
+  {
+    "suite": "annecy_browser",
+    "exit_code": 0,
+    "seconds": 6.97
+  },
+  {
+    "suite": "nz_census_browser",
+    "exit_code": 0,
+    "seconds": 4.72
+  },
+  {
+    "suite": "nz_quality_browser",
+    "exit_code": 1,
+    "seconds": 4.59
+  }
+]

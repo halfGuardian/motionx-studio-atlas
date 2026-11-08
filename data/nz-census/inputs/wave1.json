@@ -1,0 +1,644 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-07",
+  "scope": "New Zealand, bounded public source-led discovery; no new catalogue identities or geocodes automatically created",
+  "source_wide_license": "UNSPECIFIED",
+  "sources": [
+    {
+      "id": "screen-auckland-digital",
+      "name": "Screen Auckland digital & post-production",
+      "url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+      "completeness": "partial",
+      "detail": "Pages 0,1,3,6 were readable; pages 2,4,5 were not retrieved and are not claimed absent.",
+      "observed_pages": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "unobserved_pages": [
+        2,
+        4,
+        5
+      ],
+      "observed_records": 24,
+      "records": [
+        {
+          "id": "akl-001",
+          "name": "Albedo VFX",
+          "labels": [
+            "Picture post",
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://albedovfx.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-002",
+          "name": "Assembly",
+          "labels": [
+            "Picture post",
+            "VFX",
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://www.assemblyltd.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-003",
+          "name": "Big Picture",
+          "labels": [
+            "VFX",
+            "VP / AR / VR"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://www.bigpicture.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-004",
+          "name": "Blockhead",
+          "labels": [
+            "Picture post",
+            "VFX",
+            "VP / AR / VR"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://blockheadvfx.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-005",
+          "name": "Cause and FX",
+          "labels": [
+            "Picture post",
+            "VFX",
+            "VP / AR / VR"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://causeandfx.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-006",
+          "name": "Cirkus",
+          "labels": [
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production",
+          "site_url": "https://www.cirkus.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-007",
+          "name": "Creature Post",
+          "labels": [
+            "VFX",
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://creaturepost.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-008",
+          "name": "Department of Post",
+          "labels": [
+            "Picture post",
+            "Sound Post",
+            "VFX",
+            "DIT"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://departmentofpost.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-009",
+          "name": "Eleven FX",
+          "labels": [
+            "Picture post",
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://www.elevenfx.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-010",
+          "name": "Envy Studios",
+          "labels": [
+            "Picture post",
+            "Sound Post"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://envystudios.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-011",
+          "name": "Evoke Audio",
+          "labels": [
+            "Sound Post"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://www.evokeaudio.xyz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-012",
+          "name": "Fathom",
+          "labels": [
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+          "site_url": "https://fathomvfx.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-013",
+          "name": "Inside Track",
+          "labels": [
+            "Sound Post"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://www.insidetrack.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-014",
+          "name": "Lets Play.Live",
+          "labels": [
+            "Gaming"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://www.letsplay.live/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-015",
+          "name": "Mandy VFX",
+          "labels": [
+            "Picture post",
+            "Sound Post",
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://www.mandyvfx.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-016",
+          "name": "Masters of Reality",
+          "labels": [
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://morvfx.com/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-017",
+          "name": "Method",
+          "labels": [
+            "VFX",
+            "VP / AR / VR",
+            "Animation",
+            "Gaming"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://www.method.digital/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-018",
+          "name": "Metia",
+          "labels": [
+            "Gaming"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+          "site_url": "https://www.metia.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-019",
+          "name": "The Machine Room",
+          "labels": [
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://www.themachineroom.co/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-020",
+          "name": "The Rebel Fleet",
+          "labels": [
+            "Picture post",
+            "VFX"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://rebelfleet.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-021",
+          "name": "The Rig",
+          "labels": [
+            "VP / AR / VR",
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://www.therig.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-022",
+          "name": "The Sound Room",
+          "labels": [
+            "Sound Post"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://thesoundroom.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-023",
+          "name": "Toybox",
+          "labels": [
+            "Picture post",
+            "VFX",
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://www.toybox.co.nz/",
+          "location_claim": "Auckland region; listing only"
+        },
+        {
+          "id": "akl-024",
+          "name": "Yuk Foo",
+          "labels": [
+            "Animation"
+          ],
+          "source_url": "https://www.screenauckland.com/choose-auckland/digital-post-production?page=6",
+          "site_url": "https://www.yukfoo.net/",
+          "location_claim": "Auckland region; listing only"
+        }
+      ]
+    },
+    {
+      "id": "screen-wellington-showcase",
+      "name": "Screen Wellington directory showcase",
+      "url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+      "completeness": "showcase_only",
+      "detail": "All nine visible showcase cards recorded; dynamic underlying directory returned 0/0 and was not enumerated.",
+      "observed_records": 9,
+      "records": [
+        {
+          "id": "wds-001",
+          "name": "Undercover Media",
+          "labels": [
+            "VFX"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/undercover-media",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-002",
+          "name": "Lane Street Studios",
+          "labels": [
+            "Sound stage"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-003",
+          "name": "Avalon Studios",
+          "labels": [
+            "Sound stage"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/avalon-studios",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-004",
+          "name": "Wētā FX",
+          "labels": [
+            "VFX",
+            "Animation"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/weta-fx",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-005",
+          "name": "Park Road Post Production",
+          "labels": [
+            "Post-production",
+            "VFX"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/park-road-post-production",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-006",
+          "name": "Portsmouth Film Equipment Rental",
+          "labels": [
+            "Equipment rental"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/portsmouth-film-equipment-rental",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-007",
+          "name": "Stone Street Studios",
+          "labels": [
+            "Sound stage"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/stone-street-studios",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-008",
+          "name": "POW Studios",
+          "labels": [
+            "Post-production"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/pow-studios",
+          "location_claim": "Wellington region; showcase listing only"
+        },
+        {
+          "id": "wds-009",
+          "name": "Wētā Workshop",
+          "labels": [
+            "Practical effects",
+            "Props"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory",
+          "detail_url": "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/weta-workshop",
+          "location_claim": "Wellington region; showcase listing only"
+        }
+      ]
+    },
+    {
+      "id": "screen-wellington-showreel",
+      "name": "Screen Wellington 'Why Wellington' 2026 creative showreel company names",
+      "url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+      "completeness": "complete_named_showreel_not_directory",
+      "detail": "All 21 names explicitly identified as participants in a creative-tech showreel, not independent verification of their full business services or facilities.",
+      "observed_records": 21,
+      "records": [
+        {
+          "id": "wwh-001",
+          "name": "37Degrees Studio",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-002",
+          "name": "808 Ltd",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-003",
+          "name": "A44",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-004",
+          "name": "Beyond Fun",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-005",
+          "name": "Big Adventure",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-006",
+          "name": "Dinosaur Polo Club",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-007",
+          "name": "Floating Rock",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-008",
+          "name": "Fox & Co",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-009",
+          "name": "Lost Cosmonauts",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-010",
+          "name": "Mohawk Media",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-011",
+          "name": "Niantic Aotearoa NZ",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-012",
+          "name": "PikPok",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-013",
+          "name": "Rascal Kids",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-014",
+          "name": "Resn",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-015",
+          "name": "RiffRaff Games",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-016",
+          "name": "Stormcloak Games",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-017",
+          "name": "Storybox",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-018",
+          "name": "Wētā FX",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-019",
+          "name": "Wētā Workshop",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-020",
+          "name": "Wildboy Studios",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        },
+        {
+          "id": "wwh-021",
+          "name": "Wrestler",
+          "labels": [
+            "Showreel participant; specific service not established"
+          ],
+          "source_url": "https://www.wellingtonnz.com/screen-wellington/why-wellington",
+          "location_claim": "Wellington regional creative-tech showcase; branch/location not verified"
+        }
+      ]
+    },
+    {
+      "id": "film-otago-southland-selected",
+      "name": "Film Otago Southland selected post/VFX/mocap directory records",
+      "url": "https://www.filmotagosouthland.com/production-support/industry-directory",
+      "completeness": "partial_selected_only",
+      "detail": "Two linked, relevant company entries observed; full mixed crew/services directory has not been enumerated.",
+      "observed_records": 2,
+      "records": [
+        {
+          "id": "ota-001",
+          "name": "Graphic Monk Ltd",
+          "labels": [
+            "Editing",
+            "VFX",
+            "Motion Capture",
+            "Virtual Production"
+          ],
+          "source_url": "https://www.filmotagosouthland.com/production-support/industry-directory/graphic-monk-ltd",
+          "location_claim": "Otago/Southland region; branch/location requires review"
+        },
+        {
+          "id": "ota-002",
+          "name": "Shotover Media Ltd",
+          "labels": [
+            "Post-production",
+            "Motion Graphics",
+            "Animation"
+          ],
+          "source_url": "https://www.filmotagosouthland.com/production-support/industry-directory/shotover-media-ltd",
+          "location_claim": "Otago/Southland region; branch/location requires review"
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "publication_approved": false,
+    "independently_verified_operating_status": false,
+    "geocodes_created": 0,
+    "facility_capabilities_verified": 0,
+    "license_terms": "UNSPECIFIED",
+    "allowed_use": "Minimal factual source citations with classification flags; no source prose or private contacts ingested."
+  },
+  "scope_limits": [
+    "Screen Auckland pages 2,4,5 unobserved; its source is partial, not complete.",
+    "Screen Wellington 9-card showcase is not the full dynamic directory.",
+    "Screen Wellington showreel contains gaming and creative-tech brands; inclusion is not evidence of VFX or capture services.",
+    "Otago source contains many non-studio suppliers and individuals; only two scoped leads are included.",
+    "NZFC prior 42-row snapshot remains separate and is reused for cumulative cross-source matching.",
+    "Names may overlap across lists; this is not a count of distinct operating companies.",
+    "No source-wide reuse grant or current physical-facility certification is asserted."
+  ]
+}

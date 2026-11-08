@@ -319,7 +319,8 @@ def main():
             body=json.dumps(records)
             page.route('**/studios.json', lambda route: route.fulfill(content_type='application/json', body=body))
             start=time.monotonic();page.goto(url,wait_until='domcontentloaded')
-            expect(page.locator('#count')).to_have_text('50000 locations',timeout=30000)
+            try:expect(page.locator('#count')).to_have_text('50000 locations',timeout=30000)
+            except AssertionError as error:raise AssertionError('50,000 fixture load failed: '+page.locator('#dataStatus').inner_text()) from error
             initial=time.monotonic()-start
             assert page.locator('.entry').count()==50
             assert page.evaluate('layer.getLayers().length')<2000

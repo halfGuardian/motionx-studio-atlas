@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "catalogue_sha256": "c5344dd1c32514d97b6d3932a048fee49363efa91fdf856a7974977d4512aa98",
+  "catalogue_sha256": "49a186d01163aceefa05aead2c0609a1ced819c5e54ff4560830c2abf8a625c8",
   "baseline_sha256": "ae9930e0ec522812c6bc189efc4b5beac48e781e6e60f8164172755e1259b4f4",
   "approval_granted": false,
   "columns": [
@@ -20,8 +20,44 @@
     "8": "source permission review",
     "16": "no confirmed facility capabilities"
   },
-  "records": 42009,
+  "records": 42066,
   "entries": [
+    [
+      "nzcensus-20706d6f67cff76e1c77ff435c38",
+      "C",
+      29,
+      "14d3bdf3474f665ba7ed019a25acb985e6e6dc167d2c6a806a3cd791a444d2f4",
+      "New Zealand",
+      "2026-11-07",
+      "https://ct-group.com/aus/about/",
+      [
+        "overture-cac92493-e3e2-42ec-b45b-7dfc98a9de1d"
+      ]
+    ],
+    [
+      "nzcensus-60d251f7537d167a602b230317b6",
+      "C",
+      29,
+      "157e3bc99276fadd7dd4d6a45337d33c39b5e7c4c2b0798a0823331e0117a1cc",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.stonestreetstudios.co.nz/",
+      [
+        "overture-ff3d0412-48b0-4953-a25a-9c2a4ac72805"
+      ]
+    ],
+    [
+      "nzcensus-dec24c3fdeb15bf105f8558654ad",
+      "C",
+      29,
+      "f9bad14183cc64516af865c20d223c02f6c17b6cbe0c46267bdb24937afe22fd",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.assemblyltd.com/info",
+      [
+        "overture-350c6159-0f1f-48a9-b28d-95613677aa12"
+      ]
+    ],
     [
       "overture-80bfd555-f63c-4cf6-9076-a1eb89f91590",
       "C",
@@ -8437,6 +8473,246 @@
       "New Zealand",
       "2026-11-06",
       "https://github.com/EddieWing/gamedev-studios-db/blob/2ed3b6c1dbf38085ecc7053bb1ef00c27bb9183d/data/companies.csv",
+      []
+    ],
+    [
+      "nzcensus-1238fc887e8013b884ea4e5ef08a",
+      "C",
+      28,
+      "57f50ab60cac23f45fd07d6c3829446ad6bc4691fb620f6b7a5106fc50725c5c",
+      "New Zealand",
+      "2026-11-07",
+      "https://insidetrack.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-31e58cea08f3c9a8b92908bde402",
+      "C",
+      28,
+      "976043665e157bfa6b5a3b6eb4c98f7f216c450a6adfd8822d9547f69a211acb",
+      "New Zealand",
+      "2026-11-07",
+      "https://resn.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-32a6280b74c7c3d9c52a039fae43",
+      "C",
+      28,
+      "1ff6373b00758064952e90f92e933d5d23fed2d1f9ca502e664646ac3a7524bc",
+      "New Zealand",
+      "2026-11-07",
+      "https://graphicmonk.com/film-tv/",
+      []
+    ],
+    [
+      "nzcensus-3ff213615622f447b658a2de5575",
+      "C",
+      28,
+      "d4307630ae723db925cb94019ba7556777e318a0045c06f7d05d6d0732d4d5fb",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.rebelfleet.co.nz/our-work/",
+      []
+    ],
+    [
+      "nzcensus-400a26d0643f74a8e0e3c0d2719a",
+      "C",
+      28,
+      "06ee250a0a3ed994be62b3095f3877befce72e9c7808d73085c044323425e813",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-41ce06b48628e15d2dbd71958e65",
+      "C",
+      28,
+      "7efe27919a1fa082be45e021c949c2cb0af508b981820c6fb03470c0fa361da9",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.pinnaclepost.co.nz/about",
+      []
+    ],
+    [
+      "nzcensus-44c9273033c798a6bc2839e55092",
+      "C",
+      28,
+      "23a36ade0adc3c80482c9db6bd992401d32ac2a803ccd776fb921e07ed3bfa29",
+      "New Zealand",
+      "2026-11-07",
+      "https://therig.co.nz/about",
+      []
+    ],
+    [
+      "nzcensus-52749b168c44aa1c71ba5b289af2",
+      "C",
+      28,
+      "6c04aabae40cf04e7813159a0524342355051b1fdca9140d08bd2077452d5348",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.screenauckland.com/choose-auckland/digital-post-production?page=1",
+      []
+    ],
+    [
+      "nzcensus-5da0eb8be2c155c348ef9e9fefcf",
+      "C",
+      28,
+      "5da68ab723de342a5beb50a29eb61a7393d5368260ddd19a822b263054fdd58c",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nativeaudio.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-6555982e90d64a7764473f0d6967",
+      "C",
+      28,
+      "b8cd16674e4ac1249041b8948aa64ae6765d5f0936c7773a3219b9b1caaa8eca",
+      "New Zealand",
+      "2026-11-07",
+      "https://envystudios.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-7265abd074266f83c203163f56d8",
+      "C",
+      28,
+      "0bdcec246c6fee9ff90a81eced2f10b9636f8d0cde935ded305723dfd9f70dab",
+      "New Zealand",
+      "2026-11-07",
+      "https://avalonstudios.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-77c2efd65dbb53aa89054e447ac9",
+      "C",
+      28,
+      "46c38478971082cc81508dae33fb84e56adfc8a079be60ca19049bda4a7f5aec",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.elevenfx.com/",
+      []
+    ],
+    [
+      "nzcensus-8e4a1fd9c3266bb9062edefa3959",
+      "C",
+      28,
+      "566be3b68c39645fabe5931050060658bdd6f5747154f66f3bba373b4c3efc03",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.storybox.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-973561725e8ebcc0a43e79e2fcf7",
+      "C",
+      28,
+      "299723d09fce3c16a0596473c6cc3625f58035aa98846521bc669d7bd01e8a52",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.bigadventure.games/press",
+      []
+    ],
+    [
+      "nzcensus-9a821f956d10336fe89dae1df1fc",
+      "C",
+      28,
+      "2ffa3d511aa5501c50d7e31ba0d3ab600b60ea6b5eceab6cd011a9f4fdd80699",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.screenauckland.com/choose-auckland/digital-post-production?page=3",
+      []
+    ],
+    [
+      "nzcensus-9c51b727be3254ae5ba713b74d80",
+      "C",
+      28,
+      "828134f59211460845c980ec51bdab73527aa6900b397db1dd9a0b33b44b9b5c",
+      "New Zealand",
+      "2026-11-07",
+      "https://stormcloak.games/about",
+      []
+    ],
+    [
+      "nzcensus-a574603da74bca72ee54c088614e",
+      "C",
+      28,
+      "45971848274f5c803a4f90946460b34a4f0b843019cb667cc35a3108983bb7a0",
+      "New Zealand",
+      "2026-11-07",
+      "https://thesoundroom.co.nz/whatwedo",
+      []
+    ],
+    [
+      "nzcensus-ad47dfef37d00ab385b2b72259da",
+      "C",
+      28,
+      "b8c60146116a4cfe1e52b161882cc5685cda494120d3696baecf3d12deba75b2",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.mandyvfx.co.nz/about",
+      []
+    ],
+    [
+      "nzcensus-cce76fcdb59d86ae15af600ed145",
+      "C",
+      28,
+      "eaa75be3a9c3c4985cdc3aa473228c652a2648e6f3d86514d8ddef9c98dff2c3",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.wellingtonnz.com/screen-wellington/screen-industry-directory/lane-street-studios",
+      []
+    ],
+    [
+      "nzcensus-ce773c779d2a3d1b1542e9c020d0",
+      "C",
+      28,
+      "6d5189075007897f2d052b5974144fcfe82452b5b397c37558f5a65777f55c6a",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.wildboystudios.com/",
+      []
+    ],
+    [
+      "nzcensus-d42204a462e2b37344d6e21baaba",
+      "C",
+      28,
+      "0265321ae3b4694d0a80808c9a4f0b30873d9a3725dc304300d3296bbfc7f144",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.metia.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-daa99cb2d690ae3de58ec024a087",
+      "C",
+      28,
+      "cbbde8b94832a4df79de4a8052a66d21350be6c81397e6aef8c6430d9d59b100",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.wetaworkshop.com/about-us",
+      []
+    ],
+    [
+      "nzcensus-f5545ca7231e7d7d9c5bcc70450e",
+      "C",
+      28,
+      "bfa34349c935bbfc983ddba109d911961a7a268f6c2782bbb98613d318a6599a",
+      "New Zealand",
+      "2026-11-07",
+      "https://shotovercreative.co.nz/",
+      []
+    ],
+    [
+      "nzcensus-f8497e96b5d469806c5f29f0374a",
+      "C",
+      28,
+      "dbcfa331012e613dc4ba50f997ac4316b2748321a82a8729b339eef3730e9214",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.creaturepost.co.nz/team",
       []
     ],
     [
@@ -258147,6 +258423,306 @@
       "New Zealand",
       "2026-11-06",
       "https://themotionarcade.com/",
+      []
+    ],
+    [
+      "nzcensus-069cbef46e8c8acd75992329c23c",
+      "C",
+      20,
+      "ac3785e18d045cd4aa1943e7e0d727fde4de81d5ac8d403985635f9253d44d59",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-29d9f8b732ba385ad93d452110c1",
+      "C",
+      20,
+      "3fd58b3121480329333ad105c0c7d3a7405c2cbfaa0c0f0a0cbbda63bbeecbf8",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-2c2981291fcd536437456e65771f",
+      "C",
+      20,
+      "7382260ac79a770fc87262b050da934f290e46ca67cb544dac7f7cf77505e0c3",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-3ccc625c6c8189abf9add9c82554",
+      "C",
+      20,
+      "39a7999110d057c73ac43cd304996c83f0d0ad7c80b0bd81242f3110f9e375f3",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-3fa8ef88e2bed6b5f11c13fd06bc",
+      "C",
+      20,
+      "68a24dd18e6c22bd198aedf39c0f46bcef580fef1cb685b805eda2be8b0d9e2c",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-47572ff7caffe82e110261930eb5",
+      "C",
+      20,
+      "26452dd1f60465e3cbc57f33a9f48182bd177e2b4e497ac6d34bea08741208e9",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-499bd904d796b7e7a2f2ea513789",
+      "C",
+      20,
+      "9ca52c60266b2a83d4a0c41d0f63f52856f4d09526a285d716ef8b0cab0ea0f7",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-54e9db1efbedc354ba3c113d8ec8",
+      "C",
+      20,
+      "ee1ab564899ae541251853e651fbbfd3c2220a37cc11f8d46cfd141c6a1fc033",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-5daa291ec025db1e4c6d6e056433",
+      "C",
+      20,
+      "6a814d09ced572a7ce68376eebf9caa3f0498d64d45ac10c3b6fca2a0a7a0b80",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-6042f25a42fc6b02263a3d82ed48",
+      "C",
+      20,
+      "3f75a2252d7c340f8ee0b069ef46dfdf7b3ccb8cdf73e14f28b01a25f52a86cc",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-63bb04ace0c807391ff1fc742242",
+      "C",
+      20,
+      "744db9dc93f1ce05f64ef6b1c4a1dc7eee026ee7ea2797c743a4c5edfd79cee4",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-66cb4fb559bcdd94a492d5de154a",
+      "C",
+      20,
+      "d4e103ff58c36c93ac5f4dc0a428b1f5ec1ff6ec6defe855403ca635f3e57160",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-6eaef58907f6f810bbe9e5542068",
+      "C",
+      20,
+      "a13cbe1cd837a80d06db25d96f94d6c4b7ec3db8933cde97504f9a6b78f8069f",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-71538a5f6d6f8ac950f3ee9689d9",
+      "C",
+      20,
+      "32d5dcb5eb735593a80570b3bac6c0810d702aacb55f4b135309594986e9444e",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-7dd240119cb25e9fd7cb3dc765ad",
+      "C",
+      20,
+      "d6cd76daf8e0a3bc125e3f9f012be00e23b82c3d3302b5fde19355d347aa14fa",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-8686d582eefb945fafbf6496693b",
+      "C",
+      20,
+      "cf067e7c483c23411d3ab4c872f7480807fa11d2cc7105942faa6fca046eca23",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-a37aab97a0ffabc94436f851edfc",
+      "C",
+      20,
+      "536d41354ae02158086788854ba4b4ccd3ab39eda227a7a9720e8fa09d1793ff",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-a9155d21cdcf3bc3680e358ba932",
+      "C",
+      20,
+      "48d8fa1b0f9fa697302e6daceafb310d711a5c0a306b41e8bb494069b02bace2",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-a9ccc67f1354fe44f5fe731e6e7b",
+      "C",
+      20,
+      "5cc79371920e9c43abaf47b1beb313fd870fd8dbabeee1a426316b10b30749a6",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-b7798cf7ed5ff60bcb0c93e8dfb2",
+      "C",
+      20,
+      "8d819bd7015881bd8e23f14f8c289d8cf41b573839948c18678d69c5f20c3ae8",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-bc14e52be23bf4b472c0e7aa30bb",
+      "C",
+      20,
+      "b1febb1a329ef67d00ac2814e1ba4a5d42342cd5a7d4c5bd98651927f8d8ea82",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-c4aa53c17bbad24b54c25bdd861d",
+      "C",
+      20,
+      "f3bf7c2a9ff1440d925eb48e5207a52e7c3e94dfe11cefadba1d66c4af273a84",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-ce717c0c03bd5b3f4ae9cd32e665",
+      "C",
+      20,
+      "8d5956b4ce36adf9490ef9a032f5d541d1f3bbfd0a5a012d90dbd80d79837293",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-d263ca585957ea52be9356a5664c",
+      "C",
+      20,
+      "3db6ea93c4a0addfff517b4716b9fba03aecc2aeeaf63e0090f8e829995d2dbf",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-d2e2bf8ce1d54b90619ed6026281",
+      "C",
+      20,
+      "71a24677de2af1cd5e79e7179f372474883c430095b862b9dc78ba3b08260967",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-d4a302ab7472940fab5b8d71693b",
+      "C",
+      20,
+      "675759a208621e602398ad602d61bab67cd7af06892dae93f8f3054b12bc2eac",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-d4b4e0edebba33fd04dddece0e1e",
+      "C",
+      20,
+      "13bf9cc42076ba2bd6f56824e8be8fc01c9669f43104c5ce39a72d244af766a2",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-e3d06919b7673794894610e2570c",
+      "C",
+      20,
+      "c05bfd2ed35967cebf57901a69ab9832a59df9d04f224918ce1296f1ddd5d2b6",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-f3191ba34b59bb2baade29ae1a37",
+      "C",
+      20,
+      "2dde56afd1bebb39edc5aa8b317b9391ff4387ccec119a45e34766963af87c01",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      []
+    ],
+    [
+      "nzcensus-fd17998425eb614c4844e9681d4c",
+      "C",
+      20,
+      "256e244568c278d49283890d8f472370cc53c0ba37a2df12d05b5db81521316e",
+      "New Zealand",
+      "2026-11-07",
+      "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
       []
     ],
     [

@@ -1,0 +1,19 @@
+{
+  "review_base_commit": "d0cd0a502463dd0fd08760722b630b5f282870d8",
+  "reviewed_on": "2026-11-07",
+  "proposed_records": 59,
+  "unresolved_source_keys": 27,
+  "original_worksheet_pending": 29,
+  "historical_annecy_pending": 37,
+  "parent_files": {
+    "data/nz-census/reports/coverage.html": "2faa5dc88ec24a6540c3ae4fcf955ae5f8662c2378bca56ade5062fd6f7d15a2",
+    "data/nz-census/reports/human-review.json": "b4e92f18ea87b196a6a5f6a7816c65e18e8db461715fae8c6ebb948b0ef6070a",
+    "data/nz-census/reports/proposals.json": "285be22a0e2f4a511f27980415a10b35384a2fb5ad2fc80d92c0a200d4719ae5",
+    "data/nz-census/reports/reconciliation.csv": "c139c83629b860924425ae9f64d8bc0213f4c228a04b1ae2ac135664be99b330",
+    "data/nz-census/reports/reconciliation.json": "1f8db80243cf4891b665898903ddd25fd63ec216e4602c76d6c88aa8dfa56a18",
+    "data/nz-census/reports/summary.json": "e3c5bb5e2d316aa5e2c3ec17ce66f87bc1b6d8fb83d1eae51670100f850e813a"
+  },
+  "original_release_sha256": "66c5e819b0a7be37aebb1393553f462a9cd4e4b7f60e104bc2fab2fe80f0a292",
+  "annecy_worksheet_sha256": "c2f959d29339761763c78d286c679fbc39deba781b12c4e2635ca2b9bb8e92cc",
+  "human_approved": false
+}
