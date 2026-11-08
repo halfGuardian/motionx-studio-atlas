@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-08",
+  "sources": [
+    {
+      "source_id": "sppa",
+      "geographic_scope": "Poland",
+      "url": "https://sppa.eu/en/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "partial_roster",
+      "enumeration_scope": "Human Film and Letko descriptions individually assessed. Polish-language member descriptions corroborate animation roles. Full membership roster and pagination not projected.",
+      "accessible_pages_assessed": 2,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "https://sppa.eu/robots.txt",
+      "robots_status": "unavailable_via_research_tool",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-43d4554b215a2cba1d54daed"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-d1d04daa99853613291a6563be4b"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "cee-animation",
+      "geographic_scope": "Central and Eastern Europe",
+      "url": "https://ceeanimation.eu/studios-and-producers/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "partial_roster",
+      "enumeration_scope": "Current visible page exposes 24 linked entries, including a university and country-blank names. Selected country/company profiles used for individual evidence; a company listing is not a current physical facility. Other pages remain unenumerated.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "https://ceeanimation.eu/robots.txt",
+      "robots_status": "unavailable_via_research_tool",
+      "terms_url": "https://ceeanimation.eu/terms-and-conditions/",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [],
+      "company_proposal_ids": [],
+      "existing_record_ids": [],
+      "research_outcomes": {},
+      "distinct_source_supported_operating_identities": 0,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "animation-uk",
+      "geographic_scope": "United Kingdom",
+      "url": "https://www.animationuk.org/directory/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "indexed_descriptions_live_timeout",
+      "enumeration_scope": "Indexed member descriptions support Keyframe/Lupus. Direct current roster fetch timed out; neither roster completeness nor current facility operation is established.",
+      "accessible_pages_assessed": 0,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [],
+      "company_proposal_ids": [],
+      "existing_record_ids": [],
+      "research_outcomes": {},
+      "distinct_source_supported_operating_identities": 0,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "animation-sa-followup",
+      "geographic_scope": "South Africa",
+      "url": "https://animationsa.org/members/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "roster_unrendered",
+      "enumeration_scope": "Follow-up returned search controls and login/member links without company rows. Terms do not establish an open directory reuse grant. No hidden API, login, screenshot or alternate collection used.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "https://animationsa.org/terms-and-conditions/",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [],
+      "company_proposal_ids": [],
+      "existing_record_ids": [],
+      "research_outcomes": {},
+      "distinct_source_supported_operating_identities": 0,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "animachi-followup",
+      "geographic_scope": "Chile",
+      "url": "https://animachi.cl/somos/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "unavailable",
+      "enumeration_scope": "Previously discovered association lead remains inaccessible through the permitted research service. No roster acquired; regional coverage remains open.",
+      "accessible_pages_assessed": 0,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [],
+      "company_proposal_ids": [],
+      "existing_record_ids": [],
+      "research_outcomes": {},
+      "distinct_source_supported_operating_identities": 0,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "nz-on-air",
+      "geographic_scope": "New Zealand",
+      "url": "https://www.nzonair.govt.nz/funding/game-development-sector-rebate-scheme-gdsr/gdsr-recipients/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "dated_recipient_lists",
+      "enumeration_scope": "Current page separates 2026 and earlier recipients. Named candidates individually assessed; grant participation does not establish present operation, city or capture capability. Ambiguous Level/ZeroKing remain identity holds.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "https://www.nzonair.govt.nz/copyright/",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-06b5152bc10485c9bc8100a1",
+        "research-34fd449e44d20ea3ba71f027",
+        "research-808fca77de795a78c72b7143",
+        "research-c978e9e69efff9131d4846e8",
+        "research-d3170498633030e2280b5765",
+        "research-ece122081f17ffbad558627e"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-6d1e08091c7be62e83e83b06ef61"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1,
+        "historical_operation_review": 3,
+        "identity_review": 2
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [
+        "research-d3170498633030e2280b5765",
+        "research-34fd449e44d20ea3ba71f027",
+        "research-808fca77de795a78c72b7143",
+        "research-c978e9e69efff9131d4846e8",
+        "research-ece122081f17ffbad558627e"
+      ],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "promperu",
+      "geographic_scope": "Peru",
+      "url": "https://www.gob.pe/institucion/promperu/noticias/1181715-animacion-peruana-de-exportacion-promperu-regresa-a-mifa-2025",
+      "reviewed_on": "2026-11-08",
+      "access_status": "indexed_official_announcement_live_418",
+      "enumeration_scope": "Spanish-language public-agency animation-company announcement corroborates APUS. Current direct fetch returned 418. Historical announcement is not a complete current Peruvian studio census.",
+      "accessible_pages_assessed": 0,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-64940d8e04f1e76df3a6e8b5"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-57599a18b38e354864737a0c1bcb"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "swiss-films",
+      "geographic_scope": "Switzerland",
+      "url": "https://www.swissfilms.ch/en/company/langfilm-bernard-lang-ag/d20de4ebe798421481c1c3316cdebecd",
+      "reviewed_on": "2026-11-08",
+      "access_status": "individual_profile",
+      "enumeration_scope": "Company profile distinguishes Swiss Langfilm from Polish/Swedish/Austrian homonyms. Production credits do not automatically establish specialist services or a precise facility. Imprint route inaccessible.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "https://www.swissfilms.ch/en/imprint",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-9325da218d7313d9bf428457"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-060e5a875052bc2086f347188324"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "hong-kong-animation",
+      "geographic_scope": "Hong Kong SAR China",
+      "url": "https://futureanimation.com.hk/2023/en/selected-companies-en/",
+      "reviewed_on": "2026-11-08",
+      "access_status": "historical_programme",
+      "enumeration_scope": "2023 programme supports Tsui Brothers operating-label relationship. No complete current roster/physical-facility census, personal contacts or authored descriptions copied.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-b42a3a8a7a428195edd252e8"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-afce067e9753d8e85b59e42baa8a"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    },
+    {
+      "source_id": "turkmenistan-government",
+      "geographic_scope": "Turkmenistan",
+      "url": "https://turkmenistan.gov.tm/index.php/en/post/109233/multimedia-platform-children-nowca-tv-presented-kids-expo-2026-exhibition",
+      "reviewed_on": "2026-11-08",
+      "access_status": "dated_official_announcement",
+      "enumeration_scope": "2026 announcement specifically names MenzilMekan animation production. Not a directory or blanket reuse grant. Indexed company contact supports only a provisional city association.",
+      "accessible_pages_assessed": 1,
+      "remaining_unreviewed_pages": null,
+      "remaining_scope": "Unknown number of pages/companies; no complete enumeration claimed.",
+      "fully_enumerated": false,
+      "robots_url": "",
+      "robots_status": "not_reviewed_no_automation",
+      "terms_url": "",
+      "permission_status": "No new automated collection or source-wide redistribution grant established.",
+      "rights": "Minimal paraphrased factual research references only; source-wide commercial reuse unresolved.",
+      "automatic_collection": false,
+      "human_approved": false,
+      "individually_reviewed_keys": [
+        "research-2c16d7df87d4b892ee240e21"
+      ],
+      "company_proposal_ids": [
+        "globalcompany-1708bd5576d0f21115f5d0859f44"
+      ],
+      "existing_record_ids": [],
+      "research_outcomes": {
+        "company_proposal_prepared": 1
+      },
+      "distinct_source_supported_operating_identities": 1,
+      "ambiguous_or_excluded_keys": [],
+      "distinct_verified_facilities": 0
+    }
+  ],
+  "original_source_assessments_preserved": true
+}

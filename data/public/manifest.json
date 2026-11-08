@@ -2529,5 +2529,19 @@
     ],
     "audited_proposals": 59,
     "human_approved": false
+  },
+  "global_visibility": {
+    "path": "visibility.json",
+    "sha256": "d10e9b9201dad49a90b14c73d11d2f22a6a2dc9ee606db5611df32b38064f1bf",
+    "gzip_sha256": "706c5f26a387142c90ae60db0a0f8308dcc40ca1d2892dea2f53717a8f64e3e0",
+    "gzip_bytes": 32994,
+    "content_addressed": true
+  },
+  "commercial_scope": {
+    "path": "commercial.json",
+    "sha256": "2f005dfeb2f56af1eb68c5b6fd44adef62876a8a811ef1bf26bf88042268aec5",
+    "gzip_sha256": "b6c0a9c8d0c6e4ba20b778b80dc5144e4ca2dd42fbc544226341c6bc2067084f",
+    "gzip_bytes": 1472,
+    "content_addressed": true
   }
 }

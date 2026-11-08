@@ -1,3 +1,40 @@
+# MotionX global programme — stacked draft PR #18
+
+## Global company research continuation — draft PR #18
+
+The [company review dashboard](data/global-programme/continuation/reports/dashboard.html)
+contains 737 company/geographic reviews, seven office/branch investigations and
+184 proposed Class C company references, including the original 30. All 725 saved
+keys have an assessment; 381 identity/evidence/historical cases remain unresolved.
+The separate city queue retains 238 uninvestigated geographic associations.
+These proposals have **not** been imported:
+all 42,296 canonical references and their original source evidence remain intact.
+See the [scope impact and continuation instructions](data/global-programme/continuation/DELIVERY.md).
+
+The directory distinguishes explicit sector eligibility as potential client,
+service provider, both, plausible unconfirmed prospect, adjacent/insufficient
+evidence and individually reviewed out of scope. These are recorded-sector
+eligibility labels, not purchasing intent or confirmed facility services. Game
+developers, animation and VFX companies remain eligible without capture. Generic
+film/video production and publishing are plausible only; visual tags alone do
+not establish an external service offer. Filters combine with AND; client and
+provider choices each include “both”. Confirmed-only capability filtering remains
+independent. Separate company-city discovery does not imply a verified facility.
+
+Four individually reviewed audio-only references are reversibly excluded from
+normal search/map/CSV results: normal results contain 42,292 references; the
+explicit audit view and direct profiles preserve all 42,296. Multidisciplinary
+visual/audio companies remain eligible. Numerical commercial/service-alignment
+scores are no longer displayed or exported. This draft does not merge or deploy.
+
+The [global coverage and research dashboard](data/global-programme/reports/dashboard.html) brings source scope, country gaps, complete-catalogue matching, geographic evidence and pending decisions together. It preserves all **42,296** parent references and all **1,677** original unpinned company identities. Floating Rock has a separate, licensed Wellington city reference while its original coordinates stay null; Frame Machine retains its existing Class C source point. Neither becomes a verified facility through map display.
+
+First-pass source-discovery receipts cover all **178** represented countries/territories, with **15** additional directory access/policy assessments. These are not complete national censuses or new collection permissions. Whole existing licensed snapshots and historical discovery/research queues are reconciled offline; every repeated, matched, conflicting and unresolved observation remains auditable. Source classes, observation dates, assertion freshness and facility capabilities remain distinct. No new canonical studio or capability is automatically published.
+
+[Programme and protected dependency](data/global-programme/PROGRAMME.md) · [Worldwide scope and access limits](data/global-programme/SOURCE-COVERAGE.md) · [Evidence rules](data/global-programme/EVIDENCE-RULES.md) · [Maintenance, exact resumption commands and unfinished research](data/global-programme/MAINTENANCE.md).
+
+The new draft PR depends on PR #15's exact reviewed head; its parent branch is unchanged. Human source/identity/facility review and publication approval remain pending. The global programme is **in progress**, not a claim of worldwide completeness. Do not merge or deploy automatically.
+
 # MotionX Studio Atlas v1.5 — Final quality gate (draft PR #15)
 
 **READY FOR HUMAN REVIEW.** The [final maintainer dashboard](data/nz-census/final-review/reports/dashboard.html) reviews every one of the 59 original proposals, all 27 identity keys, a separate Niantic NZ-office alert and four facility dossiers. It offers 91 evidence-backed working items with blank decisions and no automatic approval. [Publication scope, source rights and remaining questions](data/nz-census/final-review/README.md).
@@ -38,7 +75,7 @@ Run `python tools/annecy.py check` for repeatable coverage, identity, checkpoint
 
 **One unified research atlas: 42,067 records.** All **41,735 previous records** remain available: 243 retained locations, 40,376 Overture observations and 1,116 game-company references. This proposal adds **332 source-supported company research references**. Record totals include overlapping source observations and company-only entries; they are not verified facility counts.
 
-The new **Boutique Studios** view combines full-atlas reconciliation, official industry sources and a complete CC BY 4.0 animation-company dataset. It shows advisory service alignment, source-linked company research, region/specialisation/size/status filters and comparison. Evidence classes remain separate: **A 230 / B 4,626 / C 37,211**. All new company references are C, without invented pins or confirmed facility capabilities. Existing operating identities, subsidiaries, all original coordinates and every original evidence shard remain unchanged. `studios.json` is byte-for-byte preserved.
+The new **Boutique Studios** view combines full-atlas reconciliation, official industry sources and a complete CC BY 4.0 animation-company dataset. It shows qualitative service signals, source-linked company research, region/specialisation/size/status filters and comparison. Evidence classes remain separate: **A 230 / B 4,626 / C 37,211**. All new company references are C, without invented pins or confirmed facility capabilities. Existing operating identities, subsidiaries, all original coordinates and every original evidence shard remain unchanged. `studios.json` is byte-for-byte preserved.
 
 The [boutique research report and workflow](data/boutique/README.md), [readable review dashboard](data/boutique/reports/review.html), [observation audit](data/boutique/reports/triage.json), [permission registry](data/boutique/sources.json) and [recall results](data/boutique/reports/benchmark-results.json) explain all 570 source observations. There are 5,687 research-visible service leads, including **460 with additional source evidence** and **5,227 explicitly weak taxonomy leads**. Size/independence are not universally verified. External support needs and purchasing intent stay unknown.
 

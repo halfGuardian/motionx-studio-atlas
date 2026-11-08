@@ -63,6 +63,15 @@ def check(root=ROOT):
             apply_gate(tmp/'public',root/'studios.json',root/'data/nz-census/final-review')
             expected=read(tmp/'public/manifest.json')
             if expected['counts']!=config['after_counts']:raise ValueError('NZ final gate release counts differ')
+        visibility=root/'data/global-programme/inputs/location-reviews.json'
+        if visibility.exists():
+            from global_visibility import install
+            install(tmp/'public',root/'studios.json',root/'data/global-programme')
+            expected=read(tmp/'public/manifest.json')
+        if (root/'data/global-programme/continuation/inputs/scope-reviews.json').exists():
+            from global_continuation import install as install_scope
+            install_scope(tmp/'public',root/'studios.json',root/'data/global-programme/continuation')
+            expected=read(tmp/'public/manifest.json')
         generated={str(p.relative_to(tmp/'public')) for p in (tmp/'public').rglob('*.json')}
         actual={str(p.relative_to(root/'data/public')) for p in (root/'data/public').rglob('*.json')}
         if generated!=actual:raise ValueError('catalogue file set differs from reclassified snapshots')

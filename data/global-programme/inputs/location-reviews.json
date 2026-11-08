@@ -1,0 +1,49 @@
+{
+  "reviewed_on": "2026-11-07",
+  "reviewer_type": "agent_source_review_not_independent_human_verification",
+  "records": [
+    {
+      "record_id": "boutique-5926fcc99b16ed8ea595dcf5459f",
+      "name": "Floating Rock Studio",
+      "record_kind": "company_reference",
+      "country": "New Zealand",
+      "city": "Wellington",
+      "disposition": "reviewed_city_reference",
+      "identity": "Official company name and existing source identity agree; original ID retained.",
+      "operation": "Company site observed with current services and Wellington contact context; independent current operation not verified.",
+      "company_evidence": "https://floating-rock.com/contact/",
+      "service_evidence": "https://floating-rock.com/",
+      "company_sector_claims": ["Animation", "VFX", "Cinematics"],
+      "facility_capabilities_verified": false,
+      "reference": {
+        "lat": -41.28664,
+        "lng": 174.77557,
+        "precision": "city",
+        "city": "Wellington",
+        "country": "New Zealand",
+        "coordinate_source": "https://www.geonames.org/2179537/wellington.html",
+        "coordinate_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "GeoNames Wellington city reference, CC BY 4.0; MotionX displays a separate approximate company association. It is not the studio entrance, an address geocode or independent facility verification.",
+        "explanation": "Approximate Wellington city reference only. The company source supports Wellington; this city point does not locate its entrance. Original company coordinates remain null."
+      },
+      "human_approved": false
+    },
+    {
+      "record_id": "overture-39fd34a0-9be1-4ac0-a46e-ebd53a1599ff",
+      "name": "Frame Machine",
+      "record_kind": "source_location",
+      "country": "United States",
+      "city": "Santa Monica",
+      "disposition": "existing_source_point_unverified_facility",
+      "identity": "Existing source-observed location and researched company identity retained; no duplicate company reference or evidence promotion.",
+      "operation": "Official page supports animation, real-time VFX and Unreal co-development. Company-profile evidence associates Santa Monica; neither independently verifies the recorded Point or a current physical facility.",
+      "company_evidence": "https://www.linkedin.com/company/frame-machine",
+      "service_evidence": "https://www.framemachine.tv/about-frame_machine/",
+      "company_sector_claims": ["Animation", "VFX", "Unreal Engine Co-Development"],
+      "facility_capabilities_verified": false,
+      "reference": null,
+      "human_approved": false
+    }
+  ]
+}

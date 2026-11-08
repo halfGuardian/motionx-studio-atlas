@@ -1,0 +1,28 @@
+name: Global programme offline replay
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preserve every original record and coordinate
+        run: python tools/global_visibility.py check
+      - name: Reproduce all accountable source outcomes and country receipts
+        run: python tools/global_programme.py check
+      - name: Verify durable snapshot history and zero repeated-import changes
+        run: python tools/global_programme.py maintenance-check
+      - name: Package the checked review with working relative scripts and reports
+        run: python tools/package_global_review.py --output "$RUNNER_TEMP/global-programme-bundle"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-programme-pending-human-review
+          path: ${{ runner.temp }}/global-programme-bundle/
+          retention-days: 90

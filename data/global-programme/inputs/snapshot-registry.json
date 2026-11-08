@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "animstudios-github",
+      "policy": "data/global-programme/maintenance/policy.json",
+      "snapshot": "data/global-programme/maintenance/snapshot.json",
+      "state": "data/global-programme/maintenance/state.json"
+    }
+  ]
+}

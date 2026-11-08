@@ -1,0 +1,160 @@
+{
+  "tested_on": "2026-11-07",
+  "environment": "Managed cloud, Python 3.12.14, Node.js v24.22.1, Chromium 155.0.8059.79, localhost HTTP subdirectory; not a deployed Pages verification or physical low-memory handset. Real and sharded synthetic benchmark runs overlapped read-only validation work; raw conditions/results retained.",
+  "python": {
+    "tests": 285,
+    "passed": 285,
+    "failed": 0
+  },
+  "javascript": {
+    "tests": 84,
+    "passed": 84,
+    "failed": 0
+  },
+  "http": {
+    "checks": 78,
+    "final_failures": 0,
+    "suites": [
+      {
+        "suite": "browser_smoke.py",
+        "returncode": 1,
+        "seconds": 75.35,
+        "log": "http-browser_smoke.py.log",
+        "checks": 19,
+        "final_returncode": 0,
+        "conditions": "Latest isolated rerun after concurrent timeout"
+      },
+      {
+        "suite": "bulk_browser.py",
+        "returncode": 0,
+        "seconds": 19.69,
+        "log": "http-bulk_browser.py.log",
+        "checks": 6,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "public_catalog_smoke.py",
+        "returncode": 0,
+        "seconds": 41.41,
+        "log": "http-public_catalog_smoke.py.log",
+        "checks": 9,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "unified_ux.py",
+        "returncode": 0,
+        "seconds": 17.28,
+        "log": "http-unified_ux.py.log",
+        "checks": 9,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "boutique_browser.py",
+        "returncode": 0,
+        "seconds": 10.19,
+        "log": "http-boutique_browser.py.log",
+        "checks": 10,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "nz_census_browser.py",
+        "returncode": 0,
+        "seconds": 6.55,
+        "log": "http-nz_census_browser.py.log",
+        "checks": 5,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "nz_quality_browser.py",
+        "returncode": 0,
+        "seconds": 6.48,
+        "log": "http-nz_quality_browser.py.log",
+        "checks": 6,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "annecy_browser.py",
+        "returncode": 0,
+        "seconds": 7.72,
+        "log": "http-annecy_browser.py.log",
+        "checks": 5,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "global_visibility_browser.py",
+        "returncode": 0,
+        "seconds": 6.72,
+        "log": "http-global_visibility_browser.py.log",
+        "checks": 5,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      },
+      {
+        "suite": "global_review_browser.py",
+        "returncode": 0,
+        "seconds": 2.82,
+        "log": "http-global_review_browser.py.log",
+        "checks": 4,
+        "final_returncode": 0,
+        "conditions": "Final sequential HTTP browser batch"
+      }
+    ]
+  },
+  "canonical": {
+    "records": 243,
+    "organisations": 119,
+    "errors": 0,
+    "warnings": 265,
+    "full_warning_report": "canonical-validation.json"
+  },
+  "catalogue_reproduction": "passed: complete layered release replay; original record/file hashes and historical reports retained",
+  "global_reproduction": "passed: 44,818 accountable observations, including 424 configured snapshot-history rows, 178 country receipts and 209 preserved parent research files",
+  "actual_licensed_snapshot": {
+    "records": 424,
+    "first_signals": 424,
+    "repeat_signals": 0,
+    "history_events": 1,
+    "canonical_updates": 0
+  },
+  "historical_failures_and_resolutions": [
+    "Two older browser fixtures were updated to include the new geography module and separate-reference fit behaviour, then passed.",
+    "One concurrent legacy 50,000-location baseline fixture timed out; its isolated complete rerun passed all 19 checks. The source-sharded 50,000-location benchmark passed independently.",
+    "A new geographic schema guard initially rejected the original unversioned input. Backward compatibility was restored and all 285 Python checks passed."
+  ],
+  "independent_quality": {
+    "sample_candidates": 14,
+    "matched_candidates": 9,
+    "unmatched": 5,
+    "exact_source_overlap": 0,
+    "source_domain_overlap": 2,
+    "human_labels": 0,
+    "precision": null,
+    "recall": null,
+    "blind_global_benchmark": false
+  },
+  "human_approved": false,
+  "global_complete": false,
+  "canonical_updates": 0,
+  "ci_note": "Local results above. GitHub PR checks run separately; consult draft PR #18 for the latest commit run. No live manual global-workflow dispatch or deployment is claimed.",
+  "standalone_review_artifact": {
+    "checks": 4,
+    "passed": 4,
+    "note": "Same four dashboard cases rerun against an independently packaged HTTP directory; not added again to the 78 unique HTTP checks. Relative scripts, safe exports, mobile and missing-report behaviour pass."
+  },
+  "registered_snapshot_bridge": {
+    "actual_source_rows": 424,
+    "additional_canonical_records": 0,
+    "source_identity_keys_already_represented": 424,
+    "failed_latest_snapshot_preserves_prior_candidates": true,
+    "recovered_changes_compared_to_last_known_facts": true,
+    "configured_source_count": 1,
+    "policy_revisions_require_review": true
+  }
+}

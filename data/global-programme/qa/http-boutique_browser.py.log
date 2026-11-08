@@ -1,0 +1,12 @@
+PASS complete combined catalogue loads before any lazy boutique metadata request
+PASS unpinned company references remain countable and browsable without fabricating map coordinates
+PASS NZFC dashboard exposes all 42 source outcomes, searchable references and held identity
+PASS Frame Machine retains original Class C ID and exposes actual researched primary links, without inferred capture stages
+PASS Floating Rock is a real research-visible NZFC-discovered reference with primary evidence, no fabricated pin or capability
+PASS AND capability/region/status/advisory score filters, useful empty state, and reset restore the whole atlas
+PASS both golden businesses compare through actual catalogue profiles and keep separate source identities
+PASS actual CC BY source export carries full licence, attribution and separate advisory columns; no verified capability is created
+PASS 390px mobile layout and keyboard activation preserve map/list navigation without horizontal overflow
+PASS failed lazy metadata request leaves full directory usable and retry recovers without trusting partial results
+{"boutique_first_open_seconds": 0.397, "filtered_search_compute_ms": 20.199999999953434, "licensed_export_records": 2, "checks": 10, "records": 42296, "boutique_metadata_bytes": 4717248, "boutique_metadata_gzip_bytes": 315691, "conditions": "Local HTTP subdirectory, installed headless Chromium, 1440x1000 and 390x844, no CPU/network throttle. Not deployed Pages or a physical low-memory device. Benchmark JSON is never requested by the app."}
+10 boutique HTTP browser checks passed

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/public_catalog_smoke.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/motionx-studio-atlas/tests/public_catalog_smoke.py", line 25, in main
+    assert page.evaluate('studios.length')==total;expect(page.locator('#companies')).to_contain_text('Records can overlap' if inclusive else 'provisional source identities')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

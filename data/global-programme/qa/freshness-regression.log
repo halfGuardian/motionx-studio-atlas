@@ -1,0 +1,16 @@
+test_actual_global_denominators_and_all_pending_approvals (test_global_programme.GlobalProgrammeTests.test_actual_global_denominators_and_all_pending_approvals) ... ok
+test_corrupted_missing_snapshot_history_is_detected (test_global_programme.GlobalProgrammeTests.test_corrupted_missing_snapshot_history_is_detected) ... ok
+test_failed_fetch_and_incomplete_history_never_infer_closure (test_global_programme.GlobalProgrammeTests.test_failed_fetch_and_incomplete_history_never_infer_closure) ... ok
+test_heldout_sample_retains_unmatched_denominator_and_no_ai_ground_truth (test_global_programme.GlobalProgrammeTests.test_heldout_sample_retains_unmatched_denominator_and_no_ai_ground_truth) ... ok
+test_historical_discovery_navigation_and_topics_do_not_become_new_companies (test_global_programme.GlobalProgrammeTests.test_historical_discovery_navigation_and_topics_do_not_become_new_companies) ... ok
+test_identity_does_not_merge_foreign_branches_shared_domains_or_capabilities (test_global_programme.GlobalProgrammeTests.test_identity_does_not_merge_foreign_branches_shared_domains_or_capabilities) ... ok
+test_partial_counts_duplicate_ids_unsafe_urls_and_stale_claims (test_global_programme.GlobalProgrammeTests.test_partial_counts_duplicate_ids_unsafe_urls_and_stale_claims) ... ok
+test_permission_gated_csv_json_and_private_fields (test_global_programme.GlobalProgrammeTests.test_permission_gated_csv_json_and_private_fields) ... ok
+test_registered_json_csv_and_failures_feed_review_without_publication (test_global_programme.GlobalProgrammeTests.test_registered_json_csv_and_failures_feed_review_without_publication) ... ok
+test_repeat_import_changes_and_complete_absence_are_review_signals_only (test_global_programme.GlobalProgrammeTests.test_repeat_import_changes_and_complete_absence_are_review_signals_only) ... ok
+test_source_key_collision_cannot_silently_rebrand_an_existing_company (test_global_programme.GlobalProgrammeTests.test_source_key_collision_cannot_silently_rebrand_an_existing_company) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.497s
+
+OK

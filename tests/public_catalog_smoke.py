@@ -1,3 +1,4 @@
+from public_scope import visible_counts
 """Actual proposed public catalogue over HTTP, separate from baseline fixtures."""
 import csv,io,json,os,shutil,threading,time
 from collections import defaultdict
@@ -11,7 +12,7 @@ class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*_):pass
 
 def main():
-    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=manifest['counts'];inclusive=manifest.get('mode')=='unified_research';noun='records' if inclusive else 'locations';total=counts['records'] if inclusive else counts['public_locations'];index=json.loads((ROOT/'data/public/index.json').read_text())
+    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=visible_counts(ROOT,manifest['counts']);inclusive=manifest.get('mode')=='unified_research';noun='records' if inclusive else 'locations';total=counts['records'] if inclusive else counts['public_locations'];index=json.loads((ROOT/'data/public/index.json').read_text())
     server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT.parent)));threading.Thread(target=server.serve_forever,daemon=True).start();url=f'http://127.0.0.1:{server.server_port}/{ROOT.name}/';checks=0;report={}
     def passed(s):
         nonlocal checks;checks+=1;print('PASS '+s,flush=True)
@@ -21,10 +22,10 @@ def main():
             page=browser.new_page(viewport={'width':1440,'height':950},accept_downloads=True);requests=[];errors=[];page.on('request',lambda r:requests.append(r.url));page.on('pageerror',lambda e:errors.append(str(e)))
             start=time.monotonic();page.goto(url,wait_until='domcontentloaded');expect(page.locator('#count')).to_have_text(f"{total} {noun}",timeout=45000);report['initial_ready_seconds']=round(time.monotonic()-start,3)
             assert page.evaluate('document.documentElement.dataset.catalog')=='sharded';assert not [r for r in requests if '/shards/' in r]
-            assert page.evaluate('studios.length')==total;expect(page.locator('#companies')).to_contain_text('Records can overlap' if inclusive else 'provisional source identities')
+            assert page.evaluate('studios.length')==manifest['counts']['records'];expect(page.locator('#companies')).to_contain_text('Records can overlap' if inclusive else 'provisional source identities')
             expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap contributors');page.wait_for_function('!!document.querySelector(".leaflet-tile-loaded")',timeout=30000)
             report['initial_app_timings']=page.evaluate('({...MotionXPerformance})')
-            report['complete_query']=page.evaluate('''()=>{const start=performance.now(),all=D.queryDirectory(directory,{sort:'relevance'});if(all.length!==studios.length||new Set(all.map(r=>r.id)).size!==studios.length)throw Error('Incomplete search coverage');return {records:all.length,milliseconds:performance.now()-start};}''')
+            report['complete_query']=page.evaluate('''()=>{const start=performance.now(),all=D.queryDirectory(directory,{sort:'relevance',scopeMode:'all'});if(all.length!==studios.length||new Set(all.map(r=>r.id)).size!==studios.length)throw Error('Incomplete search coverage');return {records:all.length,milliseconds:performance.now()-start};}''')
             expected=page.evaluate('D.queryDirectory(directory,{query:"Framestore",sort:"relevance"}).length');search_start=time.monotonic();page.locator('#search').fill('Framestore');expect(page.locator('#count')).to_have_text(str(expected)+' '+noun);report['search_end_to_end_ms']=round((time.monotonic()-search_start)*1000,2);report['search_compute_ms']=page.evaluate('MotionXPerformance.search_ms');page.locator('#resetFilters').click()
             report['map_navigation']=page.evaluate('''()=>{const start=performance.now();map.setView([51.5,-.12],10,{animate:false});return {elapsed_ms:performance.now()-start,marker_render_ms:MotionXPerformance.marker_render_ms,markers:layer.getLayers().length};}''')
             passed(f"actual {total}-record HTTP catalogue, live tiles, source classes, no initial detail downloads")
@@ -51,7 +52,7 @@ def main():
                 page.locator('#resetFilters').click();page.evaluate('(r)=>map.setView([r[5],r[6]],16,{animate:false})',shared[0]);page.evaluate('(id)=>layer.getLayers().find(m=>m.motionxLocations.includes(id)).openPopup()',shared[0][0])
                 button=page.locator('.leaflet-popup-content li button').filter(has_text=shared[0][2]+' — '+shared[0][3]);button.press('Enter');expect(page.locator('#profileTitle')).to_have_text(shared[0][2]);passed('actual coincident source points retain selectable keyboard-accessible facilities')
             if inclusive:
-                company=next(r for r in index if r[12]=='company_reference');page.locator('#close').click();page.locator('#recordKind').select_option('company_reference');expect(page.locator('#count')).to_have_text(str(counts['company_references'])+' records');page.wait_for_function('layer.getLayers().length===0');expect(page.locator('#fitResults')).to_be_disabled();before=page.evaluate('JSON.stringify(map.getCenter())');page.locator('#search').fill(company[2]);page.locator('[data-id="'+company[0]+'"]').click();expect(page.locator('#profileTitle')).to_have_text(company[2]);expect(page.locator('#detailContent')).to_contain_text('No source coordinates; no map pin is invented');expect(page.locator('#detailContent')).to_contain_text('Class C');assert page.evaluate('JSON.stringify(map.getCenter())')==before;passed('all company references remain in the same directory with no invented map points')
+                company=next(r for r in index if r[12]=='company_reference');page.locator('#close').click();page.locator('#recordKind').select_option('company_reference');expect(page.locator('#count')).to_have_text(str(counts['company_references'])+' records');page.wait_for_function('layer.getLayers().length===0');(expect(page.locator('#fitResults')).to_be_enabled() if manifest.get('global_visibility') else expect(page.locator('#fitResults')).to_be_disabled());before=page.evaluate('JSON.stringify(map.getCenter())');page.locator('#search').fill(company[2]);page.locator('[data-id="'+company[0]+'"]').click();expect(page.locator('#profileTitle')).to_have_text(company[2]);expect(page.locator('#detailContent')).to_contain_text('No source coordinates; no map pin is invented');expect(page.locator('#detailContent')).to_contain_text('Class C');assert page.evaluate('JSON.stringify(map.getCenter())')==before;passed('all company references remain in the same directory with no invented map points')
             else:
                 page.goto(url+'#/location/'+manifest['baseline']['research_only_ids'][0],wait_until='domcontentloaded');expect(page.locator('#profileTitle')).to_have_text('Profile evidence unavailable');expect(page.locator('#detailContent')).to_contain_text('research queue')
             if inclusive:

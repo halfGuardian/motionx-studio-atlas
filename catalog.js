@@ -132,6 +132,19 @@
     if(rows.length!==(unified?m.counts.records:m.counts.public_locations)||m.counts.class_a!==m.baseline.eligible_ids.length||(!unified&&m.counts.class_b!==index.length)||(unified&&['A','B','C'].some(cls=>rows.filter(r=>r.evidence_class===cls).length!==m.counts['class_'+cls.toLowerCase()])))throw new Error('Catalogue counts mismatch.');
     const staged=new Set(m.nz_quality_gate?.staged_ids||[]);
     if(m.nz_quality_gate&&(m.nz_quality_gate.version!==1||m.nz_quality_gate.human_approved!==false||m.nz_quality_gate.report_path!=='data/nz-census/final-review/reports/dashboard.html'||!Array.isArray(m.nz_quality_gate.staged_ids)||staged.size!==m.nz_quality_gate.staged_ids.length||[...staged].some(id=>!/^nzcensus-[a-f0-9]{28}$/.test(id)||ids.has(id))))throw new Error('Invalid research staging metadata.');
+    let visibility=null;
+    if(m.global_visibility){
+      const meta=m.global_visibility;if(meta.path!=='visibility.json'||!/^[a-f0-9]{64}$/.test(meta.sha256))throw new Error('Invalid visibility asset path.');
+      visibility=(await asset(fetcher,'./data/public/visibility.json',meta,2000000)).value;
+      if(!root.MotionXGeography&&typeof require==='function')root.MotionXGeography=require('./geography.js');
+      visibility=root.MotionXGeography.validate(visibility,rows,D);
+    }
+    let commercial=null;
+    if(m.commercial_scope){
+      const meta=m.commercial_scope;if(meta.path!=='commercial.json'||!/^[a-f0-9]{64}$/.test(meta.sha256))throw new Error('Invalid commercial scope path.');
+      if(!root.MotionXCommercial&&typeof require==='function')root.MotionXCommercial=require('./commercial.js');
+      commercial=root.MotionXCommercial.validate((await asset(fetcher,'./data/public/commercial.json',meta,2000000)).value,rows,D);
+    }
     const pending=new Map(),full=new Map(rows.filter(r=>baseMap.has(r.id)).map(r=>[r.id,r]));
     let boutiquePending;
     async function boutique(){
@@ -171,13 +184,14 @@
       await Promise.all(Array.from({length:Math.min(3,filtered.length)},async()=>{while(cursor<filtered.length){const i=cursor++;results[i]=await details(filtered[i].id);}}));return results;
     }
     async function exportBundle(filtered){
-      const values=await exportRows(filtered),codes=[...new Set(values.filter(r=>r.license&&r.license!=='UNSPECIFIED').flatMap(r=>r.license.split(' AND ')))];
+      const values=(await exportRows(filtered)).map(r=>visibility?.references[r.id]?{...r,company_reference_location:visibility.references[r.id]}:r).map(r=>commercial?root.MotionXCommercial.exportFields(r,commercial):r),codes=[...new Set(values.flatMap(r=>[...(r.license&&r.license!=='UNSPECIFIED'?r.license.split(' AND '):[]),...(r.company_reference_location?[r.company_reference_location.coordinate_license]:[])]))];
       const texts=await Promise.all(codes.map(async code=>code+'\n'+await licence(fetcher,code+'.txt',m.licence_files?.[code+'.txt']?.sha256)));
       let notices=codes.includes('Apache-2.0')?await licence(fetcher,'Foursquare-NOTICE.txt',m.licence_files?.['Foursquare-NOTICE.txt']?.sha256):'';
       if(values.some(r=>r.license==='UNSPECIFIED'))notices+='\nSome source references have no explicit dataset redistribution licence. Retain each source-specific attribution and permission warning; factual references do not grant source-wide reuse rights. Authored descriptions and contacts omitted.';
+      if(values.some(r=>r.company_reference_location))notices+='\nSeparate company-reference coordinates are approximate GeoNames city/region points under CC BY 4.0, not studio entrances or verified facilities. Original record coordinates remain unchanged. Retain per-reference attribution and scope.';
       return {rows:values,licenseTexts:texts.join('\n\n'),notices};
     }
-    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held,staged};
+    return {rows,manifest:m,details,exportRows,exportBundle,boutique,researchOnly:held,staged,visibility,commercial};
   }
   const api={load,sha,checkB,checkResearch,decodeIndex};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MotionXCatalog=api;
 })(globalThis);

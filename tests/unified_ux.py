@@ -1,3 +1,4 @@
+from public_scope import visible_counts
 """Read-only HTTP checks of actual evidence UX, review tools and safe failures."""
 import csv,io,json,os,shutil,threading,time
 from functools import partial
@@ -10,7 +11,7 @@ class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*_):pass
 
 def main():
-    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=manifest['counts'];duplicate_count=manifest['warnings']['possible_duplicate_candidates'];total_text=str(counts['records'])+' records'
+    manifest=json.loads((ROOT/'data/public/manifest.json').read_text());counts=visible_counts(ROOT,manifest['counts']);duplicate_count=manifest['warnings']['possible_duplicate_candidates'];total_text=str(counts['records'])+' records'
     server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT.parent)));threading.Thread(target=server.serve_forever,daemon=True).start();url=f'http://127.0.0.1:{server.server_port}/{ROOT.name}/';checks=0;report={}
     def passed(text):
         nonlocal checks;checks+=1;print('PASS '+text,flush=True)
@@ -33,10 +34,10 @@ def main():
             marker=page.locator('[data-test-target="mixed"]');marker.focus();marker.press('Enter');expect(page.locator('.leaflet-popup-content .evidence-breakdown')).to_contain_text('Class A');expect(page.locator('.leaflet-popup-content .evidence-breakdown')).to_contain_text('Class B');expect(page.locator('.leaflet-popup-content .evidence-breakdown')).to_contain_text('Class C')
             page.locator('.leaflet-popup-content li button').first.press('Enter');expect(page.locator('#profileTitle')).to_be_visible();page.locator('#close').click()
             passed('actual mixed-class clusters expose A/B/C composition and selectable records through Enter')
-            page.locator('[data-quick="companies"]').click();expect(page.locator('#count')).to_have_text(str(counts['company_references'])+' records');assert page.evaluate('layer.getLayers().length')==0;expect(page.locator('#fitResults')).to_be_disabled();expect(page.locator('#catalogSummary')).to_contain_text('40,619');expect(page.locator('#catalogSummary')).to_contain_text('230')
+            page.locator('[data-quick="companies"]').click();expect(page.locator('#count')).to_have_text(str(counts['company_references'])+' records');assert page.evaluate('layer.getLayers().length')==0;assert page.locator('#fitResults').is_enabled()==bool(manifest.get('global_visibility'));expect(page.locator('#catalogSummary')).to_contain_text('40,619');expect(page.locator('#catalogSummary')).to_contain_text('230')
             assert page.evaluate('matches.every(r=>r.record_kind==="company_reference"&&!hasPoint(r))')
             page.locator('[data-quick="capture"]').click();capture=page.evaluate('matches.length');assert capture>0;assert page.evaluate('matches.every(D.confirmedCapture)');report['confirmed_capture_quick_filter']=capture
-            passed('all company references remain pin-free; capture quick filter requires site-specific confirmed claims')
+            passed('original company coordinates remain absent; display references are separate; capture quick filter requires site-specific confirmed claims')
             page.locator('[data-quick="all"]').click();page.locator('#advancedFilters > summary').focus();page.locator('#advancedFilters > summary').press('Enter');assert page.locator('#advancedFilters').evaluate('(d)=>d.open')
             page.locator('#researchFocus').select_option('duplicates');expect(page.locator('#count')).to_have_text(str(duplicate_count)+' records');first=page.locator('#list .profile-link[data-id]').first;first.click();expect(page.locator('#detailContent')).to_contain_text('Possible existing matches');page.locator('[data-compare-pair]').first.click();expect(page.locator('#profileTitle')).to_have_text('Compare research records');expect(page.locator('.comparison-record')).to_have_count(2);expect(page.locator('#detailContent')).to_contain_text('does not merge');page.locator('#close').click()
             passed('keyboard-accessible advanced controls, complete duplicate queue and source-preserving record comparison')

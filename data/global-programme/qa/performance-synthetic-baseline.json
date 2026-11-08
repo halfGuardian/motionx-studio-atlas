@@ -1,0 +1,20 @@
+{
+  "synthetic_locations": 50000,
+  "fixture_json_bytes": 50516860,
+  "initial_http_ready_seconds": 12.011,
+  "search_ms": 7.1,
+  "multi_filter_ms": 7.5,
+  "profile_open_ms": 8.3,
+  "complete_smoke_seconds": 13.67,
+  "list_page_size": 50,
+  "client_timings": {
+    "load_validate_ms": 11198.199999999953,
+    "index_ms": 316.69999999995343,
+    "search_ms": 7.100000000093132,
+    "viewport_groups": 1,
+    "rendered_markers": 1,
+    "marker_render_ms": 3.800000000046566,
+    "ready_ms": 11807.799999999814,
+    "profile_open_ms": 3.699999999953434
+  }
+}

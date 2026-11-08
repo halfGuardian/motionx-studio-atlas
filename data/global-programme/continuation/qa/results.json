@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "scope": "Global programme continuation, local executed checks; latest GitHub run must be checked on the PR head.",
+  "python": {
+    "tests": 303,
+    "passed": 303,
+    "failed": 0,
+    "seconds": 81.941,
+    "post_link_fix_readiness_subset": {
+      "tests": 8,
+      "passed": 8
+    }
+  },
+  "javascript": {
+    "tests": 88,
+    "passed": 88,
+    "failed": 0
+  },
+  "http": {
+    "main_suite_checks": 86,
+    "standalone_package_checks": 3,
+    "total_checks": 89,
+    "suites": [
+      {
+        "suite": "browser_smoke",
+        "log": "/tmp/motionx-continuation-browser_smoke.log",
+        "initial_exit_code": 0,
+        "final_log": "http-browser_smoke.log",
+        "final_exit_code": 0,
+        "initial_seconds": 45.529
+      },
+      {
+        "suite": "bulk_browser",
+        "log": "/tmp/motionx-continuation-bulk_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-bulk_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 18.619
+      },
+      {
+        "suite": "public_catalog_smoke",
+        "log": "/tmp/motionx-continuation-public_catalog_smoke.log",
+        "initial_exit_code": 1,
+        "final_log": "http-public_catalog_smoke.log",
+        "final_exit_code": 0,
+        "initial_seconds": 4.355
+      },
+      {
+        "suite": "unified_ux",
+        "log": "/tmp/motionx-continuation-unified_ux.log",
+        "initial_exit_code": 0,
+        "final_log": "http-unified_ux.log",
+        "final_exit_code": 0,
+        "initial_seconds": 14.546
+      },
+      {
+        "suite": "boutique_browser",
+        "log": "/tmp/motionx-continuation-boutique_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-boutique_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 9.453
+      },
+      {
+        "suite": "nz_census_browser",
+        "log": "/tmp/motionx-continuation-nz_census_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-nz_census_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 6.602
+      },
+      {
+        "suite": "nz_quality_browser",
+        "log": "/tmp/motionx-continuation-nz_quality_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-nz_quality_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 5.36
+      },
+      {
+        "suite": "annecy_browser",
+        "log": "/tmp/motionx-continuation-annecy_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-annecy_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 8.585
+      },
+      {
+        "suite": "global_visibility_browser",
+        "log": "/tmp/motionx-continuation-global_visibility_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-global_visibility_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 5.723
+      },
+      {
+        "suite": "global_review_browser",
+        "log": "/tmp/motionx-continuation-global_review_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-global_review_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 2.379
+      },
+      {
+        "suite": "commercial_browser",
+        "log": "/tmp/motionx-continuation-commercial_browser.log",
+        "initial_exit_code": 0,
+        "final_log": "http-commercial_browser.log",
+        "final_exit_code": 0,
+        "initial_seconds": 7.291
+      }
+    ],
+    "note": "The initial complete loop failed one obsolete storage-versus-visible-count assertion. Its corrected full suite passed, as did the updated company/branch suite. App JavaScript/public data are unchanged since the fully passing checkpoint; final CI repeats every suite."
+  },
+  "canonical": {
+    "locations": 243,
+    "errors": 0,
+    "warnings": 265,
+    "accepted": true
+  },
+  "research_summary": {
+    "starting_commit": "d5583994cda4dd3c99aa28508666057e5e0e96fa",
+    "reviewed_on_utc": "2026-11-08",
+    "canonical_records_before": 42296,
+    "canonical_records_after": 42296,
+    "canonical_additions": 0,
+    "proposed_new_class_c_company_references": 30,
+    "individual_company_reviews": 70,
+    "backlog_keys_reviewed": 69,
+    "backlog_keys_remaining": 656,
+    "backlog_observations_preserved": 753,
+    "backlog_keys_preserved": 725,
+    "research_dispositions": {
+      "company_proposal_prepared": 30,
+      "existing_identity_reconciled": 10,
+      "identity_review": 2,
+      "research_out_of_scope": 2,
+      "research_unresolved": 26
+    },
+    "countries_individually_investigated": 35,
+    "commercial_role_counts": {
+      "adjacent_uncertain": 123,
+      "both": 5838,
+      "out_of_scope": 4,
+      "potential_client": 36311,
+      "service_provider": 20
+    },
+    "audio_only_exclusions": 4,
+    "normal_results_before": 42296,
+    "normal_results_after": 42292,
+    "audit_results_after": 42296,
+    "map_markers_changed": 0,
+    "original_records_changed": 0,
+    "geographic_review_proposals": 5,
+    "new_verified_facilities": 0,
+    "new_verified_capabilities": 0,
+    "human_approved": false,
+    "independent_precision": null,
+    "independent_recall": null,
+    "validation_errors": 0,
+    "warnings": [
+      "Canonical records remain frozen; company proposals have not been imported or published.",
+      "Company self-report and historical exhibitor/directory corroboration do not independently prove current operation.",
+      "725 normalized queue keys are not 725 verified distinct businesses.",
+      "No new automated collection permissions or source completeness claims.",
+      "The 14-candidate held-out evaluation still lacks independent human labels.",
+      "Role classifications derive mostly from recorded source sectors; they do not establish purchasing intent or current service availability."
+    ],
+    "branch_or_department_reviews": 7,
+    "dated_branch_change_alerts": 3,
+    "branch_reviewed_on_utc": "2026-11-08",
+    "company_reviews_country_unresolved": 1,
+    "cross_proposal_identity_conflicts": 0,
+    "all_reviewed_country_count": 36
+  },
+  "input_sha256": {
+    "data/global-programme/continuation/inputs/backlog.json": "036133ff010b53a5b02b0a58fea8135530bfddb86c6888c252700ca60fb4ffc9",
+    "data/global-programme/continuation/inputs/branch-reviews.json": "02fb48fc7b616ad953c5cd198cfd65b1178c83f2a26137e68adaf592dbaf1b3f",
+    "data/global-programme/continuation/inputs/checkpoint.json": "d9bb5c70bcca856d807142739ed3c608a242b2ae8c23b84d0fc7b4fc7967cc4a",
+    "data/global-programme/continuation/inputs/company-reviews.json": "f5f4644d20414c7ea3979621c7f3eded31aeb2c472c47d20715e34107720fc7b",
+    "data/global-programme/continuation/inputs/scope-reviews.json": "ae5ada6006eaa6f19a40347960ba58830c967a4c94e9618f80f9d0d03b3d05ea"
+  },
+  "first_pushed_checkpoint": {
+    "commit": "b35f39cf5581126708215523064f387a5dc7f81e",
+    "run_id": 42425951452,
+    "conclusion": "success",
+    "artifact_id": 13595732112,
+    "archive_sha256": "88d1b1964fafb655a0740e661ac4383367bd25bc914322689e25014828c46b5a",
+    "downloaded_and_hash_checked": true,
+    "archived_company_reviews": 68,
+    "archived_company_proposals": 30
+  },
+  "parent_pr_15": {
+    "unchanged_head": "efd52a86e66417438830aac285e3fffee3aa0fa0",
+    "draft": true,
+    "merged": false
+  },
+  "canonical_updates": 0,
+  "human_approved": false,
+  "publication_authorised": false,
+  "deployed": false,
+  "initial_failures_and_corrections": [
+    "Commercial filter assertion ran before its scheduled render; corrected the test wait.",
+    "Narrow-screen JSON summary overflow; added wrapping and rechecked 390px layout.",
+    "Public catalogue smoke assertion equated retained storage count with normal visible count after intentional scope exclusions; the audit query separately confirms all 42296 IDs.",
+    "New branch cards initially remained visible under company filters; the shared report filters now cover all 77 company/branch cards, including unresolved country.",
+    "Initial canonical validator invocation omitted its required input; the explicit studios.json invocation passed.",
+    "Standalone inspection found the nested licensing return link resolved to data/index.html; link generation now derives the report depth and the actual packaged HTTP round-trip passes."
+  ],
+  "limits": [
+    "No deployed Pages verification or physical low-memory-device measurement in this continuation.",
+    "Synthetic benchmark rows are temporary fixtures, never public catalogue records.",
+    "Source self-report and dated events are not independent current-operation or facility verification.",
+    "656 backlog keys remain uninvestigated; 14 independent evaluation labels remain absent.",
+    "No restricted collector enabled, source-wide permission granted, merge or deployment performed."
+  ],
+  "tested_code_sha256": {
+    "app.js": "6cd66d0117e848a7b22b08ec283bea76c52ea7fd740bfdfc03d76eaab03353d9",
+    "catalog.js": "400c5eb073140a4f2370b632ffce203286094c948c88c9c33c23847d8c3576c0",
+    "commercial.js": "5dff74dcc3ec0e7e8c2ae4f42e8954b8f42a36ae0a7dcdb19da000f22e8e69ee",
+    "data.js": "2dc5a15e24ab82b165db853bc9ee8e871f1bcdbc7bed0b2cd9a7ca58f472a71a",
+    "index.html": "ac4694a1b621ce2367967856ca60d308b7ed60089e7fb108b4bc3542a65f4f38",
+    "tools/global_continuation.py": "ab98ea78e9e74d5b8abb4187c83acd94a8d88c93c25ffea69db933460f9ef4d2",
+    "tools/launch_readiness.py": "73161f2c53dfe5d4c68aa0f384b39605db326bc283f307b7cd8999296014d178",
+    "tools/check_bulk_release.py": "17f5f55f53f472423b327ec2d013a0cb05e746ce1d160e700e75275394ba8587"
+  }
+}

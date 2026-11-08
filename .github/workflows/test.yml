@@ -1,7 +1,7 @@
 name: Validate public atlas
 on:
   pull_request:
-    branches: [main]
+    branches: [main, codex/v1.5-nz-census-wave1]
 permissions:
   contents: read
 concurrency:
@@ -24,7 +24,7 @@ jobs:
       - name: Reproduce source-listed catalogue and preserve reviewed baseline
         run: if [ -f data/bulk/release.json ]; then python tools/check_bulk_release.py; fi
       - name: Reproduce advisory queue and licensing audit without granting approval
-        run: if [ -f data/bulk/reports/licensing.json ]; then python tools/launch_readiness.py check --output data/bulk/reports; fi
+        run: if [ -f data/bulk/reports/licensing.json ]; then python tools/launch_readiness.py check --output data/global-programme/reports/readiness; fi
       - name: Reproduce boutique matching, benchmark and pending research proposals
         run: python tools/boutique.py check --output data/boutique/reports
       - name: Reproduce complete Annecy reconciliation and pending human review
@@ -33,8 +33,22 @@ jobs:
         run: python tools/nz_census.py prepare --output /tmp/nz-wave1-reports
       - name: Validate complete NZ continuation and unchanged historical data
         run: python tools/nz_research.py check
+      - name: Audit every company-only geography without changing parent records
+        run: python tools/global_visibility.py check
+      - name: Check company proposals, preserved backlog and reversible scope exclusions
+        run: python tools/global_continuation.py check
+      - name: Reproduce global source coverage, full identity outcomes and pending review
+        run: python tools/global_programme.py check
+      - name: Check actual permitted snapshot continuity and repeat-import idempotency
+        run: python tools/global_programme.py maintenance-check
       - name: Reproduce NZ final relevance, rights, staging and pending maintainer review
         run: python tools/nz_quality_gate.py check
+      - name: Package the global review with working relative paths
+        run: python tools/package_global_review.py --output "$RUNNER_TEMP/global-programme-bundle"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: global-programme-pending-human-review
+          path: ${{ runner.temp }}/global-programme-bundle/
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -84,6 +98,16 @@ jobs:
       - run: python tests/bulk_browser.py
       - name: Actual source-listed public catalogue over HTTP
         run: if [ -f data/public/manifest.json ]; then python tests/public_catalog_smoke.py; fi
+      - name: Actual company-reference geography, filters and coincident selection
+        run: python tests/global_visibility_browser.py
+      - name: Audience eligibility, reversible audio scope, evidence exports and mobile
+        run: python tests/commercial_browser.py
+      - name: Actual standalone company and branch review artifact
+        run: |
+          python tools/package_global_review.py --output "$RUNNER_TEMP/continuation-review-browser"
+          MOTIONX_REVIEW_ROOT="$RUNNER_TEMP/continuation-review-browser" python tests/continuation_package_browser.py
+      - name: Global coverage dashboard, safe review export and missing-report handling
+        run: python tests/global_review_browser.py
       - name: Evidence colours, mixed clusters, research review and launch readiness
         run: python tests/unified_ux.py
       - name: Actual boutique view, seed identities and safe research exports
@@ -110,6 +134,9 @@ jobs:
             /tmp/motionx-v13-*.png
             /tmp/motionx-v15-*.json
             /tmp/motionx-v15-*.png
+            /tmp/motionx-global-*.json
+            data/global-programme
+            geography.js
             data/bulk/reports/licensing.html
             data/bulk/reports/licensing.json
             data/bulk/reports/review-queue.json

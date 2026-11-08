@@ -1,0 +1,24 @@
+{
+  "baseline_records": 42296,
+  "before": {
+    "adjacent_uncertain": 123,
+    "both": 5838,
+    "out_of_scope": 4,
+    "potential_client": 36311,
+    "service_provider": 20
+  },
+  "after": {
+    "adjacent_uncertain": 8,
+    "both": 19,
+    "out_of_scope": 4,
+    "plausible_unconfirmed": 35295,
+    "potential_client": 6950,
+    "service_provider": 20
+  },
+  "changed_assessments": 41114,
+  "canonical_records_changed": 0,
+  "original_source_categories_changed": 0,
+  "purchasing_intent": "unknown",
+  "details_path": "classification-changes.json.gz",
+  "details_sha256": "e09cf3cc8315708f882f89e9a7b77894061c405fa36b0d4af01871ee5255e457"
+}

@@ -1,0 +1,8 @@
+{
+  "checks": 5,
+  "actual_records": 42296,
+  "audited_unpinned": 1677,
+  "separate_reference_markers": 1,
+  "original_coordinates_changed": 0,
+  "conditions": "Local HTTP repository subdirectory, installed Chromium, 1440x1000/390x844, no throttle, not deployed Pages or independent facility verification."
+}

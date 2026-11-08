@@ -1,0 +1,46 @@
+[
+  {
+    "command": "python tools/check_bulk_release.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/launch_readiness.py check --output data/global-programme/reports/readiness",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/boutique.py check --output data/boutique/reports",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/annecy.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/nz_census.py prepare --output /tmp/nz-wave1-final-20261108",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/nz_research.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/global_visibility.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/global_continuation.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/global_programme.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/global_programme.py maintenance-check",
+    "exit_code": 0
+  },
+  {
+    "command": "python tools/nz_quality_gate.py check",
+    "exit_code": 0
+  }
+]
