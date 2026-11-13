@@ -54,10 +54,10 @@ jobs:
       - name: Recover actual successful or partial research artifacts; never collect new URLs
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/maintenance_actions.py restore --output previous-maintenance
+        run: python tools/maintenance_actions.py restore --output "$RUNNER_TEMP/previous-maintenance"
       - name: Consolidate permitted snapshots, full history and review exceptions
         run: |
-          python tools/maintenance.py prepare --discovery previous-maintenance/maintenance/discovery --state previous-maintenance/maintenance/state.json --recovery previous-maintenance/recovery.json --output "$RUNNER_TEMP/monthly-research"
+          python tools/maintenance.py prepare --discovery "$RUNNER_TEMP/previous-maintenance/maintenance/discovery" --state "$RUNNER_TEMP/previous-maintenance/maintenance/state.json" --recovery "$RUNNER_TEMP/previous-maintenance/recovery.json" --output "$RUNNER_TEMP/monthly-research"
           cat "$RUNNER_TEMP/monthly-research/summary.md" >> "$GITHUB_STEP_SUMMARY"
       - name: Create or update one research-only draft without force push or publication
         env:
