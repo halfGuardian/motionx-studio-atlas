@@ -1,0 +1,5 @@
+PASS desktop, tablet, mobile and landscape start with a small top-right Map guide; no horizontal overflow
+PASS native Enter/Space disclosure, Escape/focus recovery and unchanged evidence/reference controls without map movement
+PASS touch disclosure keeps unpinned-company directory and keyboard profiles accessible on mobile
+PASS disclosure and directory remain usable if Leaflet fails to load
+4 map-guide HTTP checks passed

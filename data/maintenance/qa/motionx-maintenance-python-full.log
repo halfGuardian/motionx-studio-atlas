@@ -1,0 +1,29 @@
+......................................................................................EE....................................................................................................................................................................................................................................................................................
+======================================================================
+ERROR: test_latest_artifact_cannot_erase_inherited_partial_history (test_checkpoints.CheckpointTests.test_latest_artifact_cannot_erase_inherited_partial_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/test_checkpoints.py", line 66, in test_latest_artifact_cannot_erase_inherited_partial_history
+    out=Path(folder)/'restore';restore(out,runner=run,include_failed=True)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/restore_discovery.py", line 45, in restore
+    body=(attempt/'recovery.json').read_bytes();history=output/'history';history.mkdir(exist_ok=True);(history/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+                                                                                                                ^^^^^^^
+UnboundLocalError: cannot access local variable 'hashlib' where it is not associated with a value
+
+======================================================================
+ERROR: test_legacy_complete_flag_is_not_proof_of_complete_raw_history (test_checkpoints.CheckpointTests.test_legacy_complete_flag_is_not_proof_of_complete_raw_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/test_checkpoints.py", line 76, in test_legacy_complete_flag_is_not_proof_of_complete_raw_history
+    out=Path(folder)/'restore';restore(out,runner=run)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/restore_discovery.py", line 45, in restore
+    body=(attempt/'recovery.json').read_bytes();history=output/'history';history.mkdir(exist_ok=True);(history/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+                                                                                                                ^^^^^^^
+UnboundLocalError: cannot access local variable 'hashlib' where it is not associated with a value
+
+----------------------------------------------------------------------
+Ran 364 tests in 185.563s
+
+FAILED (errors=2)

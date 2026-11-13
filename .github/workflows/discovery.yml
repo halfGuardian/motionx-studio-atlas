@@ -6,6 +6,8 @@ on:
 permissions:
   contents: read
   actions: read
+env:
+  TZ: UTC
 concurrency:
   group: discovery-main
   cancel-in-progress: false
@@ -22,15 +24,23 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          python tools/restore_discovery.py --output previous
+          python tools/restore_discovery.py --include-failed --output previous
           if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then
             echo '::warning::Recovered continuity is partial. No closure/absence signal will be inferred; archive missing history for review.'
           fi
+      - name: Restore hash-bound global maintenance state without claiming complete history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/maintenance_actions.py restore --output previous-maintenance
+      - name: Retain the union of raw candidates and checkpoint history
+        run: python tools/maintenance_actions.py join --discovery previous --folder previous-maintenance/maintenance
+      - name: Disable expired access reviews before any collection
+        run: python tools/maintenance.py policy-config --output effective-sources.json
       - name: Collect candidates without editing the public database
         run: |
           recovery_flag=()
           if python -c "import json,sys; sys.exit(not json.load(open('previous/recovery.json'))['suppress_absence_signals'])"; then recovery_flag+=(--suppress-missing); fi
-          python tools/discovery.py scan --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --checkpoint data/research/v1.0-launch/queue.json "${recovery_flag[@]}" --output discovery-run
+          python tools/discovery.py scan --config effective-sources.json --state previous/queue.json --previous-run previous --checkpoint data/research/v0.9.3-global/queue.json --checkpoint data/research/v1.0-launch/queue.json "${recovery_flag[@]}" --output discovery-run
           cp previous/recovery.json discovery-run/recovery.json
           python - <<'PY'
           import json, os
@@ -50,20 +60,40 @@ jobs:
           cat triage-output/summary.md >> "$GITHUB_STEP_SUMMARY"
       - name: Prepare research-review dashboard without approving claims
         run: |
-          python tools/research.py report --queue discovery-run/queue.json --report discovery-run/report.json --config data/discovery/sources.json --output research-review
+          python tools/research.py report --queue discovery-run/queue.json --report discovery-run/report.json --config effective-sources.json --output research-review
           cat research-review/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Prepare global incremental review against the full catalogue
+        run: |
+          python tools/maintenance.py prepare --discovery discovery-run --state previous-maintenance/maintenance/state.json --recovery previous-maintenance/recovery.json --output maintenance-run
+          cat maintenance-run/summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: studio-discovery
           path: discovery-run/
           retention-days: 90
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: studio-discovery-triage
           path: triage-output/
           retention-days: 90
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: studio-research-review
           path: research-review/
           retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-maintenance
+          path: maintenance-run/
+          retention-days: 90
+      - name: Fail visibly after preserving available evidence on source failure
+        run: python tools/maintenance.py health --output maintenance-run
+      - name: Failure alert and recovery instructions
+        if: failure()
+        run: |
+          echo '::error::Weekly research scan needs attention. Inspect source statuses and available artifacts; no Atlas records were changed. Enable GitHub Actions failure notifications and preserve complete archives before expiry.'
+          echo 'Maintenance failed safely. See discovery/maintenance artifacts and data/maintenance/OPERATIONS.md. Missing evidence never proves closure.' >> "$GITHUB_STEP_SUMMARY"

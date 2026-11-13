@@ -1,17 +1,34 @@
 name: Validate public atlas
 on:
+  workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: 'Full 40-character head commit of the batch PR being reviewed'
+        required: true
+        type: string
   pull_request:
     branches: [main, codex/v1.5-nz-census-wave1, codex/global-discovery-visibility]
 permissions:
   contents: read
 concurrency:
-  group: atlas-tests-${{ github.event.pull_request.number }}
+  group: atlas-tests-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Require the exact owner-selected review commit
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+        run: |
+          actual_sha=$(git rev-parse HEAD)
+          if [[ ! "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || [ "$EXPECTED_SHA" != "$GITHUB_SHA" ] || [ "$EXPECTED_SHA" != "$actual_sha" ]; then
+            echo '::error::Review commit mismatch. Select the batch branch and its current full head SHA; approval must follow validation of that exact commit.'
+            exit 1
+          fi
+          echo "Validated review target: $actual_sha" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -48,6 +65,15 @@ jobs:
           python tools/release_candidate.py check
           python tools/map_gate.py check
           python tools/launch_readiness.py check --output data/release-candidate/reports/readiness
+      - name: Reproduce maintenance research from the actual preserved source artifact
+        run: |
+          python tools/maintenance.py prepare --discovery data/maintenance/inputs/discovery-42666896576 --output "$RUNNER_TEMP/maintenance-review"
+          python tools/maintenance.py verify --output "$RUNNER_TEMP/maintenance-review"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: automated-atlas-maintenance-v2-review
+          path: ${{ runner.temp }}/maintenance-review/
+          retention-days: 90
       - name: Package the integrated release decisions and complete static atlas
         run: |
           python tools/package_release_candidate.py --output "$RUNNER_TEMP/release-decisions" --review-only
@@ -99,6 +125,17 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Require the exact owner-selected review commit
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+        run: |
+          actual_sha=$(git rev-parse HEAD)
+          if [[ ! "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || [ "$EXPECTED_SHA" != "$GITHUB_SHA" ] || [ "$EXPECTED_SHA" != "$actual_sha" ]; then
+            echo '::error::Review commit mismatch. Select the batch branch and its current full head SHA; approval must follow validation of that exact commit.'
+            exit 1
+          fi
+          echo "Validated review target: $actual_sha" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -125,6 +162,12 @@ jobs:
         run: |
           python tools/package_release_candidate.py --output "$RUNNER_TEMP/map-gate-atlas"
           MOTIONX_MAP_GATE_ROOT="$RUNNER_TEMP/map-gate-atlas" python tests/map_gate_browser.py
+      - name: Read-only maintenance dashboard, source attribution and mobile evidence review
+        run: |
+          python tools/maintenance.py prepare --discovery data/maintenance/inputs/discovery-42666896576 --output "$RUNNER_TEMP/maintenance-browser"
+          MOTIONX_MAINTENANCE_ROOT="$RUNNER_TEMP/maintenance-browser" python tests/maintenance_browser.py
+      - name: Collapsible map guide on desktop and mobile, keyboard controls and failure recovery
+        run: python tests/map_guide_browser.py
       - name: Actual standalone company and branch review artifact
         run: |
           python tools/package_global_review.py --output "$RUNNER_TEMP/continuation-review-browser"
@@ -160,6 +203,9 @@ jobs:
             /tmp/motionx-global-*.json
             /tmp/motionx-rc-*.json
             /tmp/motionx-map-gate-*.json
+            /tmp/motionx-maintenance-*.json
+            /tmp/motionx-map-guide-*.json
+            /tmp/motionx-map-guide-*.png
             data/global-programme
             geography.js
             data/bulk/reports/licensing.html

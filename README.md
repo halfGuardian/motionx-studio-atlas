@@ -1,3 +1,9 @@
+# Automated Atlas Maintenance v2 and compact map controls
+
+The next maintenance phase keeps Monday **07:23 UTC** discovery read-only and prepares configurable monthly **research-only draft PRs** for owner review. It preserves all published company data and source history. The map evidence panel is now a compact, closed-by-default **Map guide** in the top-right corner on desktop and mobile; all existing controls remain accessible.
+
+[Owner operating guide](data/maintenance/OPERATIONS.md) · [Source coverage and actual run history](data/maintenance/README.md) · [Validation](data/maintenance/validation.md). Eight bounded official sources are automatically scanned; one licensed pinned dataset is processed offline; 17 official sources and other unresolved sources still require manual research. Running a scan is not worldwide research completion or publication approval. Earlier release checkpoints below retain their historical review status and counts.
+
 # Final map visibility and release acceptance — PR #19
 
 The 182 admitted Class C companies now have **102 separate licensed city/urban reference points and 80 explicitly unpinned directory entries**. All 106 recorded cities were audited; four remain held for specific municipality/evidence issues, while 76 companies have no recorded city. Company search, country/sector filters, profiles and exports share the same directory. All 42,478 records and original coordinates remain unchanged.

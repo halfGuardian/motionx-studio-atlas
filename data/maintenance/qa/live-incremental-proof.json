@@ -1,0 +1,24 @@
+{
+  "tested_engine_commit": "a57cd2399bdd69ada488fe098da27b9722eb0f5f",
+  "source_ci_run": 43520482160,
+  "source_artifact_id": 14082178485,
+  "source_artifact_sha256": "0712e7d204a2f7c7465f7888269fd10f2066b57a0a0f7ba2a049459193e726d5",
+  "source_dates": [
+    "2026-11-09",
+    "2026-11-13"
+  ],
+  "prior_history_events": 9,
+  "result_history_events": 17,
+  "prior_history_prefix_preserved": true,
+  "new_signal_kinds": {
+    "evidence_refreshed": 55,
+    "history_incomplete_no_absence_inference": 8
+  },
+  "new_company_source_leads": 0,
+  "retained_raw_candidates": 200,
+  "repeat_signals": 0,
+  "repeat_state_identical": true,
+  "canonical_updates": 0,
+  "human_approved": false,
+  "independent_company_verification": false
+}

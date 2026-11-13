@@ -21,7 +21,10 @@ const map=globalThis.L?L.map('map',{worldCopyJump:true,preferCanvas:true,zoomAni
 const layer=map?L.layerGroup().addTo(map):null;
 const companyReferenceLayer=map?L.layerGroup().addTo(map):null;let companyReferences=[],displayPoints=[],sourceByCoordinate=new Map(),referenceByCoordinate=new Map();
 const coordinateKey=r=>r.lat+','+r.lng;
+const mapGuide=$('evidenceLegend');
+mapGuide.addEventListener('keydown',event=>{if(event.key==='Escape'&&mapGuide.open){mapGuide.open=false;$('mapLegendToggle').focus();event.stopPropagation();}});
 if(map){
+  L.DomEvent.disableClickPropagation(mapGuide);L.DomEvent.disableScrollPropagation(mapGuide);
   const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>',maxZoom:19}).addTo(map);
   const status=document.createElement('div');status.className='tile-status';status.hidden=true;

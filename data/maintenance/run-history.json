@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "reviewed_on_utc": "2026-11-13",
+  "owner_local_date": "2026-11-14",
+  "baseline_commit": "913dd798bb485a3a60024f7f024cb186c472e574",
+  "api_total_count": 137,
+  "pages_read": 2,
+  "rows_read": 137,
+  "discovery_runs": [
+    {
+      "id": 42666896576,
+      "event": "schedule",
+      "conclusion": "success",
+      "status": "completed",
+      "head_branch": "main",
+      "head_sha": "913dd798bb485a3a60024f7f024cb186c472e574",
+      "created_at": "2026-11-09T17:40:21Z",
+      "run_started_at": "2026-11-09T17:40:21Z",
+      "updated_at": "2026-11-09T17:40:56Z",
+      "html_url": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42666896576",
+      "path": ".github/workflows/discovery.yml"
+    },
+    {
+      "id": 42149794259,
+      "event": "workflow_dispatch",
+      "conclusion": "success",
+      "status": "completed",
+      "head_branch": "main",
+      "head_sha": "c5f16639137faa44a57550ad6a155e5791958a46",
+      "created_at": "2026-11-06T02:21:26Z",
+      "run_started_at": "2026-11-06T02:21:26Z",
+      "updated_at": "2026-11-06T02:21:47Z",
+      "html_url": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42149794259",
+      "path": ".github/workflows/discovery.yml"
+    }
+  ],
+  "archive_runs": [],
+  "scheduled_runs_observed": 1,
+  "nominal_weekly_cron": "23 7 * * 1",
+  "actual_scheduled_run": {
+    "id": 42666896576,
+    "created_at": "2026-11-09T17:40:21Z",
+    "run_started_at": "2026-11-09T17:40:21Z",
+    "updated_at": "2026-11-09T17:40:56Z",
+    "conclusion": "success",
+    "head_sha": "913dd798bb485a3a60024f7f024cb186c472e574",
+    "source_count": 8,
+    "successful_sources": 8,
+    "source_observations": 58,
+    "candidate_queue": 200,
+    "artifact_id": 13696273183,
+    "artifact_expires_at": "2027-02-07T17:40:22Z",
+    "legacy_recovery_claim": "history_complete true without proof of earlier raw completeness; retained verbatim and treated conservatively by v2"
+  },
+  "branch_protection_read": "403 Resource not accessible by integration; required review enforcement unverified",
+  "limitations": [
+    "137 available runs enumerated in two pages; deleted runs cannot be reconstructed.",
+    "One scheduled run proves execution, not reliable exact-time execution or global completeness.",
+    "Recorded scheduled creation/start was 17:40 UTC rather than nominal 07:23; no cause inferred.",
+    "No archive-discovery workflow run recorded.",
+    "Monthly v2 is not on main yet; no live monthly schedule or Actions-bot PR creation success is claimed."
+  ]
+}

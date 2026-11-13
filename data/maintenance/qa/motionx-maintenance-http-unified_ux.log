@@ -1,0 +1,11 @@
+PASS exact A/B/C colours, distinct SVG shapes, class-aware quick filters and Space-key profile selection
+PASS actual mixed-class clusters expose A/B/C composition and selectable records through Enter
+PASS original company coordinates remain absent; display references are separate; capture quick filter requires site-specific confirmed claims
+PASS keyboard-accessible advanced controls, complete duplicate queue and source-preserving record comparison
+PASS real mixed A/B/C CSV export retains provenance, licences, company references and original geography
+PASS 390px map/list/profile layout, permanent map legend and warm hash-versioned cache navigation
+PASS licensing dashboard retains unresolved company-source permissions and public-access boundary
+PASS truncated compact-index download fails closed without partial results; full retry recovers every record
+PASS blocked Leaflet script leaves all records, filters and profiles usable in the mobile directory
+{"confirmed_capture_quick_filter": 22, "warm_cache_ready_seconds": 1.444, "checks": 9, "kind": "actual_catalogue_ux_not_deployed_pages", "conditions": "Local HTTP subdirectory / installed headless Chromium, 1440x950 and 390x844, no CPU/network throttle; warm reload explicitly identified. Screenshots are proposed UI, not production."}
+9 unified UX browser checks passed

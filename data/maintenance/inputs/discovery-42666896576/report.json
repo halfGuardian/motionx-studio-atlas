@@ -1,0 +1,184 @@
+{
+  "observed_on": "2026-11-09",
+  "events": [
+    {
+      "source_id": "dneg-studios",
+      "type": "extraction_rules_changed",
+      "note": "Retain omitted candidates; filtering changes are not disappearance evidence."
+    },
+    {
+      "source_id": "dneg-studios",
+      "type": "page_changed",
+      "note": "Page bytes changed; business status is not inferred."
+    },
+    {
+      "source_id": "metricminds-services",
+      "type": "extraction_rules_changed",
+      "note": "Retain omitted candidates; filtering changes are not disappearance evidence."
+    },
+    {
+      "source_id": "metricminds-services",
+      "type": "page_changed",
+      "note": "Page bytes changed; business status is not inferred."
+    }
+  ],
+  "sources": [
+    {
+      "id": "dneg-studios",
+      "url": "https://www.dneg.com/contact",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 19,
+      "body_sha256": "4864edd79fe6e73c88aaf8942966f019b83d6bc2d4ec6b925f9fb3b55c0efd55",
+      "extraction_hash": "7de34df5b2f7bc0b8e96a446699d47c34651e3bbc57979e740be5c5b89b54c29"
+    },
+    {
+      "id": "metricminds-services",
+      "url": "https://metricminds.com/performance-capture/",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "8433b13422b14fde35a6ca04374844888003f5299629670b5cda83863c2d9d45",
+      "extraction_hash": "99b2a3fd25b58fb17555e673f2e10afa1309a62c367c4ee7e9f39f29893f9fb2"
+    },
+    {
+      "id": "framestore-locations",
+      "url": "https://www.framestore.com/contact",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 7,
+      "body_sha256": "0cf12f4e5b1f6a065c47ec8925e2f8aab5ddb39e4cb50a77d65f3709a5a4ee23",
+      "extraction_hash": "c939e4cbae02bf6f8237328e725fd9ccd6e067bb5245e7b30ebcdc714e73be41"
+    },
+    {
+      "id": "larian-locations",
+      "url": "https://larian.com/careers",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 6,
+      "body_sha256": "5b695ca7f42e1cc32b19fc3bcbd064d82e8f0d8749c5c500da8194348e0357ab",
+      "extraction_hash": "fcdc52cfb651792ed083d22ec55aaa3a02cc1ca519bcfa6f2bcda0ac28ef1201"
+    },
+    {
+      "id": "rise-locations",
+      "url": "https://www.risefx.com/",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "a34551d3d52231a93d90e8856b850a76dd96b72c39849089dfb8b7ef9e414f04",
+      "extraction_hash": "f54460442d0f70e4ea97104da600b6ad646c9c5439f5b49920b191e0d9fc91e1"
+    },
+    {
+      "id": "outpost-locations",
+      "url": "https://www.outpost-vfx.com/en/contact",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 5,
+      "body_sha256": "150a89cbbed65e805d082397e55d95c8f9535143ff381b83a2b95c407a04b58d",
+      "extraction_hash": "5d416b3829d0d8ace369a7363b86e6c53f0aa26901d0896365ce7e34c3c0a8cb"
+    },
+    {
+      "id": "flyingbark-locations",
+      "url": "https://www.flyingbark.com.au/about",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 3,
+      "body_sha256": "35ff675a417924c1ba0269077fc2f3071901d06f54be7b528b1af00fd3697bcb",
+      "extraction_hash": "0d054afcf29aeefcd8c361c7f76abf20386802c52facf04b70138f79ca07ea3d"
+    },
+    {
+      "id": "folks-locations",
+      "url": "https://folksvfx.com/contact/",
+      "attempted_on": "2026-11-09",
+      "status": "ok",
+      "candidate_count": 10,
+      "body_sha256": "2f3e9e2000e0d7385817fc8ca9e0c332c633cdf30ada5dee13934e59c1db5da8",
+      "extraction_hash": "f083a8c8c3f323cca76f492031f0bfe87ff002a2101e108cb8f05d7e0e2b6952"
+    }
+  ],
+  "published_records": 0,
+  "pending_candidates": 200,
+  "checkpoint_merge": [
+    {
+      "path": "data/research/v0.9.3-global/queue.json",
+      "added_candidate_ids": [
+        "discovery-24e408892c41e939566e1b5c",
+        "discovery-13852d2273345ce35a6c9147",
+        "discovery-8e6dc45bdbba269350a4401f",
+        "discovery-681caa1a45dae0a6b4fe4185",
+        "discovery-eecde83cd5a892be7b861cf9",
+        "discovery-cf0527e629685d34a7eb70eb",
+        "discovery-0911dac394aa29a96bd35b5b",
+        "discovery-db8fda98a62006a686712124",
+        "discovery-d21645729648ceec81b9e3ed",
+        "discovery-522ae908fc4dfcfb6a61f86f",
+        "discovery-4a343e2980ecb2f7c850d1ec",
+        "discovery-3ebdabba89c141501d633221",
+        "discovery-860c9c07bb47c3e8586dabcb",
+        "discovery-1ba6110d451eb467e3498e19",
+        "discovery-377b8fc4a637bc6cca952dd8",
+        "discovery-26b9d099e953a31a19eec265",
+        "discovery-3fe4840a8b59de6c429f2e64",
+        "discovery-8fd008a011373a6312e7b1d9",
+        "discovery-c57d40902bd3ef823ebf8ef7",
+        "discovery-0d7939d907d335f8a9479bdc",
+        "discovery-95e782e9a0dfcb8267344bcc",
+        "discovery-dd47fd3459530b3024214035",
+        "discovery-c10b89987b3125acc87494e7",
+        "discovery-c8aeb05cfd3461ee90372aa7",
+        "discovery-07fb5439bb4552f86ce3970c",
+        "discovery-24fc70533e33db38bd3f349e",
+        "discovery-9d6ac7475be31a2ceb441423",
+        "discovery-b486408cdcd6d4533f82940a",
+        "discovery-451027f197897c3111cc7b1f",
+        "discovery-8632bcfa808141c81ca047e9",
+        "discovery-9be93a63f419e0a981634474",
+        "discovery-6d0509b39f9aa01d5934ba44",
+        "discovery-2fbc3d4c239afb587ff3a9fd",
+        "discovery-5a57094ae6a057c754965f2b",
+        "discovery-8d20202cda687b8d2443cf51",
+        "discovery-879cdd7038df3e3188749972",
+        "discovery-0387945c2ad3fb7eb4c33533",
+        "discovery-4aae090c2eb496c5b8202d97",
+        "discovery-26319602236f2e71b6113d3a"
+      ],
+      "earlier_first_seen_ids": [],
+      "note": "Existing run evidence/reviews retained; checkpoint is not business or publication approval."
+    },
+    {
+      "path": "data/research/v1.0-launch/queue.json",
+      "added_candidate_ids": [
+        "v10-review-eb019403603deb02970500cf",
+        "v10-review-cec972b8151d8bc110e9f6c7",
+        "v10-review-d093c1a3184b8d9dd23d0121",
+        "v10-review-cb0e4516fff8bb6093607e14",
+        "v10-review-7e40ccc4562f0e0c23797fb7",
+        "v10-review-521faf22c5998554ed48c992",
+        "v10-review-e4351d9ac0cdfa550b746834",
+        "v10-review-dd2319056b24efa06dd17520",
+        "v10-review-4609ec7b14b0a1f93023c99f",
+        "v10-review-f63fc2ccd343bfd243264fbc",
+        "v10-review-9f59d63ec60eeba9d5ea2ac1",
+        "v10-review-bbc183683520520dc01557c1",
+        "v10-review-4e58cb0d0aa8a7b6ac55ef2c",
+        "v10-review-1d6eaf31c6ac0410679cf6ef",
+        "v10-review-ac0778f0b3b4e484a696e325",
+        "v10-review-c96b0b92bbd32305c00863ab",
+        "v10-review-fc1cf45d0b0783040ead6d51",
+        "v10-review-617fd5d82ddcfb632f20b35d",
+        "v10-review-fce3f677c6260998bb5438d7",
+        "v10-review-fa63a2c9be6fa02b99d60347",
+        "v10-review-43d94982670d8ef67b987728",
+        "v10-review-dbb649f107c33befdd151301",
+        "v10-review-fb1dff86c8b9159466278687",
+        "v10-review-95890e7f47d534f77990bb25",
+        "v10-review-592ffacd3d2edd2373787eef",
+        "v10-review-f992b210c893e419441c100c",
+        "v10-review-cce1988bcfee1da0c2705e63",
+        "v10-review-03cc0bcddf3303d8615ddc4d"
+      ],
+      "earlier_first_seen_ids": [],
+      "note": "Existing run evidence/reviews retained; checkpoint is not business or publication approval."
+    }
+  ]
+}

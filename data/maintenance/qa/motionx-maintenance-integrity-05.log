@@ -1,0 +1,89 @@
+{
+  "exhibitor_entries": 1074,
+  "priority_research_entries": 253,
+  "production_research_entries": 313,
+  "target_entries_with_research_attempts": 566,
+  "indexed_search_queries": 864,
+  "page_requests": 375,
+  "readable_company_assessments_before_identity_matching": 209,
+  "baseline_identity_matches": {
+    "no_match": 878,
+    "name_and_country": 158,
+    "identity_review": 16,
+    "possible_alias": 22
+  },
+  "dispositions": {
+    "duplicate": 3,
+    "inactive": 2,
+    "newly_added": 172,
+    "previously_existing": 161,
+    "rejected": 9,
+    "unresolved": 727
+  },
+  "new_class_c_company_references": 172,
+  "new_physical_locations": 0,
+  "new_confirmed_capability_claims": 0,
+  "new_verified_capture_facilities": 0,
+  "existing_records_examined": 42067,
+  "existing_ids_preserved": true,
+  "all_source_rows_reconciled": true,
+  "target_attempt_coverage": 1.0,
+  "independently_verified_current_operations_added": 0,
+  "human_reviewed_precision_sample": null,
+  "publication_approved": false,
+  "company_service_signals_not_facility_verification": {
+    "Animation": 200,
+    "CG": 16,
+    "Character animation": 10,
+    "Digital humans": 1,
+    "Game art": 2,
+    "Game cinematics": 4,
+    "Game production": 7,
+    "Motion editing": 1,
+    "Pipeline tools": 2,
+    "Previs": 1,
+    "Realtime": 1,
+    "Rigging": 10,
+    "Unreal Engine": 1,
+    "VFX": 12,
+    "Virtual production": 1
+  },
+  "remaining_gaps": [
+    "All new references require human identity, relevance and current-operation review; none is a verified physical facility.",
+    "508 non-target exhibitors receive full-catalogue identity reconciliation, not individual current-company research.",
+    "Unresolved aliases, parent/brand distinctions, stale projects, wrong namesakes and inaccessible primary pages remain queued.",
+    "A readable self-description is company evidence, not independent current-operation verification.",
+    "Original PDF and missing CSV not accessed. Workbook supplied the complete crosscheck.",
+    "No blanket PDF/directory redistribution permission; source policy and source-specific links remain explicit.",
+    "No completed human precision sample; no measured human precision or approval claimed."
+  ],
+  "outcomes_by_research_group": {
+    "priority": {
+      "duplicate": 1,
+      "inactive": 1,
+      "newly_added": 86,
+      "previously_existing": 7,
+      "rejected": 2,
+      "unresolved": 156
+    },
+    "production_review": {
+      "duplicate": 2,
+      "inactive": 1,
+      "newly_added": 86,
+      "previously_existing": 11,
+      "rejected": 7,
+      "unresolved": 206
+    },
+    "other": {
+      "previously_existing": 143,
+      "unresolved": 365
+    }
+  },
+  "previous_identity_hints": {
+    "same_country_matches": 143,
+    "possible_aliases": 24,
+    "no_strong_match": 907,
+    "meaning": "Historical user-supplied audit, not current-operation verification."
+  },
+  "all_identity_keys_after": 41820
+}
