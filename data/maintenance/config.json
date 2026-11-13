@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "monthly": {
+    "enabled": true,
+    "day_utc": 1,
+    "interval_months": 1,
+    "branch_prefix": "automation/atlas-maintenance-",
+    "maximum_open_batches": 1
+  },
+  "freshness": {
+    "observation_warning_days": 14,
+    "source_warning_days": 365,
+    "policy_review_days": 90,
+    "artifact_expiry_warning_days": 21
+  },
+  "snapshot_registry": "data/global-programme/inputs/snapshot-registry.json",
+  "discovery_registry": "data/discovery/sources.json",
+  "publication_mode": "research_only_draft_pr_then_owner_review",
+  "automatic_publication": false
+}

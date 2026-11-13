@@ -1,0 +1,98 @@
+[
+  {
+    "suite": "browser_smoke",
+    "exit_code": 0,
+    "seconds": 38.764,
+    "log": "/tmp/motionx-maintenance-http-browser_smoke.log"
+  },
+  {
+    "suite": "bulk_browser",
+    "exit_code": 0,
+    "seconds": 18.055,
+    "log": "/tmp/motionx-maintenance-http-bulk_browser.log"
+  },
+  {
+    "suite": "public_catalog_smoke",
+    "exit_code": 0,
+    "seconds": 42.301,
+    "log": "/tmp/motionx-maintenance-http-public_catalog_smoke.log"
+  },
+  {
+    "suite": "global_visibility_browser",
+    "exit_code": 0,
+    "seconds": 5.31,
+    "log": "/tmp/motionx-maintenance-http-global_visibility_browser.log"
+  },
+  {
+    "suite": "commercial_browser",
+    "exit_code": 0,
+    "seconds": 8.66,
+    "log": "/tmp/motionx-maintenance-http-commercial_browser.log"
+  },
+  {
+    "suite": "global_review_browser",
+    "exit_code": 0,
+    "seconds": 2.296,
+    "log": "/tmp/motionx-maintenance-http-global_review_browser.log"
+  },
+  {
+    "suite": "unified_ux",
+    "exit_code": 0,
+    "seconds": 14.594,
+    "log": "/tmp/motionx-maintenance-http-unified_ux.log"
+  },
+  {
+    "suite": "boutique_browser",
+    "exit_code": 0,
+    "seconds": 9.802,
+    "log": "/tmp/motionx-maintenance-http-boutique_browser.log"
+  },
+  {
+    "suite": "nz_census_browser",
+    "exit_code": 0,
+    "seconds": 6.542,
+    "log": "/tmp/motionx-maintenance-http-nz_census_browser.log"
+  },
+  {
+    "suite": "nz_quality_browser",
+    "exit_code": 0,
+    "seconds": 5.55,
+    "log": "/tmp/motionx-maintenance-http-nz_quality_browser.log"
+  },
+  {
+    "suite": "annecy_browser",
+    "exit_code": 0,
+    "seconds": 7.119,
+    "log": "/tmp/motionx-maintenance-http-annecy_browser.log"
+  },
+  {
+    "suite": "continuation_package_browser",
+    "exit_code": 0,
+    "seconds": 2.372,
+    "log": "/tmp/motionx-maintenance-http-continuation_package_browser.log"
+  },
+  {
+    "suite": "release_candidate_browser",
+    "exit_code": 0,
+    "seconds": 7.634,
+    "log": "/tmp/motionx-maintenance-http-release_candidate_browser.log"
+  },
+  {
+    "suite": "map_gate_browser",
+    "exit_code": 0,
+    "seconds": 11.056,
+    "log": "/tmp/motionx-maintenance-http-map_gate_browser.log"
+  },
+  {
+    "suite": "maintenance_browser",
+    "exit_code": 0,
+    "seconds": 2.874,
+    "log": "/tmp/motionx-maintenance-http-maintenance_browser.log"
+  },
+  {
+    "suite": "map_guide_browser",
+    "exit_code": 0,
+    "seconds": 14.736,
+    "log": "/tmp/motionx-maintenance-http-map_guide_browser.log"
+  }
+]

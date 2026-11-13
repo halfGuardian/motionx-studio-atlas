@@ -1,0 +1,4 @@
+PASS actual permitted-source review loads every proposal with source attribution and no approval control
+PASS keyboard search and exact before/after evidence expose uncertain claims and useful empty results
+PASS 390px report and exact JSON download preserve all proposal/source dates and zero publication
+3 maintenance HTTP checks passed

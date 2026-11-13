@@ -1,0 +1,22 @@
+{
+  "run_id": 42666896576,
+  "event": "schedule",
+  "main_commit": "913dd798bb485a3a60024f7f024cb186c472e574",
+  "artifact_id": 13696273183,
+  "zip_sha256": "d07c329c743560ca9509aa0895e31d12ecc559c86d69307fa9b412e325a0b2d1",
+  "expires_at": "2027-02-07T17:40:22Z",
+  "files": {
+    "history/569eda261a6ece84fdc284a748d44013814e604f06a0cc208aaece1a31b59fec.json": "569eda261a6ece84fdc284a748d44013814e604f06a0cc208aaece1a31b59fec",
+    "history/8ab2c36f6e0f57c61746b04c9867a967726ea1329638d7176c45f244faaea3a6.json": "8ab2c36f6e0f57c61746b04c9867a967726ea1329638d7176c45f244faaea3a6",
+    "history/c49913d0fa96e8d29706d5fc34e4ae202f89c4848683ae1faf530c35c4e8c5fb.json": "c49913d0fa96e8d29706d5fc34e4ae202f89c4848683ae1faf530c35c4e8c5fb",
+    "history/e6b07f0d3e4fc72bfd2762e82dfacfbf705899cbc43f6f77d4efb805b508ba93.json": "e6b07f0d3e4fc72bfd2762e82dfacfbf705899cbc43f6f77d4efb805b508ba93",
+    "history/fefbafd667ce19adf56a98383162542522335ba56a72f190dc903a00838a64ce.json": "fefbafd667ce19adf56a98383162542522335ba56a72f190dc903a00838a64ce",
+    "queue.json": "a062c4437c5046ec0b9ba08862c81c303ab1e57d3b2c71c1945874535dc17ded",
+    "recovery.json": "8ab2c36f6e0f57c61746b04c9867a967726ea1329638d7176c45f244faaea3a6",
+    "report.json": "1127e636c7cbab5328f1de5bec5bd062dfcff079efbb25c9d540e8c6651754e7"
+  },
+  "reported_history_complete": true,
+  "history_complete_supported": false,
+  "human_approved": false,
+  "note": "Exact scheduled-run bytes retained, including its legacy complete-history claim. V2 does not treat that flag as independent proof. No current operation or capability verification is asserted."
+}

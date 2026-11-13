@@ -48,6 +48,15 @@ jobs:
           python tools/release_candidate.py check
           python tools/map_gate.py check
           python tools/launch_readiness.py check --output data/release-candidate/reports/readiness
+      - name: Reproduce maintenance research from the actual preserved source artifact
+        run: |
+          python tools/maintenance.py prepare --discovery data/maintenance/inputs/discovery-42666896576 --output "$RUNNER_TEMP/maintenance-review"
+          python tools/maintenance.py verify --output "$RUNNER_TEMP/maintenance-review"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: automated-atlas-maintenance-v2-review
+          path: ${{ runner.temp }}/maintenance-review/
+          retention-days: 90
       - name: Package the integrated release decisions and complete static atlas
         run: |
           python tools/package_release_candidate.py --output "$RUNNER_TEMP/release-decisions" --review-only
@@ -125,6 +134,12 @@ jobs:
         run: |
           python tools/package_release_candidate.py --output "$RUNNER_TEMP/map-gate-atlas"
           MOTIONX_MAP_GATE_ROOT="$RUNNER_TEMP/map-gate-atlas" python tests/map_gate_browser.py
+      - name: Read-only maintenance dashboard, source attribution and mobile evidence review
+        run: |
+          python tools/maintenance.py prepare --discovery data/maintenance/inputs/discovery-42666896576 --output "$RUNNER_TEMP/maintenance-browser"
+          MOTIONX_MAINTENANCE_ROOT="$RUNNER_TEMP/maintenance-browser" python tests/maintenance_browser.py
+      - name: Collapsible map guide on desktop and mobile, keyboard controls and failure recovery
+        run: python tests/map_guide_browser.py
       - name: Actual standalone company and branch review artifact
         run: |
           python tools/package_global_review.py --output "$RUNNER_TEMP/continuation-review-browser"
@@ -160,6 +175,9 @@ jobs:
             /tmp/motionx-global-*.json
             /tmp/motionx-rc-*.json
             /tmp/motionx-map-gate-*.json
+            /tmp/motionx-maintenance-*.json
+            /tmp/motionx-map-guide-*.json
+            /tmp/motionx-map-guide-*.png
             data/global-programme
             geography.js
             data/bulk/reports/licensing.html

@@ -1,0 +1,6 @@
+{
+  "checks": 3,
+  "actual_proposals": 452,
+  "catalogue_records_unchanged": 42478,
+  "conditions": "Actual generated historical-source artifact over local HTTP; installed Chromium at 1440x950 and 390x844; no deployed Pages or live monthly workflow claim."
+}

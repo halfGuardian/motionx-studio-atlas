@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "reviewed_on_utc": "2026-11-08",
+  "baseline_commit": "913dd798bb485a3a60024f7f024cb186c472e574",
+  "api_total_count": 136,
+  "pages_read": 2,
+  "rows_read": 136,
+  "first_created_at": "2026-11-05T20:22:49Z",
+  "last_created_at": "2026-11-08T21:14:42Z",
+  "discovery_runs": [
+    {
+      "id": 42149794259,
+      "event": "workflow_dispatch",
+      "conclusion": "success",
+      "status": "completed",
+      "head_branch": "main",
+      "head_sha": "c5f16639137faa44a57550ad6a155e5791958a46",
+      "created_at": "2026-11-06T02:21:26Z",
+      "html_url": "https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/42149794259",
+      "path": ".github/workflows/discovery.yml"
+    }
+  ],
+  "archive_runs": [],
+  "scheduled_runs_observed": 0,
+  "branch_protection_read": "403 Resource not accessible by integration; required review enforcement not verified",
+  "limitations": [
+    "GitHub returned 136 existing runs; deleted runs cannot be reconstructed.",
+    "No scheduled execution is proven; the next configured weekly slot is 2026-11-09 07:23 UTC (20:23 NZDT).",
+    "Successful old manual run had six sources; it does not demonstrate the present eight-source configuration."
+  ]
+}

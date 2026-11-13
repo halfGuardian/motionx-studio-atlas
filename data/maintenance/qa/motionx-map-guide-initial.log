@@ -1,0 +1,599 @@
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/map_guide_browser.py", line 77, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/workspace/motionx-studio-atlas/tests/map_guide_browser.py", line 30, in main
+    expect(toggle).to_be_visible(); expect(page.locator('#mapLegendBody')).to_be_hidden()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 23332, in to_be_visible
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 852, in to_be_visible
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to be visible
+Actual value: hidden
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for locator("#mapLegendToggle")
+    13 × locator resolved to <summary id="mapLegendToggle" aria-controls="mapLegendBody">Map guide</summary>
+       - unexpected value "hidden"
+
+Aria snapshot:
+- link "Skip to studio search":
+  - /url: "#search"
+- banner:
+  - link "MotionX Studio Atlas home":
+    - /url: "#/"
+    - heading "MOTIONX / STUDIO ATLAS" [level=1]
+    - text: THE GLOBAL PRODUCTION DIRECTORY
+  - text: GLOBAL ATLAS 1.3
+- main:
+  - complementary "Studio directory":
+    - text: GLOBAL RESEARCH · EVIDENCE FIRST Global studio research.
+    - paragraph: All references together. Evidence labels distinguish reviewed locations from directory listings and research leads. Record totals are not verified facility counts.
+    - term: Total records
+    - definition: 42,478
+    - term: Geolocated records
+    - definition: 40,619
+    - term: Source-reviewed locations
+    - definition: "230"
+    - term: Provisional identities
+    - definition: 41,940
+    - term: Confirmed capture facilities
+    - definition: "22"
+    - group "Quick research filters":
+      - button "All records" [pressed]
+      - button "■ Reviewed studios · A"
+      - button "● Source-listed · B"
+      - button "▲ Research leads · C"
+      - button "Company references"
+      - button "Boutique Studios"
+      - button "Confirmed capture"
+    - paragraph: Quick views combine with the filters below. Confirmed capture checks site-specific Motion, Body or Performance Capture evidence. Company-only references are searchable even without map pins.
+    - paragraph:
+      - link "Global source coverage and review":
+        - /url: data/global-programme/reports/dashboard.html
+        - strong: Global source coverage and review
+      - text: ·
+      - strong: "New Zealand source coverage:"
+      - link "Final quality gate and maintainer review":
+        - /url: data/nz-census/final-review/reports/dashboard.html
+      - text: ·
+      - link "Historical 217-observation reconciliation":
+        - /url: data/nz-census/reports/coverage.html
+      - text: ·
+      - link "Historical NZFC 42-row audit":
+        - /url: data/boutique/reports/nzfc-coverage.html
+      - text: . Company representation is not verified physical coverage; the census remains incomplete.
+    - text: A · Reviewed B · Listed C · Research
+    - status: 42474 records
+    - button "Reset filters"
+    - text: 243 retained · 40,376 source observations · 1,859 company references. Records can overlap. 4 audio-only references excluded from normal results; 42,478 retained for audit. Search the atlas
+    - searchbox "Search the atlas"
+    - text: MotionX audience
+    - combobox "MotionX audience":
+      - option "All eligible audiences" [selected]
+      - option "Explicit potential clients (including both)"
+      - option "Explicit service providers (including both)"
+      - option "Explicitly relevant client and provider"
+      - option "Plausible but unconfirmed prospects"
+      - option "Adjacent / uncertain"
+      - option "Out of scope (use audit view)"
+    - text: Directory scope
+    - combobox "Directory scope":
+      - option "Normal directory" [selected]
+      - option "All retained records · audit"
+      - option "Excluded audio-only · audit"
+    - paragraph: Explicit game/animation/VFX sector claims establish relevance, not buying intent or verified facility services. Generic film/video listings remain plausible, unconfirmed prospects. Game developers qualify without capture. Individually reviewed audio-only companies are excluded from normal results; audit views preserve their profiles and exports.
+    - text: Geographic discovery
+    - combobox "Geographic discovery":
+      - option "All geographic evidence" [selected]
+      - option "Supported company city reference · no verified facility"
+      - option "Unpinned companies · no supported display point"
+      - option "No original coordinates · includes city references"
+    - paragraph:
+      - link "Integrated release candidate, admission decisions and geographic review":
+        - /url: data/release-candidate/reports/dashboard.html
+    - group: Advanced filters & research priorities
+    - text: Order results
+    - combobox "Order results":
+      - option "Best match, then evidence quality" [selected]
+      - option "Research attention first"
+      - option "Oldest / missing source dates first"
+    - group "Directory view":
+      - button "Records" [pressed]
+      - button "Identities"
+    - button "↓ CSV"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Annapurna Studios":
+        - /url: "#/organisation/annapurna-studios"
+      - heading "A&M MoCap Lab at Annapurna Studios" [level=3]:
+        - link "A&M MoCap Lab at Annapurna Studios":
+          - /url: "#/location/annapurna-am-mocap-hyderabad"
+      - text: Hyderabad, India RETAINED ATLAS LOCATION Motion Capture Body Capture Facial Capture Performance Capture Retargeting city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Abstraction":
+        - /url: "#/organisation/abstraction"
+      - heading "Abstraction — Valkenswaard" [level=3]:
+        - link "Abstraction — Valkenswaard":
+          - /url: "#/location/abstraction-valkenswaard"
+      - text: Valkenswaard, Netherlands RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Animatrik Film Design":
+        - /url: "#/organisation/animatrik"
+      - heading "Animatrik Film Design" [level=3]:
+        - link "Animatrik Film Design":
+          - /url: "#/location/animatrik-burnaby"
+      - text: Burnaby, Canada RETAINED ATLAS LOCATION Motion Capture Performance Capture city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Annapurna Studios":
+        - /url: "#/organisation/annapurna-studios"
+      - heading "ANR Virtual Production Stage — Annapurna / Qube" [level=3]:
+        - link "ANR Virtual Production Stage — Annapurna / Qube":
+          - /url: "#/location/annapurna-anr-vp-hyderabad"
+      - text: Hyderabad, India RETAINED ATLAS LOCATION Virtual Production city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Assemblage Entertainment":
+        - /url: "#/organisation/assemblage"
+      - heading "Assemblage Entertainment" [level=3]:
+        - link "Assemblage Entertainment":
+          - /url: "#/location/assemblage-bengaluru"
+      - text: Bengaluru, India RETAINED ATLAS LOCATION Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Assemblage Entertainment":
+        - /url: "#/organisation/assemblage"
+      - heading "Assemblage Entertainment" [level=3]:
+        - link "Assemblage Entertainment":
+          - /url: "#/location/assemblage-mumbai"
+      - text: Mumbai, India RETAINED ATLAS LOCATION Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Atomhawk":
+        - /url: "#/organisation/atomhawk"
+      - heading "Atomhawk — Gateshead" [level=3]:
+        - link "Atomhawk — Gateshead":
+          - /url: "#/location/atomhawk-gateshead"
+      - text: Gateshead, United Kingdom RETAINED ATLAS LOCATION Game Art city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Atomhawk":
+        - /url: "#/organisation/atomhawk"
+      - heading "Atomhawk — Leamington Spa" [level=3]:
+        - link "Atomhawk — Leamington Spa":
+          - /url: "#/location/atomhawk-leamington-spa"
+      - text: Leamington Spa, United Kingdom RETAINED ATLAS LOCATION Game Art city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Audiomotion Studios":
+        - /url: "#/organisation/audiomotion"
+      - heading "Audiomotion Studios" [level=3]:
+        - link "Audiomotion Studios":
+          - /url: "#/location/audiomotion"
+      - text: Didcot, United Kingdom RETAINED ATLAS LOCATION Motion Capture Performance Capture city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Barajoun Studios":
+        - /url: "#/organisation/barajoun"
+      - heading "Barajoun Studios — Dubai" [level=3]:
+        - link "Barajoun Studios — Dubai":
+          - /url: "#/location/barajoun-dubai"
+      - text: Dubai, United Arab Emirates RETAINED ATLAS LOCATION Animation VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Beyond Capture":
+        - /url: "#/organisation/beyond"
+      - heading "Beyond Capture" [level=3]:
+        - link "Beyond Capture":
+          - /url: "#/location/beyond-montreal"
+      - text: Montréal, Canada RETAINED ATLAS LOCATION Motion Capture Performance Capture city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Beyond Capture":
+        - /url: "#/organisation/beyond"
+      - heading "Beyond Capture" [level=3]:
+        - link "Beyond Capture":
+          - /url: "#/location/beyond-vancouver"
+      - text: Vancouver, Canada RETAINED ATLAS LOCATION Motion Capture Performance Capture city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Beyond-FX":
+        - /url: "#/organisation/beyond-fx"
+      - heading "Beyond-FX — Los Angeles" [level=3]:
+        - link "Beyond-FX — Los Angeles":
+          - /url: "#/location/beyond-fx-los-angeles"
+      - text: Los Angeles, United States RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Black Shamrock":
+        - /url: "#/organisation/black-shamrock"
+      - heading "Black Shamrock — Dublin" [level=3]:
+        - link "Black Shamrock — Dublin":
+          - /url: "#/location/black-shamrock-dublin"
+      - text: Dublin, Ireland RETAINED ATLAS LOCATION Game Development Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "BlackHouse":
+        - /url: "#/organisation/blackhouse"
+      - heading "BlackHouse" [level=3]:
+        - link "BlackHouse":
+          - /url: "#/location/blackhouse-sao-paulo"
+      - text: São Paulo, Brazil RETAINED ATLAS LOCATION Motion Capture Facial Capture Retargeting Motion Editing city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Blue Mammoth Games":
+        - /url: "#/organisation/blue-mammoth"
+      - heading "Blue Mammoth Games" [level=3]:
+        - link "Blue Mammoth Games":
+          - /url: "#/location/blue-mammoth-alpharetta"
+      - text: Alpharetta, United States RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cd Projekt Red":
+        - /url: "#/organisation/cd-projekt-red"
+      - heading "CD PROJEKT RED" [level=3]:
+        - link "CD PROJEKT RED":
+          - /url: "#/location/cd-projekt-red-boston"
+      - text: Boston, United States RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cd Projekt Red":
+        - /url: "#/organisation/cd-projekt-red"
+      - heading "CD PROJEKT RED" [level=3]:
+        - link "CD PROJEKT RED":
+          - /url: "#/location/cd-projekt-red-krakow"
+      - text: Kraków, Poland RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cd Projekt Red":
+        - /url: "#/organisation/cd-projekt-red"
+      - heading "CD PROJEKT RED" [level=3]:
+        - link "CD PROJEKT RED":
+          - /url: "#/location/cd-projekt-red-vancouver"
+      - text: Burnaby, Canada RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cd Projekt Red":
+        - /url: "#/organisation/cd-projekt-red"
+      - heading "CD PROJEKT RED" [level=3]:
+        - link "CD PROJEKT RED":
+          - /url: "#/location/cd-projekt-red-warsaw"
+      - text: Warsaw, Poland RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cd Projekt Red":
+        - /url: "#/organisation/cd-projekt-red"
+      - heading "CD PROJEKT RED" [level=3]:
+        - link "CD PROJEKT RED":
+          - /url: "#/location/cd-projekt-red-wroclaw"
+      - text: Wrocław, Poland RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant service provider
+      - link "Centroid":
+        - /url: "#/organisation/centroid"
+      - heading "Centroid — Riverside Studio" [level=3]:
+        - link "Centroid — Riverside Studio":
+          - /url: "#/location/centroid-uxbridge"
+      - text: Uxbridge, United Kingdom RETAINED ATLAS LOCATION Motion Capture Performance Capture city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Chocolate Tribe":
+        - /url: "#/organisation/chocolate-tribe"
+      - heading "Chocolate Tribe — Cape Town" [level=3]:
+        - link "Chocolate Tribe — Cape Town":
+          - /url: "#/location/chocolate-tribe-cape-town"
+      - text: Cape Town, South Africa RETAINED ATLAS LOCATION VFX Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Chocolate Tribe":
+        - /url: "#/organisation/chocolate-tribe"
+      - heading "Chocolate Tribe — Johannesburg" [level=3]:
+        - link "Chocolate Tribe — Johannesburg":
+          - /url: "#/location/chocolate-tribe-johannesburg"
+      - text: Johannesburg, South Africa RETAINED ATLAS LOCATION VFX Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cinesite":
+        - /url: "#/organisation/cinesite"
+      - heading "Cinesite" [level=3]:
+        - link "Cinesite":
+          - /url: "#/location/cinesite-london"
+      - text: London, United Kingdom RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cinesite":
+        - /url: "#/organisation/cinesite"
+      - heading "Cinesite" [level=3]:
+        - link "Cinesite":
+          - /url: "#/location/cinesite-montreal"
+      - text: Montréal, Canada RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Cinesite":
+        - /url: "#/organisation/cinesite"
+      - heading "Cinesite" [level=3]:
+        - link "Cinesite":
+          - /url: "#/location/cinesite-vancouver"
+      - text: Vancouver, Canada RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Codemasters":
+        - /url: "#/organisation/codemasters"
+      - heading "Codemasters" [level=3]:
+        - link "Codemasters":
+          - /url: "#/location/codemasters-birmingham"
+      - text: Birmingham, United Kingdom RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Codemasters":
+        - /url: "#/organisation/codemasters"
+      - heading "Codemasters" [level=3]:
+        - link "Codemasters":
+          - /url: "#/location/codemasters-kuala-lumpur"
+      - text: Kuala Lumpur, Malaysia RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Codemasters":
+        - /url: "#/organisation/codemasters"
+      - heading "Codemasters" [level=3]:
+        - link "Codemasters":
+          - /url: "#/location/codemasters-southam"
+      - text: Southam, United Kingdom RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "CounterPunch":
+        - /url: "#/organisation/counterpunch"
+      - heading "CounterPunch — Los Angeles" [level=3]:
+        - link "CounterPunch — Los Angeles":
+          - /url: "#/location/counterpunch-los-angeles"
+      - text: Los Angeles, United States RETAINED ATLAS LOCATION Animation Cinematics Previsualization city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Criterion Games":
+        - /url: "#/organisation/criterion-games"
+      - heading "Criterion Games" [level=3]:
+        - link "Criterion Games":
+          - /url: "#/location/criterion-games-guildford"
+      - text: Guildford, United Kingdom RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Demente Animation Studio":
+        - /url: "#/organisation/demente"
+      - heading "Demente Animation Studio — Guadalajara" [level=3]:
+        - link "Demente Animation Studio — Guadalajara":
+          - /url: "#/location/demente-guadalajara"
+      - text: Guadalajara, Mexico RETAINED ATLAS LOCATION Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "DICE":
+        - /url: "#/organisation/dice"
+      - heading "DICE" [level=3]:
+        - link "DICE":
+          - /url: "#/location/dice-stockholm"
+      - text: Stockholm, Sweden RETAINED ATLAS LOCATION Game Development city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Digital Domain":
+        - /url: "#/organisation/digital-domain"
+      - heading "Digital Domain" [level=3]:
+        - link "Digital Domain":
+          - /url: "#/location/digital-domain-hyderabad"
+      - text: Hyderabad, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Digital Domain":
+        - /url: "#/organisation/digital-domain"
+      - heading "Digital Domain" [level=3]:
+        - link "Digital Domain":
+          - /url: "#/location/digital-domain-los-angeles"
+      - text: Culver City, United States RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Digital Domain":
+        - /url: "#/organisation/digital-domain"
+      - heading "Digital Domain" [level=3]:
+        - link "Digital Domain":
+          - /url: "#/location/digital-domain-montreal"
+      - text: Montréal, Canada RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Digital Domain":
+        - /url: "#/organisation/digital-domain"
+      - heading "Digital Domain" [level=3]:
+        - link "Digital Domain":
+          - /url: "#/location/digital-domain-shanghai"
+      - text: Shanghai, China RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Digital Domain":
+        - /url: "#/organisation/digital-domain"
+      - heading "Digital Domain" [level=3]:
+        - link "Digital Domain":
+          - /url: "#/location/digital-domain-vancouver"
+      - text: Vancouver, Canada RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Barcelona" [level=3]:
+        - link "DNEG — Barcelona":
+          - /url: "#/location/dneg-barcelona"
+      - text: Barcelona, Spain RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Bengaluru" [level=3]:
+        - link "DNEG — Bengaluru":
+          - /url: "#/location/dneg-bengaluru"
+      - text: Bengaluru, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Budapest" [level=3]:
+        - link "DNEG — Budapest":
+          - /url: "#/location/dneg-budapest"
+      - text: Budapest, Hungary RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Chennai" [level=3]:
+        - link "DNEG — Chennai":
+          - /url: "#/location/dneg-chennai"
+      - text: Chennai, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Goa" [level=3]:
+        - link "DNEG — Goa":
+          - /url: "#/location/dneg-goa"
+      - text: Benaulim, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Hyderabad" [level=3]:
+        - link "DNEG — Hyderabad":
+          - /url: "#/location/dneg-hyderabad"
+      - text: Hyderabad, India RETAINED ATLAS LOCATION VFX Animation city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Kolkata" [level=3]:
+        - link "DNEG — Kolkata":
+          - /url: "#/location/dneg-kolkata"
+      - text: Kolkata, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — London" [level=3]:
+        - link "DNEG — London":
+          - /url: "#/location/dneg-london"
+      - text: London, United Kingdom RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Los Angeles" [level=3]:
+        - link "DNEG — Los Angeles":
+          - /url: "#/location/dneg-los-angeles"
+      - text: West Hollywood, United States RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Mohali" [level=3]:
+        - link "DNEG — Mohali":
+          - /url: "#/location/dneg-mohali"
+      - text: Mohali, India RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - article:
+      - text: Class A Explicitly relevant potential client
+      - link "Dneg":
+        - /url: "#/organisation/dneg"
+      - heading "DNEG — Montréal" [level=3]:
+        - link "DNEG — Montréal":
+          - /url: "#/location/dneg-montreal"
+      - text: Montréal, Canada RETAINED ATLAS LOCATION VFX city coordinates · Recorded 7 days ago
+      - button "Compare record"
+    - status
+    - button "← Previous" [disabled]
+    - text: 1–50 of 42474
+    - button "Next →"
+    - paragraph:
+      - text: "Confidence describes the cited capability claim, not independent verification. Legacy claims are unknown pending review. Capability confirmation does not prove registration or current operation. Some pins are city-level estimates. Do not treat a city pin as a street address. Research city references:"
+      - link "GeoNames":
+        - /url: https://www.geonames.org/
+      - text: (
+      - link "CC BY 4.0":
+        - /url: https://creativecommons.org/licenses/by/4.0/
+      - text: "), used as city pins, not facility geocodes. Iver Heath reference: © Crown copyright, Office for National Statistics via"
+      - link "Planning Data":
+        - /url: https://www.planning.data.gov.uk/entity/2504906
+      - text: ","
+      - link "OGL v3.0":
+        - /url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+      - text: .
+    - paragraph:
+      - text: "Source observations:"
+      - link "Overture Maps Foundation":
+        - /url: https://overturemaps.org/
+      - text: and original providers recorded per entry. © Foursquare Labs, Inc. where applicable; Foursquare data was transformed to Overture schema and filtered/normalised by MotionX.
+      - link "Data licences, attribution and transformation notices":
+        - /url: data/bulk/NOTICE.html
+      - text: . All records share this research atlas. Class B/C entries do not confirm current operation, facility services or ownership. Company references have no invented map points. Some company-source terms remain unspecified; these are distinguished from the licensed animation-directory projection. Authored descriptions and contacts are omitted.
+    - paragraph:
+      - link "Licensing & future-launch readiness":
+        - /url: data/release-candidate/reports/readiness/licensing.html
+      - text: ·
+      - link "Coverage and research audit":
+        - /url: data/bulk/reports/coverage.html
+      - text: . A public repository remains publicly accessible. Research priorities and test results never grant human approval.
+  - paragraph: Use the studio directory or Tab between map markers. Enter or Space selects a marker. Groups show A/B/C counts and open a selectable list. All original coordinates are preserved.
+- navigation "Mobile navigation":
+  - button "◉ Map"
+  - button "☷ Directory" [pressed]

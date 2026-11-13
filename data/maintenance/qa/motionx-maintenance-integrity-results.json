@@ -1,0 +1,92 @@
+[
+  {
+    "command": "python tools/validate.py studios.json",
+    "exit_code": 0,
+    "seconds": 0.06,
+    "log": "/tmp/motionx-maintenance-integrity-00.log"
+  },
+  {
+    "command": "python tools/check_bulk_release.py",
+    "exit_code": 0,
+    "seconds": 125.13,
+    "log": "/tmp/motionx-maintenance-integrity-01.log"
+  },
+  {
+    "command": "python tools/launch_readiness.py check --output data/global-programme/reports/readiness",
+    "exit_code": 0,
+    "seconds": 3.87,
+    "log": "/tmp/motionx-maintenance-integrity-02.log"
+  },
+  {
+    "command": "python tools/launch_readiness.py check --output data/release-candidate/reports/readiness",
+    "exit_code": 0,
+    "seconds": 3.04,
+    "log": "/tmp/motionx-maintenance-integrity-03.log"
+  },
+  {
+    "command": "python tools/boutique.py check --output data/boutique/reports",
+    "exit_code": 0,
+    "seconds": 3.85,
+    "log": "/tmp/motionx-maintenance-integrity-04.log"
+  },
+  {
+    "command": "python tools/annecy.py check",
+    "exit_code": 0,
+    "seconds": 22.83,
+    "log": "/tmp/motionx-maintenance-integrity-05.log"
+  },
+  {
+    "command": "python tools/nz_census.py prepare --output /tmp/motionx-maintenance-nz-wave1",
+    "exit_code": 0,
+    "seconds": 0.49,
+    "log": "/tmp/motionx-maintenance-integrity-06.log"
+  },
+  {
+    "command": "python tools/nz_research.py check",
+    "exit_code": 0,
+    "seconds": 8.77,
+    "log": "/tmp/motionx-maintenance-integrity-07.log"
+  },
+  {
+    "command": "python tools/global_visibility.py check",
+    "exit_code": 0,
+    "seconds": 10.38,
+    "log": "/tmp/motionx-maintenance-integrity-08.log"
+  },
+  {
+    "command": "python tools/global_continuation.py check",
+    "exit_code": 0,
+    "seconds": 19.74,
+    "log": "/tmp/motionx-maintenance-integrity-09.log"
+  },
+  {
+    "command": "python tools/global_programme.py check",
+    "exit_code": 0,
+    "seconds": 61.76,
+    "log": "/tmp/motionx-maintenance-integrity-10.log"
+  },
+  {
+    "command": "python tools/global_programme.py maintenance-check",
+    "exit_code": 0,
+    "seconds": 0.12,
+    "log": "/tmp/motionx-maintenance-integrity-11.log"
+  },
+  {
+    "command": "python tools/nz_quality_gate.py check",
+    "exit_code": 0,
+    "seconds": 2.11,
+    "log": "/tmp/motionx-maintenance-integrity-12.log"
+  },
+  {
+    "command": "python tools/release_candidate.py check",
+    "exit_code": 0,
+    "seconds": 10.73,
+    "log": "/tmp/motionx-maintenance-integrity-13.log"
+  },
+  {
+    "command": "python tools/map_gate.py check",
+    "exit_code": 0,
+    "seconds": 2.14,
+    "log": "/tmp/motionx-maintenance-integrity-14.log"
+  }
+]

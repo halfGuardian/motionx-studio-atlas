@@ -55,6 +55,26 @@ class CheckpointTests(unittest.TestCase):
             def fail(*args,**kwargs):raise subprocess.CalledProcessError(1,args[0])
             with self.assertRaises(subprocess.CalledProcessError):restore(out,runner=fail)
             self.assertFalse(out.exists())
+
+    def test_latest_artifact_cannot_erase_inherited_partial_history(self):
+        q,report=observed();prior={'history_complete':False,'suppress_absence_signals':True,'warning':'original gap'}
+        def run(args,**kwargs):
+            if args[1:3]==['run','list']:return subprocess.CompletedProcess(args,0,'[{"databaseId":1}]')
+            if args[1]=='api':return subprocess.CompletedProcess(args,0,json.dumps({'head_branch':'main','path':'.github/workflows/discovery.yml','status':'completed','conclusion':'failure','head_repository':{'full_name':'halfGuardian/motionx-studio-atlas'}}))
+            path=Path(args[-1]);path.mkdir();(path/'queue.json').write_text(json.dumps(q));(path/'report.json').write_text(json.dumps(report));(path/'recovery.json').write_text(json.dumps(prior));return subprocess.CompletedProcess(args,0,'','')
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder)/'restore';restore(out,runner=run,include_failed=True)
+            self.assertFalse(read(out/'recovery.json')['history_complete']);self.assertTrue(read(out/'recovery.json')['suppress_absence_signals'])
+            self.assertTrue(any(read(p)==prior for p in (out/'history').glob('*.json')))
+
+    def test_legacy_complete_flag_is_not_proof_of_complete_raw_history(self):
+        q,report=observed()
+        def run(args,**kwargs):
+            if args[1:3]==['run','list']:return subprocess.CompletedProcess(args,0,'[{"databaseId":1}]')
+            p=Path(args[-1]);p.mkdir();(p/'queue.json').write_text(json.dumps(q));(p/'report.json').write_text(json.dumps(report));(p/'recovery.json').write_text(json.dumps({'history_complete':True,'suppress_absence_signals':False}));return subprocess.CompletedProcess(args,0,'','')
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder)/'restore';restore(out,runner=run)
+            self.assertFalse(read(out/'recovery.json')['history_complete']);self.assertTrue(read(out/'recovery.json')['suppress_absence_signals'])
     def test_committed_manifest_matches_reviewed_v093_checkpoint(self):
         files=validate_manifest(read(ROOT/'data/discovery/checkpoints.json'))
         q=files['data/research/v0.9.3-global/queue.json'][2]

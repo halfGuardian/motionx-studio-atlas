@@ -1,0 +1,76 @@
+name: Consolidate monthly Atlas research for owner review
+on:
+  schedule:
+    # Daily lightweight gate; cadence/day are configured in data/maintenance/config.json.
+    - cron: '23 9 * * *'
+  workflow_dispatch:
+    inputs:
+      prepare_now:
+        type: boolean
+        default: false
+        description: 'Prepare this month outside its usual day (not publication approval)'
+permissions:
+  contents: read
+env:
+  TZ: UTC
+concurrency:
+  group: monthly-atlas-maintenance
+  cancel-in-progress: false
+jobs:
+  cadence:
+    if: github.ref == 'refs/heads/main' && github.repository == 'halfGuardian/motionx-studio-atlas'
+    runs-on: ubuntu-latest
+    outputs:
+      due: ${{ steps.cadence.outputs.due }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - id: cadence
+        env:
+          PREPARE_NOW: ${{ inputs.prepare_now }}
+        run: |
+          flags=()
+          if [ "$PREPARE_NOW" = 'true' ]; then flags+=(--manual); fi
+          echo "due=$(python tools/maintenance.py due "${flags[@]}")" >> "$GITHUB_OUTPUT"
+  draft:
+    needs: cadence
+    if: needs.cadence.outputs.due == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recover actual successful or partial research artifacts; never collect new URLs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/maintenance_actions.py restore --output previous-maintenance
+      - name: Consolidate permitted snapshots, full history and review exceptions
+        run: |
+          python tools/maintenance.py prepare --discovery previous-maintenance/maintenance/discovery --state previous-maintenance/maintenance/state.json --recovery previous-maintenance/recovery.json --output "$RUNNER_TEMP/monthly-research"
+          cat "$RUNNER_TEMP/monthly-research/summary.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Create or update one research-only draft without force push or publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/maintenance_actions.py propose --folder "$RUNNER_TEMP/monthly-research"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monthly-atlas-owner-review
+          path: ${{ runner.temp }}/monthly-research/
+          retention-days: 90
+      - name: Surface failed or stale source exceptions after saving the batch
+        run: python tools/maintenance.py health --output "$RUNNER_TEMP/monthly-research"
+      - name: Owner alert when preparation or PR permissions fail
+        if: failure()
+        run: |
+          echo '::error::Monthly research needs owner attention. Inspect the exact failure; download any prepared artifact and create a draft manually if Actions cannot create PRs. No public records were changed.'
+          echo 'No automated publication. Review the available artifact and data/maintenance/OPERATIONS.md; do not treat this failure as a studio closure.' >> "$GITHUB_STEP_SUMMARY"

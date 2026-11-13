@@ -1,0 +1,38 @@
+test_committed_manifest_matches_reviewed_v093_checkpoint (test_checkpoints.CheckpointTests.test_committed_manifest_matches_reviewed_v093_checkpoint) ... ok
+test_invalid_run_metadata_and_network_failures_do_not_reset_queue (test_checkpoints.CheckpointTests.test_invalid_run_metadata_and_network_failures_do_not_reset_queue) ... ok
+test_latest_artifact_cannot_erase_inherited_partial_history (test_checkpoints.CheckpointTests.test_latest_artifact_cannot_erase_inherited_partial_history) ... ERROR
+test_legacy_complete_flag_is_not_proof_of_complete_raw_history (test_checkpoints.CheckpointTests.test_legacy_complete_flag_is_not_proof_of_complete_raw_history) ... ERROR
+test_malformed_observation_dates_and_identity_are_rejected (test_checkpoints.CheckpointTests.test_malformed_observation_dates_and_identity_are_rejected) ... ok
+test_missing_newest_artifact_uses_an_older_valid_artifact_without_hiding_gap (test_checkpoints.CheckpointTests.test_missing_newest_artifact_uses_an_older_valid_artifact_without_hiding_gap) ... ok
+test_recovery_preserves_all_candidates_but_explicitly_reports_incomplete_history (test_checkpoints.CheckpointTests.test_recovery_preserves_all_candidates_but_explicitly_reports_incomplete_history) ... ok
+test_suppressed_absence_after_recovery_is_not_a_closure_signal (test_checkpoints.CheckpointTests.test_suppressed_absence_after_recovery_is_not_a_closure_signal) ... ok
+test_tampered_bytes_missing_file_traversal_and_symlink_fail_closed (test_checkpoints.CheckpointTests.test_tampered_bytes_missing_file_traversal_and_symlink_fail_closed) ... ok
+
+======================================================================
+ERROR: test_latest_artifact_cannot_erase_inherited_partial_history (test_checkpoints.CheckpointTests.test_latest_artifact_cannot_erase_inherited_partial_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/test_checkpoints.py", line 66, in test_latest_artifact_cannot_erase_inherited_partial_history
+    out=Path(folder)/'restore';restore(out,runner=run,include_failed=True)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/restore_discovery.py", line 45, in restore
+    body=(attempt/'recovery.json').read_bytes();history=output/'history';history.mkdir(exist_ok=True);(history/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+                                                                                                                ^^^^^^^
+UnboundLocalError: cannot access local variable 'hashlib' where it is not associated with a value
+
+======================================================================
+ERROR: test_legacy_complete_flag_is_not_proof_of_complete_raw_history (test_checkpoints.CheckpointTests.test_legacy_complete_flag_is_not_proof_of_complete_raw_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/motionx-studio-atlas/tests/test_checkpoints.py", line 76, in test_legacy_complete_flag_is_not_proof_of_complete_raw_history
+    out=Path(folder)/'restore';restore(out,runner=run)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/motionx-studio-atlas/tools/restore_discovery.py", line 45, in restore
+    body=(attempt/'recovery.json').read_bytes();history=output/'history';history.mkdir(exist_ok=True);(history/(hashlib.sha256(body).hexdigest()+'.json')).write_bytes(body)
+                                                                                                                ^^^^^^^
+UnboundLocalError: cannot access local variable 'hashlib' where it is not associated with a value
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.016s
+
+FAILED (errors=2)

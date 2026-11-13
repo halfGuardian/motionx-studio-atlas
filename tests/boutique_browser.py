@@ -19,6 +19,7 @@ def main():
             browser=pw.chromium.launch(executable_path=os.environ.get('CHROMIUM') or shutil.which('chromium'),headless=True,args=['--no-sandbox']);context=browser.new_context(viewport={'width':1440,'height':1000},accept_downloads=True);page=context.new_page();errors=[];requests=[];page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:requests.append(r.url))
             page.goto(url,wait_until='domcontentloaded');expect(page.locator('#count')).to_have_text(total,timeout=45000);assert not any('/boutique.json' in r for r in requests)
             passed('complete combined catalogue loads before any lazy boutique metadata request')
+            page.locator('#mapLegendToggle').click()
             expect(page.locator('#unmappedCount')).to_contain_text('matching directory records have no original map coordinates');expect(page.locator('#browseUnmapped')).to_be_visible()
             page.locator('#browseUnmapped').click();expect(page.locator('#recordKind')).to_have_value('company_reference');expect(page.locator('#count')).to_have_text(str(visible_counts(ROOT,manifest['counts'])['company_references'])+' records');page.locator('#resetFilters').click()
             passed('unpinned company references remain countable and browsable without fabricating map coordinates')

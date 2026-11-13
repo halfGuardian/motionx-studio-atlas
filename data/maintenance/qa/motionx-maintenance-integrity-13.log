@@ -1,0 +1,23 @@
+{
+  "parent_records": 42296,
+  "draft_records": 42478,
+  "admitted_companies": 182,
+  "withheld_companies": 2,
+  "new_confirmed_capabilities": 0,
+  "new_physical_facility_records": 0,
+  "original_records_changed": 0,
+  "geographic_proposals": 17,
+  "new_city_display_references": 7,
+  "staged_geographic_proposals": 10,
+  "remaining_city_associations": 238,
+  "existing_research_keys_preserved": 725,
+  "unresolved_research_cases_preserved": 381,
+  "countries_and_territories": 179,
+  "retained_locations": 243,
+  "retained_reviewed_organisations": 119,
+  "total_source_identity_keys": 41977,
+  "company_references": 1859,
+  "normal_directory_records": 42474,
+  "human_approved": false,
+  "publication_approved": false
+}

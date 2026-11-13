@@ -65,6 +65,7 @@ def main():
             page.locator('#resetFilters').click(); page.locator('#country').select_option('Luxembourg')
             page.locator('#category').select_option('Animation'); page.locator('#search').fill('a_BAHN')
             expect(page.locator('#count')).to_have_text('1 record'); expect(page.locator('#browseNoReference')).to_have_text('Browse 1 unpinned company')
+            page.locator('#mapLegendToggle').click()
             page.locator('#browseNoReference').click(); expect(page.locator('#geographicView')).to_have_value('no_display')
             expect(page.locator('#country')).to_have_value('Luxembourg'); expect(page.locator('#category')).to_have_value('Animation')
             expect(page.locator('#count')).to_have_text('1 record'); page.locator('#list a.profile-link').press('Enter')

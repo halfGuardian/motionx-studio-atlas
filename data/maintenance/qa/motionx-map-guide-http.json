@@ -1,0 +1,66 @@
+{
+  "checks": 4,
+  "measurements": [
+    {
+      "viewport": [
+        1440,
+        950
+      ],
+      "collapsed_box": {
+        "x": 1312.59375,
+        "y": 88,
+        "width": 115.40625,
+        "height": 46
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "collapsed_box": {
+        "x": 640.59375,
+        "y": 88,
+        "width": 115.40625,
+        "height": 46
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "collapsed_box": {
+        "x": 264.59375,
+        "y": 78,
+        "width": 115.40625,
+        "height": 46
+      }
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "collapsed_box": {
+        "x": 194.59375,
+        "y": 78,
+        "width": 115.40625,
+        "height": 46
+      }
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "collapsed_box": {
+        "x": 716.59375,
+        "y": 88,
+        "width": 115.40625,
+        "height": 46
+      }
+    }
+  ],
+  "conditions": "Actual local HTTP catalogue, installed Chromium, live Leaflet/OSM except explicit failure fixture; not a deployed-site claim."
+}

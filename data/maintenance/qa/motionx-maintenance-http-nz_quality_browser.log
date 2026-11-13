@@ -1,0 +1,7 @@
+PASS all 59 company audits, relevance/readiness filters and staged scope reasoning are readable without JSON browsing
+PASS keyboard maintainer choices download only an unauthenticated local working draft; no POST, approval or publication
+PASS four facility dossiers retain actual municipalities/sale uncertainty, and NZ office closure stays separate from global operation
+PASS direct staged URL explains withholding and links evidence; its ID is absent from public search and remains auditable
+PASS public profile/CSV distinguish playtesting support, source-only geography, Class C, rights and zero confirmed capabilities
+PASS 390px dashboard wraps evidence and supports keyboard profile links; review interactions leave all publication files unchanged
+6 final NZ quality HTTP checks passed
