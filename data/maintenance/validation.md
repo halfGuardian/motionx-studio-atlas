@@ -8,6 +8,7 @@
 |---|---|
 | Complete Python suite | **364 passed**, 186.227 seconds |
 | Current maintenance tests after the final report markup change | **38 passed**, 25.144 seconds |
+| Latest maintenance tests including the monthly shell failure regression | **39 passed**, 23.500 seconds; current complete suite contains 365 tests |
 | Complete JavaScript suite | **95 passed**, 12.572 seconds |
 | HTTP browser suites | **109 checks across all 16 suites passed** |
 | Canonical `studios.json` | **Zero errors / 265 retained warnings** |
@@ -17,6 +18,8 @@
 | Workflow syntax | All repository workflow YAML parsed locally; GitHub validates the submitted workflow definitions in PR checks |
 
 The full Python rerun preceded a final report-only addition that exposes existing source/continuity alerts and a link to the original source change digest. All 38 affected maintenance tests and the full HTTP suite passed afterward. Exact-head GitHub Actions results are linked from the PR; local tests are not claimed to be a live monthly workflow run. Machine results, initial failures, final logs, original source coverage and metrics are in [qa](qa/summary.json).
+
+The cadence-only follow-up preserves a failing Python exit code and rejects unexpected/non-boolean output before writing GitHub job outputs. Its additional regression executes the actual YAML shell block with controlled success, failure and malformed-output fixtures. All 39 current maintenance tests pass; the added test brings the complete suite to 365. The full exact-head rerun is reported in the PR's checks. UI and company-data code are unchanged by that follow-up.
 
 ## Map fix
 
@@ -44,9 +47,30 @@ The real v2 replay processes the permitted pinned 424-row animation export plus 
 
 Eight official sources are network-scanned automatically. One licensed pinned dataset is processed offline. Seventeen official sources—including EA, Ubisoft and Cinesite—and unregistered/other restricted global sources remain manual. No new source was enabled, no restriction was bypassed, and worldwide research is not declared complete. Per-source status, reuse limits and attribution are retained in the report and [source matrix](README.md#source-coverage).
 
+### Fresh permitted-source incremental replay
+
+PR source-check run [43520482160](https://github.com/halfGuardian/motionx-studio-atlas/actions/runs/43520482160) successfully fetched all eight permitted sources on 13 November. Its actual source artifact passed GitHub SHA-256/CRC/path checks. Applying it after the committed 9 November snapshot preserves the complete previous history prefix, retains all 200 raw candidate IDs and extends the maintenance history from nine to 17 events. It produces **55 evidence-refresh signals and eight explicit no-absence-inference signals**, zero new company leads, zero publication and zero approvals. Repeating the same input produces **zero signals and identical state**. This is actual-source incremental processing, not an independently verified business update or a live monthly PR run. See [machine proof](qa/live-incremental-proof.json).
+
+Reproduce from this PR checkout, with an authenticated GitHub CLI and fresh temporary output directories:
+
+```sh
+gh run download 43520482160 --repo halfGuardian/motionx-studio-atlas \
+  --name global-research-review --dir /tmp/atlas-live-input
+python tools/maintenance.py prepare --as-of 2026-11-13 \
+  --discovery data/maintenance/inputs/discovery-42666896576 --output /tmp/atlas-base
+python tools/maintenance.py prepare --as-of 2026-11-13 \
+  --discovery /tmp/atlas-live-input/discovery-run --state /tmp/atlas-base/state.json \
+  --output /tmp/atlas-incremental
+python tools/maintenance.py prepare --as-of 2026-11-13 \
+  --discovery /tmp/atlas-live-input/discovery-run --state /tmp/atlas-incremental/state.json \
+  --output /tmp/atlas-repeat
+```
+
 ## Initial failures and final reruns
 
 The first full Python run had two errors in the newly added recovery regressions. A fallback-local `import hashlib` shadowed the module import in the earlier history-copy path. Removing that local import fixed the defect. All nine checkpoint tests, the complete 364-test rerun and the 38-test maintenance rerun then passed. No integrity check was weakened.
+
+Final workflow review found that `echo` around command substitution could mask an invalid monthly configuration's exit status. Assigning the cadence result first preserves failure, and accepting only literal `true`/`false` prevents malformed output from silently skipping preparation. The actual-script regression now covers both cases.
 
 The first map-guide browser run inside the command sandbox could not expose the mobile map control. The same test passed outside that sandbox with the configured Leaflet/OSM network access, and the final full suite passed, including a touch-enabled mobile context. The initial failed log is preserved; it is not counted as success. The UI also has an intentional blocked-Leaflet fixture that must preserve directory access. No fake map tiles, relaxed browser assertions or prohibited collection route was substituted.
 

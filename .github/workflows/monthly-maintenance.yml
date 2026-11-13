@@ -33,7 +33,9 @@ jobs:
         run: |
           flags=()
           if [ "$PREPARE_NOW" = 'true' ]; then flags+=(--manual); fi
-          echo "due=$(python tools/maintenance.py due "${flags[@]}")" >> "$GITHUB_OUTPUT"
+          maintenance_due=$(python tools/maintenance.py due "${flags[@]}")
+          case "$maintenance_due" in true|false) ;; *) echo 'Invalid maintenance cadence result' >&2; exit 1 ;; esac
+          echo "due=$maintenance_due" >> "$GITHUB_OUTPUT"
   draft:
     needs: cadence
     if: needs.cadence.outputs.due == 'true'

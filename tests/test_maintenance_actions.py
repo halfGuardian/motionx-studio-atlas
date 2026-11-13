@@ -1,10 +1,12 @@
 """Simulated GitHub responses with real isolated Git branches; no live PR writes."""
 import copy
 import json
+import os
 import shutil
 import subprocess
 import sys
 import tempfile
+import textwrap
 import unittest
 from pathlib import Path
 
@@ -174,6 +176,23 @@ class MaintenanceActionsTests(unittest.TestCase):
         base = {'head_branch': 'main', 'path': '.github/workflows/discovery.yml', 'status': 'completed', 'event': 'schedule', 'head_repository': {'full_name': actions.REPOSITORY}}
         self.assertTrue(actions.eligible(base))
         for patch in ({'head_branch': 'other'}, {'event': 'pull_request'}, {'status': 'in_progress'}, {'head_repository': {'full_name': 'other/fork'}}): self.assertFalse(actions.eligible(base | patch))
+
+    def test_actual_cadence_shell_preserves_failures_and_accepts_only_booleans(self):
+        workflow = (ROOT / '.github/workflows/monthly-maintenance.yml').read_text()
+        block = workflow.split('      - id: cadence\n', 1)[1].split('\n  draft:', 1)[0]
+        script = textwrap.dedent(block.split('        run: |\n', 1)[1])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); (root / 'tools').mkdir(); stub = root / 'tools/maintenance.py'; output = root / 'github-output'
+            env = {**os.environ, 'PREPARE_NOW': '', 'GITHUB_OUTPUT': str(output)}
+            stub.write_text('raise SystemExit(17)\n')
+            failed = subprocess.run(['bash', '-e', '-c', script], cwd=root, env=env, capture_output=True, text=True)
+            self.assertEqual(failed.returncode, 17); self.assertFalse(output.exists())
+            stub.write_text('print("false")\n')
+            success = subprocess.run(['bash', '-e', '-c', script], cwd=root, env=env, capture_output=True, text=True)
+            self.assertEqual(success.returncode, 0); self.assertEqual(output.read_text(), 'due=false\n')
+            output.unlink(); stub.write_text('print("unexpected\\ndue=true")\n')
+            invalid = subprocess.run(['bash', '-e', '-c', script], cwd=root, env=env, capture_output=True, text=True)
+            self.assertNotEqual(invalid.returncode, 0); self.assertFalse(output.exists())
 
 
 if __name__ == '__main__': unittest.main()

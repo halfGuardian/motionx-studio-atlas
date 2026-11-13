@@ -18,5 +18,9 @@
   "new_verified_facilities": 0,
   "new_approved_claims": 0,
   "human_approved": false,
-  "log_normalisation": "Only trailing log whitespace removed for Git; source archive bytes are unchanged"
+  "log_normalisation": "Only trailing log whitespace removed for Git; source archive bytes are unchanged",
+  "python_targeted_latest": 39,
+  "current_python_suite_count": 365,
+  "cadence_shell_failure_regression": "passed; nonzero and invalid outputs cannot silently skip",
+  "live_incremental_replay": "55 evidence refreshes, 8 no-absence-inference signals; repeat zero"
 }
